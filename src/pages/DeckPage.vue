@@ -25,7 +25,7 @@ onMounted(load);
 </script>
 
 <template>
-  <div class="grid">
+  <div class="grid deckGrid">
     <div v-if="!deck">
       <EmptyState title="Deck introuvable" />
     </div>
@@ -76,42 +76,3 @@ onMounted(load);
   </div>
 </template>
 
-<style scoped>
-/* Même logique que Phrases: page propre, scroll uniquement dans la liste */
-.grid{
-  max-width: 1100px;
-  margin: 0 auto;
-  align-items: start;
-}
-
-/* Card principale = "modal" : ne doit pas pousser la page */
-.deckCard{
-  /* hauteur raisonnable, sans prendre 100% */
-  height: min(720px, calc(100vh - 32px));
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-}
-
-/* Bloc aperçu : doit pouvoir grandir mais rester dans le "modal" */
-.previewCard{
-  margin-top: 12px;
-  border-radius: 18px;
-
-  flex: 1 1 auto; /* prend l’espace restant */
-  min-height: 0;  /* IMPORTANT pour que overflow fonctionne */
-
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; /* le scroll sera dans .previewList */
-}
-
-/* La liste scrolle dans la card aperçu */
-.previewList{
-  flex: 1 1 auto;
-  min-height: 0;
-  overflow: auto;
-  padding-right: 6px;
-}
-</style>

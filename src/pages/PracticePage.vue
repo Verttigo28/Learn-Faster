@@ -226,132 +226,144 @@ onMounted(load);
 </script>
 
 <template>
-  <div v-if="questions.length === 0">
-    <EmptyState title="Rien à réviser" hint="Aucune question ne correspond aux filtres. Ajoute du contenu ou change les tags." />
-    <div class="row" style="margin-top:12px">
-      <router-link class="btn" to="/exams">Retour générateur</router-link>
-      <router-link class="btn" to="/import">Importer</router-link>
-      <router-link class="btn" to="/sentences">Ajouter des phrases</router-link>
+  <div class="sessionPage">
+    <div v-if="questions.length === 0" class="card sessionCard">
+      <EmptyState
+        title="Rien à réviser"
+        hint="Aucune question ne correspond aux filtres. Ajoute du contenu ou change les tags."
+      />
+      <div class="row mt-3">
+        <router-link class="btn" to="/exams">Retour générateur</router-link>
+        <router-link class="btn" to="/import">Importer</router-link>
+        <router-link class="btn" to="/sentences">Ajouter des phrases</router-link>
+      </div>
     </div>
-  </div>
 
-  <div v-else class="card">
-    <div class="row">
-      <div>
-        <h2 style="margin:0">Exam (tags)</h2>
-        <p class="small" style="margin:4px 0 0 0">
-          Question {{ idx + 1 }} / {{ questions.length }}
-          <span v-if="tags.length"> • Tags: {{ tags.join(", ") }}</span>
+    <div v-else class="sessionCard">
+      <div class="row">
+        <div>
+          <h2 class="m-0">Exam (tags)</h2>
+          <p class="small mt-1">
+            Question {{ idx + 1 }} / {{ questions.length }}
+            <span v-if="tags.length"> • Tags: {{ tags.join(", ") }}</span>
+          </p>
+        </div>
+
+        <div class="row">
+          <span v-if="remainingSeconds !== null" class="badge">⏱ {{ formatDuration(remainingSeconds) }}</span>
+          <button class="btn" @click="goGenerator">Quitter</button>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <!-- ✅ Scroll uniquement dans cette zone -->
+      <div class="sessionBody">
+        <div v-if="current.kind === 'vocab_mcq' || current.kind === 'exam_mcq'">
+          <h3 class="mt-0">{{ current.prompt }}</h3>
+
+          <div class="list">
+            <button
+              v-for="o in current.options"
+              :key="o.id"
+              class="btn justify-start text-left"
+              :class="{
+                primary: current.answer === o.id && !locked,
+                ok: locked && o.correct,
+                danger: locked && current.answer === o.id && !o.correct
+              }"
+              @click="pickAnswer(o.id)"
+            >
+              {{ o.text }}
+            </button>
+          </div>
+
+          <p v-if="locked && current.kind === 'exam_mcq' && current.explanation" class="small mt-2.5">
+            💡 {{ current.explanation }}
+          </p>
+        </div>
+
+        <div v-else-if="current.kind === 'sentence_order'">
+          <h3 class="mt-0">Remets la phrase dans le bon ordre</h3>
+
+          <div class="row justify-start gap-2.5 mb-2.5">
+            <label class="badge cursor-pointer">
+              <input type="checkbox" v-model="sentenceHelp" @change="persistHelp" />
+              Aide : afficher la traduction
+            </label>
+            <span v-if="sentenceHelp && current.translation" class="small">🇫🇷 {{ current.translation }}</span>
+          </div>
+
+          <SentenceOrder :tokens="current.tokens" v-model="current.answer" />
+
+          <div v-if="locked" class="card mt-3 rounded-[18px]">
+            <div class="row">
+              <span
+                class="badge"
+                :style="isCorrect(current) ? 'border-color: rgba(61,220,151,.65)' : 'border-color: rgba(255,107,107,.65)'"
+              >
+                {{ isCorrect(current) ? '✅ Correct' : '❌ Incorrect' }}
+              </span>
+              <span class="small">Phrase correcte :</span>
+            </div>
+            <h3 class="mt-2.5 mb-0">{{ current.text }}</h3>
+            <p v-if="current.translation" class="small mt-1.5 mb-0">🇫🇷 {{ current.translation }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sessionFooter">
+        <div class="row mt-3">
+          <button class="btn" @click="submit" :disabled="locked || (current.kind !== 'sentence_order' && !current.answer)">
+            Valider
+          </button>
+          <button class="btn" @click="next" :disabled="!canProceed">Suivant</button>
+          <button class="btn ok" @click="finish">Terminer</button>
+        </div>
+
+        <p class="small mt-2.5">
+          Pour l’ordre des mots : clique un mot pour l’ajouter, puis clique-le dans “Ta réponse” pour l’enlever.
         </p>
       </div>
-
-      <div class="row">
-        <span v-if="remainingSeconds !== null" class="badge">⏱ {{ formatDuration(remainingSeconds) }}</span>
-        <button class="btn" @click="goGenerator">Quitter</button>
-      </div>
     </div>
 
-    <div class="hr"></div>
-
-    <div v-if="current.kind === 'vocab_mcq' || current.kind === 'exam_mcq'">
-      <h3>{{ current.prompt }}</h3>
-
-      <div class="list">
-        <button
-          v-for="o in current.options"
-          :key="o.id"
-          class="btn"
-          :class="{
-            primary: current.answer === o.id && !locked,
-            ok: locked && o.correct,
-            danger: locked && current.answer === o.id && !o.correct
-          }"
-          style="text-align:left"
-          @click="pickAnswer(o.id)"
-        >
-          {{ o.text }}
-        </button>
-      </div>
-
-      <p v-if="locked && current.kind === 'exam_mcq' && current.explanation" class="small" style="margin-top:10px">
-        💡 {{ current.explanation }}
-      </p>
-    </div>
-
-    <div v-else-if="current.kind === 'sentence_order'">
-      <h3>Remets la phrase dans le bon ordre</h3>
-
-      <div class="row" style="margin: 0 0 10px 0; justify-content:flex-start">
-        <label class="badge" style="cursor:pointer">
-          <input type="checkbox" v-model="sentenceHelp" @change="persistHelp" />
-          Aide : afficher la traduction
-        </label>
-        <span v-if="sentenceHelp && current.translation" class="small">🇫🇷 {{ current.translation }}</span>
-      </div>
-
-      <SentenceOrder :tokens="current.tokens" v-model="current.answer" />
-
-      <div v-if="locked" class="card" style="margin-top:12px; border-radius: 18px;">
+    <BaseModal :open="showModal" title="Résultat (exam tags)" @close="goHome">
+      <div v-if="result" class="card" style="margin:0">
         <div class="row">
-          <span class="badge" :style="isCorrect(current) ? 'border-color: rgba(61,220,151,.65)' : 'border-color: rgba(255,107,107,.65)'">
-            {{ isCorrect(current) ? '✅ Correct' : '❌ Incorrect' }}
-          </span>
-          <span class="small">Phrase correcte :</span>
+          <div>
+            <div class="small">Score</div>
+            <div class="kpi">{{ percent(result.score) }}</div>
+          </div>
+          <div>
+            <div class="small">Bonnes réponses</div>
+            <div class="kpi">{{ result.correct }}/{{ result.total }}</div>
+          </div>
+          <div>
+            <div class="small">Durée</div>
+            <div class="kpi">{{ formatDuration(result.durationSeconds) }}</div>
+          </div>
         </div>
-        <h3 style="margin:10px 0 0 0">{{ current.text }}</h3>
-        <p v-if="current.translation" class="small" style="margin:6px 0 0 0">🇫🇷 {{ current.translation }}</p>
+
+        <div class="hr"></div>
+
+        <div class="row">
+          <span class="badge">Vocab: {{ result.breakdown.vocab ?? 0 }}</span>
+          <span class="badge">QCM: {{ result.breakdown.exam ?? 0 }}</span>
+          <span class="badge">SPOK: {{ result.breakdown.order ?? 0 }}</span>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="row">
+          <button class="btn" @click="goStats">Voir les stats</button>
+          <button class="btn" @click="goGenerator">Nouveau filtre</button>
+          <button class="btn ok" @click="goHome">Retour accueil</button>
+        </div>
+
+        <p class="small mt-2.5">
+          Cette session est sauvegardée dans Stats (type: practice).
+        </p>
       </div>
-    </div>
-
-    <div class="row" style="margin-top:12px">
-      <button class="btn" @click="submit" :disabled="locked || (current.kind !== 'sentence_order' && !current.answer)">
-        Valider
-      </button>
-      <button class="btn" @click="next" :disabled="!canProceed">Suivant</button>
-      <button class="btn ok" @click="finish">Terminer</button>
-    </div>
-
-    <p class="small" style="margin-top:10px">
-      Pour l’ordre des mots : clique un mot pour l’ajouter, puis clique-le dans “Ta réponse” pour l’enlever.
-    </p>
+    </BaseModal>
   </div>
-
-  <BaseModal :open="showModal" title="Résultat (exam tags)" @close="goHome">
-    <div v-if="result" class="card" style="margin:0">
-      <div class="row">
-        <div>
-          <div class="small">Score</div>
-          <div class="kpi">{{ percent(result.score) }}</div>
-        </div>
-        <div>
-          <div class="small">Bonnes réponses</div>
-          <div class="kpi">{{ result.correct }}/{{ result.total }}</div>
-        </div>
-        <div>
-          <div class="small">Durée</div>
-          <div class="kpi">{{ formatDuration(result.durationSeconds) }}</div>
-        </div>
-      </div>
-
-      <div class="hr"></div>
-
-      <div class="row">
-        <span class="badge">Vocab: {{ result.breakdown.vocab ?? 0 }}</span>
-        <span class="badge">QCM: {{ result.breakdown.exam ?? 0 }}</span>
-        <span class="badge">SPOK: {{ result.breakdown.order ?? 0 }}</span>
-      </div>
-
-      <div class="hr"></div>
-
-      <div class="row">
-        <button class="btn" @click="goStats">Voir les stats</button>
-        <button class="btn" @click="goGenerator">Nouveau filtre</button>
-        <button class="btn ok" @click="goHome">Retour accueil</button>
-      </div>
-
-      <p class="small" style="margin-top:10px">
-        Cette session est sauvegardée dans Stats (type: practice).
-      </p>
-    </div>
-  </BaseModal>
 </template>

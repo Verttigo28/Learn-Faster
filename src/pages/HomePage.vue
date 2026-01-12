@@ -105,7 +105,7 @@ onMounted(load);
             <div class="kpi">{{ counts.examCount }}</div>
           </div>
           <div class="kpiBox">
-            <div class="small">Phrases (SPOK)</div>
+            <div class="small">Phrases</div>
             <div class="kpi">{{ counts.sentenceCount }}</div>
           </div>
           <div class="kpiBox">
@@ -139,15 +139,15 @@ onMounted(load);
 
         <div class="startGrid">
           <router-link class="btn startBtn" to="/exams">🎯 Générer un examen</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=vocab,exam,order">⚡ Exam 15 questions (V/Q/P)</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=vocab,exam,order">⚡ Exam 15 questions VQP</router-link>
 
           <router-link class="btn startBtn" to="/practice?count=15&sources=order">🧩 Sprint 15 phrases</router-link>
           <router-link class="btn startBtn" to="/practice?count=15&sources=vocab">🗂️ Sprint 15 vocab</router-link>
 
           <router-link class="btn startBtn" to="/practice?count=15&sources=exam">📝 Sprint 15 QCM</router-link>
-          <router-link class="btn startBtn" to="/practice?count=30&sources=vocab,exam,order">🔥 Exam 30 questions (V/Q/P)</router-link>
+          <router-link class="btn startBtn" to="/practice?count=30&sources=vocab,exam,order">🔥 Exam 30 questions VQP</router-link>
 
-          <button class="btn startBtn" @click="startRandomFlashcards">🃏 Flashcards (deck aléatoire)</button>
+          <button class="btn startBtn" @click="startRandomFlashcards">🃏 Flashcards (aléatoire)</button>
 
 
         </div>
@@ -205,237 +205,3 @@ onMounted(load);
   </div>
 </template>
 
-<style scoped>
-.home{
-  /* un peu plus large que la base, sans casser la responsivité */
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-/* Top cards +60px sans bouger le bas */
-/* Top: 2 colonnes côte à côte, mais chaque card est plus large que sa colonne */
-/* Top: 2 colonnes côte à côte, mais chaque card est plus large que sa colonne */
-.top{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  align-items: stretch;
-}
-
-/* +60px par card (donc +120px au total sur la rangée du haut) */
-.dashboard,
-.start{
-  width: calc(100% + 60px);
-}
-
-/* On “pousse” vers l’extérieur pour garder le centre global OK
-   => la rangée du haut devient plus large et donc excentrée vs le bas (voulu) */
-.dashboard{ margin-left: -60px; } /* part vers la gauche */
-.start{ margin-right: -60px; }    /* part vers la droite */
-
-/* Sur petits écrans: on revient normal pour éviter scroll horizontal */
-@media (max-width: 980px){
-  .dashboard,
-  .start{
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-
-
-/* Les 2 cartes du haut doivent s'étirer et avoir la même hauteur */
-.top > .card{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.top > .card .actionsGrid{
-  margin-top: auto;
-}
-
-/* IMPORTANT: startGrid reste en haut */
-.top > .card .startGrid{
-  margin-top: 10px; /* garde ton spacing normal */
-}
-
-
-
-/* tablette / petit laptop : reste “en une ligne” tant que possible */
-@media (max-width: 980px) {
-  .top{
-    grid-template-columns: 1fr; /* sur très petit écran, ça passe en colonne */
-  }
-}
-
-.head{
-  display:flex;
-  align-items:baseline;
-  justify-content:space-between;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.title{
-  margin:0;
-  font-size: 26px;
-  letter-spacing: .2px;
-}
-.sub{ opacity: .85; }
-
-.kpis{
-  display:grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 640px) {
-  .kpis{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
-.kpiBox{
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 10px 12px;
-  background: rgba(0,0,0,.14);
-}
-.kpi{
-  font-size: 28px;
-  font-weight: 800;
-  line-height: 1.1;
-  margin-top: 4px;
-}
-
-.actionsGrid{
-  margin-top: 12px;
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  align-items: start;
-}
-
-.actionBtn{
-  width: 100%;
-  /* Uniformise <router-link> (a) et <button> : même layout + texte centré */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  padding: 12px 12px;
-  border-radius: 14px;
-}
-
-.actionBtn:hover{
-  text-decoration: none; /* évite le underline des <a> */
-}
-
-.reset{
-  grid-column: 1 / -1;
-}
-
-.exportHint{
-  grid-column: 1 / -1;
-  opacity: .85;
-  padding-left: 2px;
-  margin-top: 2px;
-}
-
-.startGrid{
-  margin-top: 10px;
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-}
-
-@media (max-width: 520px) {
-  .startGrid{ grid-template-columns: 1fr; }
-}
-
-.startBtn{
-  width: 100%;
-  justify-content: center;
-  padding: 12px 12px;
-  border-radius: 14px;
-}
-
-.tip{
-  margin-top: 12px;
-  opacity: .9;
-}
-
-/* 2 colonnes toujours parallèles et de même hauteur */
-.bottom{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-top: 14px;
-  align-items: stretch; /* les 2 colonnes ont la même hauteur */
-}
-
-/* Chaque colonne (section) devient un conteneur flex vertical */
-.bottom > section{
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-/* La liste occupe toute la hauteur de la colonne */
-.bottom > section .listGrid{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* Les cards se partagent la hauteur dispo de manière égale */
-.bottom > section .itemCard{
-  flex: 1;              /* <-- clé: même hauteur par card dans une colonne */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Footer en bas à droite reste OK */
-.itemFooter{
-  margin-top: auto;
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 10px;
-}
-
-
-.sectionTitle h2{
-  margin: 0 0 10px 0;
-  font-size: 20px;
-}
-
-.listGrid{
-  display:grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-
-.itemCard{
-  border-radius: 18px;
-  padding: 14px;
-  text-decoration: none;
-}
-
-.itemTitle{
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.2;
-}
-
-/* Cards liste: force le bouton en bas à droite, toujours même endroit */
-.itemCard{
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-</style>

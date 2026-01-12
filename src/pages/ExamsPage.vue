@@ -13,7 +13,6 @@ const count = ref<number>(20);
 const includeVocab = ref(true);
 const includeExam = ref(true);
 const includeOrder = ref(true);
-const sentenceHelp = ref(false);
 
 const msg = ref<{ kind: "info" | "ok" | "danger"; text: string } | null>(null);
 function set(kind: "info" | "ok" | "danger", text: string) {
@@ -44,7 +43,6 @@ async function start() {
   q.set("count", String(Math.max(1, Math.min(200, count.value || 20))));
   q.set("sources", sources.value.join(","));
   if (selected.value.length) q.set("tags", selected.value.join(","));
-  if (sentenceHelp.value) q.set("sentenceHelp", "1");
   await router.push(`/practice?${q.toString()}`);
 }
 
@@ -52,10 +50,9 @@ onMounted(load);
 </script>
 
 <template>
-  <div class="grid cols-2 page">
-    <!-- Left "modal" -->
-    <div class="card modalCard">
-      <h2>Générateur d'exam (par tags)</h2>
+  <div class="examsOne">
+    <div class="card modalWide">
+      <h2>Générateur d'exam</h2>
       <p>Une base commune : vocab + QCM + phrases (ordre des mots). Tu filtres par tags, et l'app construit l'exam.</p>
 
       <div class="hr"></div>
@@ -65,7 +62,6 @@ onMounted(load);
         <label class="badge"><input type="checkbox" v-model="includeVocab" /> Vocab (QCM généré)</label>
         <label class="badge"><input type="checkbox" v-model="includeExam" /> QCM (importés)</label>
         <label class="badge"><input type="checkbox" v-model="includeOrder" /> Ordre des mots (SPOK)</label>
-        <label class="badge"><input type="checkbox" v-model="sentenceHelp" /> Aide phrases (traduction)</label>
       </div>
 
       <div class="hr"></div>
@@ -102,49 +98,11 @@ onMounted(load);
 
       <div class="row">
         <button class="btn" @click="start">Démarrer l’exam</button>
-        <router-link class="btn" to="/sentences">Éditer les phrases</router-link>
         <router-link class="btn" to="/vocab">Éditer vocab</router-link>
         <router-link class="btn" to="/qcm">Éditer QCM</router-link>
       </div>
     </div>
-
-    <!-- Right column -->
-    <div class="card modalCardRight">
-      <h2>Conseils tags</h2>
-      <p>• Exemple : <b>vacances</b>, <b>negation</b>, <b>spok</b>, <b>question</b>.</p>
-      <p>• Mets les mêmes tags sur tes vocab et tes QCM pour faire des exams ciblés.</p>
-      <p>• Le tag <b>spok</b> est pratique pour les phrases d’ordre des mots.</p>
-    </div>
   </div>
 </template>
 
-<style scoped>
-/* même esprit que Phrases / Deck */
-.page{
-  max-width: 1100px;
-  margin: 0 auto;
-  align-items: start;
-}
 
-/* Les cards ne doivent pas pousser la page */
-.modalCard,
-.modalCardRight{
-  height: min(720px, calc(100vh - 32px));
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-/* ✅ Conteneur scrollable pour la liste de tags */
-.tagBox{
-  flex: 1 1 auto;   /* prend l’espace restant dans la card */
-  min-height: 0;    /* IMPORTANT pour overflow */
-  overflow: auto;
-  padding-right: 6px;
-  margin-top: 8px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: rgba(0,0,0,.10);
-  padding: 10px;
-}
-</style>

@@ -181,8 +181,10 @@ onMounted(load);
     </div>
   </div>
 
-  <div v-else class="grid cols-2">
-    <div class="card">
+  <!-- ✅ Pas de scroll global : chaque colonne gère son propre scroll -->
+  <div v-else class="editGrid">
+    <div class="card cardFill">
+      <div class="scrollY">
       <h2>Éditer exam</h2>
 
       <label class="small">Titre</label>
@@ -228,29 +230,36 @@ onMounted(load);
       <div v-if="msg" style="margin-top:12px">
         <ConfirmBar :message="msg.text" :kind="msg.kind" />
       </div>
+      </div>
     </div>
 
-    <div>
-      <h2>Questions ({{ questions.length }})</h2>
-      <div v-if="questions.length === 0">
+    <div class="card cardFill">
+      <div class="row flex-none mb-2.5">
+        <h2 class="m-0">Questions</h2>
+        <span class="small">{{ questions.length }}</span>
+      </div>
+
+      <div v-if="questions.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
         <EmptyState title="Aucune question" hint="Ajoute ta première question à gauche." />
       </div>
 
-      <div v-else class="list">
-        <div v-for="q in questions" :key="q.id" class="card">
-          <div class="row">
-            <div>
-              <h3 style="margin:0">{{ q.prompt }}</h3>
-              <p class="small" style="margin:4px 0 0 0">{{ (q.tags ?? []).join(", ") }}</p>
+      <div v-else class="scrollY">
+        <div class="list">
+          <div v-for="q in questions" :key="q.id" class="card">
+            <div class="row">
+              <div>
+                <h3 class="m-0">{{ q.prompt }}</h3>
+                <p class="small mt-1">{{ (q.tags ?? []).join(", ") }}</p>
+              </div>
+              <div class="row" style="gap:8px">
+                <button class="btn" @click="openEdit(q)">Éditer</button>
+                <button class="btn danger" @click="removeQuestion(q.id)">Supprimer</button>
+              </div>
             </div>
-            <div class="row" style="gap:8px">
-              <button class="btn" @click="openEdit(q)">Éditer</button>
-              <button class="btn danger" @click="removeQuestion(q.id)">Supprimer</button>
-            </div>
+            <p class="small mt-2">
+              Réponse: {{ q.choices.find(c => c.correct)?.text ?? "?" }}
+            </p>
           </div>
-          <p class="small" style="margin-top:8px">
-            Réponse: {{ q.choices.find(c => c.correct)?.text ?? "?" }}
-          </p>
         </div>
       </div>
     </div>

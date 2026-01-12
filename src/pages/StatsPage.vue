@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 import { db, type Attempt, type VocabDeck, type Exam } from "../db";
 import EmptyState from "../components/EmptyState.vue";
 import { formatDate, formatDuration } from "../utils/time";
@@ -81,11 +81,25 @@ function exportPdf(a: Attempt) {
   }
 }
 
-onMounted(load);
+function lockScroll() {
+  document.documentElement.classList.add("no-scroll");
+  document.body.classList.add("no-scroll");
+}
+function unlockScroll() {
+  document.documentElement.classList.remove("no-scroll");
+  document.body.classList.remove("no-scroll");
+}
+
+onMounted(() => {
+  lockScroll();
+  load();
+});
+onUnmounted(unlockScroll);
+
 </script>
 
 <template>
-  <div class="page">
+  <div class="statsPage">
     <div class="top">
       <div class="grid cols-2">
         <div class="card topCard">
@@ -167,16 +181,7 @@ onMounted(load);
               >
                 📄 PDF
               </button>
-
-              <router-link
-                  v-if="a.meta?.details?.length"
-                  class="badge"
-                  :to="`/attempt/${a.id}`"
-                  style="cursor:pointer"
-              >
-                {{ a.type }}
-              </router-link>
-              <span v-else class="badge" style="opacity:0.6">{{ a.type }}</span>
+              <span class="badge" style="opacity:0.6">{{ a.type }}</span>
             </div>
           </div>
         </div>
@@ -185,55 +190,3 @@ onMounted(load);
   </div>
 </template>
 
-<style scoped>
-/* Empêche le scroll global UNIQUEMENT quand cette page est affichée */
-:global(html),
-:global(body){
-  height: 100%;
-  overflow: hidden;
-}
-
-.top{
-  flex: 0 0 auto;
-}
-
-.topCard{
-  align-self: start;
-}
-
-.page{
-  max-width: 1100px;
-  margin: 0 auto;
-
-  /* ✅ la page tient dans l'écran */
-  height: calc(100vh - 32px);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-
-  overflow: hidden;
-}
-
-/* Historique: un peu moins haut pour éviter la zone “coupée” en bas */
-.historyCard{
-  flex: 0 0 auto;              /* ✅ n'étire plus automatiquement */
-  height: 58vh;                /* ✅ ajuste: 52–62vh selon ton goût */
-  max-height: 520px;           /* ✅ limite sur grands écrans */
-  min-height: 260px;           /* ✅ garde une taille mini */
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-}
-
-/* ✅ scroll garanti ici */
-.historyList{
-  flex: 1 1 auto;
-  min-height: 0;               /* IMPORTANT */
-  overflow: auto;
-  padding-right: 6px;
-
-  /* un peu d’air en bas pour le dernier item */
-  padding-bottom: 18px;
-}
-</style>

@@ -101,66 +101,72 @@ onMounted(load);
 </script>
 
 <template>
-  <div v-if="!deck">
-    <EmptyState title="Deck introuvable" />
-  </div>
-
-  <div v-else-if="items.length === 0">
-    <EmptyState title="Deck vide" hint="Importe des items dans ce deck." />
-  </div>
-
-  <div v-else class="card">
-    <div class="row">
-      <div>
-        <h2 style="margin:0">Flashcards</h2>
-        <p class="small" style="margin:4px 0 0 0">{{ deck.title }} • {{ idx + 1 }} / {{ items.length }}</p>
-      </div>
-      <router-link class="btn" :to="`/deck/${deckId}`">Retour</router-link>
+  <div class="sessionPage">
+    <div v-if="!deck" class="card sessionCard">
+      <EmptyState title="Deck introuvable" />
     </div>
 
-    <div class="hr"></div>
-
-    <div
-        class="card"
-        style="cursor:pointer; user-select:none; text-align:center; padding:24px; border-radius: 20px;"
-        @click="flipped = !flipped"
-    >
-      <div class="small" style="margin-bottom:10px">{{ flipped ? "Réponse" : "Question" }} (clique pour retourner)</div>
-      <div style="font-size: 28px; font-weight: 800">
-        {{ flipped ? current.definition : current.term }}
-      </div>
+    <div v-else-if="items.length === 0" class="card sessionCard">
+      <EmptyState title="Deck vide" hint="Importe des items dans ce deck." />
     </div>
 
-    <div class="row" style="margin-top:12px">
-      <button class="btn danger" @click="mark(false)">Je ne sais pas</button>
-      <button class="btn ok" @click="mark(true)">Je sais</button>
-      <button class="btn" @click="finish">Terminer</button>
-    </div>
-
-    <p class="small" style="margin-top:10px">
-      Score session: {{ percent() }} ({{ correct }}/{{ total }})
-    </p>
-  </div>
-
-  <BaseModal :open="showResultModal" title="Résultat flashcards" @close="backToDeck">
-    <div class="card" style="margin:0">
+    <div v-else class="sessionCard">
       <div class="row">
         <div>
-          <div class="small">Score</div>
-          <div class="kpi">{{ percent() }}</div>
+          <h2 class="m-0">Flashcards</h2>
+          <p class="small mt-1">{{ deck.title }} • {{ idx + 1 }} / {{ items.length }}</p>
         </div>
-        <div>
-          <div class="small">Bonnes réponses</div>
-          <div class="kpi">{{ correct }}/{{ total }}</div>
-        </div>
+        <router-link class="btn" :to="`/deck/${deckId}`">Retour</router-link>
       </div>
 
       <div class="hr"></div>
 
-      <div class="row">
-        <router-link class="btn" to="/stats">Voir les stats</router-link>
-        <button class="btn" @click="backToDeck">Retour deck</button>
+      <!-- ✅ Zone centrale : pas de scroll global, contenu long => scroll interne -->
+      <div class="sessionBody flex flex-col justify-center">
+        <div
+          class="card cursor-pointer select-none text-center p-6 rounded-[20px] overflow-auto"
+          @click="flipped = !flipped"
+        >
+          <div class="small mb-2.5">{{ flipped ? "Réponse" : "Question" }} (clique pour retourner)</div>
+          <div class="text-2xl font-extrabold">
+            {{ flipped ? current.definition : current.term }}
+          </div>
+        </div>
+      </div>
+
+      <div class="sessionFooter">
+        <div class="row mt-3">
+          <button class="btn danger" @click="mark(false)">Je ne sais pas</button>
+          <button class="btn ok" @click="mark(true)">Je sais</button>
+          <button class="btn" @click="finish">Terminer</button>
+        </div>
+
+        <p class="small mt-2.5">
+          Score session: {{ percent() }} ({{ correct }}/{{ total }})
+        </p>
       </div>
     </div>
-  </BaseModal>
+
+    <BaseModal :open="showResultModal" title="Résultat flashcards" @close="backToDeck">
+      <div class="card" style="margin:0">
+        <div class="row">
+          <div>
+            <div class="small">Score</div>
+            <div class="kpi">{{ percent() }}</div>
+          </div>
+          <div>
+            <div class="small">Bonnes réponses</div>
+            <div class="kpi">{{ correct }}/{{ total }}</div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="row">
+          <router-link class="btn" to="/stats">Voir les stats</router-link>
+          <button class="btn" @click="backToDeck">Retour deck</button>
+        </div>
+      </div>
+    </BaseModal>
+  </div>
 </template>

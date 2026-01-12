@@ -96,7 +96,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="page">
+  <div class="attemptPage">
     <div v-if="!attempt">
       <EmptyState title="Résultat introuvable" hint="Cette tentative n'existe plus dans la base locale." />
       <div class="row" style="margin-top:12px">
@@ -179,32 +179,3 @@ onUnmounted(() => {
   </div>
 </template>
 
-<style scoped>
-/* Page: pas de scroll global, mais on centre un "modal" */
-.page{
-  height: calc(100vh - 32px);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 12px;
-}
-
-/* Card: modal plus petit que l'écran */
-.resultCard{
-  width: 100%;
-  max-width: 980px;
-  height: 84vh;              /* <-- réduit la hauteur (ajuste 80-88vh) */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Liste: scrolle dans le modal */
-.resultList{
-  flex: 1 1 auto;
-  min-height: 0;
-  overflow: auto;
-  padding-right: 6px;
-}
-
-</style>

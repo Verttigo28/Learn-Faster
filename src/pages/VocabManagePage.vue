@@ -63,8 +63,10 @@ onMounted(load);
 </script>
 
 <template>
-  <div class="grid cols-2">
-    <div class="card">
+  <!-- ✅ Pas de scroll global : liste des decks scrollable à droite -->
+  <div class="manageGrid">
+    <div class="card cardFill">
+      <div class="scrollY">
       <h2>Vocab — gérer les decks</h2>
       <p class="small">Crée un deck, puis édite son contenu (termes, définitions, tags).</p>
 
@@ -93,62 +95,43 @@ onMounted(load);
       <div v-if="msg" style="margin-top:12px">
         <ConfirmBar :message="msg.text" :kind="msg.kind" />
       </div>
+      </div>
     </div>
 
-    <div>
-      <div v-if="decks.length === 0">
+    <div class="card cardFill">
+      <div class="row flex-none mb-2.5">
+        <h2 class="m-0">Liste des decks</h2>
+        <span class="small">{{ decks.length }}</span>
+      </div>
+
+      <div v-if="decks.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
         <EmptyState title="Aucun deck" hint="Crée ton premier deck à gauche, ou importe un JSON." />
       </div>
 
-      <div v-else class="list">
-        <div v-for="d in decks" :key="d.id" class="card">
-          <div class="row">
-            <div>
-              <h3 style="margin:0">{{ d.title }}</h3>
-              <p class="small" style="margin:4px 0 0 0">
-                {{ d.from }} → {{ d.to }} • {{ counts[d.id] ?? 0 }} items
-              </p>
-            </div>
-            <div class="row" style="gap:8px">
-              <!-- ✅ Apprendre -->
-              <router-link class="btn" :to="`/deck/${d.id}`">Ouvrir</router-link>
-              <router-link class="btn" :to="`/deck/${d.id}/flash`">Flashcards</router-link>
+      <div v-else class="scrollY">
+        <div class="list">
+          <div v-for="d in decks" :key="d.id" class="card">
+            <div class="row">
+              <div>
+                <h3 class="m-0">{{ d.title }}</h3>
+                <p class="small mt-1">
+                  {{ d.from }} → {{ d.to }} • {{ counts[d.id] ?? 0 }} items
+                </p>
+              </div>
+              <div class="row" style="gap:8px">
+                <!-- ✅ Apprendre -->
+                <router-link class="btn" :to="`/deck/${d.id}`">Ouvrir</router-link>
+                <router-link class="btn" :to="`/deck/${d.id}/flash`">Flashcards</router-link>
 
-              <!-- ✅ Gérer -->
-              <button class="btn" @click="editDeck(d.id)">Éditer</button>
-              <button class="btn danger" @click="removeDeck(d.id)">Supprimer</button>
+                <!-- ✅ Gérer -->
+                <button class="btn" @click="editDeck(d.id)">Éditer</button>
+                <button class="btn danger" @click="removeDeck(d.id)">Supprimer</button>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-<style scoped>
-/* Le "modal" : hauteur max raisonnable, sans prendre 100% */
-.grid{
-  max-width: 1100px;
-  margin: 0 auto;
-  align-items: start;
-}
-
-/* Card gauche: ne s'étire pas */
-.grid > .card{
-  align-self: start;
-}
-
-/* Colonne droite: contient la liste, hauteur max "modal" */
-.grid > div:nth-child(2){
-  max-height: 720px;     /* <-- ajuste si tu veux 650/800 */
-  overflow: hidden;
-}
-
-/* La liste scrolle dans la colonne droite */
-.list{
-  max-height: 720px;     /* même valeur que ci-dessus */
-  overflow: auto;
-  padding-right: 6px;
-}
-</style>
 

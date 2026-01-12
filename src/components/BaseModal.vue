@@ -43,32 +43,3 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
   </teleport>
 </template>
 
-<style scoped>
-.modal-backdrop{
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.55);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding: 16px;
-  z-index: 9999;
-}
-.modal-card{
-  width: min(760px, 100%);
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  background: rgba(17,26,51,.92);
-  backdrop-filter: blur(10px);
-  padding: 14px;
-}
-.modal-header{
-  display:flex;
-  gap: 10px;
-  align-items:center;
-  justify-content:space-between;
-  margin-bottom: 10px;
-}
-.modal-title{ margin:0; }
-.modal-body{ color: var(--text); }
-</style>

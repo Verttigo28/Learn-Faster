@@ -106,52 +106,57 @@ onMounted(load);
 </script>
 
 <template>
-  <div v-if="!deck">
+  <div v-if="!deck" class="page flex items-center justify-center">
     <EmptyState title="Deck introuvable" />
   </div>
 
-  <div v-else-if="items.length < 2">
+  <div v-else-if="items.length < 2" class="page flex items-center justify-center">
     <EmptyState title="Pas assez d'items" hint="Ajoute au moins 2 items pour faire un quiz." />
   </div>
 
-  <div v-else class="card" v-if="question">
-    <div class="row">
-      <div>
-        <h2 style="margin:0">Quiz (QCM)</h2>
-        <p class="small" style="margin:4px 0 0 0">{{ deck.title }} • {{ idx + 1 }} / {{ order.length }}</p>
+  <!-- ✅ Page plein écran sans scroll global, contenu scrollable dans le body -->
+  <div v-else-if="question" class="sessionPage">
+    <div class="sessionCard">
+      <div class="row">
+        <div>
+          <h2 style="margin:0">Quiz (QCM)</h2>
+          <p class="small" style="margin:4px 0 0 0">{{ deck.title }} • {{ idx + 1 }} / {{ order.length }}</p>
+        </div>
+        <router-link class="btn" :to="`/deck/${deckId}`">Retour</router-link>
       </div>
-      <router-link class="btn" :to="`/deck/${deckId}`">Retour</router-link>
+
+      <div class="hr"></div>
+
+      <div class="sessionBody">
+        <h3>{{ question.prompt }}</h3>
+        <div class="list">
+          <button
+            v-for="o in question.options"
+            :key="o.id"
+            class="btn"
+            :class="{
+              primary: selected === o.id && !locked,
+              ok: locked && o.correct,
+              danger: locked && selected === o.id && !o.correct
+            }"
+            style="text-align:left"
+            @click="choose(o.id)"
+          >
+            {{ o.text }}
+          </button>
+        </div>
+
+        <p class="small" style="margin-top:10px">
+          Score: {{ percent() }} ({{ correct }}/{{ answered }})
+        </p>
+      </div>
+
+      <div class="sessionFooter row">
+        <button class="btn" @click="submit" :disabled="!selected || locked">Valider</button>
+        <button class="btn" @click="next" :disabled="!locked">Suivant</button>
+        <button class="btn ok" @click="finish">Terminer</button>
+      </div>
     </div>
-
-    <div class="hr"></div>
-
-    <h3>{{ question.prompt }}</h3>
-    <div class="list">
-      <button
-        v-for="o in question.options"
-        :key="o.id"
-        class="btn"
-        :class="{
-          primary: selected === o.id && !locked,
-          ok: locked && o.correct,
-          danger: locked && selected === o.id && !o.correct
-        }"
-        style="text-align:left"
-        @click="choose(o.id)"
-      >
-        {{ o.text }}
-      </button>
-    </div>
-
-    <div class="row" style="margin-top:12px">
-      <button class="btn" @click="submit" :disabled="!selected || locked">Valider</button>
-      <button class="btn" @click="next" :disabled="!locked">Suivant</button>
-      <button class="btn ok" @click="finish">Terminer</button>
-    </div>
-
-    <p class="small" style="margin-top:10px">
-      Score: {{ percent() }} ({{ correct }}/{{ answered }})
-    </p>
   </div>
 
   <BaseModal :open="showResultModal" title="Résultat du quiz" @close="backToDeck">

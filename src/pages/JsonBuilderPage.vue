@@ -195,8 +195,10 @@ function cryptoFallbackId(): string {
 </script>
 
 <template>
-  <div class="grid cols-2">
-    <div class="card">
+  <!-- ✅ Pas de scroll global : formulaire et preview ont leur scroll interne -->
+  <div class="editGrid">
+    <div class="card cardFill">
+      <div class="scrollY">
       <h2>Créateur de JSON</h2>
       <p>Crée un fichier JSON sans écrire le format à la main. Puis télécharge ou importe directement dans l'app.</p>
 
@@ -316,14 +318,22 @@ function cryptoFallbackId(): string {
       <p class="small" style="margin-top:10px">
         Astuce: si tu importes dans l'app, tu peux ensuite lancer quiz/exam directement.
       </p>
+      </div>
     </div>
 
-    <div class="card">
-      <h2>Preview JSON</h2>
-      <p class="small">Ceci est le fichier généré.</p>
-      <textarea class="input" style="min-height: 520px; resize: vertical" :value="jsonText" readonly></textarea>
+    <div class="card cardFill">
+      <div class="row" style="margin-bottom:10px">
+        <div>
+          <h2 style="margin:0">Preview JSON</h2>
+          <p class="small" style="margin:4px 0 0 0">Ceci est le fichier généré.</p>
+        </div>
+        <router-link class="btn" to="/import">Aller à Import</router-link>
+      </div>
+
       <div class="hr"></div>
-      <router-link class="btn" to="/import">Aller à Import</router-link>
+
+      <!-- Preview scrollable, sans resize qui casse le layout -->
+      <pre class="code">{{ jsonText }}</pre>
     </div>
   </div>
 </template>

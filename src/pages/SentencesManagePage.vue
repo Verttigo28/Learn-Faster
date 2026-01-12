@@ -97,8 +97,10 @@ onMounted(load);
 </script>
 
 <template>
-  <div class="grid cols-2">
-    <div class="card">
+  <!-- ✅ Pas de scroll global : liste des phrases scrollable à droite -->
+  <div class="manageGrid">
+    <div class="card cardFill">
+      <div class="scrollY">
       <h2>Phrases — ordre des mots (SPOK)</h2>
       <p>Crée des phrases en indonésien. L’exercice les mélange et tu dois les remettre dans le bon ordre.</p>
 
@@ -120,26 +122,34 @@ onMounted(load);
         <ConfirmBar :message="message.text" :kind="message.kind" />
       </div>
 
+      </div>
     </div>
 
-    <div>
-      <div v-if="all.length === 0">
+    <div class="card cardFill">
+      <div class="row flex-none mb-2.5">
+        <h2 class="m-0">Liste des phrases</h2>
+        <span class="small">{{ all.length }}</span>
+      </div>
+
+      <div v-if="all.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
         <EmptyState title="Aucune phrase" hint="Ajoute ta première phrase à gauche." />
       </div>
 
-      <div v-else class="list">
-        <div v-for="s in all" :key="s.id" class="card">
-          <div class="row">
-            <div>
-              <h3 style="margin:0">{{ s.text }}</h3>
-              <p v-if="s.translation" class="small" style="margin:4px 0 0 0">🇫🇷 Traduction : {{ s.translation }}</p>
-              <p class="small" style="margin:4px 0 0 0">
-                {{ (s.tags ?? []).join(", ") }}
-              </p>
-            </div>
-            <div class="row" style="gap:8px">
-              <button class="btn" @click="openEdit(s)">Modifier</button>
-              <button class="btn danger" @click="remove(s.id)">Supprimer</button>
+      <div v-else class="scrollY">
+        <div class="list">
+          <div v-for="s in all" :key="s.id" class="card">
+            <div class="row">
+              <div>
+                <h3 class="m-0">{{ s.text }}</h3>
+                <p v-if="s.translation" class="small mt-1">🇫🇷 Traduction : {{ s.translation }}</p>
+                <p class="small mt-1">
+                  {{ (s.tags ?? []).join(", ") }}
+                </p>
+              </div>
+              <div class="row" style="gap:8px">
+                <button class="btn" @click="openEdit(s)">Modifier</button>
+                <button class="btn danger" @click="remove(s.id)">Supprimer</button>
+              </div>
             </div>
           </div>
         </div>
@@ -165,29 +175,3 @@ onMounted(load);
     </div>
   </BaseModal>
 </template>
-<style scoped>
-/* Le "modal" : hauteur max raisonnable, sans prendre 100% */
-.grid{
-  max-width: 1100px;
-  margin: 0 auto;
-  align-items: start;
-}
-
-/* Card gauche: ne s'étire pas */
-.grid > .card{
-  align-self: start;
-}
-
-/* Colonne droite: contient la liste, hauteur max "modal" */
-.grid > div:nth-child(2){
-  max-height: 720px;     /* <-- ajuste si tu veux 650/800 */
-  overflow: hidden;
-}
-
-/* La liste scrolle dans la colonne droite */
-.list{
-  max-height: 720px;     /* même valeur que ci-dessus */
-  overflow: auto;
-  padding-right: 6px;
-}
-</style>

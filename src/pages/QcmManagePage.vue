@@ -63,8 +63,10 @@ onMounted(load);
 </script>
 
 <template>
-  <div class="grid cols-2">
-    <div class="card">
+  <!-- ✅ Pas de scroll global : la page remplit la hauteur et seules les listes scrollent -->
+  <div class="manageGrid">
+    <div class="card cardFill">
+      <div class="scrollY">
       <h2>QCM — gérer les exams</h2>
       <p class="small">Crée un exam puis édite ses questions (choix, explications, tags).</p>
 
@@ -85,26 +87,34 @@ onMounted(load);
       <div v-if="msg" style="margin-top:12px">
         <ConfirmBar :message="msg.text" :kind="msg.kind" />
       </div>
+      </div>
     </div>
 
-    <div>
-      <div v-if="exams.length === 0">
+    <div class="card cardFill">
+      <div class="row flex-none mb-2.5">
+        <h2 class="m-0">Liste des exams</h2>
+        <span class="small">{{ exams.length }}</span>
+      </div>
+
+      <div v-if="exams.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
         <EmptyState title="Aucun exam" hint="Crée ton premier exam à gauche, ou importe un JSON." />
       </div>
 
-      <div v-else class="list">
-        <div v-for="e in exams" :key="e.id" class="card">
-          <div class="row">
-            <div>
-              <h3 style="margin:0">{{ e.title }}</h3>
-              <p class="small" style="margin:4px 0 0 0">
-                {{ counts[e.id] ?? 0 }} questions
-                <span v-if="e.durationSeconds"> • Durée: {{ Math.round(e.durationSeconds / 60) }} min</span>
-              </p>
-            </div>
-            <div class="row" style="gap:8px">
-              <button class="btn" @click="editExam(e.id)">Éditer</button>
-              <button class="btn danger" @click="removeExam(e.id)">Supprimer</button>
+      <div v-else class="scrollY">
+        <div class="list">
+          <div v-for="e in exams" :key="e.id" class="card">
+            <div class="row">
+              <div>
+                <h3 class="m-0">{{ e.title }}</h3>
+                <p class="small mt-1">
+                  {{ counts[e.id] ?? 0 }} questions
+                  <span v-if="e.durationSeconds"> • Durée: {{ Math.round(e.durationSeconds / 60) }} min</span>
+                </p>
+              </div>
+              <div class="row" style="gap:8px">
+                <button class="btn" @click="editExam(e.id)">Éditer</button>
+                <button class="btn danger" @click="removeExam(e.id)">Supprimer</button>
+              </div>
             </div>
           </div>
         </div>

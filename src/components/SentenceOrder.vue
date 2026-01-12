@@ -49,12 +49,13 @@ function unpick(index: number) {
 </script>
 
 <template>
-  <div class="card" style="border-radius: 18px;">
-    <div class="small" style="margin-bottom:8px;">Mets les mots dans le bon ordre (S-P-O-K).</div>
+  <div class="card">
+    <!-- ⚠️ Vue n'accepte pas deux attributs `class` : on fusionne. -->
+    <div class="small mb-2">Mets les mots dans le bon ordre (S-P-O-K).</div>
 
     <div class="small">Ta réponse</div>
-    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;">
-      <button v-for="(t, i) in answer" :key="i" class="btn" @click="unpick(i)" style="padding:8px 10px;">
+    <div class="flex flex-wrap gap-2 mt-2">
+      <button v-for="(t, i) in answer" :key="i" class="btn" @click="unpick(i)" >
         {{ t }}
       </button>
       <span v-if="answer.length === 0" class="small">Clique les mots ci-dessous…</span>
@@ -63,8 +64,8 @@ function unpick(index: number) {
     <div class="hr"></div>
 
     <div class="small">Mots (désordre)</div>
-    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;">
-      <button v-for="(t, i) in remaining" :key="i" class="btn" @click="pick(t)" style="padding:8px 10px;">
+    <div class="flex flex-wrap gap-2 mt-2">
+      <button v-for="(t, i) in remaining" :key="i" class="btn" @click="pick(t)" >
         {{ t }}
       </button>
     </div>

@@ -126,91 +126,97 @@ onMounted(load);
 </script>
 
 <template>
-  <div v-if="!deck">
-    <EmptyState title="Deck introuvable" hint="Retourne à la liste des decks." />
-    <div class="row" style="margin-top:12px">
-      <button class="btn" @click="goBack">Retour</button>
-    </div>
-  </div>
-
-  <div v-else class="grid cols-2">
-    <div class="card">
-      <h2>Éditer deck</h2>
-
-      <label class="small">Titre</label>
-      <input class="input" v-model="deckTitle" />
-
-      <div class="row" style="margin-top:8px; gap:10px">
-        <div style="flex:1">
-          <label class="small">De</label>
-          <input class="input" v-model="deckFrom" />
-        </div>
-        <div style="flex:1">
-          <label class="small">Vers</label>
-          <input class="input" v-model="deckTo" />
-        </div>
-      </div>
-
-      <div class="row" style="margin-top:12px">
-        <button class="btn" @click="saveDeck">Enregistrer</button>
+  <div class="page">
+    <div v-if="!deck">
+      <EmptyState title="Deck introuvable" hint="Retourne à la liste des decks." />
+      <div class="row mt-3">
         <button class="btn" @click="goBack">Retour</button>
       </div>
-
-      <div class="hr"></div>
-
-      <h3>Ajouter un item</h3>
-      <label class="small">Terme</label>
-      <input class="input" v-model="term" placeholder="ex: makan" />
-      <label class="small" style="margin-top:8px; display:block">Définition</label>
-      <input class="input" v-model="definition" placeholder="ex: manger" />
-      <label class="small" style="margin-top:8px; display:block">Tags (virgules)</label>
-      <input class="input" v-model="tagsText" placeholder="vacances, verbe" />
-
-      <div class="row" style="margin-top:12px">
-        <button class="btn ok" @click="addItem">Ajouter</button>
-      </div>
-
-      <div v-if="msg" style="margin-top:12px">
-        <ConfirmBar :message="msg.text" :kind="msg.kind" />
-      </div>
     </div>
 
-    <div>
-      <h2>Items ({{ items.length }})</h2>
-      <div v-if="items.length === 0">
-        <EmptyState title="Aucun item" hint="Ajoute ton premier item à gauche." />
+    <div v-else class="editGrid">
+      <div class="card">
+        <h2>Éditer deck</h2>
+
+        <label class="small">Titre</label>
+        <input class="input" v-model="deckTitle" />
+
+        <div class="row mt-2 gap-2.5">
+          <div class="flex-1">
+            <label class="small">De</label>
+            <input class="input" v-model="deckFrom" />
+          </div>
+          <div class="flex-1">
+            <label class="small">Vers</label>
+            <input class="input" v-model="deckTo" />
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <button class="btn" @click="saveDeck">Enregistrer</button>
+          <button class="btn" @click="goBack">Retour</button>
+        </div>
+
+        <div class="hr"></div>
+
+        <h3>Ajouter un item</h3>
+        <label class="small">Terme</label>
+        <input class="input" v-model="term" placeholder="ex: makan" />
+        <label class="small mt-2 block">Définition</label>
+        <input class="input" v-model="definition" placeholder="ex: manger" />
+        <label class="small mt-2 block">Tags (virgules)</label>
+        <input class="input" v-model="tagsText" placeholder="vacances, verbe" />
+
+        <div class="row mt-3">
+          <button class="btn ok" @click="addItem">Ajouter</button>
+        </div>
+
+        <div v-if="msg" class="mt-3">
+          <ConfirmBar :message="msg.text" :kind="msg.kind" />
+        </div>
       </div>
 
-      <div v-else class="list">
-        <div v-for="it in items" :key="it.id" class="card">
-          <div class="row">
-            <div>
-              <h3 style="margin:0">{{ it.term }} → {{ it.definition }}</h3>
-              <p class="small" style="margin:4px 0 0 0">{{ (it.tags ?? []).join(", ") }}</p>
+      <div class="card cardFill">
+        <h2 class="m-0">Items ({{ items.length }})</h2>
+        <div class="hr"></div>
+
+        <div v-if="items.length === 0">
+          <EmptyState title="Aucun item" hint="Ajoute ton premier item à gauche." />
+        </div>
+
+        <div v-else class="scrollY">
+          <div class="list">
+            <div v-for="it in items" :key="it.id" class="card">
+            <div class="row">
+              <div>
+                <h3 class="m-0">{{ it.term }} → {{ it.definition }}</h3>
+                <p class="small mt-1 mb-0">{{ (it.tags ?? []).join(", ") }}</p>
+              </div>
+              <div class="row gap-2">
+                <button class="btn" @click="openEdit(it)">Éditer</button>
+                <button class="btn danger" @click="removeItem(it.id)">Supprimer</button>
+              </div>
             </div>
-            <div class="row" style="gap:8px">
-              <button class="btn" @click="openEdit(it)">Éditer</button>
-              <button class="btn danger" @click="removeItem(it.id)">Supprimer</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <BaseModal :open="editOpen" title="Modifier un item" @close="editOpen = false">
-    <div class="card" style="margin:0">
-      <label class="small">Terme</label>
-      <input class="input" v-model="editTerm" />
-      <label class="small" style="margin-top:8px; display:block">Définition</label>
-      <input class="input" v-model="editDefinition" />
-      <label class="small" style="margin-top:8px; display:block">Tags (virgules)</label>
-      <input class="input" v-model="editTagsText" />
+    <BaseModal :open="editOpen" title="Modifier un item" @close="editOpen = false">
+      <div class="card" style="margin:0">
+        <label class="small">Terme</label>
+        <input class="input" v-model="editTerm" />
+        <label class="small mt-2 block">Définition</label>
+        <input class="input" v-model="editDefinition" />
+        <label class="small mt-2 block">Tags (virgules)</label>
+        <input class="input" v-model="editTagsText" />
 
-      <div class="row" style="margin-top:12px">
-        <button class="btn" @click="saveEdit">Enregistrer</button>
-        <button class="btn" @click="editOpen = false">Annuler</button>
+        <div class="row mt-3">
+          <button class="btn" @click="saveEdit">Enregistrer</button>
+          <button class="btn" @click="editOpen = false">Annuler</button>
+        </div>
       </div>
-    </div>
-  </BaseModal>
+    </BaseModal>
+  </div>
 </template>

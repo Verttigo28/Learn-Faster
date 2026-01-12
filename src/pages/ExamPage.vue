@@ -168,95 +168,99 @@ onMounted(load);
 </script>
 
 <template>
-  <div v-if="!exam">
-    <EmptyState title="Exam introuvable" />
-  </div>
-
-  <div v-else-if="questions.length === 0">
-    <EmptyState title="Exam vide" hint="Importe des questions dans cet exam." />
-  </div>
-
-  <div v-else class="card">
-    <div class="row">
-      <div>
-        <h2 style="margin:0">{{ exam.title }}</h2>
-        <p class="small" style="margin:4px 0 0 0">Question {{ idx + 1 }} / {{ questions.length }}</p>
-      </div>
-
-      <div class="row">
-        <span v-if="remainingSeconds !== null" class="badge">
-          ⏱ {{ formatDuration(remainingSeconds) }}
-        </span>
-        <router-link class="btn" to="/">Quitter</router-link>
-      </div>
+  <div class="sessionPage">
+    <div v-if="!exam" class="card sessionCard">
+      <EmptyState title="Exam introuvable" />
     </div>
 
-    <div class="hr"></div>
-
-    <div class="card" style="border-radius: 18px">
-      <h3 style="margin-top:0">{{ current.prompt }}</h3>
-
-      <div class="list">
-        <button
-          v-for="c in current.choices"
-          :key="c.id"
-          class="btn"
-          :class="{
-            primary: selected[current.id] === c.id && !finished,
-            ok: finished && c.correct,
-            danger: finished && selected[current.id] === c.id && !c.correct
-          }"
-          style="text-align:left"
-          @click="choose(c.id)"
-        >
-          {{ c.text }}
-        </button>
-      </div>
-
-      <p v-if="finished && current.explanation" class="small" style="margin-top:10px">
-        💡 {{ current.explanation }}
-      </p>
+    <div v-else-if="questions.length === 0" class="card sessionCard">
+      <EmptyState title="Exam vide" hint="Importe des questions dans cet exam." />
     </div>
 
-    <div class="row" style="margin-top:12px">
-      <button class="btn" @click="prev" :disabled="idx === 0">← Précédent</button>
-      <button class="btn" @click="next" :disabled="idx === questions.length - 1">Suivant →</button>
-      <button class="btn ok" @click="finish" :disabled="finished">Terminer</button>
-    </div>
-
-    <p class="small" style="margin-top:10px">
-      Réponses: {{ Object.keys(selected).length }} / {{ questions.length }}
-    </p>
-  </div>
-
-  <BaseModal :open="showResultModal" title="Résultat de l'exam" @close="closeModal">
-    <div v-if="lastResult" class="card" style="margin:0">
+    <div v-else class="sessionCard">
       <div class="row">
         <div>
-          <div class="small">Score</div>
-          <div class="kpi">{{ percent(lastResult.score) }}</div>
+          <h2 class="m-0">{{ exam.title }}</h2>
+          <p class="small mt-1">Question {{ idx + 1 }} / {{ questions.length }}</p>
         </div>
-        <div>
-          <div class="small">Bonnes réponses</div>
-          <div class="kpi">{{ lastResult.correct }}/{{ lastResult.total }}</div>
-        </div>
-        <div>
-          <div class="small">Durée</div>
-          <div class="kpi">{{ formatDuration(lastResult.durationSeconds) }}</div>
+
+        <div class="row">
+          <span v-if="remainingSeconds !== null" class="badge">⏱ {{ formatDuration(remainingSeconds) }}</span>
+          <router-link class="btn" to="/">Quitter</router-link>
         </div>
       </div>
 
       <div class="hr"></div>
 
-      <div class="row">
-        <button class="btn" @click="goStats">Voir les stats</button>
-        <button class="btn" @click="goBack">Retour accueil</button>
-        <button class="btn ok" @click="closeModal">Revoir les corrections</button>
+      <!-- ✅ Scroll uniquement dans cette zone -->
+      <div class="sessionBody">
+        <div class="card rounded-[18px]">
+          <h3 class="mt-0">{{ current.prompt }}</h3>
+
+          <div class="list">
+            <button
+              v-for="c in current.choices"
+              :key="c.id"
+              class="btn justify-start text-left"
+              :class="{
+                primary: selected[current.id] === c.id && !finished,
+                ok: finished && c.correct,
+                danger: finished && selected[current.id] === c.id && !c.correct
+              }"
+              @click="choose(c.id)"
+            >
+              {{ c.text }}
+            </button>
+          </div>
+
+          <p v-if="finished && current.explanation" class="small mt-2.5">
+            💡 {{ current.explanation }}
+          </p>
+        </div>
       </div>
 
-      <p class="small" style="margin-top:10px">
-        Les corrections restent affichées dans l’exam (bonnes réponses en vert).
-      </p>
+      <div class="sessionFooter">
+        <div class="row mt-3">
+          <button class="btn" @click="prev" :disabled="idx === 0">← Précédent</button>
+          <button class="btn" @click="next" :disabled="idx === questions.length - 1">Suivant →</button>
+          <button class="btn ok" @click="finish" :disabled="finished">Terminer</button>
+        </div>
+
+        <p class="small mt-2.5">
+          Réponses: {{ Object.keys(selected).length }} / {{ questions.length }}
+        </p>
+      </div>
     </div>
-  </BaseModal>
+
+    <BaseModal :open="showResultModal" title="Résultat de l'exam" @close="closeModal">
+      <div v-if="lastResult" class="card" style="margin:0">
+        <div class="row">
+          <div>
+            <div class="small">Score</div>
+            <div class="kpi">{{ percent(lastResult.score) }}</div>
+          </div>
+          <div>
+            <div class="small">Bonnes réponses</div>
+            <div class="kpi">{{ lastResult.correct }}/{{ lastResult.total }}</div>
+          </div>
+          <div>
+            <div class="small">Durée</div>
+            <div class="kpi">{{ formatDuration(lastResult.durationSeconds) }}</div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="row">
+          <button class="btn" @click="goStats">Voir les stats</button>
+          <button class="btn" @click="goBack">Retour accueil</button>
+          <button class="btn ok" @click="closeModal">Revoir les corrections</button>
+        </div>
+
+        <p class="small mt-2.5">
+          Les corrections restent affichées dans l’exam (bonnes réponses en vert).
+        </p>
+      </div>
+    </BaseModal>
+  </div>
 </template>

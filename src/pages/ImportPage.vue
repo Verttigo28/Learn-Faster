@@ -129,8 +129,8 @@ const exampleBundle = `{
 </script>
 
 <template>
-  <div class="grid cols-2">
-    <div class="card">
+  <div class="importPage">
+    <div class="card cardFill">
       <h2>Importer un JSON</h2>
       <p class="small">
         Types : <b>vocab_deck</b>, <b>qcm_exam</b>, <b>sentence_deck</b>, <b>revisions_bundle</b>.
@@ -139,11 +139,11 @@ const exampleBundle = `{
       <!-- ✅ Upload JSON (bouton stylé) -->
       <div class="fileRow">
         <input
-            ref="fileInput"
-            class="fileInput"
-            type="file"
-            accept="application/json,.json"
-            @change="onFile"
+          ref="fileInput"
+          class="fileInput"
+          type="file"
+          accept="application/json,.json"
+          @change="onFile"
         />
 
         <button class="btn" type="button" @click="fileInput?.click()">
@@ -155,32 +155,33 @@ const exampleBundle = `{
         </div>
       </div>
 
-      <label class="small" style="margin-top:10px; display:block">Importer depuis une URL (JSON)</label>
-      <div class="row" style="gap:10px; flex-wrap:nowrap">
+      <label class="small mt-2.5 block">Importer depuis une URL (JSON)</label>
+      <div class="row gap-2.5 flex-nowrap">
         <input class="input" v-model="url" placeholder="https://.../file.json" />
-        <button class="btn" @click="onImportUrl" style="white-space:nowrap">Importer URL</button>
+        <button class="btn whitespace-nowrap" @click="onImportUrl">Importer URL</button>
       </div>
 
       <div class="hr"></div>
 
       <label class="small">Coller du JSON (optionnel)</label>
+
+      <!-- ✅ Scroll interne (pas de resize qui casse le no-scroll) -->
       <textarea
-          class="input"
-          style="min-height:220px; resize:vertical"
-          v-model="raw"
-          placeholder="Colle ici ton JSON..."
+        class="input flex-1 min-h-0 resize-none"
+        v-model="raw"
+        placeholder="Colle ici ton JSON..."
       ></textarea>
 
-      <div class="row" style="margin-top:10px">
+      <div class="row mt-3">
         <button class="btn primary" @click="onImportClick">Importer le texte</button>
       </div>
 
-      <div style="margin-top:12px" v-if="message">
+      <div class="mt-3" v-if="message">
         <ConfirmBar :message="message.text" :kind="message.kind" />
       </div>
     </div>
 
-    <div class="card">
+    <div class="card cardFill">
       <h2>Exemple export global (bundle)</h2>
       <p class="small">C’est exactement ce que produit le bouton “Exporter mes données (JSON)” sur la Home.</p>
       <pre class="code">{{ exampleBundle }}</pre>
@@ -188,30 +189,3 @@ const exampleBundle = `{
   </div>
 </template>
 
-<style scoped>
-.fileRow{
-  display:flex;
-  gap:10px;
-  align-items:center;
-  flex-wrap:wrap;
-  margin-top: 8px;
-}
-
-.fileInput{
-  display:none; /* cache le bouton natif "Browse..." */
-}
-
-.fileName{
-  opacity:.9;
-}
-
-.code{
-  white-space: pre-wrap;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 12px;
-  padding: 12px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: rgba(0,0,0,.25);
-}
-</style>
