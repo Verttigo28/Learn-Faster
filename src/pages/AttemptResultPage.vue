@@ -23,6 +23,7 @@ const title = computed(() => {
   if (attempt.value.type === "exam") return exam.value?.title ?? `Exam ${attempt.value.refId}`;
   if (attempt.value.type === "vocab_quiz") return deck.value?.title ?? `Deck ${attempt.value.refId}`;
   if (attempt.value.type === "practice") return "Exam (tags)";
+  if (attempt.value.type === "flashcards") return deck.value?.title ?? `Flashcards ${attempt.value.refId}`;
   return "Résultat";
 });
 
@@ -30,7 +31,7 @@ const details = computed<AttemptDetail[]>(() => attempt.value?.meta?.details ?? 
 
 const filtered = computed(() => {
   if (!showOnlyWrong.value) return details.value;
-  return details.value.filter(d => !d.correct);
+  return details.value.filter((d) => !d.correct);
 });
 
 function percent01(x: number) {
@@ -38,10 +39,10 @@ function percent01(x: number) {
 }
 
 function pickedText(d: Extract<AttemptDetail, { kind: "vocab_mcq" | "exam_mcq" }>) {
-  return d.options.find(o => o.id === d.pickedId)?.text ?? "aucune";
+  return d.options.find((o) => o.id === d.pickedId)?.text ?? "aucune";
 }
 function correctText(d: Extract<AttemptDetail, { kind: "vocab_mcq" | "exam_mcq" }>) {
-  return d.options.find(o => o.correct)?.text ?? "(inconnue)";
+  return d.options.find((o) => o.correct)?.text ?? "(inconnue)";
 }
 
 function answerSentence(d: Extract<AttemptDetail, { kind: "sentence_order" }>) {
@@ -72,7 +73,7 @@ async function load() {
   if (attempt.value?.type === "exam") {
     exam.value = (await db.exams.get(attempt.value.refId)) ?? null;
   }
-  if (attempt.value?.type === "vocab_quiz") {
+  if (attempt.value?.type === "vocab_quiz" || attempt.value?.type === "flashcards") {
     deck.value = (await db.vocabDecks.get(attempt.value.refId)) ?? null;
   }
 }
@@ -81,10 +82,6 @@ async function goBack() {
   await router.push("/stats");
 }
 
-/**
- * ✅ Bloque le scroll global (body) sur cette page.
- * La liste interne (resultList) scrolle, mais pas la page entière.
- */
 onMounted(() => {
   document.body.style.overflow = "hidden";
   load();
@@ -160,16 +157,21 @@ onUnmounted(() => {
             <p class="small" style="margin:6px 0 0 0"><b>Correction:</b> {{ correctionSentence(d) }}</p>
           </template>
 
+          <template v-else-if="d.kind === 'flashcard'">
+            <h3 style="margin:10px 0 0 0">{{ d.term }}</h3>
+            <p class="small" style="margin:6px 0 0 0">Réponse: {{ d.definition }}</p>
+            <div class="hr"></div>
+            <p class="small" style="margin:0">
+              <b>Statut:</b> {{ d.known ? "Je sais" : "Je ne sais pas" }}
+            </p>
+          </template>
+
           <template v-else>
             <h3 style="margin:10px 0 0 0">{{ d.prompt }}</h3>
             <div class="hr"></div>
             <p class="small" style="margin:0"><b>Ta réponse:</b> {{ pickedText(d) }}</p>
             <p class="small" style="margin:6px 0 0 0"><b>Bonne réponse:</b> {{ correctText(d) }}</p>
-            <p
-                v-if="d.kind === 'exam_mcq' && d.explanation"
-                class="small"
-                style="margin:6px 0 0 0"
-            >
+            <p v-if="d.kind === 'exam_mcq' && d.explanation" class="small" style="margin:6px 0 0 0">
               <b>Explication:</b> {{ d.explanation }}
             </p>
           </template>
@@ -178,4 +180,3 @@ onUnmounted(() => {
     </div>
   </div>
 </template>
-

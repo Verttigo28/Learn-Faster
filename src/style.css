@@ -4,269 +4,277 @@
 
 /* ------------------------------------------------------------
    Design tokens (RGB)
-   - Format "R G B" pour permettre les /alpha Tailwind (bg-card/70 etc.)
+   Format "R G B" pour permettre les /alpha (bg-card/70 etc.)
 ------------------------------------------------------------ */
 @layer base {
-  :root{
-    --bg: 11 16 32;          /* #0b1020 */
-    --card: 17 26 51;        /* #111a33 */
-    --text: 231 236 255;     /* #e7ecff */
-    --muted: 169 180 228;    /* #a9b4e4 */
-    --accent: 122 162 255;   /* #7aa2ff */
-    --danger: 255 107 107;   /* #ff6b6b */
-    --ok: 61 220 151;        /* #3ddc97 */
-    --border: 255 255 255;   /* base blanche, utilisée avec /alpha */
-  }
+    :root{
+        --bg: 11 16 32;
+        --card: 17 26 51;
+        --text: 231 236 255;
+        --muted: 169 180 228;
+        --accent: 122 162 255;
+        --danger: 255 107 107;
+        --ok: 61 220 151;
+        --border: 255 255 255;
+    }
 
-  *{ box-sizing: border-box; }
-  html,body,#app{ height: 100%; }
+    *{ box-sizing: border-box; }
+    html, body, #app { height: 100%; }
 
-  /* évite tout fond blanc injecté par un webview/UA sur l'élément root */
-  #app{ background: transparent; }
+    /* évite un fond blanc injecté par UA/webview */
+    #app{ background: transparent; }
 
-  html{
-    background-color: rgb(var(--bg));
-    background-image:
-            radial-gradient(1200px 800px at 20% 10%, rgb(var(--accent) / 0.25), transparent 60%),
-            radial-gradient(900px 700px at 90% 10%, rgb(var(--ok) / 0.18), transparent 55%);
-    background-attachment: fixed;
-  }
+    html{
+        background-color: rgb(var(--bg));
+        background-image:
+                radial-gradient(1200px 800px at 20% 10%, rgb(var(--accent) / 0.25), transparent 60%),
+                radial-gradient(900px 700px at 90% 10%, rgb(var(--ok) / 0.18), transparent 55%);
+        background-attachment: fixed;
+    }
 
+    body{
+        margin: 0;
+        overflow: hidden; /* ✅ pas de scroll global */
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+        background-color: rgb(var(--bg));
+        background-image:
+                radial-gradient(1200px 800px at 20% 10%, rgb(var(--accent) / 0.25), transparent 60%),
+                radial-gradient(900px 700px at 90% 10%, rgb(var(--ok) / 0.18), transparent 55%);
+        background-attachment: fixed;
+        color: rgb(var(--text));
+    }
 
-  body{
-    margin: 0;
-    overflow: hidden; /* ✅ pas de scroll global : seules les zones internes scrollent */
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-    background-color: rgb(var(--bg));
-    background-image:
-            radial-gradient(1200px 800px at 20% 10%, rgb(var(--accent) / 0.25), transparent 60%),
-            radial-gradient(900px 700px at 90% 10%, rgb(var(--ok) / 0.18), transparent 55%);
-    background-attachment: fixed;
-    color: rgb(var(--text));
-    overflow: hidden; /* pas de scroll global */
-  }
+    a{ color: inherit; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
 
-  a{ color: inherit; text-decoration: none; }
-  a:hover{ text-decoration: underline; }
-
-  /* utile ponctuellement si tu veux re-bloquer (Stats/Modal etc.) */
-  html.no-scroll, body.no-scroll{ overflow: hidden; }
+    html.no-scroll, body.no-scroll{ overflow: hidden; }
 }
 
-/* ------------------------------------------------------------
-   Composants globaux (legacy -> Tailwind)
------------------------------------------------------------- */
 @layer components{
-  /* Layout global : header fixe (dans le flux) + contenu plein écran */
-  .appShell{
-    @apply h-[100dvh] flex flex-col overflow-hidden;
+    /* --------------------------------------------------------
+       Layout global
+    -------------------------------------------------------- */
     .appShell{
-      background-color: rgb(var(--bg));
-      background-image:
-              radial-gradient(1200px 800px at 20% 10%, rgb(var(--accent) / 0.25), transparent 60%),
-              radial-gradient(900px 700px at 90% 10%, rgb(var(--ok) / 0.18), transparent 55%);
-      background-attachment: fixed;
-    }
-  }
-  .appMain{ @apply flex-1 min-h-0 overflow-hidden; }
-  .container{ @apply w-full max-w-[980px] mx-auto p-4; }
-  .appContainer{ @apply h-full min-h-0 overflow-hidden; }
-
-  /* Tout composant/page routée doit pouvoir remplir la hauteur dispo */
-  .appContainer > *{ height: 100%; min-height: 0; }
-
-  .nav{
-    @apply flex-none flex items-center justify-between gap-3 px-4 py-3
-           border-b border-border/10 bg-bg/70 backdrop-blur;
-  }
-  .nav .left{ @apply flex items-center gap-3; }
-  .brand{ @apply font-extrabold tracking-[.2px]; }
-
-  .pills{ @apply flex flex-wrap gap-2; }
-  /* Pills (menu) : identique au style initial (pas de fond, juste border + texte) */
-  .pill{ @apply px-[10px] py-2 rounded-full border border-border/10 text-muted; background: transparent; }
-  .pill:hover{ @apply border-border/25 text-text; text-decoration: none; }
-  .pill.active{ @apply border-accent/70 text-text; }
-
-  /* ⚠️ Tailwind a déjà l'utilitaire `.grid`.
-     Si on fait `.grid{ @apply grid }`, ça crée une dépendance circulaire.
-     On garde ta classe legacy `.grid` en CSS natif + @apply pour le gap. */
-  .grid{ display: grid; @apply gap-3; }
-  /* Mobile: 1 col, Tablet+: 2 cols */
-  .grid.cols-2{ @apply grid-cols-1 tablet:grid-cols-2; }
-
-  .card{ @apply rounded-2xl border border-border/10 bg-card/70 p-4; }
-  .card h2, .card h3{ @apply mb-2.5; }
-  .card p{ @apply my-1.5 text-muted; }
-
-  .row{ @apply flex items-center justify-between flex-wrap gap-2.5; }
-  .list{ @apply flex flex-col gap-2.5; }
-
-  .btn{
-    font: inherit;
-    line-height: 1;
-    appearance: none;
-    -webkit-appearance: none;
-    text-decoration: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-
-    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-border/10 bg-white/5
-           px-3 py-2 text-sm font-medium text-text whitespace-nowrap;
-  }
-  .btn:hover{ @apply border-accent/60; }
-  .btn.primary{ @apply border-accent/70 bg-accent/10; }
-  .btn.ok{ @apply border-ok/60 bg-ok/10; }
-  .btn.danger{ @apply border-danger/60 bg-danger/10; }
-  a.btn, a.btn:visited{ @apply text-inherit no-underline; }
-  a.btn:hover{ @apply no-underline; }
-  .btn:disabled, .btn[aria-disabled="true"]{ @apply opacity-55 cursor-not-allowed pointer-events-none; }
-
-  .input{ @apply w-full rounded-xl border border-border/10 bg-black/20 px-3 py-2 text-text; }
-
-  .small{ @apply text-[13px] text-muted; }
-  .kpi{ @apply text-[26px] font-extrabold; }
-  .hr{ @apply h-px bg-border/10 my-2.5; }
-
-  .badge{ @apply inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border border-border/10 text-muted; }
-
-  button.pill{ @apply bg-transparent cursor-pointer; }
-  button.pill:hover{ text-decoration: none; }
-
-  /* Helpers layout */
-  .page{ @apply h-full min-h-0 overflow-hidden; }
-  .cardFill{ @apply flex flex-col min-h-0 overflow-hidden; }
-  /* Scroll interne (remplace le scroll global) */
-  .scrollY{
-    @apply flex-1 overflow-auto min-h-0 pr-1.5;
-    /* ✅ important sur mobile (Capacitor/iOS/Android) pour garder le scroll fluide */
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
-    max-height: 100%;
-  }
-
-  /* --------------------------------------------------------
-     Modal (marge bas ~5vh + scroll interne)
-  -------------------------------------------------------- */
-  .modal-backdrop{
-    @apply fixed inset-0 z-50 flex items-end justify-center bg-black/60
-           px-4 pt-10 pb-[5vh]
-           tablet:items-center tablet:pt-6 tablet:pb-6;
-  }
-  .modal,
-  .modal-card{
-    @apply w-full max-w-lg max-h-[90dvh] overflow-auto rounded-2xl
-           border border-border/10 bg-card/95 backdrop-blur p-4;
-  }
-  .modal-header{ @apply flex items-center justify-between gap-2.5 mb-2.5; }
-  .modal-title{ @apply m-0; }
-  .modal-body{ @apply text-text; }
-
-  /* --------------------------------------------------------
-     HomePage (full height, pas de scroll global)
-  -------------------------------------------------------- */
-  .home{ @apply h-full min-h-0 overflow-hidden flex flex-col gap-3; }
-    .home .top{
-        @apply flex-none grid gap-3 tablet:grid-cols-2 items-stretch;
-    }
-    .home .top > .card{
-        @apply h-full; /* ✅ les 2 cards prennent la même hauteur */
-    }
-  .home .head{ @apply flex items-start justify-between gap-2.5; }
-  .home .title{ @apply text-lg font-semibold; }
-  .home .sub{ @apply text-muted; }
-
-    .home .kpis{
-        @apply grid grid-cols-2 tablet:grid-cols-4 gap-2.5 mb-3; /* ✅ marge bottom */
+        @apply h-[100dvh] flex flex-col overflow-hidden;
+        background-color: rgb(var(--bg));
+        background-image:
+                radial-gradient(1200px 800px at 20% 10%, rgb(var(--accent) / 0.25), transparent 60%),
+                radial-gradient(900px 700px at 90% 10%, rgb(var(--ok) / 0.18), transparent 55%);
+        background-attachment: fixed;
     }
 
-    /* ✅ KPI card centré */
+    .appMain{ @apply flex-1 min-h-0 overflow-hidden; }
+    .container{ @apply w-full max-w-[980px] mx-auto p-4; }
+    .appContainer{ @apply h-full min-h-0 overflow-hidden; }
+    .appContainer > *{ height: 100%; min-height: 0; }
+
+    .nav{
+        @apply flex-none flex items-center justify-between gap-3 px-4 py-3
+        border-b border-border/10 bg-bg/70 backdrop-blur;
+    }
+    .nav .left{ @apply flex items-center gap-3; }
+    .brand{ @apply font-extrabold tracking-[.2px]; }
+
+    .pills{ @apply flex flex-wrap gap-2; }
+    .pill{ @apply px-[10px] py-2 rounded-full border border-border/10 text-muted; background: transparent; }
+    .pill:hover{ @apply border-border/25 text-text; text-decoration: none; }
+    .pill.active{ @apply border-accent/70 text-text; }
+
+    /* Legacy grid (évite @apply grid sur .grid => dépendance circulaire) */
+    .grid{ display: grid; @apply gap-3; }
+    .grid.cols-2{ @apply grid-cols-1 tablet:grid-cols-2; }
+
+    .card{ @apply rounded-2xl border border-border/10 bg-card/70 p-4; }
+    .card h2, .card h3{ @apply mb-1 leading-tight; }
+    .card p{ @apply my-1.5 text-muted; }
+
+    .row{ @apply flex items-center justify-between flex-wrap gap-2.5; }
+    .list{ @apply flex flex-col gap-2.5; }
+
+    .btn{
+        font: inherit;
+        line-height: 1;
+        appearance: none;
+        -webkit-appearance: none;
+        text-decoration: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+
+        @apply inline-flex items-center justify-center gap-2 rounded-xl border border-border/10 bg-white/5
+        px-3 py-2 text-sm font-medium text-text whitespace-nowrap;
+    }
+    .btn:hover{ @apply border-accent/60; }
+    .btn.primary{ @apply border-accent/70 bg-accent/10; }
+    .btn.ok{ @apply border-ok/60 bg-ok/10; }
+    .btn.danger{ @apply border-danger/60 bg-danger/10; }
+    a.btn, a.btn:visited{ @apply text-inherit no-underline; }
+    a.btn:hover{ @apply no-underline; }
+    .btn:disabled, .btn[aria-disabled="true"]{ @apply opacity-55 cursor-not-allowed pointer-events-none; }
+
+    .input{ @apply w-full rounded-xl border border-border/10 bg-black/20 px-3 py-2 text-text; }
+
+    .small{ @apply text-[13px] text-muted; }
+    .kpi{ @apply text-[26px] font-extrabold; }
+    .hr{ @apply h-px bg-border/10 my-2.5; }
+
+    .badge{ @apply inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border border-border/10 text-muted; }
+    button.pill{ @apply bg-transparent cursor-pointer; }
+    button.pill:hover{ text-decoration: none; }
+
+    /* Helpers layout */
+    .page{ @apply h-full min-h-0 overflow-hidden; }
+    .cardFill{ @apply flex flex-col min-h-0 overflow-hidden; }
+    .scrollY{
+        @apply flex-1 overflow-auto min-h-0 pr-1.5;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        max-height: 100%;
+    }
+
+    /* --------------------------------------------------------
+       Modal (marge bas ~5vh + scroll interne)
+    -------------------------------------------------------- */
+    .modal-backdrop{
+        @apply fixed inset-0 z-50 flex items-end justify-center bg-black/60
+        px-4 pt-10 pb-[5vh]
+        tablet:items-center tablet:pt-6 tablet:pb-6;
+    }
+    .modal, .modal-card{
+        @apply w-full max-w-lg max-h-[90dvh] overflow-auto rounded-2xl
+        border border-border/10 bg-card/95 backdrop-blur p-4;
+    }
+    .modal-header{ @apply flex items-center justify-between gap-2.5 mb-2.5; }
+    .modal-title{ @apply m-0; }
+    .modal-body{ @apply text-text; }
+
+    /* --------------------------------------------------------
+       HomePage
+    -------------------------------------------------------- */
+    .home{ @apply h-full min-h-0 overflow-hidden flex flex-col gap-3; }
+
+    /* top : 2 cards même hauteur */
+    .home .top{ @apply flex-none grid gap-3 tablet:grid-cols-2 items-stretch; }
+    .home .top > .card{ @apply h-full; }
+
+    .home .head{
+        @apply flex items-center justify-between gap-2.5; /* ✅ plus items-start */
+    }
+
+    /* s’assure que le h2 n’ajoute pas de décalage vertical */
+    .home .head .title{ @apply m-0; }
+    .home .head .sub{ @apply m-0; }
+    .home .title{ @apply text-lg font-semibold; }
+    .home .sub{ @apply text-muted; }
+
+    /* KPIs : marge bottom + center */
+    .home .kpis{ @apply grid grid-cols-2 tablet:grid-cols-4 gap-2.5 mb-3 mt-1; }
     .home .kpiBox{
-        @apply rounded-2xl border border-border/10 bg-black/10 p-3
+        @apply rounded-2xl border border-border/10 bg-black/10 p-1
         flex flex-col items-center justify-center text-center;
     }
-
-    /* Optionnel: label un peu plus joli */
     .home .kpiBox .small{ @apply text-muted; }
 
+    .home .actionsGrid{ @apply grid grid-cols-2 gap-2.5; }
+    .home .startGrid{ @apply grid grid-cols-1 gap-2.5 tablet:grid-cols-2 mt-1; }
+    .home .actionBtn, .home .startBtn{ @apply w-full justify-center text-center py-2 rounded-2xl; }
+    .home .reset{ @apply col-span-full; }
+    .home .exportHint{ @apply col-span-full; }
 
-  .home .actionsGrid{ @apply grid grid-cols-2 gap-2.5; }
-  .home .startGrid{ @apply grid grid-cols-1 gap-2.5 tablet:grid-cols-2; }
-  .home .actionBtn,
-  .home .startBtn{ @apply w-full justify-center text-center py-3 rounded-2xl; }
-  .home .reset{ @apply col-span-full; }
-  .home .exportHint{ @apply col-span-full; }
+    /* bottom : scroll uniquement dans les listes */
+    .home .bottom{ @apply flex-1 min-h-0 grid gap-3 tablet:grid-cols-2 overflow-hidden; }
+    .home .bottom > section{ @apply min-h-0 overflow-hidden flex flex-col; }
+    .home .sectionTitle{ @apply flex items-center justify-between mb-2; }
+    .home .listGrid{
+        @apply flex-1 min-h-0 overflow-auto pr-1.5 grid gap-3;
+        align-content: start; /* ✅ empêche l'étirement vertical des rows => plus de "trous" */
+    }
 
-  .home .bottom{ @apply flex-1 min-h-0 grid gap-3 tablet:grid-cols-2 overflow-hidden; }
-  .home .bottom > section{ @apply min-h-0 overflow-hidden flex flex-col; }
-  .home .sectionTitle{ @apply flex items-center justify-between mb-2; }
-  .home .listGrid{ @apply flex-1 min-h-0 overflow-auto pr-1.5 grid gap-3; }
+    /* Items : même hauteur, footer collé bas, titre clampé */
+    .home .itemCard{
+        @apply flex flex-col justify-between no-underline hover:no-underline;
+        height: 124px; /* ✅ plus haut => plus de titre coupé */
+    }
+    @media (min-width: 768px){
+        .home .itemCard{ height: 132px; }
+    }
 
-  .home .itemCard{ @apply no-underline hover:no-underline; }
-  .home .itemTitle{ @apply text-base font-semibold; }
-  .home .itemFooter{ @apply mt-2 flex items-center justify-end gap-2; }
-  /* --------------------------------------------------------
-     Practice / Exam / Flashcards : card plein écran + body scrolle
-  -------------------------------------------------------- */
-  .sessionPage{ @apply page flex flex-col; }
-  .sessionCard{ @apply card cardFill; }
-  .sessionBody{ @apply flex-1 min-h-0 scrollY; }
-  .sessionFooter{ @apply flex-none mt-3; }
+    .home .itemTitle{
+        @apply text-base font-semibold leading-snug;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;      /* ✅ accepte titres longs sans couper */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 
-  /* --------------------------------------------------------
-     DeckPage
-  -------------------------------------------------------- */
-  /* Grids plein écran : 1 seule row (minmax(0,1fr)) pour permettre aux enfants de scroller */
-  /* 2 panneaux : en mobile on stack (2 rows), en tablet+ on passe en 2 colonnes */
-  .deckGrid{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 max-w-[1100px] mx-auto items-stretch; }
-  .deckCard{ @apply card cardFill; }
-  .previewCard{ @apply mt-3 flex-1 min-h-0 flex flex-col overflow-hidden; }
-  .previewList{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
+    .home .itemMeta{ @apply text-muted whitespace-nowrap text-sm font-medium; }
 
-  /* ExamsPage (générateur) */
-  .examsPage{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 max-w-[1100px] mx-auto items-stretch; }
-  .modalCard, .modalCardRight{ @apply card cardFill; }
+    .home .itemFooter{ @apply mt-auto flex items-center justify-end gap-2; }
 
-  .tagBox{
-    @apply mt-2 rounded-2xl border border-border/10 bg-black/10 p-3
-    overflow-auto;
-    max-height: clamp(180px, 35vh, 360px); /* ✅ évite que la liste “prenne tout” */
-    -webkit-overflow-scrolling: touch;
-  }
-  @media (min-width: 768px){
-    .tagBox{ max-height: clamp(150px, 28vh, 300px); }
-  }
+    /* --------------------------------------------------------
+       Practice / Exam / Flashcards
+    -------------------------------------------------------- */
+    .sessionPage{ @apply page flex flex-col; }
+    .sessionCard{ @apply card cardFill; }
+    .sessionBody{ @apply flex-1 min-h-0 scrollY; }
+    .sessionFooter{ @apply flex-none mt-3; }
 
+    /* --------------------------------------------------------
+       DeckPage
+    -------------------------------------------------------- */
+    .deckGrid{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 max-w-[1100px] mx-auto items-stretch; }
+    .deckCard{ @apply card cardFill; }
+    .previewCard{ @apply mt-3 flex-1 min-h-0 flex flex-col overflow-hidden; }
+    .previewList{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
 
+    /* --------------------------------------------------------
+       ExamsPage (générateur)
+    -------------------------------------------------------- */
+    .examsPage{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 max-w-[1100px] mx-auto items-stretch; }
+    .modalCard, .modalCardRight{ @apply card cardFill; }
 
+    .tagBox{
+        @apply mt-2 rounded-2xl border border-border/10 bg-black/10 p-3 overflow-auto;
+        max-height: clamp(160px, 31.5vh, 324px);
+        -webkit-overflow-scrolling: touch;
+    }
+    @media (min-width: 768px){
+        .tagBox{ max-height: clamp(150px, 28vh, 300px); }
+    }
 
-  /* ImportPage */
-  .importPage{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 items-stretch; }
-  .fileRow{ @apply flex items-center flex-wrap gap-2.5 mt-2; }
-  .fileInput{ @apply hidden; }
-  .fileName{ @apply opacity-90; }
-  .code{
-    @apply flex-1 min-h-0 overflow-auto whitespace-pre-wrap rounded-2xl border border-border/10 bg-black/25 p-3 text-xs;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
+    /* --------------------------------------------------------
+       ImportPage
+    -------------------------------------------------------- */
+    .importPage{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 items-stretch; }
+    .fileRow{ @apply flex items-center flex-wrap gap-2.5 mt-2; }
+    .fileInput{ @apply hidden; }
+    .fileName{ @apply opacity-90; }
+    .code{
+        @apply flex-1 min-h-0 overflow-auto whitespace-pre-wrap rounded-2xl border border-border/10 bg-black/25 p-3 text-xs;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
 
-  /* Manage pages */
-  .manageGrid{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 max-w-[1100px] mx-auto items-stretch; }
-  .manageGrid > div{ @apply min-h-0 overflow-hidden flex flex-col; }
-  .manageGrid .list{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
+    /* --------------------------------------------------------
+       Manage / Edit pages
+    -------------------------------------------------------- */
+    .manageGrid{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 max-w-[1100px] mx-auto items-stretch; }
+    .manageGrid > div{ @apply min-h-0 overflow-hidden flex flex-col; }
+    .manageGrid .list{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
 
-  /* Edit pages (VocabEdit/QcmEdit) : colonne droite scroll */
-  .editGrid{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 items-stretch; }
-  .editGrid > div{ @apply min-h-0 overflow-hidden flex flex-col; }
-  .editGrid .list{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
+    .editGrid{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 items-stretch; }
+    .editGrid > div{ @apply min-h-0 overflow-hidden flex flex-col; }
+    .editGrid .list{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
 
-  /* AttemptResultPage */
-  .attemptPage{ @apply page flex justify-center items-stretch; }
-  .resultCard{ @apply card cardFill w-full max-w-[980px]; }
-  .resultList{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
+    /* --------------------------------------------------------
+       AttemptResultPage
+    -------------------------------------------------------- */
+    .attemptPage{ @apply page flex justify-center items-stretch; }
+    .resultCard{ @apply card cardFill w-full max-w-[980px]; }
+    .resultList{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
 
-  /* StatsPage */
-  .statsPage{ @apply page max-w-[1100px] mx-auto flex flex-col gap-3; }
-  .historyCard{ @apply card cardFill flex-1 min-h-0; }
-  .historyList{ @apply flex-1 min-h-0 overflow-auto pr-1.5 pb-5; }
+    /* --------------------------------------------------------
+       StatsPage
+    -------------------------------------------------------- */
+    .statsPage{ @apply page max-w-[1100px] mx-auto flex flex-col gap-3; }
+    .historyCard{ @apply card cardFill flex-1 min-h-0; }
+    .historyList{ @apply flex-1 min-h-0 overflow-auto pr-1.5 pb-5; }
 }

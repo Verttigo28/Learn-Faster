@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted, ref, toRaw } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import { db, type VocabDeck, type VocabItem } from "../db";
+import { db, type VocabDeck, type VocabItem, type AttemptDetail } from "../db";
 import EmptyState from "../components/EmptyState.vue";
 import BaseModal from "../components/BaseModal.vue";
 import { uid } from "../utils/id";
@@ -25,6 +25,9 @@ const startedAt = ref(Date.now());
 const showResultModal = ref(false);
 const savedAttempt = ref(false);
 
+/** ✅ Détails question par question (pour page résultat + PDF) */
+const details = ref<AttemptDetail[]>([]);
+
 const current = computed(() => items.value[idx.value]);
 
 function percent() {
@@ -44,6 +47,8 @@ async function load() {
   total.value = 0;
   startedAt.value = Date.now();
 
+  details.value = [];
+
   showResultModal.value = false;
   savedAttempt.value = false;
 }
@@ -58,9 +63,23 @@ async function next() {
 }
 
 async function mark(known: boolean) {
+  const c = current.value;
+  if (!c) return;
+
   total.value += 1;
   if (known) correct.value += 1;
-  await next(); // ✅ important
+
+  // ✅ enregistre le détail (permet d'afficher un résultat non vide)
+  details.value.push({
+    kind: "flashcard",
+    id: c.id,
+    term: c.term,
+    definition: c.definition,
+    known,
+    correct: known
+  });
+
+  await next();
 }
 
 async function finish() {
@@ -75,6 +94,7 @@ async function finish() {
   if (savedAttempt.value) return;
 
   try {
+    const plainDetails = toRaw(details.value).map(d => ({ ...d }));
     await db.attempts.add({
       id: uid("att"),
       type: "flashcards",
@@ -82,13 +102,18 @@ async function finish() {
       startedAt: startedAt.value,
       finishedAt: Date.now(),
       score: clamp01(score),
-      meta: { total: total.value, correct: correct.value, durationSeconds }
+      meta: {
+        total: total.value,
+        correct: correct.value,
+        durationSeconds,
+        details: plainDetails
+      }
     });
 
-    savedAttempt.value = true; // ✅ seulement après succès
+    savedAttempt.value = true;
   } catch (e) {
     console.error("Flashcards save failed:", e);
-    savedAttempt.value = false; // ✅ autorise un retry
+    savedAttempt.value = false;
     alert("Erreur lors de l'enregistrement des résultats (IndexedDB).");
   }
 }
@@ -114,22 +139,22 @@ onMounted(load);
       <div class="row">
         <div>
           <h2 class="m-0">Flashcards</h2>
-          <p class="small mt-1">{{ deck.title }} • {{ idx + 1 }} / {{ items.length }}</p>
+          <p class="small mt-1">{{ deck.title }} • {{ Math.min(idx + 1, items.length) }} / {{ items.length }}</p>
         </div>
         <router-link class="btn" :to="`/deck/${deckId}`">Retour</router-link>
       </div>
 
       <div class="hr"></div>
 
-      <!-- ✅ Zone centrale : pas de scroll global, contenu long => scroll interne -->
       <div class="sessionBody flex flex-col justify-center">
         <div
-          class="card cursor-pointer select-none text-center p-6 rounded-[20px] overflow-auto"
-          @click="flipped = !flipped"
+            class="card cursor-pointer select-none text-center p-6 rounded-[20px] overflow-auto"
+            @click="flipped = !flipped"
         >
           <div class="small mb-2.5">{{ flipped ? "Réponse" : "Question" }} (clique pour retourner)</div>
+
           <div class="text-2xl font-extrabold">
-            {{ flipped ? current.definition : current.term }}
+            {{ flipped ? current?.definition : current?.term }}
           </div>
         </div>
       </div>

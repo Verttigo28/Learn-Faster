@@ -22,7 +22,6 @@ async function startRandomFlashcards() {
     return;
   }
 
-  // Random “uniforme” via offset
   const offset = Math.floor(Math.random() * count);
   const deck = await db.vocabDecks.orderBy("createdAt").reverse().offset(offset).limit(1).first();
 
@@ -33,7 +32,6 @@ async function startRandomFlashcards() {
 
   await router.push(`/deck/${deck.id}/flash`);
 }
-
 
 const exportInfo = ref<string>("");
 
@@ -52,7 +50,6 @@ async function load() {
 async function clearAll() {
   if (!confirm("Tout supprimer (decks/exams/phrases/stats) ?")) return;
 
-  // Dexie typings: pass tables as ARRAY
   await db.transaction(
       "rw",
       [db.vocabDecks, db.vocabItems, db.exams, db.examQuestions, db.sentenceExercises, db.attempts],
@@ -148,8 +145,6 @@ onMounted(load);
           <router-link class="btn startBtn" to="/practice?count=30&sources=vocab,exam,order">🔥 Exam 30 questions VQP</router-link>
 
           <button class="btn startBtn" @click="startRandomFlashcards">🃏 Flashcards (aléatoire)</button>
-
-
         </div>
       </section>
     </div>
@@ -166,7 +161,12 @@ onMounted(load);
         </div>
 
         <div v-else class="listGrid">
-          <router-link v-for="d in decks.slice(0, 3)" :key="d.id" class="card itemCard" :to="`/deck/${d.id}`">
+          <router-link
+              v-for="d in decks.slice(0, 3)"
+              :key="d.id"
+              class="card itemCard"
+              :to="`/deck/${d.id}`"
+          >
             <h3 class="itemTitle">{{ d.title }}</h3>
 
             <div class="itemFooter">
@@ -193,8 +193,11 @@ onMounted(load);
               class="card itemCard"
               :to="`/exam/${e.id}`"
           >
-            <h3 class="itemTitle">{{ e.title }}</h3>
-            <div class="small">{{ examDurationLabel(e.durationSeconds) }}</div>
+            <h3 class="itemTitle">
+              {{ e.title }}
+              <span class="itemMeta">— {{ examDurationLabel(e.durationSeconds) }}</span>
+            </h3>
+
             <div class="itemFooter">
               <span class="badge">Démarrer</span>
             </div>
@@ -204,4 +207,3 @@ onMounted(load);
     </div>
   </div>
 </template>
-

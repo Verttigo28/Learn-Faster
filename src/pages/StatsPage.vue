@@ -63,10 +63,6 @@ async function clearStats() {
   await load();
 }
 
-function canExportPdf(a: Attempt): boolean {
-  return (a.type === "exam" || a.type === "practice" || a.type === "vocab_quiz") && !!a.meta?.details?.length;
-}
-
 function canOpenResult(a: Attempt): boolean {
   if (a.type === "flashcards") return true;
   return !!a.meta?.details?.length;
@@ -175,8 +171,7 @@ onUnmounted(unlockScroll);
 
               <button
                   class="btn"
-                  :disabled="!canExportPdf(a)"
-                  :title="canExportPdf(a) ? 'Exporter les détails en PDF' : 'PDF indisponible (anciennes stats sans détails)'"
+                  :title="'Exporter les détails en PDF'"
                   @click="exportPdf(a)"
               >
                 📄 PDF
