@@ -1,0 +1,7 @@
+services:
+  learn-faster:
+    build: .
+    container_name: learn-faster
+    ports:
+      - "3000:3000" 
+    restart: unless-stopped
