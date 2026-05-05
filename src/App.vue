@@ -2,6 +2,7 @@
 import { useRoute } from "vue-router";
 import { Capacitor } from "@capacitor/core";
 import { StatusBar, Style } from "@capacitor/status-bar";
+import ToastContainer from "./components/ToastContainer.vue";
 
 const route = useRoute();
 function isActive(path: string) {
@@ -44,5 +45,7 @@ enableFullscreen().catch(console.error);
         <router-view />
       </div>
     </main>
+
+    <ToastContainer />
   </div>
 </template>

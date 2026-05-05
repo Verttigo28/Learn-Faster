@@ -2,9 +2,14 @@
 import { onMounted, ref } from "vue";
 import { db, type VocabDeck, type Exam } from "../db";
 import EmptyState from "../components/EmptyState.vue";
+import ConfirmModal from "../components/ConfirmModal.vue";
 import { exportAllData, downloadJson } from "../services/exporter";
 import { useRouter } from "vue-router";
+import { useToast } from "../composables/useToast";
+import { getSrsStats } from "../services/srs";
+
 const router = useRouter();
+const toast = useToast();
 
 const decks = ref<VocabDeck[]>([]);
 const exams = ref<Exam[]>([]);
@@ -15,10 +20,14 @@ const counts = ref({
   attemptCount: 0
 });
 
+const srs = ref({ total: 0, due: 0, learned: 0, avgEase: 2.5 });
+
+const showResetConfirm = ref(false);
+
 async function startRandomFlashcards() {
   const count = await db.vocabDecks.count();
   if (!count) {
-    alert("Aucun deck vocab. Crée ou importe un deck d'abord.");
+    toast.error("Aucun deck vocab. Crée ou importe un deck d'abord.");
     return;
   }
 
@@ -26,14 +35,12 @@ async function startRandomFlashcards() {
   const deck = await db.vocabDecks.orderBy("createdAt").reverse().offset(offset).limit(1).first();
 
   if (!deck) {
-    alert("Impossible de sélectionner un deck.");
+    toast.error("Impossible de sélectionner un deck.");
     return;
   }
 
   await router.push(`/deck/${deck.id}/flash`);
 }
-
-const exportInfo = ref<string>("");
 
 async function load() {
   decks.value = await db.vocabDecks.orderBy("createdAt").reverse().toArray();
@@ -45,24 +52,28 @@ async function load() {
     sentenceCount: await db.sentenceExercises.count(),
     attemptCount: await db.attempts.count()
   };
+
+  srs.value = await getSrsStats();
 }
 
 async function clearAll() {
-  if (!confirm("Tout supprimer (decks/exams/phrases/stats) ?")) return;
+  showResetConfirm.value = false;
 
   await db.transaction(
       "rw",
-      [db.vocabDecks, db.vocabItems, db.exams, db.examQuestions, db.sentenceExercises, db.attempts],
+      [db.vocabDecks, db.vocabItems, db.exams, db.examQuestions, db.sentenceExercises, db.srsCards, db.attempts],
       async () => {
         await db.vocabDecks.clear();
         await db.vocabItems.clear();
         await db.exams.clear();
         await db.examQuestions.clear();
         await db.sentenceExercises.clear();
+        await db.srsCards.clear();
         await db.attempts.clear();
       }
   );
 
+  toast.success("Base de données réinitialisée.");
   await load();
 }
 
@@ -70,6 +81,7 @@ async function exportAll() {
   const data = await exportAllData();
   const date = new Date().toISOString().slice(0, 10);
   downloadJson(`revisions_export_${date}.json`, data);
+  toast.success("Export téléchargé !");
 }
 
 function examDurationLabel(seconds?: number) {
@@ -111,6 +123,17 @@ onMounted(load);
           </div>
         </div>
 
+        <div v-if="srs.total > 0" class="kpis" style="margin-top:0">
+          <div class="kpiBox">
+            <div class="small">SRS à revoir</div>
+            <div class="kpi" :style="srs.due > 0 ? 'color: rgb(var(--danger))' : ''">{{ srs.due }}</div>
+          </div>
+          <div class="kpiBox">
+            <div class="small">SRS maîtrisés</div>
+            <div class="kpi" style="color: rgb(var(--ok))">{{ srs.learned }}</div>
+          </div>
+        </div>
+
         <div class="actionsGrid">
           <router-link class="btn actionBtn" to="/import">📥 Importer</router-link>
           <button class="btn actionBtn" @click="exportAll">⬇️ Exporter</button>
@@ -121,9 +144,7 @@ onMounted(load);
           <router-link class="btn actionBtn" to="/vocab">🗂️ Éditer vocab</router-link>
           <router-link class="btn actionBtn" to="/qcm">📝 Éditer QCM</router-link>
 
-          <button class="btn danger actionBtn reset" @click="clearAll">🧹 Reset DB</button>
-
-          <div class="exportHint small" v-if="exportInfo">{{ exportInfo }}</div>
+          <button class="btn danger actionBtn reset" @click="showResetConfirm = true">🧹 Reset DB</button>
         </div>
       </section>
 
@@ -157,7 +178,7 @@ onMounted(load);
         </div>
 
         <div v-if="decks.length === 0">
-          <EmptyState title="Aucun deck vocab" hint="Importe un deck en JSON." />
+          <EmptyState title="Aucun deck vocab" hint="Importe un deck en JSON." icon="🗂️" />
         </div>
 
         <div v-else class="listGrid">
@@ -183,7 +204,7 @@ onMounted(load);
         </div>
 
         <div v-if="exams.length === 0">
-          <EmptyState title="Aucun exam" hint="Importe un QCM en JSON." />
+          <EmptyState title="Aucun exam" hint="Importe un QCM en JSON." icon="📝" />
         </div>
 
         <div v-else class="listGrid">
@@ -205,5 +226,15 @@ onMounted(load);
         </div>
       </section>
     </div>
+
+    <ConfirmModal
+      :open="showResetConfirm"
+      title="Reset complet"
+      message="Tout supprimer (decks, exams, phrases, stats) ? Cette action est irréversible."
+      confirm-text="Supprimer tout"
+      :danger="true"
+      @confirm="clearAll"
+      @cancel="showResetConfirm = false"
+    />
   </div>
 </template>

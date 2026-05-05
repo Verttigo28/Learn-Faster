@@ -14,6 +14,7 @@ export type VocabItem = {
   term: string;
   definition: string;
   tags?: string[];
+  difficulty?: 1 | 2 | 3;
 };
 
 export type Exam = {
@@ -30,15 +31,19 @@ export type ExamQuestion = {
   choices: { id: string; text: string; correct: boolean }[];
   explanation?: string;
   tags?: string[];
+  difficulty?: 1 | 2 | 3;
 };
 
 export type SentenceExercise = {
   id: string;
   text: string;
-  /** Traduction FR (optionnelle) affichée en correction / aide */
+  /** Traduction FR naturelle */
   translation?: string;
+  /** Traduction mot-à-mot / structurelle (ordre SPOK) */
+  literal?: string;
   tokens: string[];
   tags?: string[];
+  difficulty?: 1 | 2 | 3;
   createdAt: number;
 };
 
@@ -71,6 +76,17 @@ export type AttemptDetail =
   correct: boolean; // pour le filtre "erreurs" (same as known)
 };
 
+export type SrsCard = {
+  id: string;           // "srs:{itemId}"
+  itemId: string;       // reference to vocabItem / examQuestion / sentenceExercise
+  itemType: "vocab" | "exam" | "sentence";
+  easeFactor: number;   // starts at 2.5, min 1.3
+  interval: number;     // days until next review
+  repetitions: number;  // consecutive correct answers
+  nextReview: number;   // timestamp
+  lastReview: number;   // timestamp
+};
+
 export type Attempt = {
   id: string;
   type: "vocab_quiz" | "exam" | "flashcards" | "practice";
@@ -95,6 +111,7 @@ export class AppDB extends Dexie {
   exams!: Table<Exam, string>;
   examQuestions!: Table<ExamQuestion, string>;
   sentenceExercises!: Table<SentenceExercise, string>;
+  srsCards!: Table<SrsCard, string>;
   attempts!: Table<Attempt, string>;
 
   constructor() {
@@ -126,6 +143,17 @@ export class AppDB extends Dexie {
       exams: "id, title, createdAt",
       examQuestions: "id, examId",
       sentenceExercises: "id, createdAt",
+      attempts: "id, type, refId, startedAt, finishedAt"
+    });
+
+    // v4: add SRS (Spaced Repetition) cards table
+    this.version(4).stores({
+      vocabDecks: "id, title, createdAt",
+      vocabItems: "id, deckId",
+      exams: "id, title, createdAt",
+      examQuestions: "id, examId",
+      sentenceExercises: "id, createdAt",
+      srsCards: "id, itemId, itemType, nextReview",
       attempts: "id, type, refId, startedAt, finishedAt"
     });
   }

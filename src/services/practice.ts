@@ -2,6 +2,7 @@ import { db } from "../db";
 import { hasAnyTag } from "./tags";
 import { buildVocabQuestion } from "./vocabQuiz";
 import { shuffle } from "../utils/shuffle";
+import { getDueCards } from "./srs";
 
 export type PracticeSource = "vocab" | "exam" | "order";
 
@@ -72,7 +73,24 @@ export async function buildPractice(config: PracticeConfig): Promise<PracticeQue
     }
   }
 
-  return shuffle(pool).slice(0, Math.min(count, pool.length));
+  // SRS prioritization: move due items to the front
+  const dueCards = await getDueCards(undefined, count).catch(() => []);
+  const dueIds = new Set(dueCards.map(c => c.itemId));
+
+  const duePool: PracticeQuestion[] = [];
+  const otherPool: PracticeQuestion[] = [];
+
+  for (const q of pool) {
+    if (dueIds.has(q.id)) {
+      duePool.push(q);
+    } else {
+      otherPool.push(q);
+    }
+  }
+
+  // Due items first (shuffled), then fill remaining from others
+  const prioritized = [...shuffle(duePool), ...shuffle(otherPool)];
+  return prioritized.slice(0, Math.min(count, prioritized.length));
 }
 
 export function gradePractice(questions: PracticeQuestion[]): { correct: number; total: number; score: number; breakdown: Record<string, number> } {

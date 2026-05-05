@@ -20,6 +20,7 @@
 
     *{ box-sizing: border-box; }
     html, body, #app { height: 100%; }
+    html { scroll-behavior: smooth; }
 
     /* évite un fond blanc injecté par UA/webview */
     #app{ background: transparent; }
@@ -75,18 +76,37 @@
     .nav .left{ @apply flex items-center gap-3; }
     .brand{ @apply font-extrabold tracking-[.2px]; }
 
-    .pills{ @apply flex flex-wrap gap-2; }
-    .pill{ @apply px-[10px] py-2 rounded-full border border-border/10 text-muted; background: transparent; }
-    .pill:hover{ @apply border-border/25 text-text; text-decoration: none; }
-    .pill.active{ @apply border-accent/70 text-text; }
+    .pills{ @apply flex flex-nowrap gap-2 overflow-x-auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .pills::-webkit-scrollbar{ display: none; }
+    .pill{
+        @apply px-3 py-2.5 rounded-full border border-border/10 text-muted whitespace-nowrap;
+        background: transparent; min-height: 44px;
+        transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+    }
+    .pill:hover{ @apply border-border/25 text-text; text-decoration: none; background: rgb(var(--border) / 0.04); }
+    .pill:focus-visible{ outline: 2px solid rgb(var(--accent)); outline-offset: 2px; }
+    .pill.active{
+        @apply border-accent/70 text-text;
+        background: rgb(var(--accent) / 0.08);
+        box-shadow: 0 2px 0 0 rgb(var(--accent) / 0.7);
+    }
 
     /* Legacy grid (évite @apply grid sur .grid => dépendance circulaire) */
     .grid{ display: grid; @apply gap-3; }
     .grid.cols-2{ @apply grid-cols-1 tablet:grid-cols-2; }
 
-    .card{ @apply rounded-2xl border border-border/10 bg-card/70 p-4; }
+    .card{
+        @apply rounded-2xl border border-border/10 bg-card/70 p-4;
+        transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
     .card h2, .card h3{ @apply mb-1 leading-tight; }
     .card p{ @apply my-1.5 text-muted; }
+    a.card:hover, a.card:focus-visible{
+        border-color: rgb(var(--accent) / 0.35);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgb(0 0 0 / 0.2);
+    }
+    a.card:focus-visible{ outline: 2px solid rgb(var(--accent)); outline-offset: 2px; }
 
     .row{ @apply flex items-center justify-between flex-wrap gap-2.5; }
     .list{ @apply flex flex-col gap-2.5; }
@@ -99,25 +119,47 @@
         text-decoration: none;
         user-select: none;
         -webkit-tap-highlight-color: transparent;
+        min-height: 44px;
+        min-width: 44px;
+        transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
 
         @apply inline-flex items-center justify-center gap-2 rounded-xl border border-border/10 bg-white/5
         px-3 py-2 text-sm font-medium text-text whitespace-nowrap;
     }
-    .btn:hover{ @apply border-accent/60; }
+    .btn:hover{ @apply border-accent/60; background: rgb(var(--accent) / 0.08); }
+    .btn:active:not(:disabled){ transform: scale(0.97); }
+    .btn:focus-visible{ outline: 2px solid rgb(var(--accent)); outline-offset: 2px; }
     .btn.primary{ @apply border-accent/70 bg-accent/10; }
+    .btn.primary:hover{ background: rgb(var(--accent) / 0.18); }
     .btn.ok{ @apply border-ok/60 bg-ok/10; }
+    .btn.ok:hover{ background: rgb(var(--ok) / 0.18); }
     .btn.danger{ @apply border-danger/60 bg-danger/10; }
+    .btn.danger:hover{ background: rgb(var(--danger) / 0.18); }
     a.btn, a.btn:visited{ @apply text-inherit no-underline; }
     a.btn:hover{ @apply no-underline; }
     .btn:disabled, .btn[aria-disabled="true"]{ @apply opacity-55 cursor-not-allowed pointer-events-none; }
 
-    .input{ @apply w-full rounded-xl border border-border/10 bg-black/20 px-3 py-2 text-text; }
+    .input{
+        @apply w-full rounded-xl border border-border/10 bg-black/20 px-3 py-2 text-text;
+        min-height: 44px;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .input:focus{
+        outline: none;
+        border-color: rgb(var(--accent) / 0.6);
+        box-shadow: 0 0 0 3px rgb(var(--accent) / 0.15);
+    }
 
     .small{ @apply text-[13px] text-muted; }
     .kpi{ @apply text-[26px] font-extrabold; }
     .hr{ @apply h-px bg-border/10 my-2.5; }
 
-    .badge{ @apply inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border border-border/10 text-muted; }
+    .badge{
+        @apply inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border border-border/10 text-muted;
+        min-height: 40px;
+        transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    a.badge:focus-visible, button.badge:focus-visible{ outline: 2px solid rgb(var(--accent)); outline-offset: 2px; }
     button.pill{ @apply bg-transparent cursor-pointer; }
     button.pill:hover{ text-decoration: none; }
 
@@ -129,7 +171,13 @@
         -webkit-overflow-scrolling: touch;
         overscroll-behavior: contain;
         max-height: 100%;
+        scrollbar-width: thin;
+        scrollbar-color: rgb(var(--border) / 0.15) transparent;
     }
+    .scrollY::-webkit-scrollbar { width: 6px; }
+    .scrollY::-webkit-scrollbar-track { background: transparent; }
+    .scrollY::-webkit-scrollbar-thumb { background: rgb(var(--border) / 0.15); border-radius: 3px; }
+    .scrollY::-webkit-scrollbar-thumb:hover { background: rgb(var(--border) / 0.25); }
 
     /* --------------------------------------------------------
        Modal (marge bas ~5vh + scroll interne)
@@ -214,7 +262,20 @@
        Practice / Exam / Flashcards
     -------------------------------------------------------- */
     .sessionPage{ @apply page flex flex-col; }
-    .sessionCard{ @apply card cardFill; }
+    .sessionCard{
+        @apply card cardFill;
+        position: relative;
+        overflow: hidden;
+    }
+    .sessionCard::before{
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, rgb(var(--accent)), rgb(var(--ok)));
+        opacity: 0.7;
+        border-radius: 1rem 1rem 0 0;
+    }
     .sessionBody{ @apply flex-1 min-h-0 scrollY; }
     .sessionFooter{ @apply flex-none mt-3; }
 
@@ -275,6 +336,16 @@
        StatsPage
     -------------------------------------------------------- */
     .statsPage{ @apply page max-w-[1100px] mx-auto flex flex-col gap-3; }
+    .statsPage .top{ @apply flex-none; }
+    .statsPage .topCard{ @apply h-full; }
     .historyCard{ @apply card cardFill flex-1 min-h-0; }
     .historyList{ @apply flex-1 min-h-0 overflow-auto pr-1.5 pb-5; }
+
+    /* --------------------------------------------------------
+       Page transitions
+    -------------------------------------------------------- */
+    .page-enter-active { transition: opacity 0.15s ease, transform 0.15s ease; }
+    .page-leave-active { transition: opacity 0.1s ease; }
+    .page-enter-from { opacity: 0; transform: translateY(6px); }
+    .page-leave-to { opacity: 0; }
 }

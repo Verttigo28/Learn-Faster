@@ -33,8 +33,8 @@ onMounted(load);
     <div v-else class="card deckCard">
       <div class="row">
         <div>
-          <h2 style="margin:0">{{ deck.title }}</h2>
-          <p class="small" style="margin:4px 0 0 0">
+          <h2 class="m-0">{{ deck.title }}</h2>
+          <p class="small mt-1 mb-0">
             {{ deck.from }} → {{ deck.to }} • {{ items.length }} items
           </p>
         </div>
@@ -43,20 +43,15 @@ onMounted(load);
 
       <div class="hr"></div>
 
-      <div class="row" style="flex-wrap:wrap">
+      <div class="row flex-wrap">
         <router-link class="btn" :to="`/deck/${deckId}/flash`">Flashcards</router-link>
-
-        <!-- Bouton "Quiz (QCM)" supprimé comme demandé -->
-        <!-- <router-link class="btn" :to="`/deck/${deckId}/quiz`">Quiz (QCM)</router-link> -->
-
         <router-link class="btn" to="/exams">Exam par tags</router-link>
         <router-link class="btn" to="/stats">Stats</router-link>
       </div>
 
       <div v-if="items.length" class="card previewCard">
-        <h3 style="margin-top:0">Contenu (aperçu)</h3>
+        <h3 class="mt-0">Contenu (aperçu)</h3>
 
-        <!-- ✅ Scroll uniquement ici -->
         <div class="list previewList">
           <div v-for="it in items" :key="it.id" class="row">
             <div>
@@ -68,9 +63,9 @@ onMounted(load);
         </div>
       </div>
 
-      <div v-else style="margin-top:12px">
-        <EmptyState title="Deck vide" hint="Importe des items depuis la page Import." />
-        <router-link class="btn" to="/import" style="margin-top:12px; display:inline-block">Importer</router-link>
+      <div v-else class="mt-3">
+        <EmptyState title="Deck vide" hint="Importe des items depuis la page Import." icon="📦" />
+        <router-link class="btn mt-3 inline-block" to="/import">Importer</router-link>
       </div>
     </div>
   </div>

@@ -4,9 +4,13 @@ import { useRoute, useRouter } from "vue-router";
 import { db, type Exam, type ExamQuestion, type AttemptDetail } from "../db";
 import EmptyState from "../components/EmptyState.vue";
 import BaseModal from "../components/BaseModal.vue";
+import ProgressBar from "../components/ProgressBar.vue";
 import { uid } from "../utils/id";
 import { clamp01, formatDuration } from "../utils/time";
 import { shuffle } from "../utils/shuffle";
+import { useToast } from "../composables/useToast";
+
+const toast = useToast();
 
 const props = defineProps<{ examId?: string }>();
 
@@ -149,7 +153,7 @@ async function finish() {
   } catch (e) {
     console.error(e);
     savedAttempt.value = false; // permet de retenter si besoin
-    alert("Erreur lors de l'enregistrement des résultats (IndexedDB).");
+    toast.error("Erreur lors de l'enregistrement des résultats.");
   }
 }
 
@@ -190,7 +194,7 @@ onMounted(load);
         </div>
       </div>
 
-      <div class="hr"></div>
+      <ProgressBar :current="idx + 1" :total="questions.length" />
 
       <!-- ✅ Scroll uniquement dans cette zone -->
       <div class="sessionBody">

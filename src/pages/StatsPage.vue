@@ -2,8 +2,13 @@
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { db, type Attempt, type VocabDeck, type Exam } from "../db";
 import EmptyState from "../components/EmptyState.vue";
+import ConfirmModal from "../components/ConfirmModal.vue";
 import { formatDate, formatDuration } from "../utils/time";
 import { exportAttemptPdf } from "../services/pdfReport";
+import { useToast } from "../composables/useToast";
+
+const toast = useToast();
+const showClearConfirm = ref(false);
 
 const attempts = ref<Attempt[]>([]);
 const decks = ref<Record<string, VocabDeck>>({});
@@ -58,8 +63,9 @@ async function load() {
 }
 
 async function clearStats() {
-  if (!confirm("Supprimer uniquement les stats (tentatives) ?")) return;
+  showClearConfirm.value = false;
   await db.attempts.clear();
+  toast.success("Historique supprime.");
   await load();
 }
 
@@ -68,12 +74,22 @@ function canOpenResult(a: Attempt): boolean {
   return !!a.meta?.details?.length;
 }
 
+function typeBadgeClass(type: string): string {
+  switch (type) {
+    case "flashcards": return "badge-flashcards";
+    case "exam": return "badge-exam";
+    case "practice": return "badge-practice";
+    case "vocab_quiz": return "badge-vocab";
+    default: return "";
+  }
+}
 
 function exportPdf(a: Attempt) {
   try {
     exportAttemptPdf(a, titleFor(a));
+    toast.success("PDF exporte !");
   } catch (e: any) {
-    alert(e?.message ?? "Impossible d'exporter le PDF");
+    toast.error(e?.message ?? "Impossible d'exporter le PDF");
   }
 }
 
@@ -91,7 +107,6 @@ onMounted(() => {
   load();
 });
 onUnmounted(unlockScroll);
-
 </script>
 
 <template>
@@ -115,29 +130,29 @@ onUnmounted(unlockScroll);
             </div>
           </div>
           <div class="hr"></div>
-          <button class="btn danger" @click="clearStats">Reset stats</button>
+          <button class="btn danger" @click="showClearConfirm = true">Reset stats</button>
         </div>
 
         <div class="card topCard">
           <h2>Types</h2>
-          <p>• <b>flashcards</b> : “Je sais” / répondus</p>
-          <p>• <b>vocab_quiz</b> : QCM généré depuis vocab</p>
-          <p>• <b>exam</b> : QCM importé</p>
-          <p>• <b>practice</b> : exam généré par tags (vocab + QCM + SPOK)</p>
+          <p><b>flashcards</b> : "Je sais" / repondus</p>
+          <p><b>vocab_quiz</b> : QCM genere depuis vocab</p>
+          <p><b>exam</b> : QCM importe</p>
+          <p><b>practice</b> : exam genere par tags (vocab + QCM + SPOK)</p>
         </div>
       </div>
     </div>
 
     <div class="card historyCard">
-      <div class="row" style="align-items:flex-end">
+      <div class="row items-end">
         <div>
-          <h2 style="margin:0">Historique</h2>
-          <p class="small" style="margin:6px 0 0 0">
-            Clique sur “Résultat” pour revoir les corrections (si disponibles).
+          <h2 class="m-0">Historique</h2>
+          <p class="small mt-1.5 mb-0">
+            Clique sur "Resultat" pour revoir les corrections (si disponibles).
           </p>
         </div>
-        <div class="small" style="opacity:.85">
-          {{ attempts.length }} entrées
+        <div class="small opacity-85">
+          {{ attempts.length }} entrees
         </div>
       </div>
 
@@ -147,41 +162,56 @@ onUnmounted(unlockScroll);
         <EmptyState title="Aucune tentative" hint="Fais un quiz vocab, un exam, ou un exam par tags pour voir l'historique." />
       </div>
 
-      <!-- ✅ Scroll uniquement ici -->
       <div v-else class="list historyList">
-        <div v-for="a in attempts" :key="a.id" class="card" style="border-radius:18px">
+        <div v-for="a in attempts" :key="a.id" class="card rounded-[18px]">
           <div class="row">
             <div>
-              <h3 style="margin:0">{{ titleFor(a) }}</h3>
-              <p class="small" style="margin:4px 0 0 0">
-                {{ a.type }} • {{ percent01(a.score) }} • {{ formatDate(a.finishedAt) }}
-                <span v-if="metaLine(a)"> • {{ metaLine(a) }}</span>
+              <h3 class="m-0">{{ titleFor(a) }}</h3>
+              <p class="small mt-1 mb-0">
+                {{ percent01(a.score) }} &bull; {{ formatDate(a.finishedAt) }}
+                <span v-if="metaLine(a)"> &bull; {{ metaLine(a) }}</span>
               </p>
             </div>
 
-            <div class="row" style="gap:8px">
+            <div class="row gap-2">
               <router-link
                   class="btn"
                   :to="`/attempt/${a.id}`"
-                  :title="canOpenResult(a) ? 'Voir le résultat' : 'Détails indisponibles (ancienne stat)'"
-                  :style="!canOpenResult(a) ? 'pointer-events:none; opacity:0.6' : ''"
+                  :title="canOpenResult(a) ? 'Voir le resultat' : 'Details indisponibles (ancienne stat)'"
+                  :class="{ 'pointer-events-none opacity-60': !canOpenResult(a) }"
               >
-                Résultat
+                Resultat
               </router-link>
 
               <button
                   class="btn"
-                  :title="'Exporter les détails en PDF'"
+                  title="Exporter les details en PDF"
                   @click="exportPdf(a)"
               >
-                📄 PDF
+                PDF
               </button>
-              <span class="badge" style="opacity:0.6">{{ a.type }}</span>
+              <span class="badge" :class="typeBadgeClass(a.type)">{{ a.type }}</span>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <ConfirmModal
+      :open="showClearConfirm"
+      title="Supprimer l'historique"
+      message="Supprimer toutes les tentatives ? Cette action est irreversible."
+      confirm-text="Supprimer"
+      :danger="true"
+      @confirm="clearStats"
+      @cancel="showClearConfirm = false"
+    />
   </div>
 </template>
 
+<style scoped>
+.badge-flashcards { border-color: rgb(var(--accent) / 0.5); color: rgb(var(--accent)); }
+.badge-exam { border-color: rgb(var(--ok) / 0.5); color: rgb(var(--ok)); }
+.badge-practice { border-color: rgb(255 180 50 / 0.5); color: rgb(255 180 50); }
+.badge-vocab { border-color: rgb(var(--muted) / 0.5); color: rgb(var(--muted)); }
+</style>

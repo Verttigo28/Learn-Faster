@@ -6,6 +6,11 @@ import { uid } from "../utils/id";
 import EmptyState from "../components/EmptyState.vue";
 import ConfirmBar from "../components/ConfirmBar.vue";
 import BaseModal from "../components/BaseModal.vue";
+import ConfirmModal from "../components/ConfirmModal.vue";
+import { useToast } from "../composables/useToast";
+
+const toast = useToast();
+const pendingDeleteId = ref<string | null>(null);
 
 const props = defineProps<{ deckId?: string }>();
 const route = useRoute();
@@ -111,10 +116,12 @@ async function saveEdit() {
   await load();
 }
 
-async function removeItem(id: string) {
-  if (!confirm("Supprimer cet item ?")) return;
+async function removeItem() {
+  const id = pendingDeleteId.value;
+  pendingDeleteId.value = null;
+  if (!id) return;
   await db.vocabItems.delete(id);
-  set("ok", "Item supprimé ✅");
+  toast.success("Item supprimé !");
   await load();
 }
 
@@ -181,7 +188,7 @@ onMounted(load);
         <div class="hr"></div>
 
         <div v-if="items.length === 0">
-          <EmptyState title="Aucun item" hint="Ajoute ton premier item à gauche." />
+          <EmptyState title="Aucun item" hint="Ajoute ton premier item à gauche." icon="✏️" />
         </div>
 
         <div v-else class="scrollY">
@@ -194,7 +201,7 @@ onMounted(load);
               </div>
               <div class="row gap-2">
                 <button class="btn" @click="openEdit(it)">Éditer</button>
-                <button class="btn danger" @click="removeItem(it.id)">Supprimer</button>
+                <button class="btn danger" @click="pendingDeleteId = it.id">Supprimer</button>
               </div>
             </div>
             </div>
@@ -218,5 +225,15 @@ onMounted(load);
         </div>
       </div>
     </BaseModal>
+
+    <ConfirmModal
+      :open="!!pendingDeleteId"
+      title="Supprimer l'item"
+      message="Supprimer cet item de vocabulaire ?"
+      confirm-text="Supprimer"
+      :danger="true"
+      @confirm="removeItem"
+      @cancel="pendingDeleteId = null"
+    />
   </div>
 </template>

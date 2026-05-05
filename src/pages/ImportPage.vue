@@ -8,6 +8,7 @@ import { Capacitor, CapacitorHttp } from "@capacitor/core";
 const message = ref<{ text: string; kind: "info" | "ok" | "danger" } | null>(null);
 const raw = ref<string>("");
 const url = ref<string>("");
+const loading = ref(false);
 
 /** ✅ File input custom */
 const fileInput = ref<HTMLInputElement | null>(null);
@@ -88,6 +89,7 @@ async function onImportUrl() {
   }
 
   set("info", "Téléchargement du JSON…");
+  loading.value = true;
 
   try {
     let text = "";
@@ -114,6 +116,8 @@ async function onImportUrl() {
     await importFromText(text);
   } catch (e: any) {
     set("danger", `Impossible de récupérer l'URL. ${e?.message ?? ""}`.trim());
+  } finally {
+    loading.value = false;
   }
 }
 
@@ -158,7 +162,9 @@ const exampleBundle = `{
       <label class="small mt-2.5 block">Importer depuis une URL (JSON)</label>
       <div class="row gap-2.5 flex-nowrap">
         <input class="input" v-model="url" placeholder="https://.../file.json" />
-        <button class="btn whitespace-nowrap" @click="onImportUrl">Importer URL</button>
+        <button class="btn whitespace-nowrap" @click="onImportUrl" :disabled="loading">
+          {{ loading ? "Chargement…" : "Importer URL" }}
+        </button>
       </div>
 
       <div class="hr"></div>
@@ -183,7 +189,7 @@ const exampleBundle = `{
 
     <div class="card cardFill">
       <h2>Exemple export global (bundle)</h2>
-      <p class="small">C’est exactement ce que produit le bouton “Exporter mes données (JSON)” sur la Home.</p>
+      <p class="small">C’est exactement ce que produit le bouton "Exporter mes données (JSON)" sur la Home.</p>
       <pre class="code">{{ exampleBundle }}</pre>
     </div>
   </div>

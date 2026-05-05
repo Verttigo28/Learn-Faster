@@ -1,3 +1,5 @@
+import { shuffle } from "./shuffle";
+
 /**
  * Tokenize a sentence for the word-order exercise.
  * Basic rule: split by spaces.
@@ -10,5 +12,5 @@ export function tokenizeSentence(text: string): string[] {
 }
 
 export function shuffleTokens(tokens: string[]): string[] {
-  return tokens.slice().sort(() => Math.random() - 0.5);
+  return shuffle(tokens);
 }

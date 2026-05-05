@@ -1,16 +1,27 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { db, type VocabDeck } from "../db";
 import { uid } from "../utils/id";
 import EmptyState from "../components/EmptyState.vue";
 import ConfirmBar from "../components/ConfirmBar.vue";
+import ConfirmModal from "../components/ConfirmModal.vue";
+import { useToast } from "../composables/useToast";
 
 const router = useRouter();
+const toast = useToast();
 
 const decks = ref<VocabDeck[]>([]);
 const counts = ref<Record<string, number>>({});
 const msg = ref<{ kind: "info" | "ok" | "danger"; text: string } | null>(null);
+const search = ref("");
+const pendingDeleteId = ref<string | null>(null);
+
+const filteredDecks = computed(() => {
+  const q = search.value.trim().toLowerCase();
+  if (!q) return decks.value;
+  return decks.value.filter(d => d.title.toLowerCase().includes(q));
+});
 
 const title = ref("");
 const from = ref("id");
@@ -45,13 +56,15 @@ async function createDeck() {
   await load();
 }
 
-async function removeDeck(id: string) {
-  if (!confirm("Supprimer ce deck + tous ses items ?")) return;
+async function removeDeck() {
+  const id = pendingDeleteId.value;
+  pendingDeleteId.value = null;
+  if (!id) return;
   await db.transaction("rw", [db.vocabDecks, db.vocabItems], async () => {
     await db.vocabDecks.delete(id);
     await db.vocabItems.where("deckId").equals(id).delete();
   });
-  set("ok", "Deck supprimé ✅");
+  toast.success("Deck supprimé !");
   await load();
 }
 
@@ -101,16 +114,18 @@ onMounted(load);
     <div class="card cardFill">
       <div class="row flex-none mb-2.5">
         <h2 class="m-0">Liste des decks</h2>
-        <span class="small">{{ decks.length }}</span>
+        <span class="small">{{ filteredDecks.length }} / {{ decks.length }}</span>
       </div>
 
-      <div v-if="decks.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
+      <input class="input mb-2.5" v-model="search" placeholder="🔍 Rechercher un deck…" />
+
+      <div v-if="filteredDecks.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
         <EmptyState title="Aucun deck" hint="Crée ton premier deck à gauche, ou importe un JSON." />
       </div>
 
       <div v-else class="scrollY">
         <div class="list">
-          <div v-for="d in decks" :key="d.id" class="card">
+          <div v-for="d in filteredDecks" :key="d.id" class="card">
             <div class="row">
               <div>
                 <h3 class="m-0">{{ d.title }}</h3>
@@ -119,19 +134,26 @@ onMounted(load);
                 </p>
               </div>
               <div class="row" style="gap:8px">
-                <!-- ✅ Apprendre -->
                 <router-link class="btn" :to="`/deck/${d.id}`">Ouvrir</router-link>
                 <router-link class="btn" :to="`/deck/${d.id}/flash`">Flashcards</router-link>
-
-                <!-- ✅ Gérer -->
                 <button class="btn" @click="editDeck(d.id)">Éditer</button>
-                <button class="btn danger" @click="removeDeck(d.id)">Supprimer</button>
+                <button class="btn danger" @click="pendingDeleteId = d.id">Supprimer</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <ConfirmModal
+      :open="!!pendingDeleteId"
+      title="Supprimer le deck"
+      message="Supprimer ce deck et tous ses items ? Cette action est irréversible."
+      confirm-text="Supprimer"
+      :danger="true"
+      @confirm="removeDeck"
+      @cancel="pendingDeleteId = null"
+    />
   </div>
 </template>
 

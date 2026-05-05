@@ -1,10 +1,32 @@
+export type VocabItemJson = {
+  id: string;
+  term: string;
+  definition: string;
+  tags?: string[];
+  /** Difficulty 1 (easy) to 3 (hard) */
+  difficulty?: 1 | 2 | 3;
+};
+
 export type VocabDeckJson = {
   type: "vocab_deck";
   id: string;
   title: string;
   from: string;
   to: string;
-  items: { id: string; term: string; definition: string; tags?: string[] }[];
+  /** Schema version of this deck */
+  version?: number;
+  /** Last update timestamp */
+  updatedAt?: number;
+  items: VocabItemJson[];
+};
+
+export type QcmQuestionJson = {
+  id: string;
+  prompt: string;
+  choices: { id: string; text: string; correct: boolean }[];
+  explanation?: string;
+  tags?: string[];
+  difficulty?: 1 | 2 | 3;
 };
 
 export type QcmExamJson = {
@@ -12,20 +34,29 @@ export type QcmExamJson = {
   id: string;
   title: string;
   durationSeconds?: number;
-  questions: {
-    id: string;
-    prompt: string;
-    choices: { id: string; text: string; correct: boolean }[];
-    explanation?: string;
-    tags?: string[];
-  }[];
+  version?: number;
+  updatedAt?: number;
+  questions: QcmQuestionJson[];
+};
+
+export type SentenceItemJson = {
+  id: string;
+  text: string;
+  /** Natural translation */
+  translation?: string;
+  /** Word-by-word / structural translation (e.g. SPOK order) */
+  literal?: string;
+  tags?: string[];
+  difficulty?: 1 | 2 | 3;
 };
 
 export type SentenceDeckJson = {
   type: "sentence_deck";
   id: string;
   title: string;
-  items: { id: string; text: string; translation?: string; tags?: string[] }[];
+  version?: number;
+  updatedAt?: number;
+  items: SentenceItemJson[];
 };
 
 export type RevisionsBundleJson = {

@@ -6,7 +6,20 @@ defineProps<{
 </script>
 
 <template>
-  <div class="card" :style="kind === 'ok' ? 'border-color: rgba(61,220,151,.35)' : kind === 'danger' ? 'border-color: rgba(255,107,107,.35)' : ''">
-    <p style="margin:0">{{ message }}</p>
+  <div class="confirm-bar" :class="'confirm-bar--' + (kind || 'info')">
+    <p class="m-0">{{ message }}</p>
   </div>
 </template>
+
+<style scoped>
+.confirm-bar {
+  border-radius: 1rem;
+  border: 1px solid rgb(var(--border) / 0.1);
+  background: rgb(var(--card) / 0.7);
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s ease;
+}
+.confirm-bar--ok { border-color: rgb(var(--ok) / 0.4); }
+.confirm-bar--danger { border-color: rgb(var(--danger) / 0.4); }
+.confirm-bar--info { border-color: rgb(var(--accent) / 0.3); }
+</style>

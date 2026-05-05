@@ -58,10 +58,10 @@ onMounted(load);
       <div class="hr"></div>
 
       <h3>Sources</h3>
-      <div class="row" style="flex-wrap:wrap">
-        <label class="badge"><input type="checkbox" v-model="includeVocab" /> Vocab (QCM généré)</label>
-        <label class="badge"><input type="checkbox" v-model="includeExam" /> QCM (importés)</label>
-        <label class="badge"><input type="checkbox" v-model="includeOrder" /> Ordre des mots (SPOK)</label>
+      <div class="row flex-wrap">
+        <label class="badge cursor-pointer"><input type="checkbox" v-model="includeVocab" /> Vocab (QCM généré)</label>
+        <label class="badge cursor-pointer"><input type="checkbox" v-model="includeExam" /> QCM (importés)</label>
+        <label class="badge cursor-pointer"><input type="checkbox" v-model="includeOrder" /> Ordre des mots (SPOK)</label>
       </div>
 
       <div class="hr"></div>
@@ -76,7 +76,7 @@ onMounted(load);
 
       <!-- ✅ Zone tags scrollable -->
       <div class="tagBox">
-        <div class="pills" style="flex-wrap:wrap">
+        <div class="pills flex-wrap">
           <button
               v-for="t in tags"
               :key="t"
@@ -90,7 +90,7 @@ onMounted(load);
         </div>
       </div>
 
-      <div style="margin-top:12px" v-if="msg">
+      <div class="mt-3" v-if="msg">
         <ConfirmBar :message="msg.text" :kind="msg.kind" />
       </div>
 

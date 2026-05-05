@@ -5,6 +5,9 @@ import EmptyState from "../components/EmptyState.vue";
 import { db, type Attempt, type AttemptDetail, type Exam, type VocabDeck } from "../db";
 import { exportAttemptPdf } from "../services/pdfReport";
 import { formatDate, formatDuration } from "../utils/time";
+import { useToast } from "../composables/useToast";
+
+const toast = useToast();
 
 const props = defineProps<{ attemptId?: string }>();
 const route = useRoute();
@@ -61,7 +64,7 @@ function exportPdf() {
   try {
     exportAttemptPdf(attempt.value, title.value);
   } catch (e: any) {
-    alert(e?.message ?? "Impossible d'exporter le PDF");
+    toast.error(e?.message ?? "Impossible d'exporter le PDF");
   }
 }
 
@@ -95,8 +98,8 @@ onUnmounted(() => {
 <template>
   <div class="attemptPage">
     <div v-if="!attempt">
-      <EmptyState title="Résultat introuvable" hint="Cette tentative n'existe plus dans la base locale." />
-      <div class="row" style="margin-top:12px">
+      <EmptyState title="Résultat introuvable" hint="Cette tentative n'existe plus dans la base locale." icon="🔎" />
+      <div class="row mt-3">
         <button class="btn" @click="goBack">Retour stats</button>
       </div>
     </div>
@@ -104,8 +107,8 @@ onUnmounted(() => {
     <div v-else class="card resultCard">
       <div class="row">
         <div>
-          <h2 style="margin:0">{{ title }}</h2>
-          <p class="small" style="margin:4px 0 0 0">
+          <h2 class="m-0">{{ title }}</h2>
+          <p class="small mt-1 mb-0">
             {{ attempt.type }} • {{ percent01(attempt.score) }} • {{ formatDate(attempt.finishedAt) }}
             <span v-if="attempt.meta?.durationSeconds !== undefined">
               • ⏱ {{ formatDuration(attempt.meta.durationSeconds) }}
@@ -116,7 +119,7 @@ onUnmounted(() => {
           </p>
         </div>
 
-        <div class="row" style="gap:8px">
+        <div class="row gap-2">
           <button class="btn" @click="exportPdf" :disabled="!canExportPdf(attempt)">📄 PDF</button>
           <button class="btn" @click="goBack">Retour</button>
         </div>
@@ -124,54 +127,51 @@ onUnmounted(() => {
 
       <div class="hr"></div>
 
-      <div class="row" style="justify-content:flex-start; gap:10px">
-        <label class="badge" style="cursor:pointer">
+      <div class="row justify-start gap-2.5">
+        <label class="badge cursor-pointer">
           <input type="checkbox" v-model="showOnlyWrong" />
           Voir seulement les erreurs
         </label>
         <span class="small">{{ filtered.length }} / {{ details.length }}</span>
       </div>
 
-      <div v-if="details.length === 0" style="margin-top:12px">
-        <EmptyState title="Aucun détail" hint="Cette tentative est trop ancienne. Relance un exam pour enregistrer les détails." />
+      <div v-if="details.length === 0" class="mt-3">
+        <EmptyState title="Aucun détail" hint="Cette tentative est trop ancienne. Relance un exam pour enregistrer les détails." icon="⏳" />
       </div>
 
-      <div v-else class="list resultList" style="margin-top:12px">
-        <div v-for="(d, i) in filtered" :key="i" class="card" style="border-radius:18px">
+      <div v-else class="list resultList mt-3">
+        <div v-for="(d, i) in filtered" :key="i" class="card rounded-[18px]">
           <div class="row">
-            <span
-                class="badge"
-                :style="d.correct ? 'border-color: rgba(61,220,151,.65)' : 'border-color: rgba(255,107,107,.65)'"
-            >
+            <span class="badge" :class="d.correct ? 'result-ok' : 'result-wrong'">
               {{ d.correct ? "OK" : "Faux" }}
             </span>
             <span class="small">#{{ i + 1 }}</span>
           </div>
 
           <template v-if="d.kind === 'sentence_order'">
-            <h3 style="margin:10px 0 0 0">{{ d.text }}</h3>
-            <p v-if="d.translation" class="small" style="margin:6px 0 0 0">FR: {{ d.translation }}</p>
+            <h3 class="mt-2.5 mb-0">{{ d.text }}</h3>
+            <p v-if="d.translation" class="small mt-1.5 mb-0">FR: {{ d.translation }}</p>
 
             <div class="hr"></div>
-            <p class="small" style="margin:0"><b>Ta réponse:</b> {{ answerSentence(d) }}</p>
-            <p class="small" style="margin:6px 0 0 0"><b>Correction:</b> {{ correctionSentence(d) }}</p>
+            <p class="small m-0"><b>Ta réponse:</b> {{ answerSentence(d) }}</p>
+            <p class="small mt-1.5 mb-0"><b>Correction:</b> {{ correctionSentence(d) }}</p>
           </template>
 
           <template v-else-if="d.kind === 'flashcard'">
-            <h3 style="margin:10px 0 0 0">{{ d.term }}</h3>
-            <p class="small" style="margin:6px 0 0 0">Réponse: {{ d.definition }}</p>
+            <h3 class="mt-2.5 mb-0">{{ d.term }}</h3>
+            <p class="small mt-1.5 mb-0">Réponse: {{ d.definition }}</p>
             <div class="hr"></div>
-            <p class="small" style="margin:0">
+            <p class="small m-0">
               <b>Statut:</b> {{ d.known ? "Je sais" : "Je ne sais pas" }}
             </p>
           </template>
 
           <template v-else>
-            <h3 style="margin:10px 0 0 0">{{ d.prompt }}</h3>
+            <h3 class="mt-2.5 mb-0">{{ d.prompt }}</h3>
             <div class="hr"></div>
-            <p class="small" style="margin:0"><b>Ta réponse:</b> {{ pickedText(d) }}</p>
-            <p class="small" style="margin:6px 0 0 0"><b>Bonne réponse:</b> {{ correctText(d) }}</p>
-            <p v-if="d.kind === 'exam_mcq' && d.explanation" class="small" style="margin:6px 0 0 0">
+            <p class="small m-0"><b>Ta réponse:</b> {{ pickedText(d) }}</p>
+            <p class="small mt-1.5 mb-0"><b>Bonne réponse:</b> {{ correctText(d) }}</p>
+            <p v-if="d.kind === 'exam_mcq' && d.explanation" class="small mt-1.5 mb-0">
               <b>Explication:</b> {{ d.explanation }}
             </p>
           </template>
@@ -180,3 +180,8 @@ onUnmounted(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.result-ok { border-color: rgb(var(--ok) / 0.65); color: rgb(var(--ok)); }
+.result-wrong { border-color: rgb(var(--danger) / 0.65); color: rgb(var(--danger)); }
+</style>

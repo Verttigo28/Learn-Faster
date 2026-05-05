@@ -1,17 +1,33 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { db, type SentenceExercise } from "../db";
 import { uid } from "../utils/id";
 import { tokenizeSentence } from "../utils/sentence";
 import EmptyState from "../components/EmptyState.vue";
 import ConfirmBar from "../components/ConfirmBar.vue";
 import BaseModal from "../components/BaseModal.vue";
+import ConfirmModal from "../components/ConfirmModal.vue";
+import { useToast } from "../composables/useToast";
+
+const toast = useToast();
 
 const all = ref<SentenceExercise[]>([]);
 const text = ref("");
 const translation = ref("");
 const tagsText = ref("spok, vacances");
 const message = ref<{ kind: "info" | "ok" | "danger"; text: string } | null>(null);
+const search = ref("");
+const pendingDeleteId = ref<string | null>(null);
+
+const filtered = computed(() => {
+  const q = search.value.trim().toLowerCase();
+  if (!q) return all.value;
+  return all.value.filter(s =>
+    s.text.toLowerCase().includes(q) ||
+    (s.translation ?? "").toLowerCase().includes(q) ||
+    (s.tags ?? []).some(t => t.toLowerCase().includes(q))
+  );
+});
 
 // Edition (modal)
 const editOpen = ref(false);
@@ -58,9 +74,12 @@ async function add() {
   await load();
 }
 
-async function remove(id: string) {
-  if (!confirm("Supprimer cette phrase ?")) return;
+async function remove() {
+  const id = pendingDeleteId.value;
+  pendingDeleteId.value = null;
+  if (!id) return;
   await db.sentenceExercises.delete(id);
+  toast.success("Phrase supprimée !");
   await load();
 }
 
@@ -128,16 +147,18 @@ onMounted(load);
     <div class="card cardFill">
       <div class="row flex-none mb-2.5">
         <h2 class="m-0">Liste des phrases</h2>
-        <span class="small">{{ all.length }}</span>
+        <span class="small">{{ filtered.length }} / {{ all.length }}</span>
       </div>
 
-      <div v-if="all.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
+      <input class="input mb-2.5" v-model="search" placeholder="🔍 Rechercher une phrase ou un tag…" />
+
+      <div v-if="filtered.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
         <EmptyState title="Aucune phrase" hint="Ajoute ta première phrase à gauche." />
       </div>
 
       <div v-else class="scrollY">
         <div class="list">
-          <div v-for="s in all" :key="s.id" class="card">
+          <div v-for="s in filtered" :key="s.id" class="card">
             <div class="row">
               <div>
                 <h3 class="m-0">{{ s.text }}</h3>
@@ -148,13 +169,23 @@ onMounted(load);
               </div>
               <div class="row" style="gap:8px">
                 <button class="btn" @click="openEdit(s)">Modifier</button>
-                <button class="btn danger" @click="remove(s.id)">Supprimer</button>
+                <button class="btn danger" @click="pendingDeleteId = s.id">Supprimer</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <ConfirmModal
+      :open="!!pendingDeleteId"
+      title="Supprimer la phrase"
+      message="Supprimer cette phrase ? Cette action est irréversible."
+      confirm-text="Supprimer"
+      :danger="true"
+      @confirm="remove"
+      @cancel="pendingDeleteId = null"
+    />
   </div>
 
   <BaseModal :open="editOpen" title="Modifier la phrase" @close="editOpen = false">

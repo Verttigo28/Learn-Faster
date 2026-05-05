@@ -1,0 +1,5219 @@
+{
+  "type": "revisions_bundle",
+  "schema": 1,
+  "exportedAt": 1768155139924,
+  "vocabDecks": [
+    {
+      "type": "vocab_deck",
+      "id": "indo-fr-grammaire",
+      "title": "Indonésien → Français (Pronoms & grammaire de base)",
+      "from": "id",
+      "to": "fr",
+      "items": [
+        {
+          "id": "grammaire_1",
+          "term": "aku",
+          "definition": "je / moi (familier)",
+          "tags": [
+            "pos",
+            "pronom",
+            "register",
+            "slang"
+          ]
+        },
+        {
+          "id": "grammaire_10",
+          "term": "di",
+          "definition": "à/dans (lieu)",
+          "tags": [
+            "grammar",
+            "topic",
+            "lieu"
+          ]
+        },
+        {
+          "id": "grammaire_11",
+          "term": "dari",
+          "definition": "de (origine)",
+          "tags": [
+            "grammar",
+            "topic",
+            "origine"
+          ]
+        },
+        {
+          "id": "grammaire_12",
+          "term": "bukan",
+          "definition": "ce n’est pas (nom/identité)",
+          "tags": [
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "grammaire_13",
+          "term": "tidak",
+          "definition": "ne… pas (neutre)",
+          "tags": [
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "grammaire_14",
+          "term": "nggak / gak",
+          "definition": "ne… pas (familier)",
+          "tags": [
+            "grammar",
+            "negation",
+            "register",
+            "slang"
+          ]
+        },
+        {
+          "id": "grammaire_15",
+          "term": "yang",
+          "definition": "qui/que (relatif), « celui qui… »",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "grammaire_16",
+          "term": "dan",
+          "definition": "et",
+          "tags": [
+            "grammar",
+            "connecteur"
+          ]
+        },
+        {
+          "id": "grammaire_17",
+          "term": "tapi",
+          "definition": "mais",
+          "tags": [
+            "grammar",
+            "connecteur"
+          ]
+        },
+        {
+          "id": "grammaire_18",
+          "term": "karena",
+          "definition": "parce que",
+          "tags": [
+            "grammar",
+            "connecteur"
+          ]
+        },
+        {
+          "id": "grammaire_19",
+          "term": "jadi",
+          "definition": "donc",
+          "tags": [
+            "grammar",
+            "connecteur"
+          ]
+        },
+        {
+          "id": "grammaire_2",
+          "term": "saya",
+          "definition": "je / moi (neutre/poli)",
+          "tags": [
+            "pos",
+            "pronom",
+            "register",
+            "formal"
+          ]
+        },
+        {
+          "id": "grammaire_20",
+          "term": "sedang",
+          "definition": "être en train de",
+          "tags": [
+            "grammar",
+            "aspect"
+          ]
+        },
+        {
+          "id": "grammaire_21",
+          "term": "sudah",
+          "definition": "déjà",
+          "tags": [
+            "grammar",
+            "aspect",
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "grammaire_22",
+          "term": "belum",
+          "definition": "pas encore",
+          "tags": [
+            "grammar",
+            "aspect",
+            "negation",
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "grammaire_23",
+          "term": "lagi",
+          "definition": "encore / de nouveau",
+          "tags": [
+            "grammar",
+            "aspect"
+          ]
+        },
+        {
+          "id": "grammaire_24",
+          "term": "juga",
+          "definition": "aussi",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "grammaire_3",
+          "term": "kamu",
+          "definition": "tu / toi",
+          "tags": [
+            "pos",
+            "pronom"
+          ]
+        },
+        {
+          "id": "grammaire_4",
+          "term": "Anda",
+          "definition": "vous (poli)",
+          "tags": [
+            "pos",
+            "pronom",
+            "register",
+            "formal"
+          ]
+        },
+        {
+          "id": "grammaire_5",
+          "term": "dia",
+          "definition": "il/elle",
+          "tags": [
+            "pos",
+            "pronom"
+          ]
+        },
+        {
+          "id": "grammaire_6",
+          "term": "kita",
+          "definition": "nous (inclut l’interlocuteur)",
+          "tags": [
+            "pos",
+            "pronom",
+            "grammar"
+          ]
+        },
+        {
+          "id": "grammaire_7",
+          "term": "kami",
+          "definition": "nous (exclut l’interlocuteur)",
+          "tags": [
+            "pos",
+            "pronom",
+            "grammar"
+          ]
+        },
+        {
+          "id": "grammaire_8",
+          "term": "mereka",
+          "definition": "ils/elles",
+          "tags": [
+            "pos",
+            "pronom"
+          ]
+        },
+        {
+          "id": "grammaire_9",
+          "term": "ke",
+          "definition": "vers/à (direction)",
+          "tags": [
+            "grammar",
+            "topic",
+            "lieu"
+          ]
+        }
+      ],
+      "version": 1,
+      "updatedAt": 1777877307960
+    },
+    {
+      "type": "vocab_deck",
+      "id": "indo-fr-nombres",
+      "title": "Indonésien → Français (Chiffres & heure)",
+      "from": "id",
+      "to": "fr",
+      "items": [
+        {
+          "id": "nombres_1",
+          "term": "nol",
+          "definition": "0",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_10",
+          "term": "sembilan",
+          "definition": "9",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_11",
+          "term": "sepuluh",
+          "definition": "10",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_12",
+          "term": "sebelas",
+          "definition": "11",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_13",
+          "term": "belas",
+          "definition": "suffixe 11–19",
+          "tags": [
+            "topic",
+            "nombres",
+            "grammar"
+          ]
+        },
+        {
+          "id": "nombres_14",
+          "term": "puluh",
+          "definition": "dizaine (20, 30…)",
+          "tags": [
+            "topic",
+            "nombres",
+            "grammar"
+          ]
+        },
+        {
+          "id": "nombres_15",
+          "term": "ratus",
+          "definition": "centaine",
+          "tags": [
+            "topic",
+            "nombres",
+            "grammar"
+          ]
+        },
+        {
+          "id": "nombres_16",
+          "term": "ribu",
+          "definition": "millier",
+          "tags": [
+            "topic",
+            "nombres",
+            "grammar"
+          ]
+        },
+        {
+          "id": "nombres_17",
+          "term": "seratus",
+          "definition": "100",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_18",
+          "term": "seribu",
+          "definition": "1000",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_19",
+          "term": "berapa?",
+          "definition": "combien ?",
+          "tags": [
+            "func",
+            "question",
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_2",
+          "term": "satu",
+          "definition": "1",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_20",
+          "term": "berapa harganya?",
+          "definition": "c’est combien ? (prix)",
+          "tags": [
+            "func",
+            "question",
+            "topic",
+            "achat",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_21",
+          "term": "umur",
+          "definition": "âge",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_22",
+          "term": "tahun",
+          "definition": "année / ans",
+          "tags": [
+            "topic",
+            "nombres",
+            "temps"
+          ]
+        },
+        {
+          "id": "nombres_23",
+          "term": "nomor",
+          "definition": "numéro",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_24",
+          "term": "Jam berapa?",
+          "definition": "il est quelle heure ?",
+          "tags": [
+            "func",
+            "question",
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "nombres_25",
+          "term": "jam",
+          "definition": "heure",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "nombres_26",
+          "term": "menit",
+          "definition": "minute",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "nombres_27",
+          "term": "setengah",
+          "definition": "demi / et demie",
+          "tags": [
+            "topic",
+            "temps",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_3",
+          "term": "dua",
+          "definition": "2",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_4",
+          "term": "tiga",
+          "definition": "3",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_5",
+          "term": "empat",
+          "definition": "4",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_6",
+          "term": "lima",
+          "definition": "5",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_7",
+          "term": "enam",
+          "definition": "6",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_8",
+          "term": "tujuh",
+          "definition": "7",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        },
+        {
+          "id": "nombres_9",
+          "term": "delapan",
+          "definition": "8",
+          "tags": [
+            "topic",
+            "nombres"
+          ]
+        }
+      ],
+      "version": 1,
+      "updatedAt": 1777877307960
+    },
+    {
+      "type": "vocab_deck",
+      "id": "indo-fr-politesse",
+      "title": "Indonésien → Français (Politesse & formules)",
+      "from": "id",
+      "to": "fr",
+      "items": [
+        {
+          "id": "politesse_1",
+          "term": "Selamat pagi",
+          "definition": "bonjour (matin)",
+          "tags": [
+            "func",
+            "politesse",
+            "topic",
+            "salutations"
+          ]
+        },
+        {
+          "id": "politesse_10",
+          "term": "Permisi",
+          "definition": "excusez-moi / pardon",
+          "tags": [
+            "func",
+            "politesse"
+          ]
+        },
+        {
+          "id": "politesse_11",
+          "term": "Maaf",
+          "definition": "désolé / pardon",
+          "tags": [
+            "func",
+            "politesse"
+          ]
+        },
+        {
+          "id": "politesse_12",
+          "term": "Tolong",
+          "definition": "s’il te/vous plaît / aide",
+          "tags": [
+            "func",
+            "politesse"
+          ]
+        },
+        {
+          "id": "politesse_13",
+          "term": "Silakan",
+          "definition": "je t’en prie / vas-y",
+          "tags": [
+            "func",
+            "politesse"
+          ]
+        },
+        {
+          "id": "politesse_14",
+          "term": "Boleh saya...?",
+          "definition": "Est-ce que je peux... ? (poli)",
+          "tags": [
+            "func",
+            "politesse",
+            "question",
+            "register",
+            "formal"
+          ]
+        },
+        {
+          "id": "politesse_15",
+          "term": "Senang bertemu dengan Anda",
+          "definition": "enchanté (poli)",
+          "tags": [
+            "func",
+            "politesse",
+            "register",
+            "formal"
+          ]
+        },
+        {
+          "id": "politesse_16",
+          "term": "Sampai jumpa",
+          "definition": "à bientôt",
+          "tags": [
+            "func",
+            "politesse"
+          ]
+        },
+        {
+          "id": "politesse_17",
+          "term": "Selamat jalan",
+          "definition": "bon voyage (à celui qui part)",
+          "tags": [
+            "func",
+            "politesse"
+          ]
+        },
+        {
+          "id": "politesse_18",
+          "term": "Selamat tinggal",
+          "definition": "au revoir (à celui qui reste)",
+          "tags": [
+            "func",
+            "politesse"
+          ]
+        },
+        {
+          "id": "politesse_19",
+          "term": "Tolong ulangi",
+          "definition": "Répète s’il te plaît",
+          "tags": [
+            "func",
+            "politesse",
+            "topic",
+            "classe"
+          ]
+        },
+        {
+          "id": "politesse_2",
+          "term": "Selamat siang",
+          "definition": "bonjour (midi / après-midi)",
+          "tags": [
+            "func",
+            "politesse",
+            "topic",
+            "salutations"
+          ]
+        },
+        {
+          "id": "politesse_20",
+          "term": "Tolong bicara pelan-pelan",
+          "definition": "Parle plus lentement s’il te plaît",
+          "tags": [
+            "func",
+            "politesse",
+            "topic",
+            "classe"
+          ]
+        },
+        {
+          "id": "politesse_3",
+          "term": "Selamat sore",
+          "definition": "bonjour (fin d’après-midi)",
+          "tags": [
+            "func",
+            "politesse",
+            "topic",
+            "salutations"
+          ]
+        },
+        {
+          "id": "politesse_4",
+          "term": "Selamat malam",
+          "definition": "bonsoir",
+          "tags": [
+            "func",
+            "politesse",
+            "topic",
+            "salutations"
+          ]
+        },
+        {
+          "id": "politesse_5",
+          "term": "Apa kabar?",
+          "definition": "comment ça va ?",
+          "tags": [
+            "func",
+            "question",
+            "topic",
+            "salutations"
+          ]
+        },
+        {
+          "id": "politesse_6",
+          "term": "Baik",
+          "definition": "bien (ça va)",
+          "tags": [
+            "topic",
+            "salutations"
+          ]
+        },
+        {
+          "id": "politesse_7",
+          "term": "Terima kasih",
+          "definition": "merci",
+          "tags": [
+            "func",
+            "politesse"
+          ]
+        },
+        {
+          "id": "politesse_8",
+          "term": "Terima kasih banyak",
+          "definition": "merci beaucoup",
+          "tags": [
+            "func",
+            "politesse"
+          ]
+        },
+        {
+          "id": "politesse_9",
+          "term": "Sama-sama",
+          "definition": "de rien",
+          "tags": [
+            "func",
+            "politesse"
+          ]
+        }
+      ],
+      "version": 1,
+      "updatedAt": 1777877307960
+    },
+    {
+      "type": "vocab_deck",
+      "id": "indo-fr-quotidien",
+      "title": "Indonésien → Français (Quotidien & voyage)",
+      "from": "id",
+      "to": "fr",
+      "items": [
+        {
+          "id": "quotidien_1",
+          "term": "makan",
+          "definition": "manger",
+          "tags": [
+            "pos",
+            "verbe",
+            "topic",
+            "nourriture"
+          ]
+        },
+        {
+          "id": "quotidien_10",
+          "term": "kopi",
+          "definition": "café",
+          "tags": [
+            "topic",
+            "nourriture"
+          ]
+        },
+        {
+          "id": "quotidien_11",
+          "term": "gula",
+          "definition": "sucre",
+          "tags": [
+            "topic",
+            "nourriture"
+          ]
+        },
+        {
+          "id": "quotidien_12",
+          "term": "tanpa",
+          "definition": "sans",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "quotidien_13",
+          "term": "pakai",
+          "definition": "porter/utiliser",
+          "tags": [
+            "pos",
+            "verbe",
+            "grammar",
+            "pakai"
+          ]
+        },
+        {
+          "id": "quotidien_14",
+          "term": "restoran",
+          "definition": "restaurant",
+          "tags": [
+            "topic",
+            "restaurant"
+          ]
+        },
+        {
+          "id": "quotidien_15",
+          "term": "pasar",
+          "definition": "marché",
+          "tags": [
+            "topic",
+            "lieu"
+          ]
+        },
+        {
+          "id": "quotidien_16",
+          "term": "stasiun",
+          "definition": "gare",
+          "tags": [
+            "topic",
+            "lieu"
+          ]
+        },
+        {
+          "id": "quotidien_17",
+          "term": "toilet",
+          "definition": "toilettes",
+          "tags": [
+            "topic",
+            "lieu"
+          ]
+        },
+        {
+          "id": "quotidien_18",
+          "term": "kiri",
+          "definition": "gauche",
+          "tags": [
+            "topic",
+            "directions"
+          ]
+        },
+        {
+          "id": "quotidien_19",
+          "term": "kanan",
+          "definition": "droite",
+          "tags": [
+            "topic",
+            "directions"
+          ]
+        },
+        {
+          "id": "quotidien_2",
+          "term": "minum",
+          "definition": "boire",
+          "tags": [
+            "pos",
+            "verbe",
+            "topic",
+            "nourriture"
+          ]
+        },
+        {
+          "id": "quotidien_20",
+          "term": "lurus",
+          "definition": "tout droit",
+          "tags": [
+            "topic",
+            "directions"
+          ]
+        },
+        {
+          "id": "quotidien_21",
+          "term": "dekat",
+          "definition": "près",
+          "tags": [
+            "topic",
+            "directions"
+          ]
+        },
+        {
+          "id": "quotidien_22",
+          "term": "jauh",
+          "definition": "loin",
+          "tags": [
+            "topic",
+            "directions"
+          ]
+        },
+        {
+          "id": "quotidien_23",
+          "term": "mahal",
+          "definition": "cher",
+          "tags": [
+            "topic",
+            "achat",
+            "pos",
+            "adjectif"
+          ]
+        },
+        {
+          "id": "quotidien_24",
+          "term": "murah",
+          "definition": "pas cher",
+          "tags": [
+            "topic",
+            "achat",
+            "pos",
+            "adjectif"
+          ]
+        },
+        {
+          "id": "quotidien_3",
+          "term": "beli",
+          "definition": "acheter",
+          "tags": [
+            "pos",
+            "verbe",
+            "topic",
+            "achat"
+          ]
+        },
+        {
+          "id": "quotidien_4",
+          "term": "jual",
+          "definition": "vendre",
+          "tags": [
+            "pos",
+            "verbe",
+            "topic",
+            "achat"
+          ]
+        },
+        {
+          "id": "quotidien_5",
+          "term": "pesan",
+          "definition": "commander (restaurant)",
+          "tags": [
+            "pos",
+            "verbe",
+            "topic",
+            "restaurant"
+          ]
+        },
+        {
+          "id": "quotidien_6",
+          "term": "tagihan",
+          "definition": "addition",
+          "tags": [
+            "topic",
+            "restaurant"
+          ]
+        },
+        {
+          "id": "quotidien_7",
+          "term": "menu",
+          "definition": "menu",
+          "tags": [
+            "topic",
+            "restaurant"
+          ]
+        },
+        {
+          "id": "quotidien_8",
+          "term": "air",
+          "definition": "eau",
+          "tags": [
+            "topic",
+            "nourriture"
+          ]
+        },
+        {
+          "id": "quotidien_9",
+          "term": "air putih",
+          "definition": "eau (plate)",
+          "tags": [
+            "topic",
+            "nourriture"
+          ]
+        }
+      ],
+      "version": 1,
+      "updatedAt": 1777877307960
+    },
+    {
+      "type": "vocab_deck",
+      "id": "indo-fr-temps",
+      "title": "Indonésien → Français (Temps & dates)",
+      "from": "id",
+      "to": "fr",
+      "items": [
+        {
+          "id": "temps_1",
+          "term": "hari ini",
+          "definition": "aujourd’hui",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "temps_10",
+          "term": "malam",
+          "definition": "soir/nuit",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "temps_11",
+          "term": "tanggal",
+          "definition": "date",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_12",
+          "term": "sampai",
+          "definition": "jusqu’à",
+          "tags": [
+            "topic",
+            "temps",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_13",
+          "term": "sejak",
+          "definition": "depuis (temps)",
+          "tags": [
+            "topic",
+            "temps",
+            "grammar"
+          ]
+        },
+        {
+          "id": "temps_14",
+          "term": "Senin",
+          "definition": "lundi",
+          "tags": [
+            "topic",
+            "temps",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_15",
+          "term": "Selasa",
+          "definition": "mardi",
+          "tags": [
+            "topic",
+            "temps",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_16",
+          "term": "Rabu",
+          "definition": "mercredi",
+          "tags": [
+            "topic",
+            "temps",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_17",
+          "term": "Kamis",
+          "definition": "jeudi",
+          "tags": [
+            "topic",
+            "temps",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_18",
+          "term": "Jumat",
+          "definition": "vendredi",
+          "tags": [
+            "topic",
+            "temps",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_19",
+          "term": "Sabtu",
+          "definition": "samedi",
+          "tags": [
+            "topic",
+            "temps",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_2",
+          "term": "kemarin",
+          "definition": "hier",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "temps_20",
+          "term": "Minggu",
+          "definition": "dimanche",
+          "tags": [
+            "topic",
+            "temps",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_21",
+          "term": "Januari",
+          "definition": "janvier",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_22",
+          "term": "Februari",
+          "definition": "février",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_23",
+          "term": "Maret",
+          "definition": "mars",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_24",
+          "term": "April",
+          "definition": "avril",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_25",
+          "term": "Mei",
+          "definition": "mai",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_26",
+          "term": "Juni",
+          "definition": "juin",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_27",
+          "term": "Juli",
+          "definition": "juillet",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_28",
+          "term": "Agustus",
+          "definition": "août",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_29",
+          "term": "September",
+          "definition": "septembre",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_3",
+          "term": "besok",
+          "definition": "demain",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "temps_30",
+          "term": "Oktober",
+          "definition": "octobre",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_31",
+          "term": "November",
+          "definition": "novembre",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_32",
+          "term": "Desember",
+          "definition": "décembre",
+          "tags": [
+            "topic",
+            "dates"
+          ]
+        },
+        {
+          "id": "temps_4",
+          "term": "lusa",
+          "definition": "après-demain",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "temps_5",
+          "term": "sekarang",
+          "definition": "maintenant",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "temps_6",
+          "term": "nanti",
+          "definition": "plus tard",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "temps_7",
+          "term": "pagi",
+          "definition": "matin",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "temps_8",
+          "term": "siang",
+          "definition": "midi / journée",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "temps_9",
+          "term": "sore",
+          "definition": "fin d’après-midi",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        }
+      ],
+      "version": 1,
+      "updatedAt": 1777877307960
+    },
+    {
+      "type": "vocab_deck",
+      "id": "indo-fr-vacances",
+      "title": "Indonésien → Français (Vacances / phrases)",
+      "from": "id",
+      "to": "fr",
+      "items": [
+        {
+          "id": "vacances_1",
+          "term": "liburan",
+          "definition": "les vacances / être en vacances (selon contexte)",
+          "tags": [
+            "topic",
+            "vacances"
+          ]
+        },
+        {
+          "id": "vacances_10",
+          "term": "di mana?",
+          "definition": "où ? (lieu)",
+          "tags": [
+            "func",
+            "question"
+          ]
+        },
+        {
+          "id": "vacances_11",
+          "term": "ke",
+          "definition": "vers/à (direction)",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "vacances_12",
+          "term": "di",
+          "definition": "à/dans (lieu)",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "vacances_13",
+          "term": "dari",
+          "definition": "de (origine)",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "vacances_14",
+          "term": "tanggal",
+          "definition": "date",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "vacances_15",
+          "term": "sampai",
+          "definition": "jusqu'à",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "vacances_16",
+          "term": "satu minggu",
+          "definition": "une semaine",
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "vacances_17",
+          "term": "ngapain?",
+          "definition": "tu as fait quoi ? (très familier)",
+          "tags": [
+            "register",
+            "slang"
+          ]
+        },
+        {
+          "id": "vacances_18",
+          "term": "orang tua",
+          "definition": "parents",
+          "tags": [
+            "topic",
+            "famille"
+          ]
+        },
+        {
+          "id": "vacances_19",
+          "term": "ketemu",
+          "definition": "rencontrer / voir",
+          "tags": [
+            "pos",
+            "verbe"
+          ]
+        },
+        {
+          "id": "vacances_2",
+          "term": "pergi liburan",
+          "definition": "partir en vacances",
+          "tags": [
+            "topic",
+            "vacances"
+          ]
+        },
+        {
+          "id": "vacances_20",
+          "term": "terus...",
+          "definition": "ensuite / du coup / après",
+          "tags": [
+            "grammar",
+            "liaison"
+          ]
+        },
+        {
+          "id": "vacances_21",
+          "term": "main",
+          "definition": "jouer / pratiquer (activité, sport)",
+          "tags": [
+            "pos",
+            "verbe"
+          ]
+        },
+        {
+          "id": "vacances_22",
+          "term": "main ski",
+          "definition": "faire du ski (usage courant à l'oral)",
+          "tags": [
+            "topic",
+            "sport"
+          ]
+        },
+        {
+          "id": "vacances_23",
+          "term": "pergi",
+          "definition": "aller / partir",
+          "tags": [
+            "pos",
+            "verbe"
+          ]
+        },
+        {
+          "id": "vacances_24",
+          "term": "restoran",
+          "definition": "restaurant",
+          "tags": [
+            "topic",
+            "lieu"
+          ]
+        },
+        {
+          "id": "vacances_25",
+          "term": "nggak / gak",
+          "definition": "ne... pas (familier)",
+          "tags": [
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "vacances_26",
+          "term": "tidak",
+          "definition": "ne... pas (plus neutre)",
+          "tags": [
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "vacances_27",
+          "term": "bukan",
+          "definition": "ce n'est pas (pour nom/identité)",
+          "tags": [
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "vacances_28",
+          "term": "ini",
+          "definition": "ceci / ce... (proche)",
+          "tags": [
+            "grammar",
+            "demonstratif"
+          ]
+        },
+        {
+          "id": "vacances_29",
+          "term": "itu",
+          "definition": "cela / ce... (loin ou déjà connu)",
+          "tags": [
+            "grammar",
+            "demonstratif"
+          ]
+        },
+        {
+          "id": "vacances_3",
+          "term": "berlibur",
+          "definition": "partir en vacances (registre un peu plus formel)",
+          "tags": [
+            "topic",
+            "vacances"
+          ]
+        },
+        {
+          "id": "vacances_30",
+          "term": "Ini apa?",
+          "definition": "C'est quoi ?",
+          "tags": [
+            "func",
+            "question"
+          ]
+        },
+        {
+          "id": "vacances_31",
+          "term": "pisang",
+          "definition": "banane",
+          "tags": [
+            "topic",
+            "nourriture"
+          ]
+        },
+        {
+          "id": "vacances_32",
+          "term": "jeruk",
+          "definition": "orange",
+          "tags": [
+            "topic",
+            "nourriture"
+          ]
+        },
+        {
+          "id": "vacances_33",
+          "term": "buku",
+          "definition": "livre",
+          "tags": [
+            "topic",
+            "objets"
+          ]
+        },
+        {
+          "id": "vacances_34",
+          "term": "koran",
+          "definition": "journal",
+          "tags": [
+            "topic",
+            "objets"
+          ]
+        },
+        {
+          "id": "vacances_35",
+          "term": "suka",
+          "definition": "aimer",
+          "tags": [
+            "pos",
+            "verbe"
+          ]
+        },
+        {
+          "id": "vacances_36",
+          "term": "kopi",
+          "definition": "café",
+          "tags": [
+            "topic",
+            "nourriture"
+          ]
+        },
+        {
+          "id": "vacances_37",
+          "term": "gula",
+          "definition": "sucre",
+          "tags": [
+            "topic",
+            "nourriture"
+          ]
+        },
+        {
+          "id": "vacances_38",
+          "term": "pakai",
+          "definition": "porter / utiliser / mettre",
+          "tags": [
+            "pos",
+            "verbe"
+          ]
+        },
+        {
+          "id": "vacances_39",
+          "term": "tanpa",
+          "definition": "sans",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "vacances_4",
+          "term": "liburannya",
+          "definition": "ses vacances / les vacances (dans ce contexte)",
+          "tags": [
+            "topic",
+            "vacances",
+            "grammar",
+            "suffix",
+            "nya"
+          ]
+        },
+        {
+          "id": "vacances_40",
+          "term": "selimut",
+          "definition": "couverture",
+          "tags": [
+            "topic",
+            "maison"
+          ]
+        },
+        {
+          "id": "vacances_41",
+          "term": "sepatu",
+          "definition": "chaussures",
+          "tags": [
+            "topic",
+            "vetements"
+          ]
+        },
+        {
+          "id": "vacances_42",
+          "term": "Aku nggak kedinginan.",
+          "definition": "Je n'ai pas froid.",
+          "tags": [
+            "example",
+            "phrase",
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "vacances_43",
+          "term": "Dia tidur nggak pakai selimut.",
+          "definition": "Il/elle dort sans couverture.",
+          "tags": [
+            "example",
+            "phrase"
+          ]
+        },
+        {
+          "id": "vacances_44",
+          "term": "Baptiste jalan nggak pakai sepatu.",
+          "definition": "Baptiste marche sans chaussures.",
+          "tags": [
+            "example",
+            "phrase"
+          ]
+        },
+        {
+          "id": "vacances_45",
+          "term": "Sumatra lebih tenang.",
+          "definition": "Sumatra est plus tranquille.",
+          "tags": [
+            "example",
+            "phrase"
+          ]
+        },
+        {
+          "id": "vacances_5",
+          "term": "-nya",
+          "definition": "suffixe : rendu défini / possession implicite / référence au contexte (≠ pluriel)",
+          "tags": [
+            "grammar",
+            "suffix",
+            "nya"
+          ]
+        },
+        {
+          "id": "vacances_6",
+          "term": "asik!",
+          "definition": "c'est chouette ! / trop bien ! (familier)",
+          "tags": [
+            "register",
+            "slang"
+          ]
+        },
+        {
+          "id": "vacances_7",
+          "term": "gimana?",
+          "definition": "comment ? (familier de bagaimana)",
+          "tags": [
+            "func",
+            "question"
+          ]
+        },
+        {
+          "id": "vacances_8",
+          "term": "kapan?",
+          "definition": "quand ?",
+          "tags": [
+            "func",
+            "question"
+          ]
+        },
+        {
+          "id": "vacances_9",
+          "term": "ke mana?",
+          "definition": "où ? (direction)",
+          "tags": [
+            "func",
+            "question"
+          ]
+        }
+      ],
+      "version": 1,
+      "updatedAt": 1777877307960
+    }
+  ],
+  "qcmExams": [
+    {
+      "type": "qcm_exam",
+      "id": "indo-fr-basics-qcm",
+      "title": "Indonésien — Bases complètes (politesse, chiffres, grammaire) QCM",
+      "durationSeconds": 1200,
+      "questions": [
+        {
+          "id": "basics_1",
+          "prompt": "Comment dire \"merci\" ?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Terima kasih",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Permisi",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Maaf",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Silakan",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "func",
+            "politesse"
+          ],
+          "explanation": "\"Terima kasih\" = merci (littéralement: recevoir amour)."
+        },
+        {
+          "id": "basics_10",
+          "prompt": "berapa? = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "pourquoi?",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "combien?",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "qui?",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "comment?",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "func",
+            "question",
+            "topic",
+            "nombres"
+          ],
+          "explanation": "\"berapa\" = combien (interrogatif de quantité)."
+        },
+        {
+          "id": "basics_11",
+          "prompt": "Jam berapa? = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "quel jour?",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "il est quelle heure?",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "combien ça coûte?",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "où?",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "func",
+            "question",
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "basics_12",
+          "prompt": "hari ini = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "aujourd’hui",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "demain",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "hier",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "plus tard",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "basics_13",
+          "prompt": "besok = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "hier",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "demain",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "aujourd’hui",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "après-demain",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "basics_14",
+          "prompt": "lusa = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "après-demain",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "demain",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "hier",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "ce soir",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "basics_15",
+          "prompt": "air putih = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "eau gazeuse",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "eau (plate)",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "café",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "thé",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "nourriture"
+          ]
+        },
+        {
+          "id": "basics_16",
+          "prompt": "tagihan = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "le menu",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "l’addition",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "la gare",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "le marché",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "restaurant"
+          ]
+        },
+        {
+          "id": "basics_17",
+          "prompt": "kiri = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "droite",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "gauche",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "loin",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "tout droit",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "directions"
+          ]
+        },
+        {
+          "id": "basics_18",
+          "prompt": "lurus = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "gauche",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "droite",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "tout droit",
+              "correct": true
+            },
+            {
+              "id": "d",
+              "text": "près",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "directions"
+          ]
+        },
+        {
+          "id": "basics_19",
+          "prompt": "Traduction : \"Je ne comprends pas\"",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Saya tidak mengerti",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Saya mengerti",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Saya bukan mengerti",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Saya di mengerti",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "classe",
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "basics_2",
+          "prompt": "Comment dire \"pardon / excusez-moi\" ?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Sama-sama",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Permisi",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "Tolong",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Baik",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "func",
+            "politesse"
+          ],
+          "explanation": "\"Permisi\" est utilisé pour s'excuser de déranger ou passer."
+        },
+        {
+          "id": "basics_20",
+          "prompt": "\"sedang\" exprime...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "le futur",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "l’action en cours",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "la négation",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "la possession",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "aspect"
+          ]
+        },
+        {
+          "id": "basics_21",
+          "prompt": "belum = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "déjà",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "pas encore",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "maintenant",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "seulement",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "aspect",
+            "negation",
+            "topic",
+            "temps"
+          ]
+        },
+        {
+          "id": "basics_22",
+          "prompt": "\"lagi\" peut vouloir dire...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "encore",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "hier",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "gauche",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "merci",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "aspect"
+          ]
+        },
+        {
+          "id": "basics_23",
+          "prompt": "makan = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "boire",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "manger",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "acheter",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "partir",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "nourriture",
+            "pos",
+            "verbe"
+          ]
+        },
+        {
+          "id": "basics_24",
+          "prompt": "beli = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "vendre",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "acheter",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "boire",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "être",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "achat",
+            "pos",
+            "verbe"
+          ]
+        },
+        {
+          "id": "basics_25",
+          "prompt": "mahal = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "pas cher",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "cher",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "proche",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "loin",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "achat",
+            "pos",
+            "adjectif"
+          ]
+        },
+        {
+          "id": "basics_26",
+          "prompt": "murah = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "pas cher",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "cher",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "soixante",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "cent",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "topic",
+            "achat",
+            "pos",
+            "adjectif"
+          ]
+        },
+        {
+          "id": "basics_27",
+          "prompt": "\"Anda\" est...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "tu",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "vous (poli)",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "je",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "nous",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "pos",
+            "pronom",
+            "register",
+            "formal"
+          ]
+        },
+        {
+          "id": "basics_28",
+          "prompt": "\"kita\" inclut...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "l’interlocuteur",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "seulement moi",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "personne",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "seulement eux",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "pos",
+            "pronom"
+          ]
+        },
+        {
+          "id": "basics_29",
+          "prompt": "\"kami\" exclut...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "l’interlocuteur",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "le sujet",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "le verbe",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "la date",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "pos",
+            "pronom"
+          ]
+        },
+        {
+          "id": "basics_3",
+          "prompt": "\"Tolong\" sert à...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "dire bonjour",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "demander quelque chose poliment",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "dire au revoir",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "dire non",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "func",
+            "politesse"
+          ],
+          "explanation": "\"Selamat pagi\" = bonjour (matin). pagi = matin."
+        },
+        {
+          "id": "basics_4",
+          "prompt": "\"Apa kabar?\" signifie...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "où vas-tu ?",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "comment ça va ?",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "quel âge ?",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "combien ?",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "func",
+            "question",
+            "topic",
+            "salutations"
+          ],
+          "explanation": "\"Apa kabar?\" = comment allez-vous? (litt: quelle nouvelle?)."
+        },
+        {
+          "id": "basics_5",
+          "prompt": "Quelle particule indique la direction ?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "di",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "ke",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "dari",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "yang",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "topic",
+            "lieu"
+          ],
+          "explanation": "\"Saya\" est le pronom \"je\" neutre/poli, \"aku\" est familier."
+        },
+        {
+          "id": "basics_6",
+          "prompt": "Quelle particule indique un lieu ?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "di",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "ke",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "dari",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "jadi",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "topic",
+            "lieu"
+          ],
+          "explanation": "\"kita\" inclut l'interlocuteur, \"kami\" l'exclut."
+        },
+        {
+          "id": "basics_7",
+          "prompt": "dari = ...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "vers",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "dans",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "de / depuis",
+              "correct": true
+            },
+            {
+              "id": "d",
+              "text": "et",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "topic",
+            "origine"
+          ],
+          "explanation": "\"tidak\" = négation neutre pour verbes/adjectifs."
+        },
+        {
+          "id": "basics_8",
+          "prompt": "\"bukan\" sert à nier...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "un verbe",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "un nom/identité",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "un lieu",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "une date",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "negation"
+          ],
+          "explanation": "\"sedang\" = marqueur d'aspect progressif (en train de)."
+        },
+        {
+          "id": "basics_9",
+          "prompt": "\"tidak\" sert à nier...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "un verbe/adjectif",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "un nom",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "un pronom",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "un chiffre",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "negation"
+          ],
+          "explanation": "\"satu\" = 1. Les chiffres 1-10: satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh."
+        }
+      ],
+      "version": 1,
+      "updatedAt": 1777877307960
+    },
+    {
+      "type": "qcm_exam",
+      "id": "indo-fr-vacances-qcm",
+      "title": "Indonésien (Vacances) — QCM",
+      "durationSeconds": 900,
+      "questions": [
+        {
+          "id": "vacances_q1",
+          "prompt": "Comment dire \"Tu pars en vacances où ?\" (familier) ?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Kamu liburan ke mana?",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Kamu di mana?",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Kamu dari mana?",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Apa yang kamu masak?",
+              "correct": false
+            }
+          ],
+          "explanation": "« liburan ke mana » = vacances + direction.",
+          "tags": [
+            "topic",
+            "vacances",
+            "func",
+            "question"
+          ]
+        },
+        {
+          "id": "vacances_q10",
+          "prompt": "\"Ini\" vs \"itu\" : lequel est généralement proche ?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ini",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "itu",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "dari",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "yang",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "demonstratif"
+          ]
+        },
+        {
+          "id": "vacances_q11",
+          "prompt": "Quelle phrase signifie \"C'est quoi ?\"",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Ini apa?",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Ini di mana?",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Ini kapan?",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Ini ke mana?",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "func",
+            "question"
+          ]
+        },
+        {
+          "id": "vacances_q12",
+          "prompt": "\"pakai\" signifie...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "porter / utiliser / mettre",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "acheter",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "partir",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "cuisiner",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "pakai"
+          ]
+        },
+        {
+          "id": "vacances_q13",
+          "prompt": "Traduction correcte : \"Il dort sans couverture.\"",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Dia tidur nggak pakai selimut.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Dia tidur di selimut.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Dia tidur ke selimut.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Dia selimut tidur.",
+              "correct": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "id": "vacances_q14",
+          "prompt": "\"Aku nggak kedinginan\" veut dire...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Je n’ai pas froid.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Je suis malade.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Je suis fatigué.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Je suis content.",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "vacances_q15",
+          "prompt": "\"main\" peut vouloir dire...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "jouer / pratiquer",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "laver",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "jeter",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "dormir",
+              "correct": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "id": "vacances_q2",
+          "prompt": "Quelle particule exprime la direction (\"vers/à\") ?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "di",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "ke",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "dari",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "yang",
+              "correct": false
+            }
+          ],
+          "explanation": "ke = direction ; di = lieu.",
+          "tags": [
+            "func",
+            "question"
+          ]
+        },
+        {
+          "id": "vacances_q3",
+          "prompt": "Quelle phrase est correcte pour \"Je suis à Annecy\" ?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Aku ke Annecy.",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Aku di Annecy.",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "Aku dari Annecy.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Aku Annecy.",
+              "correct": false
+            }
+          ],
+          "explanation": "di = lieu (être à).",
+          "tags": [
+            "func",
+            "question"
+          ]
+        },
+        {
+          "id": "vacances_q4",
+          "prompt": "\"Dari\" signifie...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "de (origine)",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "à (lieu)",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "vers (direction)",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "avec",
+              "correct": false
+            }
+          ],
+          "explanation": "dari = de / depuis (origine).",
+          "tags": []
+        },
+        {
+          "id": "vacances_q5",
+          "prompt": "Comment dire \"Du 30 décembre au 6 janvier\" ?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Dari tanggal 30 Desember sampai tanggal 6 Januari.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Ke tanggal 30 Desember sampai 6 Januari.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Di tanggal 30 Desember ke 6 Januari.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Tanggal 30 Desember dari 6 Januari.",
+              "correct": false
+            }
+          ],
+          "explanation": "dari… sampai… = de… jusqu’à…",
+          "tags": [
+            "func",
+            "question"
+          ]
+        },
+        {
+          "id": "vacances_q6",
+          "prompt": "\"Ngapain?\" veut dire...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Tu as fait quoi ? (familier)",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Tu vas où ?",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Tu t’appelles comment ?",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Combien ça coûte ?",
+              "correct": false
+            }
+          ],
+          "explanation": "ngapain = très familier : faire quoi.",
+          "tags": []
+        },
+        {
+          "id": "vacances_q7",
+          "prompt": "\"Orang tua\" signifie...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "amis",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "parents",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "enfants",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "frères",
+              "correct": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "id": "vacances_q8",
+          "prompt": "Pour nier un NOM/identité, on utilise plutôt...",
+          "choices": [
+            {
+              "id": "a",
+              "text": "bukan",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "tidak",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "sedang",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "ke",
+              "correct": false
+            }
+          ],
+          "explanation": "bukan = « ce n’est pas » pour nom/identité.",
+          "tags": [
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "vacances_q9",
+          "prompt": "Complète : \"Itu pisang, ____ jeruk.\"",
+          "choices": [
+            {
+              "id": "a",
+              "text": "bukan",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "tidak",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "di",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "ke",
+              "correct": false
+            }
+          ],
+          "tags": [
+            "grammar",
+            "demonstratif",
+            "func",
+            "question"
+          ]
+        }
+      ],
+      "version": 1,
+      "updatedAt": 1777877307960
+    }
+  ],
+  "sentenceDecks": [
+    {
+      "type": "sentence_deck",
+      "id": "indo-spok-complet",
+      "title": "Phrases (indo-spok-complet)",
+      "items": [
+        {
+          "id": "spok-complet_1",
+          "text": "Selamat pagi, Pak.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "salutations",
+            "register",
+            "formal"
+          ],
+          "translation": "Bonjour, Monsieur."
+        },
+        {
+          "id": "spok-complet_10",
+          "text": "Tolong bicara pelan-pelan.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "classe"
+          ],
+          "literal": "S'il vous plaît bicara pelan - pelan."
+        },
+        {
+          "id": "spok-complet_100",
+          "text": "Aku ke kantor besok pagi.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je vais à le bureau demain le matin."
+        },
+        {
+          "id": "spok-complet_101",
+          "text": "Aku tidak ke kantor hari ini.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je ne... pas à bureau jour ce."
+        },
+        {
+          "id": "spok-complet_102",
+          "text": "Aku di pasar sekarang.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "literal": "Je suis à pasar maintenant."
+        },
+        {
+          "id": "spok-complet_103",
+          "text": "Aku ke pasar besok pagi.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "literal": "Je vais à pasar demain le matin."
+        },
+        {
+          "id": "spok-complet_104",
+          "text": "Aku tidak ke pasar hari ini.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "literal": "Je ne... pas à pasar jour ce."
+        },
+        {
+          "id": "spok-complet_105",
+          "text": "Aku di restoran sekarang.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je suis au restaurant maintenant."
+        },
+        {
+          "id": "spok-complet_106",
+          "text": "Aku ke restoran besok pagi.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je vais au restaurant demain le matin."
+        },
+        {
+          "id": "spok-complet_107",
+          "text": "Aku tidak ke restoran hari ini.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je ne... pas à restaurant jour ce."
+        },
+        {
+          "id": "spok-complet_108",
+          "text": "Saya di rumah sekarang.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je suis à la maison maintenant."
+        },
+        {
+          "id": "spok-complet_109",
+          "text": "Saya ke rumah besok pagi.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je vais à la maison demain le matin."
+        },
+        {
+          "id": "spok-complet_11",
+          "text": "Saya tidak mengerti.",
+          "tags": [
+            "spok",
+            "topic",
+            "classe",
+            "grammar",
+            "negation",
+            "register",
+            "formal"
+          ],
+          "translation": "Je ne... pas mengerti."
+        },
+        {
+          "id": "spok-complet_110",
+          "text": "Saya tidak ke rumah hari ini.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je ne... pas à maison jour ce."
+        },
+        {
+          "id": "spok-complet_111",
+          "text": "Saya di kantor sekarang.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je suis au bureau maintenant."
+        },
+        {
+          "id": "spok-complet_112",
+          "text": "Saya ke kantor besok pagi.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je vais à le bureau demain le matin."
+        },
+        {
+          "id": "spok-complet_113",
+          "text": "Saya tidak ke kantor hari ini.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je ne... pas à bureau jour ce."
+        },
+        {
+          "id": "spok-complet_114",
+          "text": "Saya di pasar sekarang.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "literal": "Je suis à pasar maintenant."
+        },
+        {
+          "id": "spok-complet_115",
+          "text": "Saya ke pasar besok pagi.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "literal": "Je vais à pasar demain le matin."
+        },
+        {
+          "id": "spok-complet_116",
+          "text": "Saya tidak ke pasar hari ini.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "literal": "Je ne... pas à pasar jour ce."
+        },
+        {
+          "id": "spok-complet_117",
+          "text": "Saya di restoran sekarang.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je suis au restaurant maintenant."
+        },
+        {
+          "id": "spok-complet_118",
+          "text": "Saya ke restoran besok pagi.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je vais au restaurant demain le matin."
+        },
+        {
+          "id": "spok-complet_119",
+          "text": "Saya tidak ke restoran hari ini.",
+          "tags": [
+            "spok",
+            "register",
+            "formal",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je ne... pas à restaurant jour ce."
+        },
+        {
+          "id": "spok-complet_12",
+          "text": "Boleh saya tanya?",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "question",
+            "register",
+            "formal"
+          ],
+          "literal": "Boleh je tanya?"
+        },
+        {
+          "id": "spok-complet_120",
+          "text": "Kami di rumah sekarang.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Nous suis à la maison maintenant."
+        },
+        {
+          "id": "spok-complet_121",
+          "text": "Kami ke rumah besok pagi.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Nous allons à la maison demain le matin."
+        },
+        {
+          "id": "spok-complet_122",
+          "text": "Kami tidak ke rumah hari ini.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Nous ne... pas à maison jour ce."
+        },
+        {
+          "id": "spok-complet_123",
+          "text": "Kami di kantor sekarang.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Nous suis à le bureau maintenant."
+        },
+        {
+          "id": "spok-complet_124",
+          "text": "Kami ke kantor besok pagi.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Nous allons à le bureau demain le matin."
+        },
+        {
+          "id": "spok-complet_125",
+          "text": "Kami tidak ke kantor hari ini.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Nous ne... pas à bureau jour ce."
+        },
+        {
+          "id": "spok-complet_126",
+          "text": "Kami di pasar sekarang.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "literal": "Nous suis à pasar maintenant."
+        },
+        {
+          "id": "spok-complet_127",
+          "text": "Kami ke pasar besok pagi.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "literal": "Nous allons à pasar demain le matin."
+        },
+        {
+          "id": "spok-complet_128",
+          "text": "Kami tidak ke pasar hari ini.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "literal": "Nous ne... pas à pasar jour ce."
+        },
+        {
+          "id": "spok-complet_129",
+          "text": "Kami di restoran sekarang.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Nous suis à le restaurant maintenant."
+        },
+        {
+          "id": "spok-complet_13",
+          "text": "Nama saya Baptiste.",
+          "tags": [
+            "spok",
+            "register",
+            "formal"
+          ],
+          "translation": "Nama je Baptiste."
+        },
+        {
+          "id": "spok-complet_130",
+          "text": "Kami ke restoran besok pagi.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Nous allons au restaurant demain le matin."
+        },
+        {
+          "id": "spok-complet_131",
+          "text": "Kami tidak ke restoran hari ini.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Nous ne... pas à restaurant jour ce."
+        },
+        {
+          "id": "spok-complet_132",
+          "text": "Saya mau satu kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau satu kopi."
+        },
+        {
+          "id": "spok-complet_133",
+          "text": "Aku punya satu teman.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres"
+          ],
+          "translation": "J'ai un amis."
+        },
+        {
+          "id": "spok-complet_134",
+          "text": "Saya mau dua kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau dua kopi."
+        },
+        {
+          "id": "spok-complet_135",
+          "text": "Aku punya dua teman.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres"
+          ],
+          "translation": "J'ai deux amis."
+        },
+        {
+          "id": "spok-complet_136",
+          "text": "Saya mau tiga kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau tiga kopi."
+        },
+        {
+          "id": "spok-complet_137",
+          "text": "Aku punya tiga teman.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres"
+          ],
+          "translation": "J'ai trois amis."
+        },
+        {
+          "id": "spok-complet_138",
+          "text": "Saya mau empat kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau empat kopi."
+        },
+        {
+          "id": "spok-complet_139",
+          "text": "Aku punya empat teman.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres"
+          ],
+          "translation": "J'ai quatre amis."
+        },
+        {
+          "id": "spok-complet_14",
+          "text": "Siapa nama kamu?",
+          "tags": [
+            "spok",
+            "func",
+            "question"
+          ],
+          "translation": "Siapa nama tu?"
+        },
+        {
+          "id": "spok-complet_140",
+          "text": "Saya mau lima kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau lima kopi."
+        },
+        {
+          "id": "spok-complet_141",
+          "text": "Aku punya lima teman.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres"
+          ],
+          "translation": "J'ai cinq amis."
+        },
+        {
+          "id": "spok-complet_142",
+          "text": "Saya mau enam kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau enam kopi."
+        },
+        {
+          "id": "spok-complet_143",
+          "text": "Aku punya enam teman.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres"
+          ],
+          "translation": "J'ai six amis."
+        },
+        {
+          "id": "spok-complet_144",
+          "text": "Saya mau tujuh kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau tujuh kopi."
+        },
+        {
+          "id": "spok-complet_145",
+          "text": "Aku punya tujuh teman.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres"
+          ],
+          "translation": "J'ai sept amis."
+        },
+        {
+          "id": "spok-complet_146",
+          "text": "Saya mau delapan kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau delapan kopi."
+        },
+        {
+          "id": "spok-complet_147",
+          "text": "Aku punya delapan teman.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres"
+          ],
+          "translation": "J'ai huit amis."
+        },
+        {
+          "id": "spok-complet_148",
+          "text": "Saya mau sembilan kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau sembilan kopi."
+        },
+        {
+          "id": "spok-complet_149",
+          "text": "Aku punya sembilan teman.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres"
+          ],
+          "translation": "J'ai neuf amis."
+        },
+        {
+          "id": "spok-complet_15",
+          "text": "Senang bertemu dengan Anda.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "register",
+            "formal"
+          ],
+          "translation": "Senang bertemu dengan Anda."
+        },
+        {
+          "id": "spok-complet_150",
+          "text": "Saya mau sepuluh kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau sepuluh kopi."
+        },
+        {
+          "id": "spok-complet_151",
+          "text": "Aku punya sepuluh teman.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres"
+          ],
+          "translation": "J'ai dix amis."
+        },
+        {
+          "id": "spok-complet_152",
+          "text": "Ini harganya berapa?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "achat",
+            "nombres"
+          ],
+          "translation": "Ce harganya berapa?"
+        },
+        {
+          "id": "spok-complet_153",
+          "text": "Berapa orang di sini?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "nombres"
+          ],
+          "translation": "Berapa orang à ici?"
+        },
+        {
+          "id": "spok-complet_154",
+          "text": "Saya mau bayar pakai kartu.",
+          "tags": [
+            "spok",
+            "topic",
+            "achat",
+            "grammar",
+            "pakai",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau bayar pakai kartu."
+        },
+        {
+          "id": "spok-complet_155",
+          "text": "Saya mau bayar tunai.",
+          "tags": [
+            "spok",
+            "topic",
+            "achat",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau bayar tunai."
+        },
+        {
+          "id": "spok-complet_156",
+          "text": "Tolong tunggu sebentar.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "temps"
+          ],
+          "translation": "S'il vous plaît tunggu sebentar."
+        },
+        {
+          "id": "spok-complet_157",
+          "text": "Tolong bantu saya, ya.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "register",
+            "slang"
+          ],
+          "translation": "Aidez-moi, s'il vous plaît."
+        },
+        {
+          "id": "spok-complet_158",
+          "text": "Maaf, bisa ulangi?",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "classe"
+          ],
+          "translation": "Pardon."
+        },
+        {
+          "id": "spok-complet_159",
+          "text": "Permisi, saya mau tanya.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "question",
+            "register",
+            "formal"
+          ],
+          "translation": "Excusez-moi, je voudrais demander."
+        },
+        {
+          "id": "spok-complet_16",
+          "text": "Kamu liburan ke mana?",
+          "tags": [
+            "spok",
+            "topic",
+            "vacances",
+            "func",
+            "question"
+          ],
+          "literal": "Tu liburan à mana?"
+        },
+        {
+          "id": "spok-complet_160",
+          "text": "Silakan duduk di sini.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "lieu"
+          ],
+          "translation": "Silakan duduk à ici."
+        },
+        {
+          "id": "spok-complet_161",
+          "text": "Saya liburan dari tanggal satu Januari sampai tanggal tujuh Januari.",
+          "tags": [
+            "spok",
+            "topic",
+            "dates",
+            "vacances",
+            "temps",
+            "register",
+            "formal"
+          ],
+          "literal": "Je liburan de tanggal satu Januari sampai tanggal tujuh Januari."
+        },
+        {
+          "id": "spok-complet_162",
+          "text": "Kita ketemu jam delapan malam.",
+          "tags": [
+            "spok",
+            "topic",
+            "temps",
+            "nombres"
+          ],
+          "translation": "Nous ketemu jam delapan malam."
+        },
+        {
+          "id": "spok-complet_163",
+          "text": "Saya kerja dari Senin sampai Jumat.",
+          "tags": [
+            "spok",
+            "topic",
+            "temps",
+            "dates",
+            "register",
+            "formal"
+          ],
+          "literal": "Je kerja de Senin sampai Jumat."
+        },
+        {
+          "id": "spok-complet_17",
+          "text": "Aku liburan ke Indonesia.",
+          "tags": [
+            "spok",
+            "topic",
+            "vacances",
+            "lieu"
+          ],
+          "literal": "Je liburan à Indonésie."
+        },
+        {
+          "id": "spok-complet_18",
+          "text": "Aku liburan di Annecy seminggu.",
+          "tags": [
+            "spok",
+            "topic",
+            "vacances",
+            "duree"
+          ],
+          "literal": "Je liburan à Annecy seminggu."
+        },
+        {
+          "id": "spok-complet_19",
+          "text": "Aku berlibur di Annecy selama satu minggu.",
+          "tags": [
+            "spok",
+            "topic",
+            "vacances",
+            "duree",
+            "register",
+            "formal"
+          ],
+          "translation": "Je berlibur à Annecy selama satu minggu."
+        },
+        {
+          "id": "spok-complet_2",
+          "text": "Selamat sore, Bu.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "salutations",
+            "register",
+            "formal"
+          ],
+          "translation": "Bonsoir."
+        },
+        {
+          "id": "spok-complet_20",
+          "text": "Dari tanggal tiga puluh Desember sampai tanggal enam Januari.",
+          "tags": [
+            "spok",
+            "topic",
+            "dates",
+            "temps"
+          ],
+          "translation": "De tanggal tiga puluh Desember sampai tanggal enam Januari."
+        },
+        {
+          "id": "spok-complet_21",
+          "text": "Aku ketemu orang tuaku di rumah.",
+          "tags": [
+            "spok",
+            "topic",
+            "famille",
+            "maison"
+          ],
+          "translation": "Je ketemu orang tuaku à maison."
+        },
+        {
+          "id": "spok-complet_22",
+          "text": "Terus kami main ski di gunung.",
+          "tags": [
+            "spok",
+            "topic",
+            "activites",
+            "sport",
+            "lieu"
+          ],
+          "translation": "Terus nous main ski à gunung."
+        },
+        {
+          "id": "spok-complet_23",
+          "text": "Kami tidak pergi ke restoran.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "restaurant"
+          ],
+          "translation": "Nous ne... pas aller à restaurant."
+        },
+        {
+          "id": "spok-complet_24",
+          "text": "Aku nggak kedinginan.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "pos",
+            "adjectif"
+          ],
+          "literal": "Je nggak kedinginan."
+        },
+        {
+          "id": "spok-complet_25",
+          "text": "Aku dari Annecy.",
+          "tags": [
+            "spok",
+            "topic",
+            "origine"
+          ],
+          "translation": "Je de Annecy."
+        },
+        {
+          "id": "spok-complet_26",
+          "text": "Saya tinggal di Lausanne.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "register",
+            "formal"
+          ],
+          "literal": "Je tinggal à Lausanne."
+        },
+        {
+          "id": "spok-complet_27",
+          "text": "Kita ketemu di stasiun besok pagi.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Nous ketemu à stasiun demain pagi."
+        },
+        {
+          "id": "spok-complet_28",
+          "text": "Ini apa?",
+          "tags": [
+            "spok",
+            "func",
+            "question"
+          ],
+          "translation": "Ce apa?"
+        },
+        {
+          "id": "spok-complet_29",
+          "text": "Itu pisang, bukan jeruk.",
+          "tags": [
+            "spok",
+            "grammar",
+            "demonstratif",
+            "negation",
+            "topic",
+            "nourriture"
+          ],
+          "literal": "Itu pisang, bukan jeruk."
+        },
+        {
+          "id": "spok-complet_3",
+          "text": "Apa kabar?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "salutations"
+          ],
+          "translation": "Apa kabar?"
+        },
+        {
+          "id": "spok-complet_30",
+          "text": "Ini buku, bukan koran.",
+          "tags": [
+            "spok",
+            "grammar",
+            "demonstratif",
+            "negation",
+            "topic",
+            "objets"
+          ],
+          "literal": "Ce buku, bukan koran."
+        },
+        {
+          "id": "spok-complet_31",
+          "text": "Saya bukan orang Swiss.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "register",
+            "formal"
+          ],
+          "literal": "Je bukan orang Swiss."
+        },
+        {
+          "id": "spok-complet_32",
+          "text": "Aku tidak suka kopi tanpa gula.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "nourriture"
+          ],
+          "translation": "Je ne... pas aimer kopi tanpa gula."
+        },
+        {
+          "id": "spok-complet_33",
+          "text": "Toiletnya di mana?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "lieu",
+            "register",
+            "slang",
+            "grammar",
+            "suffix",
+            "nya"
+          ],
+          "literal": "Toiletnya à mana?"
+        },
+        {
+          "id": "spok-complet_34",
+          "text": "Tempatnya dekat sini.",
+          "tags": [
+            "spok",
+            "topic",
+            "directions",
+            "grammar",
+            "suffix",
+            "nya"
+          ],
+          "translation": "L'endroit est près d'ici."
+        },
+        {
+          "id": "spok-complet_35",
+          "text": "Tempatnya jauh dari sini.",
+          "tags": [
+            "spok",
+            "topic",
+            "directions",
+            "grammar",
+            "suffix",
+            "nya"
+          ],
+          "translation": "Tempatnya loin de ici."
+        },
+        {
+          "id": "spok-complet_36",
+          "text": "Dia tidur tidak pakai selimut.",
+          "tags": [
+            "spok",
+            "grammar",
+            "pakai",
+            "negation",
+            "topic",
+            "maison"
+          ],
+          "literal": "Il/elle tidur ne... pas pakai selimut."
+        },
+        {
+          "id": "spok-complet_37",
+          "text": "Aku tidur pakai selimut.",
+          "tags": [
+            "spok",
+            "grammar",
+            "pakai",
+            "topic",
+            "maison"
+          ],
+          "literal": "Je tidur pakai selimut."
+        },
+        {
+          "id": "spok-complet_38",
+          "text": "Saya pergi tanpa jaket.",
+          "tags": [
+            "spok",
+            "grammar",
+            "topic",
+            "vetements",
+            "register",
+            "formal"
+          ],
+          "translation": "Je aller tanpa jaket."
+        },
+        {
+          "id": "spok-complet_39",
+          "text": "Baptiste jalan tidak pakai sepatu.",
+          "tags": [
+            "spok",
+            "grammar",
+            "pakai",
+            "negation",
+            "topic",
+            "vetements"
+          ],
+          "translation": "Baptiste jalan ne... pas pakai sepatu."
+        },
+        {
+          "id": "spok-complet_4",
+          "text": "Saya baik-baik saja.",
+          "tags": [
+            "spok",
+            "topic",
+            "salutations",
+            "register",
+            "formal"
+          ],
+          "translation": "Je baik - baik saja."
+        },
+        {
+          "id": "spok-complet_40",
+          "text": "Aku minum kopi tanpa gula.",
+          "tags": [
+            "spok",
+            "topic",
+            "nourriture",
+            "grammar"
+          ],
+          "translation": "Je bois du café sans sucre."
+        },
+        {
+          "id": "spok-complet_41",
+          "text": "Jam berapa sekarang?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "temps"
+          ],
+          "translation": "Jam berapa maintenant?"
+        },
+        {
+          "id": "spok-complet_42",
+          "text": "Sekarang jam dua.",
+          "tags": [
+            "spok",
+            "topic",
+            "temps",
+            "nombres"
+          ],
+          "translation": "Maintenant jam dua."
+        },
+        {
+          "id": "spok-complet_43",
+          "text": "Sekarang jam setengah tiga.",
+          "tags": [
+            "spok",
+            "topic",
+            "temps",
+            "nombres"
+          ],
+          "translation": "Maintenant jam setengah tiga."
+        },
+        {
+          "id": "spok-complet_44",
+          "text": "Kita mulai jam sembilan.",
+          "tags": [
+            "spok",
+            "topic",
+            "temps",
+            "nombres"
+          ],
+          "translation": "Nous mulai jam sembilan."
+        },
+        {
+          "id": "spok-complet_45",
+          "text": "Saya sudah makan.",
+          "tags": [
+            "spok",
+            "grammar",
+            "aspect",
+            "topic",
+            "nourriture",
+            "register",
+            "formal"
+          ],
+          "translation": "J'ai déjà mangé."
+        },
+        {
+          "id": "spok-complet_46",
+          "text": "Saya belum makan.",
+          "tags": [
+            "spok",
+            "grammar",
+            "aspect",
+            "negation",
+            "topic",
+            "nourriture",
+            "register",
+            "formal"
+          ],
+          "literal": "Je belum manger."
+        },
+        {
+          "id": "spok-complet_47",
+          "text": "Aku sedang belajar bahasa Indonesia.",
+          "tags": [
+            "spok",
+            "grammar",
+            "aspect",
+            "topic",
+            "classe"
+          ],
+          "literal": "Je sedang belajar bahasa Indonésie."
+        },
+        {
+          "id": "spok-complet_48",
+          "text": "Aku belajar setiap hari.",
+          "tags": [
+            "spok",
+            "topic",
+            "temps"
+          ],
+          "literal": "Je belajar setiap jour."
+        },
+        {
+          "id": "spok-complet_49",
+          "text": "Hari ini hari Senin.",
+          "tags": [
+            "spok",
+            "topic",
+            "temps",
+            "dates"
+          ],
+          "translation": "Aujourd'hui, c'est lundi."
+        },
+        {
+          "id": "spok-complet_5",
+          "text": "Terima kasih banyak.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse"
+          ],
+          "translation": "Terima kasih banyak."
+        },
+        {
+          "id": "spok-complet_50",
+          "text": "Besok hari Selasa.",
+          "tags": [
+            "spok",
+            "topic",
+            "temps",
+            "dates"
+          ],
+          "translation": "Demain jour Selasa."
+        },
+        {
+          "id": "spok-complet_51",
+          "text": "Saya lahir tanggal dua Januari.",
+          "tags": [
+            "spok",
+            "topic",
+            "dates",
+            "register",
+            "formal"
+          ],
+          "translation": "Je lahir tanggal dua Januari."
+        },
+        {
+          "id": "spok-complet_52",
+          "text": "Umur kamu berapa?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "nombres"
+          ],
+          "translation": "Umur tu berapa?"
+        },
+        {
+          "id": "spok-complet_53",
+          "text": "Umur saya dua puluh delapan tahun.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "translation": "Umur je dua puluh delapan tahun."
+        },
+        {
+          "id": "spok-complet_54",
+          "text": "Saya mau pesan nasi goreng.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau pesan nasi goreng."
+        },
+        {
+          "id": "spok-complet_55",
+          "text": "Tolong, menunya.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "func",
+            "politesse"
+          ],
+          "translation": "S'il vous plaît, menunya."
+        },
+        {
+          "id": "spok-complet_56",
+          "text": "Saya mau satu kopi.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres"
+          ],
+          "literal": "Je mau satu kopi."
+        },
+        {
+          "id": "spok-complet_57",
+          "text": "Saya mau dua botol air putih.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "nourriture",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau dua botol air putih."
+        },
+        {
+          "id": "spok-complet_58",
+          "text": "Berapa harganya?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "achat",
+            "nombres"
+          ],
+          "translation": "Berapa harganya?"
+        },
+        {
+          "id": "spok-complet_59",
+          "text": "Ini berapa?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "achat"
+          ],
+          "translation": "Ce berapa?"
+        },
+        {
+          "id": "spok-complet_60",
+          "text": "Ini terlalu mahal.",
+          "tags": [
+            "spok",
+            "topic",
+            "achat",
+            "pos",
+            "adjectif"
+          ],
+          "translation": "Ce terlalu mahal."
+        },
+        {
+          "id": "spok-complet_61",
+          "text": "Ada yang lebih murah?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "achat"
+          ],
+          "literal": "Ada yang lebih murah?"
+        },
+        {
+          "id": "spok-complet_62",
+          "text": "Saya mau beli dua tiket.",
+          "tags": [
+            "spok",
+            "topic",
+            "achat",
+            "nombres",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau beli dua tiket."
+        },
+        {
+          "id": "spok-complet_63",
+          "text": "Tolong, tagihannya.",
+          "tags": [
+            "spok",
+            "topic",
+            "restaurant",
+            "func",
+            "politesse"
+          ],
+          "translation": "L'addition, s'il vous plaît."
+        },
+        {
+          "id": "spok-complet_64",
+          "text": "Stasiun di mana?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "lieu"
+          ],
+          "literal": "Stasiun à mana?"
+        },
+        {
+          "id": "spok-complet_65",
+          "text": "Jalan lurus, lalu belok kiri.",
+          "tags": [
+            "spok",
+            "topic",
+            "directions"
+          ],
+          "translation": "Allez tout droit, puis tournez à gauche."
+        },
+        {
+          "id": "spok-complet_66",
+          "text": "Belok kanan di lampu merah.",
+          "tags": [
+            "spok",
+            "topic",
+            "directions"
+          ],
+          "translation": "Belok kanan à lampu merah."
+        },
+        {
+          "id": "spok-complet_67",
+          "text": "Saya mau ke pasar.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau à pasar."
+        },
+        {
+          "id": "spok-complet_68",
+          "text": "Aku mau ke restoran sekarang.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "literal": "Je mau à restaurant maintenant."
+        },
+        {
+          "id": "spok-complet_69",
+          "text": "Pasarnya dekat.",
+          "tags": [
+            "spok",
+            "topic",
+            "directions",
+            "grammar",
+            "suffix",
+            "nya"
+          ],
+          "translation": "Pasarnya près."
+        },
+        {
+          "id": "spok-complet_7",
+          "text": "Permisi, saya mau lewat.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "directions",
+            "register",
+            "formal"
+          ],
+          "translation": "Excusez-moi, je voudrais passer."
+        },
+        {
+          "id": "spok-complet_70",
+          "text": "Restorannya jauh.",
+          "tags": [
+            "spok",
+            "topic",
+            "directions",
+            "grammar",
+            "suffix",
+            "nya"
+          ],
+          "translation": "Le restaurant est loin."
+        },
+        {
+          "id": "spok-complet_71",
+          "text": "Aku punya mobil.",
+          "tags": [
+            "spok",
+            "pos",
+            "verbe"
+          ],
+          "translation": "Je avoir mobil."
+        },
+        {
+          "id": "spok-complet_72",
+          "text": "Aku punya mobil merah.",
+          "tags": [
+            "spok",
+            "topic",
+            "objets"
+          ],
+          "translation": "Je avoir mobil merah."
+        },
+        {
+          "id": "spok-complet_73",
+          "text": "Kamu suka kopi?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "topic",
+            "nourriture"
+          ],
+          "translation": "Tu aimer kopi?"
+        },
+        {
+          "id": "spok-complet_74",
+          "text": "Dia tidak suka pedas.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "nourriture"
+          ],
+          "translation": "Il/elle ne... pas aimer pedas."
+        },
+        {
+          "id": "spok-complet_75",
+          "text": "Kami pergi ke Indonesia bulan depan.",
+          "tags": [
+            "spok",
+            "topic",
+            "vacances",
+            "temps"
+          ],
+          "translation": "Nous aller à Indonésie bulan depan."
+        },
+        {
+          "id": "spok-complet_76",
+          "text": "Kita pergi ke restoran nanti.",
+          "tags": [
+            "spok",
+            "topic",
+            "temps",
+            "lieu"
+          ],
+          "translation": "Nous allons au restaurant plus tard."
+        },
+        {
+          "id": "spok-complet_77",
+          "text": "Saya ingin belajar angka satu sampai seratus.",
+          "tags": [
+            "spok",
+            "topic",
+            "nombres",
+            "classe",
+            "register",
+            "formal"
+          ],
+          "literal": "Je ingin belajar angka satu sampai seratus."
+        },
+        {
+          "id": "spok-complet_78",
+          "text": "Aku kerja di kantor hari ini.",
+          "tags": [
+            "spok",
+            "topic",
+            "temps"
+          ],
+          "literal": "Je kerja à bureau jour ce."
+        },
+        {
+          "id": "spok-complet_79",
+          "text": "Kami tidak ada waktu sekarang.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "temps"
+          ],
+          "literal": "Nous ne... pas ada waktu maintenant."
+        },
+        {
+          "id": "spok-complet_8",
+          "text": "Maaf, saya terlambat.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "temps",
+            "register",
+            "formal"
+          ],
+          "translation": "Pardon."
+        },
+        {
+          "id": "spok-complet_80",
+          "text": "Saya mau air, bukan kopi.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "nourriture",
+            "register",
+            "formal"
+          ],
+          "literal": "Je mau air, bukan kopi."
+        },
+        {
+          "id": "spok-complet_81",
+          "text": "Ini enak.",
+          "tags": [
+            "spok",
+            "topic",
+            "nourriture",
+            "pos",
+            "adjectif"
+          ],
+          "translation": "Ce enak."
+        },
+        {
+          "id": "spok-complet_82",
+          "text": "Makanan itu pedas.",
+          "tags": [
+            "spok",
+            "topic",
+            "nourriture",
+            "pos",
+            "adjectif",
+            "grammar",
+            "demonstratif"
+          ],
+          "literal": "Makanan itu pedas."
+        },
+        {
+          "id": "spok-complet_83",
+          "text": "Aku tinggal di Swiss.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu"
+          ],
+          "literal": "Je tinggal à Swiss."
+        },
+        {
+          "id": "spok-complet_84",
+          "text": "Saya dari Swiss.",
+          "tags": [
+            "spok",
+            "topic",
+            "origine",
+            "register",
+            "formal"
+          ],
+          "translation": "Je de Swiss."
+        },
+        {
+          "id": "spok-complet_85",
+          "text": "Dia sedang tidur.",
+          "tags": [
+            "spok",
+            "grammar",
+            "aspect"
+          ],
+          "literal": "Il/elle sedang tidur."
+        },
+        {
+          "id": "spok-complet_86",
+          "text": "Aku lagi di rumah.",
+          "tags": [
+            "spok",
+            "grammar",
+            "aspect",
+            "topic",
+            "maison"
+          ],
+          "literal": "Je lagi à maison."
+        },
+        {
+          "id": "spok-complet_87",
+          "text": "Kita ketemu lagi besok.",
+          "tags": [
+            "spok",
+            "grammar",
+            "aspect",
+            "topic",
+            "temps"
+          ],
+          "literal": "Nous ketemu lagi demain."
+        },
+        {
+          "id": "spok-complet_88",
+          "text": "Saya suka bahasa Indonesia.",
+          "tags": [
+            "spok",
+            "topic",
+            "classe",
+            "register",
+            "formal"
+          ],
+          "translation": "J'aime la langue indonésienne."
+        },
+        {
+          "id": "spok-complet_89",
+          "text": "Aku tidak bisa hari ini.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "temps"
+          ],
+          "literal": "Je ne... pas bisa jour ce."
+        },
+        {
+          "id": "spok-complet_9",
+          "text": "Tolong ulangi, ya.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "classe",
+            "register",
+            "slang"
+          ],
+          "translation": "S'il vous plaît ulangi, ya."
+        },
+        {
+          "id": "spok-complet_90",
+          "text": "Boleh saya duduk di sini?",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "question",
+            "topic",
+            "lieu",
+            "register",
+            "formal"
+          ],
+          "literal": "Boleh je duduk à ici?"
+        },
+        {
+          "id": "spok-complet_91",
+          "text": "Boleh foto di sini?",
+          "tags": [
+            "spok",
+            "func",
+            "question",
+            "register",
+            "slang"
+          ],
+          "literal": "Boleh foto à ici?"
+        },
+        {
+          "id": "spok-complet_92",
+          "text": "Tolong bantu saya.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "register",
+            "formal"
+          ],
+          "translation": "Aidez-moi, s'il vous plaît."
+        },
+        {
+          "id": "spok-complet_93",
+          "text": "Maaf, saya salah jalan.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "directions",
+            "register",
+            "formal"
+          ],
+          "translation": "Pardon."
+        },
+        {
+          "id": "spok-complet_94",
+          "text": "Tidak apa-apa.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse"
+          ],
+          "translation": "Ne... pas apa - apa."
+        },
+        {
+          "id": "spok-complet_95",
+          "text": "Sampai jumpa besok.",
+          "tags": [
+            "spok",
+            "func",
+            "politesse",
+            "topic",
+            "temps"
+          ],
+          "translation": "Sampai jumpa demain."
+        },
+        {
+          "id": "spok-complet_96",
+          "text": "Aku di rumah sekarang.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je suis à la maison maintenant."
+        },
+        {
+          "id": "spok-complet_97",
+          "text": "Aku ke rumah besok pagi.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je vais à la maison demain le matin."
+        },
+        {
+          "id": "spok-complet_98",
+          "text": "Aku tidak ke rumah hari ini.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je ne... pas à maison jour ce."
+        },
+        {
+          "id": "spok-complet_99",
+          "text": "Aku di kantor sekarang.",
+          "tags": [
+            "spok",
+            "topic",
+            "lieu",
+            "temps"
+          ],
+          "translation": "Je suis au bureau maintenant."
+        }
+      ],
+      "version": 1,
+      "updatedAt": 1777877307960
+    },
+    {
+      "type": "sentence_deck",
+      "id": "indo-spok-cours1",
+      "title": "Phrases (indo-spok-cours1)",
+      "items": [
+        {
+          "id": "s1",
+          "text": "Kamu liburan ke mana, Baptiste?",
+          "tags": [
+            "spok",
+            "topic",
+            "vacances",
+            "func",
+            "question"
+          ],
+          "literal": "Tu liburan à mana, Baptiste?"
+        },
+        {
+          "id": "s10",
+          "text": "Aku nggak kedinginan.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation",
+            "pos",
+            "adjectif"
+          ],
+          "literal": "Je nggak kedinginan."
+        },
+        {
+          "id": "s11",
+          "text": "Itu pisang, bukan jeruk.",
+          "tags": [
+            "spok",
+            "grammar",
+            "demonstratif",
+            "negation"
+          ],
+          "literal": "Itu pisang, bukan jeruk."
+        },
+        {
+          "id": "s12",
+          "text": "Ini buku, bukan koran.",
+          "tags": [
+            "spok",
+            "grammar",
+            "demonstratif",
+            "negation"
+          ],
+          "literal": "Ce buku, bukan koran."
+        },
+        {
+          "id": "s13",
+          "text": "Dia tidur gak pake selimut?",
+          "tags": [
+            "spok",
+            "grammar",
+            "pakai",
+            "negation",
+            "func",
+            "question"
+          ],
+          "literal": "Il/elle tidur gak pake selimut?"
+        },
+        {
+          "id": "s14",
+          "text": "Aku tidur pake selimut.",
+          "tags": [
+            "spok",
+            "grammar",
+            "pakai"
+          ],
+          "literal": "Je tidur pake selimut."
+        },
+        {
+          "id": "s15",
+          "text": "Baptiste jalan gak pake sepatu.",
+          "tags": [
+            "spok",
+            "grammar",
+            "pakai",
+            "negation"
+          ],
+          "translation": "Baptiste jalan gak pake sepatu."
+        },
+        {
+          "id": "s2",
+          "text": "Aku liburan ke Indonesia.",
+          "tags": [
+            "spok",
+            "topic",
+            "vacances"
+          ],
+          "literal": "Je liburan à Indonésie."
+        },
+        {
+          "id": "s3",
+          "text": "Kamu di kota apa?",
+          "tags": [
+            "spok",
+            "func",
+            "question"
+          ],
+          "translation": "Tu à kota apa?"
+        },
+        {
+          "id": "s4",
+          "text": "Aku dari Annecy.",
+          "tags": [
+            "spok",
+            "topic",
+            "origine"
+          ],
+          "translation": "Je de Annecy."
+        },
+        {
+          "id": "s5",
+          "text": "Aku liburan di Annecy satu minggu.",
+          "tags": [
+            "spok",
+            "topic",
+            "vacances",
+            "duree"
+          ],
+          "literal": "Je liburan à Annecy satu minggu."
+        },
+        {
+          "id": "s6",
+          "text": "Dari tanggal tiga puluh Desember sampai tanggal enam Januari.",
+          "tags": [
+            "spok",
+            "topic",
+            "dates"
+          ],
+          "translation": "De tanggal tiga puluh Desember sampai tanggal enam Januari."
+        },
+        {
+          "id": "s7",
+          "text": "Aku ketemu orang tuaku.",
+          "tags": [
+            "spok",
+            "topic",
+            "famille"
+          ],
+          "translation": "Je ketemu orang tuaku."
+        },
+        {
+          "id": "s8",
+          "text": "Terus kita main ski.",
+          "tags": [
+            "spok",
+            "topic",
+            "vacances",
+            "activites"
+          ],
+          "translation": "Terus nous main ski."
+        },
+        {
+          "id": "s9",
+          "text": "Kita gak pergi ke restoran.",
+          "tags": [
+            "spok",
+            "grammar",
+            "negation"
+          ],
+          "translation": "Nous gak aller à restaurant."
+        }
+      ],
+      "version": 1,
+      "updatedAt": 1777877307960
+    }
+  ]
+}

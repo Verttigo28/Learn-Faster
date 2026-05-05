@@ -1,16 +1,27 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { db, type Exam } from "../db";
 import { uid } from "../utils/id";
 import EmptyState from "../components/EmptyState.vue";
 import ConfirmBar from "../components/ConfirmBar.vue";
+import ConfirmModal from "../components/ConfirmModal.vue";
+import { useToast } from "../composables/useToast";
 
 const router = useRouter();
+const toast = useToast();
 
 const exams = ref<Exam[]>([]);
 const counts = ref<Record<string, number>>({});
 const msg = ref<{ kind: "info" | "ok" | "danger"; text: string } | null>(null);
+const search = ref("");
+const pendingDeleteId = ref<string | null>(null);
+
+const filteredExams = computed(() => {
+  const q = search.value.trim().toLowerCase();
+  if (!q) return exams.value;
+  return exams.value.filter(e => e.title.toLowerCase().includes(q));
+});
 
 const title = ref("");
 const durationMinutes = ref<number>(10);
@@ -45,13 +56,15 @@ async function createExam() {
   await load();
 }
 
-async function removeExam(id: string) {
-  if (!confirm("Supprimer cet exam + toutes ses questions ?")) return;
+async function removeExam() {
+  const id = pendingDeleteId.value;
+  pendingDeleteId.value = null;
+  if (!id) return;
   await db.transaction("rw", [db.exams, db.examQuestions], async () => {
     await db.exams.delete(id);
     await db.examQuestions.where("examId").equals(id).delete();
   });
-  set("ok", "Exam supprimé ✅");
+  toast.success("Exam supprimé !");
   await load();
 }
 
@@ -93,16 +106,18 @@ onMounted(load);
     <div class="card cardFill">
       <div class="row flex-none mb-2.5">
         <h2 class="m-0">Liste des exams</h2>
-        <span class="small">{{ exams.length }}</span>
+        <span class="small">{{ filteredExams.length }} / {{ exams.length }}</span>
       </div>
 
-      <div v-if="exams.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
+      <input class="input mb-2.5" v-model="search" placeholder="🔍 Rechercher un exam…" />
+
+      <div v-if="filteredExams.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
         <EmptyState title="Aucun exam" hint="Crée ton premier exam à gauche, ou importe un JSON." />
       </div>
 
       <div v-else class="scrollY">
         <div class="list">
-          <div v-for="e in exams" :key="e.id" class="card">
+          <div v-for="e in filteredExams" :key="e.id" class="card">
             <div class="row">
               <div>
                 <h3 class="m-0">{{ e.title }}</h3>
@@ -113,12 +128,22 @@ onMounted(load);
               </div>
               <div class="row" style="gap:8px">
                 <button class="btn" @click="editExam(e.id)">Éditer</button>
-                <button class="btn danger" @click="removeExam(e.id)">Supprimer</button>
+                <button class="btn danger" @click="pendingDeleteId = e.id">Supprimer</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <ConfirmModal
+      :open="!!pendingDeleteId"
+      title="Supprimer l'exam"
+      message="Supprimer cet exam et toutes ses questions ? Cette action est irréversible."
+      confirm-text="Supprimer"
+      :danger="true"
+      @confirm="removeExam"
+      @cancel="pendingDeleteId = null"
+    />
   </div>
 </template>

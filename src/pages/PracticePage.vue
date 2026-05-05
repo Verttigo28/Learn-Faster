@@ -2,12 +2,19 @@
 import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import BaseModal from "../components/BaseModal.vue";
+import ConfirmModal from "../components/ConfirmModal.vue";
 import EmptyState from "../components/EmptyState.vue";
 import SentenceOrder from "../components/SentenceOrder.vue";
+import ProgressBar from "../components/ProgressBar.vue";
 import { buildPractice, gradePractice, type PracticeQuestion } from "../services/practice";
 import { db, type AttemptDetail } from "../db";
 import { uid } from "../utils/id";
 import { clamp01, formatDuration } from "../utils/time";
+import { plainOptions, copyStrings } from "../utils/reactive";
+import { useToast } from "../composables/useToast";
+import { recordReview } from "../services/srs";
+
+const toast = useToast();
 
 const route = useRoute();
 const router = useRouter();
@@ -21,6 +28,7 @@ const now = ref(Date.now());
 let timer: number | null = null;
 
 const showModal = ref(false);
+const showFinishConfirm = ref(false);
 const result = ref<{ correct: number; total: number; score: number; breakdown: Record<string, number>; durationSeconds: number } | null>(null);
 const savedAttempt = ref(false);
 
@@ -120,7 +128,7 @@ function submit() {
   }
 }
 
-function next() {
+async function next() {
   // UX: le bouton "Suivant" valide automatiquement si pas encore validé,
   // puis avance (les utilisateurs s'attendent souvent à "Suivant = valider+suivant").
   if (!current.value) return;
@@ -129,6 +137,12 @@ function next() {
     submit();
     if (!locked.value) return; // réponse incomplète
   }
+
+  // SRS: record the review result for this question
+  const q = current.value;
+  const correct = isCorrect(q);
+  const srsType = q.kind === "vocab_mcq" ? "vocab" : q.kind === "exam_mcq" ? "exam" : "sentence";
+  await recordReview(q.id, srsType, correct ? 4 : 1).catch(() => {});
 
   locked.value = false;
   idx.value += 1;
@@ -144,14 +158,7 @@ function isCorrect(q: PracticeQuestion): boolean {
   return user.length === q.tokens.length && user.every((t, i) => t === q.tokens[i]);
 }
 
-function plainOptions(opts: { id: string; text: string; correct: boolean }[]) {
-  // IMPORTANT: évite de stocker des Proxy Vue dans IndexedDB
-  return opts.map(o => ({ id: o.id, text: o.text, correct: !!o.correct }));
-}
-
-function copyStrings(arr?: string[]) {
-  return arr ? [...arr] : undefined; // arrays "plain"
-}
+// plainOptions & copyStrings imported from utils/reactive
 
 
 async function finish() {
@@ -209,7 +216,7 @@ async function finish() {
     } catch (e) {
       console.error(e);
       savedAttempt.value = false;
-      alert("Erreur lors de l'enregistrement des résultats (IndexedDB).");
+      toast.error("Erreur lors de l'enregistrement des résultats.");
     }
   }
 }
@@ -222,6 +229,13 @@ async function goHome() { await router.push("/"); }
 async function goStats() { await router.push("/stats"); }
 async function goGenerator() { await router.push("/exams"); }
 
+async function restart() {
+  showModal.value = false;
+  result.value = null;
+  savedAttempt.value = false;
+  await load();
+}
+
 onMounted(load);
 </script>
 
@@ -231,6 +245,7 @@ onMounted(load);
       <EmptyState
         title="Rien à réviser"
         hint="Aucune question ne correspond aux filtres. Ajoute du contenu ou change les tags."
+        icon="🔍"
       />
       <div class="row mt-3">
         <router-link class="btn" to="/exams">Retour générateur</router-link>
@@ -255,10 +270,10 @@ onMounted(load);
         </div>
       </div>
 
-      <div class="hr"></div>
+      <ProgressBar :current="idx + 1" :total="questions.length" />
 
       <!-- ✅ Scroll uniquement dans cette zone -->
-      <div class="sessionBody">
+      <div class="sessionBody mt-3">
         <div v-if="current.kind === 'vocab_mcq' || current.kind === 'exam_mcq'">
           <h3 class="mt-0">{{ current.prompt }}</h3>
 
@@ -318,14 +333,23 @@ onMounted(load);
             Valider
           </button>
           <button class="btn" @click="next" :disabled="!canProceed">Suivant</button>
-          <button class="btn ok" @click="finish">Terminer</button>
+          <button class="btn ok" @click="showFinishConfirm = true">Terminer</button>
         </div>
 
         <p class="small mt-2.5">
-          Pour l’ordre des mots : clique un mot pour l’ajouter, puis clique-le dans “Ta réponse” pour l’enlever.
+          Pour l’ordre des mots : clique un mot pour l’ajouter, puis clique-le dans "Ta réponse" pour l’enlever.
         </p>
       </div>
     </div>
+
+    <ConfirmModal
+      :open="showFinishConfirm"
+      title="Terminer la session ?"
+      message="Tu n'as pas fini toutes les questions. Terminer maintenant ?"
+      confirm-text="Terminer"
+      @confirm="showFinishConfirm = false; finish()"
+      @cancel="showFinishConfirm = false"
+    />
 
     <BaseModal :open="showModal" title="Résultat (exam tags)" @close="goHome">
       <div v-if="result" class="card" style="margin:0">
@@ -355,6 +379,7 @@ onMounted(load);
         <div class="hr"></div>
 
         <div class="row">
+          <button class="btn primary" @click="restart">🔄 Recommencer</button>
           <button class="btn" @click="goStats">Voir les stats</button>
           <button class="btn" @click="goGenerator">Nouveau filtre</button>
           <button class="btn ok" @click="goHome">Retour accueil</button>

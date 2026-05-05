@@ -6,6 +6,11 @@ import { uid } from "../utils/id";
 import ConfirmBar from "../components/ConfirmBar.vue";
 import EmptyState from "../components/EmptyState.vue";
 import BaseModal from "../components/BaseModal.vue";
+import ConfirmModal from "../components/ConfirmModal.vue";
+import { useToast } from "../composables/useToast";
+
+const toast = useToast();
+const pendingDeleteId = ref<string | null>(null);
 
 const props = defineProps<{ examId?: string }>();
 const route = useRoute();
@@ -159,10 +164,12 @@ async function saveEdit() {
   await load();
 }
 
-async function removeQuestion(id: string) {
-  if (!confirm("Supprimer cette question ?")) return;
+async function removeQuestion() {
+  const id = pendingDeleteId.value;
+  pendingDeleteId.value = null;
+  if (!id) return;
   await db.examQuestions.delete(id);
-  set("ok", "Question supprimée ✅");
+  toast.success("Question supprimée !");
   await load();
 }
 
@@ -240,7 +247,7 @@ onMounted(load);
       </div>
 
       <div v-if="questions.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
-        <EmptyState title="Aucune question" hint="Ajoute ta première question à gauche." />
+        <EmptyState title="Aucune question" hint="Ajoute ta première question à gauche." icon="✏️" />
       </div>
 
       <div v-else class="scrollY">
@@ -253,7 +260,7 @@ onMounted(load);
               </div>
               <div class="row" style="gap:8px">
                 <button class="btn" @click="openEdit(q)">Éditer</button>
-                <button class="btn danger" @click="removeQuestion(q.id)">Supprimer</button>
+                <button class="btn danger" @click="pendingDeleteId = q.id">Supprimer</button>
               </div>
             </div>
             <p class="small mt-2">
@@ -295,4 +302,14 @@ onMounted(load);
       </div>
     </div>
   </BaseModal>
+
+  <ConfirmModal
+    :open="!!pendingDeleteId"
+    title="Supprimer la question"
+    message="Supprimer cette question ? Cette action est irréversible."
+    confirm-text="Supprimer"
+    :danger="true"
+    @confirm="removeQuestion"
+    @cancel="pendingDeleteId = null"
+  />
 </template>
