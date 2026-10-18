@@ -3,7 +3,8 @@ import { confirmDialog, toast } from "../services/dialog";
 import { onMounted, ref } from "vue";
 import { db, type VocabDeck, type Exam } from "../db";
 import EmptyState from "../components/EmptyState.vue";
-import { exportAllData, downloadJson } from "../services/exporter";
+import { exportAllData } from "../services/exporter";
+import { saveJson } from "../services/fileSave";
 import { useRouter } from "vue-router";
 const router = useRouter();
 
@@ -65,7 +66,11 @@ async function clearAll() {
 async function exportAll() {
   const data = await exportAllData();
   const date = new Date().toISOString().slice(0, 10);
-  downloadJson(`revisions_export_${date}.json`, data);
+  try {
+    await saveJson(`revisions_export_${date}.json`, data);
+  } catch (e) {
+    toast(`Export impossible : ${e instanceof Error ? e.message : "erreur inconnue"}`, "danger");
+  }
 }
 
 function examDurationLabel(seconds?: number) {

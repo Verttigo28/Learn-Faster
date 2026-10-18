@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useSessionGuard } from "../composables/useSessionGuard";
 import { toast } from "../services/dialog";
 import { computed, onMounted, ref, toRaw } from "vue";
 import { useRoute, useRouter } from "vue-router";
@@ -123,6 +124,8 @@ async function finish() {
 async function backToDeck() {
   await router.push(`/deck/${deckId.value}`);
 }
+
+useSessionGuard(() => !showResultModal.value && total.value > 0);
 
 onMounted(load);
 </script>

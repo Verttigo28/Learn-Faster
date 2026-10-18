@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useSessionGuard } from "../composables/useSessionGuard";
 import { toast } from "../services/dialog";
 import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
@@ -222,6 +223,8 @@ function percent(x: number) {
 async function goHome() { await router.push("/"); }
 async function goStats() { await router.push("/stats"); }
 async function goGenerator() { await router.push("/exams"); }
+
+useSessionGuard(() => !showModal.value && questions.value.length > 0 && (idx.value > 0 || locked.value));
 
 onMounted(load);
 </script>

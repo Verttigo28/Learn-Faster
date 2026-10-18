@@ -23,9 +23,9 @@ Chaque phase = un commit sur la branche `improvements`, build + tests verts.
 - [x] Validation stricte des JSON importés (messages d'erreur précis)
 
 ## Phase 3 — Android / natif
-- [ ] Export JSON + PDF via `@capacitor/filesystem` + `@capacitor/share` sur natif
-- [ ] PDF via `jsPDF` (Unicode, mise en page fiable) à la place du générateur maison
-- [ ] Avertir avant de quitter une session en cours
+- [x] Export JSON + PDF via `@capacitor/filesystem` + `@capacitor/share` sur natif
+- [x] PDF via `jsPDF` (mise en page fiable, chargé à la demande) à la place du générateur maison — polices standard : Latin-1 (FR / ID OK)
+- [x] Avertir avant de quitter une session en cours
 
 ## Phase 4 — Répétition espacée (SRS)
 - [ ] Table `reviews` : état par carte (algorithme SM-2)

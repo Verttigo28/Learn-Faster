@@ -57,10 +57,10 @@ function canExportPdf(a: Attempt | null): boolean {
   return !!a && !!a.meta?.details?.length;
 }
 
-function exportPdf() {
+async function exportPdf() {
   if (!attempt.value) return;
   try {
-    exportAttemptPdf(attempt.value, title.value);
+    await exportAttemptPdf(attempt.value, title.value);
   } catch (e) {
     toast(e instanceof Error ? e.message : "Impossible d'exporter le PDF", "danger");
   }

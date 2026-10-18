@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useSessionGuard } from "../composables/useSessionGuard";
 import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { db, type VocabDeck, type VocabItem } from "../db";
@@ -102,6 +103,8 @@ async function finish() {
 async function backToDeck() {
   await router.push(`/deck/${deckId.value}`);
 }
+
+useSessionGuard(() => !showResultModal.value && answered.value > 0);
 
 onMounted(load);
 </script>

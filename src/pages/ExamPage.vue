@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useSessionGuard } from "../composables/useSessionGuard";
 import { toast } from "../services/dialog";
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
@@ -165,6 +166,8 @@ async function goStats() {
 }
 
 onUnmounted(() => stopTimer());
+useSessionGuard(() => !finished.value && Object.keys(selected.value).length > 0);
+
 onMounted(load);
 </script>
 

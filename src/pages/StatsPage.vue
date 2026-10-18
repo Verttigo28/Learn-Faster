@@ -70,9 +70,9 @@ function canOpenResult(a: Attempt): boolean {
 }
 
 
-function exportPdf(a: Attempt) {
+async function exportPdf(a: Attempt) {
   try {
-    exportAttemptPdf(a, titleFor(a));
+    await exportAttemptPdf(a, titleFor(a));
   } catch (e) {
     toast(e instanceof Error ? e.message : "Impossible d'exporter le PDF", "danger");
   }
