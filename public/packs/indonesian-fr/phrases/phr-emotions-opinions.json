@@ -1,0 +1,288 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-emotions-opinions",
+  "title": "Émotions et opinions",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya senang sekali.",
+      "translation": "Je suis très content.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Saya sedih mendengar berita itu.",
+      "translation": "Je suis triste d'apprendre cette nouvelle.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Dia marah kepada saya.",
+      "translation": "Il est fâché contre moi.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya takut pada anjing.",
+      "translation": "J'ai peur des chiens.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya capek sekali.",
+      "translation": "Je suis très fatigué.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Jangan khawatir, semuanya baik-baik saja.",
+      "translation": "Ne t'inquiète pas, tout va bien.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Menurut saya, film itu bagus.",
+      "translation": "À mon avis, ce film est bon.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Saya setuju dengan Anda.",
+      "translation": "Je suis d'accord avec vous.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Saya tidak setuju dengan pendapat itu.",
+      "translation": "Je ne suis pas d'accord avec cet avis.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Saya bosan menunggu.",
+      "translation": "J'en ai assez d'attendre.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya kangen keluarga saya.",
+      "translation": "Ma famille me manque.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Saya bangga pada anak saya.",
+      "translation": "Je suis fier de mon enfant.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Saya malu berbicara bahasa Indonesia.",
+      "translation": "Je suis gêné de parler indonésien.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Kami sangat terkejut.",
+      "translation": "Nous sommes très surpris.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya kecewa dengan pelayanannya.",
+      "translation": "Je suis déçu du service.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Bagaimana pendapat Anda?",
+      "translation": "Qu'en pensez-vous ?",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya pikir itu ide yang bagus.",
+      "translation": "Je pense que c'est une bonne idée.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Saya kurang yakin.",
+      "translation": "Je n'en suis pas très sûr.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya gugup sebelum ujian.",
+      "translation": "Je suis nerveux avant l'examen.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Dia sedang jatuh cinta.",
+      "translation": "Il est amoureux.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Saya lega ujiannya sudah selesai.",
+      "translation": "Je suis soulagé que l'examen soit fini.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "b1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya lebih suka teh daripada kopi.",
+      "translation": "Je préfère le thé au café.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Saya bahagia tinggal di sini.",
+      "translation": "Je suis heureux de vivre ici.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Jangan sedih, ya.",
+      "translation": "Ne sois pas triste.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Saya merasa kesepian.",
+      "translation": "Je me sens seul.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Sayang sekali, kamu tidak bisa datang.",
+      "translation": "Dommage que tu ne puisses pas venir.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Sejujurnya, saya tidak suka durian.",
+      "translation": "Pour être honnête, je n'aime pas le durian.",
+      "tags": [
+        "phrases",
+        "emotions",
+        "a2",
+        "negation"
+      ]
+    }
+  ]
+}

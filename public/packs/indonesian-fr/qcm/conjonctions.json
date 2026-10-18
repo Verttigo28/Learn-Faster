@@ -1,0 +1,680 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-conjonctions",
+  "title": "Les conjonctions",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Complétez : « Saya tidak datang ___ sakit. » (parce que)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tetapi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "karena",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "jadi",
+          "correct": false
+        }
+      ],
+      "explanation": "« Karena » = parce que.",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Complétez : « Dia kaya, ___ tidak bahagia. » (mais)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "karena",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kalau",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "tetapi",
+          "correct": true
+        }
+      ],
+      "explanation": "« Tetapi » (tapi à l'oral) = mais.",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Complétez : « Hujan, ___ kami di rumah saja. » (donc)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "karena",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kalau",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "walaupun",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "jadi",
+          "correct": true
+        }
+      ],
+      "explanation": "« Jadi » = donc, alors.",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Complétez : « ___ hujan, saya tidak pergi. » (S'il pleut…)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Karena",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Kalau",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Supaya",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Tetapi",
+          "correct": false
+        }
+      ],
+      "explanation": "« Kalau » = si (condition).",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Complétez : « Belajarlah ___ lulus ujian. » (pour que, afin de)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "walaupun",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tetapi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "supaya",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "karena",
+          "correct": false
+        }
+      ],
+      "explanation": "« Supaya » (ou agar) = pour que, afin de.",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Complétez : « ___ sakit, dia tetap bekerja. » (Bien qu'il soit malade…)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Karena",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Supaya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Walaupun",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Jadi",
+          "correct": false
+        }
+      ],
+      "explanation": "« Walaupun » (meskipun) = bien que, même si.",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Complétez : « Mau teh ___ kopi? » (ou)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "jadi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "atau",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "tetapi",
+          "correct": false
+        }
+      ],
+      "explanation": "« Atau » = ou ; « dan » = et.",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Que signifie « lalu » dans un récit ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "puis, ensuite",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "si",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "parce que",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bien que",
+          "correct": false
+        }
+      ],
+      "explanation": "« Lalu » / « kemudian » = puis, ensuite.",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Complétez : « Cuci tangan ___ makan. » (avant de manger)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sambil",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "sesudah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sebelum",
+          "correct": true
+        }
+      ],
+      "explanation": "« Sebelum » = avant (de).",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Que signifie « setelah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pendant",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "depuis",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "avant",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "après",
+          "correct": true
+        }
+      ],
+      "explanation": "« Setelah » / « sesudah » = après.",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Complétez : « ___ saya kecil, saya tinggal di Medan. » (Quand j'étais petit…)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Kalau",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Tetapi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ketika",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Supaya",
+          "correct": false
+        }
+      ],
+      "explanation": "« Ketika » / « waktu » = quand (moment passé).",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Que signifie « oleh karena itu » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "c'est pourquoi / par conséquent",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "parce que",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "à cause de lui",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "pourtant",
+          "correct": false
+        }
+      ],
+      "explanation": "Connecteur de conséquence (registre soutenu).",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Complétez : « Dia bukan guru, ___ dokter. » (… mais médecin)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "melainkan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "jadi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "karena",
+          "correct": false
+        }
+      ],
+      "explanation": "Après une négation avec bukan : « bukan X, melainkan Y » (tetapi est aussi possible).",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Que signifie « sehingga » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "afin que",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "si bien que, de sorte que",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "tandis que",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bien que",
+          "correct": false
+        }
+      ],
+      "explanation": "« Sehingga » introduit une conséquence.",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "« Jika » est…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "un synonyme de « karena »",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "un équivalent plus formel de « kalau »",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "un mot interrogatif",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "un synonyme de « tetapi »",
+          "correct": false
+        }
+      ],
+      "explanation": "Jika / apabila = si (registre soutenu).",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Complétez : « Saya tahu ___ dia sakit. » (que)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "apa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "bahwa",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "yang",
+          "correct": false
+        }
+      ],
+      "explanation": "« Bahwa » introduit une proposition complétive : savoir que…",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Complétez : « Dia makan ___ menonton TV. » (tout en regardant)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "karena",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sambil",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "sebelum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "atau",
+          "correct": false
+        }
+      ],
+      "explanation": "« Sambil » = tout en (deux actions simultanées).",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Que signifie « Dia malas, padahal ujiannya besok » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il est paresseux parce que l'examen est demain.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Il est paresseux si l'examen est demain.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Il est paresseux donc il réussira.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Il est paresseux, alors que l'examen est demain.",
+          "correct": true
+        }
+      ],
+      "explanation": "« Padahal » = alors que, pourtant (contraste).",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Que signifie « baik guru maupun murid » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "soit le professeur soit l'élève",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "aussi bien le professeur que l'élève",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "le bon professeur et l'élève",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ni le professeur ni l'élève",
+          "correct": false
+        }
+      ],
+      "explanation": "« Baik … maupun … » = aussi bien … que …",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "b1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Complétez : « Saya suka kopi, ___ adik saya suka teh. » (tandis que)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sedangkan",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "karena",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sebelum",
+          "correct": false
+        }
+      ],
+      "explanation": "« Sedangkan » = tandis que (opposition).",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Complétez : « Saya tidak tahu ___ dia akan datang. » (si = whether)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "walaupun",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "karena",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "apakah",
+          "correct": true
+        }
+      ],
+      "explanation": "Interrogation indirecte (si oui ou non) : « apakah ».",
+      "tags": [
+        "grammaire",
+        "conjonctions",
+        "b1"
+      ]
+    }
+  ]
+}

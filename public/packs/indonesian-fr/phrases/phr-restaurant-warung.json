@@ -1,0 +1,293 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-restaurant-warung",
+  "title": "Au restaurant et au warung",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya mau pesan nasi goreng.",
+      "translation": "Je voudrais commander un nasi goreng.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Minta menunya, Mas.",
+      "translation": "Le menu, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Saya mau es teh manis.",
+      "translation": "Je voudrais un thé glacé sucré.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Jangan terlalu pedas, ya.",
+      "translation": "Pas trop épicé, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya tidak makan daging babi.",
+      "translation": "Je ne mange pas de porc.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Apakah ada makanan vegetarian?",
+      "translation": "Avez-vous des plats végétariens ?",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Berapa harganya semua?",
+      "translation": "Combien ça fait en tout ?",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Minta bonnya, Bu.",
+      "translation": "L'addition, s'il vous plaît, madame.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Makanannya enak sekali.",
+      "translation": "C'est délicieux.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Saya alergi kacang.",
+      "translation": "Je suis allergique aux cacahuètes.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Meja untuk dua orang, ya.",
+      "translation": "Une table pour deux, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Boleh saya lihat menunya?",
+      "translation": "Puis-je voir le menu ?",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Makan di sini atau dibungkus?",
+      "translation": "Sur place ou à emporter ?",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "question",
+        "passif"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Dibungkus saja, Mbak.",
+      "translation": "À emporter, s'il vous plaît, mademoiselle.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "passif"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya mau sate ayam sepuluh tusuk.",
+      "translation": "Je voudrais dix brochettes de saté de poulet.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Tolong tambah nasi satu porsi lagi.",
+      "translation": "Une portion de riz en plus, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Airnya pakai es atau tidak?",
+      "translation": "L'eau, avec ou sans glaçons ?",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Tanpa gula, ya.",
+      "translation": "Sans sucre, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Apa makanan khas di sini?",
+      "translation": "Quelle est la spécialité d'ici ?",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya sudah kenyang.",
+      "translation": "Je n'ai plus faim.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Kami belum memesan.",
+      "translation": "Nous n'avons pas encore commandé.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Pesanan saya belum datang.",
+      "translation": "Ma commande n'est pas encore arrivée.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Bisa bayar pakai kartu?",
+      "translation": "Peut-on payer par carte ?",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Sambalnya terlalu pedas untuk saya.",
+      "translation": "Le sambal est trop épicé pour moi.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Rendang ini dimasak dengan santan.",
+      "translation": "Ce rendang est cuisiné au lait de coco.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "b1",
+        "passif"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Gado-gado di warung ini terkenal.",
+      "translation": "Le gado-gado de ce warung est célèbre.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Saya mau kopi tanpa susu.",
+      "translation": "Je voudrais un café sans lait.",
+      "tags": [
+        "phrases",
+        "restaurant",
+        "a1"
+      ]
+    }
+  ]
+}

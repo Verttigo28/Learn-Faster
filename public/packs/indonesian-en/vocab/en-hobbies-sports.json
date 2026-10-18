@@ -1,0 +1,459 @@
+{
+  "type": "vocab_deck",
+  "id": "en-hobbies-sports",
+  "title": "Hobbies and sports",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "hobi",
+      "definition": "hobby",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "olahraga",
+      "definition": "sport / exercise",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "sepak bola",
+      "definition": "soccer / football",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "bulu tangkis",
+      "definition": "badminton",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "bola basket",
+      "definition": "basketball",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "bola voli",
+      "definition": "volleyball",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "tenis",
+      "definition": "tennis",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "berenang",
+      "definition": "to swim",
+      "tags": [
+        "hobbies",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "renang",
+      "definition": "swimming",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "bersepeda",
+      "definition": "to cycle / to ride a bike",
+      "tags": [
+        "hobbies",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "lari",
+      "definition": "running / to run",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "mendaki gunung",
+      "definition": "to go mountain hiking / to climb a mountain",
+      "tags": [
+        "hobbies",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "menyelam",
+      "definition": "to dive",
+      "tags": [
+        "hobbies",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "berselancar",
+      "definition": "to surf",
+      "tags": [
+        "hobbies",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "memancing",
+      "definition": "to fish / fishing",
+      "tags": [
+        "hobbies",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "berkemah",
+      "definition": "to camp / camping",
+      "tags": [
+        "hobbies",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "menonton film",
+      "definition": "to watch a movie / to watch a film",
+      "tags": [
+        "hobbies",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "mendengarkan musik",
+      "definition": "to listen to music",
+      "tags": [
+        "hobbies",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "membaca buku",
+      "definition": "to read a book",
+      "tags": [
+        "hobbies",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "bermain gitar",
+      "definition": "to play the guitar",
+      "tags": [
+        "hobbies",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "menggambar",
+      "definition": "to draw",
+      "tags": [
+        "hobbies",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "melukis",
+      "definition": "to paint",
+      "tags": [
+        "hobbies",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "memotret",
+      "definition": "to take photos / to photograph",
+      "tags": [
+        "hobbies",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "foto",
+      "definition": "photo",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "lagu",
+      "definition": "song",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "musik",
+      "definition": "music",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "film",
+      "definition": "movie / film",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "konser",
+      "definition": "concert",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "pertandingan",
+      "definition": "match / game / competition",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "tim",
+      "definition": "team",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "pemain",
+      "definition": "player",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "menang",
+      "definition": "to win",
+      "tags": [
+        "hobbies",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "kalah",
+      "definition": "to lose (a match)",
+      "tags": [
+        "hobbies",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "seri",
+      "definition": "draw / tie",
+      "tags": [
+        "hobbies",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "skor",
+      "definition": "score",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "bola",
+      "definition": "ball",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "lapangan",
+      "definition": "field / court / pitch",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "pesta",
+      "definition": "party",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "main kartu",
+      "definition": "to play cards",
+      "tags": [
+        "hobbies",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "catur",
+      "definition": "chess",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "wayang",
+      "definition": "wayang / traditional puppets / shadow puppets",
+      "tags": [
+        "hobbies",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "gamelan",
+      "definition": "gamelan (traditional orchestra)",
+      "tags": [
+        "hobbies",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "pencak silat",
+      "definition": "pencak silat (Indonesian martial art)",
+      "tags": [
+        "hobbies",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "waktu luang",
+      "definition": "free time / spare time",
+      "tags": [
+        "hobbies",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "Apa hobi Anda?",
+      "definition": "what is your hobby? / what are your hobbies?",
+      "tags": [
+        "hobbies",
+        "expression",
+        "a1"
+      ]
+    }
+  ]
+}

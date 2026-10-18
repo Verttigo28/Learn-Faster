@@ -1,0 +1,648 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-redoublement",
+  "title": "Le redoublement (reduplication)",
+  "durationSeconds": 600,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Que signifie « buku-buku » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "un gros livre",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "un carnet",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "lire beaucoup",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "des livres (pluriel, variété)",
+          "correct": true
+        }
+      ],
+      "explanation": "Le redoublement d'un nom exprime la pluralité ou la diversité.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Que signifie « kura-kura » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "très lent",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "des kura",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "des chevaux",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "une tortue",
+          "correct": true
+        }
+      ],
+      "explanation": "« Kura-kura » est un mot intrinsèquement redoublé : ce n'est pas un pluriel.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Que signifie « jalan-jalan » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "se promener, faire un tour",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "un carrefour",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "marcher vite",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "des routes uniquement",
+          "correct": false
+        }
+      ],
+      "explanation": "Jalan-jalan = se balader (peut aussi signifier « des routes » selon le contexte).",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Que signifie « anak-anak » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "l'enfant de l'enfant",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "enfantin",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "un petit enfant",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "les enfants",
+          "correct": true
+        }
+      ],
+      "explanation": "Redoublement du nom = pluriel.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Quelle forme est correcte pour « trois livres » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tiga buku-buku",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "buku tiga-tiga",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "tiga buku",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "tiga-tiga buku",
+          "correct": false
+        }
+      ],
+      "explanation": "Avec un nombre ou un quantifieur (tiga, banyak), on ne redouble pas le nom.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Lequel de ces mots N'EST PAS un pluriel ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mobil-mobil",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kupu-kupu",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "orang-orang",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "rumah-rumah",
+          "correct": false
+        }
+      ],
+      "explanation": "« Kupu-kupu » (papillon) est un mot redoublé lexical, au singulier.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Que signifie « pelan-pelan » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "parfois",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "rapidement",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "doucement, lentement",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "très fort",
+          "correct": false
+        }
+      ],
+      "explanation": "Redoublement d'adjectif à valeur adverbiale.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Que signifie « sayur-mayur » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "des légumes de toutes sortes",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "un seul légume",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "un vendeur de légumes",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "une salade",
+          "correct": false
+        }
+      ],
+      "explanation": "Redoublement avec variation phonétique : idée de diversité.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "b1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Que signifie « bolak-balik » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "aller-retour, faire des allers-retours",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "à l'envers uniquement",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "tomber",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "rester immobile",
+          "correct": false
+        }
+      ],
+      "explanation": "Redoublement avec variation vocalique : mouvement répété.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Que signifie « Hati-hati! » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Doucement le cœur.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Mon cœur !",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bon courage !",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Attention ! / Fais attention !",
+          "correct": true
+        }
+      ],
+      "explanation": "Hati-hati = prudemment, faire attention.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "« Apa kabar? » — « Baik-baik saja. » signifie…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Très mal.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Je ne sais pas.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Pas bien.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ça va bien.",
+          "correct": true
+        }
+      ],
+      "explanation": "Baik-baik saja = tout va bien.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Que signifie souvent « makan-makan » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ne pas manger",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "faire un repas convivial / festif",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "grignoter seul",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "manger trop vite",
+          "correct": false
+        }
+      ],
+      "explanation": "Le redoublement du verbe peut exprimer une activité détendue ou collective.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Quelle est l'écriture standard (EYD) du pluriel de « rumah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "rumah-rumah",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "rumah2",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "rumah rumah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "rumahrumah",
+          "correct": false
+        }
+      ],
+      "explanation": "On redouble avec un trait d'union ; « rumah2 » est une abréviation informelle.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Que signifie « tiba-tiba » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "à l'heure",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "soudain, tout à coup",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "arriver",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "toujours",
+          "correct": false
+        }
+      ],
+      "explanation": "Tiba-tiba = soudainement.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Au magasin : « Saya cuma lihat-lihat. » signifie…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Je ne vois rien.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Je cherche quelque chose de précis.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Je veux acheter.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Je regarde seulement.",
+          "correct": true
+        }
+      ],
+      "explanation": "Lihat-lihat = regarder un peu, sans but précis.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Que signifie « tolong-menolong » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "s'entraider",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "demander de l'aide",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "refuser d'aider",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "aider une seule fois",
+          "correct": false
+        }
+      ],
+      "explanation": "Redoublement avec préfixe : réciprocité.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Que signifie « mata-mata » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "un espion",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "regarder",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "des lunettes",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "les yeux uniquement",
+          "correct": false
+        }
+      ],
+      "explanation": "Le redoublement peut créer un sens nouveau : mata-mata = espion.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Que signifie « Rumahnya besar-besar » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sa maison est un peu grande.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Sa maison grandit.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "La plus grande maison.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ses maisons sont toutes grandes.",
+          "correct": true
+        }
+      ],
+      "explanation": "Adjectif redoublé : il s'applique à plusieurs éléments.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "« Terima kasih! » — « ___ ! » (De rien)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lama-lama",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Pagi-pagi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sama-sama",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Kira-kira",
+          "correct": false
+        }
+      ],
+      "explanation": "« Sama-sama » = de rien / moi de même.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Que signifie « berlari-lari » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "courir une seule fois",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "s'arrêter de courir",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "une course officielle",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "courir un peu partout, çà et là",
+          "correct": true
+        }
+      ],
+      "explanation": "Ber- + racine redoublée : action répétée ou sans but précis.",
+      "tags": [
+        "grammaire",
+        "redoublement",
+        "a2"
+      ]
+    }
+  ]
+}

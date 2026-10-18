@@ -1,0 +1,648 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-comparatif-superlatif",
+  "title": "Comparatif et superlatif",
+  "durationSeconds": 600,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Complétez : « Ali ___ tinggi daripada Budi. » (plus grand que)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kurang dari",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "lebih",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "paling",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "se-",
+          "correct": false
+        }
+      ],
+      "explanation": "« Lebih » + adjectif = plus.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Dans une comparaison, « daripada » signifie…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pour",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "avec",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "de",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "que",
+          "correct": true
+        }
+      ],
+      "explanation": "Lebih besar daripada = plus grand que.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Complétez : « Dia ___ pintar di kelas. » (le plus intelligent)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sangat",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "paling",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "lebih",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kurang",
+          "correct": false
+        }
+      ],
+      "explanation": "« Paling » = le plus (superlatif).",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Complétez : « Ani ___ kakaknya. » (aussi grande que sa sœur aînée)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lebih tinggi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "setinggi",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "paling tinggi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "tertinggi",
+          "correct": false
+        }
+      ],
+      "explanation": "se- + adjectif = aussi … que.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "« Ani sama tinggi dengan adiknya » signifie…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ani est aussi grande que sa petite sœur.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Ani est la plus grande.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ani est plus grande que sa petite sœur.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ani grandit avec sa sœur.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Sama … dengan » = aussi … que.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Que signifie « Kopi ini kurang manis » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ce café est trop sucré.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ce café est le plus sucré.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ce café est sucré.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ce café n'est pas assez sucré.",
+          "correct": true
+        }
+      ],
+      "explanation": "« Kurang » + adjectif = pas assez / moins.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Que signifie « Rumah ini kurang besar daripada rumah itu » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cette maison est plus grande que celle-là.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Cette maison est moins grande que celle-là.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Cette maison est aussi grande que celle-là.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Cette maison est la moins grande.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Kurang … daripada » = moins … que.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "« Terbesar » équivaut à…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kurang besar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sebesar",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "paling besar",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "lebih besar",
+          "correct": false
+        }
+      ],
+      "explanation": "Ter- superlatif = paling.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Que signifie « lebih baik » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "très bien",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "pas bien",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "assez bien",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mieux / meilleur",
+          "correct": true
+        }
+      ],
+      "explanation": "Lebih baik = mieux.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Complétez : « Dia punya ___ uang daripada saya. » (plus d'argent)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lebih banyak",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "paling banyak",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "sebanyak",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "banyak sekali",
+          "correct": false
+        }
+      ],
+      "explanation": "Lebih banyak = plus (de quantité).",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Complétez : « Harga bensin ___ mahal. » (de plus en plus cher)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sama",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "paling",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "lebih dari",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "semakin",
+          "correct": true
+        }
+      ],
+      "explanation": "« Semakin / makin » = de plus en plus.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Que signifie « Semakin cepat semakin baik » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le meilleur est le plus rapide.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Pas trop vite.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Vite mais bien.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Le plus tôt sera le mieux.",
+          "correct": true
+        }
+      ],
+      "explanation": "Semakin … semakin = plus … plus.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Que signifie « Budi tidak setinggi Ali » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Budi est le plus grand.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Budi est plus grand qu'Ali.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Budi n'est pas aussi grand qu'Ali.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Budi et Ali sont grands.",
+          "correct": false
+        }
+      ],
+      "explanation": "Tidak + se- = pas aussi … que.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Complétez : « Dari ketiga anak itu, Budi ___. » (… c'est Budi le plus grand)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lebih tinggi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tinggi sekali",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "yang paling tinggi",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "setinggi",
+          "correct": false
+        }
+      ],
+      "explanation": "Superlatif parmi un groupe : yang paling + adjectif.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Que signifie « paling tidak » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pas du tout",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "le moins",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "jamais",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "au moins",
+          "correct": true
+        }
+      ],
+      "explanation": "« Paling tidak » = au moins (synonyme : setidaknya).",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "b1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Complétez : « Ada ___ seratus orang di sana. » (plus de cent personnes)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lebih dari",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "sebanyak dari",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "lebih daripada",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "paling",
+          "correct": false
+        }
+      ],
+      "explanation": "Avec un nombre : « lebih dari » = plus de.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Que signifie « badannya sebesar gajah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Son corps est plus grand qu'un éléphant.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Il est le plus gros éléphant.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Son corps est aussi gros qu'un éléphant.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Il a vu un gros éléphant.",
+          "correct": false
+        }
+      ],
+      "explanation": "se- + adjectif + nom = aussi … que.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Que signifie « mahal sekali » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pas assez cher",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "très cher",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "le plus cher",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "plus cher",
+          "correct": false
+        }
+      ],
+      "explanation": "« Sekali » après l'adjectif = très (intensif, pas superlatif).",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Que signifie « Ani lebih muda daripada saya » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ani est la plus jeune.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ani est plus âgée que moi.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ani est plus jeune que moi.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Ani est aussi jeune que moi.",
+          "correct": false
+        }
+      ],
+      "explanation": "Muda = jeune.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Que signifie « kurang lebih » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "de plus en plus",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "plus ou moins, environ",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "beaucoup moins",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "jamais assez",
+          "correct": false
+        }
+      ],
+      "explanation": "« Kurang lebih dua jam » = environ deux heures.",
+      "tags": [
+        "grammaire",
+        "comparatif",
+        "a2"
+      ]
+    }
+  ]
+}

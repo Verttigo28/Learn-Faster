@@ -1,0 +1,304 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-temps-verbaux",
+  "title": "Passé, présent, futur : sudah, sedang, akan, belum, pernah",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya sudah makan.",
+      "translation": "J'ai déjà mangé.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Dia sedang tidur.",
+      "translation": "Il est en train de dormir.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Kami akan pergi ke Bali.",
+      "translation": "Nous allons partir à Bali.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya belum mandi.",
+      "translation": "Je ne me suis pas encore douché.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya pernah tinggal di Jakarta.",
+      "translation": "J'ai déjà habité à Jakarta.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Apakah Anda pernah makan durian?",
+      "translation": "Avez-vous déjà mangé du durian ?",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya belum pernah naik kapal.",
+      "translation": "Je n'ai jamais pris le bateau.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Ibu sedang memasak nasi.",
+      "translation": "Maman est en train de faire cuire le riz.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Filmnya sudah mulai.",
+      "translation": "Le film a déjà commencé.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Pesawatnya akan segera mendarat.",
+      "translation": "L'avion va bientôt atterrir.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Mereka sedang menonton televisi.",
+      "translation": "Ils sont en train de regarder la télévision.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Saya akan segera menelepon Anda.",
+      "translation": "Je vais vous appeler très bientôt.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Toko itu sudah tutup.",
+      "translation": "Ce magasin est déjà fermé.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Dia masih tidur.",
+      "translation": "Il dort encore.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya baru tiba di hotel.",
+      "translation": "Je viens d'arriver à l'hôtel.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Kami sudah menunggu satu jam.",
+      "translation": "Nous attendons depuis une heure.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya sedang belajar untuk ujian.",
+      "translation": "Je suis en train de réviser pour l'examen.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Adik saya sudah bisa membaca.",
+      "translation": "Mon petit frère sait déjà lire.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Apakah kamu sudah selesai?",
+      "translation": "As-tu déjà fini ?",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya akan kembali dalam lima menit.",
+      "translation": "Je reviens dans cinq minutes.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Dia pernah bekerja di Singapura.",
+      "translation": "Il a déjà travaillé à Singapour.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Kami belum memutuskan.",
+      "translation": "Nous n'avons pas encore décidé.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Mereka akan menikah di Yogyakarta.",
+      "translation": "Ils vont se marier à Yogyakarta.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Saya sedang dalam perjalanan.",
+      "translation": "Je suis en route.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Kopinya masih panas.",
+      "translation": "Le café est encore chaud.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Busnya baru saja berangkat.",
+      "translation": "Le bus vient juste de partir.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Saya tidak akan lupa.",
+      "translation": "Je n'oublierai pas.",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Apakah dia sudah pernah ke Prancis?",
+      "translation": "Est-il déjà allé en France ?",
+      "tags": [
+        "phrases",
+        "aspect",
+        "a2",
+        "question"
+      ]
+    }
+  ]
+}

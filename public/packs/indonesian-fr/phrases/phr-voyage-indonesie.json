@@ -1,0 +1,304 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-voyage-indonesie",
+  "title": "Voyage en Indonésie",
+  "items": [
+    {
+      "id": "1",
+      "text": "Selamat datang di Indonesia.",
+      "translation": "Bienvenue en Indonésie.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Bali terkenal dengan pantainya yang indah.",
+      "translation": "Bali est célèbre pour ses belles plages.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Jakarta adalah kota terbesar di Indonesia.",
+      "translation": "Jakarta est la plus grande ville d'Indonésie.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya ingin melihat Candi Borobudur.",
+      "translation": "Je voudrais voir le temple de Borobudur.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Yogyakarta adalah pusat budaya Jawa.",
+      "translation": "Yogyakarta est le centre de la culture javanaise.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Kami menonton matahari terbit di Gunung Bromo.",
+      "translation": "Nous avons regardé le lever du soleil au mont Bromo.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Orang Bali merayakan Hari Raya Nyepi.",
+      "translation": "Les Balinais célèbrent le Nyepi.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Saat Nyepi, semua orang tinggal di rumah.",
+      "translation": "Pendant Nyepi, tout le monde reste chez soi.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Umat Islam berpuasa pada bulan Ramadan.",
+      "translation": "Les musulmans jeûnent pendant le mois de ramadan.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1",
+        "ber"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Banyak orang mudik saat Lebaran.",
+      "translation": "Beaucoup de gens rentrent dans leur région natale pour l'Aïd.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Indonesia memiliki lebih dari tujuh belas ribu pulau.",
+      "translation": "L'Indonésie compte plus de dix-sept mille îles.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Saya mau menyewa motor di Ubud.",
+      "translation": "Je voudrais louer un scooter à Ubud.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Pantai Kuta ramai sekali.",
+      "translation": "La plage de Kuta est très fréquentée.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Kami berwisata ke Danau Toba.",
+      "translation": "Nous faisons du tourisme au lac Toba.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Jangan lupa membawa paspor.",
+      "translation": "N'oublie pas d'emporter ton passeport.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a1",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Pengunjung pura wajib memakai sarung.",
+      "translation": "Les visiteurs du temple doivent porter un sarong.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Wayang kulit adalah warisan budaya Indonesia.",
+      "translation": "Le théâtre d'ombres est un patrimoine culturel indonésien.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Saya ingin belajar membatik di Yogyakarta.",
+      "translation": "Je voudrais apprendre à faire du batik à Yogyakarta.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Komodo hanya hidup di Indonesia.",
+      "translation": "Les dragons de Komodo ne vivent qu'en Indonésie.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Hari Kemerdekaan Indonesia jatuh pada tanggal 17 Agustus.",
+      "translation": "La fête de l'Indépendance indonésienne tombe le 17 août.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Visa saya berlaku tiga puluh hari.",
+      "translation": "Mon visa est valable trente jours.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Penerbangan dari Jakarta ke Denpasar memakan waktu dua jam.",
+      "translation": "Le vol de Jakarta à Denpasar dure deux heures.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Tari Kecak dipentaskan di Pura Uluwatu.",
+      "translation": "La danse Kecak est jouée au temple d'Uluwatu.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1",
+        "passif"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Malioboro adalah jalan terkenal di Yogyakarta.",
+      "translation": "Malioboro est une rue célèbre de Yogyakarta.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Saya ingin mencoba makanan khas Padang.",
+      "translation": "Je voudrais goûter la cuisine typique de Padang.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Sawah terasering di Tegallalang sangat indah.",
+      "translation": "Les rizières en terrasses de Tegallalang sont magnifiques.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Di mana saya bisa menukar uang?",
+      "translation": "Où puis-je changer de l'argent ?",
+      "tags": [
+        "phrases",
+        "voyage",
+        "a2",
+        "question",
+        "me"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Galungan adalah hari raya umat Hindu di Bali.",
+      "translation": "Galungan est une fête hindoue à Bali.",
+      "tags": [
+        "phrases",
+        "voyage",
+        "b1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,680 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-conjunctions",
+  "title": "Conjunctions",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Fill in the blank: \"Saya tidak datang ___ sakit.\" (because)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tetapi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "karena",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "jadi",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Karena\" = because.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Fill in the blank: \"Dia kaya, ___ tidak bahagia.\" (but)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "karena",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kalau",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "tetapi",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Tetapi\" (tapi in speech) = but.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Fill in the blank: \"Hujan, ___ kami di rumah saja.\" (so)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "karena",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kalau",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "walaupun",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "jadi",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Jadi\" = so, therefore.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Fill in the blank: \"___ hujan, saya tidak pergi.\" (If it rains...)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Karena",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Kalau",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Supaya",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Tetapi",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Kalau\" = if (condition).",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Fill in the blank: \"Belajarlah ___ lulus ujian.\" (so that, in order to)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "walaupun",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tetapi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "supaya",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "karena",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Supaya\" (or agar) = so that, in order to.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Fill in the blank: \"___ sakit, dia tetap bekerja.\" (Although he is sick...)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Karena",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Supaya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Walaupun",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Jadi",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Walaupun\" (meskipun) = although, even though.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Fill in the blank: \"Mau teh ___ kopi?\" (or)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "jadi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "atau",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "tetapi",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Atau\" = or; \"dan\" = and.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "What does \"lalu\" mean in a narrative?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "then, next",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "if",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "because",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "although",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Lalu\" / \"kemudian\" = then, next.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Fill in the blank: \"Cuci tangan ___ makan.\" (before eating)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sambil",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "sesudah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sebelum",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Sebelum\" = before.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "What does \"setelah\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "during",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "since",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "before",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "after",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Setelah\" / \"sesudah\" = after.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Fill in the blank: \"___ saya kecil, saya tinggal di Medan.\" (When I was little...)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Kalau",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Tetapi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ketika",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Supaya",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Ketika\" / \"waktu\" = when (a moment in the past).",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "What does \"oleh karena itu\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "that is why / therefore",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "because",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "because of him",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "however",
+          "correct": false
+        }
+      ],
+      "explanation": "A connector of consequence (formal register).",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Fill in the blank: \"Dia bukan guru, ___ dokter.\" (... but a doctor)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "melainkan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "jadi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "karena",
+          "correct": false
+        }
+      ],
+      "explanation": "After a negation with bukan: \"bukan X, melainkan Y\" = not X but (rather) Y (tetapi is also possible).",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "What does \"sehingga\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "so that (purpose)",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "so that, with the result that",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "while, whereas",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "although",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sehingga\" introduces a result or consequence.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "\"Jika\" is...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "a synonym of \"karena\"",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "a more formal equivalent of \"kalau\"",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "a question word",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "a synonym of \"tetapi\"",
+          "correct": false
+        }
+      ],
+      "explanation": "Jika / apabila = if (formal register).",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Fill in the blank: \"Saya tahu ___ dia sakit.\" (that)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "apa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "bahwa",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "yang",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Bahwa\" introduces a \"that\"-clause: to know that...",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Fill in the blank: \"Dia makan ___ menonton TV.\" (while watching)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "karena",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sambil",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "sebelum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "atau",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sambil\" = while (doing something else at the same time; two simultaneous actions by the same person).",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "What does \"Dia malas, padahal ujiannya besok\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "He is lazy because the exam is tomorrow.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "He is lazy if the exam is tomorrow.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "He is lazy, so he will pass.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "He is lazy, even though the exam is tomorrow.",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Padahal\" = even though, whereas (contrast).",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "What does \"baik guru maupun murid\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "either the teacher or the student",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "both the teacher and the student",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "the good teacher and the student",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "neither the teacher nor the student",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Baik ... maupun ...\" = both ... and ...",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "b1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Fill in the blank: \"Saya suka kopi, ___ adik saya suka teh.\" (whereas)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sedangkan",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "karena",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sebelum",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sedangkan\" = whereas, while (contrast).",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Fill in the blank: \"Saya tidak tahu ___ dia akan datang.\" (whether)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "walaupun",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "karena",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "apakah",
+          "correct": true
+        }
+      ],
+      "explanation": "Indirect yes/no question (\"whether\"): \"apakah\".",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "b1"
+      ]
+    }
+  ]
+}

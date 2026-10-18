@@ -1,0 +1,479 @@
+{
+  "type": "vocab_deck",
+  "id": "en-health-doctor",
+  "title": "Health and the doctor",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "sakit",
+      "definition": "sick / ill / painful / to hurt",
+      "tags": [
+        "health",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "sehat",
+      "definition": "healthy",
+      "tags": [
+        "health",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "dokter",
+      "definition": "doctor",
+      "tags": [
+        "health",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "dokter gigi",
+      "definition": "dentist",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "perawat",
+      "definition": "nurse",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "rumah sakit",
+      "definition": "hospital",
+      "tags": [
+        "health",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "klinik",
+      "definition": "clinic",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "puskesmas",
+      "definition": "community health center / public health clinic",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "apotek",
+      "definition": "pharmacy / drugstore",
+      "tags": [
+        "health",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "obat",
+      "definition": "medicine / medication / drug",
+      "tags": [
+        "health",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "resep",
+      "definition": "prescription",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "demam",
+      "definition": "fever",
+      "tags": [
+        "health",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "batuk",
+      "definition": "cough / to cough",
+      "tags": [
+        "health",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "pilek",
+      "definition": "cold (illness) / runny nose",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "flu",
+      "definition": "flu",
+      "tags": [
+        "health",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "pusing",
+      "definition": "dizzy / headache",
+      "tags": [
+        "health",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "sakit kepala",
+      "definition": "headache",
+      "tags": [
+        "health",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "sakit perut",
+      "definition": "stomachache",
+      "tags": [
+        "health",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "sakit gigi",
+      "definition": "toothache",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "diare",
+      "definition": "diarrhea",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "mual",
+      "definition": "nausea / nauseous",
+      "tags": [
+        "health",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "muntah",
+      "definition": "to vomit / to throw up",
+      "tags": [
+        "health",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "luka",
+      "definition": "wound / injury / injured",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "berdarah",
+      "definition": "bleeding / to bleed",
+      "tags": [
+        "health",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "patah tulang",
+      "definition": "broken bone / fracture",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "alergi",
+      "definition": "allergy / allergic",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "gatal",
+      "definition": "itchy",
+      "tags": [
+        "health",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "bengkak",
+      "definition": "swollen",
+      "tags": [
+        "health",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "masuk angin",
+      "definition": "catching a chill / feeling unwell (cold)",
+      "tags": [
+        "health",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "demam berdarah",
+      "definition": "dengue fever / dengue",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "minum obat",
+      "definition": "to take medicine",
+      "tags": [
+        "health",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "istirahat",
+      "definition": "to rest / rest",
+      "tags": [
+        "health",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "periksa",
+      "definition": "to examine / to check / check-up",
+      "tags": [
+        "health",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "suntik",
+      "definition": "injection / shot",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "pil",
+      "definition": "pill / tablet",
+      "tags": [
+        "health",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "salep",
+      "definition": "ointment",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "perban",
+      "definition": "bandage",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "plester",
+      "definition": "plaster / band-aid",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "termometer",
+      "definition": "thermometer",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "sembuh",
+      "definition": "to recover / to get well / cured",
+      "tags": [
+        "health",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "pingsan",
+      "definition": "to faint",
+      "tags": [
+        "health",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "darah tinggi",
+      "definition": "high blood pressure / hypertension",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "diabetes",
+      "definition": "diabetes",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "gejala",
+      "definition": "symptom",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "asuransi kesehatan",
+      "definition": "health insurance",
+      "tags": [
+        "health",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "Sakitnya di sini",
+      "definition": "it hurts here",
+      "tags": [
+        "health",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "Semoga cepat sembuh",
+      "definition": "get well soon",
+      "tags": [
+        "health",
+        "expression",
+        "a2"
+      ]
+    }
+  ]
+}

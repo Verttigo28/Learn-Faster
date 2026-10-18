@@ -1,0 +1,308 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-negation",
+  "title": "Négation : tidak, bukan, belum, jangan",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya tidak suka kopi.",
+      "translation": "Je n'aime pas le café.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Dia tidak datang ke pesta.",
+      "translation": "Il n'est pas venu à la fête.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Ini bukan tas saya.",
+      "translation": "Ce n'est pas mon sac.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya bukan orang Inggris.",
+      "translation": "Je ne suis pas anglais.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Dia bukan guru, tetapi dokter.",
+      "translation": "Il n'est pas professeur, mais médecin.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Saya belum makan siang.",
+      "translation": "Je n'ai pas encore déjeuné.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Kereta belum datang.",
+      "translation": "Le train n'est pas encore arrivé.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Jangan merokok di sini.",
+      "translation": "Ne fumez pas ici.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Jangan lupa mengunci pintu.",
+      "translation": "N'oublie pas de fermer la porte à clé.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Restoran itu tidak mahal.",
+      "translation": "Ce restaurant n'est pas cher.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Hari ini bukan hari Minggu.",
+      "translation": "Aujourd'hui, ce n'est pas dimanche.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Saya tidak bisa berenang.",
+      "translation": "Je ne sais pas nager.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Kami tidak punya mobil.",
+      "translation": "Nous n'avons pas de voiture.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Itu bukan masalah.",
+      "translation": "Ce n'est pas un problème.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya belum pernah ke Lombok.",
+      "translation": "Je ne suis jamais allé à Lombok.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Jangan berisik, bayinya tidur.",
+      "translation": "Ne fais pas de bruit, le bébé dort.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Dia tidak pernah terlambat.",
+      "translation": "Il n'est jamais en retard.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Airnya tidak terlalu dingin.",
+      "translation": "L'eau n'est pas trop froide.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Bukan saya yang mengambil uang itu.",
+      "translation": "Ce n'est pas moi qui ai pris cet argent.",
+      "tags": [
+        "phrases",
+        "negation",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya tidak mau pulang.",
+      "translation": "Je ne veux pas rentrer.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Tolong jangan parkir di depan pintu.",
+      "translation": "Ne vous garez pas devant la porte, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Belum ada kabar dari dia.",
+      "translation": "Il n'y a pas encore de nouvelles de lui.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Dia bukan adik saya, tetapi sepupu saya.",
+      "translation": "Ce n'est pas mon petit frère, mais mon cousin.",
+      "tags": [
+        "phrases",
+        "negation",
+        "b1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Saya tidak tahu jawabannya.",
+      "translation": "Je ne connais pas la réponse.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Tidak ada orang di rumah.",
+      "translation": "Il n'y a personne à la maison.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Jangan menyentuh lukisan itu.",
+      "translation": "Ne touchez pas ce tableau.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Toko itu belum buka.",
+      "translation": "Ce magasin n'est pas encore ouvert.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Saya sudah tidak lapar lagi.",
+      "translation": "Je n'ai plus faim.",
+      "tags": [
+        "phrases",
+        "negation",
+        "b1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "29",
+      "text": "Kamu tidak boleh masuk.",
+      "translation": "Tu n'as pas le droit d'entrer.",
+      "tags": [
+        "phrases",
+        "negation",
+        "a1"
+      ]
+    }
+  ]
+}

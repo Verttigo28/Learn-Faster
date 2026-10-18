@@ -1,0 +1,489 @@
+{
+  "type": "vocab_deck",
+  "id": "en-work-jobs",
+  "title": "Work and jobs",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "pekerjaan",
+      "definition": "job / work / occupation",
+      "tags": [
+        "work",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "kerja",
+      "definition": "work / to work (everyday)",
+      "tags": [
+        "work",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "kantor",
+      "definition": "office",
+      "tags": [
+        "work",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "perusahaan",
+      "definition": "company",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "pegawai",
+      "definition": "employee / staff",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "karyawan",
+      "definition": "employee / worker",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "bos",
+      "definition": "boss (informal)",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "atasan",
+      "definition": "superior / boss",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "rekan kerja",
+      "definition": "colleague / coworker",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "guru",
+      "definition": "teacher",
+      "tags": [
+        "work",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "dosen",
+      "definition": "lecturer / university teacher",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "dokter",
+      "definition": "doctor",
+      "tags": [
+        "work",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "perawat",
+      "definition": "nurse",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "polisi",
+      "definition": "police officer / police",
+      "tags": [
+        "work",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "tentara",
+      "definition": "soldier / army",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "petani",
+      "definition": "farmer",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "nelayan",
+      "definition": "fisherman",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "pedagang",
+      "definition": "trader / merchant",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "sopir",
+      "definition": "driver",
+      "tags": [
+        "work",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "pilot",
+      "definition": "pilot",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "insinyur",
+      "definition": "engineer",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "pengacara",
+      "definition": "lawyer",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "akuntan",
+      "definition": "accountant",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "wartawan",
+      "definition": "journalist / reporter",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "penulis",
+      "definition": "writer / author",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "seniman",
+      "definition": "artist",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "penyanyi",
+      "definition": "singer",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "juru masak",
+      "definition": "cook / chef",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "tukang",
+      "definition": "craftsman / handyman / worker",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "tukang kayu",
+      "definition": "carpenter",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "montir",
+      "definition": "mechanic",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "penjahit",
+      "definition": "tailor / dressmaker",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "ibu rumah tangga",
+      "definition": "housewife / homemaker",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "pengusaha",
+      "definition": "entrepreneur / businessperson",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "pegawai negeri",
+      "definition": "civil servant",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "pembantu",
+      "definition": "maid / housekeeper / domestic helper",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "pensiun",
+      "definition": "retired / pension / retirement",
+      "tags": [
+        "work",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "menganggur",
+      "definition": "to be unemployed / unemployed",
+      "tags": [
+        "work",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "rapat",
+      "definition": "meeting",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "gaji",
+      "definition": "salary / wages",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "lembur",
+      "definition": "overtime / to work overtime",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "cuti",
+      "definition": "leave / time off",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "melamar kerja",
+      "definition": "to apply for a job",
+      "tags": [
+        "work",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "wawancara",
+      "definition": "interview",
+      "tags": [
+        "work",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "pengalaman",
+      "definition": "experience",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "kontrak",
+      "definition": "contract",
+      "tags": [
+        "work",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "Apa pekerjaan Anda?",
+      "definition": "what is your job? / what do you do?",
+      "tags": [
+        "work",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "Saya bekerja sebagai ...",
+      "definition": "I work as ...",
+      "tags": [
+        "work",
+        "expression",
+        "a1"
+      ]
+    }
+  ]
+}

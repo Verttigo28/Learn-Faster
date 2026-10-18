@@ -1,0 +1,304 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-past-present-future",
+  "title": "Past, Present, Future: sudah, sedang, akan, belum, pernah",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya sudah makan.",
+      "translation": "I've already eaten.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Dia sedang tidur.",
+      "translation": "He is sleeping.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Kami akan pergi ke Bali.",
+      "translation": "We are going to Bali.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya belum mandi.",
+      "translation": "I haven't showered yet.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya pernah tinggal di Jakarta.",
+      "translation": "I once lived in Jakarta.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Apakah Anda pernah makan durian?",
+      "translation": "Have you ever eaten durian?",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya belum pernah naik kapal.",
+      "translation": "I've never been on a boat.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Ibu sedang memasak nasi.",
+      "translation": "Mum is cooking rice.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Filmnya sudah mulai.",
+      "translation": "The film has already started.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Pesawatnya akan segera mendarat.",
+      "translation": "The plane will be landing soon.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Mereka sedang menonton televisi.",
+      "translation": "They are watching television.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Saya akan segera menelepon Anda.",
+      "translation": "I will call you very soon.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Toko itu sudah tutup.",
+      "translation": "That shop is already closed.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Dia masih tidur.",
+      "translation": "He is still sleeping.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya baru tiba di hotel.",
+      "translation": "I've just arrived at the hotel.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Kami sudah menunggu satu jam.",
+      "translation": "We've been waiting for an hour.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya sedang belajar untuk ujian.",
+      "translation": "I'm studying for the exam.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Adik saya sudah bisa membaca.",
+      "translation": "My younger brother can already read.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Apakah kamu sudah selesai?",
+      "translation": "Have you finished yet?",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya akan kembali dalam lima menit.",
+      "translation": "I'll be back in five minutes.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Dia pernah bekerja di Singapura.",
+      "translation": "He once worked in Singapore.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Kami belum memutuskan.",
+      "translation": "We haven't decided yet.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Mereka akan menikah di Yogyakarta.",
+      "translation": "They are going to get married in Yogyakarta.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Saya sedang dalam perjalanan.",
+      "translation": "I'm on my way.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Kopinya masih panas.",
+      "translation": "The coffee is still hot.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Busnya baru saja berangkat.",
+      "translation": "The bus has just left.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Saya tidak akan lupa.",
+      "translation": "I won't forget.",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Apakah dia sudah pernah ke Prancis?",
+      "translation": "Has he ever been to France?",
+      "tags": [
+        "sentences",
+        "aspect",
+        "a2",
+        "question"
+      ]
+    }
+  ]
+}

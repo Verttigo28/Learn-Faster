@@ -1,0 +1,469 @@
+{
+  "type": "vocab_deck",
+  "id": "en-school-studies",
+  "title": "School and studies",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "sekolah",
+      "definition": "school",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "sekolah dasar",
+      "definition": "primary school / elementary school",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "SMA",
+      "definition": "high school / senior high school",
+      "tags": [
+        "school",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "murid",
+      "definition": "pupil / student",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "siswa",
+      "definition": "student (formal)",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "mahasiswa",
+      "definition": "university student / college student",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "guru",
+      "definition": "teacher",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "dosen",
+      "definition": "lecturer / university teacher",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kelas",
+      "definition": "class / classroom",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "pelajaran",
+      "definition": "lesson / subject",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "ujian",
+      "definition": "exam / examination",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "ulangan",
+      "definition": "test / quiz",
+      "tags": [
+        "school",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "pekerjaan rumah",
+      "definition": "homework",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "PR",
+      "definition": "homework (abbreviation)",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "buku",
+      "definition": "book",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "buku tulis",
+      "definition": "notebook / exercise book",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "pensil",
+      "definition": "pencil",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "pulpen",
+      "definition": "pen",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "penghapus",
+      "definition": "eraser / rubber",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "penggaris",
+      "definition": "ruler",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "kertas",
+      "definition": "paper",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "papan tulis",
+      "definition": "blackboard / whiteboard",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "kamus",
+      "definition": "dictionary",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "bahasa",
+      "definition": "language",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "kata",
+      "definition": "word",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "kalimat",
+      "definition": "sentence",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "arti",
+      "definition": "meaning",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "soal",
+      "definition": "question / problem / exercise",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "jawaban",
+      "definition": "answer",
+      "tags": [
+        "school",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "nilai",
+      "definition": "grade / mark / score",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "lulus",
+      "definition": "to pass / to graduate",
+      "tags": [
+        "school",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "gagal",
+      "definition": "to fail",
+      "tags": [
+        "school",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "beasiswa",
+      "definition": "scholarship",
+      "tags": [
+        "school",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "ijazah",
+      "definition": "diploma / certificate",
+      "tags": [
+        "school",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "jurusan",
+      "definition": "major / department / field of study",
+      "tags": [
+        "school",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "fakultas",
+      "definition": "faculty",
+      "tags": [
+        "school",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "matematika",
+      "definition": "mathematics / math",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "sejarah",
+      "definition": "history",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "ilmu",
+      "definition": "science / knowledge",
+      "tags": [
+        "school",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "menghafal",
+      "definition": "to memorize / to learn by heart",
+      "tags": [
+        "school",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "mengulang",
+      "definition": "to repeat / to review / to revise",
+      "tags": [
+        "school",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "latihan",
+      "definition": "exercise / practice / training",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "perpustakaan",
+      "definition": "library",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "seragam",
+      "definition": "uniform",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "tata bahasa",
+      "definition": "grammar",
+      "tags": [
+        "school",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "pengucapan",
+      "definition": "pronunciation",
+      "tags": [
+        "school",
+        "noun",
+        "b1"
+      ]
+    }
+  ]
+}

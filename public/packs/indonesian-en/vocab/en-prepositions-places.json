@@ -1,0 +1,489 @@
+{
+  "type": "vocab_deck",
+  "id": "en-prepositions-places",
+  "title": "Prepositions and places",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "di",
+      "definition": "at / in / on (location)",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "ke",
+      "definition": "to / towards (direction)",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "dari",
+      "definition": "from (origin)",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "di atas",
+      "definition": "on / on top of / above",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "di bawah",
+      "definition": "under / below / beneath",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "di depan",
+      "definition": "in front of",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "di belakang",
+      "definition": "behind",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "di samping",
+      "definition": "beside / next to",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "di sebelah",
+      "definition": "next to / beside",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "di sebelah kiri",
+      "definition": "on the left",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "di sebelah kanan",
+      "definition": "on the right",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "kiri",
+      "definition": "left",
+      "tags": [
+        "prepositions",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "kanan",
+      "definition": "right",
+      "tags": [
+        "prepositions",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "di dalam",
+      "definition": "inside / in",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "di luar",
+      "definition": "outside",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "di antara",
+      "definition": "between / among",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "di tengah",
+      "definition": "in the middle / in the center",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "di sekitar",
+      "definition": "around / in the vicinity",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "di seberang",
+      "definition": "across / opposite / on the other side",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "di pojok",
+      "definition": "in the corner / at the corner",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "b1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "di ujung",
+      "definition": "at the end",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "b1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "dekat",
+      "definition": "near / close to",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "jauh dari",
+      "definition": "far from",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "sampai",
+      "definition": "until / up to / as far as",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "menuju",
+      "definition": "towards / heading to",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "b1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "lurus",
+      "definition": "straight / straight ahead",
+      "tags": [
+        "prepositions",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "belok",
+      "definition": "to turn",
+      "tags": [
+        "prepositions",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "belok kiri",
+      "definition": "turn left",
+      "tags": [
+        "prepositions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "belok kanan",
+      "definition": "turn right",
+      "tags": [
+        "prepositions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "di sini",
+      "definition": "here",
+      "tags": [
+        "prepositions",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "di situ",
+      "definition": "there (near)",
+      "tags": [
+        "prepositions",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "di sana",
+      "definition": "over there",
+      "tags": [
+        "prepositions",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "ke sini",
+      "definition": "(come) here / to here",
+      "tags": [
+        "prepositions",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "ke sana",
+      "definition": "(go) there / to there",
+      "tags": [
+        "prepositions",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "dengan",
+      "definition": "with",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "tanpa",
+      "definition": "without",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "oleh",
+      "definition": "by (agent)",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "pada",
+      "definition": "at / on (time, person)",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "kepada",
+      "definition": "to (a person)",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "bersama",
+      "definition": "together / together with / with",
+      "tags": [
+        "prepositions",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "utara",
+      "definition": "north",
+      "tags": [
+        "prepositions",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "selatan",
+      "definition": "south",
+      "tags": [
+        "prepositions",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "timur",
+      "definition": "east",
+      "tags": [
+        "prepositions",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "barat",
+      "definition": "west",
+      "tags": [
+        "prepositions",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "atas",
+      "definition": "top / above / up",
+      "tags": [
+        "prepositions",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "bawah",
+      "definition": "bottom / below / down",
+      "tags": [
+        "prepositions",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "depan",
+      "definition": "front",
+      "tags": [
+        "prepositions",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "belakang",
+      "definition": "back / rear",
+      "tags": [
+        "prepositions",
+        "noun",
+        "a2"
+      ]
+    }
+  ]
+}

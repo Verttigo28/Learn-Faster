@@ -1,0 +1,489 @@
+{
+  "type": "vocab_deck",
+  "id": "id-famille",
+  "title": "La famille",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "keluarga",
+      "definition": "famille",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "ayah",
+      "definition": "père",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "ibu",
+      "definition": "mère",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "bapak",
+      "definition": "père / monsieur",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "papa",
+      "definition": "papa (familier)",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "mama",
+      "definition": "maman (familier)",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "orang tua",
+      "definition": "parents",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "anak",
+      "definition": "enfant",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "anak laki-laki",
+      "definition": "fils",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "anak perempuan",
+      "definition": "fille (enfant)",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "kakak",
+      "definition": "aîné (grand frère / grande sœur)",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "adik",
+      "definition": "cadet (petit frère / petite sœur)",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "kakak laki-laki",
+      "definition": "grand frère",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "kakak perempuan",
+      "definition": "grande sœur",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "adik laki-laki",
+      "definition": "petit frère",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "adik perempuan",
+      "definition": "petite sœur",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "saudara kandung",
+      "definition": "frère ou sœur",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "saudara",
+      "definition": "frère ou sœur / parent",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "kakek",
+      "definition": "grand-père",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "nenek",
+      "definition": "grand-mère",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "cucu",
+      "definition": "petit-enfant",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "cicit",
+      "definition": "arrière-petit-enfant",
+      "tags": [
+        "famille",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "suami",
+      "definition": "mari",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "istri",
+      "definition": "épouse / femme",
+      "tags": [
+        "famille",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "paman",
+      "definition": "oncle",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "om",
+      "definition": "oncle / tonton (familier)",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "bibi",
+      "definition": "tante",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "tante",
+      "definition": "tante / tata (familier)",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "sepupu",
+      "definition": "cousin / cousine",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "keponakan",
+      "definition": "neveu / nièce",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "mertua",
+      "definition": "beaux-parents",
+      "tags": [
+        "famille",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "menantu",
+      "definition": "gendre / belle-fille",
+      "tags": [
+        "famille",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "ipar",
+      "definition": "beau-frère / belle-sœur",
+      "tags": [
+        "famille",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "kembar",
+      "definition": "jumeaux",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "anak tunggal",
+      "definition": "enfant unique",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "anak sulung",
+      "definition": "enfant aîné",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "anak bungsu",
+      "definition": "enfant cadet (le plus jeune)",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "lajang",
+      "definition": "célibataire",
+      "tags": [
+        "famille",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "menikah",
+      "definition": "se marier / marié",
+      "tags": [
+        "famille",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "bercerai",
+      "definition": "divorcer",
+      "tags": [
+        "famille",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "janda",
+      "definition": "veuve / divorcée",
+      "tags": [
+        "famille",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "duda",
+      "definition": "veuf / divorcé",
+      "tags": [
+        "famille",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "pernikahan",
+      "definition": "mariage",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "tunangan",
+      "definition": "fiancé / fiancée",
+      "tags": [
+        "famille",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "keluarga besar",
+      "definition": "famille élargie",
+      "tags": [
+        "famille",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "nenek moyang",
+      "definition": "ancêtres",
+      "tags": [
+        "famille",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "hamil",
+      "definition": "enceinte",
+      "tags": [
+        "famille",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "lahir",
+      "definition": "naître",
+      "tags": [
+        "famille",
+        "verbe",
+        "a2"
+      ]
+    }
+  ]
+}

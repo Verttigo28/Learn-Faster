@@ -1,0 +1,419 @@
+{
+  "type": "vocab_deck",
+  "id": "id-urgence",
+  "title": "Urgences",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "Tolong!",
+      "definition": "au secours !",
+      "tags": [
+        "urgence",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "Bantu saya!",
+      "definition": "aidez-moi !",
+      "tags": [
+        "urgence",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "darurat",
+      "definition": "urgence",
+      "tags": [
+        "urgence",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "keadaan darurat",
+      "definition": "situation d'urgence",
+      "tags": [
+        "urgence",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "nomor darurat",
+      "definition": "numéro d'urgence",
+      "tags": [
+        "urgence",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "polisi",
+      "definition": "police",
+      "tags": [
+        "urgence",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "ambulans",
+      "definition": "ambulance",
+      "tags": [
+        "urgence",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "pemadam kebakaran",
+      "definition": "pompiers",
+      "tags": [
+        "urgence",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kebakaran",
+      "definition": "incendie",
+      "tags": [
+        "urgence",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "kecelakaan",
+      "definition": "accident",
+      "tags": [
+        "urgence",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "pencuri",
+      "definition": "voleur",
+      "tags": [
+        "urgence",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "Maling!",
+      "definition": "au voleur !",
+      "tags": [
+        "urgence",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "copet",
+      "definition": "pickpocket",
+      "tags": [
+        "urgence",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "dicuri",
+      "definition": "volé",
+      "tags": [
+        "urgence",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "dirampok",
+      "definition": "cambriolé / dévalisé",
+      "tags": [
+        "urgence",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "hilang",
+      "definition": "perdu / disparu",
+      "tags": [
+        "urgence",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "tersesat",
+      "definition": "perdu (égaré)",
+      "tags": [
+        "urgence",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "Saya tersesat",
+      "definition": "je suis perdu",
+      "tags": [
+        "urgence",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "Panggil dokter!",
+      "definition": "appelez un médecin !",
+      "tags": [
+        "urgence",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "Panggil polisi!",
+      "definition": "appelez la police !",
+      "tags": [
+        "urgence",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "bahaya",
+      "definition": "danger",
+      "tags": [
+        "urgence",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "berbahaya",
+      "definition": "dangereux",
+      "tags": [
+        "urgence",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "Awas!",
+      "definition": "attention !",
+      "tags": [
+        "urgence",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "terluka",
+      "definition": "blessé",
+      "tags": [
+        "urgence",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "luka parah",
+      "definition": "blessure grave",
+      "tags": [
+        "urgence",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "terdekat",
+      "definition": "le plus proche",
+      "tags": [
+        "urgence",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "Di mana rumah sakit terdekat?",
+      "definition": "où est l'hôpital le plus proche ?",
+      "tags": [
+        "urgence",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "Paspor saya hilang",
+      "definition": "j'ai perdu mon passeport",
+      "tags": [
+        "urgence",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "pertolongan pertama",
+      "definition": "premiers secours",
+      "tags": [
+        "urgence",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "Saya sakit",
+      "definition": "je suis malade",
+      "tags": [
+        "urgence",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "Saya alergi ...",
+      "definition": "je suis allergique à ...",
+      "tags": [
+        "urgence",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "golongan darah",
+      "definition": "groupe sanguin",
+      "tags": [
+        "urgence",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "Berhenti!",
+      "definition": "arrêtez !",
+      "tags": [
+        "urgence",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "Pergi!",
+      "definition": "allez-vous-en !",
+      "tags": [
+        "urgence",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "Jangan sentuh saya!",
+      "definition": "ne me touchez pas !",
+      "tags": [
+        "urgence",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "gempa",
+      "definition": "séisme",
+      "tags": [
+        "urgence",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "evakuasi",
+      "definition": "évacuation",
+      "tags": [
+        "urgence",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "pintu darurat",
+      "definition": "sortie de secours",
+      "tags": [
+        "urgence",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "tenggelam",
+      "definition": "se noyer / couler",
+      "tags": [
+        "urgence",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "Dia tidak bernapas",
+      "definition": "il ne respire pas",
+      "tags": [
+        "urgence",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "melapor",
+      "definition": "signaler / porter plainte",
+      "tags": [
+        "urgence",
+        "verbe",
+        "b1"
+      ]
+    }
+  ]
+}

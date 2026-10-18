@@ -1,0 +1,689 @@
+{
+  "type": "vocab_deck",
+  "id": "en-time",
+  "title": "Time: days, months, moments",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "hari",
+      "definition": "day",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "seminggu",
+      "definition": "a week / one week",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "pekan",
+      "definition": "week",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "bulan",
+      "definition": "month / moon",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "tahun",
+      "definition": "year",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "Senin",
+      "definition": "Monday",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "Selasa",
+      "definition": "Tuesday",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "Rabu",
+      "definition": "Wednesday",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "Kamis",
+      "definition": "Thursday",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "Jumat",
+      "definition": "Friday",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "Sabtu",
+      "definition": "Saturday",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "Minggu",
+      "definition": "Sunday",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "Januari",
+      "definition": "January",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "Februari",
+      "definition": "February",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "Maret",
+      "definition": "March",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "April",
+      "definition": "April",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "Mei",
+      "definition": "May",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "Juni",
+      "definition": "June",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "Juli",
+      "definition": "July",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "Agustus",
+      "definition": "August",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "September",
+      "definition": "September",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "Oktober",
+      "definition": "October",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "November",
+      "definition": "November",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "Desember",
+      "definition": "December",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "pagi",
+      "definition": "morning",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "siang",
+      "definition": "midday / early afternoon",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "sore",
+      "definition": "late afternoon",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "malam",
+      "definition": "evening / night",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "tengah malam",
+      "definition": "midnight",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "subuh",
+      "definition": "dawn / daybreak",
+      "tags": [
+        "time",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "hari ini",
+      "definition": "today",
+      "tags": [
+        "time",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "kemarin",
+      "definition": "yesterday",
+      "tags": [
+        "time",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "besok",
+      "definition": "tomorrow",
+      "tags": [
+        "time",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "lusa",
+      "definition": "the day after tomorrow",
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "kemarin dulu",
+      "definition": "the day before yesterday",
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "sekarang",
+      "definition": "now",
+      "tags": [
+        "time",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "nanti",
+      "definition": "later",
+      "tags": [
+        "time",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "tadi",
+      "definition": "earlier / a while ago",
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "tadi pagi",
+      "definition": "this morning (past)",
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "nanti malam",
+      "definition": "tonight / this evening",
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "minggu depan",
+      "definition": "next week",
+      "tags": [
+        "time",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "minggu lalu",
+      "definition": "last week",
+      "tags": [
+        "time",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "bulan depan",
+      "definition": "next month",
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "tahun lalu",
+      "definition": "last year",
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "tahun depan",
+      "definition": "next year",
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "akhir pekan",
+      "definition": "weekend",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "jam",
+      "definition": "hour / o'clock / watch / clock",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "menit",
+      "definition": "minute",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "detik",
+      "definition": "second",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "Jam berapa?",
+      "definition": "what time is it?",
+      "tags": [
+        "time",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "pukul",
+      "definition": "o'clock / at (time, formal)",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "setengah tujuh",
+      "definition": "half past six / 6:30",
+      "tags": [
+        "time",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "jam tiga lewat sepuluh",
+      "definition": "ten past three / 3:10",
+      "tags": [
+        "time",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "jam lima kurang seperempat",
+      "definition": "quarter to five / 4:45",
+      "tags": [
+        "time",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "tanggal",
+      "definition": "date (day of the month)",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "waktu",
+      "definition": "time / moment",
+      "tags": [
+        "time",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "selama",
+      "definition": "during / for (duration)",
+      "tags": [
+        "time",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "sejak",
+      "definition": "since",
+      "tags": [
+        "time",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "59",
+      "term": "lama",
+      "definition": "long / a long time",
+      "tags": [
+        "time",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "60",
+      "term": "sebentar",
+      "definition": "a moment / a while",
+      "tags": [
+        "time",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "61",
+      "term": "dulu",
+      "definition": "formerly / in the past / first",
+      "tags": [
+        "time",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "62",
+      "term": "awal",
+      "definition": "beginning / start",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "63",
+      "term": "akhir",
+      "definition": "end",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "64",
+      "term": "musim",
+      "definition": "season",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "65",
+      "term": "musim hujan",
+      "definition": "rainy season",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "66",
+      "term": "musim kemarau",
+      "definition": "dry season",
+      "tags": [
+        "time",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "67",
+      "term": "abad",
+      "definition": "century",
+      "tags": [
+        "time",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "68",
+      "term": "setiap hari",
+      "definition": "every day / daily",
+      "tags": [
+        "time",
+        "adverb",
+        "a1"
+      ]
+    }
+  ]
+}

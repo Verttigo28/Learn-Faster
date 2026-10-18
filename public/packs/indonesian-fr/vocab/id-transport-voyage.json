@@ -1,0 +1,539 @@
+{
+  "type": "vocab_deck",
+  "id": "id-transport-voyage",
+  "title": "Transport et voyage",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "mobil",
+      "definition": "voiture",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "motor",
+      "definition": "moto / scooter",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "sepeda",
+      "definition": "vélo",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "sepeda motor",
+      "definition": "moto (formel)",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "bus",
+      "definition": "bus",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "kereta api",
+      "definition": "train",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "kereta",
+      "definition": "train (courant)",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "pesawat",
+      "definition": "avion",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kapal",
+      "definition": "bateau / navire",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "perahu",
+      "definition": "barque",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "feri",
+      "definition": "ferry",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "taksi",
+      "definition": "taxi",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "ojek",
+      "definition": "moto-taxi",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "angkot",
+      "definition": "minibus urbain",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "becak",
+      "definition": "cyclo-pousse",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "bajaj",
+      "definition": "tricycle motorisé",
+      "tags": [
+        "transport",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "sopir",
+      "definition": "chauffeur",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "tiket",
+      "definition": "billet",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "karcis",
+      "definition": "ticket",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "paspor",
+      "definition": "passeport",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "visa",
+      "definition": "visa",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "koper",
+      "definition": "valise",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "ransel",
+      "definition": "sac à dos",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "bagasi",
+      "definition": "bagages",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "jadwal",
+      "definition": "horaire / emploi du temps",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "berangkat",
+      "definition": "partir",
+      "tags": [
+        "transport",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "keberangkatan",
+      "definition": "départ",
+      "tags": [
+        "transport",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "kedatangan",
+      "definition": "arrivée",
+      "tags": [
+        "transport",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "sampai",
+      "definition": "arriver (à destination)",
+      "tags": [
+        "transport",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "terlambat",
+      "definition": "en retard",
+      "tags": [
+        "transport",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "tepat waktu",
+      "definition": "à l'heure",
+      "tags": [
+        "transport",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "macet",
+      "definition": "embouteillé",
+      "tags": [
+        "transport",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "jalan tol",
+      "definition": "autoroute à péage",
+      "tags": [
+        "transport",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "naik bus",
+      "definition": "prendre le bus",
+      "tags": [
+        "transport",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "Kiri, Pak!",
+      "definition": "arrêtez-moi ici (dans l'angkot)",
+      "tags": [
+        "transport",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "sewa",
+      "definition": "location",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "bensin",
+      "definition": "essence",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "SIM",
+      "definition": "permis de conduire",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "helm",
+      "definition": "casque",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "perjalanan",
+      "definition": "voyage / trajet",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "wisata",
+      "definition": "tourisme",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "wisatawan",
+      "definition": "touriste",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "turis",
+      "definition": "touriste (courant)",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "liburan",
+      "definition": "vacances",
+      "tags": [
+        "transport",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "peron",
+      "definition": "quai",
+      "tags": [
+        "transport",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "pulang pergi",
+      "definition": "aller-retour",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "sekali jalan",
+      "definition": "aller simple",
+      "tags": [
+        "transport",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "imigrasi",
+      "definition": "immigration",
+      "tags": [
+        "transport",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "bea cukai",
+      "definition": "douane",
+      "tags": [
+        "transport",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "menyetir",
+      "definition": "conduire",
+      "tags": [
+        "transport",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "mengemudi",
+      "definition": "conduire (formel)",
+      "tags": [
+        "transport",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "pemandu wisata",
+      "definition": "guide touristique",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "oleh-oleh",
+      "definition": "souvenir (cadeau rapporté)",
+      "tags": [
+        "transport",
+        "nom",
+        "a2"
+      ]
+    }
+  ]
+}

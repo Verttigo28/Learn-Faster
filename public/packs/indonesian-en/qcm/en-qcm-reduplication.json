@@ -1,0 +1,648 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-reduplication",
+  "title": "Reduplication",
+  "durationSeconds": 600,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "What does \"buku-buku\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "a big book",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "a notebook",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to read a lot",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "books (plural, variety)",
+          "correct": true
+        }
+      ],
+      "explanation": "Reduplicating a noun expresses plurality or variety.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "What does \"kura-kura\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "very slow",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "several kura",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "horses",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "a turtle / tortoise",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Kura-kura\" is an inherently reduplicated word: it is not a plural.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "What does \"jalan-jalan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to go for a walk, to go out and about",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "a crossroads",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to walk fast",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "roads only",
+          "correct": false
+        }
+      ],
+      "explanation": "Jalan-jalan = to stroll, to go out (it can also mean \"roads\" depending on context).",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "What does \"anak-anak\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "the child's child",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "childish",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "a little child",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "children",
+          "correct": true
+        }
+      ],
+      "explanation": "Reduplicating the noun = plural.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Which form is correct for \"three books\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tiga buku-buku",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "buku tiga-tiga",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "tiga buku",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "tiga-tiga buku",
+          "correct": false
+        }
+      ],
+      "explanation": "With a number or quantifier (tiga, banyak), the noun is not reduplicated.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Which of these words is NOT a plural?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mobil-mobil",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kupu-kupu",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "orang-orang",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "rumah-rumah",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Kupu-kupu\" (butterfly) is a lexically reduplicated word, singular.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "What does \"pelan-pelan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sometimes",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "quickly",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "gently, slowly",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "very loudly",
+          "correct": false
+        }
+      ],
+      "explanation": "A reduplicated adjective used as an adverb.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "What does \"sayur-mayur\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "all kinds of vegetables",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "a single vegetable",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "a vegetable seller",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "a salad",
+          "correct": false
+        }
+      ],
+      "explanation": "Reduplication with a sound change: the idea of variety.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "b1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "What does \"bolak-balik\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "back and forth, to go back and forth",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "upside down only",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to fall",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to stay still",
+          "correct": false
+        }
+      ],
+      "explanation": "Reduplication with a vowel change: repeated movement.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "What does \"Hati-hati!\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Gently, heart.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "My heart!",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Good luck!",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Be careful! / Watch out!",
+          "correct": true
+        }
+      ],
+      "explanation": "Hati-hati = carefully, to be careful.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "\"Apa kabar?\" - \"Baik-baik saja.\" means...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Very bad.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I don't know.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Not well.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I'm fine.",
+          "correct": true
+        }
+      ],
+      "explanation": "Baik-baik saja = everything is fine.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "What does \"makan-makan\" often mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "not to eat",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to have a friendly / festive meal together",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "to snack alone",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to eat too fast",
+          "correct": false
+        }
+      ],
+      "explanation": "Reduplicating a verb can express a relaxed or communal activity.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "What is the standard (EYD) spelling of the plural of \"rumah\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "rumah-rumah",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "rumah2",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "rumah rumah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "rumahrumah",
+          "correct": false
+        }
+      ],
+      "explanation": "Reduplicate with a hyphen; \"rumah2\" is an informal abbreviation.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "What does \"tiba-tiba\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "on time",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "suddenly, all of a sudden",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "to arrive",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "always",
+          "correct": false
+        }
+      ],
+      "explanation": "Tiba-tiba = suddenly.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "In a shop: \"Saya cuma lihat-lihat.\" means...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I can't see anything.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I'm looking for something specific.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "I want to buy.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I'm just looking.",
+          "correct": true
+        }
+      ],
+      "explanation": "Lihat-lihat = to look around, with no particular aim.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "What does \"tolong-menolong\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to help each other",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "to ask for help",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to refuse to help",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to help just once",
+          "correct": false
+        }
+      ],
+      "explanation": "Reduplication with a prefix: reciprocity.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "What does \"mata-mata\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "a spy",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "to look",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "glasses",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "eyes only",
+          "correct": false
+        }
+      ],
+      "explanation": "Reduplication can create a new meaning: mata-mata = spy.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "What does \"Rumahnya besar-besar\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "His house is rather big.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "His house is getting bigger.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "The biggest house.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "His houses are all big.",
+          "correct": true
+        }
+      ],
+      "explanation": "A reduplicated adjective applies to several items.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "\"Terima kasih!\" - \"___!\" (You're welcome)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lama-lama",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Pagi-pagi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sama-sama",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Kira-kira",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sama-sama\" = you're welcome / same to you.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "What does \"berlari-lari\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to run just once",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to stop running",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "an official race",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to run around here and there",
+          "correct": true
+        }
+      ],
+      "explanation": "Ber- + reduplicated root: a repeated action or one without a specific purpose.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,712 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-pronouns-possessives",
+  "title": "Personal and Possessive Pronouns",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "What is the suffixed equivalent of \"buku saya\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bukuku",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "bukunya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kubuku",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bukumu",
+          "correct": false
+        }
+      ],
+      "explanation": "\"-ku\" is the suffixed form of \"aku\": bukuku = my book.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "What does \"rumahmu\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "our house",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "your house",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "my house",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "his/her house",
+          "correct": false
+        }
+      ],
+      "explanation": "\"-mu\" = your (from \"kamu\").",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "What does \"mobilnya\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "your car",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "their cars",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "his/her car",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "my car",
+          "correct": false
+        }
+      ],
+      "explanation": "\"-nya\" = his/her (3rd person); it can also mark definiteness (\"the\").",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Which pronoun means \"you\" (polite, singular)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kau",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kamu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kalian",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Anda",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Anda\" (capitalized) is the neutral polite \"you\".",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "To a friend: \"We (you and I) are going to the market.\" - \"___ pergi ke pasar.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Kalian",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Mereka",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Kami",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Kita",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Kita\" is the inclusive \"we\": it includes the listener.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "\"We (my wife and I, not you) are going to Bali.\" - \"___ pergi ke Bali.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mereka",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Kami",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Kalian",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Kita",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Kami\" is the exclusive \"we\": it excludes the listener.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Which pronoun means \"they\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mereka",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "dia",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kami",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kalian",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Mereka\" = they.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Which pronoun means \"you\" (plural, informal)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kamu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kalian",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Anda",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kita",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Kalian\" = you (several people, informal register), like \"you guys\" / \"you all\".",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Which pronoun means \"he / she\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "aku",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kamu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "saya",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dia",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Dia\" (or \"ia\" in writing) = he/she, with no gender distinction.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "\"Aku\" is mostly used...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "among close friends and family, informally",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "only in writing",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "with one's superiors",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "in official speeches",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Aku\" is the informal \"I\"; \"saya\" is neutral/polite.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "What does \"Ini punya saya\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Is this for me?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I don't have any.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "This is mine.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "I bought it.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Punya\" + pronoun expresses ownership: it's mine.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Fill in the blank: \"Buku ini ___ siapa?\" (Whose book is this?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "untuk",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ada",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "yang",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "punya",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Punya siapa\" = whose.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "How do you say \"I love you\" (suffixed form)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Aku mencintaimu.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Aku mencintaiku.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Aku cintanya kamu.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mu mencintai aku.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"-mu\" can be the object of a verb: mencintaimu = to love you.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "What does \"Saya melihatnya\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "You see him/her.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I see myself.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "He sees me.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I see him/her/it.",
+          "correct": true
+        }
+      ],
+      "explanation": "\"-nya\" attached to a verb = him/her/it (3rd-person object).",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "What does \"Namanya siapa?\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Who has a name?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "What is your surname?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "What is your name?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "What is his/her name?",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Namanya\" = his/her name.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "How do you say \"your name\" (polite)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Andanama",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "nama Anda",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "namaku Anda",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Anda nama",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Anda\" has no suffixed form: the possessor follows the noun (nama Anda).",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "How do you politely address an older or respected man?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mbak",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Dik",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bapak",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Kamu",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Bapak\" (Pak) is used as a respectful pronoun/title for a man, like \"sir\".",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Fill in the blank: \"Itu bukan bukumu, itu buku___.\" (... it's his/hers.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "-kan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "-ku",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "-nya",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "-mu",
+          "correct": false
+        }
+      ],
+      "explanation": "\"-nya\" = his/her (3rd person).",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "How do you say \"their house\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "rumahku mereka",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mereka rumah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "rumah mereka",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "rumah kalian",
+          "correct": false
+        }
+      ],
+      "explanation": "The possessor goes after the noun: rumah mereka.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "How do you say \"our country\" (all of ours, including you)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "negara kami",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "negaraku",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "negara kita",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "negara mereka",
+          "correct": false
+        }
+      ],
+      "explanation": "Inclusive: \"kita\"; \"negara kita\" includes the listener.",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "The suffix \"-ku\" is the short form of...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kamu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kalian",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "aku",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "kita",
+          "correct": false
+        }
+      ],
+      "explanation": "\"-ku\" comes from \"aku\".",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "\"Engkau\" (or \"kau\") means...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "you (literary or intimate)",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "they",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "we",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "you (polite)",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Engkau / kau\" = you (familiar), common in literature, songs and prayers - comparable to the old English \"thou\".",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "b1"
+      ]
+    }
+  ]
+}

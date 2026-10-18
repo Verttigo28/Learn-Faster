@@ -1,0 +1,290 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-loisirs-weekend",
+  "title": "Loisirs et week-end",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya suka berenang di laut.",
+      "translation": "J'aime nager dans la mer.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Hobi saya bermain gitar.",
+      "translation": "Mon passe-temps, c'est jouer de la guitare.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Kami suka pergi ke pantai.",
+      "translation": "Nous aimons aller à la plage.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Apa rencanamu akhir pekan ini?",
+      "translation": "Quels sont tes projets pour ce week-end ?",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya sering menonton film di bioskop.",
+      "translation": "Je vais souvent voir des films au cinéma.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Kami bermain sepak bola setiap Minggu.",
+      "translation": "Nous jouons au football chaque dimanche.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Dia suka membaca novel.",
+      "translation": "Il aime lire des romans.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Mau nonton film bersama?",
+      "translation": "Tu veux regarder un film ensemble ?",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Saya jarang berolahraga.",
+      "translation": "Je fais rarement du sport.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Kami mendaki Gunung Rinjani.",
+      "translation": "Nous avons fait l'ascension du mont Rinjani.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya belajar tari Bali.",
+      "translation": "J'apprends la danse balinaise.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Adik saya suka bermain game.",
+      "translation": "Mon petit frère aime jouer aux jeux vidéo.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Kami piknik di taman kota.",
+      "translation": "Nous pique-niquons au parc de la ville.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Saya ingin belajar menyelam.",
+      "translation": "Je voudrais apprendre la plongée.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Mari kita jalan-jalan ke mal.",
+      "translation": "Allons nous promener au centre commercial.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Konsernya sangat ramai.",
+      "translation": "Le concert était bondé.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya suka mendengarkan musik dangdut.",
+      "translation": "J'aime écouter de la musique dangdut.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Dia pandai bermain bulu tangkis.",
+      "translation": "Il est doué au badminton.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya lebih suka tinggal di rumah.",
+      "translation": "Je préfère rester à la maison.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Kami memancing di danau.",
+      "translation": "Nous pêchons au lac.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Kamu suka olahraga apa?",
+      "translation": "Quel sport aimes-tu ?",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya tidak suka menonton televisi.",
+      "translation": "Je n'aime pas regarder la télévision.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Kami berkemah di dekat air terjun.",
+      "translation": "Nous campons près de la cascade.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Teman saya mengajak saya bersepeda.",
+      "translation": "Mon ami m'invite à faire du vélo.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a2",
+        "me",
+        "ber"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Museum itu tutup pada hari Senin.",
+      "translation": "Ce musée est fermé le lundi.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Saya sudah lama tidak bermain tenis.",
+      "translation": "Ça fait longtemps que je n'ai pas joué au tennis.",
+      "tags": [
+        "phrases",
+        "loisirs",
+        "b1",
+        "negation",
+        "aspect"
+      ]
+    }
+  ]
+}

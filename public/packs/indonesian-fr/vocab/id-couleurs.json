@@ -1,0 +1,329 @@
+{
+  "type": "vocab_deck",
+  "id": "id-couleurs",
+  "title": "Les couleurs",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "warna",
+      "definition": "couleur",
+      "tags": [
+        "couleurs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "merah",
+      "definition": "rouge",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "biru",
+      "definition": "bleu",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "hijau",
+      "definition": "vert",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "kuning",
+      "definition": "jaune",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "hitam",
+      "definition": "noir",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "putih",
+      "definition": "blanc",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "abu-abu",
+      "definition": "gris",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "cokelat",
+      "definition": "marron",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "oranye",
+      "definition": "orange",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "jingga",
+      "definition": "orange (formel)",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "ungu",
+      "definition": "violet",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "merah muda",
+      "definition": "rose",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "emas",
+      "definition": "or / doré",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "perak",
+      "definition": "argent / argenté",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "krem",
+      "definition": "crème",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "biru muda",
+      "definition": "bleu clair",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "biru tua",
+      "definition": "bleu foncé",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "hijau muda",
+      "definition": "vert clair",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "hijau tua",
+      "definition": "vert foncé",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "muda",
+      "definition": "clair (couleur)",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "tua",
+      "definition": "foncé (couleur)",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "terang",
+      "definition": "clair / lumineux",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "gelap",
+      "definition": "sombre / foncé",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "cerah",
+      "definition": "vif / éclatant",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "pucat",
+      "definition": "pâle",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "berwarna-warni",
+      "definition": "multicolore",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "kemerahan",
+      "definition": "rougeâtre",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "nila",
+      "definition": "indigo",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "toska",
+      "definition": "turquoise",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "merah marun",
+      "definition": "bordeaux",
+      "tags": [
+        "couleurs",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "Warna apa?",
+      "definition": "quelle couleur ?",
+      "tags": [
+        "couleurs",
+        "expression",
+        "a1"
+      ]
+    }
+  ]
+}

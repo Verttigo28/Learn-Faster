@@ -1,0 +1,712 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-question-words",
+  "title": "Question Words",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "In standard Indonesian: \"___ nama Anda?\" (What is your name?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Siapa",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Mana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bagaimana",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Apa",
+          "correct": false
+        }
+      ],
+      "explanation": "You ask for a name with \"siapa\" (literally \"who is your name?\"); \"Apa nama Anda?\" is common in speech but less standard.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Fill in the blank: \"Kamu tinggal di ___?\" (Where do you live?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "siapa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kapan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "apa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mana",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Di mana\" = where (location, no movement).",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Fill in the blank: \"___ kamu datang ke Jakarta?\" (When did you come to Jakarta?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Kapan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Mengapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Siapa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Berapa",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Kapan\" = when.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Which set greeting means \"How are you?\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mana kabar?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Siapa kabar?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Kapan kabar?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Apa kabar?",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Apa kabar?\" literally means \"what news?\".",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Fill in the blank: \"___ harganya?\" (How much does it cost?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Apa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Bagaimana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Berapa",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Mana",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Berapa\" = how much / how many (quantity, price, number).",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Fill in the blank: \"___ kamu belajar bahasa Indonesia?\" (Why...)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Di mana",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Siapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bagaimana",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mengapa",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Mengapa\" (informal: \"kenapa\") = why.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "\"Kenapa\" is...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "a word meaning \"how\"",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "a synonym of \"kapan\"",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "an informal synonym of \"mengapa\"",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "a politeness form",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Kenapa\" and \"mengapa\" both mean \"why\"; \"kenapa\" is more colloquial.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Fill in the blank: \"Ini ___?\" (What is this?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "apa",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "siapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mana",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berapa",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Apa\" = what (for things).",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Fill in the blank: \"Anda dari ___?\" (Where are you from?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kapan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mana",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "apa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "siapa",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Dari mana\" = where from.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "What does \"Mau ke mana?\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Where are you going?",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Where are you?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Where are you from?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Who do you want to see?",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Ke mana\" = where to (with movement); a very common question used as a greeting.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Fill in the blank: \"___ cara membuat nasi goreng?\" (How do you make...)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bagaimana",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Berapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Kapan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Siapa",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Bagaimana\" = how.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "To ask someone's age: \"___ umur Anda?\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Siapa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Berapa",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Kapan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Apa",
+          "correct": false
+        }
+      ],
+      "explanation": "Age is a number: \"Berapa umur Anda?\".",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Fill in the blank: \"Yang ___ rumahmu?\" (Which one is your house?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "apa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "siapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mana",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "berapa",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Yang mana\" = which one (a choice among several).",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Complete the yes/no question (formal register): \"___ Anda seorang guru?\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Siapakah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Mengapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bagaimana",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Apakah",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Apakah\" introduces a closed (yes/no) question in careful speech.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "What does \"Jam berapa sekarang?\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "When is it?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Since when?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "What time is it?",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "How many hours?",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Jam berapa\" = what time.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "What does \"Berapa lama?\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Is it far?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "How long (in time)?",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "When?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "How much does it cost?",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Lama\" = a long time; \"berapa lama\" = how long.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "What does \"Dengan siapa kamu pergi?\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Who are you leaving for?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Where are you going?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Who are you going with?",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "When are you leaving?",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Dengan\" = with; \"dengan siapa\" = with whom.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Fill in the blank: \"Tas ini punya ___?\" (Whose bag is this?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "siapa",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "mana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "berapa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "apa",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Punya siapa\" = whose (possession).",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "An answer to \"Mengapa...?\" usually begins with...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Karena",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Kalau",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Supaya",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Tetapi",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Karena\" = because.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "What does \"Bagaimana kalau kita makan di luar?\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Why are we eating out?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "How do you eat out?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "When are we eating out?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "How about we eat out?",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Bagaimana kalau...\" is used to make a suggestion: \"how about...? / what if...?\".",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Fill in the blank: \"Hari ini hari ___?\" (What day is it today?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mana",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "apa",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "kapan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berapa",
+          "correct": false
+        }
+      ],
+      "explanation": "For the day of the week: \"hari apa\".",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "Fill in the blank: \"Tanggal ___ hari ini?\" (What is the date today?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "apa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kapan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berapa",
+          "correct": true
+        }
+      ],
+      "explanation": "A date is a number: \"tanggal berapa\".",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    }
+  ]
+}

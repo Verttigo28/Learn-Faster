@@ -1,0 +1,712 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-mots-interrogatifs",
+  "title": "Les mots interrogatifs",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "En indonésien standard : « ___ nama Anda? » (Comment vous appelez-vous ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Siapa",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Mana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bagaimana",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Apa",
+          "correct": false
+        }
+      ],
+      "explanation": "On demande le nom avec « siapa » ; « Apa nama Anda? » est courant à l'oral mais moins standard.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Complétez : « Kamu tinggal di ___? » (Où habites-tu ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "siapa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kapan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "apa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mana",
+          "correct": true
+        }
+      ],
+      "explanation": "« Di mana » = où (lieu sans mouvement).",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Complétez : « ___ kamu datang ke Jakarta? » (Quand es-tu venu à Jakarta ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Kapan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Mengapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Siapa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Berapa",
+          "correct": false
+        }
+      ],
+      "explanation": "« Kapan » = quand.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Quelle salutation figée signifie « Comment ça va ? »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mana kabar?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Siapa kabar?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Kapan kabar?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Apa kabar?",
+          "correct": true
+        }
+      ],
+      "explanation": "« Apa kabar? » littéralement « quelle nouvelle ? ».",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Complétez : « ___ harganya? » (Combien ça coûte ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Apa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Bagaimana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Berapa",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Mana",
+          "correct": false
+        }
+      ],
+      "explanation": "« Berapa » = combien (quantité, prix, nombre).",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Complétez : « ___ kamu belajar bahasa Indonesia? » (Pourquoi…)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Di mana",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Siapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bagaimana",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mengapa",
+          "correct": true
+        }
+      ],
+      "explanation": "« Mengapa » (familier : « kenapa ») = pourquoi.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "« Kenapa » est…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "un mot signifiant « comment »",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "un synonyme de « kapan »",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "un synonyme familier de « mengapa »",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "une forme de politesse",
+          "correct": false
+        }
+      ],
+      "explanation": "« Kenapa » et « mengapa » signifient tous deux « pourquoi » ; « kenapa » est plus oral.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Complétez : « Ini ___? » (Qu'est-ce que c'est ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "apa",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "siapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mana",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berapa",
+          "correct": false
+        }
+      ],
+      "explanation": "« Apa » = quoi / qu'est-ce que (pour les choses).",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Complétez : « Anda dari ___? » (D'où venez-vous ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kapan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mana",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "apa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "siapa",
+          "correct": false
+        }
+      ],
+      "explanation": "« Dari mana » = d'où.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Que signifie « Mau ke mana? »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Où vas-tu ?",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Où es-tu ?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "D'où viens-tu ?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Qui veux-tu voir ?",
+          "correct": false
+        }
+      ],
+      "explanation": "« Ke mana » = vers où (avec mouvement) ; question très courante comme salutation.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Complétez : « ___ cara membuat nasi goreng? » (Comment fait-on…)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bagaimana",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Berapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Kapan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Siapa",
+          "correct": false
+        }
+      ],
+      "explanation": "« Bagaimana » = comment.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Pour demander l'âge : « ___ umur Anda? »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Siapa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Berapa",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Kapan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Apa",
+          "correct": false
+        }
+      ],
+      "explanation": "L'âge est un nombre : « Berapa umur Anda? ».",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Complétez : « Yang ___ rumahmu? » (Laquelle est ta maison ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "apa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "siapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mana",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "berapa",
+          "correct": false
+        }
+      ],
+      "explanation": "« Yang mana » = lequel / laquelle (choix parmi plusieurs).",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Complétez la question oui/non (registre soutenu) : « ___ Anda seorang guru? »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Siapakah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Mengapa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bagaimana",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Apakah",
+          "correct": true
+        }
+      ],
+      "explanation": "« Apakah » introduit une question fermée (oui/non) en registre soigné.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Que signifie « Jam berapa sekarang? »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "C'est quand ?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Depuis quand ?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Quelle heure est-il ?",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Combien d'heures ?",
+          "correct": false
+        }
+      ],
+      "explanation": "« Jam berapa » = quelle heure.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Que signifie « Berapa lama? »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "C'est loin ?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Combien de temps ?",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Quand ?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Combien ça coûte ?",
+          "correct": false
+        }
+      ],
+      "explanation": "« Lama » = longtemps ; « berapa lama » = combien de temps.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Que signifie « Dengan siapa kamu pergi? »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pour qui pars-tu ?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Où vas-tu ?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Avec qui pars-tu ?",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Quand pars-tu ?",
+          "correct": false
+        }
+      ],
+      "explanation": "« Dengan » = avec ; « dengan siapa » = avec qui.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Complétez : « Tas ini punya ___? » (À qui est ce sac ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "siapa",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "mana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "berapa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "apa",
+          "correct": false
+        }
+      ],
+      "explanation": "« Punya siapa » = à qui (possession).",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Une réponse à « Mengapa…? » commence généralement par…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Karena",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Kalau",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Supaya",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Tetapi",
+          "correct": false
+        }
+      ],
+      "explanation": "« Karena » = parce que.",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Que signifie « Bagaimana kalau kita makan di luar? »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pourquoi mangeons-nous dehors ?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Comment mange-t-on dehors ?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Quand mange-t-on dehors ?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Et si on mangeait dehors ?",
+          "correct": true
+        }
+      ],
+      "explanation": "« Bagaimana kalau… » sert à faire une proposition : « et si… ? ».",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Complétez : « Hari ini hari ___? » (Quel jour sommes-nous ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mana",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "apa",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "kapan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berapa",
+          "correct": false
+        }
+      ],
+      "explanation": "Pour le jour de la semaine : « hari apa ».",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "Complétez : « Tanggal ___ hari ini? » (Quelle est la date aujourd'hui ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "apa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kapan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berapa",
+          "correct": true
+        }
+      ],
+      "explanation": "La date est un nombre : « tanggal berapa ».",
+      "tags": [
+        "grammaire",
+        "interrogatifs",
+        "a1"
+      ]
+    }
+  ]
+}

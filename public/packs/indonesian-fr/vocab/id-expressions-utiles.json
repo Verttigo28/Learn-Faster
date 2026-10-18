@@ -1,0 +1,489 @@
+{
+  "type": "vocab_deck",
+  "id": "id-expressions-utiles",
+  "title": "Expressions utiles",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "Terima kasih",
+      "definition": "merci",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "Sama-sama",
+      "definition": "de rien",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "Permisi",
+      "definition": "excusez-moi / pardon",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "Maaf",
+      "definition": "pardon / désolé",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "Tidak apa-apa",
+      "definition": "ce n'est pas grave",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "Nggak apa-apa",
+      "definition": "pas de souci (familier)",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "Tidak masalah",
+      "definition": "pas de problème",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "Selamat makan",
+      "definition": "bon appétit",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "Selamat menikmati",
+      "definition": "bonne dégustation / profitez bien",
+      "tags": [
+        "expressions",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "Hati-hati",
+      "definition": "faites attention",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "Hati-hati di jalan",
+      "definition": "bonne route / sois prudent",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "Saya tidak mengerti",
+      "definition": "je ne comprends pas",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "Saya tidak tahu",
+      "definition": "je ne sais pas",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "Bisa diulang?",
+      "definition": "vous pouvez répéter ?",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "Tolong bicara pelan-pelan",
+      "definition": "parlez lentement, s'il vous plaît",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "Apa artinya?",
+      "definition": "qu'est-ce que ça veut dire ?",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "Apa bahasa Indonesianya ...?",
+      "definition": "comment dit-on ... en indonésien ?",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "Bisa bahasa Inggris?",
+      "definition": "vous parlez anglais ?",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "Sedikit-sedikit",
+      "definition": "un petit peu",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "Saya belajar bahasa Indonesia",
+      "definition": "j'apprends l'indonésien",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "Saya dari Prancis",
+      "definition": "je viens de France",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "Saya orang Prancis",
+      "definition": "je suis français",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "Berapa umur Anda?",
+      "definition": "quel âge avez-vous ?",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "Saya mau ...",
+      "definition": "je voudrais ...",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "Saya suka",
+      "definition": "j'aime",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "Saya tidak suka",
+      "definition": "je n'aime pas",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "Boleh",
+      "definition": "c'est permis / d'accord",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "Tidak boleh",
+      "definition": "ce n'est pas permis",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "Jangan",
+      "definition": "ne ... pas (défense)",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "Ayo",
+      "definition": "allez / allons-y",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "Tunggu sebentar",
+      "definition": "attendez un instant",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "Tentu saja",
+      "definition": "bien sûr",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "Mungkin",
+      "definition": "peut-être",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "Betul",
+      "definition": "exact / c'est juste",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "Oke",
+      "definition": "d'accord",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "Sudah cukup",
+      "definition": "ça suffit",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "Terserah",
+      "definition": "comme vous voulez",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "Jangan khawatir",
+      "definition": "ne vous inquiétez pas",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "Kasihan",
+      "definition": "le pauvre / quel dommage",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "Sayang sekali",
+      "definition": "quel dommage",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "Aduh",
+      "definition": "aïe / oh là là",
+      "tags": [
+        "expressions",
+        "interjection",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "Wah",
+      "definition": "oh / waouh",
+      "tags": [
+        "expressions",
+        "interjection",
+        "a1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "Ya ampun",
+      "definition": "mon Dieu",
+      "tags": [
+        "expressions",
+        "interjection",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "Turut berduka cita",
+      "definition": "sincères condoléances",
+      "tags": [
+        "expressions",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "Semoga cepat sembuh",
+      "definition": "prompt rétablissement",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "Selamat beristirahat",
+      "definition": "reposez-vous bien",
+      "tags": [
+        "expressions",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "Tidak usah",
+      "definition": "ce n'est pas la peine",
+      "tags": [
+        "expressions",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "Ada apa?",
+      "definition": "qu'est-ce qu'il y a ?",
+      "tags": [
+        "expressions",
+        "expression",
+        "a1"
+      ]
+    }
+  ]
+}

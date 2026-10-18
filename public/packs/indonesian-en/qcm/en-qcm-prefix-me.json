@@ -1,0 +1,808 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-prefix-me",
+  "title": "The Prefix me- and Nasalization",
+  "durationSeconds": 780,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "me- + baca gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mebaca",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mengbaca",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menbaca",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "membaca",
+          "correct": true
+        }
+      ],
+      "explanation": "Before b: mem- (the b stays), giving membaca.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "me- + tulis gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menulis",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "menyulis",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mentulis",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mengtulis",
+          "correct": false
+        }
+      ],
+      "explanation": "Before t: men- and the t drops, giving menulis.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "me- + sapu gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mesapu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mensapu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengsapu",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "menyapu",
+          "correct": true
+        }
+      ],
+      "explanation": "Before s: meny- and the s drops, giving menyapu.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "me- + kirim gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menkirim",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mengirim",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mengkirim",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mekirim",
+          "correct": false
+        }
+      ],
+      "explanation": "Before k: meng- and the k drops, giving mengirim.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "me- + pakai gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menpakai",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "memakai",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mempakai",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mepakai",
+          "correct": false
+        }
+      ],
+      "explanation": "Before p: mem- and the p drops, giving memakai.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "me- + ambil gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "memambil",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "meambil",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengambil",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "menambil",
+          "correct": false
+        }
+      ],
+      "explanation": "Before a vowel: meng-, giving mengambil.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "me- + dengar gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "medengar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menengar",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengdengar",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mendengar",
+          "correct": true
+        }
+      ],
+      "explanation": "Before d: men- (the d stays), giving mendengar.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "me- + cari gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menyari",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mengcari",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mencari",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "mecari",
+          "correct": false
+        }
+      ],
+      "explanation": "Before c: men- (the c stays), giving mencari.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "me- + gambar gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "memgambar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "megambar",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menggambar",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "mengambar",
+          "correct": false
+        }
+      ],
+      "explanation": "Before g: meng- (the g stays), giving menggambar.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "me- + lihat gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "memlihat",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menlihat",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "melihat",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "menglihat",
+          "correct": false
+        }
+      ],
+      "explanation": "Before l, m, n, r, w, y, ng, ny: plain me-, giving melihat.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "me- + cat (a one-syllable root) gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mencat",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mecat",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menyat",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mengecat",
+          "correct": true
+        }
+      ],
+      "explanation": "One-syllable root: menge-, giving mengecat (to paint).",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "b1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "me- + bom gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "memom",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mebom",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengebom",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "membom",
+          "correct": false
+        }
+      ],
+      "explanation": "One-syllable root: menge-, giving mengebom (to bomb).",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "me- + jual gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menyual",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menjual",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mejual",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mengjual",
+          "correct": false
+        }
+      ],
+      "explanation": "Before j: men-, giving menjual (to sell).",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "me- + hitung gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menghitung",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "menhitung",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menitung",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mehitung",
+          "correct": false
+        }
+      ],
+      "explanation": "Before h: meng- (the h stays), giving menghitung (to count).",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "me- + rasa gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menrasa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mengrasa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "merrasa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "merasa",
+          "correct": true
+        }
+      ],
+      "explanation": "Before r: plain me-, giving merasa (to feel).",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "me- + tolong gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mentolong",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menyolong",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "metolong",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "menolong",
+          "correct": true
+        }
+      ],
+      "explanation": "The t drops after men-, giving menolong (to help).",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "me- + kritik gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mekritik",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mengritik",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengkritik",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "menkritik",
+          "correct": false
+        }
+      ],
+      "explanation": "Before a consonant cluster (kr-), the k is kept: mengkritik.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "me- + produksi gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "memroduksi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "meproduksi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menproduksi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "memproduksi",
+          "correct": true
+        }
+      ],
+      "explanation": "Consonant cluster pr-: the p is kept, giving memproduksi.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "me- + nyanyi gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mennyanyi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menyanyi",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mengnyanyi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "menynyanyi",
+          "correct": false
+        }
+      ],
+      "explanation": "Before ny: plain me-, giving menyanyi (to sing).",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "What is the root of \"mengajar\" (to teach)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "gajar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ngajar",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ajar",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "kajar",
+          "correct": false
+        }
+      ],
+      "explanation": "Meng- before a vowel: meng + ajar.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "What is the root of \"menyewa\" (to rent)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ewa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "nyewa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "cewa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sewa",
+          "correct": true
+        }
+      ],
+      "explanation": "Meny- comes from an s that has dropped: sewa.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "What is the root of \"memukul\" (to hit)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bukul",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "pukul",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mukul",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ukul",
+          "correct": false
+        }
+      ],
+      "explanation": "Mem- with the p dropped: pukul.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "prompt": "What is the root of \"menanam\" (to plant)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tanam",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "danam",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "anam",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "nanam",
+          "correct": false
+        }
+      ],
+      "explanation": "Men- with the t dropped: tanam.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "prompt": "me- + punya gives the standard verb form...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mempunyai",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "mepunyai",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menpunyai",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "memunyai",
+          "correct": false
+        }
+      ],
+      "explanation": "Exception: the p of \"punya\" is kept, giving mempunyai (to own, to have).",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "prompt": "me- + tik (to type) gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mengetik",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "menik",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mentik",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "metik",
+          "correct": false
+        }
+      ],
+      "explanation": "One-syllable root: menge-, giving mengetik.",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "b1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+{
+  "type": "vocab_deck",
+  "id": "id-corps-humain",
+  "title": "Le corps humain",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "badan",
+      "definition": "corps",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "tubuh",
+      "definition": "corps",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "kepala",
+      "definition": "tête",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "rambut",
+      "definition": "cheveux",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "wajah",
+      "definition": "visage",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "muka",
+      "definition": "visage / face",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "dahi",
+      "definition": "front",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "alis",
+      "definition": "sourcil",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "mata",
+      "definition": "œil / yeux",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "telinga",
+      "definition": "oreille",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "hidung",
+      "definition": "nez",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "pipi",
+      "definition": "joue",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "mulut",
+      "definition": "bouche",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "bibir",
+      "definition": "lèvre",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "gigi",
+      "definition": "dent",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "lidah",
+      "definition": "langue (organe)",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "dagu",
+      "definition": "menton",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "leher",
+      "definition": "cou",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "tenggorokan",
+      "definition": "gorge",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "bahu",
+      "definition": "épaule",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "lengan",
+      "definition": "bras",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "siku",
+      "definition": "coude",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "tangan",
+      "definition": "main",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "pergelangan tangan",
+      "definition": "poignet",
+      "tags": [
+        "corps",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "jari",
+      "definition": "doigt",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "ibu jari",
+      "definition": "pouce",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "kuku",
+      "definition": "ongle",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "dada",
+      "definition": "poitrine",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "perut",
+      "definition": "ventre",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "punggung",
+      "definition": "dos",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "pinggang",
+      "definition": "taille (du corps)",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "pinggul",
+      "definition": "hanche",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "pantat",
+      "definition": "fesses",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "kaki",
+      "definition": "pied / jambe",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "paha",
+      "definition": "cuisse",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "lutut",
+      "definition": "genou",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "pergelangan kaki",
+      "definition": "cheville",
+      "tags": [
+        "corps",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "tumit",
+      "definition": "talon",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "jari kaki",
+      "definition": "orteil",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "kulit",
+      "definition": "peau",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "tulang",
+      "definition": "os",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "otot",
+      "definition": "muscle",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "darah",
+      "definition": "sang",
+      "tags": [
+        "corps",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "jantung",
+      "definition": "cœur (organe)",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "hati",
+      "definition": "foie / cœur (sentiments)",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "paru-paru",
+      "definition": "poumons",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "otak",
+      "definition": "cerveau",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "lambung",
+      "definition": "estomac",
+      "tags": [
+        "corps",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "ginjal",
+      "definition": "rein",
+      "tags": [
+        "corps",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "keringat",
+      "definition": "sueur / transpiration",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "napas",
+      "definition": "souffle / respiration",
+      "tags": [
+        "corps",
+        "nom",
+        "a2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "type": "vocab_deck",
+  "id": "en-technology-phone",
+  "title": "Technology and the phone",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "telepon",
+      "definition": "telephone / phone",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "ponsel",
+      "definition": "mobile phone / cell phone",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "HP",
+      "definition": "mobile / cell phone (informal)",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "nomor telepon",
+      "definition": "phone number",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "menelepon",
+      "definition": "to phone / to call",
+      "tags": [
+        "technology",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "pesan",
+      "definition": "message",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "mengirim pesan",
+      "definition": "to send a message",
+      "tags": [
+        "technology",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "pulsa",
+      "definition": "phone credit / airtime",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kuota",
+      "definition": "data quota / data allowance",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "kartu SIM",
+      "definition": "SIM card",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "sinyal",
+      "definition": "signal / reception",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "baterai",
+      "definition": "battery",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "mengisi baterai",
+      "definition": "to charge the battery",
+      "tags": [
+        "technology",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "pengisi daya",
+      "definition": "charger",
+      "tags": [
+        "technology",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "komputer",
+      "definition": "computer",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "laptop",
+      "definition": "laptop",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "internet",
+      "definition": "internet",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "kata sandi",
+      "definition": "password",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "surel",
+      "definition": "email (formal)",
+      "tags": [
+        "technology",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "email",
+      "definition": "email",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "situs web",
+      "definition": "website",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "aplikasi",
+      "definition": "app / application",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "mengunduh",
+      "definition": "to download",
+      "tags": [
+        "technology",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "mengunggah",
+      "definition": "to upload",
+      "tags": [
+        "technology",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "layar",
+      "definition": "screen",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "papan ketik",
+      "definition": "keyboard",
+      "tags": [
+        "technology",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "kamera",
+      "definition": "camera",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "video",
+      "definition": "video",
+      "tags": [
+        "technology",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "media sosial",
+      "definition": "social media",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "akun",
+      "definition": "account",
+      "tags": [
+        "technology",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "mencetak",
+      "definition": "to print",
+      "tags": [
+        "technology",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "menghapus",
+      "definition": "to delete / to erase",
+      "tags": [
+        "technology",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "daring",
+      "definition": "online",
+      "tags": [
+        "technology",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "luring",
+      "definition": "offline",
+      "tags": [
+        "technology",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "mati",
+      "definition": "dead / off / turned off",
+      "tags": [
+        "technology",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "Halo, ini siapa?",
+      "definition": "hello, who is this?",
+      "tags": [
+        "technology",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "Bisa bicara dengan ...?",
+      "definition": "can I speak to ...?",
+      "tags": [
+        "technology",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "Salah sambung",
+      "definition": "wrong number",
+      "tags": [
+        "technology",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "Nanti saya telepon lagi",
+      "definition": "I'll call again later / I'll call back later",
+      "tags": [
+        "technology",
+        "expression",
+        "a2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "type": "vocab_deck",
+  "id": "id-loisirs-sport",
+  "title": "Loisirs et sport",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "hobi",
+      "definition": "passe-temps",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "olahraga",
+      "definition": "sport",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "sepak bola",
+      "definition": "football",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "bulu tangkis",
+      "definition": "badminton",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "bola basket",
+      "definition": "basket",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "bola voli",
+      "definition": "volley-ball",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "tenis",
+      "definition": "tennis",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "berenang",
+      "definition": "nager",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "renang",
+      "definition": "natation",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "bersepeda",
+      "definition": "faire du vélo",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "lari",
+      "definition": "course à pied",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "mendaki gunung",
+      "definition": "faire de la randonnée en montagne",
+      "tags": [
+        "loisirs",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "menyelam",
+      "definition": "plonger",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "berselancar",
+      "definition": "surfer",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "memancing",
+      "definition": "pêcher (à la ligne)",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "berkemah",
+      "definition": "camper",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "menonton film",
+      "definition": "regarder un film",
+      "tags": [
+        "loisirs",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "mendengarkan musik",
+      "definition": "écouter de la musique",
+      "tags": [
+        "loisirs",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "membaca buku",
+      "definition": "lire un livre",
+      "tags": [
+        "loisirs",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "bermain gitar",
+      "definition": "jouer de la guitare",
+      "tags": [
+        "loisirs",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "menggambar",
+      "definition": "dessiner",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "melukis",
+      "definition": "peindre",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "memotret",
+      "definition": "photographier",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "foto",
+      "definition": "photo",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "lagu",
+      "definition": "chanson",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "musik",
+      "definition": "musique",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "film",
+      "definition": "film",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "konser",
+      "definition": "concert",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "pertandingan",
+      "definition": "match",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "tim",
+      "definition": "équipe",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "pemain",
+      "definition": "joueur",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "menang",
+      "definition": "gagner",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "kalah",
+      "definition": "perdre (un match)",
+      "tags": [
+        "loisirs",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "seri",
+      "definition": "match nul",
+      "tags": [
+        "loisirs",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "skor",
+      "definition": "score",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "bola",
+      "definition": "ballon",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "lapangan",
+      "definition": "terrain",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "pesta",
+      "definition": "fête",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "main kartu",
+      "definition": "jouer aux cartes",
+      "tags": [
+        "loisirs",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "catur",
+      "definition": "échecs",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "wayang",
+      "definition": "marionnettes traditionnelles",
+      "tags": [
+        "loisirs",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "gamelan",
+      "definition": "gamelan (orchestre traditionnel)",
+      "tags": [
+        "loisirs",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "pencak silat",
+      "definition": "art martial indonésien",
+      "tags": [
+        "loisirs",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "waktu luang",
+      "definition": "temps libre",
+      "tags": [
+        "loisirs",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "Apa hobi Anda?",
+      "definition": "quel est votre passe-temps ?",
+      "tags": [
+        "loisirs",
+        "expression",
+        "a1"
+      ]
+    }
+  ]
+}

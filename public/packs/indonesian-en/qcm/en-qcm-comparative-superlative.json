@@ -1,0 +1,648 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-comparative-superlative",
+  "title": "Comparatives and Superlatives",
+  "durationSeconds": 600,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Fill in the blank: \"Ali ___ tinggi daripada Budi.\" (taller than)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kurang dari",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "lebih",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "paling",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "se-",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Lebih\" + adjective = more ... / -er.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "In a comparison, \"daripada\" means...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "for",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "with",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "of / from",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "than",
+          "correct": true
+        }
+      ],
+      "explanation": "Lebih besar daripada = bigger than.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Fill in the blank: \"Dia ___ pintar di kelas.\" (the smartest)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sangat",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "paling",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "lebih",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kurang",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Paling\" = the most / -est (superlative).",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Fill in the blank: \"Ani ___ kakaknya.\" (as tall as her older sister)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lebih tinggi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "setinggi",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "paling tinggi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "tertinggi",
+          "correct": false
+        }
+      ],
+      "explanation": "se- + adjective = as ... as.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "\"Ani sama tinggi dengan adiknya\" means...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ani is as tall as her younger sister.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Ani is the tallest.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ani is taller than her younger sister.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ani is growing up with her sister.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sama ... dengan\" = as ... as.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "What does \"Kopi ini kurang manis\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "This coffee is too sweet.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "This coffee is the sweetest.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "This coffee is sweet.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "This coffee is not sweet enough.",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Kurang\" + adjective = not ... enough / less.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "What does \"Rumah ini kurang besar daripada rumah itu\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "This house is bigger than that one.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "This house is smaller (less big) than that one.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "This house is as big as that one.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "This house is the least big.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Kurang ... daripada\" = less ... than.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "\"Terbesar\" is equivalent to...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kurang besar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sebesar",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "paling besar",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "lebih besar",
+          "correct": false
+        }
+      ],
+      "explanation": "The superlative ter- = paling (the most / -est).",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "What does \"lebih baik\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "very good",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "not good",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "fairly good",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "better",
+          "correct": true
+        }
+      ],
+      "explanation": "Lebih baik = better.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Fill in the blank: \"Dia punya ___ uang daripada saya.\" (more money)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lebih banyak",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "paling banyak",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "sebanyak",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "banyak sekali",
+          "correct": false
+        }
+      ],
+      "explanation": "Lebih banyak = more (of a quantity).",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Fill in the blank: \"Harga bensin ___ mahal.\" (more and more expensive)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sama",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "paling",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "lebih dari",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "semakin",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Semakin / makin\" = more and more.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "What does \"Semakin cepat semakin baik\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The best is the fastest.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Not too fast.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Fast but well done.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "The sooner, the better.",
+          "correct": true
+        }
+      ],
+      "explanation": "Semakin ... semakin = the more ..., the more ...",
+      "tags": [
+        "grammar",
+        "comparison",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "What does \"Budi tidak setinggi Ali\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Budi is the tallest.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Budi is taller than Ali.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Budi is not as tall as Ali.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Budi and Ali are tall.",
+          "correct": false
+        }
+      ],
+      "explanation": "Tidak + se- = not as ... as.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Fill in the blank: \"Dari ketiga anak itu, Budi ___.\" (Of those three children, Budi is the tallest.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lebih tinggi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tinggi sekali",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "yang paling tinggi",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "setinggi",
+          "correct": false
+        }
+      ],
+      "explanation": "Superlative within a group: yang paling + adjective.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "What does \"paling tidak\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "not at all",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "the least",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "never",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "at least",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Paling tidak\" = at least (synonym: setidaknya).",
+      "tags": [
+        "grammar",
+        "comparison",
+        "b1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Fill in the blank: \"Ada ___ seratus orang di sana.\" (more than a hundred people)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lebih dari",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "sebanyak dari",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "lebih daripada",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "paling",
+          "correct": false
+        }
+      ],
+      "explanation": "With a number: \"lebih dari\" = more than.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "What does \"badannya sebesar gajah\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "His body is bigger than an elephant.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "He is the biggest elephant.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "His body is as big as an elephant.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "He saw a big elephant.",
+          "correct": false
+        }
+      ],
+      "explanation": "se- + adjective + noun = as ... as.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "What does \"mahal sekali\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "not expensive enough",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "very expensive",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "the most expensive",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "more expensive",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sekali\" after an adjective = very (an intensifier, not a superlative).",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "What does \"Ani lebih muda daripada saya\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ani is the youngest.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ani is older than me.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ani is younger than me.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Ani is as young as me.",
+          "correct": false
+        }
+      ],
+      "explanation": "Muda = young.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "What does \"kurang lebih\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "more and more",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "more or less, approximately",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "much less",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "never enough",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Kurang lebih dua jam\" = about two hours.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a2"
+      ]
+    }
+  ]
+}

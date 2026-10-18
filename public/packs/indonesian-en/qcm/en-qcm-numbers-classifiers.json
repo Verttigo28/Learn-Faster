@@ -1,0 +1,776 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-numbers-classifiers",
+  "title": "Numbers, Classifiers and se-",
+  "durationSeconds": 720,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "How do you say 11?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sepuluh satu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "satu belas",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "satu puluh",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sebelas",
+          "correct": true
+        }
+      ],
+      "explanation": "11 = sebelas (se- = one).",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "How do you say 12?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dua belas",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "sebelas dua",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "duabelas puluh",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dua puluh",
+          "correct": false
+        }
+      ],
+      "explanation": "12 = dua belas.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "How do you say 20?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dua puluh",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "dua ratus",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "puluh dua",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dua belas",
+          "correct": false
+        }
+      ],
+      "explanation": "-puluh = tens: dua puluh.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "How do you say 100?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "satu ratus",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "seratus",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "sepuluh",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "seribu",
+          "correct": false
+        }
+      ],
+      "explanation": "100 = seratus (\"satu ratus\" is not used).",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "How do you say 1,000?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "seribu",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "seratus",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "sejuta",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "satu ribuan",
+          "correct": false
+        }
+      ],
+      "explanation": "1,000 = seribu.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "How do you say 250?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dua ratus lima belas",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "dua ratus lima puluh",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "dua puluh lima",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "lima puluh dua ratus",
+          "correct": false
+        }
+      ],
+      "explanation": "200 = dua ratus, 50 = lima puluh.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "How do you say 1,500,000?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "satu juta lima puluh ribu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sebelas juta lima ratus ribu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "lima ratus juta satu ribu",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "satu juta lima ratus ribu",
+          "correct": true
+        }
+      ],
+      "explanation": "1,000,000 = satu juta (sejuta); 500,000 = lima ratus ribu.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Fill in the blank: \"tiga ___ mahasiswa\" (three students)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "orang",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "buah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ekor",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "lembar",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Orang\" is the classifier for people.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Fill in the blank: \"dua ___ kucing\" (two cats)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "buah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "orang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "batang",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ekor",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Ekor\" (tail) is the classifier for animals.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Fill in the blank: \"tiga ___ mobil\" (three cars)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "buah",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "helai",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ekor",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "orang",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Buah\" is the general classifier for objects.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Fill in the blank: \"dua ___ kertas\" (two sheets of paper)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "orang",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "buah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ekor",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "lembar",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Lembar\" is used for flat, thin objects (paper, banknotes).",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "What does \"seorang guru\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "teachers",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "a teacher",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "the only teacher",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "the teacher",
+          "correct": false
+        }
+      ],
+      "explanation": "se- (= one) + the classifier orang.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "What does \"sebuah rumah\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "all the houses",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "a house",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "a house on its own",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "the same house",
+          "correct": false
+        }
+      ],
+      "explanation": "se- + buah = one / a (thing).",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "What does \"ketiga\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "three",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "third",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "all three",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "three times",
+          "correct": false
+        }
+      ],
+      "explanation": "Ke- + number = ordinal (ketiga = third).",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "How do you say \"first\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kesatu / pertama",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "persatu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "satuan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sesatu",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Pertama\" (or kesatu) = first.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "What is the difference between \"anak kedua\" and \"kedua anak\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "None.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "\"anak kedua\" = the second child; \"kedua anak\" = both children",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Both are incorrect.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "\"anak kedua\" = both children; \"kedua anak\" = the second child",
+          "correct": false
+        }
+      ],
+      "explanation": "An ordinal goes after the noun; \"kedua\" before the noun = both / the two.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "What does \"setengah\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "a quarter",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "half",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "double",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "a third",
+          "correct": false
+        }
+      ],
+      "explanation": "Setengah = a half.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "\"Jam setengah tujuh\" is...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "7:00",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "6:00",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "7:30",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "6:30",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Setengah tujuh\" = half (way) to seven: 6:30. Careful: unlike English \"half seven\" (7:30 in British English), it means 6:30.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "What does \"seperempat\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "a third",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "four",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "forty",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "a quarter",
+          "correct": true
+        }
+      ],
+      "explanation": "Per- + empat forms a fraction: seperempat = a quarter.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "\"Jam tujuh kurang seperempat\" is...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "6:15",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "7:15",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "7:45",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "6:45",
+          "correct": true
+        }
+      ],
+      "explanation": "Kurang = minus: a quarter to seven = 6:45.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "What does \"sepuluh ribu rupiah\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "110 rupiah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "1,000 rupiah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "10,000 rupiah",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "100,000 rupiah",
+          "correct": false
+        }
+      ],
+      "explanation": "Sepuluh (10) x ribu (1,000).",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "Fill in the blank: \"se___ rokok\" (one cigarette)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lembar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "batang",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "orang",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ekor",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Batang\" is used for long objects (cigarettes, trees).",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "prompt": "What does \"beberapa\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "many",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "none",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "some, a few",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "how many",
+          "correct": false
+        }
+      ],
+      "explanation": "Beberapa = some, several, a few.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "prompt": "\"Ada berapa orang?\" - \"Ada lima ___.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "orang",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "ekor",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kali",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "buah",
+          "correct": false
+        }
+      ],
+      "explanation": "You repeat the classifier for people: lima orang.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    }
+  ]
+}

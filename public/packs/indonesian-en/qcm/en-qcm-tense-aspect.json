@@ -1,0 +1,680 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-tense-aspect",
+  "title": "Tense and Aspect Markers",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Fill in the blank: \"Saya ___ makan.\" (I have already eaten.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sedang",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sudah",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "akan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "masih",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sudah\" = already, a completed action.",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Fill in the blank: \"Dia ___ tidur.\" (He is sleeping.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pernah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "akan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "baru",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sedang",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Sedang\" = in the process of (English \"-ing\").",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Fill in the blank: \"Besok kami ___ pergi ke Bali.\" (Tomorrow we will go to Bali.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "akan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "masih",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "pernah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sudah",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Akan\" marks the future (will).",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Fill in the blank: \"Saya ___ ke Jepang.\" (I have been to Japan, once.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "masih",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "akan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "sedang",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "pernah",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Pernah\" = to have had the experience of something (ever / once).",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Fill in the blank: \"Dia ___ bekerja di sana.\" (He still works there.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sudah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "masih",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "pernah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "akan",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Masih\" = still (the action is ongoing).",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Fill in the blank: \"Saya ___ saja datang.\" (I have just arrived.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "masih",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "baru",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "pernah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "akan",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Baru (saja)\" = just (recently).",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "What is the difference between \"Saya sudah ke Bali\" and \"Saya pernah ke Bali\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "No difference",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "\"Pernah\" = future",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "\"Sudah\" = negation",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "\"Sudah\" = it's done (completed); \"pernah\" = I have experienced it at least once",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Pernah\" stresses life experience (\"have ever\"); \"sudah\" stresses completion (\"already\").",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "What is the opposite of \"sudah\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "belum",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "sedang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "akan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "masih",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sudah\" (already) vs. \"belum\" (not yet).",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "\"Kamu sudah mandi?\" - A short affirmative answer:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pernah.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Sudah.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Ya, sedang.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Akan.",
+          "correct": false
+        }
+      ],
+      "explanation": "You repeat the marker: \"Sudah\" (yes, done).",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Which informal word often replaces \"sedang\" in speech?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pernah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "baru",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "sudah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "lagi",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Lagi makan\" = \"sedang makan\" (eating right now), informal register.",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "What does \"tadi\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "later",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tomorrow",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "earlier (in the recent past)",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "never",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Tadi\" refers to an earlier moment on the same day (tadi pagi = this morning).",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "What does \"nanti\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "later (in the future)",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "yesterday",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "now",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "already",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Nanti\" = later, in a while (future).",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "How do you say \"Yesterday I went to the market\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Kemarin saya pergian ke pasar.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Kemarin saya pergilah ke pasar.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Kemarin saya dipergi ke pasar.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Kemarin saya pergi ke pasar.",
+          "correct": true
+        }
+      ],
+      "explanation": "The verb is never conjugated: the time is given by \"kemarin\" (yesterday).",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "What does \"Saya masih belum mengerti\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I will never understand.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I already understand.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "I still don't understand.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "I have just understood.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Masih belum\" = still not.",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "What does \"Dia baru berumur lima tahun\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "He is only five years old.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "He will be five.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "He turned five a long time ago.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "He is over five.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Baru\" before a quantity = only.",
+      "tags": [
+        "grammar",
+        "aspect",
+        "b1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "\"Saya mau tidur\" means...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I slept.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I am not sleeping.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "I want to sleep / I'm going to sleep.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "I am still sleeping.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Mau\" = to want, and in speech it often expresses the near future (\"going to\").",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "What does \"Pernahkah Anda ke Indonesia?\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Have you ever been to Indonesia?",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Are you going to Indonesia?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Are you still in Indonesia?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "When will you go to Indonesia?",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Pernah\" + the particle \"-kah\" = a question about experience.",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Fill in the blank: \"Hujan ___ turun.\" (It is still raining.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pernah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "akan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "sudah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "masih",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Masih\" = still (the situation continues).",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "What does \"Dia sudah tidak merokok lagi\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "He still smokes.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "He doesn't smoke anymore.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "He hasn't smoked yet.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "He is going to quit smoking.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sudah tidak ... lagi\" = no longer, not anymore.",
+      "tags": [
+        "grammar",
+        "aspect",
+        "b1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "What does \"Saya sedang belajar ketika dia datang\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I studied before he came.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I was studying when he arrived.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "I have been studying since he came.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I will study when he comes.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sedang\" marks an ongoing action, whatever the time frame of the story.",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "How do you say \"last week\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "minggu depan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "minggu ini",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "minggu lalu",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "minggu nanti",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Lalu\" = past (last); \"depan\" = next.",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    }
+  ]
+}

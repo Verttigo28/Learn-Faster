@@ -1,0 +1,479 @@
+{
+  "type": "vocab_deck",
+  "id": "id-meteo-nature",
+  "title": "Météo et nature",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "cuaca",
+      "definition": "temps (météo)",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "cerah",
+      "definition": "ensoleillé / dégagé",
+      "tags": [
+        "meteo",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "panas",
+      "definition": "chaud",
+      "tags": [
+        "meteo",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "hujan",
+      "definition": "pluie / pleuvoir",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "gerimis",
+      "definition": "bruine",
+      "tags": [
+        "meteo",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "hujan deras",
+      "definition": "forte pluie",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "mendung",
+      "definition": "couvert (ciel)",
+      "tags": [
+        "meteo",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "berawan",
+      "definition": "nuageux",
+      "tags": [
+        "meteo",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "angin",
+      "definition": "vent",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "badai",
+      "definition": "tempête",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "petir",
+      "definition": "foudre / éclair",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "guntur",
+      "definition": "tonnerre",
+      "tags": [
+        "meteo",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "banjir",
+      "definition": "inondation",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "kabut",
+      "definition": "brouillard",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "lembap",
+      "definition": "humide",
+      "tags": [
+        "meteo",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "sejuk",
+      "definition": "frais (agréable)",
+      "tags": [
+        "meteo",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "matahari",
+      "definition": "soleil",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "bulan",
+      "definition": "lune",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "bintang",
+      "definition": "étoile",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "langit",
+      "definition": "ciel",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "awan",
+      "definition": "nuage",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "pelangi",
+      "definition": "arc-en-ciel",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "suhu",
+      "definition": "température",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "derajat",
+      "definition": "degré",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "gunung",
+      "definition": "montagne",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "gunung berapi",
+      "definition": "volcan",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "bukit",
+      "definition": "colline",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "hutan",
+      "definition": "forêt",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "sungai",
+      "definition": "rivière / fleuve",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "danau",
+      "definition": "lac",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "laut",
+      "definition": "mer",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "pantai",
+      "definition": "plage",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "pulau",
+      "definition": "île",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "pasir",
+      "definition": "sable",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "batu",
+      "definition": "pierre / rocher",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "tanah",
+      "definition": "terre / sol",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "air terjun",
+      "definition": "cascade",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "sawah",
+      "definition": "rizière",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "pohon",
+      "definition": "arbre",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "bunga",
+      "definition": "fleur",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "daun",
+      "definition": "feuille",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "rumput",
+      "definition": "herbe",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "ombak",
+      "definition": "vague",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "gempa bumi",
+      "definition": "tremblement de terre",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "alam",
+      "definition": "nature",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "udara",
+      "definition": "air (atmosphère)",
+      "tags": [
+        "meteo",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "api",
+      "definition": "feu",
+      "tags": [
+        "meteo",
+        "nom",
+        "a1"
+      ]
+    }
+  ]
+}

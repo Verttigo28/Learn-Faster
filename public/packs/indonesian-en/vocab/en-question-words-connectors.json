@@ -1,0 +1,609 @@
+{
+  "type": "vocab_deck",
+  "id": "en-question-words-connectors",
+  "title": "Question words and connectors",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "apa",
+      "definition": "what",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "siapa",
+      "definition": "who",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "di mana",
+      "definition": "where (location)",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "ke mana",
+      "definition": "where to (direction)",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "dari mana",
+      "definition": "where from",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "kapan",
+      "definition": "when",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "mengapa",
+      "definition": "why",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "kenapa",
+      "definition": "why (everyday)",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "bagaimana",
+      "definition": "how",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "berapa",
+      "definition": "how much / how many",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "yang mana",
+      "definition": "which / which one",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "apakah",
+      "definition": "question marker (yes/no) / whether",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "bukan?",
+      "definition": "isn't it? / right?",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "kan?",
+      "definition": "right? / isn't it? (informal)",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "berapa lama",
+      "definition": "how long",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "berapa kali",
+      "definition": "how many times / how often",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "untuk apa",
+      "definition": "what for",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "dengan siapa",
+      "definition": "with whom / with who",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "punya siapa",
+      "definition": "whose",
+      "tags": [
+        "question-words",
+        "question-word",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "dan",
+      "definition": "and",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "atau",
+      "definition": "or",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "tetapi",
+      "definition": "but",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "tapi",
+      "definition": "but (informal)",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "karena",
+      "definition": "because",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "sebab",
+      "definition": "because / since",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "jadi",
+      "definition": "so / therefore",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "kalau",
+      "definition": "if / when (condition)",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "jika",
+      "definition": "if (formal)",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "supaya",
+      "definition": "so that / in order to",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "agar",
+      "definition": "so that / in order that",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "b1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "untuk",
+      "definition": "for / to / in order to",
+      "tags": [
+        "question-words",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "lalu",
+      "definition": "then / next",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "kemudian",
+      "definition": "then / afterwards / later",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "setelah",
+      "definition": "after",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "sesudah",
+      "definition": "after",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "sebelum",
+      "definition": "before",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "ketika",
+      "definition": "when / while",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "sambil",
+      "definition": "while (doing)",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "meskipun",
+      "definition": "although / even though",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "b1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "walaupun",
+      "definition": "although / even though",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "b1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "padahal",
+      "definition": "whereas / even though / when in fact",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "juga",
+      "definition": "also / too",
+      "tags": [
+        "question-words",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "hanya",
+      "definition": "only",
+      "tags": [
+        "question-words",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "saja",
+      "definition": "only / just",
+      "tags": [
+        "question-words",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "bahkan",
+      "definition": "even",
+      "tags": [
+        "question-words",
+        "adverb",
+        "b1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "selain itu",
+      "definition": "besides / moreover / in addition",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "oleh karena itu",
+      "definition": "therefore / that's why",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "b1"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "misalnya",
+      "definition": "for example",
+      "tags": [
+        "question-words",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "yaitu",
+      "definition": "namely / that is",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "b1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "bahwa",
+      "definition": "that (conjunction)",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "sehingga",
+      "definition": "so that / with the result that",
+      "tags": [
+        "question-words",
+        "conjunction",
+        "b1"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "tentang",
+      "definition": "about",
+      "tags": [
+        "question-words",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "seperti",
+      "definition": "like / as",
+      "tags": [
+        "question-words",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "daripada",
+      "definition": "than / rather than",
+      "tags": [
+        "question-words",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "lebih",
+      "definition": "more",
+      "tags": [
+        "question-words",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "paling",
+      "definition": "most / the most",
+      "tags": [
+        "question-words",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "sangat",
+      "definition": "very",
+      "tags": [
+        "question-words",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "sekali",
+      "definition": "very (after the adjective)",
+      "tags": [
+        "question-words",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "59",
+      "term": "terlalu",
+      "definition": "too / too much",
+      "tags": [
+        "question-words",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "60",
+      "term": "cukup",
+      "definition": "enough / quite",
+      "tags": [
+        "question-words",
+        "adverb",
+        "a2"
+      ]
+    }
+  ]
+}

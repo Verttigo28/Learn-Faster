@@ -1,0 +1,509 @@
+{
+  "type": "vocab_deck",
+  "id": "en-greetings-politeness",
+  "title": "Greetings and politeness",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "Halo",
+      "definition": "hello / hi",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "Hai",
+      "definition": "hi (informal)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "Selamat pagi",
+      "definition": "good morning",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "Selamat siang",
+      "definition": "good day (around midday) / good afternoon (midday)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "Selamat sore",
+      "definition": "good afternoon (late afternoon)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "Selamat malam",
+      "definition": "good evening",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "Selamat tidur",
+      "definition": "good night",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "Selamat datang",
+      "definition": "welcome",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "Selamat jalan",
+      "definition": "goodbye (to someone leaving) / have a good trip",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "Selamat tinggal",
+      "definition": "goodbye (to someone staying)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "Sampai jumpa",
+      "definition": "see you / goodbye",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "Sampai jumpa lagi",
+      "definition": "see you again / see you next time",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "Sampai besok",
+      "definition": "see you tomorrow",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "Sampai nanti",
+      "definition": "see you later",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "Dadah",
+      "definition": "bye-bye (informal)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "Apa kabar?",
+      "definition": "how are you?",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "Kabar baik",
+      "definition": "I'm fine / fine",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "Baik-baik saja",
+      "definition": "I'm fine / everything is fine",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "Bagaimana kabarmu?",
+      "definition": "how are you? (informal)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "Terima kasih",
+      "definition": "thank you / thanks",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "Terima kasih banyak",
+      "definition": "thank you very much / thanks a lot",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "Makasih",
+      "definition": "thanks (informal)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "Sama-sama",
+      "definition": "you're welcome",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "Terima kasih kembali",
+      "definition": "you're welcome / thank you too",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "Permisi",
+      "definition": "excuse me",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "Maaf",
+      "definition": "sorry / excuse me",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "Mohon maaf",
+      "definition": "I'm very sorry / I apologize",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "Tolong",
+      "definition": "please (asking for help) / help",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "Silakan",
+      "definition": "please (go ahead) / go ahead",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "Mari",
+      "definition": "let's go / please (invitation)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "Ya",
+      "definition": "yes",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "Tidak",
+      "definition": "no / not",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "Bukan",
+      "definition": "no / it's not / not (for nouns)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "Nama saya ...",
+      "definition": "my name is ...",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "Siapa nama Anda?",
+      "definition": "what is your name?",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "Senang bertemu dengan Anda",
+      "definition": "nice to meet you",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "Salam kenal",
+      "definition": "nice to meet you / pleased to meet you",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "Selamat",
+      "definition": "congratulations",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "Selamat ulang tahun",
+      "definition": "happy birthday",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "Selamat tahun baru",
+      "definition": "happy new year",
+      "tags": [
+        "greetings",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "Selamat Idulfitri",
+      "definition": "happy Eid / Eid Mubarak",
+      "tags": [
+        "greetings",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "Selamat bekerja",
+      "definition": "enjoy your work / have a good day at work",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "Semoga berhasil",
+      "definition": "good luck",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "Mau ke mana?",
+      "definition": "where are you going? (common greeting)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "Sudah makan?",
+      "definition": "have you eaten? (common greeting)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "Assalamualaikum",
+      "definition": "peace be upon you (Muslim greeting)",
+      "tags": [
+        "greetings",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "Waalaikumsalam",
+      "definition": "and upon you be peace (reply)",
+      "tags": [
+        "greetings",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "Permisi, numpang lewat",
+      "definition": "excuse me, may I pass?",
+      "tags": [
+        "greetings",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "Salam",
+      "definition": "greetings / regards (formal)",
+      "tags": [
+        "greetings",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "Titip salam untuk ...",
+      "definition": "send my regards to ... / say hello to ...",
+      "tags": [
+        "greetings",
+        "expression",
+        "b1"
+      ]
+    }
+  ]
+}

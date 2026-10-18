@@ -1,0 +1,699 @@
+{
+  "type": "vocab_deck",
+  "id": "en-essential-verbs",
+  "title": "Essential verbs",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "makan",
+      "definition": "to eat",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "minum",
+      "definition": "to drink",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "tidur",
+      "definition": "to sleep",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "mandi",
+      "definition": "to bathe / to take a shower / to wash",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "pergi",
+      "definition": "to go / to leave",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "datang",
+      "definition": "to come / to arrive",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "pulang",
+      "definition": "to go home / to return home",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "tiba",
+      "definition": "to arrive",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "duduk",
+      "definition": "to sit / to sit down",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "berdiri",
+      "definition": "to stand / to stand up",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "berjalan",
+      "definition": "to walk",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "jalan-jalan",
+      "definition": "to go for a walk / to stroll / to travel around",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "berlari",
+      "definition": "to run",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "masuk",
+      "definition": "to enter / to come in / to go in",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "keluar",
+      "definition": "to go out / to exit / to leave",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "naik",
+      "definition": "to go up / to climb / to get on / to ride (transport)",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "turun",
+      "definition": "to go down / to get off / to descend",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "tinggal",
+      "definition": "to live / to stay / to remain",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "bekerja",
+      "definition": "to work",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "belajar",
+      "definition": "to study / to learn",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "bermain",
+      "definition": "to play",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "berbicara",
+      "definition": "to speak / to talk",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "berkata",
+      "definition": "to say",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "bilang",
+      "definition": "to say / to tell (informal)",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "bertanya",
+      "definition": "to ask (a question)",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "menjawab",
+      "definition": "to answer / to reply",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "melihat",
+      "definition": "to see / to look at",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "menonton",
+      "definition": "to watch (a show)",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "mendengar",
+      "definition": "to hear",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "mendengarkan",
+      "definition": "to listen / to listen to",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "membaca",
+      "definition": "to read",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "menulis",
+      "definition": "to write",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "membeli",
+      "definition": "to buy",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "menjual",
+      "definition": "to sell",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "membuat",
+      "definition": "to make / to do / to build",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "mengerti",
+      "definition": "to understand",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "tahu",
+      "definition": "to know (a fact)",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "kenal",
+      "definition": "to know (a person) / to be acquainted with",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "mau",
+      "definition": "to want",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "ingin",
+      "definition": "to wish / to want / to desire",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "bisa",
+      "definition": "can / to be able to",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "boleh",
+      "definition": "may / to be allowed to",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "harus",
+      "definition": "must / to have to",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "perlu",
+      "definition": "to need / need",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "suka",
+      "definition": "to like",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "cinta",
+      "definition": "to love / love",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "punya",
+      "definition": "to have / to own",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "memiliki",
+      "definition": "to own / to possess / to have",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "ada",
+      "definition": "there is / there are / to exist / to be present",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "menjadi",
+      "definition": "to become",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "mencari",
+      "definition": "to look for / to search",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "menemukan",
+      "definition": "to find / to discover",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "memberi",
+      "definition": "to give",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "menerima",
+      "definition": "to receive / to accept",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "mengambil",
+      "definition": "to take / to get",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "membawa",
+      "definition": "to bring / to carry / to take along",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "menunggu",
+      "definition": "to wait / to wait for",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "membuka",
+      "definition": "to open",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "59",
+      "term": "menutup",
+      "definition": "to close / to shut",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "60",
+      "term": "mulai",
+      "definition": "to start / to begin",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "61",
+      "term": "selesai",
+      "definition": "to finish / finished / done",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "62",
+      "term": "membantu",
+      "definition": "to help",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "63",
+      "term": "ingat",
+      "definition": "to remember",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "64",
+      "term": "lupa",
+      "definition": "to forget",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "65",
+      "term": "berpikir",
+      "definition": "to think",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "66",
+      "term": "merasa",
+      "definition": "to feel",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "67",
+      "term": "bertemu",
+      "definition": "to meet",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "68",
+      "term": "menelepon",
+      "definition": "to phone / to call",
+      "tags": [
+        "verbs",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "69",
+      "term": "mengirim",
+      "definition": "to send",
+      "tags": [
+        "verbs",
+        "verb",
+        "a2"
+      ]
+    }
+  ]
+}

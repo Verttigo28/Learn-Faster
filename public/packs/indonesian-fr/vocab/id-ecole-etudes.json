@@ -1,0 +1,469 @@
+{
+  "type": "vocab_deck",
+  "id": "id-ecole-etudes",
+  "title": "École et études",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "sekolah",
+      "definition": "école",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "sekolah dasar",
+      "definition": "école primaire",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "SMA",
+      "definition": "lycée",
+      "tags": [
+        "ecole",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "murid",
+      "definition": "élève",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "siswa",
+      "definition": "élève (formel)",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "mahasiswa",
+      "definition": "étudiant",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "guru",
+      "definition": "professeur / enseignant",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "dosen",
+      "definition": "professeur d'université",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kelas",
+      "definition": "classe",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "pelajaran",
+      "definition": "leçon / matière",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "ujian",
+      "definition": "examen",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "ulangan",
+      "definition": "contrôle / interrogation",
+      "tags": [
+        "ecole",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "pekerjaan rumah",
+      "definition": "devoirs",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "PR",
+      "definition": "devoirs (abréviation)",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "buku",
+      "definition": "livre",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "buku tulis",
+      "definition": "cahier",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "pensil",
+      "definition": "crayon",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "pulpen",
+      "definition": "stylo",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "penghapus",
+      "definition": "gomme",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "penggaris",
+      "definition": "règle",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "kertas",
+      "definition": "papier",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "papan tulis",
+      "definition": "tableau",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "kamus",
+      "definition": "dictionnaire",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "bahasa",
+      "definition": "langue",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "kata",
+      "definition": "mot",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "kalimat",
+      "definition": "phrase",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "arti",
+      "definition": "sens / signification",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "soal",
+      "definition": "question / exercice",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "jawaban",
+      "definition": "réponse",
+      "tags": [
+        "ecole",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "nilai",
+      "definition": "note",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "lulus",
+      "definition": "réussir / être diplômé",
+      "tags": [
+        "ecole",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "gagal",
+      "definition": "échouer",
+      "tags": [
+        "ecole",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "beasiswa",
+      "definition": "bourse d'études",
+      "tags": [
+        "ecole",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "ijazah",
+      "definition": "diplôme",
+      "tags": [
+        "ecole",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "jurusan",
+      "definition": "filière / spécialité",
+      "tags": [
+        "ecole",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "fakultas",
+      "definition": "faculté",
+      "tags": [
+        "ecole",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "matematika",
+      "definition": "mathématiques",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "sejarah",
+      "definition": "histoire",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "ilmu",
+      "definition": "science / savoir",
+      "tags": [
+        "ecole",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "menghafal",
+      "definition": "apprendre par cœur",
+      "tags": [
+        "ecole",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "mengulang",
+      "definition": "répéter / réviser",
+      "tags": [
+        "ecole",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "latihan",
+      "definition": "exercice / entraînement",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "perpustakaan",
+      "definition": "bibliothèque",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "seragam",
+      "definition": "uniforme",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "tata bahasa",
+      "definition": "grammaire",
+      "tags": [
+        "ecole",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "pengucapan",
+      "definition": "prononciation",
+      "tags": [
+        "ecole",
+        "nom",
+        "b1"
+      ]
+    }
+  ]
+}

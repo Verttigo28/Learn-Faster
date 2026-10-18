@@ -1,0 +1,589 @@
+{
+  "type": "vocab_deck",
+  "id": "id-verbes-quotidien",
+  "title": "Verbes du quotidien 2",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "bangun",
+      "definition": "se réveiller / se lever",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "menyikat gigi",
+      "definition": "se brosser les dents",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "mencuci",
+      "definition": "laver",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "mencuci piring",
+      "definition": "faire la vaisselle",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "mencuci baju",
+      "definition": "faire la lessive",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "menyetrika",
+      "definition": "repasser",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "menyapu",
+      "definition": "balayer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "membersihkan",
+      "definition": "nettoyer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "merapikan",
+      "definition": "ranger",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "berbelanja",
+      "definition": "faire les courses",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "berpakaian",
+      "definition": "s'habiller",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "berdandan",
+      "definition": "se maquiller / se faire beau",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "beristirahat",
+      "definition": "se reposer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "bersantai",
+      "definition": "se détendre",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "mengobrol",
+      "definition": "bavarder",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "bercerita",
+      "definition": "raconter",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "menyanyi",
+      "definition": "chanter",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "menari",
+      "definition": "danser",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "tertawa",
+      "definition": "rire",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "tersenyum",
+      "definition": "sourire",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "menangis",
+      "definition": "pleurer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "memanggil",
+      "definition": "appeler",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "mengajar",
+      "definition": "enseigner",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "menjelaskan",
+      "definition": "expliquer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "memilih",
+      "definition": "choisir",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "menggunakan",
+      "definition": "utiliser",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "memakai",
+      "definition": "porter / utiliser",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "meminjam",
+      "definition": "emprunter",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "meminjamkan",
+      "definition": "prêter",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "mengembalikan",
+      "definition": "rendre",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "menyimpan",
+      "definition": "garder / ranger",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "kehilangan",
+      "definition": "perdre (un objet)",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "jatuh",
+      "definition": "tomber",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "membuang",
+      "definition": "jeter",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "mengangkat",
+      "definition": "soulever / décrocher",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "menaruh",
+      "definition": "poser / mettre",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "mendorong",
+      "definition": "pousser",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "menarik",
+      "definition": "tirer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "menyalakan",
+      "definition": "allumer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "mematikan",
+      "definition": "éteindre",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "mengantar",
+      "definition": "accompagner / livrer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "menjemput",
+      "definition": "aller chercher (qqn)",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "mengunjungi",
+      "definition": "rendre visite à",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "menginap",
+      "definition": "passer la nuit / loger",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "pindah",
+      "definition": "déménager / changer de place",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "mengetuk",
+      "definition": "frapper (à la porte)",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "menyewa",
+      "definition": "louer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "menanam",
+      "definition": "planter",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "memperbaiki",
+      "definition": "réparer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "berdoa",
+      "definition": "prier",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "berharap",
+      "definition": "espérer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "percaya",
+      "definition": "croire / avoir confiance",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "setuju",
+      "definition": "être d'accord",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "menolak",
+      "definition": "refuser",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "mengizinkan",
+      "definition": "permettre",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "melarang",
+      "definition": "interdire",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "menghabiskan",
+      "definition": "finir / dépenser (temps, argent)",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "menikmati",
+      "definition": "apprécier / savourer",
+      "tags": [
+        "quotidien",
+        "verbe",
+        "b1"
+      ]
+    }
+  ]
+}

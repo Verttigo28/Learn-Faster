@@ -1,0 +1,519 @@
+{
+  "type": "vocab_deck",
+  "id": "en-pronouns-people",
+  "title": "Pronouns and people",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "saya",
+      "definition": "I / me",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "aku",
+      "definition": "I / me (informal)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "Anda",
+      "definition": "you (polite)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "kamu",
+      "definition": "you (informal)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "engkau",
+      "definition": "you (literary)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "b1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "dia",
+      "definition": "he / she / him / her",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "ia",
+      "definition": "he / she (written)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "beliau",
+      "definition": "he / she (respectful)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "b1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kami",
+      "definition": "we / us (excluding the listener)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "kita",
+      "definition": "we / us (including the listener)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "kalian",
+      "definition": "you (plural) / you all",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "mereka",
+      "definition": "they / them",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "-ku",
+      "definition": "my (informal suffix)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "-mu",
+      "definition": "your (suffix)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "-nya",
+      "definition": "his / her / its (suffix)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "gue",
+      "definition": "I / me (Jakarta slang)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "lu",
+      "definition": "you (Jakarta slang)",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "orang",
+      "definition": "person / people",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "Bapak",
+      "definition": "sir / Mr. / father (respectful)",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "Pak",
+      "definition": "sir / Mr. (short form)",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "Ibu",
+      "definition": "madam / Mrs. / mother",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "Bu",
+      "definition": "madam / Mrs. (short form)",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "Mas",
+      "definition": "older brother / young man (Javanese)",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "Mbak",
+      "definition": "older sister / young woman (Javanese)",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "Kak",
+      "definition": "older brother / older sister (short form)",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "Dik",
+      "definition": "younger brother / younger sister (short form)",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "Saudara",
+      "definition": "you (formal) / sibling",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "b1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "Tuan",
+      "definition": "sir / master (formal)",
+      "tags": [
+        "pronouns",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "Nyonya",
+      "definition": "madam / Mrs. (formal)",
+      "tags": [
+        "pronouns",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "Nona",
+      "definition": "miss",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "laki-laki",
+      "definition": "man / male",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "perempuan",
+      "definition": "woman / female",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "pria",
+      "definition": "man",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "wanita",
+      "definition": "woman",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "anak",
+      "definition": "child",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "anak-anak",
+      "definition": "children",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "bayi",
+      "definition": "baby",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "remaja",
+      "definition": "teenager / adolescent",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "orang dewasa",
+      "definition": "adult",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "teman",
+      "definition": "friend",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "sahabat",
+      "definition": "close friend / best friend",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "pacar",
+      "definition": "boyfriend / girlfriend",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "tetangga",
+      "definition": "neighbor / neighbour",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "tamu",
+      "definition": "guest",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "orang asing",
+      "definition": "foreigner / stranger",
+      "tags": [
+        "pronouns",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "bule",
+      "definition": "Westerner / white foreigner (informal)",
+      "tags": [
+        "pronouns",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "semua orang",
+      "definition": "everyone / everybody",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "seseorang",
+      "definition": "someone / somebody",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "siapa saja",
+      "definition": "anyone / anybody",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "b1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "masing-masing",
+      "definition": "each / each one / respectively",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "b1"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "diri sendiri",
+      "definition": "oneself / myself / yourself",
+      "tags": [
+        "pronouns",
+        "pronoun",
+        "b1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,699 @@
+{
+  "type": "vocab_deck",
+  "id": "id-verbes-essentiels",
+  "title": "Verbes essentiels",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "makan",
+      "definition": "manger",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "minum",
+      "definition": "boire",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "tidur",
+      "definition": "dormir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "mandi",
+      "definition": "se laver / prendre une douche",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "pergi",
+      "definition": "aller / partir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "datang",
+      "definition": "venir / arriver",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "pulang",
+      "definition": "rentrer (chez soi)",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "tiba",
+      "definition": "arriver",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "duduk",
+      "definition": "s'asseoir / être assis",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "berdiri",
+      "definition": "se lever / être debout",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "berjalan",
+      "definition": "marcher",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "jalan-jalan",
+      "definition": "se promener",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "berlari",
+      "definition": "courir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "masuk",
+      "definition": "entrer",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "keluar",
+      "definition": "sortir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "naik",
+      "definition": "monter / prendre (un transport)",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "turun",
+      "definition": "descendre",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "tinggal",
+      "definition": "habiter / rester",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "bekerja",
+      "definition": "travailler",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "belajar",
+      "definition": "étudier / apprendre",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "bermain",
+      "definition": "jouer",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "berbicara",
+      "definition": "parler",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "berkata",
+      "definition": "dire",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "bilang",
+      "definition": "dire (familier)",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "bertanya",
+      "definition": "demander (une question)",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "menjawab",
+      "definition": "répondre",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "melihat",
+      "definition": "voir / regarder",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "menonton",
+      "definition": "regarder (un spectacle)",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "mendengar",
+      "definition": "entendre",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "mendengarkan",
+      "definition": "écouter",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "membaca",
+      "definition": "lire",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "menulis",
+      "definition": "écrire",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "membeli",
+      "definition": "acheter",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "menjual",
+      "definition": "vendre",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "membuat",
+      "definition": "faire / fabriquer",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "mengerti",
+      "definition": "comprendre",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "tahu",
+      "definition": "savoir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "kenal",
+      "definition": "connaître (une personne)",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "mau",
+      "definition": "vouloir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "ingin",
+      "definition": "désirer / vouloir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "bisa",
+      "definition": "pouvoir / savoir faire",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "boleh",
+      "definition": "avoir la permission de",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "harus",
+      "definition": "devoir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "perlu",
+      "definition": "avoir besoin de",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "suka",
+      "definition": "aimer bien",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "cinta",
+      "definition": "aimer (d'amour)",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "punya",
+      "definition": "avoir / posséder",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "memiliki",
+      "definition": "posséder",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "ada",
+      "definition": "il y a / être présent",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "menjadi",
+      "definition": "devenir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "mencari",
+      "definition": "chercher",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "menemukan",
+      "definition": "trouver",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "memberi",
+      "definition": "donner",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "menerima",
+      "definition": "recevoir / accepter",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "mengambil",
+      "definition": "prendre",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "membawa",
+      "definition": "apporter / emporter",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "menunggu",
+      "definition": "attendre",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "membuka",
+      "definition": "ouvrir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "59",
+      "term": "menutup",
+      "definition": "fermer",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "60",
+      "term": "mulai",
+      "definition": "commencer",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "61",
+      "term": "selesai",
+      "definition": "finir / terminé",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "62",
+      "term": "membantu",
+      "definition": "aider",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "63",
+      "term": "ingat",
+      "definition": "se souvenir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "64",
+      "term": "lupa",
+      "definition": "oublier",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "65",
+      "term": "berpikir",
+      "definition": "penser / réfléchir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "66",
+      "term": "merasa",
+      "definition": "ressentir / se sentir",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "67",
+      "term": "bertemu",
+      "definition": "rencontrer",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "68",
+      "term": "menelepon",
+      "definition": "téléphoner",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "69",
+      "term": "mengirim",
+      "definition": "envoyer",
+      "tags": [
+        "verbes",
+        "verbe",
+        "a2"
+      ]
+    }
+  ]
+}

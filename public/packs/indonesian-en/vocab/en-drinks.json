@@ -1,0 +1,439 @@
+{
+  "type": "vocab_deck",
+  "id": "en-drinks",
+  "title": "Drinks",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "minuman",
+      "definition": "drink / beverage",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "air",
+      "definition": "water",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "air putih",
+      "definition": "plain water / drinking water",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "air mineral",
+      "definition": "mineral water / bottled water",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "es",
+      "definition": "ice",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "es batu",
+      "definition": "ice cubes",
+      "tags": [
+        "drinks",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "teh",
+      "definition": "tea",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "teh manis",
+      "definition": "sweet tea",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "teh tawar",
+      "definition": "unsweetened tea / plain tea",
+      "tags": [
+        "drinks",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "es teh",
+      "definition": "iced tea",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "kopi",
+      "definition": "coffee",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "kopi susu",
+      "definition": "coffee with milk / white coffee",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "kopi hitam",
+      "definition": "black coffee",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "susu",
+      "definition": "milk",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "jus",
+      "definition": "juice",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "jus jeruk",
+      "definition": "orange juice",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "es jeruk",
+      "definition": "iced orange juice / iced citrus drink",
+      "tags": [
+        "drinks",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "air kelapa",
+      "definition": "coconut water",
+      "tags": [
+        "drinks",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "bir",
+      "definition": "beer",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "minuman beralkohol",
+      "definition": "alcoholic drink",
+      "tags": [
+        "drinks",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "minuman bersoda",
+      "definition": "soft drink / soda / fizzy drink",
+      "tags": [
+        "drinks",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "sirup",
+      "definition": "syrup",
+      "tags": [
+        "drinks",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "cokelat panas",
+      "definition": "hot chocolate",
+      "tags": [
+        "drinks",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "jamu",
+      "definition": "jamu / traditional herbal drink",
+      "tags": [
+        "drinks",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "es campur",
+      "definition": "mixed shaved ice dessert",
+      "tags": [
+        "drinks",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "wedang jahe",
+      "definition": "hot ginger drink",
+      "tags": [
+        "drinks",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "tuak",
+      "definition": "palm wine / toddy",
+      "tags": [
+        "drinks",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "dingin",
+      "definition": "cold",
+      "tags": [
+        "drinks",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "panas",
+      "definition": "hot",
+      "tags": [
+        "drinks",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "hangat",
+      "definition": "warm",
+      "tags": [
+        "drinks",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "tanpa gula",
+      "definition": "without sugar / no sugar",
+      "tags": [
+        "drinks",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "tanpa es",
+      "definition": "without ice / no ice",
+      "tags": [
+        "drinks",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "sedikit gula",
+      "definition": "a little sugar / less sugar",
+      "tags": [
+        "drinks",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "gelas",
+      "definition": "glass",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "cangkir",
+      "definition": "cup",
+      "tags": [
+        "drinks",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "botol",
+      "definition": "bottle",
+      "tags": [
+        "drinks",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "sedotan",
+      "definition": "straw",
+      "tags": [
+        "drinks",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "kaleng",
+      "definition": "can / tin",
+      "tags": [
+        "drinks",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "minum",
+      "definition": "to drink",
+      "tags": [
+        "drinks",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "haus",
+      "definition": "thirsty",
+      "tags": [
+        "drinks",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "segelas",
+      "definition": "a glass of",
+      "tags": [
+        "drinks",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "secangkir",
+      "definition": "a cup of",
+      "tags": [
+        "drinks",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "sebotol",
+      "definition": "a bottle of",
+      "tags": [
+        "drinks",
+        "expression",
+        "a2"
+      ]
+    }
+  ]
+}

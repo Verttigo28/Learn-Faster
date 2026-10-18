@@ -1,0 +1,712 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-pronoms-possessifs",
+  "title": "Pronoms personnels et possessifs",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Quel est l'équivalent de « buku saya » en forme suffixée ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bukuku",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "bukunya",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kubuku",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bukumu",
+          "correct": false
+        }
+      ],
+      "explanation": "« -ku » est la forme suffixée de « aku » : bukuku = mon livre.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Que signifie « rumahmu » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "notre maison",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ta maison",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "ma maison",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sa maison",
+          "correct": false
+        }
+      ],
+      "explanation": "« -mu » = ton/ta (de « kamu »).",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Que signifie « mobilnya » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ta voiture",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "leurs voitures",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "sa voiture (à lui/elle)",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "ma voiture",
+          "correct": false
+        }
+      ],
+      "explanation": "« -nya » = son/sa (3e personne) ; il peut aussi marquer le défini.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Quel pronom signifie « vous » (poli, singulier) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kau",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kamu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kalian",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Anda",
+          "correct": true
+        }
+      ],
+      "explanation": "« Anda » (avec majuscule) est le vous de politesse neutre.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "À un ami : « Nous (toi et moi) allons au marché. » — « ___ pergi ke pasar. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Kalian",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Mereka",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Kami",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Kita",
+          "correct": true
+        }
+      ],
+      "explanation": "« Kita » est le nous inclusif : il inclut l'interlocuteur.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "« Nous (ma femme et moi, pas vous) allons à Bali. » — « ___ pergi ke Bali. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mereka",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Kami",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Kalian",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Kita",
+          "correct": false
+        }
+      ],
+      "explanation": "« Kami » est le nous exclusif : il exclut l'interlocuteur.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Quel pronom signifie « ils / elles » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mereka",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "dia",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kami",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kalian",
+          "correct": false
+        }
+      ],
+      "explanation": "« Mereka » = ils/elles.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Quel pronom signifie « vous » (pluriel, familier) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kamu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kalian",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Anda",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kita",
+          "correct": false
+        }
+      ],
+      "explanation": "« Kalian » = vous (plusieurs personnes, registre familier).",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Quel pronom signifie « il / elle » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "aku",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kamu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "saya",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dia",
+          "correct": true
+        }
+      ],
+      "explanation": "« Dia » (ou « ia » à l'écrit) = il/elle, sans distinction de genre.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "« Aku » s'emploie plutôt…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "entre proches, de façon familière",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "uniquement à l'écrit",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "avec ses supérieurs",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dans les discours officiels",
+          "correct": false
+        }
+      ],
+      "explanation": "« Aku » est le « je » familier ; « saya » est neutre/poli.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Que signifie « Ini punya saya » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "C'est pour moi ?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Je n'en ai pas.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "C'est à moi.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Je l'ai acheté.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Punya » + pronom exprime l'appartenance : c'est à moi.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Complétez : « Buku ini ___ siapa? » (À qui est ce livre ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "untuk",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ada",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "yang",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "punya",
+          "correct": true
+        }
+      ],
+      "explanation": "« Punya siapa » = à qui.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Comment dire « Je t'aime » (forme suffixée) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Aku mencintaimu.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Aku mencintaiku.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Aku cintanya kamu.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mu mencintai aku.",
+          "correct": false
+        }
+      ],
+      "explanation": "« -mu » peut être objet du verbe : mencintaimu = t'aimer.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Que signifie « Saya melihatnya » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tu le vois.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Je me vois.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Il me voit.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Je le/la vois.",
+          "correct": true
+        }
+      ],
+      "explanation": "« -nya » attaché au verbe = le/la (objet de 3e personne).",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Que signifie « Namanya siapa? »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Qui a un nom ?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Quel est ton nom de famille ?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Comment t'appelles-tu ?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Comment s'appelle-t-il/elle ?",
+          "correct": true
+        }
+      ],
+      "explanation": "« Namanya » = son nom (à lui/elle).",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Comment dire « votre nom » (poli) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Andanama",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "nama Anda",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "namaku Anda",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Anda nama",
+          "correct": false
+        }
+      ],
+      "explanation": "« Anda » n'a pas de forme suffixée : le possesseur suit le nom (nama Anda).",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Comment s'adresser poliment à un homme plus âgé ou respecté ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mbak",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Dik",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bapak",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Kamu",
+          "correct": false
+        }
+      ],
+      "explanation": "« Bapak » (Pak) sert de pronom/titre de respect pour un homme.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Complétez : « Itu bukan bukumu, itu buku___. » (… c'est le sien.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "-kan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "-ku",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "-nya",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "-mu",
+          "correct": false
+        }
+      ],
+      "explanation": "« -nya » = son/sa (3e personne).",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Comment dire « leur maison » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "rumahku mereka",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mereka rumah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "rumah mereka",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "rumah kalian",
+          "correct": false
+        }
+      ],
+      "explanation": "Le possesseur se place après le nom : rumah mereka.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Comment dire « notre pays » (à nous tous, toi compris) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "negara kami",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "negaraku",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "negara kita",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "negara mereka",
+          "correct": false
+        }
+      ],
+      "explanation": "Inclusif : « kita » ; « negara kita » inclut l'interlocuteur.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Le suffixe « -ku » est la forme courte de…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kamu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kalian",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "aku",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "kita",
+          "correct": false
+        }
+      ],
+      "explanation": "« -ku » vient de « aku ».",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "« Engkau » (ou « kau ») signifie…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tu (littéraire ou intime)",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "ils",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "nous",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "vous (poli)",
+          "correct": false
+        }
+      ],
+      "explanation": "« Engkau / kau » = tu, fréquent dans la littérature, les chansons ou les prières.",
+      "tags": [
+        "grammaire",
+        "pronoms",
+        "b1"
+      ]
+    }
+  ]
+}

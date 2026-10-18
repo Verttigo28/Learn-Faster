@@ -1,0 +1,280 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-home-daily-routine",
+  "title": "Home and Daily Routine",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya bangun jam lima pagi.",
+      "translation": "I get up at five in the morning.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Saya mandi dua kali sehari.",
+      "translation": "I shower twice a day.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Setelah mandi, saya sarapan.",
+      "translation": "After showering, I have breakfast.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya menyikat gigi setiap pagi.",
+      "translation": "I brush my teeth every morning.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Ibu sedang memasak di dapur.",
+      "translation": "Mum is cooking in the kitchen.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1",
+        "aspect",
+        "me"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Rumah kami punya tiga kamar tidur.",
+      "translation": "Our house has three bedrooms.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya mencuci piring setelah makan.",
+      "translation": "I wash the dishes after eating.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Adik saya menyapu lantai.",
+      "translation": "My younger brother sweeps the floor.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Kami tinggal di rumah kecil.",
+      "translation": "We live in a small house.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Saya berangkat kerja jam tujuh.",
+      "translation": "I leave for work at seven.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya tidur jam sepuluh malam.",
+      "translation": "I go to bed at ten at night.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Kamar mandi ada di belakang.",
+      "translation": "The bathroom is at the back.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Tolong matikan lampunya.",
+      "translation": "Please turn off the light.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Ayah membaca koran di ruang tamu.",
+      "translation": "Dad reads the newspaper in the living room.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya menyiram tanaman di kebun.",
+      "translation": "I water the plants in the garden.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Kucing kami tidur di sofa.",
+      "translation": "Our cat sleeps on the sofa.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya mencuci baju pada hari Sabtu.",
+      "translation": "I do the laundry on Saturdays.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Dapurnya kecil tetapi bersih.",
+      "translation": "The kitchen is small but clean.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya pulang ke rumah jam lima sore.",
+      "translation": "I get home at five in the afternoon.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Jendelanya belum ditutup.",
+      "translation": "The window hasn't been closed yet.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a2",
+        "passive",
+        "negation"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Kami makan siang di rumah.",
+      "translation": "We have lunch at home.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya menonton televisi sebelum tidur.",
+      "translation": "I watch television before going to sleep.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Kulkasnya penuh dengan buah.",
+      "translation": "The fridge is full of fruit.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Rumah saya dekat dengan pasar.",
+      "translation": "My house is close to the market.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Saya merapikan tempat tidur setiap pagi.",
+      "translation": "I make my bed every morning.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Pembantu kami datang tiga kali seminggu.",
+      "translation": "Our housekeeper comes three times a week.",
+      "tags": [
+        "sentences",
+        "routine",
+        "a2"
+      ]
+    }
+  ]
+}

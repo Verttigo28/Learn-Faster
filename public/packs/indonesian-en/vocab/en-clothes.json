@@ -1,0 +1,429 @@
+{
+  "type": "vocab_deck",
+  "id": "en-clothes",
+  "title": "Clothes",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "pakaian",
+      "definition": "clothes / clothing",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "baju",
+      "definition": "clothes / shirt / top",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "kemeja",
+      "definition": "shirt (with collar)",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "kaus",
+      "definition": "T-shirt",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "celana",
+      "definition": "trousers / pants",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "celana pendek",
+      "definition": "shorts",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "celana dalam",
+      "definition": "underpants / underwear",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "rok",
+      "definition": "skirt",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "gaun",
+      "definition": "dress / gown",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "jaket",
+      "definition": "jacket",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "jas",
+      "definition": "suit jacket / blazer",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "dasi",
+      "definition": "tie / necktie",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "sepatu",
+      "definition": "shoes",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "sandal",
+      "definition": "sandals",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "sandal jepit",
+      "definition": "flip-flops",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "kaus kaki",
+      "definition": "socks",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "topi",
+      "definition": "hat / cap",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "kacamata",
+      "definition": "glasses / spectacles",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "kacamata hitam",
+      "definition": "sunglasses",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "ikat pinggang",
+      "definition": "belt",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "dompet",
+      "definition": "wallet / purse",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "jam tangan",
+      "definition": "wristwatch / watch",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "cincin",
+      "definition": "ring",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "kalung",
+      "definition": "necklace",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "anting-anting",
+      "definition": "earrings",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "gelang",
+      "definition": "bracelet",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "sarung",
+      "definition": "sarong",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "batik",
+      "definition": "batik",
+      "tags": [
+        "clothes",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "kebaya",
+      "definition": "kebaya (traditional blouse)",
+      "tags": [
+        "clothes",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "jilbab",
+      "definition": "hijab / headscarf",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "piama",
+      "definition": "pajamas / pyjamas",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "baju renang",
+      "definition": "swimsuit / swimming costume",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "kancing",
+      "definition": "button",
+      "tags": [
+        "clothes",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "saku",
+      "definition": "pocket",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "ukuran",
+      "definition": "size",
+      "tags": [
+        "clothes",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "memakai",
+      "definition": "to wear / to put on (clothes)",
+      "tags": [
+        "clothes",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "melepas",
+      "definition": "to take off / to remove",
+      "tags": [
+        "clothes",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "mencoba",
+      "definition": "to try / to try on",
+      "tags": [
+        "clothes",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "longgar",
+      "definition": "loose / baggy",
+      "tags": [
+        "clothes",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "ketat",
+      "definition": "tight",
+      "tags": [
+        "clothes",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "kebesaran",
+      "definition": "too big",
+      "tags": [
+        "clothes",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "kekecilan",
+      "definition": "too small",
+      "tags": [
+        "clothes",
+        "adjective",
+        "b1"
+      ]
+    }
+  ]
+}

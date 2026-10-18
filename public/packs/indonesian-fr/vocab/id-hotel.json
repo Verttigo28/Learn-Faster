@@ -1,0 +1,429 @@
+{
+  "type": "vocab_deck",
+  "id": "id-hotel",
+  "title": "À l'hôtel",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "hotel",
+      "definition": "hôtel",
+      "tags": [
+        "hotel",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "penginapan",
+      "definition": "logement / auberge",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "losmen",
+      "definition": "pension (bon marché)",
+      "tags": [
+        "hotel",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "kamar",
+      "definition": "chambre",
+      "tags": [
+        "hotel",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "reservasi",
+      "definition": "réservation",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "memesan kamar",
+      "definition": "réserver une chambre",
+      "tags": [
+        "hotel",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "resepsionis",
+      "definition": "réceptionniste",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "lobi",
+      "definition": "hall",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kunci kamar",
+      "definition": "clé de la chambre",
+      "tags": [
+        "hotel",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "nomor kamar",
+      "definition": "numéro de chambre",
+      "tags": [
+        "hotel",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "tempat tidur ganda",
+      "definition": "lit double",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "tempat tidur tunggal",
+      "definition": "lit simple",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "kamar mandi dalam",
+      "definition": "salle de bain privée",
+      "tags": [
+        "hotel",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "air panas",
+      "definition": "eau chaude",
+      "tags": [
+        "hotel",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "handuk",
+      "definition": "serviette (de bain)",
+      "tags": [
+        "hotel",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "selimut tambahan",
+      "definition": "couverture supplémentaire",
+      "tags": [
+        "hotel",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "tambahan",
+      "definition": "supplémentaire",
+      "tags": [
+        "hotel",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "termasuk",
+      "definition": "compris / inclus",
+      "tags": [
+        "hotel",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "sarapan termasuk",
+      "definition": "petit-déjeuner compris",
+      "tags": [
+        "hotel",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "per malam",
+      "definition": "par nuit",
+      "tags": [
+        "hotel",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "semalam",
+      "definition": "une nuit",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "dua malam",
+      "definition": "deux nuits",
+      "tags": [
+        "hotel",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "check-in",
+      "definition": "enregistrement (arrivée)",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "check-out",
+      "definition": "départ (libérer la chambre)",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "kolam renang",
+      "definition": "piscine",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "lift",
+      "definition": "ascenseur",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "lantai",
+      "definition": "étage",
+      "tags": [
+        "hotel",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "Ada kamar kosong?",
+      "definition": "avez-vous une chambre libre ?",
+      "tags": [
+        "hotel",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "Berapa semalam?",
+      "definition": "combien pour une nuit ?",
+      "tags": [
+        "hotel",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "Saya sudah pesan kamar",
+      "definition": "j'ai réservé une chambre",
+      "tags": [
+        "hotel",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "penuh",
+      "definition": "complet",
+      "tags": [
+        "hotel",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "kosong",
+      "definition": "libre / vide",
+      "tags": [
+        "hotel",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "menginap",
+      "definition": "passer la nuit / séjourner",
+      "tags": [
+        "hotel",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "uang jaminan",
+      "definition": "caution",
+      "tags": [
+        "hotel",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "layanan kamar",
+      "definition": "service en chambre",
+      "tags": [
+        "hotel",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "penatu",
+      "definition": "blanchisserie",
+      "tags": [
+        "hotel",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "rusak",
+      "definition": "cassé / en panne",
+      "tags": [
+        "hotel",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "AC-nya rusak",
+      "definition": "la clim est en panne",
+      "tags": [
+        "hotel",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "kamar ber-AC",
+      "definition": "chambre climatisée",
+      "tags": [
+        "hotel",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "Tolong bangunkan saya jam enam",
+      "definition": "réveillez-moi à six heures, s'il vous plaît",
+      "tags": [
+        "hotel",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "tamu",
+      "definition": "client / invité",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "satpam",
+      "definition": "agent de sécurité",
+      "tags": [
+        "hotel",
+        "nom",
+        "a2"
+      ]
+    }
+  ]
+}

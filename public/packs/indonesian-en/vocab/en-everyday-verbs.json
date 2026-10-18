@@ -1,0 +1,589 @@
+{
+  "type": "vocab_deck",
+  "id": "en-everyday-verbs",
+  "title": "Everyday verbs 2",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "bangun",
+      "definition": "to wake up / to get up",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "menyikat gigi",
+      "definition": "to brush one's teeth / to brush teeth",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "mencuci",
+      "definition": "to wash",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "mencuci piring",
+      "definition": "to wash the dishes / to do the dishes",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "mencuci baju",
+      "definition": "to wash clothes / to do the laundry",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "menyetrika",
+      "definition": "to iron",
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "menyapu",
+      "definition": "to sweep",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "membersihkan",
+      "definition": "to clean",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "merapikan",
+      "definition": "to tidy / to tidy up",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "berbelanja",
+      "definition": "to go shopping / to shop",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "berpakaian",
+      "definition": "to get dressed / to dress",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "berdandan",
+      "definition": "to put on makeup / to dress up",
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "beristirahat",
+      "definition": "to rest / to take a rest",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "bersantai",
+      "definition": "to relax",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "mengobrol",
+      "definition": "to chat",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "bercerita",
+      "definition": "to tell a story / to tell",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "menyanyi",
+      "definition": "to sing",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "menari",
+      "definition": "to dance",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "tertawa",
+      "definition": "to laugh",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "tersenyum",
+      "definition": "to smile",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "menangis",
+      "definition": "to cry",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "memanggil",
+      "definition": "to call (someone)",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "mengajar",
+      "definition": "to teach",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "menjelaskan",
+      "definition": "to explain",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "memilih",
+      "definition": "to choose / to vote",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "menggunakan",
+      "definition": "to use",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "memakai",
+      "definition": "to wear / to use",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "meminjam",
+      "definition": "to borrow",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "meminjamkan",
+      "definition": "to lend",
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "mengembalikan",
+      "definition": "to return / to give back",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "menyimpan",
+      "definition": "to keep / to store / to save",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "kehilangan",
+      "definition": "to lose (an object)",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "jatuh",
+      "definition": "to fall",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "membuang",
+      "definition": "to throw away / to throw out",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "mengangkat",
+      "definition": "to lift / to pick up (the phone)",
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "menaruh",
+      "definition": "to put / to place",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "mendorong",
+      "definition": "to push",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "menarik",
+      "definition": "to pull",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "menyalakan",
+      "definition": "to turn on / to switch on / to light",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "mematikan",
+      "definition": "to turn off / to switch off",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "mengantar",
+      "definition": "to accompany / to take (someone) / to deliver",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "menjemput",
+      "definition": "to pick up (someone)",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "mengunjungi",
+      "definition": "to visit",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "menginap",
+      "definition": "to stay overnight / to spend the night",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "pindah",
+      "definition": "to move (house) / to move",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "mengetuk",
+      "definition": "to knock (on the door)",
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "menyewa",
+      "definition": "to rent",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "menanam",
+      "definition": "to plant",
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "memperbaiki",
+      "definition": "to repair / to fix",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "berdoa",
+      "definition": "to pray",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "berharap",
+      "definition": "to hope",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "percaya",
+      "definition": "to believe / to trust",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "setuju",
+      "definition": "to agree / agreed",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "menolak",
+      "definition": "to refuse / to reject",
+      "tags": [
+        "daily-life",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "mengizinkan",
+      "definition": "to allow / to permit",
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "melarang",
+      "definition": "to forbid / to prohibit",
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "menghabiskan",
+      "definition": "to finish (up) / to spend (time, money) / to use up",
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "menikmati",
+      "definition": "to enjoy",
+      "tags": [
+        "daily-life",
+        "verb",
+        "b1"
+      ]
+    }
+  ]
+}

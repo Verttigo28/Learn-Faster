@@ -1,0 +1,281 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-travail-ecole",
+  "title": "Le travail et l'école",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya bekerja di kantor.",
+      "translation": "Je travaille dans un bureau.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Kantor saya di pusat kota.",
+      "translation": "Mon bureau est au centre-ville.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Saya guru bahasa Inggris.",
+      "translation": "Je suis professeur d'anglais.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Rapatnya mulai jam sembilan.",
+      "translation": "La réunion commence à neuf heures.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya sedang mencari pekerjaan.",
+      "translation": "Je cherche du travail.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2",
+        "aspect",
+        "me"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Bos saya sangat baik.",
+      "translation": "Mon patron est très gentil.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya sering lembur.",
+      "translation": "Je fais souvent des heures supplémentaires.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Anak saya kelas tiga SD.",
+      "translation": "Mon enfant est en troisième année de primaire.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Sekolah mulai jam tujuh pagi.",
+      "translation": "L'école commence à sept heures du matin.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Murid-murid sedang belajar matematika.",
+      "translation": "Les élèves étudient les maths.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1",
+        "aspect",
+        "ber"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya lupa mengerjakan PR.",
+      "translation": "J'ai oublié de faire mes devoirs.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Ujiannya sulit sekali.",
+      "translation": "L'examen était très difficile.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Saya lulus ujian.",
+      "translation": "J'ai réussi l'examen.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Guru itu menjelaskan pelajaran dengan jelas.",
+      "translation": "Ce professeur explique la leçon clairement.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya kuliah di Universitas Indonesia.",
+      "translation": "Je fais mes études à l'Université d'Indonésie.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Gajinya cukup besar.",
+      "translation": "Le salaire est assez élevé.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya mengirim email ke klien.",
+      "translation": "J'envoie un e-mail au client.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Laporan ini harus selesai hari ini.",
+      "translation": "Ce rapport doit être terminé aujourd'hui.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya libur hari Jumat.",
+      "translation": "Je suis en congé vendredi.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Dia bekerja sebagai perawat di rumah sakit.",
+      "translation": "Elle travaille comme infirmière à l'hôpital.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Perusahaan itu membuka lowongan baru.",
+      "translation": "Cette entreprise propose de nouveaux postes.",
+      "tags": [
+        "phrases",
+        "travail",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Rapat ditunda sampai minggu depan.",
+      "translation": "La réunion est reportée à la semaine prochaine.",
+      "tags": [
+        "phrases",
+        "travail",
+        "b1",
+        "passif"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Saya belum menyelesaikan tugas saya.",
+      "translation": "Je n'ai pas encore terminé mon travail.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Perpustakaan kampus buka sampai malam.",
+      "translation": "La bibliothèque du campus est ouverte jusqu'au soir.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Kami istirahat makan siang jam dua belas.",
+      "translation": "Nous faisons la pause déjeuner à midi.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Siswa wajib memakai seragam.",
+      "translation": "Les élèves doivent porter l'uniforme.",
+      "tags": [
+        "phrases",
+        "travail",
+        "a2",
+        "me"
+      ]
+    }
+  ]
+}

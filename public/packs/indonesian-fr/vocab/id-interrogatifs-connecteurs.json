@@ -1,0 +1,609 @@
+{
+  "type": "vocab_deck",
+  "id": "id-interrogatifs-connecteurs",
+  "title": "Mots interrogatifs et connecteurs",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "apa",
+      "definition": "quoi / que",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "siapa",
+      "definition": "qui",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "di mana",
+      "definition": "où (lieu)",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "ke mana",
+      "definition": "où (direction)",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "dari mana",
+      "definition": "d'où",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "kapan",
+      "definition": "quand",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "mengapa",
+      "definition": "pourquoi",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "kenapa",
+      "definition": "pourquoi (courant)",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "bagaimana",
+      "definition": "comment",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "berapa",
+      "definition": "combien",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "yang mana",
+      "definition": "lequel / laquelle",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "apakah",
+      "definition": "est-ce que",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "bukan?",
+      "definition": "n'est-ce pas ?",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "kan?",
+      "definition": "n'est-ce pas ? (familier)",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "berapa lama",
+      "definition": "combien de temps",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "berapa kali",
+      "definition": "combien de fois",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "untuk apa",
+      "definition": "pour quoi faire",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "dengan siapa",
+      "definition": "avec qui",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "punya siapa",
+      "definition": "à qui (appartenance)",
+      "tags": [
+        "interrogatifs",
+        "interrogatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "dan",
+      "definition": "et",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "atau",
+      "definition": "ou",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "tetapi",
+      "definition": "mais",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "tapi",
+      "definition": "mais (familier)",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "karena",
+      "definition": "parce que",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "sebab",
+      "definition": "car / parce que",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "jadi",
+      "definition": "donc / alors",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "kalau",
+      "definition": "si / quand (condition)",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "jika",
+      "definition": "si (formel)",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "supaya",
+      "definition": "pour que / afin que",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "agar",
+      "definition": "afin que",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "b1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "untuk",
+      "definition": "pour",
+      "tags": [
+        "interrogatifs",
+        "preposition",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "lalu",
+      "definition": "puis / ensuite",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "kemudian",
+      "definition": "ensuite",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "setelah",
+      "definition": "après (que)",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "sesudah",
+      "definition": "après",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "sebelum",
+      "definition": "avant (que)",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "ketika",
+      "definition": "lorsque / quand",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "sambil",
+      "definition": "tout en (faisant)",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "meskipun",
+      "definition": "bien que / même si",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "b1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "walaupun",
+      "definition": "bien que",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "b1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "padahal",
+      "definition": "alors que / pourtant",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "juga",
+      "definition": "aussi",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "hanya",
+      "definition": "seulement",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "saja",
+      "definition": "seulement / juste",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "bahkan",
+      "definition": "même (adverbe)",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "selain itu",
+      "definition": "de plus / en outre",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "oleh karena itu",
+      "definition": "c'est pourquoi",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "b1"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "misalnya",
+      "definition": "par exemple",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "yaitu",
+      "definition": "c'est-à-dire",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "b1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "bahwa",
+      "definition": "que (conjonction)",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "sehingga",
+      "definition": "si bien que",
+      "tags": [
+        "interrogatifs",
+        "conjonction",
+        "b1"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "tentang",
+      "definition": "à propos de",
+      "tags": [
+        "interrogatifs",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "seperti",
+      "definition": "comme",
+      "tags": [
+        "interrogatifs",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "daripada",
+      "definition": "que (comparaison) / plutôt que",
+      "tags": [
+        "interrogatifs",
+        "preposition",
+        "a2"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "lebih",
+      "definition": "plus",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "paling",
+      "definition": "le plus",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "sangat",
+      "definition": "très",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "sekali",
+      "definition": "très (après l'adjectif)",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "59",
+      "term": "terlalu",
+      "definition": "trop",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "60",
+      "term": "cukup",
+      "definition": "assez / suffisant",
+      "tags": [
+        "interrogatifs",
+        "adverbe",
+        "a2"
+      ]
+    }
+  ]
+}

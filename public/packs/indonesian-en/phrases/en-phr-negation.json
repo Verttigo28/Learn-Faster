@@ -1,0 +1,308 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-negation",
+  "title": "Negation: tidak, bukan, belum, jangan",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya tidak suka kopi.",
+      "translation": "I don't like coffee.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Dia tidak datang ke pesta.",
+      "translation": "He didn't come to the party.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Ini bukan tas saya.",
+      "translation": "This isn't my bag.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya bukan orang Inggris.",
+      "translation": "I'm not English.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Dia bukan guru, tetapi dokter.",
+      "translation": "He isn't a teacher, but a doctor.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Saya belum makan siang.",
+      "translation": "I haven't had lunch yet.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Kereta belum datang.",
+      "translation": "The train hasn't arrived yet.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Jangan merokok di sini.",
+      "translation": "Don't smoke here.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Jangan lupa mengunci pintu.",
+      "translation": "Don't forget to lock the door.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Restoran itu tidak mahal.",
+      "translation": "That restaurant isn't expensive.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Hari ini bukan hari Minggu.",
+      "translation": "Today isn't Sunday.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Saya tidak bisa berenang.",
+      "translation": "I can't swim.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Kami tidak punya mobil.",
+      "translation": "We don't have a car.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Itu bukan masalah.",
+      "translation": "That's not a problem.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya belum pernah ke Lombok.",
+      "translation": "I've never been to Lombok.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Jangan berisik, bayinya tidur.",
+      "translation": "Don't make noise, the baby is sleeping.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Dia tidak pernah terlambat.",
+      "translation": "He is never late.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Airnya tidak terlalu dingin.",
+      "translation": "The water isn't too cold.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Bukan saya yang mengambil uang itu.",
+      "translation": "It wasn't me who took that money.",
+      "tags": [
+        "sentences",
+        "negation",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya tidak mau pulang.",
+      "translation": "I don't want to go home.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Tolong jangan parkir di depan pintu.",
+      "translation": "Please don't park in front of the door.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Belum ada kabar dari dia.",
+      "translation": "There's no news from him yet.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Dia bukan adik saya, tetapi sepupu saya.",
+      "translation": "He isn't my younger brother, but my cousin.",
+      "tags": [
+        "sentences",
+        "negation",
+        "b1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Saya tidak tahu jawabannya.",
+      "translation": "I don't know the answer.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Tidak ada orang di rumah.",
+      "translation": "There's nobody at home.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Jangan menyentuh lukisan itu.",
+      "translation": "Don't touch that painting.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Toko itu belum buka.",
+      "translation": "That shop isn't open yet.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Saya sudah tidak lapar lagi.",
+      "translation": "I'm not hungry anymore.",
+      "tags": [
+        "sentences",
+        "negation",
+        "b1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "29",
+      "text": "Kamu tidak boleh masuk.",
+      "translation": "You're not allowed to come in.",
+      "tags": [
+        "sentences",
+        "negation",
+        "a1"
+      ]
+    }
+  ]
+}

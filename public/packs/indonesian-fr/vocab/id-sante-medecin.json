@@ -1,0 +1,479 @@
+{
+  "type": "vocab_deck",
+  "id": "id-sante-medecin",
+  "title": "Santé et médecin",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "sakit",
+      "definition": "malade / avoir mal",
+      "tags": [
+        "sante",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "sehat",
+      "definition": "en bonne santé",
+      "tags": [
+        "sante",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "dokter",
+      "definition": "médecin",
+      "tags": [
+        "sante",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "dokter gigi",
+      "definition": "dentiste",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "perawat",
+      "definition": "infirmier / infirmière",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "rumah sakit",
+      "definition": "hôpital",
+      "tags": [
+        "sante",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "klinik",
+      "definition": "clinique",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "puskesmas",
+      "definition": "centre de santé public",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "apotek",
+      "definition": "pharmacie",
+      "tags": [
+        "sante",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "obat",
+      "definition": "médicament",
+      "tags": [
+        "sante",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "resep",
+      "definition": "ordonnance",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "demam",
+      "definition": "fièvre",
+      "tags": [
+        "sante",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "batuk",
+      "definition": "toux / tousser",
+      "tags": [
+        "sante",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "pilek",
+      "definition": "rhume",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "flu",
+      "definition": "grippe",
+      "tags": [
+        "sante",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "pusing",
+      "definition": "avoir le vertige / mal de tête",
+      "tags": [
+        "sante",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "sakit kepala",
+      "definition": "mal de tête",
+      "tags": [
+        "sante",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "sakit perut",
+      "definition": "mal de ventre",
+      "tags": [
+        "sante",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "sakit gigi",
+      "definition": "mal de dents",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "diare",
+      "definition": "diarrhée",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "mual",
+      "definition": "nausée / avoir la nausée",
+      "tags": [
+        "sante",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "muntah",
+      "definition": "vomir",
+      "tags": [
+        "sante",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "luka",
+      "definition": "blessure",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "berdarah",
+      "definition": "saigner",
+      "tags": [
+        "sante",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "patah tulang",
+      "definition": "fracture",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "alergi",
+      "definition": "allergie",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "gatal",
+      "definition": "qui démange",
+      "tags": [
+        "sante",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "bengkak",
+      "definition": "enflé / gonflé",
+      "tags": [
+        "sante",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "masuk angin",
+      "definition": "coup de froid / malaise",
+      "tags": [
+        "sante",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "demam berdarah",
+      "definition": "dengue",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "minum obat",
+      "definition": "prendre un médicament",
+      "tags": [
+        "sante",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "istirahat",
+      "definition": "se reposer / repos",
+      "tags": [
+        "sante",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "periksa",
+      "definition": "examiner / consulter",
+      "tags": [
+        "sante",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "suntik",
+      "definition": "piqûre / injection",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "pil",
+      "definition": "pilule / comprimé",
+      "tags": [
+        "sante",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "salep",
+      "definition": "pommade",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "perban",
+      "definition": "bandage",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "plester",
+      "definition": "pansement",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "termometer",
+      "definition": "thermomètre",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "sembuh",
+      "definition": "guérir",
+      "tags": [
+        "sante",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "pingsan",
+      "definition": "s'évanouir",
+      "tags": [
+        "sante",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "darah tinggi",
+      "definition": "hypertension",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "diabetes",
+      "definition": "diabète",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "gejala",
+      "definition": "symptôme",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "asuransi kesehatan",
+      "definition": "assurance santé",
+      "tags": [
+        "sante",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "Sakitnya di sini",
+      "definition": "j'ai mal ici",
+      "tags": [
+        "sante",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "Semoga cepat sembuh",
+      "definition": "prompt rétablissement",
+      "tags": [
+        "sante",
+        "expression",
+        "a2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-se-presenter",
+  "title": "Se présenter",
+  "items": [
+    {
+      "id": "1",
+      "text": "Nama saya Budi.",
+      "translation": "Je m'appelle Budi.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Saya berasal dari Prancis.",
+      "translation": "Je viens de France.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Saya orang Prancis.",
+      "translation": "Je suis français.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya tinggal di Paris.",
+      "translation": "J'habite à Paris.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Umur saya dua puluh lima tahun.",
+      "translation": "J'ai vingt-cinq ans.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Saya bekerja sebagai guru.",
+      "translation": "Je travaille comme professeur.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya belajar bahasa Indonesia.",
+      "translation": "J'apprends l'indonésien.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Saya sudah menikah.",
+      "translation": "Je suis marié.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Saya belum menikah.",
+      "translation": "Je ne suis pas encore marié.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1",
+        "negation",
+        "aspect"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Saya punya dua anak.",
+      "translation": "J'ai deux enfants.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Siapa nama Anda?",
+      "translation": "Comment vous appelez-vous ?",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Anda berasal dari mana?",
+      "translation": "D'où venez-vous ?",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1",
+        "question",
+        "ber"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Apa pekerjaan Anda?",
+      "translation": "Quel est votre métier ?",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Saya senang berkenalan dengan Anda.",
+      "translation": "Je suis ravi de faire votre connaissance.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Hobi saya membaca buku.",
+      "translation": "Mon passe-temps, c'est la lecture.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Saya bisa berbicara sedikit bahasa Indonesia.",
+      "translation": "Je parle un peu indonésien.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya lahir di Lyon.",
+      "translation": "Je suis né à Lyon.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Saya datang ke Indonesia untuk berlibur.",
+      "translation": "Je suis venu en Indonésie pour les vacances.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Ini pertama kalinya saya ke Indonesia.",
+      "translation": "C'est la première fois que je viens en Indonésie.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya mahasiswa di Universitas Sorbonne.",
+      "translation": "Je suis étudiant à la Sorbonne.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Saya tidak bisa berbahasa Jawa.",
+      "translation": "Je ne parle pas javanais.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a2",
+        "negation",
+        "ber"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya sudah tinggal di sini selama dua tahun.",
+      "translation": "J'habite ici depuis deux ans.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Perkenalkan, nama saya Marie.",
+      "translation": "Permettez-moi de me présenter, je m'appelle Marie.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Saya suka makanan Indonesia.",
+      "translation": "J'aime la cuisine indonésienne.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Bahasa Indonesia saya masih kurang lancar.",
+      "translation": "Mon indonésien n'est pas encore très fluide.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Istri saya orang Indonesia.",
+      "translation": "Ma femme est indonésienne.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Saya anak tunggal.",
+      "translation": "Je suis enfant unique.",
+      "tags": [
+        "phrases",
+        "presentation",
+        "a1"
+      ]
+    }
+  ]
+}

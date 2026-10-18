@@ -1,0 +1,479 @@
+{
+  "type": "vocab_deck",
+  "id": "en-city-places",
+  "title": "The city and places",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "kota",
+      "definition": "city / town",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "desa",
+      "definition": "village",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "kampung",
+      "definition": "village / neighborhood / kampung",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "jalan",
+      "definition": "street / road",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "jalan raya",
+      "definition": "main road / highway",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "gang",
+      "definition": "alley / lane",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "perempatan",
+      "definition": "intersection / crossroads",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "lampu merah",
+      "definition": "traffic light / red light",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "jembatan",
+      "definition": "bridge",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "taman",
+      "definition": "park / garden",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "pasar",
+      "definition": "market",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "supermarket",
+      "definition": "supermarket",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "toko",
+      "definition": "shop / store",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "mal",
+      "definition": "mall / shopping center",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "bank",
+      "definition": "bank",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "kantor",
+      "definition": "office",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "kantor pos",
+      "definition": "post office",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "kantor polisi",
+      "definition": "police station",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "sekolah",
+      "definition": "school",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "universitas",
+      "definition": "university",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "rumah sakit",
+      "definition": "hospital",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "apotek",
+      "definition": "pharmacy / drugstore",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "masjid",
+      "definition": "mosque",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "gereja",
+      "definition": "church",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "pura",
+      "definition": "Hindu temple / pura",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "vihara",
+      "definition": "Buddhist temple / vihara",
+      "tags": [
+        "city",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "klenteng",
+      "definition": "Chinese temple",
+      "tags": [
+        "city",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "museum",
+      "definition": "museum",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "perpustakaan",
+      "definition": "library",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "bioskop",
+      "definition": "cinema / movie theater",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "stasiun",
+      "definition": "station / train station",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "terminal",
+      "definition": "bus terminal / bus station",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "bandara",
+      "definition": "airport",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "pelabuhan",
+      "definition": "harbor / port",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "pantai",
+      "definition": "beach",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "alun-alun",
+      "definition": "town square / main square",
+      "tags": [
+        "city",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "pom bensin",
+      "definition": "gas station / petrol station",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "tempat parkir",
+      "definition": "parking lot / car park",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "trotoar",
+      "definition": "sidewalk / pavement",
+      "tags": [
+        "city",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "gedung",
+      "definition": "building",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "pabrik",
+      "definition": "factory",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "kedutaan besar",
+      "definition": "embassy",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "pusat kota",
+      "definition": "city center / downtown",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "provinsi",
+      "definition": "province",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "ibu kota",
+      "definition": "capital / capital city",
+      "tags": [
+        "city",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "peta",
+      "definition": "map",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "alamat",
+      "definition": "address",
+      "tags": [
+        "city",
+        "noun",
+        "a1"
+      ]
+    }
+  ]
+}

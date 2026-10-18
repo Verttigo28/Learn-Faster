@@ -1,0 +1,699 @@
+{
+  "type": "vocab_deck",
+  "id": "en-common-adjectives",
+  "title": "Common adjectives and opposites",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "besar",
+      "definition": "big / large",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "kecil",
+      "definition": "small / little",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "panjang",
+      "definition": "long",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "pendek",
+      "definition": "short",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "tinggi",
+      "definition": "tall / high",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "rendah",
+      "definition": "low",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "gemuk",
+      "definition": "fat (person)",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "kurus",
+      "definition": "thin / skinny",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "langsing",
+      "definition": "slim / slender",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "cantik",
+      "definition": "beautiful / pretty",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "tampan",
+      "definition": "handsome",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "ganteng",
+      "definition": "handsome (informal) / good-looking",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "jelek",
+      "definition": "ugly",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "bagus",
+      "definition": "good / nice / beautiful",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "baik",
+      "definition": "good / kind",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "buruk",
+      "definition": "bad",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "jahat",
+      "definition": "evil / wicked / mean",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "baru",
+      "definition": "new",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "lama",
+      "definition": "old (not new) / long (time)",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "tua",
+      "definition": "old (age) / elderly",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "muda",
+      "definition": "young",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "cepat",
+      "definition": "fast / quick / quickly",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "lambat",
+      "definition": "slow",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "pelan",
+      "definition": "slow / slowly / softly",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "mudah",
+      "definition": "easy",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "gampang",
+      "definition": "easy (informal)",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "sulit",
+      "definition": "difficult / hard",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "susah",
+      "definition": "difficult / hard (everyday)",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "panas",
+      "definition": "hot",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "dingin",
+      "definition": "cold",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "bersih",
+      "definition": "clean",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "kotor",
+      "definition": "dirty",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "ramai",
+      "definition": "busy / crowded / lively",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "sepi",
+      "definition": "quiet / deserted",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "tenang",
+      "definition": "calm / peaceful",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "berisik",
+      "definition": "noisy",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "kaya",
+      "definition": "rich",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "miskin",
+      "definition": "poor",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "kuat",
+      "definition": "strong",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "lemah",
+      "definition": "weak",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "berat",
+      "definition": "heavy",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "ringan",
+      "definition": "light (weight)",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "penuh",
+      "definition": "full",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "kosong",
+      "definition": "empty",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "basah",
+      "definition": "wet",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "kering",
+      "definition": "dry",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "terang",
+      "definition": "bright / light",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "gelap",
+      "definition": "dark",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "dekat",
+      "definition": "near / close",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "jauh",
+      "definition": "far",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "benar",
+      "definition": "true / correct / right",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "salah",
+      "definition": "wrong / incorrect",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "sama",
+      "definition": "same / alike",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "berbeda",
+      "definition": "different",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "pintar",
+      "definition": "smart / clever / intelligent",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "bodoh",
+      "definition": "stupid",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "rajin",
+      "definition": "diligent / hardworking",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "malas",
+      "definition": "lazy",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "59",
+      "term": "sibuk",
+      "definition": "busy",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "60",
+      "term": "tebal",
+      "definition": "thick",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "61",
+      "term": "tipis",
+      "definition": "thin (object)",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "62",
+      "term": "lebar",
+      "definition": "wide / broad",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "63",
+      "term": "sempit",
+      "definition": "narrow",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "64",
+      "term": "lunak",
+      "definition": "soft",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "65",
+      "term": "tajam",
+      "definition": "sharp",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "66",
+      "term": "tumpul",
+      "definition": "blunt / dull",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "67",
+      "term": "penting",
+      "definition": "important",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "68",
+      "term": "menarik",
+      "definition": "interesting",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "69",
+      "term": "membosankan",
+      "definition": "boring",
+      "tags": [
+        "adjectives",
+        "adjective",
+        "a2"
+      ]
+    }
+  ]
+}

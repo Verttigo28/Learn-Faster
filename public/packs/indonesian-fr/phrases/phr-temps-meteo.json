@@ -1,0 +1,267 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-temps-meteo",
+  "title": "Le temps et la météo",
+  "items": [
+    {
+      "id": "1",
+      "text": "Cuaca hari ini cerah.",
+      "translation": "Il fait beau aujourd'hui.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Di luar sedang hujan.",
+      "translation": "Il pleut dehors.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Udaranya panas sekali.",
+      "translation": "Il fait très chaud.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Sepertinya akan hujan.",
+      "translation": "On dirait qu'il va pleuvoir.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Indonesia punya dua musim.",
+      "translation": "L'Indonésie a deux saisons.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Musim hujan mulai bulan November.",
+      "translation": "La saison des pluies commence en novembre.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Musim kemarau sangat kering.",
+      "translation": "La saison sèche est très aride.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Jangan lupa bawa payung.",
+      "translation": "N'oublie pas de prendre un parapluie.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Udara di Bandung sejuk.",
+      "translation": "L'air est frais à Bandung.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Langitnya mendung sekali.",
+      "translation": "Le ciel est très couvert.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Anginnya kencang sekali.",
+      "translation": "Le vent est très fort.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Hujan deras menyebabkan banjir di Jakarta.",
+      "translation": "Les fortes pluies ont provoqué des inondations à Jakarta.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Suhunya tiga puluh lima derajat.",
+      "translation": "Il fait trente-cinq degrés.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Saya kepanasan di sini.",
+      "translation": "J'ai trop chaud ici.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Bagaimana cuaca di Prancis?",
+      "translation": "Quel temps fait-il en France ?",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Prancis punya empat musim.",
+      "translation": "La France a quatre saisons.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Hujannya sudah berhenti.",
+      "translation": "La pluie s'est arrêtée.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1",
+        "aspect",
+        "ber"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Matahari bersinar terang.",
+      "translation": "Le soleil brille fort.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Pakai jaket karena udaranya dingin.",
+      "translation": "Mets une veste, car il fait froid.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya basah kuyup karena hujan.",
+      "translation": "Je suis trempé à cause de la pluie.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Cuaca di Bali selalu hangat.",
+      "translation": "Il fait toujours chaud à Bali.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Kelembapan di Jakarta sangat tinggi.",
+      "translation": "L'humidité est très élevée à Jakarta.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "b1"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Ramalan cuaca mengatakan akan turun hujan.",
+      "translation": "La météo annonce de la pluie.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Hujan turun sejak pagi.",
+      "translation": "Il pleut depuis ce matin.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Gunung itu tertutup kabut.",
+      "translation": "Cette montagne est couverte de brouillard.",
+      "tags": [
+        "phrases",
+        "meteo",
+        "b1",
+        "ter"
+      ]
+    }
+  ]
+}
