@@ -57,6 +57,19 @@ One commit per phase on the `improvements` branch, with build and tests green.
 - [x] Indonesian starter packs (English + French editions): 34 vocab decks (~1,700 words), 18 grammar quizzes (~390 questions), 20 sentence decks (~540 sentences), one-click install
 - [x] Mobile: single-row scrollable navigation
 
+## Phase 8 — Design and new features
+- [x] New visual identity: indigo + turmeric palette, Atkinson Hyperlegible + Bricolage Grotesque (bundled offline), index-card flashcards with flip animation
+- [x] Home redesign: "Today" (review call to action, goal ring, streak, mastered words), practice modes, decks with progress
+- [x] Vocabulary library (search, progress, due counts) and two-column deck page with word status and audio
+- [x] Match game
+- [x] Retry mistakes after practice sessions and quizzes
+- [x] 20-week activity heatmap and best streak
+- [x] Generator: tag search, level chips, matching-items count
+- [x] Keyboard shortcuts help (`?`) and `g` navigation
+- [x] Export and reset moved to Settings
+- [x] Flashcard sessions recorded card by card (no lost history when leaving early)
+- [x] Text-to-speech: correct voice per language (Android `in-ID`), no wrong-language fallback
+
 ## Ideas for later
 - Accept several valid word orders for sentences that allow it
 - Upgrade the dev toolchain (Vite 6+, Vitest 4, Tailwind 4) to clear the remaining dev-only audit warnings

@@ -10,13 +10,13 @@ Available as a **web app (PWA, works offline)** and an **Android app** (Capacito
 
 - **Vocabulary decks** with tags, editable in the app
 - **Spaced repetition (SM-2)**: daily review across all decks, 4 answer levels (Again / Hard / Good / Easy) with the next interval shown, reverse direction (translation → term), configurable new cards per day
-- **Exercises**: multiple choice, **typed answers** (tolerant to case, accents, listed alternatives and one typo), **word order**, **cloze** (fill in the blank), **dictation** (text-to-speech)
+- **Exercises**: multiple choice, **typed answers** (tolerant to case, accents, listed alternatives and one typo), **word order**, **cloze** (fill in the blank), **dictation** (text-to-speech), **match game** (pair words with their meaning against the clock), and **retry mistakes** at the end of any session
 - **Quizzes (QCM)** with explanations and an optional timer
-- **Session generator** by tags and sources (vocab / quizzes / sentences / typed / cloze / dictation)
-- **Stats**: streak, 30-day activity chart, per-deck progress (new / learning / mastered), hardest words, full history with per-question corrections and **PDF export**
+- **Session generator** by tags, level (A1 / A2 / B1) and sources, with tag search and a live count of matching items
+- **Stats**: streak and best streak, 20-week activity calendar, 30-day chart, per-deck progress (new / learning / mastered), hardest words, full history with per-question corrections and **PDF export**
 - **Import / export**: JSON (single deck or full backup including SRS progress), **CSV / TSV** (Anki "Notes in Plain Text", Quizlet, spreadsheets), from a file, a URL or pasted text
 - **Starter packs**: one click installs a complete Indonesian course (see below)
-- Global search, daily goal, backup reminder, light / dark / system theme, keyboard shortcuts
+- Deck library with search, progress bars and due counts; global search; daily goal; backup reminder; light / dark / system theme; keyboard shortcuts (`?` shows them)
 
 ## Starter packs
 
@@ -83,6 +83,7 @@ CSV / TSV (vocab): columns `term`, `definition`, optional `tags` (space, `|` or 
 
 ## Keyboard shortcuts
 
+- Everywhere: `?` help, `g h` home, `g r` today's review, `g s` search
 - Flashcards: `Space` flip, `1`–`4` grade
 - Quizzes: `1`–`9` answer, `←` / `→` navigate
 - Generated sessions: `Enter` check / next, `1`–`9` pick an answer
