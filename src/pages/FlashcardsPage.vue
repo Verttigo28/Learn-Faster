@@ -153,12 +153,6 @@ async function grade(g: Grade) {
   if (!c || !flipped.value) return;
 
   const next = schedule(c.review, g);
-  try {
-    await saveReview(toRaw(next));
-  } catch (e) {
-    console.error("SRS save failed:", e);
-    toast("Erreur lors de l'enregistrement de la révision.", "danger");
-  }
 
   if (!seen.has(c.review.cardId)) {
     seen.add(c.review.cardId);
@@ -175,10 +169,18 @@ async function grade(g: Grade) {
     });
   }
 
+  // Advance synchronously so a double click / repeated key cannot grade the next card twice.
   queue.value.shift();
   // "À revoir" en mode révision : la carte revient en fin de session.
   if (g === 0 && reviewMode.value) queue.value.push({ ...c, review: next, isNew: false });
   flipped.value = false;
+
+  try {
+    await saveReview(toRaw(next));
+  } catch (e) {
+    console.error("SRS save failed:", e);
+    toast("Erreur lors de l'enregistrement de la révision.", "danger");
+  }
 
   if (queue.value.length === 0) await finish();
 }
@@ -234,6 +236,14 @@ function onKeydown(e: KeyboardEvent) {
   const g = grades.find((x) => x.key === e.key);
   if (g && flipped.value) grade(g.grade);
 }
+
+// Same component for /review, /deck/:id/flash and their query variants: reload when they change.
+watch(
+  () => [route.path, route.query.mode, route.query.dir],
+  () => {
+    if (route.path === "/review" || route.path.endsWith("/flash")) load();
+  }
+);
 
 useSessionGuard(() => !showResultModal.value && total.value > 0);
 

@@ -20,12 +20,25 @@ describe("schedule (SM-2)", () => {
 
   it("grows the interval on repeated Good answers", () => {
     let s = newReview(item);
+    let t = NOW;
     const intervals: number[] = [];
     for (let i = 0; i < 4; i++) {
-      s = schedule(s, 2, NOW + i * DAY);
+      s = schedule(s, 2, t);
       intervals.push(s.interval);
+      t = s.due; // review on the due date
     }
     expect(intervals).toEqual([1, 3, 8, 20]);
+  });
+
+  it("does not inflate intervals when a card is reviewed early", () => {
+    const s = { ...schedule(newReview(item), 2, NOW), interval: 30, due: NOW + 30 * DAY };
+    const crammed = schedule(s, 2, NOW + DAY);
+    expect(crammed.interval).toBe(30);
+    const easy = schedule(s, 3, NOW + DAY);
+    expect(easy.interval).toBe(30);
+    expect(easy.ease).toBe(s.ease);
+    // on time it grows normally
+    expect(schedule(s, 2, NOW + 30 * DAY).interval).toBe(75);
   });
 
   it("resets on Again and lowers ease, counting a lapse only after a success", () => {

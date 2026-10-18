@@ -14,6 +14,12 @@ export function cardId(itemId: string, direction: Direction = "forward"): string
   return direction === "forward" ? itemId : `${itemId}#rev`;
 }
 
+export function startOfDay(now: number): number {
+  const d = new Date(now);
+  d.setHours(0, 0, 0, 0);
+  return d.getTime();
+}
+
 export function endOfDay(now: number): number {
   const d = new Date(now);
   d.setHours(23, 59, 59, 999);
@@ -53,15 +59,23 @@ export function schedule(state: ReviewState, grade: Grade, now = Date.now()): Re
   }
 
   const prev = state.interval;
+  // Reviewed before its due day (e.g. "réviser tout le deck"): grow from the time really elapsed,
+  // never below the current interval, so cramming does not push cards months away.
+  const early = prev > 0 && state.due > endOfDay(now);
+  const elapsed = Math.max(0, (now - state.lastReviewed) / DAY);
   let interval: number;
   if (grade === 1) {
-    interval = prev === 0 ? 1 : Math.max(prev + 1, Math.round(prev * 1.2));
+    interval = prev === 0 ? 1 : early ? prev : Math.max(prev + 1, Math.round(prev * 1.2));
     s.ease = Math.max(MIN_EASE, state.ease - 0.15);
   } else if (grade === 2) {
-    interval = prev === 0 ? 1 : Math.max(prev + 1, Math.round(prev * state.ease));
+    interval = prev === 0 ? 1 : early
+      ? Math.max(prev, Math.round(elapsed * state.ease))
+      : Math.max(prev + 1, Math.round(prev * state.ease));
   } else {
-    interval = prev === 0 ? 4 : Math.max(prev + 2, Math.round(prev * state.ease * 1.3));
-    s.ease = state.ease + 0.15;
+    interval = prev === 0 ? 4 : early
+      ? Math.max(prev, Math.round(elapsed * state.ease * 1.3))
+      : Math.max(prev + 2, Math.round(prev * state.ease * 1.3));
+    if (!early) s.ease = state.ease + 0.15;
   }
 
   s.reps = state.reps + 1;
@@ -103,10 +117,10 @@ export async function buildReviewQueue(opts: { deckId?: string; direction?: Dire
   });
 
   const newPerDay = await getSetting("newPerDay");
-  const startOfDay = endOfDay(now) - DAY + 1;
+  const dayStart = startOfDay(now);
   const startedToday = await db.reviews
     .where("introducedAt")
-    .aboveOrEqual(startOfDay)
+    .aboveOrEqual(dayStart)
     .filter((r) => r.direction === direction)
     .count();
   const newBudget = Math.max(0, newPerDay - startedToday);

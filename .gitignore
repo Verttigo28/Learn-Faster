@@ -6,3 +6,5 @@ android
 *.tsbuildinfo
 dev-dist
 coverage
+test-results
+playwright-report

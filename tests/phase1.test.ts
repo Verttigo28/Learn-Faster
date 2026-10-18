@@ -117,3 +117,11 @@ describe("migration v3 -> v4", () => {
     await Dexie.delete(name);
   });
 });
+
+describe("empty sentence decks", () => {
+  it("are kept in the export", async () => {
+    await importSentenceDeck({ type: "sentence_deck", id: "empty", title: "Vide", items: [] });
+    const exported = await exportAllData();
+    expect(exported.sentenceDecks).toEqual([{ type: "sentence_deck", id: "empty", title: "Vide", items: [] }]);
+  });
+});

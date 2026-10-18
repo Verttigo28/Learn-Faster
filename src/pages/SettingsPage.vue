@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from "vue";
+import { onMounted, onUnmounted, ref, watch } from "vue";
 import { DEFAULT_SETTINGS, getAllSettings, setSetting, type Settings } from "../services/settings";
 import { applyTheme } from "../services/theme";
 import { speechSupported } from "../services/speech";
@@ -9,9 +9,11 @@ import { formatDate } from "../utils/time";
 const s = ref<Settings>({ ...DEFAULT_SETTINGS });
 const loaded = ref(false);
 const canSpeak = speechSupported();
+let savedTheme = (document.documentElement.dataset.theme as Settings["theme"] | undefined) ?? DEFAULT_SETTINGS.theme;
 
 async function load() {
   s.value = await getAllSettings();
+  savedTheme = s.value.theme;
   loaded.value = true;
 }
 
@@ -29,6 +31,7 @@ async function save() {
     setSetting("theme", s.value.theme),
     setSetting("autoSpeak", s.value.autoSpeak)
   ]);
+  savedTheme = s.value.theme;
   toast("Réglages enregistrés ✅", "ok");
 }
 
@@ -36,6 +39,8 @@ async function save() {
 watch(() => s.value.theme, (t) => { if (loaded.value) applyTheme(t); });
 
 onMounted(load);
+// Leaving without saving: drop the theme preview.
+onUnmounted(() => applyTheme(savedTheme));
 </script>
 
 <template>

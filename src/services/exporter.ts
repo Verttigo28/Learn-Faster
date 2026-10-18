@@ -70,11 +70,13 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
         byDeck.set(deckId, items);
     }
 
-    const sentenceDeckJson: SentenceDeckJson[] = Array.from(byDeck.entries()).map(([id, items]) => ({
+    // Every stored deck (even empty), plus orphan groups whose deck row is missing.
+    const deckIds = [...sentenceDecks.map((d) => d.id), ...[...byDeck.keys()].filter((id) => !titles.has(id))];
+    const sentenceDeckJson: SentenceDeckJson[] = deckIds.map((id) => ({
         type: "sentence_deck",
         id,
         title: titles.get(id) ?? (id === MANUAL_SENTENCE_DECK_ID ? "Mes phrases" : id),
-        items
+        items: byDeck.get(id) ?? []
     }));
 
     return {
