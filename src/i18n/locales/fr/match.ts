@@ -1,5 +1,37 @@
 import type en from "../en/match";
 
 export default {
-  title: "Associer"
+  title: "Associer",
+  allDecks: "Tous les decks",
+  tags: "tags : {tags}",
+  reversed: "sens inverse",
+  deckNotFound: "Deck introuvable",
+  notEnough: "Pas assez de mots pour jouer",
+  notEnoughHint: "Il faut au moins 2 mots avec une définition. Importe un deck ou ajoute des mots.",
+  importLink: "Importer",
+  vocabLink: "Mon vocabulaire",
+  round: "Manche {current}/{total}",
+  reviewRound: "Révision des erreurs",
+  instructions: "Choisis un mot à gauche, puis sa traduction à droite.",
+  terms: "Mots",
+  definitions: "Sens",
+  time: "Temps",
+  mistakes: "Erreurs",
+  mistakesCount: "{count} erreur | {count} erreurs",
+  progress: "{done}/{total} paires",
+  soundOn: "🔊 Son activé",
+  soundOff: "🔊 Son coupé",
+  matched: "associé",
+  selected: "sélectionné",
+  correctLive: "Bravo : {left} = {right}",
+  wrongLive: "Ce n'est pas une paire : {left} / {right}",
+  resultTitle: "Résultat — Associer",
+  accuracy: "Précision",
+  firstTry: "{correct}/{total} paires du premier coup",
+  bestTime: "Meilleur temps",
+  newBest: "Nouveau record !",
+  noBest: "Première partie",
+  playAgain: "Rejouer",
+  reviewMistakes: "Revoir mes erreurs",
+  perfect: "Aucune erreur, bravo !"
 } satisfies typeof en;
