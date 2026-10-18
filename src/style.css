@@ -2,156 +2,178 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ------------------------------------------------------------
-   Design tokens (RGB)
-   Format "R G B" pour permettre les /alpha (bg-card/70 etc.)
------------------------------------------------------------- */
+/* ============================================================
+   Design system
+   - Palette from batik dyes: indigo night + turmeric accent.
+   - Index-card ivory is reserved for flashcards (the one bold element).
+   - Radius hierarchy: panels 16px, controls 10px, index card 6px, chips full.
+   Tokens are "R G B" so Tailwind can add alpha (bg-card/70…).
+============================================================ */
 @layer base {
     :root{
-        --bg: 11 16 32;
-        --card: 17 26 51;
-        --text: 231 236 255;
-        --muted: 169 180 228;
-        --accent: 122 162 255;
-        --danger: 255 107 107;
-        --ok: 61 220 151;
+        --bg: 21 26 61;          /* indigo night  #151a3d */
+        --card: 31 37 82;        /* raised indigo #1f2552 */
+        --text: 238 239 250;
+        --muted: 168 173 214;
+        --accent: 242 182 50;    /* turmeric      #f2b632 */
+        --accent-text: 245 196 92;
+        --accent-ink: 21 26 61;  /* text on turmeric fills */
+        --danger: 255 112 112;
+        --ok: 63 207 142;
         --border: 255 255 255;
-        --sunken: 0 0 0;
+        --sunken: 8 11 32;
+        --paper: 251 247 238;    /* index card    #fbf7ee */
+        --ink: 29 35 80;
+        --rule: 225 92 92;       /* index card red rule */
         color-scheme: dark;
     }
 
-    /* Thème clair : data-theme="light", ou "system" quand l'OS est en clair */
+    /* Light theme: data-theme="light", or "system" when the OS is light */
     :root[data-theme="light"]{
-        --bg: 241 244 251;
+        --bg: 238 238 246;
         --card: 255 255 255;
-        --text: 17 24 39;
-        --muted: 75 85 120;
-        --accent: 59 102 222;
-        --danger: 214 48 49;
-        --ok: 16 150 96;
-        --border: 15 23 42;
-        --sunken: 255 255 255;
+        --text: 27 31 69;
+        --muted: 88 94 135;
+        --accent: 236 170 32;
+        --accent-text: 140 95 0;
+        --accent-ink: 27 31 69;
+        --danger: 200 45 45;
+        --ok: 12 140 88;
+        --border: 27 31 69;
+        --sunken: 246 246 252;
+        --paper: 255 252 243;
+        --ink: 29 35 80;
+        --rule: 214 80 80;
         color-scheme: light;
     }
     @media (prefers-color-scheme: light){
         :root[data-theme="system"]{
-            --bg: 241 244 251;
+            --bg: 238 238 246;
             --card: 255 255 255;
-            --text: 17 24 39;
-            --muted: 75 85 120;
-            --accent: 59 102 222;
-            --danger: 214 48 49;
-            --ok: 16 150 96;
-            --border: 15 23 42;
-            --sunken: 255 255 255;
+            --text: 27 31 69;
+            --muted: 88 94 135;
+            --accent: 236 170 32;
+            --accent-text: 140 95 0;
+            --accent-ink: 27 31 69;
+            --danger: 200 45 45;
+            --ok: 12 140 88;
+            --border: 27 31 69;
+            --sunken: 246 246 252;
+            --paper: 255 252 243;
+            --ink: 29 35 80;
+            --rule: 214 80 80;
             color-scheme: light;
         }
     }
 
     *{ box-sizing: border-box; }
     html, body, #app { height: 100%; }
-
-    /* évite un fond blanc injecté par UA/webview */
     #app{ background: transparent; }
 
-    html{
-        background-color: rgb(var(--bg));
-        background-image:
-                radial-gradient(1200px 800px at 20% 10%, rgb(var(--accent) / 0.25), transparent 60%),
-                radial-gradient(900px 700px at 90% 10%, rgb(var(--ok) / 0.18), transparent 55%);
-        background-attachment: fixed;
-    }
+    html{ background-color: rgb(var(--bg)); }
 
     body{
         margin: 0;
-        overflow: hidden; /* ✅ pas de scroll global */
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+        overflow: hidden; /* pages manage their own scroll areas */
+        font-family: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 15px;
+        line-height: 1.45;
         background-color: rgb(var(--bg));
-        background-image:
-                radial-gradient(1200px 800px at 20% 10%, rgb(var(--accent) / 0.25), transparent 60%),
-                radial-gradient(900px 700px at 90% 10%, rgb(var(--ok) / 0.18), transparent 55%);
-        background-attachment: fixed;
+        color: rgb(var(--text));
+        -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, .display{
+        font-family: "Bricolage Grotesque Variable", "Atkinson Hyperlegible", system-ui, sans-serif;
+        letter-spacing: -0.01em;
+        line-height: 1.15;
         color: rgb(var(--text));
     }
+    h1{ font-size: 1.75rem; font-weight: 800; margin: 0 0 .25rem; }
+    h2{ font-size: 1.3rem; font-weight: 700; margin: 0 0 .35rem; }
+    h3{ font-size: 1.05rem; font-weight: 650; margin: 0 0 .25rem; }
 
     a{ color: inherit; text-decoration: none; }
     a:hover{ text-decoration: underline; }
 
+    :focus-visible{ outline: 2px solid rgb(var(--accent)); outline-offset: 2px; }
+
     html.no-scroll, body.no-scroll{ overflow: hidden; }
+
+    @media (prefers-reduced-motion: reduce){
+        *, *::before, *::after{ transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
 }
 
 @layer components{
     /* --------------------------------------------------------
-       Layout global
+       App shell
     -------------------------------------------------------- */
-    .appShell{
-        @apply h-[100dvh] flex flex-col overflow-hidden;
-        background-color: rgb(var(--bg));
-        background-image:
-                radial-gradient(1200px 800px at 20% 10%, rgb(var(--accent) / 0.25), transparent 60%),
-                radial-gradient(900px 700px at 90% 10%, rgb(var(--ok) / 0.18), transparent 55%);
-        background-attachment: fixed;
-    }
-
+    .appShell{ @apply h-[100dvh] flex flex-col overflow-hidden bg-bg; }
     .appMain{ @apply flex-1 min-h-0 overflow-hidden; }
-    .container{ @apply w-full max-w-[980px] mx-auto p-4; }
+    .container{ @apply w-full max-w-[1040px] mx-auto p-4; }
     .appContainer{ @apply h-full min-h-0 overflow-hidden; }
     .appContainer > *{ height: 100%; min-height: 0; }
 
-    .nav{
-        @apply flex-none flex items-center justify-between gap-3 px-4 py-3
-        border-b border-border/10 bg-bg/70 backdrop-blur;
-    }
-    .nav .left{ @apply flex items-center gap-3; }
-    .brand{ @apply font-extrabold tracking-[.2px]; }
+    .nav{ @apply flex-none flex items-center justify-between gap-3 px-4 py-2.5 border-b border-border/10 bg-bg; }
+    .nav .left{ @apply flex items-center gap-4 min-w-0; }
+    .brand{ @apply flex items-center gap-2 m-0 no-underline hover:no-underline; }
+    .brandMark{ @apply grid place-items-center h-8 w-8 rounded-md bg-accent text-accentInk font-extrabold text-sm; font-family: "Bricolage Grotesque Variable", sans-serif; }
+    .brandName{ @apply text-[1.05rem] font-extrabold whitespace-nowrap; font-family: "Bricolage Grotesque Variable", sans-serif; }
 
-    .pills{ @apply flex flex-wrap gap-2; }
-    .pill{ @apply px-[10px] py-2 rounded-full border border-border/10 text-muted; background: transparent; }
-    .pill:hover{ @apply border-border/25 text-text; text-decoration: none; }
-    .pill.active{ @apply border-accent/70 text-text; }
+    .pills{ @apply flex flex-wrap gap-1.5; }
+    .pill{ @apply px-3 py-1.5 rounded-full border border-transparent text-muted bg-transparent; }
+    .pill:hover{ @apply text-text bg-border/5; text-decoration: none; }
+    .pill.active{ @apply text-accentInk bg-accent font-bold; }
+    button.pill{ @apply cursor-pointer; }
+    .chip{ @apply border-border/15; }
+    .chip.active{ @apply border-accent; }
 
-    /* Legacy grid (évite @apply grid sur .grid => dépendance circulaire) */
     .grid{ display: grid; @apply gap-3; }
     .grid.cols-2{ @apply grid-cols-1 tablet:grid-cols-2; }
 
-    .card{ @apply rounded-2xl border border-border/10 bg-card/70 p-4; }
-    .card h2, .card h3{ @apply mb-1 leading-tight; }
+    .card{ @apply rounded-2xl border border-border/10 bg-card p-4; }
+    .card .card{ @apply bg-sunken/30 rounded-xl; }
+    .card h2, .card h3{ @apply mb-1; }
     .card p{ @apply my-1.5 text-muted; }
 
     .row{ @apply flex items-center justify-between flex-wrap gap-2.5; }
-    .list{ @apply flex flex-col gap-2.5; }
+    .list{ @apply flex flex-col gap-2; }
 
     .btn{
         font: inherit;
-        line-height: 1;
+        line-height: 1.1;
         appearance: none;
         -webkit-appearance: none;
         text-decoration: none;
         user-select: none;
         -webkit-tap-highlight-color: transparent;
-
-        @apply inline-flex items-center justify-center gap-2 rounded-xl border border-border/10 bg-border/5
-        px-3 py-2 text-sm font-medium text-text whitespace-nowrap;
+        @apply inline-flex items-center justify-center gap-2 rounded-[10px] border border-border/15 bg-border/5
+        px-3.5 py-2 text-sm font-bold text-text whitespace-nowrap cursor-pointer transition-colors;
     }
-    .btn:hover{ @apply border-accent/60; }
-    .btn.primary{ @apply border-accent/70 bg-accent/10; }
-    .btn.ok{ @apply border-ok/60 bg-ok/10; }
+    .btn:hover{ @apply border-border/30 bg-border/10; }
+    .btn.primary{ @apply border-accent bg-accent text-accentInk; }
+    .btn.primary:hover{ filter: brightness(1.06); }
+    .btn.ok{ @apply border-ok/60 bg-ok/15; }
     .btn.danger{ @apply border-danger/60 bg-danger/10; }
-    a.btn, a.btn:visited{ @apply text-inherit no-underline; }
+    .btn.ghost{ @apply border-transparent bg-transparent; }
+    .btn.lg{ @apply px-5 py-3 text-base rounded-xl; }
+    a.btn, a.btn:visited{ @apply no-underline; }
+    a.btn:not(.primary){ @apply text-text; }
     a.btn:hover{ @apply no-underline; }
-    .btn:disabled, .btn[aria-disabled="true"]{ @apply opacity-55 cursor-not-allowed pointer-events-none; }
+    .btn:disabled, .btn[aria-disabled="true"]{ @apply opacity-50 cursor-not-allowed pointer-events-none; }
 
-    .input{ @apply w-full rounded-xl border border-border/10 bg-sunken/20 px-3 py-2 text-text; }
+    .input{ @apply w-full rounded-[10px] border border-border/15 bg-sunken/40 px-3 py-2 text-text; }
+    .input:focus{ @apply border-accent outline-none; }
+    select.input{ @apply cursor-pointer; }
 
     .small{ @apply text-[13px] text-muted; }
-    .kpi{ @apply text-[26px] font-extrabold; }
-    .hr{ @apply h-px bg-border/10 my-2.5; }
+    .kpi{ @apply text-[1.75rem] font-extrabold leading-none; font-family: "Bricolage Grotesque Variable", sans-serif; }
+    .hr{ @apply h-px bg-border/10 my-3; }
 
-    .badge{ @apply inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border border-border/10 text-muted; }
-    button.pill{ @apply bg-transparent cursor-pointer; }
-    button.pill:hover{ text-decoration: none; }
+    .badge{ @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-border/15 text-muted text-[13px]; }
+    .badge.accent{ @apply border-accent/60 text-accentText; }
 
-    /* Helpers layout */
     .page{ @apply h-full min-h-0 overflow-hidden; }
     .cardFill{ @apply flex flex-col min-h-0 overflow-hidden; }
     .scrollY{
@@ -161,109 +183,131 @@
         max-height: 100%;
     }
 
+    /* Thin progress bar for sessions */
+    .meter{ @apply h-1.5 w-full rounded-full bg-border/10 overflow-hidden; }
+    .meter > span{ @apply block h-full bg-accent rounded-full transition-[width] duration-300; }
+
     /* --------------------------------------------------------
-       Modal (marge bas ~5vh + scroll interne)
+       Modal
     -------------------------------------------------------- */
     .modal-backdrop{
         @apply fixed inset-0 z-50 flex items-end justify-center bg-black/60
-        px-4 pt-10 pb-[5vh]
-        tablet:items-center tablet:pt-6 tablet:pb-6;
+        px-4 pt-10 pb-[5vh] tablet:items-center tablet:pt-6 tablet:pb-6;
     }
-    .modal, .modal-card{
-        @apply w-full max-w-lg max-h-[90dvh] overflow-auto rounded-2xl
-        border border-border/10 bg-card/95 backdrop-blur p-4;
-    }
-    .modal-header{ @apply flex items-center justify-between gap-2.5 mb-2.5; }
+    .modal, .modal-card{ @apply w-full max-w-lg max-h-[90dvh] overflow-auto rounded-2xl border border-border/10 bg-card p-5 shadow-2xl; }
+    .modal-header{ @apply flex items-center justify-between gap-2.5 mb-3; }
     .modal-title{ @apply m-0; }
     .modal-body{ @apply text-text; }
 
     /* --------------------------------------------------------
-       HomePage
+       Index card (flashcards) — the signature element
     -------------------------------------------------------- */
-    .home{ @apply h-full min-h-0 overflow-hidden flex flex-col gap-3; }
-
-    /* top : 2 cards même hauteur */
-    .home .top{ @apply flex-none grid gap-3 tablet:grid-cols-2 items-stretch; }
-    .home .top > .card{ @apply h-full; }
-
-    .home .head{
-        @apply flex items-center justify-between gap-2.5; /* ✅ plus items-start */
+    .indexStage{ perspective: 1400px; @apply w-full max-w-[600px] mx-auto; }
+    .indexCard{
+        @apply relative w-full cursor-pointer select-none;
+        aspect-ratio: 5 / 3;
+        min-height: 220px;
+        transform-style: preserve-3d;
+        transition: transform .5s cubic-bezier(.3, .7, .2, 1);
+    }
+    .indexCard.flipped{ transform: rotateY(180deg); }
+    .indexFace{
+        @apply absolute inset-0 flex flex-col items-center justify-center text-center px-6 py-8 rounded-md;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        color: rgb(var(--ink));
+        box-shadow: 0 18px 40px -18px rgb(0 0 0 / .55), 0 2px 0 rgb(0 0 0 / .08);
+        background-color: rgb(var(--paper));
+        /* red header rule + faint blue ruled lines */
+        background-image:
+            linear-gradient(to bottom, transparent 46px, rgb(var(--rule) / .7) 46px, rgb(var(--rule) / .7) 48px, transparent 48px),
+            repeating-linear-gradient(to bottom, transparent 0 31px, rgb(96 140 210 / .22) 31px 32px);
+        background-position: 0 0, 0 48px;
+    }
+    .indexFace.back{ transform: rotateY(180deg); }
+    .indexMeta{ @apply absolute top-3 left-4 right-4 flex items-center justify-between gap-2 text-[12px]; color: rgb(var(--ink) / .65); }
+    .indexWord{ @apply text-[clamp(1.6rem,4.5vw,2.6rem)] font-extrabold leading-tight break-words; font-family: "Bricolage Grotesque Variable", sans-serif; }
+    .indexSub{ @apply mt-2 text-base; color: rgb(var(--ink) / .7); }
+    .indexSpeak{ @apply mt-3 rounded-full border px-3 py-1 text-sm font-bold; border-color: rgb(var(--ink) / .2); color: rgb(var(--ink)); background: transparent; }
+    .indexSpeak:hover{ background: rgb(var(--ink) / .06); }
+    @media (prefers-reduced-motion: reduce){
+        .indexCard{ transition: none; }
     }
 
-    /* s’assure que le h2 n’ajoute pas de décalage vertical */
-    .home .head .title{ @apply m-0; }
-    .home .head .sub{ @apply m-0; }
-    .home .title{ @apply text-lg font-semibold; }
-    .home .sub{ @apply text-muted; }
-
-    /* KPIs : marge bottom + center */
-    .home .kpis{ @apply grid grid-cols-2 tablet:grid-cols-4 gap-2.5 mb-3 mt-1; }
-    .home .kpiBox{
-        @apply rounded-2xl border border-border/10 bg-sunken/10 p-1
-        flex flex-col items-center justify-center text-center;
-    }
-    .home .kpiBox .small{ @apply text-muted; }
-
-    .home .actionsGrid{ @apply grid grid-cols-2 gap-2.5; }
-    .home .startGrid{ @apply grid grid-cols-2 gap-2.5 mt-1; }
-    .home .actionBtn, .home .startBtn{ @apply w-full justify-center text-center py-2 rounded-2xl; }
-    .home .reset{ @apply col-span-full; }
-    .home .exportHint{ @apply col-span-full; }
-
-    /* bottom : scroll uniquement dans les listes */
-    .home .bottom{ @apply flex-1 min-h-0 grid gap-3 tablet:grid-cols-2 overflow-hidden; }
-    .home .bottom > section{ @apply min-h-0 overflow-hidden flex flex-col; }
-    .home .sectionTitle{ @apply flex items-center justify-between mb-2; }
-    .home .listGrid{
-        @apply flex-1 min-h-0 overflow-auto pr-1.5 grid gap-3;
-        align-content: start; /* ✅ empêche l'étirement vertical des rows => plus de "trous" */
-    }
-
-    /* Items : même hauteur, footer collé bas, titre clampé */
-    .home .itemCard{
-        @apply flex flex-col justify-between no-underline hover:no-underline;
-        height: 124px; /* ✅ plus haut => plus de titre coupé */
-    }
-    @media (min-width: 768px){
-        .home .itemCard{ height: 132px; }
-    }
-
-    .home .itemTitle{
-        @apply text-base font-semibold leading-snug;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;      /* ✅ accepte titres longs sans couper */
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-
-    .home .itemMeta{ @apply text-muted whitespace-nowrap text-sm font-medium; }
-
-    .home .itemFooter{ @apply mt-auto flex items-center justify-end gap-2; }
+    .gradeGrid{ @apply grid grid-cols-2 tablet:grid-cols-4 gap-2; }
+    .gradeBtn{ @apply flex-col gap-0.5 py-3 whitespace-normal; }
+    .gradeBtn .gradeHint{ @apply text-[12px] font-normal opacity-80; }
+    .gradeBtn.again{ @apply border-danger/60 bg-danger/10; }
+    .gradeBtn.hard{ @apply border-border/25; }
+    .gradeBtn.good{ @apply border-ok/60 bg-ok/10; }
+    .gradeBtn.easy{ @apply border-accent bg-accent/15; }
 
     /* --------------------------------------------------------
-       Practice / Exam / Flashcards
+       Home
+    -------------------------------------------------------- */
+    .home{ @apply h-full min-h-0 overflow-y-auto flex flex-col gap-4 pr-1; }
+    .homeTop{ @apply grid gap-4 tablet:grid-cols-[1.35fr_1fr]; }
+    .todayCard{ @apply flex flex-col gap-4; }
+    .todayHead{ @apply flex items-start justify-between gap-3; }
+    .todayDate{ @apply text-muted text-sm; }
+    .reviewCta{
+        @apply flex items-center justify-between gap-4 rounded-xl bg-accent text-accentInk px-5 py-4 no-underline hover:no-underline;
+    }
+    .reviewCta:hover{ filter: brightness(1.05); }
+    .reviewCta .big{ @apply text-[2.4rem] font-extrabold leading-none; font-family: "Bricolage Grotesque Variable", sans-serif; }
+    .reviewCta .label{ @apply font-bold; }
+    .reviewCta .go{ @apply rounded-[10px] bg-accentInk text-accent px-4 py-2 font-bold whitespace-nowrap; }
+    .reviewCta.done{ @apply bg-ok/15 text-text border border-ok/40; }
+    .reviewCta.done .go{ @apply bg-ok text-white; }
+    .todayStats{ @apply grid grid-cols-3 gap-2; }
+    .todayStat{ @apply rounded-xl bg-sunken/30 px-3 py-2.5; }
+    .goalRing{ @apply relative h-[64px] w-[64px] flex-none; }
+    .goalRing svg{ @apply h-full w-full -rotate-90; }
+    .goalRing .val{ @apply absolute inset-0 grid place-items-center text-sm font-bold; }
+    .backupHint{ @apply rounded-xl border border-accent/40 bg-accent/10 px-3 py-2 text-sm; }
+
+    .modeGrid{ @apply grid grid-cols-2 gap-2; }
+    .modeTile{
+        @apply flex flex-col items-start gap-0.5 rounded-xl border border-border/10 bg-sunken/30 px-3 py-2.5 text-left no-underline hover:no-underline cursor-pointer text-text;
+        font: inherit;
+    }
+    .modeTile:hover{ @apply border-accent/60; }
+    .modeTile .t{ @apply font-bold leading-tight; }
+    .modeTile .d{ @apply text-[12.5px] text-muted leading-snug; }
+
+    .homeLists{ @apply grid gap-4 tablet:grid-cols-2; }
+    .sectionHead{ @apply flex items-baseline justify-between gap-2 mb-2; }
+    .sectionHead h2{ @apply m-0; }
+    .deckRow{ @apply flex items-center gap-3 rounded-xl px-3 py-2.5 no-underline hover:no-underline hover:bg-border/5 text-text; }
+    .deckRow .main{ @apply min-w-0 flex-1; }
+    .deckRow .name{ @apply font-bold truncate; }
+    .dueDot{ @apply rounded-full bg-accent text-accentInk text-xs font-bold px-2 py-0.5 whitespace-nowrap; }
+    .emptyStart{ @apply flex-none; }
+
+    /* --------------------------------------------------------
+       Practice / Exam / Flashcards sessions
     -------------------------------------------------------- */
     .sessionPage{ @apply page flex flex-col; }
     .sessionCard{ @apply card cardFill; }
     .sessionBody{ @apply flex-1 min-h-0 scrollY; }
     .sessionFooter{ @apply flex-none mt-3; }
+    .sessionPrompt{ @apply text-[1.35rem] font-bold leading-snug mt-1 mb-3; font-family: "Bricolage Grotesque Variable", sans-serif; }
 
     /* --------------------------------------------------------
-       DeckPage
+       Deck page
     -------------------------------------------------------- */
-    .deckGrid{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 max-w-[1100px] mx-auto items-stretch; }
+    .deckGrid{ @apply page grid grid-cols-1 tablet:grid-cols-2 gap-3 max-w-[1100px] mx-auto items-stretch; }
     .deckCard{ @apply card cardFill; }
     .previewCard{ @apply mt-3 flex-1 min-h-0 flex flex-col overflow-hidden; }
     .previewList{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
 
     /* --------------------------------------------------------
-       ExamsPage (générateur)
+       Generator
     -------------------------------------------------------- */
-    .examsPage{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 max-w-[1100px] mx-auto items-stretch; }
+    .examsPage{ @apply page grid grid-cols-1 tablet:grid-cols-2 gap-3 max-w-[1100px] mx-auto items-stretch; }
     .modalCard, .modalCardRight{ @apply card cardFill; }
-
     .tagBox{
-        @apply mt-2 rounded-2xl border border-border/10 bg-sunken/10 p-3 overflow-auto;
+        @apply mt-2 rounded-xl border border-border/10 bg-sunken/30 p-3 overflow-auto;
         max-height: clamp(160px, 31.5vh, 324px);
         -webkit-overflow-scrolling: touch;
     }
@@ -272,15 +316,15 @@
     }
 
     /* --------------------------------------------------------
-       ImportPage
+       Import
     -------------------------------------------------------- */
     .importPage{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 items-stretch; }
     .fileRow{ @apply flex items-center flex-wrap gap-2.5 mt-2; }
     .fileInput{ @apply hidden; }
     .fileName{ @apply opacity-90; }
     .code{
-        @apply flex-1 min-h-0 overflow-auto whitespace-pre-wrap rounded-2xl border border-border/10 bg-sunken/25 p-3 text-xs;
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        @apply flex-1 min-h-0 overflow-auto whitespace-pre-wrap rounded-xl border border-border/10 bg-sunken/40 p-3 text-xs;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     }
 
     /* --------------------------------------------------------
@@ -289,51 +333,25 @@
     .manageGrid{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 max-w-[1100px] mx-auto items-stretch; }
     .manageGrid > div{ @apply min-h-0 overflow-hidden flex flex-col; }
     .manageGrid .list{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
-
     .editGrid{ @apply page grid grid-cols-1 tablet:grid-cols-2 grid-rows-2 tablet:grid-rows-1 gap-3 items-stretch; }
     .editGrid > div{ @apply min-h-0 overflow-hidden flex flex-col; }
     .editGrid .list{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
 
     /* --------------------------------------------------------
-       AttemptResultPage
+       Results & stats
     -------------------------------------------------------- */
     .attemptPage{ @apply page flex justify-center items-stretch; }
     .resultCard{ @apply card cardFill w-full max-w-[980px]; }
     .resultList{ @apply flex-1 min-h-0 overflow-auto pr-1.5; }
-
-    /* --------------------------------------------------------
-       StatsPage
-    -------------------------------------------------------- */
     .statsPage{ @apply page max-w-[1100px] mx-auto flex flex-col gap-3; }
     .historyCard{ @apply card cardFill flex-1 min-h-0; }
     .historyList{ @apply flex-1 min-h-0 overflow-auto pr-1.5 pb-5; }
-}
 
-@layer components{
-    /* --------------------------------------------------------
-       Toasts (services/dialog.ts)
-    -------------------------------------------------------- */
-    .toastStack{ @apply fixed z-[60] bottom-4 left-1/2 -translate-x-1/2 flex flex-col gap-2 w-[min(92vw,420px)] pointer-events-none; }
-    .toast{ @apply pointer-events-auto cursor-pointer rounded-xl border border-border/10 bg-card/95 backdrop-blur px-3 py-2 text-sm text-text shadow-lg; }
-    .toast.ok{ @apply border-ok/60; }
-    .toast.danger{ @apply border-danger/60; }
-}
-
-@layer components{
-    .home .reviewBtn{ @apply col-span-full flex-col gap-1; }
-}
-
-@layer components{
-    /* --------------------------------------------------------
-       Charts (ActivityChart, deck progress)
-    -------------------------------------------------------- */
     .chartGrid line{ stroke: rgb(var(--border) / 0.08); stroke-width: 1; }
     .chartAxisText{ fill: rgb(var(--muted)); font-size: 11px; }
     .chartBar{ fill: rgb(var(--accent)); transition: opacity .15s; }
     .chartBar.dim{ opacity: .45; }
-    .chartTooltip{
-        @apply absolute top-0 -translate-x-1/2 pointer-events-none rounded-lg border border-border/10 bg-card px-2 py-1 text-xs text-text whitespace-nowrap shadow-lg;
-    }
+    .chartTooltip{ @apply absolute top-0 -translate-x-1/2 pointer-events-none rounded-lg border border-border/10 bg-card px-2 py-1 text-xs text-text whitespace-nowrap shadow-lg; }
 
     /* Ordinal stages of one hue: new (light) -> learning -> mastered (full) */
     .progressBar{ @apply flex h-2.5 w-full gap-[2px] overflow-hidden rounded-full; }
@@ -342,64 +360,34 @@
     .stage-learning{ background: rgb(var(--accent) / 0.55); }
     .stage-mastered{ background: rgb(var(--accent)); }
     .legendSwatch{ @apply inline-block h-2.5 w-2.5 rounded-sm align-middle mr-1; }
-}
 
-@layer components{
-    :root[data-theme="light"] .input{ background-color: rgb(255 255 255 / .9); }
-    @media (prefers-color-scheme: light){
-        :root[data-theme="system"] .input{ background-color: rgb(255 255 255 / .9); }
-    }
-}
-
-@layer components{
-    .home .goal{ @apply mb-3; }
-    .home .backupHint{ @apply mb-3 rounded-xl border border-accent/40 bg-accent/10 px-3 py-2; }
-    /* Petits écrans : la home défile en entier plutôt que d'écraser les listes */
-    @media (max-width: 767px){
-        .home{ overflow-y: auto; }
-        .home .bottom{ flex: none; overflow: visible; }
-        .home .bottom > section, .home .listGrid{ overflow: visible; }
-    }
-}
-
-@layer components{
-    /* Petits écrans : une seule ligne de navigation qui défile horizontalement */
-    @media (max-width: 767px){
-        .nav{ @apply px-3 py-2; }
-        .nav .left{ @apply min-w-0 flex-1 gap-2; }
-        .brand{ @apply text-sm whitespace-nowrap; }
-        .navPills{ @apply flex-nowrap overflow-x-auto; scrollbar-width: none; }
-        .navPills::-webkit-scrollbar{ display: none; }
-        .navPills .pill{ @apply whitespace-nowrap py-1.5; }
-        .poweredBy{ display: none; }
-    }
-}
-
-@layer components{
-    .home .emptyStart{ @apply flex-1 min-h-0 overflow-auto; }
-}
-
-@layer components{
-    /* Long labels (English) wrap instead of overflowing */
-    .home .actionBtn, .home .startBtn{ @apply whitespace-normal leading-tight; }
-    @media (max-width: 767px){
-        .home .emptyStart{ flex: none; overflow: visible; }
-        .home .startBtn, .home .actionBtn{ @apply text-[13px] px-2; }
-    }
-}
-
-@layer components{
-    /* Toasts: filled colors, countdown bar, slide in/out */
-    .toast{ @apply relative overflow-hidden text-center font-medium; }
+    /* --------------------------------------------------------
+       Toasts (services/dialog.ts)
+    -------------------------------------------------------- */
+    .toastStack{ @apply fixed z-[60] bottom-4 left-1/2 -translate-x-1/2 flex flex-col gap-2 w-[min(92vw,420px)] pointer-events-none; }
+    .toast{ @apply pointer-events-auto cursor-pointer relative overflow-hidden rounded-xl border px-3 py-2.5 text-sm text-center font-bold shadow-lg; }
     .toast.ok{ @apply bg-ok border-ok text-white; }
     .toast.danger{ @apply bg-danger border-danger text-white; }
-    .toast.info{ @apply bg-accent border-accent text-white; }
-    .toastProgress{
-        @apply absolute bottom-0 left-0 h-[3px] w-full bg-white/50;
-        animation: toast-shrink linear forwards;
-    }
+    .toast.info{ @apply bg-accent border-accent text-accentInk; }
+    .toastProgress{ @apply absolute bottom-0 left-0 h-[3px] w-full bg-white/50; animation: toast-shrink linear forwards; }
     @keyframes toast-shrink{ from{ width: 100%; } to{ width: 0%; } }
     .toast-enter-active, .toast-leave-active{ transition: all .3s cubic-bezier(.22, 1, .36, 1); }
     .toast-enter-from{ opacity: 0; transform: translateY(1rem) scale(.95); }
     .toast-leave-to{ opacity: 0; transform: translateY(-.5rem) scale(.95); }
+
+    /* --------------------------------------------------------
+       Small screens
+    -------------------------------------------------------- */
+    @media (max-width: 767px){
+        .container{ @apply p-3; }
+        .nav{ @apply px-3 py-2; }
+        .nav .left{ @apply flex-1 gap-2; }
+        .brandName{ display: none; }
+        .navPills{ @apply flex-nowrap overflow-x-auto; scrollbar-width: none; }
+        .navPills::-webkit-scrollbar{ display: none; }
+        .navPills .pill{ @apply whitespace-nowrap; }
+        .poweredBy{ display: none; }
+        .modeTile .d{ display: none; }
+        .reviewCta .big{ @apply text-[2rem]; }
+    }
 }

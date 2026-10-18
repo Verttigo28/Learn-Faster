@@ -97,7 +97,7 @@ export type AttemptDetail =
 
 export type Attempt = {
   id: string;
-  type: "vocab_quiz" | "exam" | "flashcards" | "practice";
+  type: "vocab_quiz" | "exam" | "flashcards" | "practice" | "match";
   refId: string; // deckId / examId / "practice"
   startedAt: number;
   finishedAt: number;

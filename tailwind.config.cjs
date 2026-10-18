@@ -16,6 +16,10 @@ module.exports = {
         ok: "rgb(var(--ok) / <alpha-value>)",
         border: "rgb(var(--border) / <alpha-value>)",
         sunken: "rgb(var(--sunken) / <alpha-value>)",
+        accentInk: "rgb(var(--accent-ink) / <alpha-value>)",
+        accentText: "rgb(var(--accent-text) / <alpha-value>)",
+        paper: "rgb(var(--paper) / <alpha-value>)",
+        ink: "rgb(var(--ink) / <alpha-value>)",
       },
       screens: {
         tablet: "768px",

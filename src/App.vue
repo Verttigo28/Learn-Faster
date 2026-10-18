@@ -3,11 +3,14 @@ import { useRoute } from "vue-router";
 import { Capacitor } from "@capacitor/core";
 import { StatusBar, Style } from "@capacitor/status-bar";
 import AppDialogs from "./components/AppDialogs.vue";
+import ShortcutsHelp from "./components/ShortcutsHelp.vue";
+import { ref } from "vue";
 import { getSetting } from "./services/settings";
 import { applyTheme } from "./services/theme";
 import { detectLocale, isLocale, locale, setLocale } from "./i18n";
 
 const route = useRoute();
+const shortcuts = ref<InstanceType<typeof ShortcutsHelp> | null>(null);
 function isActive(path: string) {
   return route.path === path || route.path.startsWith(path + "/");
 }
@@ -44,7 +47,10 @@ getSetting("locale")
   <div class="appShell">
     <header class="nav">
       <div class="left">
-        <p class="brand">{{ $t("nav.brand") }}</p>
+        <router-link to="/" class="brand" :aria-label="$t('nav.home')">
+          <span class="brandMark" aria-hidden="true">LF</span>
+          <span class="brandName">{{ $t("nav.brand") }}</span>
+        </router-link>
         <nav class="pills navPills">
           <router-link
             v-for="l in links"
@@ -57,7 +63,10 @@ getSetting("locale")
           <router-link to="/settings" class="pill" :class="{ active: isActive('/settings') }" :title="$t('nav.settings')" :aria-label="$t('nav.settings')">⚙️</router-link>
         </nav>
       </div>
-      <span class="small poweredBy">{{ $t("nav.poweredBy") }}</span>
+      <div class="flex items-center gap-3">
+        <button class="pill hidden tablet:inline-flex" type="button" :title="$t('shortcuts.open')" :aria-label="$t('shortcuts.open')" @click="shortcuts?.toggle()">?</button>
+        <span class="small poweredBy">{{ $t("nav.poweredBy") }}</span>
+      </div>
     </header>
 
     <main class="appMain">
@@ -67,5 +76,6 @@ getSetting("locale")
     </main>
 
     <AppDialogs />
+    <ShortcutsHelp ref="shortcuts" />
   </div>
 </template>

@@ -17,6 +17,8 @@ import flashcards from "./flashcards";
 import stats from "./stats";
 import attempt from "./attempt";
 import packs from "./packs";
+import match from "./match";
+import shortcuts from "./shortcuts";
 
 export default {
   common,
@@ -38,4 +40,6 @@ export default {
   stats,
   attempt,
   packs,
+  match,
+  shortcuts,
 };
