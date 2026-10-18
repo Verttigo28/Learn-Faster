@@ -1,0 +1,290 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-leisure-weekend",
+  "title": "Leisure and Weekends",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya suka berenang di laut.",
+      "translation": "I like swimming in the sea.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Hobi saya bermain gitar.",
+      "translation": "My hobby is playing the guitar.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Kami suka pergi ke pantai.",
+      "translation": "We like going to the beach.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Apa rencanamu akhir pekan ini?",
+      "translation": "What are your plans this weekend?",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya sering menonton film di bioskop.",
+      "translation": "I often watch films at the cinema.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Kami bermain sepak bola setiap Minggu.",
+      "translation": "We play football every Sunday.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Dia suka membaca novel.",
+      "translation": "She likes reading novels.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Mau nonton film bersama?",
+      "translation": "Do you want to watch a film together?",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Saya jarang berolahraga.",
+      "translation": "I rarely exercise.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Kami mendaki Gunung Rinjani.",
+      "translation": "We climbed Mount Rinjani.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya belajar tari Bali.",
+      "translation": "I'm learning Balinese dance.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Adik saya suka bermain game.",
+      "translation": "My younger brother likes playing video games.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Kami piknik di taman kota.",
+      "translation": "We're having a picnic in the city park.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Saya ingin belajar menyelam.",
+      "translation": "I want to learn to dive.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Mari kita jalan-jalan ke mal.",
+      "translation": "Let's go for a stroll at the mall.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Konsernya sangat ramai.",
+      "translation": "The concert was very crowded.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya suka mendengarkan musik dangdut.",
+      "translation": "I like listening to dangdut music.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Dia pandai bermain bulu tangkis.",
+      "translation": "He is good at playing badminton.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya lebih suka tinggal di rumah.",
+      "translation": "I prefer staying at home.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Kami memancing di danau.",
+      "translation": "We go fishing at the lake.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Kamu suka olahraga apa?",
+      "translation": "What sport do you like?",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya tidak suka menonton televisi.",
+      "translation": "I don't like watching television.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Kami berkemah di dekat air terjun.",
+      "translation": "We're camping near the waterfall.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Teman saya mengajak saya bersepeda.",
+      "translation": "My friend invited me to go cycling.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a2",
+        "me",
+        "ber"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Museum itu tutup pada hari Senin.",
+      "translation": "That museum is closed on Mondays.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Saya sudah lama tidak bermain tenis.",
+      "translation": "I haven't played tennis in a long time.",
+      "tags": [
+        "sentences",
+        "leisure",
+        "b1",
+        "negation",
+        "aspect"
+      ]
+    }
+  ]
+}

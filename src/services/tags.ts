@@ -7,17 +7,12 @@ import { db } from "../db";
  * - sentence exercises
  */
 export async function getAllTags(): Promise<string[]> {
-  const set = new Set<string>();
-
-  const vocab = await db.vocabItems.toArray();
-  for (const it of vocab) (it.tags ?? []).forEach(t => set.add(t));
-
-  const qcm = await db.examQuestions.toArray();
-  for (const q of qcm) (q.tags ?? []).forEach(t => set.add(t));
-
-  const sentences = await db.sentenceExercises.toArray();
-  for (const s of sentences) (s.tags ?? []).forEach(t => set.add(t));
-
+  const keys = await Promise.all([
+    db.vocabItems.orderBy("tags").uniqueKeys(),
+    db.examQuestions.orderBy("tags").uniqueKeys(),
+    db.sentenceExercises.orderBy("tags").uniqueKeys()
+  ]);
+  const set = new Set(keys.flat().map(String));
   return Array.from(set).sort((a, b) => a.localeCompare(b));
 }
 
@@ -26,4 +21,11 @@ export function hasAnyTag(itemTags: string[] | undefined, selected: string[]): b
   if (!itemTags?.length) return false;
   const s = new Set(selected);
   return itemTags.some(t => s.has(t));
+}
+
+export function parseTags(input: string): string[] {
+  return input
+    .split(",")
+    .map(t => t.trim())
+    .filter(Boolean);
 }

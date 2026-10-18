@@ -1,13 +1,12 @@
 <script setup lang="ts">
+import { toast } from "../services/dialog";
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import EmptyState from "../components/EmptyState.vue";
-import { db, type Attempt, type AttemptDetail, type Exam, type VocabDeck } from "../db";
+import { db, isTypedDetail, type Attempt, type AttemptDetail, type Exam, type VocabDeck } from "../db";
 import { exportAttemptPdf } from "../services/pdfReport";
 import { formatDate, formatDuration } from "../utils/time";
-import { useToast } from "../composables/useToast";
-
-const toast = useToast();
+import { t } from "../i18n";
 
 const props = defineProps<{ attemptId?: string }>();
 const route = useRoute();
@@ -22,12 +21,13 @@ const deck = ref<VocabDeck | null>(null);
 const showOnlyWrong = ref(false);
 
 const title = computed(() => {
-  if (!attempt.value) return "Résultat";
-  if (attempt.value.type === "exam") return exam.value?.title ?? `Exam ${attempt.value.refId}`;
-  if (attempt.value.type === "vocab_quiz") return deck.value?.title ?? `Deck ${attempt.value.refId}`;
-  if (attempt.value.type === "practice") return "Exam (tags)";
-  if (attempt.value.type === "flashcards") return deck.value?.title ?? `Flashcards ${attempt.value.refId}`;
-  return "Résultat";
+  if (!attempt.value) return t("attempt.result");
+  if (attempt.value.type === "exam") return exam.value?.title ?? t("attempt.examFallback", { id: attempt.value.refId });
+  if (attempt.value.type === "vocab_quiz") return deck.value?.title ?? t("attempt.deckFallback", { id: attempt.value.refId });
+  if (attempt.value.type === "practice") return t("attempt.practiceTitle");
+  if (attempt.value.type === "flashcards" && attempt.value.refId === "review") return t("attempt.reviewTitle");
+  if (attempt.value.type === "flashcards") return deck.value?.title ?? t("attempt.flashcardsFallback", { id: attempt.value.refId });
+  return t("attempt.result");
 });
 
 const details = computed<AttemptDetail[]>(() => attempt.value?.meta?.details ?? []);
@@ -42,14 +42,14 @@ function percent01(x: number) {
 }
 
 function pickedText(d: Extract<AttemptDetail, { kind: "vocab_mcq" | "exam_mcq" }>) {
-  return d.options.find((o) => o.id === d.pickedId)?.text ?? "aucune";
+  return d.options.find((o) => o.id === d.pickedId)?.text ?? t("common.none");
 }
 function correctText(d: Extract<AttemptDetail, { kind: "vocab_mcq" | "exam_mcq" }>) {
-  return d.options.find((o) => o.correct)?.text ?? "(inconnue)";
+  return d.options.find((o) => o.correct)?.text ?? `(${t("common.unknown")})`;
 }
 
 function answerSentence(d: Extract<AttemptDetail, { kind: "sentence_order" }>) {
-  return (d.answer ?? []).join(" ") || "(vide)";
+  return (d.answer ?? []).join(" ") || t("common.empty");
 }
 function correctionSentence(d: Extract<AttemptDetail, { kind: "sentence_order" }>) {
   return (d.tokens ?? []).join(" ");
@@ -59,12 +59,12 @@ function canExportPdf(a: Attempt | null): boolean {
   return !!a && !!a.meta?.details?.length;
 }
 
-function exportPdf() {
+async function exportPdf() {
   if (!attempt.value) return;
   try {
-    exportAttemptPdf(attempt.value, title.value);
-  } catch (e: any) {
-    toast.error(e?.message ?? "Impossible d'exporter le PDF");
+    await exportAttemptPdf(attempt.value, title.value);
+  } catch (e) {
+    toast(e instanceof Error ? e.message : t("services.pdfError"), "danger");
   }
 }
 
@@ -98,17 +98,17 @@ onUnmounted(() => {
 <template>
   <div class="attemptPage">
     <div v-if="!attempt">
-      <EmptyState title="Résultat introuvable" hint="Cette tentative n'existe plus dans la base locale." icon="🔎" />
-      <div class="row mt-3">
-        <button class="btn" @click="goBack">Retour stats</button>
+      <EmptyState :title="$t('attempt.notFound')" :hint="$t('attempt.notFoundHint')" />
+      <div class="row" style="margin-top:12px">
+        <button class="btn" @click="goBack">{{ $t("attempt.backToStats") }}</button>
       </div>
     </div>
 
     <div v-else class="card resultCard">
       <div class="row">
         <div>
-          <h2 class="m-0">{{ title }}</h2>
-          <p class="small mt-1 mb-0">
+          <h2 style="margin:0">{{ title }}</h2>
+          <p class="small" style="margin:4px 0 0 0">
             {{ attempt.type }} • {{ percent01(attempt.score) }} • {{ formatDate(attempt.finishedAt) }}
             <span v-if="attempt.meta?.durationSeconds !== undefined">
               • ⏱ {{ formatDuration(attempt.meta.durationSeconds) }}
@@ -119,60 +119,70 @@ onUnmounted(() => {
           </p>
         </div>
 
-        <div class="row gap-2">
+        <div class="row" style="gap:8px">
           <button class="btn" @click="exportPdf" :disabled="!canExportPdf(attempt)">📄 PDF</button>
-          <button class="btn" @click="goBack">Retour</button>
+          <button class="btn" @click="goBack">{{ $t("common.back") }}</button>
         </div>
       </div>
 
       <div class="hr"></div>
 
-      <div class="row justify-start gap-2.5">
-        <label class="badge cursor-pointer">
+      <div class="row" style="justify-content:flex-start; gap:10px">
+        <label class="badge" style="cursor:pointer">
           <input type="checkbox" v-model="showOnlyWrong" />
-          Voir seulement les erreurs
+          {{ $t("attempt.onlyWrong") }}
         </label>
         <span class="small">{{ filtered.length }} / {{ details.length }}</span>
       </div>
 
-      <div v-if="details.length === 0" class="mt-3">
-        <EmptyState title="Aucun détail" hint="Cette tentative est trop ancienne. Relance un exam pour enregistrer les détails." icon="⏳" />
+      <div v-if="details.length === 0" style="margin-top:12px">
+        <EmptyState :title="$t('attempt.noDetails')" :hint="$t('attempt.noDetailsHint')" />
       </div>
 
-      <div v-else class="list resultList mt-3">
-        <div v-for="(d, i) in filtered" :key="i" class="card rounded-[18px]">
+      <div v-else class="list resultList" style="margin-top:12px">
+        <div v-for="(d, i) in filtered" :key="i" class="card" style="border-radius:18px">
           <div class="row">
-            <span class="badge" :class="d.correct ? 'result-ok' : 'result-wrong'">
-              {{ d.correct ? "OK" : "Faux" }}
+            <span
+                class="badge"
+                :style="d.correct ? 'border-color: rgba(61,220,151,.65)' : 'border-color: rgba(255,107,107,.65)'"
+            >
+              {{ d.correct ? $t("report.ok") : $t("report.wrong") }}
             </span>
             <span class="small">#{{ i + 1 }}</span>
           </div>
 
           <template v-if="d.kind === 'sentence_order'">
-            <h3 class="mt-2.5 mb-0">{{ d.text }}</h3>
-            <p v-if="d.translation" class="small mt-1.5 mb-0">FR: {{ d.translation }}</p>
+            <h3 style="margin:10px 0 0 0">{{ d.text }}</h3>
+            <p v-if="d.translation" class="small" style="margin:6px 0 0 0">{{ $t("attempt.translation", { text: d.translation }) }}</p>
 
             <div class="hr"></div>
-            <p class="small m-0"><b>Ta réponse:</b> {{ answerSentence(d) }}</p>
-            <p class="small mt-1.5 mb-0"><b>Correction:</b> {{ correctionSentence(d) }}</p>
+            <p class="small" style="margin:0"><b>{{ $t("report.labels.yourAnswer") }}:</b> {{ answerSentence(d) }}</p>
+            <p class="small" style="margin:6px 0 0 0"><b>{{ $t("report.labels.correction") }}:</b> {{ correctionSentence(d) }}</p>
           </template>
 
           <template v-else-if="d.kind === 'flashcard'">
-            <h3 class="mt-2.5 mb-0">{{ d.term }}</h3>
-            <p class="small mt-1.5 mb-0">Réponse: {{ d.definition }}</p>
+            <h3 style="margin:10px 0 0 0">{{ d.term }}</h3>
+            <p class="small" style="margin:6px 0 0 0">{{ $t("report.labels.answer") }}: {{ d.definition }}</p>
             <div class="hr"></div>
-            <p class="small m-0">
-              <b>Statut:</b> {{ d.known ? "Je sais" : "Je ne sais pas" }}
+            <p class="small" style="margin:0">
+              <b>{{ $t("attempt.status") }}:</b> {{ d.known ? $t("report.known") : $t("report.unknown") }}
             </p>
           </template>
 
-          <template v-else>
-            <h3 class="mt-2.5 mb-0">{{ d.prompt }}</h3>
+          <template v-else-if="isTypedDetail(d)">
+            <h3 style="margin:10px 0 0 0">{{ d.prompt }}</h3>
             <div class="hr"></div>
-            <p class="small m-0"><b>Ta réponse:</b> {{ pickedText(d) }}</p>
-            <p class="small mt-1.5 mb-0"><b>Bonne réponse:</b> {{ correctText(d) }}</p>
-            <p v-if="d.kind === 'exam_mcq' && d.explanation" class="small mt-1.5 mb-0">
-              <b>Explication:</b> {{ d.explanation }}
+            <p class="small" style="margin:0"><b>{{ $t("report.labels.yourAnswer") }}:</b> {{ d.answer || $t("common.empty") }}</p>
+            <p class="small" style="margin:6px 0 0 0"><b>{{ $t("report.labels.expected") }}:</b> {{ d.expected }}</p>
+          </template>
+
+          <template v-else>
+            <h3 style="margin:10px 0 0 0">{{ d.prompt }}</h3>
+            <div class="hr"></div>
+            <p class="small" style="margin:0"><b>{{ $t("report.labels.yourAnswer") }}:</b> {{ pickedText(d) }}</p>
+            <p class="small" style="margin:6px 0 0 0"><b>{{ $t("report.labels.rightAnswer") }}:</b> {{ correctText(d) }}</p>
+            <p v-if="d.kind === 'exam_mcq' && d.explanation" class="small" style="margin:6px 0 0 0">
+              <b>{{ $t("report.labels.explanation") }}:</b> {{ d.explanation }}
             </p>
           </template>
         </div>
@@ -180,8 +190,3 @@ onUnmounted(() => {
     </div>
   </div>
 </template>
-
-<style scoped>
-.result-ok { border-color: rgb(var(--ok) / 0.65); color: rgb(var(--ok)); }
-.result-wrong { border-color: rgb(var(--danger) / 0.65); color: rgb(var(--danger)); }
-</style>

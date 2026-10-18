@@ -1,0 +1,808 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-prefixe-me",
+  "title": "Le préfixe me- et la nasalisation",
+  "durationSeconds": 780,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "me- + baca donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mebaca",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mengbaca",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menbaca",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "membaca",
+          "correct": true
+        }
+      ],
+      "explanation": "Devant b : mem- (le b reste) → membaca.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "me- + tulis donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menulis",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "menyulis",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mentulis",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mengtulis",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant t : men- et le t tombe → menulis.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "me- + sapu donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mesapu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mensapu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengsapu",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "menyapu",
+          "correct": true
+        }
+      ],
+      "explanation": "Devant s : meny- et le s tombe → menyapu.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "me- + kirim donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menkirim",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mengirim",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mengkirim",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mekirim",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant k : meng- et le k tombe → mengirim.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "me- + pakai donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menpakai",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "memakai",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mempakai",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mepakai",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant p : mem- et le p tombe → memakai.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "me- + ambil donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "memambil",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "meambil",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengambil",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "menambil",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant une voyelle : meng- → mengambil.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "me- + dengar donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "medengar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menengar",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengdengar",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mendengar",
+          "correct": true
+        }
+      ],
+      "explanation": "Devant d : men- (le d reste) → mendengar.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "me- + cari donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menyari",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mengcari",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mencari",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "mecari",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant c : men- (le c reste) → mencari.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "me- + gambar donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "memgambar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "megambar",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menggambar",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "mengambar",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant g : meng- (le g reste) → menggambar.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "me- + lihat donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "memlihat",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menlihat",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "melihat",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "menglihat",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant l, m, n, r, w, y, ng, ny : me- simple → melihat.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "me- + cat (racine d'une syllabe) donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mencat",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mecat",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menyat",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mengecat",
+          "correct": true
+        }
+      ],
+      "explanation": "Racine monosyllabique : menge- → mengecat (peindre).",
+      "tags": [
+        "grammaire",
+        "me",
+        "b1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "me- + bom donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "memom",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mebom",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengebom",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "membom",
+          "correct": false
+        }
+      ],
+      "explanation": "Racine monosyllabique : menge- → mengebom (bombarder).",
+      "tags": [
+        "grammaire",
+        "me",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "me- + jual donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menyual",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menjual",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mejual",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mengjual",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant j : men- → menjual (vendre).",
+      "tags": [
+        "grammaire",
+        "me",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "me- + hitung donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menghitung",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "menhitung",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menitung",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mehitung",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant h : meng- (le h reste) → menghitung (compter).",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "me- + rasa donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menrasa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mengrasa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "merrasa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "merasa",
+          "correct": true
+        }
+      ],
+      "explanation": "Devant r : me- simple → merasa (ressentir).",
+      "tags": [
+        "grammaire",
+        "me",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "me- + tolong donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mentolong",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menyolong",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "metolong",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "menolong",
+          "correct": true
+        }
+      ],
+      "explanation": "t tombe après men- → menolong (aider).",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "me- + kritik donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mekritik",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mengritik",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengkritik",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "menkritik",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant un groupe consonantique (kr-), le k est conservé : mengkritik.",
+      "tags": [
+        "grammaire",
+        "me",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "me- + produksi donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "memroduksi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "meproduksi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menproduksi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "memproduksi",
+          "correct": true
+        }
+      ],
+      "explanation": "Groupe consonantique pr- : le p est conservé → memproduksi.",
+      "tags": [
+        "grammaire",
+        "me",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "me- + nyanyi donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mennyanyi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menyanyi",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mengnyanyi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "menynyanyi",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant ny : me- simple → menyanyi (chanter).",
+      "tags": [
+        "grammaire",
+        "me",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Quelle est la racine de « mengajar » (enseigner) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "gajar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ngajar",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ajar",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "kajar",
+          "correct": false
+        }
+      ],
+      "explanation": "Meng- devant une voyelle : meng + ajar.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Quelle est la racine de « menyewa » (louer) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ewa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "nyewa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "cewa",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sewa",
+          "correct": true
+        }
+      ],
+      "explanation": "Meny- vient d'un s qui a disparu : sewa.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "Quelle est la racine de « memukul » (frapper) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bukul",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "pukul",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mukul",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ukul",
+          "correct": false
+        }
+      ],
+      "explanation": "Mem- avec chute du p : pukul.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "prompt": "Quelle est la racine de « menanam » (planter) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tanam",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "danam",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "anam",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "nanam",
+          "correct": false
+        }
+      ],
+      "explanation": "Men- avec chute du t : tanam.",
+      "tags": [
+        "grammaire",
+        "me",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "prompt": "me- + punya donne la forme verbale standard…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mempunyai",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "mepunyai",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menpunyai",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "memunyai",
+          "correct": false
+        }
+      ],
+      "explanation": "Exception : le p de « punya » est conservé → mempunyai (posséder).",
+      "tags": [
+        "grammaire",
+        "me",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "prompt": "me- + tik (taper à la machine) donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mengetik",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "menik",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mentik",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "metik",
+          "correct": false
+        }
+      ],
+      "explanation": "Racine monosyllabique : menge- → mengetik.",
+      "tags": [
+        "grammaire",
+        "me",
+        "b1"
+      ]
+    }
+  ]
+}

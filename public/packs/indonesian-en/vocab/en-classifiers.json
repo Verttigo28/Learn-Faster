@@ -1,0 +1,389 @@
+{
+  "type": "vocab_deck",
+  "id": "en-classifiers",
+  "title": "Classifiers",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "orang",
+      "definition": "person / people (classifier)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "seorang",
+      "definition": "a / one (person)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "ekor",
+      "definition": "animal (classifier)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "seekor",
+      "definition": "a / one (animal)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "buah",
+      "definition": "object / thing (classifier)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "sebuah",
+      "definition": "a / one (object)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "biji",
+      "definition": "small object / seed (classifier)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "sebiji",
+      "definition": "a / one (small object)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "lembar",
+      "definition": "sheet (classifier) / flat object (classifier)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "selembar",
+      "definition": "a sheet of",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "helai",
+      "definition": "strand / thin object (classifier)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "b1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "batang",
+      "definition": "stick / long object (classifier)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "butir",
+      "definition": "grain (classifier)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "sebutir",
+      "definition": "a grain of",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "potong",
+      "definition": "piece / slice",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "sepotong",
+      "definition": "a piece of / a slice of",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "iris",
+      "definition": "thin slice",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "pasang",
+      "definition": "pair",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "tangkai",
+      "definition": "stem / stalk (of flowers)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "b1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "kuntum",
+      "definition": "flower / bloom (classifier)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "b1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "pucuk",
+      "definition": "letter / gun (classifier)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "b1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "bungkus",
+      "definition": "pack / packet / wrap",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "botol",
+      "definition": "bottle",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "gelas",
+      "definition": "glass",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "piring",
+      "definition": "plate",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "mangkuk",
+      "definition": "bowl",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "porsi",
+      "definition": "portion / serving",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "kotak",
+      "definition": "box",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "kilo",
+      "definition": "kilo",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "ons",
+      "definition": "100 grams",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "liter",
+      "definition": "liter / litre",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "meter",
+      "definition": "meter / metre",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "unit",
+      "definition": "unit (vehicles, devices)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "b1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "ikat",
+      "definition": "bunch / bundle",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "b1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "sisir",
+      "definition": "hand (of bananas) / bunch (of bananas)",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "b1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "sendok",
+      "definition": "spoonful",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "tetes",
+      "definition": "drop",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "kali",
+      "definition": "time / times",
+      "tags": [
+        "classifiers",
+        "classifier",
+        "a1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "type": "vocab_deck",
+  "id": "en-shopping-money",
+  "title": "Shopping and money",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "uang",
+      "definition": "money",
+      "tags": [
+        "shopping",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "harga",
+      "definition": "price",
+      "tags": [
+        "shopping",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "murah",
+      "definition": "cheap / inexpensive",
+      "tags": [
+        "shopping",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "mahal",
+      "definition": "expensive",
+      "tags": [
+        "shopping",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "Berapa harganya?",
+      "definition": "how much is it? / how much does it cost?",
+      "tags": [
+        "shopping",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "Berapa?",
+      "definition": "how much? / how many?",
+      "tags": [
+        "shopping",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "tawar-menawar",
+      "definition": "bargaining / haggling",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "menawar",
+      "definition": "to bargain / to haggle / to make an offer",
+      "tags": [
+        "shopping",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "Bisa kurang?",
+      "definition": "can you lower the price? / can it be cheaper?",
+      "tags": [
+        "shopping",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "Terlalu mahal",
+      "definition": "too expensive",
+      "tags": [
+        "shopping",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "diskon",
+      "definition": "discount",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "harga pas",
+      "definition": "fixed price / final price",
+      "tags": [
+        "shopping",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "kembalian",
+      "definition": "change (money returned)",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "uang kecil",
+      "definition": "small change / small bills",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "uang tunai",
+      "definition": "cash",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "kartu kredit",
+      "definition": "credit card",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "ATM",
+      "definition": "ATM / cash machine",
+      "tags": [
+        "shopping",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "rupiah",
+      "definition": "rupiah (Indonesian currency)",
+      "tags": [
+        "shopping",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "dolar",
+      "definition": "dollar",
+      "tags": [
+        "shopping",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "euro",
+      "definition": "euro",
+      "tags": [
+        "shopping",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "menukar uang",
+      "definition": "to exchange money / to change money",
+      "tags": [
+        "shopping",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "penukaran uang",
+      "definition": "money exchange / currency exchange",
+      "tags": [
+        "shopping",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "kasir",
+      "definition": "cashier / checkout",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "struk",
+      "definition": "receipt (till receipt)",
+      "tags": [
+        "shopping",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "kuitansi",
+      "definition": "receipt",
+      "tags": [
+        "shopping",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "belanja",
+      "definition": "shopping / to shop",
+      "tags": [
+        "shopping",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "toko",
+      "definition": "shop / store",
+      "tags": [
+        "shopping",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "penjual",
+      "definition": "seller / vendor",
+      "tags": [
+        "shopping",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "pembeli",
+      "definition": "buyer",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "pelanggan",
+      "definition": "customer",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "jual",
+      "definition": "sell (base form)",
+      "tags": [
+        "shopping",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "beli",
+      "definition": "buy (base form)",
+      "tags": [
+        "shopping",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "bayar",
+      "definition": "pay (base form)",
+      "tags": [
+        "shopping",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "gratis",
+      "definition": "free / free of charge",
+      "tags": [
+        "shopping",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "lunas",
+      "definition": "paid off / fully paid",
+      "tags": [
+        "shopping",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "utang",
+      "definition": "debt",
+      "tags": [
+        "shopping",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "menabung",
+      "definition": "to save (money)",
+      "tags": [
+        "shopping",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "gaji",
+      "definition": "salary / wages",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "Ada yang lebih murah?",
+      "definition": "is there anything cheaper?",
+      "tags": [
+        "shopping",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "Saya lihat-lihat dulu",
+      "definition": "I'm just looking first / I'm just looking",
+      "tags": [
+        "shopping",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "Saya ambil ini",
+      "definition": "I'll take this",
+      "tags": [
+        "shopping",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "ini",
+      "definition": "this",
+      "tags": [
+        "shopping",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "itu",
+      "definition": "that",
+      "tags": [
+        "shopping",
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "tas plastik",
+      "definition": "plastic bag",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "sepasang",
+      "definition": "a pair",
+      "tags": [
+        "shopping",
+        "noun",
+        "a2"
+      ]
+    }
+  ]
+}

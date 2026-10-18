@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
+import HomePage from "../pages/HomePage.vue";
 
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", component: () => import("../pages/HomePage.vue") },
+    { path: "/", component: HomePage },
     { path: "/import", component: () => import("../pages/ImportPage.vue") },
     { path: "/sentences", component: () => import("../pages/SentencesManagePage.vue") },
     { path: "/vocab", component: () => import("../pages/VocabManagePage.vue") },
@@ -13,6 +14,9 @@ export const router = createRouter({
     { path: "/exams", component: () => import("../pages/ExamsPage.vue") },
     { path: "/practice", component: () => import("../pages/PracticePage.vue") },
     { path: "/stats", component: () => import("../pages/StatsPage.vue") },
+    { path: "/review", component: () => import("../pages/FlashcardsPage.vue") },
+    { path: "/settings", component: () => import("../pages/SettingsPage.vue") },
+    { path: "/search", component: () => import("../pages/SearchPage.vue") },
 
     { path: "/attempt/:attemptId", component: () => import("../pages/AttemptResultPage.vue"), props: true },
 
@@ -21,6 +25,8 @@ export const router = createRouter({
     { path: "/deck/:deckId/flash", component: () => import("../pages/FlashcardsPage.vue"), props: true },
     { path: "/deck/:deckId/quiz", component: () => import("../pages/VocabQuizPage.vue"), props: true },
 
-    { path: "/exam/:examId", component: () => import("../pages/ExamPage.vue"), props: true }
+    { path: "/exam/:examId", component: () => import("../pages/ExamPage.vue"), props: true },
+
+    { path: "/:pathMatch(.*)*", redirect: "/" }
   ]
 });

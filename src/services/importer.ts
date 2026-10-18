@@ -6,23 +6,13 @@ import type {
   RevisionsBundleJson
 } from "../types/json";
 import { tokenizeSentence } from "../utils/sentence";
+import { uid } from "../utils/id";
 
 /**
  * Import vocab deck JSON into IndexedDB.
  * Idempotent: same deck id overwrites its items.
  */
 export async function importVocabDeck(data: VocabDeckJson): Promise<{ title: string; count: number }> {
-  await db.vocabDecks.put({
-    id: data.id,
-    title: data.title,
-    from: data.from,
-    to: data.to,
-    createdAt: Date.now()
-  });
-
-  const prefix = `${data.id}:`;
-  await db.vocabItems.where("id").startsWith(prefix).delete();
-
   const items = data.items.map((it) => ({
     id: `${data.id}:${it.id}`,
     deckId: data.id,
@@ -32,7 +22,22 @@ export async function importVocabDeck(data: VocabDeckJson): Promise<{ title: str
     difficulty: it.difficulty
   }));
 
-  await db.vocabItems.bulkPut(items);
+  await db.transaction("rw", [db.vocabDecks, db.vocabItems, db.reviews], async () => {
+    const existing = await db.vocabDecks.get(data.id);
+    await db.vocabDecks.put({
+      id: data.id,
+      title: data.title,
+      from: data.from,
+      to: data.to,
+      createdAt: existing?.createdAt ?? Date.now()
+    });
+    await db.vocabItems.where("deckId").equals(data.id).delete();
+    await db.vocabItems.bulkPut(items);
+    // Keep SRS progress for items that still exist, drop it for removed ones.
+    const kept = new Set(items.map((it) => it.id));
+    await db.reviews.where("deckId").equals(data.id).filter((r) => !kept.has(r.itemId)).delete();
+  });
+
   return { title: data.title, count: items.length };
 }
 
@@ -41,16 +46,6 @@ export async function importVocabDeck(data: VocabDeckJson): Promise<{ title: str
  * Idempotent: same exam id overwrites its questions.
  */
 export async function importQcmExam(data: QcmExamJson): Promise<{ title: string; count: number }> {
-  await db.exams.put({
-    id: data.id,
-    title: data.title,
-    durationSeconds: data.durationSeconds,
-    createdAt: Date.now()
-  });
-
-  const prefix = `${data.id}:`;
-  await db.examQuestions.where("id").startsWith(prefix).delete();
-
   const questions = data.questions.map((q) => ({
     id: `${data.id}:${q.id}`,
     examId: data.id,
@@ -61,7 +56,18 @@ export async function importQcmExam(data: QcmExamJson): Promise<{ title: string;
     difficulty: q.difficulty
   }));
 
-  await db.examQuestions.bulkPut(questions);
+  await db.transaction("rw", [db.exams, db.examQuestions], async () => {
+    const existing = await db.exams.get(data.id);
+    await db.exams.put({
+      id: data.id,
+      title: data.title,
+      durationSeconds: data.durationSeconds,
+      createdAt: existing?.createdAt ?? Date.now()
+    });
+    await db.examQuestions.where("examId").equals(data.id).delete();
+    await db.examQuestions.bulkPut(questions);
+  });
+
   return { title: data.title, count: questions.length };
 }
 
@@ -70,29 +76,33 @@ export async function importQcmExam(data: QcmExamJson): Promise<{ title: string;
  * Idempotent: same deck id overwrites its sentences.
  */
 export async function importSentenceDeck(data: SentenceDeckJson): Promise<{ title: string; count: number }> {
-  const prefix = `${data.id}:`;
-  await db.sentenceExercises.where("id").startsWith(prefix).delete();
-
+  const now = Date.now();
   const sentences = data.items
     .map((s) => {
       const text = s.text.trim();
-      const tokens = tokenizeSentence(text);
       const translation = (s.translation ?? "").trim();
-      const literal = ((s as any).literal ?? "").trim();
+      const literal = (s.literal ?? "").trim();
       return {
         id: `${data.id}:${s.id}`,
+        deckId: data.id,
         text,
         translation: translation || undefined,
         literal: literal || undefined,
-        tokens,
+        tokens: tokenizeSentence(text),
         tags: s.tags ?? [],
-        difficulty: (s as any).difficulty,
-        createdAt: Date.now()
+        difficulty: s.difficulty,
+        createdAt: now
       };
     })
     .filter((s) => s.text.length > 0 && s.tokens.length >= 2);
 
-  await db.sentenceExercises.bulkPut(sentences);
+  await db.transaction("rw", [db.sentenceDecks, db.sentenceExercises], async () => {
+    const existing = await db.sentenceDecks.get(data.id);
+    await db.sentenceDecks.put({ id: data.id, title: data.title, createdAt: existing?.createdAt ?? now });
+    await db.sentenceExercises.where("deckId").equals(data.id).delete();
+    await db.sentenceExercises.bulkPut(sentences);
+  });
+
   return { title: data.title, count: sentences.length };
 }
 
@@ -117,7 +127,7 @@ export async function importBundle(
   // ✅ IMPORTANT: pass tables as an ARRAY to satisfy Dexie typings (avoid TS2554)
   await db.transaction(
       "rw",
-      [db.vocabDecks, db.vocabItems, db.exams, db.examQuestions, db.sentenceExercises],
+      [db.vocabDecks, db.vocabItems, db.reviews, db.exams, db.examQuestions, db.sentenceDecks, db.sentenceExercises],
       async () => {
         for (const d of bundle.vocabDecks) {
           const r = await importVocabDeck(d);
@@ -131,6 +141,10 @@ export async function importBundle(
           const r = await importSentenceDeck(s);
           sentences += r.count;
         }
+        if (bundle.progress?.reviews?.length) {
+          const ids = new Set(await db.vocabItems.toCollection().primaryKeys());
+          await db.reviews.bulkPut(bundle.progress.reviews.filter((r) => ids.has(r.itemId)));
+        }
       }
   );
 
@@ -142,4 +156,48 @@ export async function importBundle(
     qcmQuestions,
     sentences
   };
+}
+
+/**
+ * Adds CSV/TSV rows to a vocab deck. Creates the deck when `deckId` is not given.
+ * Unlike JSON import, existing items are kept (rows are appended, exact duplicates skipped).
+ */
+export async function importVocabRows(input: {
+  deckId?: string;
+  title: string;
+  from: string;
+  to: string;
+  rows: { term: string; definition: string; tags: string[] }[];
+}): Promise<{ deckId: string; added: number; duplicates: number }> {
+  const deckId = input.deckId ?? uid("deck");
+  let added = 0;
+  let duplicates = 0;
+
+  await db.transaction("rw", [db.vocabDecks, db.vocabItems], async () => {
+    if (!(await db.vocabDecks.get(deckId))) {
+      await db.vocabDecks.put({ id: deckId, title: input.title, from: input.from, to: input.to, createdAt: Date.now() });
+    }
+    const existing = await db.vocabItems.where("deckId").equals(deckId).toArray();
+    const seen = new Set(existing.map((it) => `${it.term}\u0000${it.definition}`));
+    const items = [];
+    for (const r of input.rows) {
+      const key = `${r.term}\u0000${r.definition}`;
+      if (seen.has(key)) {
+        duplicates++;
+        continue;
+      }
+      seen.add(key);
+      items.push({
+        id: `${deckId}:${uid("csv")}`,
+        deckId,
+        term: r.term,
+        definition: r.definition,
+        tags: r.tags
+      });
+    }
+    await db.vocabItems.bulkAdd(items);
+    added = items.length;
+  });
+
+  return { deckId, added, duplicates };
 }

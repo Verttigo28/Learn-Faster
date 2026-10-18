@@ -3,3 +3,8 @@ node_modules
 build
 dist
 android
+*.tsbuildinfo
+dev-dist
+coverage
+test-results
+playwright-report

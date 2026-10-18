@@ -1,0 +1,300 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-urgences",
+  "title": "Urgences",
+  "items": [
+    {
+      "id": "1",
+      "text": "Tolong, ada kecelakaan di sini.",
+      "translation": "À l'aide, il y a un accident ici.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Tolong panggil ambulans.",
+      "translation": "Appelez une ambulance, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Tolong panggil polisi.",
+      "translation": "Appelez la police, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Di mana kantor polisi terdekat?",
+      "translation": "Où est le commissariat le plus proche ?",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Paspor saya hilang.",
+      "translation": "J'ai perdu mon passeport.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Dompet saya dicuri.",
+      "translation": "On m'a volé mon portefeuille.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2",
+        "passif"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya perlu bantuan.",
+      "translation": "J'ai besoin d'aide.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Ada kebakaran di gedung itu.",
+      "translation": "Il y a un incendie dans ce bâtiment.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Teman saya pingsan.",
+      "translation": "Mon ami s'est évanoui.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Dia tidak bisa bernapas.",
+      "translation": "Il ne peut pas respirer.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2",
+        "negation",
+        "ber"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya kehilangan tas saya di bus.",
+      "translation": "J'ai perdu mon sac dans le bus.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Tolong hubungi Kedutaan Besar Prancis.",
+      "translation": "Contactez l'ambassade de France, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Nomor darurat di Indonesia adalah 112.",
+      "translation": "Le numéro d'urgence en Indonésie est le 112.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Kaki saya berdarah.",
+      "translation": "Ma jambe saigne.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Jangan bergerak, tunggu ambulans.",
+      "translation": "Ne bougez pas, attendez l'ambulance.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2",
+        "negation",
+        "ber"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Saya ditabrak motor.",
+      "translation": "J'ai été renversé par une moto.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2",
+        "passif"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Ada gempa bumi.",
+      "translation": "Il y a un tremblement de terre.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Cepat keluar dari gedung.",
+      "translation": "Sortez vite du bâtiment.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Anak saya hilang di pasar.",
+      "translation": "Mon enfant a disparu au marché.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya ingin melaporkan pencurian.",
+      "translation": "Je voudrais signaler un vol.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Tolong antar saya ke rumah sakit.",
+      "translation": "Emmenez-moi à l'hôpital, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Apakah ada yang bisa berbahasa Inggris?",
+      "translation": "Y a-t-il quelqu'un qui parle anglais ?",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2",
+        "question",
+        "ber"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Mobil kami mogok di jalan tol.",
+      "translation": "Notre voiture est tombée en panne sur l'autoroute.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Tetap tenang dan ikuti petunjuk petugas.",
+      "translation": "Restez calme et suivez les instructions du personnel.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Hati-hati, lantainya licin.",
+      "translation": "Attention, le sol est glissant.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Saya digigit anjing liar.",
+      "translation": "J'ai été mordu par un chien errant.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2",
+        "passif"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Golongan darah saya O.",
+      "translation": "Mon groupe sanguin est O.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Kartu kredit saya harus diblokir.",
+      "translation": "Ma carte de crédit doit être bloquée.",
+      "tags": [
+        "phrases",
+        "urgences",
+        "b1",
+        "passif"
+      ]
+    }
+  ]
+}

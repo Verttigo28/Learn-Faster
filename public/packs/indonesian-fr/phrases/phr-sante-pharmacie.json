@@ -1,0 +1,279 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-sante-pharmacie",
+  "title": "Santé et pharmacie",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya sakit kepala.",
+      "translation": "J'ai mal à la tête.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Perut saya sakit.",
+      "translation": "J'ai mal au ventre.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Saya demam sejak kemarin.",
+      "translation": "J'ai de la fièvre depuis hier.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya perlu ke dokter.",
+      "translation": "J'ai besoin d'aller chez le médecin.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Di mana apotek terdekat?",
+      "translation": "Où est la pharmacie la plus proche ?",
+      "tags": [
+        "phrases",
+        "sante",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Saya mau beli obat batuk.",
+      "translation": "Je voudrais acheter un médicament contre la toux.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Obat ini diminum tiga kali sehari.",
+      "translation": "Ce médicament se prend trois fois par jour.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2",
+        "passif"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Minum obatnya sesudah makan.",
+      "translation": "Prenez le médicament après le repas.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Saya alergi penisilin.",
+      "translation": "Je suis allergique à la pénicilline.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Saya masuk angin.",
+      "translation": "J'ai pris froid.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Badan saya terasa lemas.",
+      "translation": "Je me sens faible.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Apakah perlu resep dokter?",
+      "translation": "Faut-il une ordonnance ?",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Saya digigit nyamuk.",
+      "translation": "J'ai été piqué par un moustique.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2",
+        "passif"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Kaki saya terkilir.",
+      "translation": "Je me suis foulé le pied.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Sudah berapa lama Anda sakit?",
+      "translation": "Depuis combien de temps êtes-vous malade ?",
+      "tags": [
+        "phrases",
+        "sante",
+        "b1",
+        "question"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Saya sudah merasa lebih baik.",
+      "translation": "Je me sens déjà mieux.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2",
+        "aspect",
+        "me"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Istirahat yang cukup, ya.",
+      "translation": "Reposez-vous bien.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Gigi saya sakit sekali.",
+      "translation": "J'ai très mal aux dents.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya muntah dan diare.",
+      "translation": "J'ai des vomissements et la diarrhée.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Dokter memeriksa tekanan darah saya.",
+      "translation": "Le médecin vérifie ma tension.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Jangan minum air keran.",
+      "translation": "Ne buvez pas l'eau du robinet.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya butuh plester untuk luka ini.",
+      "translation": "J'ai besoin d'un pansement pour cette blessure.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Tenggorokan saya sakit.",
+      "translation": "J'ai mal à la gorge.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Apakah saya harus dirawat di rumah sakit?",
+      "translation": "Est-ce que je dois être hospitalisé ?",
+      "tags": [
+        "phrases",
+        "sante",
+        "b1",
+        "question",
+        "passif"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Saya punya asuransi kesehatan.",
+      "translation": "J'ai une assurance santé.",
+      "tags": [
+        "phrases",
+        "sante",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Obat ini bisa membuat mengantuk.",
+      "translation": "Ce médicament peut provoquer de la somnolence.",
+      "tags": [
+        "phrases",
+        "sante",
+        "b1",
+        "me"
+      ]
+    }
+  ]
+}

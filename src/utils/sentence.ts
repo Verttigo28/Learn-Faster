@@ -11,6 +11,11 @@ export function tokenizeSentence(text: string): string[] {
     .filter(Boolean);
 }
 
+/** Shuffle tokens, avoiding (when possible) handing back the already-solved order. */
 export function shuffleTokens(tokens: string[]): string[] {
-  return shuffle(tokens);
+  const solved = tokens.join("\u0000");
+  const out = shuffle(tokens);
+  if (out.join("\u0000") !== solved || new Set(tokens).size < 2) return out;
+  // Still solved: rotate by one (always differs since at least two tokens differ).
+  return [...out.slice(1), out[0]];
 }

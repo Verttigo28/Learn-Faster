@@ -1,0 +1,439 @@
+{
+  "type": "vocab_deck",
+  "id": "id-boissons",
+  "title": "Les boissons",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "minuman",
+      "definition": "boisson",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "air",
+      "definition": "eau",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "air putih",
+      "definition": "eau plate",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "air mineral",
+      "definition": "eau minérale",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "es",
+      "definition": "glace",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "es batu",
+      "definition": "glaçons",
+      "tags": [
+        "boissons",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "teh",
+      "definition": "thé",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "teh manis",
+      "definition": "thé sucré",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "teh tawar",
+      "definition": "thé sans sucre",
+      "tags": [
+        "boissons",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "es teh",
+      "definition": "thé glacé",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "kopi",
+      "definition": "café",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "kopi susu",
+      "definition": "café au lait",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "kopi hitam",
+      "definition": "café noir",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "susu",
+      "definition": "lait",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "jus",
+      "definition": "jus",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "jus jeruk",
+      "definition": "jus d'orange",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "es jeruk",
+      "definition": "jus d'orange glacé",
+      "tags": [
+        "boissons",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "air kelapa",
+      "definition": "eau de coco",
+      "tags": [
+        "boissons",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "bir",
+      "definition": "bière",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "minuman beralkohol",
+      "definition": "boisson alcoolisée",
+      "tags": [
+        "boissons",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "minuman bersoda",
+      "definition": "boisson gazeuse",
+      "tags": [
+        "boissons",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "sirup",
+      "definition": "sirop",
+      "tags": [
+        "boissons",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "cokelat panas",
+      "definition": "chocolat chaud",
+      "tags": [
+        "boissons",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "jamu",
+      "definition": "boisson traditionnelle aux plantes",
+      "tags": [
+        "boissons",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "es campur",
+      "definition": "dessert glacé mélangé",
+      "tags": [
+        "boissons",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "wedang jahe",
+      "definition": "boisson chaude au gingembre",
+      "tags": [
+        "boissons",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "tuak",
+      "definition": "vin de palme",
+      "tags": [
+        "boissons",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "dingin",
+      "definition": "froid",
+      "tags": [
+        "boissons",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "panas",
+      "definition": "chaud",
+      "tags": [
+        "boissons",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "hangat",
+      "definition": "tiède / chaud",
+      "tags": [
+        "boissons",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "tanpa gula",
+      "definition": "sans sucre",
+      "tags": [
+        "boissons",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "tanpa es",
+      "definition": "sans glace",
+      "tags": [
+        "boissons",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "sedikit gula",
+      "definition": "peu de sucre",
+      "tags": [
+        "boissons",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "gelas",
+      "definition": "verre",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "cangkir",
+      "definition": "tasse",
+      "tags": [
+        "boissons",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "botol",
+      "definition": "bouteille",
+      "tags": [
+        "boissons",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "sedotan",
+      "definition": "paille",
+      "tags": [
+        "boissons",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "kaleng",
+      "definition": "canette / boîte de conserve",
+      "tags": [
+        "boissons",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "minum",
+      "definition": "boire",
+      "tags": [
+        "boissons",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "haus",
+      "definition": "avoir soif",
+      "tags": [
+        "boissons",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "segelas",
+      "definition": "un verre de",
+      "tags": [
+        "boissons",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "secangkir",
+      "definition": "une tasse de",
+      "tags": [
+        "boissons",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "sebotol",
+      "definition": "une bouteille de",
+      "tags": [
+        "boissons",
+        "expression",
+        "a2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,712 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-suffixes-kan-i",
+  "title": "The Suffixes -kan and -i",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "What does \"membersihkan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "cleanliness",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to be clean",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to wash oneself",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to clean (to make clean)",
+          "correct": true
+        }
+      ],
+      "explanation": "Causative -kan: bersih (clean) becomes membersihkan (to make clean).",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "a2"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "What does \"menidurkan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to sleep",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "bedroom",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to put to sleep, to make someone sleep",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "to fall asleep unintentionally",
+          "correct": false
+        }
+      ],
+      "explanation": "Causative -kan: tidur (to sleep) becomes \"to put to sleep\".",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "What does \"Saya membelikan adik saya buku\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "My younger brother bought me a book.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I sold my younger brother's book.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "My younger brother bought a book.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I bought my younger brother a book (bought a book for him).",
+          "correct": true
+        }
+      ],
+      "explanation": "Benefactive -kan: doing something for someone.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "\"The mayor brought in experts.\" - \"Wali kota ___ para ahli.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mendatangkan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "datang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mendatangi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kedatangan",
+          "correct": false
+        }
+      ],
+      "explanation": "Mendatangkan = to bring in, to make come (causative); mendatangi = to visit, to go to.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "\"He went to his friend's house.\" - \"Dia ___ rumah temannya.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mendatangkan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mendatangi",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "datangkan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kedatangan",
+          "correct": false
+        }
+      ],
+      "explanation": "Locative -i: the object is the place you go to.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Fill in the blank: \"Petani itu ___ sawahnya dengan padi.\" (to plant his rice field)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menanami",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "menanamkan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "tanaman",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "tertanam",
+          "correct": false
+        }
+      ],
+      "explanation": "Locative -i: the object (sawah) is the place where the action happens.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Fill in the blank: \"Ayah ___ mobil ke garasi.\" (to put the car in)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "masuk",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "memasukkan",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "memasuki",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kemasukan",
+          "correct": false
+        }
+      ],
+      "explanation": "Memasukkan = to put in, to bring in (note: double k).",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Fill in the blank: \"Pencuri itu ___ rumah kami.\" (entered our house)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dimasukkan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "memasuki",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "memasukkan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kemasukan",
+          "correct": false
+        }
+      ],
+      "explanation": "Memasuki = to enter (object = the place).",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Fill in the blank: \"Saya ___ surat kepada ibu.\" (to send a letter to Mom)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mengirimi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kiriman",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "terkirim",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mengirimkan",
+          "correct": true
+        }
+      ],
+      "explanation": "Mengirimkan + the thing sent; mengirimi + the recipient.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "In \"Saya mengirimi ibu surat\", what is the direct object?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ibu",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "none",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "surat",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "saya",
+          "correct": false
+        }
+      ],
+      "explanation": "With -i, the direct object is the recipient (ibu).",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "What does \"mendengarkan musik\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to overhear music by chance",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to play music",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to listen to music",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "to compose music",
+          "correct": false
+        }
+      ],
+      "explanation": "Mendengarkan = to listen (actively); mendengar = to hear.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Fill in the blank: \"Anak itu ___ dinding.\" (to write on the wall)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tulisan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menulisi",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "menuliskan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "tertulis",
+          "correct": false
+        }
+      ],
+      "explanation": "-i: the object is the surface you write on.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "What does \"memukuli\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to hit repeatedly",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "to hit once",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to get hit",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to hit on someone's behalf",
+          "correct": false
+        }
+      ],
+      "explanation": "-i can mark a repeated action.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "What does \"menjauhi\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to move something away",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to be far",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "distance",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to keep away from, to avoid",
+          "correct": true
+        }
+      ],
+      "explanation": "Jauh (far) + -i: to keep away from something.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "\"The shop raised its prices.\" - \"Toko itu ___ harga.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kenaikan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menaiki",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "naik",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "menaikkan",
+          "correct": true
+        }
+      ],
+      "explanation": "Menaikkan = to raise, to increase (causative).",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "\"We are climbing those stairs.\" - \"Kami ___ tangga itu.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menaiki",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "dinaikkan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menaikkan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kenaikan",
+          "correct": false
+        }
+      ],
+      "explanation": "Menaiki = to climb onto / get into (object = the place).",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "What does \"Tolong ambilkan saya air\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Don't take the water.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Take my water.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Please get me some water.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "I'm taking some water.",
+          "correct": false
+        }
+      ],
+      "explanation": "Ambilkan: benefactive -kan (to fetch for someone).",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "What does \"Surat ini harus ditandatangani\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "This letter must be written.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "This letter must be signed.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "This letter is a sign.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "This letter is signed.",
+          "correct": false
+        }
+      ],
+      "explanation": "Menandatangani (to sign) gives the passive ditandatangani.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "What does \"menghadiri rapat\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to organize a meeting",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to leave a meeting",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to cancel a meeting",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to attend a meeting",
+          "correct": true
+        }
+      ],
+      "explanation": "Hadir (present) + -i: to be present at, to attend.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "What is the correct form for \"to love (someone)\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bercintakan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "dicintakan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mencintakan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mencintai",
+          "correct": true
+        }
+      ],
+      "explanation": "Verbs of feeling often take -i: mencintai, menyukai.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Fill in the blank: \"Guru itu ___ pelajaran dengan jelas.\" (to explain)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menjelasi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kejelasan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menjelaskan",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "berjelas",
+          "correct": false
+        }
+      ],
+      "explanation": "Jelas (clear) + -kan: to make clear, to explain.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "What does \"menemani\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to accompany",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "to find",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to meet by chance",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to make a friend",
+          "correct": false
+        }
+      ],
+      "explanation": "Teman (friend, companion) + -i: to keep someone company, to accompany.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    }
+  ]
+}

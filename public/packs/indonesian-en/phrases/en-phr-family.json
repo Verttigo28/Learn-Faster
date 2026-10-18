@@ -1,0 +1,282 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-family",
+  "title": "Family",
+  "items": [
+    {
+      "id": "1",
+      "text": "Keluarga saya tinggal di Bandung.",
+      "translation": "My family lives in Bandung.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Saya punya satu kakak perempuan.",
+      "translation": "I have one older sister.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Adik laki-laki saya masih sekolah.",
+      "translation": "My younger brother is still in school.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Ayah saya bekerja di bank.",
+      "translation": "My father works at a bank.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Ibu saya pandai memasak.",
+      "translation": "My mother is good at cooking.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Kakek dan nenek saya sudah tua.",
+      "translation": "My grandparents are already old.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Anak saya berumur tiga tahun.",
+      "translation": "My child is three years old.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Berapa saudara Anda?",
+      "translation": "How many siblings do you have?",
+      "tags": [
+        "sentences",
+        "family",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Saya anak kedua dari tiga bersaudara.",
+      "translation": "I'm the second of three children.",
+      "tags": [
+        "sentences",
+        "family",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Suami saya seorang dokter.",
+      "translation": "My husband is a doctor.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Paman saya tinggal di Surabaya.",
+      "translation": "My uncle lives in Surabaya.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Sepupu saya akan segera menikah.",
+      "translation": "My cousin is getting married soon.",
+      "tags": [
+        "sentences",
+        "family",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Orang tua saya tinggal di desa.",
+      "translation": "My parents live in a village.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Kami keluarga besar.",
+      "translation": "We are a big family.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Istri saya sedang hamil.",
+      "translation": "My wife is pregnant.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Anak-anak bermain di halaman.",
+      "translation": "The children are playing in the yard.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Kakak laki-laki saya sudah punya dua anak.",
+      "translation": "My older brother already has two children.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Apakah Anda sudah punya anak?",
+      "translation": "Do you have children yet?",
+      "tags": [
+        "sentences",
+        "family",
+        "a1",
+        "question",
+        "aspect"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya belum punya anak.",
+      "translation": "I don't have children yet.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Nenek saya berumur delapan puluh tahun.",
+      "translation": "My grandmother is eighty years old.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Kami selalu makan malam bersama.",
+      "translation": "We always have dinner together.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Adik perempuan saya sangat cantik.",
+      "translation": "My younger sister is very pretty.",
+      "tags": [
+        "sentences",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Mertua saya baik sekali.",
+      "translation": "My in-laws are very kind.",
+      "tags": [
+        "sentences",
+        "family",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Ayah saya sudah pensiun.",
+      "translation": "My father is already retired.",
+      "tags": [
+        "sentences",
+        "family",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Cucu saya lucu sekali.",
+      "translation": "My grandchild is so cute.",
+      "tags": [
+        "sentences",
+        "family",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Saya sangat menyayangi keluarga saya.",
+      "translation": "I love my family very much.",
+      "tags": [
+        "sentences",
+        "family",
+        "a2",
+        "me"
+      ]
+    }
+  ]
+}

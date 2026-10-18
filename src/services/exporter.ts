@@ -1,16 +1,18 @@
-import { db } from "../db";
+import { t } from "../i18n";
+import { db, MANUAL_SENTENCE_DECK_ID } from "../db";
 import type { VocabDeckJson, QcmExamJson, SentenceDeckJson, RevisionsBundleJson } from "../types/json";
 
-function stripPrefix(id: string): string {
-    const i = id.indexOf(":");
-    return i >= 0 ? id.slice(i + 1) : id;
+/** Les ids stockés sont "parentId:itemId" : on retire exactement le préfixe du parent. */
+function stripPrefix(id: string, parentId: string): string {
+    const prefix = `${parentId}:`;
+    return id.startsWith(prefix) ? id.slice(prefix.length) : id;
 }
 
 /**
  * Construit un bundle unique contenant :
  * - tous les decks vocab
  * - tous les exams QCM
- * - toutes les phrases SPOK (groupées par prefix si possible)
+ * - tous les decks de phrases SPOK
  */
 export async function exportAllData(): Promise<RevisionsBundleJson> {
     const vocabDecks = await db.vocabDecks.toArray();
@@ -19,7 +21,9 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
     const exams = await db.exams.toArray();
     const questions = await db.examQuestions.toArray();
 
+    const sentenceDecks = await db.sentenceDecks.toArray();
     const sentences = await db.sentenceExercises.toArray();
+    const reviews = await db.reviews.toArray();
 
     const vocabDeckJson: VocabDeckJson[] = vocabDecks.map((d) => ({
         type: "vocab_deck",
@@ -30,10 +34,11 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
         items: vocabItems
             .filter((it) => it.deckId === d.id)
             .map((it) => ({
-                id: stripPrefix(it.id),
+                id: stripPrefix(it.id, d.id),
                 term: it.term,
                 definition: it.definition,
-                tags: it.tags ?? []
+                tags: it.tags ?? [],
+                difficulty: it.difficulty
             }))
     }));
 
@@ -45,37 +50,38 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
         questions: questions
             .filter((q) => q.examId === e.id)
             .map((q) => ({
-                id: stripPrefix(q.id),
+                id: stripPrefix(q.id, e.id),
                 prompt: q.prompt,
                 choices: q.choices,
                 explanation: q.explanation,
-                tags: q.tags ?? []
+                tags: q.tags ?? [],
+                difficulty: q.difficulty
             }))
     }));
 
-    // Group phrases by "deckId:" prefix when present, else fallback to "sentences"
-    const byDeck = new Map<string, { title: string; items: SentenceDeckJson["items"] }>();
-
+    const titles = new Map(sentenceDecks.map((d) => [d.id, d.title]));
+    const byDeck = new Map<string, SentenceDeckJson["items"]>();
     for (const s of sentences) {
-        const rawId = s.id;
-        const deckKey = rawId.includes(":") ? rawId.split(":")[0] : "sentences";
-        const bucket = byDeck.get(deckKey) ?? { title: deckKey === "sentences" ? "Phrases (SPOK)" : `Phrases (${deckKey})`, items: [] };
-
-        bucket.items.push({
-            id: stripPrefix(rawId),
+        const deckId = s.deckId ?? MANUAL_SENTENCE_DECK_ID;
+        const items = byDeck.get(deckId) ?? [];
+        items.push({
+            id: stripPrefix(s.id, deckId),
             text: s.text,
             translation: s.translation,
-            tags: s.tags ?? []
+            literal: s.literal,
+            tags: s.tags ?? [],
+            difficulty: s.difficulty
         });
-
-        byDeck.set(deckKey, bucket);
+        byDeck.set(deckId, items);
     }
 
-    const sentenceDecks: SentenceDeckJson[] = Array.from(byDeck.entries()).map(([id, v]) => ({
+    // Every stored deck (even empty), plus orphan groups whose deck row is missing.
+    const deckIds = [...sentenceDecks.map((d) => d.id), ...[...byDeck.keys()].filter((id) => !titles.has(id))];
+    const sentenceDeckJson: SentenceDeckJson[] = deckIds.map((id) => ({
         type: "sentence_deck",
         id,
-        title: v.title,
-        items: v.items
+        title: titles.get(id) ?? (id === MANUAL_SENTENCE_DECK_ID ? t("services.myPhrases") : id),
+        items: byDeck.get(id) ?? []
     }));
 
     return {
@@ -84,20 +90,7 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
         exportedAt: Date.now(),
         vocabDecks: vocabDeckJson,
         qcmExams: qcmJson,
-        sentenceDecks
+        sentenceDecks: sentenceDeckJson,
+        progress: { reviews }
     };
-}
-
-export function downloadJson(filename: string, data: unknown) {
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-
-    URL.revokeObjectURL(url);
 }

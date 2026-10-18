@@ -1,0 +1,294 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-introductions",
+  "title": "Introducing Yourself",
+  "items": [
+    {
+      "id": "1",
+      "text": "Nama saya Budi.",
+      "translation": "My name is Budi.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Saya berasal dari Prancis.",
+      "translation": "I come from France.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Saya orang Prancis.",
+      "translation": "I'm French.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya tinggal di Paris.",
+      "translation": "I live in Paris.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Umur saya dua puluh lima tahun.",
+      "translation": "I'm twenty-five years old.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Saya bekerja sebagai guru.",
+      "translation": "I work as a teacher.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya belajar bahasa Indonesia.",
+      "translation": "I'm learning Indonesian.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Saya sudah menikah.",
+      "translation": "I'm married.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Saya belum menikah.",
+      "translation": "I'm not married yet.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1",
+        "negation",
+        "aspect"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Saya punya dua anak.",
+      "translation": "I have two children.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Siapa nama Anda?",
+      "translation": "What is your name?",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Anda berasal dari mana?",
+      "translation": "Where are you from?",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1",
+        "question",
+        "ber"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Apa pekerjaan Anda?",
+      "translation": "What do you do for a living?",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Saya senang berkenalan dengan Anda.",
+      "translation": "I'm pleased to meet you.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Hobi saya membaca buku.",
+      "translation": "My hobby is reading books.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Saya bisa berbicara sedikit bahasa Indonesia.",
+      "translation": "I can speak a little Indonesian.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya lahir di Lyon.",
+      "translation": "I was born in Lyon.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Saya datang ke Indonesia untuk berlibur.",
+      "translation": "I came to Indonesia on holiday.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Ini pertama kalinya saya ke Indonesia.",
+      "translation": "This is my first time in Indonesia.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya mahasiswa di Universitas Sorbonne.",
+      "translation": "I'm a student at the Sorbonne University.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Saya tidak bisa berbahasa Jawa.",
+      "translation": "I can't speak Javanese.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a2",
+        "negation",
+        "ber"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya sudah tinggal di sini selama dua tahun.",
+      "translation": "I've been living here for two years.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Perkenalkan, nama saya Marie.",
+      "translation": "Let me introduce myself, my name is Marie.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Saya suka makanan Indonesia.",
+      "translation": "I like Indonesian food.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Bahasa Indonesia saya masih kurang lancar.",
+      "translation": "My Indonesian is still not very fluent.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Istri saya orang Indonesia.",
+      "translation": "My wife is Indonesian.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Saya anak tunggal.",
+      "translation": "I'm an only child.",
+      "tags": [
+        "sentences",
+        "introductions",
+        "a1"
+      ]
+    }
+  ]
+}

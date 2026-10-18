@@ -1,142 +1,141 @@
-/**
- * Spaced Repetition System (SM-2 variant)
- *
- * Each item has:
- *  - easeFactor: how easy the item is (starts at 2.5, min 1.3)
- *  - interval: days until next review
- *  - repetitions: consecutive correct answers
- *  - nextReview: timestamp of next review
- *
- * Quality grades: 0-5
- *  0 = total blackout
- *  1 = wrong, but recognized answer
- *  2 = wrong, but easy recall after seeing answer
- *  3 = correct with serious difficulty
- *  4 = correct with some hesitation
- *  5 = perfect, instant recall
- *
- * Simplified for the app:
- *  "Je ne sais pas"  → grade 1
- *  "Je sais" (slow)   → grade 3
- *  "Je sais" (fast)   → grade 5
- */
+import { t } from "../i18n";
+import { db, type ReviewState, type VocabItem } from "../db";
+import { shuffle } from "../utils/shuffle";
+import { getSetting } from "./settings";
 
-import { db } from "../db";
-import type { SrsCard } from "../db";
+/** 0 = À revoir, 1 = Difficile, 2 = Bien, 3 = Facile */
+export type Grade = 0 | 1 | 2 | 3;
+export type Direction = "forward" | "reverse";
 
-export interface SrsUpdate {
-  easeFactor: number;
-  interval: number;
-  repetitions: number;
-  nextReview: number;
+export const DAY = 24 * 3600 * 1000;
+const RELEARN_DELAY = 10 * 60 * 1000;
+const MIN_EASE = 1.3;
+
+export function cardId(itemId: string, direction: Direction = "forward"): string {
+  return direction === "forward" ? itemId : `${itemId}#rev`;
 }
 
-/**
- * Calculate next review parameters using SM-2 algorithm.
- * @param card Current card state (or defaults for new card)
- * @param grade Quality of response (0-5)
- */
-export function sm2(card: Pick<SrsCard, "easeFactor" | "interval" | "repetitions">, grade: number): SrsUpdate {
-  const q = Math.max(0, Math.min(5, Math.round(grade)));
-
-  let { easeFactor, interval, repetitions } = card;
-
-  if (q < 3) {
-    // Failed: reset repetitions, short interval
-    repetitions = 0;
-    interval = 1;
-  } else {
-    // Success
-    repetitions += 1;
-    if (repetitions === 1) {
-      interval = 1;
-    } else if (repetitions === 2) {
-      interval = 6;
-    } else {
-      interval = Math.round(interval * easeFactor);
-    }
-  }
-
-  // Update ease factor
-  easeFactor = easeFactor + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
-  easeFactor = Math.max(1.3, easeFactor);
-
-  const nextReview = Date.now() + interval * 24 * 60 * 60 * 1000;
-
-  return { easeFactor, interval, repetitions, nextReview };
+export function startOfDay(now: number): number {
+  const d = new Date(now);
+  d.setHours(0, 0, 0, 0);
+  return d.getTime();
 }
 
-/** Default values for a new SRS card */
-export function defaultSrsCard(itemId: string, itemType: "vocab" | "exam" | "sentence"): SrsCard {
+export function endOfDay(now: number): number {
+  const d = new Date(now);
+  d.setHours(23, 59, 59, 999);
+  return d.getTime();
+}
+
+export function newReview(item: VocabItem, direction: Direction = "forward"): ReviewState {
   return {
-    id: `srs:${itemId}`,
-    itemId,
-    itemType,
-    easeFactor: 2.5,
+    cardId: cardId(item.id, direction),
+    itemId: item.id,
+    deckId: item.deckId,
+    direction,
+    ease: 2.5,
     interval: 0,
-    repetitions: 0,
-    nextReview: 0, // due immediately
-    lastReview: 0
+    reps: 0,
+    lapses: 0,
+    due: 0,
+    introducedAt: 0,
+    lastReviewed: 0
   };
 }
 
 /**
- * Record a review result for an item.
- * Creates the SRS card if it doesn't exist yet.
+ * SM-2 (variante Anki simplifiée). Interval en jours.
+ * Pure: retourne un nouvel état sans toucher la base.
  */
-export async function recordReview(itemId: string, itemType: "vocab" | "exam" | "sentence", grade: number): Promise<void> {
-  const srsId = `srs:${itemId}`;
-  let card = await db.srsCards.get(srsId);
+export function schedule(state: ReviewState, grade: Grade, now = Date.now()): ReviewState {
+  const s = { ...state, lastReviewed: now, introducedAt: state.introducedAt || now };
 
-  if (!card) {
-    card = defaultSrsCard(itemId, itemType);
+  if (grade === 0) {
+    s.lapses += state.reps > 0 ? 1 : 0;
+    s.reps = 0;
+    s.interval = 0;
+    s.ease = Math.max(MIN_EASE, state.ease - 0.2);
+    s.due = now + RELEARN_DELAY;
+    return s;
   }
 
-  const update = sm2(card, grade);
+  const prev = state.interval;
+  // Reviewed before its due day (e.g. "réviser tout le deck"): grow from the time really elapsed,
+  // never below the current interval, so cramming does not push cards months away.
+  const early = prev > 0 && state.due > endOfDay(now);
+  const elapsed = Math.max(0, (now - state.lastReviewed) / DAY);
+  let interval: number;
+  if (grade === 1) {
+    interval = prev === 0 ? 1 : early ? prev : Math.max(prev + 1, Math.round(prev * 1.2));
+    s.ease = Math.max(MIN_EASE, state.ease - 0.15);
+  } else if (grade === 2) {
+    interval = prev === 0 ? 1 : early
+      ? Math.max(prev, Math.round(elapsed * state.ease))
+      : Math.max(prev + 1, Math.round(prev * state.ease));
+  } else {
+    interval = prev === 0 ? 4 : early
+      ? Math.max(prev, Math.round(elapsed * state.ease * 1.3))
+      : Math.max(prev + 2, Math.round(prev * state.ease * 1.3));
+    if (!early) s.ease = state.ease + 0.15;
+  }
 
-  await db.srsCards.put({
-    ...card,
-    ...update,
-    lastReview: Date.now()
+  s.reps = state.reps + 1;
+  s.interval = interval;
+  s.due = now + interval * DAY;
+  return s;
+}
+
+/** Human readable next interval for a button label ("10 min", "3 j", "2 mois"). */
+export function formatInterval(state: ReviewState, now: number): string {
+  const ms = state.due - now;
+  if (ms < 3600 * 1000) return t("services.interval.minutes", { n: Math.max(1, Math.round(ms / 60000)) });
+  const days = Math.round(ms / DAY);
+  if (days < 31) return t("services.interval.days", { n: days });
+  if (days < 365) return t("services.interval.months", { n: Math.round(days / 30) });
+  return t("services.interval.years", { n: (days / 365).toFixed(1) });
+}
+
+export type QueueCard = { item: VocabItem; review: ReviewState; isNew: boolean };
+
+/**
+ * Cards to study today: every card due before tonight, plus up to `newPerDay` new cards
+ * (minus new cards already started today).
+ */
+export async function buildReviewQueue(opts: { deckId?: string; direction?: Direction; now?: number } = {}): Promise<QueueCard[]> {
+  const now = opts.now ?? Date.now();
+  const direction = opts.direction ?? "forward";
+  const items = opts.deckId
+    ? await db.vocabItems.where("deckId").equals(opts.deckId).toArray()
+    : await db.vocabItems.toArray();
+  const reviews = await db.reviews.bulkGet(items.map((it) => cardId(it.id, direction)));
+
+  const due: QueueCard[] = [];
+  const fresh: QueueCard[] = [];
+  items.forEach((item, i) => {
+    const r = reviews[i];
+    if (!r) fresh.push({ item, review: newReview(item, direction), isNew: true });
+    else if (r.due <= endOfDay(now)) due.push({ item, review: r, isNew: false });
   });
+
+  const newPerDay = await getSetting("newPerDay");
+  const dayStart = startOfDay(now);
+  const startedToday = await db.reviews
+    .where("introducedAt")
+    .aboveOrEqual(dayStart)
+    .filter((r) => r.direction === direction)
+    .count();
+  const newBudget = Math.max(0, newPerDay - startedToday);
+
+  due.sort((a, b) => a.review.due - b.review.due);
+  return [...due, ...shuffle(fresh).slice(0, newBudget)];
 }
 
-/**
- * Get items due for review (nextReview <= now).
- * Returns sorted by most overdue first.
- */
-export async function getDueCards(itemType?: "vocab" | "exam" | "sentence", limit = 50): Promise<SrsCard[]> {
-  const now = Date.now();
-
-  let query = db.srsCards.where("nextReview").belowOrEqual(now);
-
-  const all = await query.toArray();
-
-  const filtered = itemType ? all.filter(c => c.itemType === itemType) : all;
-
-  // Sort by most overdue first
-  filtered.sort((a, b) => a.nextReview - b.nextReview);
-
-  return filtered.slice(0, limit);
+export async function countDueToday(now = Date.now()): Promise<{ due: number; fresh: number }> {
+  const q = await buildReviewQueue({ now });
+  const fresh = q.filter((c) => c.isNew).length;
+  return { due: q.length - fresh, fresh };
 }
 
-/**
- * Get SRS stats summary
- */
-export async function getSrsStats(): Promise<{
-  total: number;
-  due: number;
-  learned: number;
-  avgEase: number;
-}> {
-  const now = Date.now();
-  const all = await db.srsCards.toArray();
-
-  const due = all.filter(c => c.nextReview <= now).length;
-  const learned = all.filter(c => c.repetitions >= 3).length;
-  const avgEase = all.length
-    ? all.reduce((sum, c) => sum + c.easeFactor, 0) / all.length
-    : 2.5;
-
-  return { total: all.length, due, learned, avgEase };
+export async function saveReview(state: ReviewState): Promise<void> {
+  await db.reviews.put(state);
 }

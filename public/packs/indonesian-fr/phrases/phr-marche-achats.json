@@ -1,0 +1,294 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-marche-achats",
+  "title": "Au marché et faire des achats",
+  "items": [
+    {
+      "id": "1",
+      "text": "Berapa harga mangga ini?",
+      "translation": "Combien coûte cette mangue ?",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Satu kilo berapa, Bu?",
+      "translation": "C'est combien le kilo, madame ?",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Mahal sekali, bisa kurang?",
+      "translation": "C'est très cher, vous pouvez baisser le prix ?",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Boleh saya tawar?",
+      "translation": "Je peux marchander ?",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Kalau lima puluh ribu, boleh?",
+      "translation": "Cinquante mille, c'est possible ?",
+      "tags": [
+        "phrases",
+        "marche",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Itu harga pas, Mas.",
+      "translation": "C'est un prix fixe, monsieur.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya beli dua kilo jeruk.",
+      "translation": "J'achète deux kilos d'oranges.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Ada ukuran yang lebih besar?",
+      "translation": "Vous avez une taille plus grande ?",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Saya mau mencoba baju ini.",
+      "translation": "Je voudrais essayer ce vêtement.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Ada warna lain?",
+      "translation": "Vous l'avez dans une autre couleur ?",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya hanya melihat-lihat.",
+      "translation": "Je ne fais que regarder.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Ini terlalu mahal untuk saya.",
+      "translation": "C'est trop cher pour moi.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Saya ambil yang merah.",
+      "translation": "Je prends le rouge.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Ada kembalian untuk seratus ribu?",
+      "translation": "Vous avez la monnaie sur cent mille ?",
+      "tags": [
+        "phrases",
+        "marche",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Tolong dibungkus, ya.",
+      "translation": "Emballez-le, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1",
+        "passif"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Pasar ini buka setiap pagi.",
+      "translation": "Ce marché ouvre tous les matins.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Sayurnya masih segar.",
+      "translation": "Les légumes sont encore frais.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Saya mencari oleh-oleh untuk teman.",
+      "translation": "Je cherche des souvenirs pour des amis.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Batik ini buatan tangan.",
+      "translation": "Ce batik est fait main.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Harganya sudah termasuk pajak.",
+      "translation": "Le prix comprend déjà les taxes.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Bisa bayar dengan kartu kredit?",
+      "translation": "Peut-on payer par carte de crédit ?",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya tidak jadi membeli.",
+      "translation": "Finalement, je n'achète pas.",
+      "tags": [
+        "phrases",
+        "marche",
+        "b1",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Setengah kilo bawang merah, Bu.",
+      "translation": "Un demi-kilo d'échalotes, madame.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Toko itu tutup hari Minggu.",
+      "translation": "Ce magasin est fermé le dimanche.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Diskonnya berapa persen?",
+      "translation": "La réduction est de combien de pour cent ?",
+      "tags": [
+        "phrases",
+        "marche",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Kain ini dijual per meter.",
+      "translation": "Ce tissu est vendu au mètre.",
+      "tags": [
+        "phrases",
+        "marche",
+        "b1",
+        "passif"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Saya mau beli pulsa.",
+      "translation": "Je voudrais acheter du crédit téléphonique.",
+      "tags": [
+        "phrases",
+        "marche",
+        "a1"
+      ]
+    }
+  ]
+}

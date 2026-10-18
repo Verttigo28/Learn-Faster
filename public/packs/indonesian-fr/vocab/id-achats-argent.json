@@ -1,0 +1,459 @@
+{
+  "type": "vocab_deck",
+  "id": "id-achats-argent",
+  "title": "Achats et argent",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "uang",
+      "definition": "argent",
+      "tags": [
+        "achats",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "harga",
+      "definition": "prix",
+      "tags": [
+        "achats",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "murah",
+      "definition": "bon marché / pas cher",
+      "tags": [
+        "achats",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "mahal",
+      "definition": "cher",
+      "tags": [
+        "achats",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "Berapa harganya?",
+      "definition": "combien ça coûte ?",
+      "tags": [
+        "achats",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "Berapa?",
+      "definition": "combien ?",
+      "tags": [
+        "achats",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "tawar-menawar",
+      "definition": "marchandage / marchander",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "menawar",
+      "definition": "marchander / faire une offre",
+      "tags": [
+        "achats",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "Bisa kurang?",
+      "definition": "vous pouvez baisser le prix ?",
+      "tags": [
+        "achats",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "Terlalu mahal",
+      "definition": "trop cher",
+      "tags": [
+        "achats",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "diskon",
+      "definition": "réduction / remise",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "harga pas",
+      "definition": "prix fixe / dernier prix",
+      "tags": [
+        "achats",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "kembalian",
+      "definition": "monnaie (rendue)",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "uang kecil",
+      "definition": "petite monnaie",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "uang tunai",
+      "definition": "espèces / liquide",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "kartu kredit",
+      "definition": "carte de crédit",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "ATM",
+      "definition": "distributeur de billets",
+      "tags": [
+        "achats",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "rupiah",
+      "definition": "roupie (monnaie indonésienne)",
+      "tags": [
+        "achats",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "dolar",
+      "definition": "dollar",
+      "tags": [
+        "achats",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "euro",
+      "definition": "euro",
+      "tags": [
+        "achats",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "menukar uang",
+      "definition": "changer de l'argent",
+      "tags": [
+        "achats",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "penukaran uang",
+      "definition": "bureau de change",
+      "tags": [
+        "achats",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "kasir",
+      "definition": "caisse / caissier",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "struk",
+      "definition": "ticket de caisse",
+      "tags": [
+        "achats",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "kuitansi",
+      "definition": "reçu",
+      "tags": [
+        "achats",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "belanja",
+      "definition": "courses / achats",
+      "tags": [
+        "achats",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "toko",
+      "definition": "magasin",
+      "tags": [
+        "achats",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "penjual",
+      "definition": "vendeur",
+      "tags": [
+        "achats",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "pembeli",
+      "definition": "acheteur",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "pelanggan",
+      "definition": "client",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "jual",
+      "definition": "vendre (base)",
+      "tags": [
+        "achats",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "beli",
+      "definition": "acheter (base)",
+      "tags": [
+        "achats",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "bayar",
+      "definition": "payer (base)",
+      "tags": [
+        "achats",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "gratis",
+      "definition": "gratuit",
+      "tags": [
+        "achats",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "lunas",
+      "definition": "payé / soldé",
+      "tags": [
+        "achats",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "utang",
+      "definition": "dette",
+      "tags": [
+        "achats",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "menabung",
+      "definition": "épargner",
+      "tags": [
+        "achats",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "gaji",
+      "definition": "salaire",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "Ada yang lebih murah?",
+      "definition": "il y a moins cher ?",
+      "tags": [
+        "achats",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "Saya lihat-lihat dulu",
+      "definition": "je regarde seulement",
+      "tags": [
+        "achats",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "Saya ambil ini",
+      "definition": "je prends celui-ci",
+      "tags": [
+        "achats",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "ini",
+      "definition": "ceci / ce",
+      "tags": [
+        "achats",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "itu",
+      "definition": "cela / ça",
+      "tags": [
+        "achats",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "tas plastik",
+      "definition": "sac plastique",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "sepasang",
+      "definition": "une paire",
+      "tags": [
+        "achats",
+        "nom",
+        "a2"
+      ]
+    }
+  ]
+}

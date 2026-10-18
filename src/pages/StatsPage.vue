@@ -1,18 +1,29 @@
 <script setup lang="ts">
+import { confirmDialog, toast } from "../services/dialog";
 import { computed, onMounted, onUnmounted, ref } from "vue";
-import { db, type Attempt, type VocabDeck, type Exam } from "../db";
+import { db, type Attempt, type VocabDeck, type Exam, type ReviewState, type VocabItem } from "../db";
+import ActivityChart from "../components/ActivityChart.vue";
+import { activityByDay, deckProgress, hardestWords, streak } from "../services/stats";
 import EmptyState from "../components/EmptyState.vue";
-import ConfirmModal from "../components/ConfirmModal.vue";
 import { formatDate, formatDuration } from "../utils/time";
 import { exportAttemptPdf } from "../services/pdfReport";
-import { useToast } from "../composables/useToast";
-
-const toast = useToast();
-const showClearConfirm = ref(false);
+import { t } from "../i18n";
 
 const attempts = ref<Attempt[]>([]);
 const decks = ref<Record<string, VocabDeck>>({});
 const exams = ref<Record<string, Exam>>({});
+const items = ref<VocabItem[]>([]);
+const reviews = ref<ReviewState[]>([]);
+const tab = ref<"history" | "decks" | "hard">("history");
+
+const streakDays = computed(() => streak(attempts.value));
+const activity = computed(() => activityByDay(attempts.value, 30));
+const progress = computed(() => deckProgress(items.value, reviews.value));
+const hard = computed(() => hardestWords(items.value, reviews.value, 15));
+
+function pct(n: number, total: number) {
+  return total ? `${(n / total) * 100}%` : "0%";
+}
 
 function percent01(x: number) {
   return `${Math.round(x * 100)}%`;
@@ -33,9 +44,10 @@ const last7Score01 = computed(() => {
 });
 
 function titleFor(a: Attempt): string {
-  if (a.type === "exam") return exams.value[a.refId]?.title ?? `Exam ${a.refId}`;
-  if (a.type === "practice") return "Exam (tags)";
-  return decks.value[a.refId]?.title ?? `Deck ${a.refId}`;
+  if (a.type === "exam") return exams.value[a.refId]?.title ?? t("stats.examFallback", { id: a.refId });
+  if (a.type === "practice") return t("stats.practiceTitle");
+  if (a.type === "flashcards" && a.refId === "review") return t("stats.reviewTitle");
+  return decks.value[a.refId]?.title ?? t("stats.deckFallback", { id: a.refId });
 }
 
 function metaLine(a: Attempt): string {
@@ -44,10 +56,18 @@ function metaLine(a: Attempt): string {
   if (a.meta?.correct !== undefined && a.meta?.total !== undefined) parts.push(`✅ ${a.meta.correct}/${a.meta.total}`);
   if (a.type === "practice" && a.meta?.breakdown) {
     const b = a.meta.breakdown;
-    parts.push(`Vocab:${b.vocab ?? 0} QCM:${b.exam ?? 0} SPOK:${b.order ?? 0}`);
+    const labels: Record<string, string> = {
+      vocab: t("report.kinds.vocab"),
+      exam: t("report.kinds.qcm"),
+      order: t("stats.spok"),
+      typed: t("report.kinds.typed"),
+      cloze: t("report.kinds.cloze"),
+      dictation: t("report.kinds.dictation")
+    };
+    parts.push(Object.entries(b).filter(([, n]) => n).map(([k, n]) => `${labels[k] ?? k}:${n}`).join(" "));
   }
   if (a.type === "practice" && a.meta?.tags?.length) {
-    parts.push(`Tags: ${a.meta.tags.join(", ")}`);
+    parts.push(t("stats.tagsLine", { tags: a.meta.tags.join(", ") }));
   }
   return parts.join(" • ");
 }
@@ -60,12 +80,13 @@ async function load() {
 
   const e = await db.exams.toArray();
   exams.value = Object.fromEntries(e.map((x) => [x.id, x]));
+  items.value = await db.vocabItems.toArray();
+  reviews.value = await db.reviews.toArray();
 }
 
 async function clearStats() {
-  showClearConfirm.value = false;
+  if (!(await confirmDialog(t("stats.confirmClear")))) return;
   await db.attempts.clear();
-  toast.success("Historique supprime.");
   await load();
 }
 
@@ -74,22 +95,12 @@ function canOpenResult(a: Attempt): boolean {
   return !!a.meta?.details?.length;
 }
 
-function typeBadgeClass(type: string): string {
-  switch (type) {
-    case "flashcards": return "badge-flashcards";
-    case "exam": return "badge-exam";
-    case "practice": return "badge-practice";
-    case "vocab_quiz": return "badge-vocab";
-    default: return "";
-  }
-}
 
-function exportPdf(a: Attempt) {
+async function exportPdf(a: Attempt) {
   try {
-    exportAttemptPdf(a, titleFor(a));
-    toast.success("PDF exporte !");
-  } catch (e: any) {
-    toast.error(e?.message ?? "Impossible d'exporter le PDF");
+    await exportAttemptPdf(a, titleFor(a));
+  } catch (e) {
+    toast(e instanceof Error ? e.message : t("services.pdfError"), "danger");
   }
 }
 
@@ -107,6 +118,7 @@ onMounted(() => {
   load();
 });
 onUnmounted(unlockScroll);
+
 </script>
 
 <template>
@@ -114,104 +126,126 @@ onUnmounted(unlockScroll);
     <div class="top">
       <div class="grid cols-2">
         <div class="card topCard">
-          <h2>Stats</h2>
+          <h2>{{ $t("stats.title") }}</h2>
           <div class="row">
             <div>
-              <div class="small">Tentatives</div>
+              <div class="small">{{ $t("stats.attempts") }}</div>
               <div class="kpi">{{ totalAttempts }}</div>
             </div>
             <div>
-              <div class="small">Score moyen</div>
+              <div class="small">{{ $t("stats.avgScore") }}</div>
               <div class="kpi">{{ percent01(avgScore01) }}</div>
             </div>
             <div>
-              <div class="small">7 derniers jours</div>
+              <div class="small">{{ $t("stats.last7Days") }}</div>
               <div class="kpi">{{ percent01(last7Score01) }}</div>
+            </div>
+            <div>
+              <div class="small">{{ $t("stats.streak") }}</div>
+              <div class="kpi">{{ $t("stats.streakValue", { count: streakDays }) }}</div>
             </div>
           </div>
           <div class="hr"></div>
-          <button class="btn danger" @click="showClearConfirm = true">Reset stats</button>
+          <button class="btn danger" @click="clearStats">{{ $t("stats.reset") }}</button>
         </div>
 
         <div class="card topCard">
-          <h2>Types</h2>
-          <p><b>flashcards</b> : "Je sais" / repondus</p>
-          <p><b>vocab_quiz</b> : QCM genere depuis vocab</p>
-          <p><b>exam</b> : QCM importe</p>
-          <p><b>practice</b> : exam genere par tags (vocab + QCM + SPOK)</p>
+          <h2>{{ $t("stats.activity") }}</h2>
+          <ActivityChart :days="activity" />
         </div>
       </div>
     </div>
 
     <div class="card historyCard">
-      <div class="row items-end">
-        <div>
-          <h2 class="m-0">Historique</h2>
-          <p class="small mt-1.5 mb-0">
-            Clique sur "Resultat" pour revoir les corrections (si disponibles).
-          </p>
+      <div class="row" style="align-items:flex-end">
+        <div class="pills">
+          <button class="pill" :class="{ active: tab === 'history' }" @click="tab = 'history'">{{ $t("stats.tabs.history") }}</button>
+          <button class="pill" :class="{ active: tab === 'decks' }" @click="tab = 'decks'">{{ $t("stats.tabs.decks") }}</button>
+          <button class="pill" :class="{ active: tab === 'hard' }" @click="tab = 'hard'">{{ $t("stats.tabs.hard") }}</button>
         </div>
-        <div class="small opacity-85">
-          {{ attempts.length }} entrees
+        <div v-if="tab === 'history'" class="small" style="opacity:.85">
+          {{ $t("stats.entries", { count: attempts.length }) }}
+        </div>
+        <div v-else-if="tab === 'decks'" class="small">
+          <span class="legendSwatch stage-fresh"></span>{{ $t("stats.legend.fresh") }}
+          <span class="legendSwatch stage-learning ml-2"></span>{{ $t("stats.legend.learning") }}
+          <span class="legendSwatch stage-mastered ml-2"></span>{{ $t("stats.legend.mastered") }}
         </div>
       </div>
 
       <div class="hr"></div>
 
-      <div v-if="attempts.length === 0">
-        <EmptyState title="Aucune tentative" hint="Fais un quiz vocab, un exam, ou un exam par tags pour voir l'historique." />
+      <template v-if="tab === 'decks'">
+        <EmptyState v-if="progress.length === 0" :title="$t('stats.noDecks')" :hint="$t('stats.noDecksHint')" />
+        <div v-else class="list historyList">
+          <div v-for="p in progress" :key="p.deckId" class="card" style="border-radius:18px">
+            <div class="row mb-2">
+              <h3 class="m-0">{{ decks[p.deckId]?.title ?? p.deckId }}</h3>
+              <span class="small">
+                {{ $t("stats.freshCount", { count: p.fresh }) }} • {{ $t("stats.learningCount", { count: p.learning }) }} • <b class="text-text">{{ p.mastered }}</b> {{ $t("stats.masteredOf", { total: p.total }) }}
+              </span>
+            </div>
+            <div class="progressBar" role="img" :aria-label="$t('stats.progressAria', { mastered: p.mastered, total: p.total })">
+              <span v-if="p.mastered" class="stage-mastered" :style="{ width: pct(p.mastered, p.total) }" :title="$t('stats.masteredCount', { count: p.mastered })"></span>
+              <span v-if="p.learning" class="stage-learning" :style="{ width: pct(p.learning, p.total) }" :title="$t('stats.learningCount', { count: p.learning })"></span>
+              <span v-if="p.fresh" class="stage-fresh" :style="{ width: pct(p.fresh, p.total) }" :title="$t('stats.freshCount', { count: p.fresh })"></span>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <template v-else-if="tab === 'hard'">
+        <EmptyState v-if="hard.length === 0" :title="$t('stats.noHard')" :hint="$t('stats.noHardHint')" />
+        <div v-else class="list historyList">
+          <div v-for="h in hard" :key="h.item.id" class="row card" style="border-radius:18px">
+            <div>
+              <h3 class="m-0">{{ h.item.term }}</h3>
+              <p class="small m-0">{{ h.item.definition }} • {{ decks[h.item.deckId]?.title }}</p>
+            </div>
+            <span class="badge">{{ $t("stats.lapses", { count: h.lapses }) }}</span>
+          </div>
+        </div>
+      </template>
+
+      <div v-else-if="attempts.length === 0">
+        <EmptyState :title="$t('stats.noAttempts')" :hint="$t('stats.noAttemptsHint')" />
       </div>
 
+      <!-- ✅ Scroll uniquement ici -->
       <div v-else class="list historyList">
-        <div v-for="a in attempts" :key="a.id" class="card rounded-[18px]">
+        <div v-for="a in attempts" :key="a.id" class="card" style="border-radius:18px">
           <div class="row">
             <div>
-              <h3 class="m-0">{{ titleFor(a) }}</h3>
-              <p class="small mt-1 mb-0">
-                {{ percent01(a.score) }} &bull; {{ formatDate(a.finishedAt) }}
-                <span v-if="metaLine(a)"> &bull; {{ metaLine(a) }}</span>
+              <h3 style="margin:0">{{ titleFor(a) }}</h3>
+              <p class="small" style="margin:4px 0 0 0">
+                {{ a.type }} • {{ percent01(a.score) }} • {{ formatDate(a.finishedAt) }}
+                <span v-if="metaLine(a)"> • {{ metaLine(a) }}</span>
               </p>
             </div>
 
-            <div class="row gap-2">
+            <div class="row" style="gap:8px">
               <router-link
                   class="btn"
                   :to="`/attempt/${a.id}`"
-                  :title="canOpenResult(a) ? 'Voir le resultat' : 'Details indisponibles (ancienne stat)'"
-                  :class="{ 'pointer-events-none opacity-60': !canOpenResult(a) }"
+                  :title="canOpenResult(a) ? $t('stats.viewResult') : $t('stats.detailsUnavailable')"
+                  :style="!canOpenResult(a) ? 'pointer-events:none; opacity:0.6' : ''"
               >
-                Resultat
+                {{ $t("stats.result") }}
               </router-link>
 
               <button
                   class="btn"
-                  title="Exporter les details en PDF"
+                  :title="$t('stats.exportPdf')"
                   @click="exportPdf(a)"
               >
-                PDF
+                📄 PDF
               </button>
-              <span class="badge" :class="typeBadgeClass(a.type)">{{ a.type }}</span>
+              <span class="badge" style="opacity:0.6">{{ a.type }}</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <ConfirmModal
-      :open="showClearConfirm"
-      title="Supprimer l'historique"
-      message="Supprimer toutes les tentatives ? Cette action est irreversible."
-      confirm-text="Supprimer"
-      :danger="true"
-      @confirm="clearStats"
-      @cancel="showClearConfirm = false"
-    />
   </div>
 </template>
 
-<style scoped>
-.badge-flashcards { border-color: rgb(var(--accent) / 0.5); color: rgb(var(--accent)); }
-.badge-exam { border-color: rgb(var(--ok) / 0.5); color: rgb(var(--ok)); }
-.badge-practice { border-color: rgb(255 180 50 / 0.5); color: rgb(255 180 50); }
-.badge-vocab { border-color: rgb(var(--muted) / 0.5); color: rgb(var(--muted)); }
-</style>

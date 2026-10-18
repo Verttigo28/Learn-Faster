@@ -1,0 +1,719 @@
+{
+  "type": "vocab_deck",
+  "id": "id-nombres",
+  "title": "Nombres",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "nol",
+      "definition": "zéro / 0",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "kosong",
+      "definition": "zéro (au téléphone) / vide",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "satu",
+      "definition": "un / 1",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "dua",
+      "definition": "deux / 2",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "tiga",
+      "definition": "trois / 3",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "empat",
+      "definition": "quatre / 4",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "lima",
+      "definition": "cinq / 5",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "enam",
+      "definition": "six / 6",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "tujuh",
+      "definition": "sept / 7",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "delapan",
+      "definition": "huit / 8",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "sembilan",
+      "definition": "neuf / 9",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "sepuluh",
+      "definition": "dix / 10",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "sebelas",
+      "definition": "onze / 11",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "dua belas",
+      "definition": "douze / 12",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "tiga belas",
+      "definition": "treize / 13",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "empat belas",
+      "definition": "quatorze / 14",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "lima belas",
+      "definition": "quinze / 15",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "enam belas",
+      "definition": "seize / 16",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "tujuh belas",
+      "definition": "dix-sept / 17",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "delapan belas",
+      "definition": "dix-huit / 18",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "sembilan belas",
+      "definition": "dix-neuf / 19",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "dua puluh",
+      "definition": "vingt / 20",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "dua puluh satu",
+      "definition": "vingt et un / 21",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "tiga puluh",
+      "definition": "trente / 30",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "empat puluh",
+      "definition": "quarante / 40",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "lima puluh",
+      "definition": "cinquante / 50",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "enam puluh",
+      "definition": "soixante / 60",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "tujuh puluh",
+      "definition": "soixante-dix / 70",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "delapan puluh",
+      "definition": "quatre-vingts / 80",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "sembilan puluh",
+      "definition": "quatre-vingt-dix / 90",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "seratus",
+      "definition": "cent / 100",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "seratus satu",
+      "definition": "cent un / 101",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "dua ratus",
+      "definition": "deux cents / 200",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "lima ratus",
+      "definition": "cinq cents / 500",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "seribu",
+      "definition": "mille / 1000",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "dua ribu",
+      "definition": "deux mille / 2000",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "sepuluh ribu",
+      "definition": "dix mille / 10000",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "lima puluh ribu",
+      "definition": "cinquante mille / 50000",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "seratus ribu",
+      "definition": "cent mille / 100000",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "satu juta",
+      "definition": "un million",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "sejuta",
+      "definition": "un million",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "satu miliar",
+      "definition": "un milliard",
+      "tags": [
+        "nombres",
+        "nombre",
+        "b1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "pertama",
+      "definition": "premier",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "kedua",
+      "definition": "deuxième / second",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "ketiga",
+      "definition": "troisième",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "keempat",
+      "definition": "quatrième",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "kelima",
+      "definition": "cinquième",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a1"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "keenam",
+      "definition": "sixième",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "ketujuh",
+      "definition": "septième",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "kedelapan",
+      "definition": "huitième",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "kesembilan",
+      "definition": "neuvième",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "kesepuluh",
+      "definition": "dixième",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "terakhir",
+      "definition": "dernier",
+      "tags": [
+        "nombres",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "setengah",
+      "definition": "moitié / demi",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "satu setengah",
+      "definition": "un et demi",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "seperempat",
+      "definition": "un quart",
+      "tags": [
+        "nombres",
+        "nombre",
+        "a2"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "tiga perempat",
+      "definition": "trois quarts",
+      "tags": [
+        "nombres",
+        "nombre",
+        "b1"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "sepertiga",
+      "definition": "un tiers",
+      "tags": [
+        "nombres",
+        "nombre",
+        "b1"
+      ]
+    },
+    {
+      "id": "59",
+      "term": "persen",
+      "definition": "pour cent",
+      "tags": [
+        "nombres",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "60",
+      "term": "nomor",
+      "definition": "numéro",
+      "tags": [
+        "nombres",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "61",
+      "term": "angka",
+      "definition": "chiffre",
+      "tags": [
+        "nombres",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "62",
+      "term": "jumlah",
+      "definition": "total / nombre",
+      "tags": [
+        "nombres",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "63",
+      "term": "tambah",
+      "definition": "plus (addition)",
+      "tags": [
+        "nombres",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "64",
+      "term": "kurang",
+      "definition": "moins (soustraction)",
+      "tags": [
+        "nombres",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "65",
+      "term": "kali",
+      "definition": "fois",
+      "tags": [
+        "nombres",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "66",
+      "term": "dibagi",
+      "definition": "divisé par",
+      "tags": [
+        "nombres",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "67",
+      "term": "sama dengan",
+      "definition": "égal à",
+      "tags": [
+        "nombres",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "68",
+      "term": "belasan",
+      "definition": "une dizaine (de 11 à 19)",
+      "tags": [
+        "nombres",
+        "nombre",
+        "b1"
+      ]
+    },
+    {
+      "id": "69",
+      "term": "puluhan",
+      "definition": "des dizaines",
+      "tags": [
+        "nombres",
+        "nombre",
+        "b1"
+      ]
+    },
+    {
+      "id": "70",
+      "term": "ratusan",
+      "definition": "des centaines",
+      "tags": [
+        "nombres",
+        "nombre",
+        "b1"
+      ]
+    },
+    {
+      "id": "71",
+      "term": "ribuan",
+      "definition": "des milliers",
+      "tags": [
+        "nombres",
+        "nombre",
+        "b1"
+      ]
+    }
+  ]
+}

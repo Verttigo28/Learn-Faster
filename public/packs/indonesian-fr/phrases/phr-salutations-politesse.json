@@ -1,0 +1,296 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-salutations-politesse",
+  "title": "Salutations et politesse",
+  "items": [
+    {
+      "id": "1",
+      "text": "Selamat pagi, Bu.",
+      "translation": "Bonjour, madame. (le matin)",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Selamat siang, Pak.",
+      "translation": "Bonjour, monsieur. (vers midi)",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Selamat sore, semuanya.",
+      "translation": "Bonjour à tous. (en fin d'après-midi)",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Selamat malam, sampai besok.",
+      "translation": "Bonsoir, à demain.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Apa kabar, Pak?",
+      "translation": "Comment allez-vous, monsieur ?",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Kabar baik, terima kasih.",
+      "translation": "Je vais bien, merci.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Terima kasih banyak, Bu.",
+      "translation": "Merci beaucoup, madame.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Terima kasih kembali, Pak.",
+      "translation": "Je vous en prie, monsieur.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Maaf, saya terlambat.",
+      "translation": "Désolé, je suis en retard.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Permisi, boleh saya lewat?",
+      "translation": "Pardon, puis-je passer ?",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Sampai jumpa lagi.",
+      "translation": "Au revoir, à bientôt.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Selamat jalan, hati-hati di jalan.",
+      "translation": "Bon voyage, sois prudent sur la route.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Selamat tinggal, sampai bertemu lagi.",
+      "translation": "Au revoir, à la prochaine.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Silakan masuk, Pak.",
+      "translation": "Entrez, je vous en prie, monsieur.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Silakan duduk di sini.",
+      "translation": "Asseyez-vous ici, je vous prie.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Tolong bicara lebih pelan.",
+      "translation": "Parlez plus lentement, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Bisa diulang sekali lagi?",
+      "translation": "Pouvez-vous répéter encore une fois ?",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a2",
+        "question",
+        "passif"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Maaf, saya tidak mengerti.",
+      "translation": "Désolé, je ne comprends pas.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Tidak apa-apa, jangan khawatir.",
+      "translation": "Ce n'est rien, ne vous inquiétez pas.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Senang bertemu dengan Anda.",
+      "translation": "Ravi de vous rencontrer.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Selamat makan, semuanya.",
+      "translation": "Bon appétit à tous.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Selamat atas pernikahan kalian.",
+      "translation": "Félicitations pour votre mariage.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Mohon maaf lahir dan batin.",
+      "translation": "Pardonnez-moi toutes mes fautes. (vœu de l'Aïd)",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Salam untuk keluarga Anda.",
+      "translation": "Mes salutations à votre famille.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Permisi, saya pamit dulu.",
+      "translation": "Excusez-moi, je vais prendre congé.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Terima kasih atas bantuan Anda.",
+      "translation": "Merci pour votre aide.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Maaf mengganggu, Pak.",
+      "translation": "Désolé de vous déranger, monsieur.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Dengan senang hati.",
+      "translation": "Avec plaisir.",
+      "tags": [
+        "phrases",
+        "salutations",
+        "a1"
+      ]
+    }
+  ]
+}

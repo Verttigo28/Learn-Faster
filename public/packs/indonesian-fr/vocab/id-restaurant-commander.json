@@ -1,0 +1,479 @@
+{
+  "type": "vocab_deck",
+  "id": "id-restaurant-commander",
+  "title": "Au restaurant : commander",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "restoran",
+      "definition": "restaurant",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "rumah makan",
+      "definition": "restaurant (populaire)",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "warung",
+      "definition": "petite échoppe / gargote",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "kafe",
+      "definition": "café (établissement)",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "menu",
+      "definition": "menu / carte",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "pelayan",
+      "definition": "serveur / serveuse",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "koki",
+      "definition": "cuisinier / chef",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "meja",
+      "definition": "table",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kursi",
+      "definition": "chaise",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "memesan",
+      "definition": "commander",
+      "tags": [
+        "restaurant",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "Saya mau pesan",
+      "definition": "je voudrais commander",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "Saya pesan ...",
+      "definition": "je prends ...",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "Minta menu",
+      "definition": "la carte, s'il vous plaît",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "Minta ...",
+      "definition": "je voudrais ... (demander)",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "Minta bon",
+      "definition": "l'addition, s'il vous plaît",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "tagihan",
+      "definition": "addition / facture",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "membayar",
+      "definition": "payer",
+      "tags": [
+        "restaurant",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "makan di sini",
+      "definition": "manger sur place",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "dibungkus",
+      "definition": "à emporter",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "porsi",
+      "definition": "portion",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "piring",
+      "definition": "assiette",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "mangkuk",
+      "definition": "bol",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "sendok",
+      "definition": "cuillère",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "garpu",
+      "definition": "fourchette",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "sumpit",
+      "definition": "baguettes",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "tisu",
+      "definition": "serviette en papier / mouchoir",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "kenyang",
+      "definition": "rassasié",
+      "tags": [
+        "restaurant",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "Sudah kenyang",
+      "definition": "je n'ai plus faim",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "lapar",
+      "definition": "avoir faim",
+      "tags": [
+        "restaurant",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "sarapan",
+      "definition": "petit-déjeuner",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "makan siang",
+      "definition": "déjeuner",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "makan malam",
+      "definition": "dîner",
+      "tags": [
+        "restaurant",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "Pedas tidak?",
+      "definition": "est-ce que c'est épicé ?",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "Jangan terlalu pedas",
+      "definition": "pas trop épicé",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "Tidak pakai ...",
+      "definition": "sans ...",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "Pakai ...",
+      "definition": "avec ...",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "Ada meja untuk dua orang?",
+      "definition": "avez-vous une table pour deux ?",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "Berapa semuanya?",
+      "definition": "combien en tout ?",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "Enak sekali",
+      "definition": "c'est délicieux",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "Mau minum apa?",
+      "definition": "que voulez-vous boire ?",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "Mau makan apa?",
+      "definition": "que voulez-vous manger ?",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "vegetarian",
+      "definition": "végétarien",
+      "tags": [
+        "restaurant",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "Saya tidak makan daging",
+      "definition": "je ne mange pas de viande",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "halal",
+      "definition": "halal",
+      "tags": [
+        "restaurant",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "uang tip",
+      "definition": "pourboire",
+      "tags": [
+        "restaurant",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "prasmanan",
+      "definition": "buffet",
+      "tags": [
+        "restaurant",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "Selamat makan",
+      "definition": "bon appétit",
+      "tags": [
+        "restaurant",
+        "expression",
+        "a1"
+      ]
+    }
+  ]
+}

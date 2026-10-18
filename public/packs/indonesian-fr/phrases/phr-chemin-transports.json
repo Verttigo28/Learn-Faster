@@ -1,0 +1,292 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-chemin-transports",
+  "title": "Demander son chemin et transports",
+  "items": [
+    {
+      "id": "1",
+      "text": "Permisi, stasiun di mana?",
+      "translation": "Excusez-moi, où est la gare ?",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Jalan lurus saja, lalu belok kiri.",
+      "translation": "Allez tout droit, puis tournez à gauche.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Belok kanan di lampu merah.",
+      "translation": "Tournez à droite au feu rouge.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Apakah jauh dari sini?",
+      "translation": "Est-ce loin d'ici ?",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Tidak jauh, hanya lima menit.",
+      "translation": "Ce n'est pas loin, seulement cinq minutes.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Bus ke Bandung berangkat jam berapa?",
+      "translation": "À quelle heure part le bus pour Bandung ?",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2",
+        "question",
+        "ber"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya mau ke bandara.",
+      "translation": "Je veux aller à l'aéroport.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Tolong antar saya ke hotel ini.",
+      "translation": "Emmenez-moi à cet hôtel, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Berapa ongkosnya ke Malioboro?",
+      "translation": "Combien coûte la course jusqu'à Malioboro ?",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Berhenti di sini saja, Pak.",
+      "translation": "Arrêtez-vous ici, monsieur.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya naik ojek ke kantor.",
+      "translation": "Je prends une moto-taxi pour aller au bureau.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Kereta ini menuju Yogyakarta.",
+      "translation": "Ce train va à Yogyakarta.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Di mana saya bisa membeli tiket?",
+      "translation": "Où puis-je acheter un billet ?",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1",
+        "question",
+        "me"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Halte bus ada di seberang jalan.",
+      "translation": "L'arrêt de bus est de l'autre côté de la rue.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Maaf, saya tersesat.",
+      "translation": "Pardon, je suis perdu.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Bisa tunjukkan di peta?",
+      "translation": "Pouvez-vous me montrer sur la carte ?",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Jalannya macet sekali.",
+      "translation": "La route est très embouteillée.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Pesawat kami terlambat satu jam.",
+      "translation": "Notre avion a une heure de retard.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya mau pesan taksi.",
+      "translation": "Je voudrais commander un taxi.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Kantor pos ada di sebelah bank.",
+      "translation": "La poste est à côté de la banque.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Naik angkot nomor berapa ke pasar?",
+      "translation": "Quel minibus faut-il prendre pour aller au marché ?",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya turun di halte berikutnya.",
+      "translation": "Je descends au prochain arrêt.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Berapa harga tiket pulang pergi?",
+      "translation": "Combien coûte un billet aller-retour ?",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Kapal ke Lombok berangkat dari Padang Bai.",
+      "translation": "Le bateau pour Lombok part de Padang Bai.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Pakai helm, ya.",
+      "translation": "Mettez votre casque, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Sopirnya mengemudi dengan hati-hati.",
+      "translation": "Le chauffeur conduit prudemment.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Masjid itu di ujung jalan ini.",
+      "translation": "Cette mosquée est au bout de cette rue.",
+      "tags": [
+        "phrases",
+        "transport",
+        "a2"
+      ]
+    }
+  ]
+}

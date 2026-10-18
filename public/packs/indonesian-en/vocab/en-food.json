@@ -1,0 +1,689 @@
+{
+  "type": "vocab_deck",
+  "id": "en-food",
+  "title": "Food",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "makanan",
+      "definition": "food",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "nasi",
+      "definition": "rice (cooked)",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "beras",
+      "definition": "rice (uncooked)",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "padi",
+      "definition": "rice plant / paddy",
+      "tags": [
+        "food",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "roti",
+      "definition": "bread",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "mi",
+      "definition": "noodles",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "ayam",
+      "definition": "chicken",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "daging",
+      "definition": "meat",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "daging sapi",
+      "definition": "beef",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "daging babi",
+      "definition": "pork",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "daging kambing",
+      "definition": "goat meat / mutton",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "ikan",
+      "definition": "fish",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "udang",
+      "definition": "shrimp / prawn",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "cumi-cumi",
+      "definition": "squid",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "kepiting",
+      "definition": "crab",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "telur",
+      "definition": "egg",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "tahu",
+      "definition": "tofu",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "tempe",
+      "definition": "tempeh",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "sayur",
+      "definition": "vegetable / vegetables",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "buah",
+      "definition": "fruit",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "kentang",
+      "definition": "potato",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "wortel",
+      "definition": "carrot",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "bawang merah",
+      "definition": "shallot",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "bawang putih",
+      "definition": "garlic",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "bawang bombai",
+      "definition": "onion",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "tomat",
+      "definition": "tomato",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "timun",
+      "definition": "cucumber",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "kangkung",
+      "definition": "water spinach / kangkung",
+      "tags": [
+        "food",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "bayam",
+      "definition": "spinach",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "jagung",
+      "definition": "corn / maize",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "kacang",
+      "definition": "peanut / bean / nut",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "cabai",
+      "definition": "chili / chili pepper",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "jamur",
+      "definition": "mushroom",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "pisang",
+      "definition": "banana",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "mangga",
+      "definition": "mango",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "nanas",
+      "definition": "pineapple",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "pepaya",
+      "definition": "papaya",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "semangka",
+      "definition": "watermelon",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "jeruk",
+      "definition": "orange / citrus",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "jeruk nipis",
+      "definition": "lime",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "apel",
+      "definition": "apple",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "kelapa",
+      "definition": "coconut",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "durian",
+      "definition": "durian",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "rambutan",
+      "definition": "rambutan",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "salak",
+      "definition": "salak / snake fruit",
+      "tags": [
+        "food",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "alpukat",
+      "definition": "avocado",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "anggur",
+      "definition": "grape / grapes",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "stroberi",
+      "definition": "strawberry",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "keju",
+      "definition": "cheese",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "mentega",
+      "definition": "butter",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "garam",
+      "definition": "salt",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "gula",
+      "definition": "sugar",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "merica",
+      "definition": "pepper",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "kecap",
+      "definition": "soy sauce",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "sambal",
+      "definition": "sambal / chili sauce",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "minyak",
+      "definition": "oil",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "tepung",
+      "definition": "flour",
+      "tags": [
+        "food",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "kue",
+      "definition": "cake / cookie / pastry",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "59",
+      "term": "nasi goreng",
+      "definition": "fried rice / nasi goreng",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "60",
+      "term": "mi goreng",
+      "definition": "fried noodles / mi goreng",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "61",
+      "term": "sate",
+      "definition": "satay / skewers",
+      "tags": [
+        "food",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "62",
+      "term": "soto",
+      "definition": "soto / Indonesian soup",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "63",
+      "term": "bakso",
+      "definition": "bakso / meatball soup",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "64",
+      "term": "gado-gado",
+      "definition": "gado-gado / vegetable salad with peanut sauce",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "65",
+      "term": "rendang",
+      "definition": "rendang / beef stewed in coconut milk",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "66",
+      "term": "kerupuk",
+      "definition": "kerupuk / prawn crackers / crackers",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "67",
+      "term": "sup",
+      "definition": "soup",
+      "tags": [
+        "food",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "68",
+      "term": "camilan",
+      "definition": "snack",
+      "tags": [
+        "food",
+        "noun",
+        "b1"
+      ]
+    }
+  ]
+}

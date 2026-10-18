@@ -1,0 +1,279 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-health-pharmacy",
+  "title": "Health and the Pharmacy",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya sakit kepala.",
+      "translation": "I have a headache.",
+      "tags": [
+        "sentences",
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Perut saya sakit.",
+      "translation": "My stomach hurts.",
+      "tags": [
+        "sentences",
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Saya demam sejak kemarin.",
+      "translation": "I've had a fever since yesterday.",
+      "tags": [
+        "sentences",
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya perlu ke dokter.",
+      "translation": "I need to see a doctor.",
+      "tags": [
+        "sentences",
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Di mana apotek terdekat?",
+      "translation": "Where is the nearest pharmacy?",
+      "tags": [
+        "sentences",
+        "health",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Saya mau beli obat batuk.",
+      "translation": "I'd like to buy some cough medicine.",
+      "tags": [
+        "sentences",
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Obat ini diminum tiga kali sehari.",
+      "translation": "This medicine is taken three times a day.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2",
+        "passive"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Minum obatnya sesudah makan.",
+      "translation": "Take the medicine after eating.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Saya alergi penisilin.",
+      "translation": "I'm allergic to penicillin.",
+      "tags": [
+        "sentences",
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Saya masuk angin.",
+      "translation": "I've caught a cold.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Badan saya terasa lemas.",
+      "translation": "My body feels weak.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Apakah perlu resep dokter?",
+      "translation": "Do I need a doctor's prescription?",
+      "tags": [
+        "sentences",
+        "health",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Saya digigit nyamuk.",
+      "translation": "I got bitten by mosquitoes.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2",
+        "passive"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Kaki saya terkilir.",
+      "translation": "I've sprained my ankle.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Sudah berapa lama Anda sakit?",
+      "translation": "How long have you been ill?",
+      "tags": [
+        "sentences",
+        "health",
+        "b1",
+        "question"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Saya sudah merasa lebih baik.",
+      "translation": "I already feel better.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2",
+        "aspect",
+        "me"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Istirahat yang cukup, ya.",
+      "translation": "Get plenty of rest, okay?",
+      "tags": [
+        "sentences",
+        "health",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Gigi saya sakit sekali.",
+      "translation": "My tooth really hurts.",
+      "tags": [
+        "sentences",
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya muntah dan diare.",
+      "translation": "I'm vomiting and have diarrhoea.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Dokter memeriksa tekanan darah saya.",
+      "translation": "The doctor checks my blood pressure.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Jangan minum air keran.",
+      "translation": "Don't drink tap water.",
+      "tags": [
+        "sentences",
+        "health",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya butuh plester untuk luka ini.",
+      "translation": "I need a plaster for this wound.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Tenggorokan saya sakit.",
+      "translation": "I have a sore throat.",
+      "tags": [
+        "sentences",
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Apakah saya harus dirawat di rumah sakit?",
+      "translation": "Do I have to be admitted to hospital?",
+      "tags": [
+        "sentences",
+        "health",
+        "b1",
+        "question",
+        "passive"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Saya punya asuransi kesehatan.",
+      "translation": "I have health insurance.",
+      "tags": [
+        "sentences",
+        "health",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Obat ini bisa membuat mengantuk.",
+      "translation": "This medicine can make you drowsy.",
+      "tags": [
+        "sentences",
+        "health",
+        "b1",
+        "me"
+      ]
+    }
+  ]
+}

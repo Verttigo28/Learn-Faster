@@ -1,0 +1,648 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-passif-di",
+  "title": "Le passif en di- et l'ordre objet-verbe",
+  "durationSeconds": 600,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Complétez : « Buku itu ___ oleh Ani. » (Ce livre est lu par Ani.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "terbacakan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "baca-baca",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "membaca",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dibaca",
+          "correct": true
+        }
+      ],
+      "explanation": "Passif : di- + racine → dibaca.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Mettez au passif : « Ali membeli mobil itu. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mobil itu dibelikan Ali oleh.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ali dibeli mobil itu.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Mobil itu membeli Ali.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mobil itu dibeli oleh Ali.",
+          "correct": true
+        }
+      ],
+      "explanation": "L'objet devient sujet, le verbe prend di-, l'agent est introduit par « oleh ».",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "di- + tulis donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dinulis",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ditulisan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "dintulis",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ditulis",
+          "correct": true
+        }
+      ],
+      "explanation": "Di- ne provoque aucune nasalisation : la racine reste intacte.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "« Le livre, je l'ai lu. » (passif avec agent de 1re personne)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Buku itu disaya baca.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Buku itu saya baca.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Saya buku itu dibaca.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Buku itu saya dibaca.",
+          "correct": false
+        }
+      ],
+      "explanation": "Avec un agent pronominal de 1re/2e personne, on utilise le passif « objet + agent + racine » (sans di-).",
+      "tags": [
+        "grammaire",
+        "passif",
+        "b1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Que signifie « Surat itu sudah kukirim » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Je vais envoyer cette lettre.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "J'ai déjà envoyé cette lettre.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "La lettre m'a été envoyée.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Tu as envoyé cette lettre.",
+          "correct": false
+        }
+      ],
+      "explanation": "ku- (= aku) + racine : passif de 1re personne.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "b1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Dans une phrase passive, « oleh » signifie…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "par",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "depuis",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "pour",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "avec",
+          "correct": false
+        }
+      ],
+      "explanation": "« Oleh » introduit l'agent : par.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Quelle phrase est correctement orthographiée (EYD) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Buku itu di beli ditoko.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Buku itu di beli di toko.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Buku itu dibeli ditoko.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Buku itu dibeli di toko.",
+          "correct": true
+        }
+      ],
+      "explanation": "Le préfixe di- s'attache au verbe ; la préposition di s'écrit séparée du nom.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Que signifie « Rumah itu dijual » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il vend sa maison.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Cette maison est à vendre / est vendue.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Cette maison a été achetée.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Cette maison vend.",
+          "correct": false
+        }
+      ],
+      "explanation": "Dijual = être vendu ; sur un panneau, « à vendre ».",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Passif de « membersihkan » :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "terbersihi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "dibersihkan",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "dimbersihkan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dibersih",
+          "correct": false
+        }
+      ],
+      "explanation": "On remplace me(N)- par di- et on garde les suffixes : dibersihkan.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Passif de « memakai » :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dipakai",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "dimpakai",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "dimakai",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dipakaikan",
+          "correct": false
+        }
+      ],
+      "explanation": "La racine est « pakai » (le p était tombé avec mem-) → dipakai.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Passif de « mengirim » :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dikirim",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "dingirim",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "dikirimi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "diirim",
+          "correct": false
+        }
+      ],
+      "explanation": "Racine « kirim » → dikirim.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Complétez : « Buku itu sudah ___ baca? » (Ce livre, tu l'as déjà lu ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kamu",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "dikamu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kamu di",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "oleh kamu di",
+          "correct": false
+        }
+      ],
+      "explanation": "Passif de 2e personne : objet + (aspect) + kamu/kau + racine.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Quelle phrase suit l'ordre standard ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Surat itu saya baca belum.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Surat itu belum saya baca.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Surat itu saya belum baca.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Belum surat itu saya baca.",
+          "correct": false
+        }
+      ],
+      "explanation": "Dans ce passif, les marqueurs d'aspect et la négation précèdent l'agent pronominal.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "« Le voleur a été arrêté par la police. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Polisi itu ditangkap pencuri.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Pencuri itu ditangkap oleh polisi.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Pencuri itu menangkap polisi.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Pencuri itu tertangkapkan polisi oleh.",
+          "correct": false
+        }
+      ],
+      "explanation": "di- + tangkap ; agent introduit par oleh.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Que signifie « Nasi goreng ini dimasak oleh ibu saya » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "J'ai cuisiné ce nasi goreng pour ma mère.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ma mère aime le nasi goreng.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ce nasi goreng a été cuisiné par ma mère.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Ma mère mange ce nasi goreng.",
+          "correct": false
+        }
+      ],
+      "explanation": "Dimasak = être cuisiné.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Que signifie « Lampu itu sudah dimatikan » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La lampe a été éteinte.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "La lampe s'est allumée.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "La lampe est morte.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "La lampe est cassée.",
+          "correct": false
+        }
+      ],
+      "explanation": "Dimatikan : passif de mematikan (éteindre, faire mourir).",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Que signifie « Buku itu dibacanya » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il/elle a lu ce livre.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Ce livre est à lui.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Je lis ce livre.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Lis ce livre !",
+          "correct": false
+        }
+      ],
+      "explanation": "-nya après un verbe passif = agent de 3e personne.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Que signifie « kubaca » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lis-moi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tu lis",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "il lit",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "(que) je lis / j'ai lu",
+          "correct": true
+        }
+      ],
+      "explanation": "ku- est la forme préfixée de « aku » dans le passif.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Passif de « menyapu » :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "disyapu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "dinyapu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "disapu",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "dicapu",
+          "correct": false
+        }
+      ],
+      "explanation": "Racine « sapu » → disapu.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Que signifie le panneau « Dilarang merokok » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Merci de fumer dehors",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Fumer tue",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Espace fumeurs",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Interdit de fumer",
+          "correct": true
+        }
+      ],
+      "explanation": "Dilarang (passif de melarang, interdire) = il est interdit de.",
+      "tags": [
+        "grammaire",
+        "passif",
+        "a1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,680 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-word-order",
+  "title": "Word Order: Noun + Adjective, ini/itu, yang",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "How do you say \"a big house\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "rumah yang ini besar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "besar rumah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "besar-rumah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "rumah besar",
+          "correct": true
+        }
+      ],
+      "explanation": "The adjective follows the noun (the opposite of English): rumah besar.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "How do you say \"this house\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ini rumah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "inirumah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "rumah ini",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "rumah itu ini",
+          "correct": false
+        }
+      ],
+      "explanation": "The demonstrative follows the noun: rumah ini.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "What does \"Rumah ini besar\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "It's a big house.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "This big house",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "These houses are big.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "This house is big.",
+          "correct": true
+        }
+      ],
+      "explanation": "Noun + ini, then an adjective = a complete sentence: \"this house is big\" (no verb \"to be\" needed).",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "What does \"rumah besar ini\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "this one's house",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "this house is big",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "this big house",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "it's a house",
+          "correct": false
+        }
+      ],
+      "explanation": "Noun + adjective + ini forms a noun phrase: \"this big house\".",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "What does \"Ini rumah\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The house is here.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "This house",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "This is a house.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "This house is mine.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Ini\" at the start of a sentence = \"this is\".",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "How do you say \"the book that is expensive\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "yang buku mahal",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mahal yang buku",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "buku yang mahal",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "buku mahal yang",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Yang\" introduces a relative clause after the noun: buku yang mahal.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "How do you say \"The girl who is singing is my younger sister\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Gadis yang menyanyi itu adik saya.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Gadis menyanyi yang itu adik saya.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Adik saya itu gadis menyanyi yang.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Yang gadis menyanyi itu adik saya.",
+          "correct": false
+        }
+      ],
+      "explanation": "Noun + yang + verb + itu, then the predicate.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "How do you say \"my new book\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "buku baru saya",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "saya buku baru",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "buku saya baru",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "baru buku saya",
+          "correct": false
+        }
+      ],
+      "explanation": "Order: noun + adjective + possessor. \"Buku saya baru\" = my book is new.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "\"Mau yang mana? - Yang merah.\" What does \"yang merah\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "not red",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "red and what else?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "the red one",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "very red",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Yang\" + adjective acts like a noun: \"the one that is red\".",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "In \"nasi goreng\", which word is the head (main noun)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "goreng",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "neither",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "both equally",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "nasi",
+          "correct": true
+        }
+      ],
+      "explanation": "The noun comes first, the modifier after: rice (nasi) fried (goreng) = fried rice.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "How do you say \"that English teacher\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "guru bahasa Inggris itu",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "itu guru bahasa Inggris",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "guru itu bahasa Inggris",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bahasa Inggris guru itu",
+          "correct": false
+        }
+      ],
+      "explanation": "The demonstrative goes at the very end of the whole noun phrase.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Which sentence is correct for \"I eat rice\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Makan saya nasi.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Saya makan nasi.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Nasi makan saya.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Saya nasi makan.",
+          "correct": false
+        }
+      ],
+      "explanation": "Basic order: subject - verb - object (as in English).",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "How do you say \"two big houses\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dua rumah besar",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "besar dua rumah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "rumah besar dua",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "rumah dua besar",
+          "correct": false
+        }
+      ],
+      "explanation": "The number comes before the noun, the adjective after it.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "How do you say \"very big\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sangat sekali besar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sangat besar",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "besar sangat",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sekali besar",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Sangat\" comes before the adjective; \"sekali\" comes after it (besar sekali).",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Where does \"sekali\" (very) go?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "before the noun",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "after the adjective",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "before the adjective",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "at the start of the sentence",
+          "correct": false
+        }
+      ],
+      "explanation": "You say \"besar sekali\", \"enak sekali\".",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "How do you say \"those people\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "itu orang-orang",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "itu-itu orang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "orang itu-itu",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "orang-orang itu",
+          "correct": true
+        }
+      ],
+      "explanation": "Noun (reduplicated for plural) + itu.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "How do you say \"my red car\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mobil saya merah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mobil merah saya",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "merah mobil saya",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "saya mobil merah",
+          "correct": false
+        }
+      ],
+      "explanation": "Noun + adjective + possessor (you can also say \"mobil saya yang merah\"). \"Mobil saya merah\" = my car is red.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "What does \"Saya mau yang besar\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I want the big one.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "I want a lot.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "I am big.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I want to be big.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Yang besar\" = the big one (the one that is big).",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "What does \"Anak itu pintar\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "That child is smart.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "That smart child",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Is it a smart child?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "That person's child is smart.",
+          "correct": false
+        }
+      ],
+      "explanation": "Noun + itu + adjective = a descriptive sentence (no verb \"to be\").",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "How do you say \"a French person\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Prancis orang",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Prancis-orang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "orangnya Prancis",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "orang Prancis",
+          "correct": true
+        }
+      ],
+      "explanation": "Noun + nationality: orang Prancis.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "How do you say \"an Indonesian restaurant\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "restoran Indonesia",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Indonesia restoran",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Indonesia-restoran",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "restoran yang Indonesia itu",
+          "correct": false
+        }
+      ],
+      "explanation": "The modifier follows the noun: restoran Indonesia.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    }
+  ]
+}

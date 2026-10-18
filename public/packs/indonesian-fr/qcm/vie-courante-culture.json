@@ -1,0 +1,808 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-vie-courante-culture",
+  "title": "Expressions de la vie courante et culture",
+  "durationSeconds": 780,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Pour saluer le matin (jusqu'à environ 10-11 h), on dit…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Selamat pagi",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Selamat siang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Selamat malam",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Selamat sore",
+          "correct": false
+        }
+      ],
+      "explanation": "Pagi = matin.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Vers 13 h, on salue par…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Selamat siang",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Selamat tidur",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Selamat malam",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Selamat pagi",
+          "correct": false
+        }
+      ],
+      "explanation": "Siang = midi, milieu de journée (environ 11 h – 15 h).",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Vers 16 h-17 h, on salue par…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Selamat siang",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Selamat sore",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Selamat tidur",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Selamat pagi",
+          "correct": false
+        }
+      ],
+      "explanation": "Sore = fin d'après-midi (environ 15 h – 18 h).",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Le soir, après la tombée de la nuit, on salue par…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Selamat malam",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Selamat tinggal",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Selamat pagi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Selamat sore",
+          "correct": false
+        }
+      ],
+      "explanation": "Malam = soir, nuit.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Que signifie « Selamat tidur » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bonne nuit (avant d'aller dormir)",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Bon réveil",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bonsoir (en arrivant)",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Bonne sieste uniquement",
+          "correct": false
+        }
+      ],
+      "explanation": "Tidur = dormir.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Comment s'adresser respectueusement à un homme plus âgé ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bapak / Pak",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Kak",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Dik",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mas",
+          "correct": false
+        }
+      ],
+      "explanation": "« Bapak » (Pak) = monsieur ; marque de respect.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Comment s'adresser respectueusement à une femme plus âgée ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Adik",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Nona",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Mbak",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ibu / Bu",
+          "correct": true
+        }
+      ],
+      "explanation": "« Ibu » (Bu) = madame.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "« Mas » s'emploie (surtout à Java) pour…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "un enfant",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "un homme très âgé",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "une jeune femme",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "un jeune homme, à peu près de son âge",
+          "correct": true
+        }
+      ],
+      "explanation": "« Mas » = grand frère (javanais), pour un jeune homme.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "« Mbak » s'emploie pour…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "un professeur homme",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "une grand-mère",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "une jeune femme",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "un jeune homme",
+          "correct": false
+        }
+      ],
+      "explanation": "« Mbak » = grande sœur (javanais), pour une jeune femme.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Vous partez ; vous dites à ceux qui restent…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Selamat pagi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Selamat tinggal",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Selamat jalan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Selamat datang",
+          "correct": false
+        }
+      ],
+      "explanation": "Celui qui part dit « selamat tinggal » ; celui qui reste dit « selamat jalan ».",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Que signifie « Selamat datang » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bonne chance",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Au revoir",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bienvenue",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Bon voyage",
+          "correct": false
+        }
+      ],
+      "explanation": "Datang = venir, arriver.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Que dit-on avant de manger ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Selamat makan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Selamat siang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Selamat tidur",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Selamat jalan",
+          "correct": false
+        }
+      ],
+      "explanation": "Selamat makan = bon appétit.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Comment souhaiter un joyeux anniversaire ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Selamat hari raya",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Selamat jalan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Selamat ulang tahun",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Selamat tahun baru",
+          "correct": false
+        }
+      ],
+      "explanation": "Ulang tahun = anniversaire ; tahun baru = nouvel an.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Pendant l'Idulfitri (Lebaran), on dit traditionnellement…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Selamat tidur",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Sampai jumpa",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Hati-hati di jalan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mohon maaf lahir dan batin",
+          "correct": true
+        }
+      ],
+      "explanation": "« Je vous demande pardon de corps et d'âme » : formule de Lebaran.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Pour donner ou recevoir un objet, il est poli d'utiliser…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "la main droite",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "la main gauche",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "n'importe quelle main",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "les pieds",
+          "correct": false
+        }
+      ],
+      "explanation": "La main gauche est considérée comme impolie pour donner, recevoir ou manger.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "« Apa kabar? » — Réponse habituelle :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Baik, terima kasih.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Sama-sama.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Selamat tinggal.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Permisi.",
+          "correct": false
+        }
+      ],
+      "explanation": "Baik = bien.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "« Terima kasih » — Réponse habituelle :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Maaf",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Silakan duduk",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Permisi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Sama-sama",
+          "correct": true
+        }
+      ],
+      "explanation": "Sama-sama = de rien.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Que signifie « Permisi » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Excusez-moi (pour passer, demander la permission)",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Pardon, je suis désolé d'avoir blessé",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bonjour",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Merci beaucoup",
+          "correct": false
+        }
+      ],
+      "explanation": "Permisi s'emploie pour passer, entrer ou prendre congé.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Que signifie « Kakak » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "frère ou sœur aîné(e)",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "frère ou sœur cadet(te)",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "cousin",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "grand-père",
+          "correct": false
+        }
+      ],
+      "explanation": "Kakak = aîné(e) ; adik = cadet(te).",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Que signifie « Adik » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "frère ou sœur aîné(e)",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "oncle",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "voisin",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "frère ou sœur cadet(te)",
+          "correct": true
+        }
+      ],
+      "explanation": "Adik = cadet(te), aussi pour s'adresser à plus jeune.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "« Om » et « Tante » désignent…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "professeur et élève",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "grand-père et grand-mère",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "oncle et tante (aussi pour des adultes en général)",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "frère et sœur",
+          "correct": false
+        }
+      ],
+      "explanation": "Termes d'adresse familiers envers des adultes plus âgés.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "En se quittant, « Hati-hati di jalan! » signifie…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mon cœur est sur la route.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "La route est fermée.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Fais attention sur la route !",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Bonne route, reviens vite.",
+          "correct": false
+        }
+      ],
+      "explanation": "Formule courante pour souhaiter un bon trajet.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "prompt": "Que signifie « Sampai jumpa » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "À bientôt / au revoir",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Enchanté",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bienvenue",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Bonjour",
+          "correct": false
+        }
+      ],
+      "explanation": "Sampai jumpa (lagi) = à la prochaine.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "prompt": "« Assalamualaikum » — Réponse :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Selamat pagi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Permisi",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Waalaikumsalam",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Sama-sama",
+          "correct": false
+        }
+      ],
+      "explanation": "Salutation musulmane et sa réponse rituelle.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "prompt": "Que signifie « Senang berkenalan dengan Anda » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Je suis content de partir.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Je vous connais déjà.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Content de vous revoir.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Enchanté de faire votre connaissance.",
+          "correct": true
+        }
+      ],
+      "explanation": "Berkenalan = faire connaissance.",
+      "tags": [
+        "culture",
+        "vie-courante",
+        "a1"
+      ]
+    }
+  ]
+}

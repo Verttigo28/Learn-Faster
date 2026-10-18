@@ -1,0 +1,712 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-suffixes-kan-i",
+  "title": "Les suffixes -kan et -i",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Que signifie « membersihkan » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "la propreté",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "être propre",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "se laver",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "nettoyer (rendre propre)",
+          "correct": true
+        }
+      ],
+      "explanation": "-kan causatif : bersih (propre) → membersihkan (rendre propre).",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "a2"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Que signifie « menidurkan » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dormir",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "chambre",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "endormir, faire dormir",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "s'endormir sans le vouloir",
+          "correct": false
+        }
+      ],
+      "explanation": "-kan causatif : tidur → faire dormir.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Que signifie « Saya membelikan adik saya buku » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mon petit frère m'a acheté un livre.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "J'ai vendu le livre de mon petit frère.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Mon petit frère a acheté un livre.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "J'ai acheté un livre à (pour) mon petit frère.",
+          "correct": true
+        }
+      ],
+      "explanation": "-kan bénéfactif : faire quelque chose pour quelqu'un.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "« Le maire a fait venir des experts. » — « Wali kota ___ para ahli. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mendatangkan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "datang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mendatangi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kedatangan",
+          "correct": false
+        }
+      ],
+      "explanation": "Mendatangkan = faire venir (causatif) ; mendatangi = se rendre chez.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "« Il s'est rendu chez son ami. » — « Dia ___ rumah temannya. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mendatangkan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mendatangi",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "datangkan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kedatangan",
+          "correct": false
+        }
+      ],
+      "explanation": "-i locatif : l'objet est le lieu où l'on va.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Complétez : « Petani itu ___ sawahnya dengan padi. » (planter son champ de riz)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menanami",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "menanamkan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "tanaman",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "tertanam",
+          "correct": false
+        }
+      ],
+      "explanation": "-i locatif : l'objet (sawah) est le lieu de l'action.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Complétez : « Ayah ___ mobil ke garasi. » (faire entrer la voiture)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "masuk",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "memasukkan",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "memasuki",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kemasukan",
+          "correct": false
+        }
+      ],
+      "explanation": "Memasukkan = faire entrer (attention : deux k).",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Complétez : « Pencuri itu ___ rumah kami. » (est entré dans notre maison)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dimasukkan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "memasuki",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "memasukkan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kemasukan",
+          "correct": false
+        }
+      ],
+      "explanation": "Memasuki = entrer dans (objet = lieu).",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Complétez : « Saya ___ surat kepada ibu. » (envoyer une lettre à maman)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mengirimi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kiriman",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "terkirim",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mengirimkan",
+          "correct": true
+        }
+      ],
+      "explanation": "Mengirimkan + chose envoyée ; mengirimi + destinataire.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Dans « Saya mengirimi ibu surat », quel est l'objet direct ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ibu",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "aucun",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "surat",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "saya",
+          "correct": false
+        }
+      ],
+      "explanation": "Avec -i, l'objet direct est le destinataire (ibu).",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Que signifie « mendengarkan musik » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "entendre par hasard de la musique",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "jouer de la musique",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "écouter de la musique",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "composer de la musique",
+          "correct": false
+        }
+      ],
+      "explanation": "Mendengarkan = écouter (activement) ; mendengar = entendre.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Complétez : « Anak itu ___ dinding. » (écrire sur le mur)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tulisan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menulisi",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "menuliskan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "tertulis",
+          "correct": false
+        }
+      ],
+      "explanation": "-i : l'objet est la surface sur laquelle on écrit.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Que signifie « memukuli » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "frapper à plusieurs reprises",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "frapper une fois",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "se faire frapper",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "frapper pour quelqu'un",
+          "correct": false
+        }
+      ],
+      "explanation": "-i peut marquer la répétition de l'action.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Que signifie « menjauhi » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "éloigner quelque chose",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "être loin",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "la distance",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "s'éloigner de, éviter",
+          "correct": true
+        }
+      ],
+      "explanation": "Jauh (loin) + -i : s'éloigner de quelque chose.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "« Le magasin a augmenté les prix. » — « Toko itu ___ harga. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kenaikan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menaiki",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "naik",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "menaikkan",
+          "correct": true
+        }
+      ],
+      "explanation": "Menaikkan = faire monter, augmenter (causatif).",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "« Nous montons cet escalier. » — « Kami ___ tangga itu. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menaiki",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "dinaikkan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menaikkan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kenaikan",
+          "correct": false
+        }
+      ],
+      "explanation": "Menaiki = monter sur / dans (objet = lieu).",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Que signifie « Tolong ambilkan saya air » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ne prends pas l'eau.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Prends mon eau.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Va me chercher de l'eau, s'il te plaît.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Je prends de l'eau.",
+          "correct": false
+        }
+      ],
+      "explanation": "Ambilkan : -kan bénéfactif (prendre pour quelqu'un).",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Que signifie « Surat ini harus ditandatangani » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il faut écrire cette lettre.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Cette lettre doit être signée.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Cette lettre est un signe.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Cette lettre est signée.",
+          "correct": false
+        }
+      ],
+      "explanation": "Menandatangani (signer) → passif ditandatangani.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Que signifie « menghadiri rapat » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "organiser une réunion",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "quitter une réunion",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "annuler une réunion",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "assister à une réunion",
+          "correct": true
+        }
+      ],
+      "explanation": "Hadir (présent) + -i : être présent à.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Quelle est la forme correcte pour « aimer (quelqu'un) » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bercintakan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "dicintakan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mencintakan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mencintai",
+          "correct": true
+        }
+      ],
+      "explanation": "Les verbes de sentiment prennent souvent -i : mencintai, menyukai.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Complétez : « Guru itu ___ pelajaran dengan jelas. » (expliquer)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "menjelasi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kejelasan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "menjelaskan",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "berjelas",
+          "correct": false
+        }
+      ],
+      "explanation": "Jelas (clair) + -kan : rendre clair, expliquer.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "Que signifie « menemani » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "accompagner",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "trouver",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "rencontrer par hasard",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "se faire un ami",
+          "correct": false
+        }
+      ],
+      "explanation": "Teman (ami, compagnon) + -i : tenir compagnie, accompagner.",
+      "tags": [
+        "grammaire",
+        "kan-i",
+        "b1"
+      ]
+    }
+  ]
+}

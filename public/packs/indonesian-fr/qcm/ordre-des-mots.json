@@ -1,0 +1,680 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-ordre-des-mots",
+  "title": "Ordre des mots : nom + adjectif, ini/itu, yang",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Comment dire « une grande maison » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "rumah yang ini besar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "besar rumah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "besar-rumah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "rumah besar",
+          "correct": true
+        }
+      ],
+      "explanation": "L'adjectif suit le nom : rumah besar.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Comment dire « cette maison » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ini rumah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "inirumah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "rumah ini",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "rumah itu ini",
+          "correct": false
+        }
+      ],
+      "explanation": "Le démonstratif suit le nom : rumah ini.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Que signifie « Rumah ini besar » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "C'est une grande maison.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Cette grande maison",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ces maisons sont grandes.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Cette maison est grande.",
+          "correct": true
+        }
+      ],
+      "explanation": "Nom + ini, puis adjectif = phrase complète : « cette maison est grande ».",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Que signifie « rumah besar ini » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "la maison de celui-ci",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "cette maison est grande",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "cette grande maison",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "c'est une maison",
+          "correct": false
+        }
+      ],
+      "explanation": "Nom + adjectif + ini forme un groupe nominal : « cette grande maison ».",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Que signifie « Ini rumah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La maison est ici.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Cette maison",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "C'est une maison.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Cette maison est à moi.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Ini » en début de phrase = « ceci / c'est ».",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Comment dire « le livre qui est cher » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "yang buku mahal",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mahal yang buku",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "buku yang mahal",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "buku mahal yang",
+          "correct": false
+        }
+      ],
+      "explanation": "« Yang » introduit la relative après le nom : buku yang mahal.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Comment dire « La fille qui chante est ma petite sœur » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Gadis yang menyanyi itu adik saya.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Gadis menyanyi yang itu adik saya.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Adik saya itu gadis menyanyi yang.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Yang gadis menyanyi itu adik saya.",
+          "correct": false
+        }
+      ],
+      "explanation": "Nom + yang + verbe + itu, puis le prédicat.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Comment dire « mon nouveau livre » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "buku baru saya",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "saya buku baru",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "buku saya baru",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "baru buku saya",
+          "correct": false
+        }
+      ],
+      "explanation": "Ordre : nom + adjectif + possesseur. « Buku saya baru » = mon livre est neuf.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "« Mau yang mana? — Yang merah. » Que signifie « yang merah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pas rouge",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "rouge et quoi d'autre ?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "le rouge (celui qui est rouge)",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "très rouge",
+          "correct": false
+        }
+      ],
+      "explanation": "« Yang » + adjectif nominalise : « celui qui est rouge ».",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Dans « nasi goreng », quel mot est le noyau (nom principal) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "goreng",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "aucun",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "les deux également",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "nasi",
+          "correct": true
+        }
+      ],
+      "explanation": "Le nom vient d'abord, le modificateur ensuite : riz (nasi) frit (goreng).",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Comment dire « ce professeur d'anglais » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "guru bahasa Inggris itu",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "itu guru bahasa Inggris",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "guru itu bahasa Inggris",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bahasa Inggris guru itu",
+          "correct": false
+        }
+      ],
+      "explanation": "Le démonstratif se place à la fin de tout le groupe nominal.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Quelle phrase est correcte pour « Je mange du riz » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Makan saya nasi.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Saya makan nasi.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Nasi makan saya.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Saya nasi makan.",
+          "correct": false
+        }
+      ],
+      "explanation": "Ordre de base : sujet – verbe – objet.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Comment dire « deux grandes maisons » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dua rumah besar",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "besar dua rumah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "rumah besar dua",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "rumah dua besar",
+          "correct": false
+        }
+      ],
+      "explanation": "Le nombre précède le nom, l'adjectif le suit.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Comment dire « très grand » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sangat sekali besar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sangat besar",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "besar sangat",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sekali besar",
+          "correct": false
+        }
+      ],
+      "explanation": "« Sangat » précède l'adjectif ; « sekali » le suit (besar sekali).",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Où se place « sekali » (très) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "avant le nom",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "après l'adjectif",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "avant l'adjectif",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "en début de phrase",
+          "correct": false
+        }
+      ],
+      "explanation": "On dit « besar sekali », « enak sekali ».",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Comment dire « ces gens-là » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "itu orang-orang",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "itu-itu orang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "orang itu-itu",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "orang-orang itu",
+          "correct": true
+        }
+      ],
+      "explanation": "Nom (redoublé pour le pluriel) + itu.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Comment dire « ma voiture rouge » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mobil saya merah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mobil merah saya",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "merah mobil saya",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "saya mobil merah",
+          "correct": false
+        }
+      ],
+      "explanation": "Nom + adjectif + possesseur (on peut aussi dire « mobil saya yang merah »). « Mobil saya merah » = ma voiture est rouge.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Que signifie « Saya mau yang besar » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Je veux le grand.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Je veux beaucoup.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Je suis grand.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Je veux être grand.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Yang besar » = le grand (celui qui est grand).",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Que signifie « Anak itu pintar » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cet enfant est intelligent.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Cet enfant intelligent",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "C'est un enfant intelligent ?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L'enfant de celui-là est intelligent.",
+          "correct": false
+        }
+      ],
+      "explanation": "Nom + itu + adjectif = phrase attributive (pas de verbe « être »).",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Comment dire « un Français » (une personne) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Prancis orang",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Prancis-orang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "orangnya Prancis",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "orang Prancis",
+          "correct": true
+        }
+      ],
+      "explanation": "Nom + nationalité : orang Prancis.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Comment dire « un restaurant indonésien » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "restoran Indonesia",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Indonesia restoran",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Indonesia-restoran",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "restoran yang Indonesia itu",
+          "correct": false
+        }
+      ],
+      "explanation": "Le modificateur suit le nom : restoran Indonesia.",
+      "tags": [
+        "grammaire",
+        "ordre-des-mots",
+        "a1"
+      ]
+    }
+  ]
+}

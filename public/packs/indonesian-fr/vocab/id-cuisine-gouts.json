@@ -1,0 +1,509 @@
+{
+  "type": "vocab_deck",
+  "id": "id-cuisine-gouts",
+  "title": "Cuisine et goûts",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "masak",
+      "definition": "cuisiner (base)",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "memasak",
+      "definition": "cuisiner",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "goreng",
+      "definition": "frit",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "menggoreng",
+      "definition": "frire",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "rebus",
+      "definition": "bouilli",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "merebus",
+      "definition": "faire bouillir",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "bakar",
+      "definition": "grillé",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "membakar",
+      "definition": "griller / brûler",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kukus",
+      "definition": "cuit à la vapeur",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "mengukus",
+      "definition": "cuire à la vapeur",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "tumis",
+      "definition": "sauté",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "panggang",
+      "definition": "rôti / cuit au four",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "memotong",
+      "definition": "couper",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "mengupas",
+      "definition": "éplucher",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "mencampur",
+      "definition": "mélanger",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "mengaduk",
+      "definition": "remuer",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "menuangkan",
+      "definition": "verser",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "mencicipi",
+      "definition": "goûter",
+      "tags": [
+        "cuisine",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "manis",
+      "definition": "sucré",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "asin",
+      "definition": "salé",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "asam",
+      "definition": "acide / aigre",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "pahit",
+      "definition": "amer",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "pedas",
+      "definition": "épicé / piquant",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "gurih",
+      "definition": "savoureux (umami)",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "enak",
+      "definition": "bon / délicieux",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "lezat",
+      "definition": "délicieux",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "hambar",
+      "definition": "fade",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "tawar",
+      "definition": "sans goût / nature",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "segar",
+      "definition": "frais",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "matang",
+      "definition": "cuit / mûr",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "mentah",
+      "definition": "cru",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "busuk",
+      "definition": "pourri",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "basi",
+      "definition": "avarié",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "keras",
+      "definition": "dur",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "lembut",
+      "definition": "tendre / doux",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "renyah",
+      "definition": "croustillant",
+      "tags": [
+        "cuisine",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "dapur",
+      "definition": "cuisine (pièce)",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "kompor",
+      "definition": "réchaud / gazinière",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "wajan",
+      "definition": "wok / poêle",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "panci",
+      "definition": "casserole",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "pisau",
+      "definition": "couteau",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "talenan",
+      "definition": "planche à découper",
+      "tags": [
+        "cuisine",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "oven",
+      "definition": "four",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "resep",
+      "definition": "recette",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "bumbu",
+      "definition": "assaisonnement",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "rempah-rempah",
+      "definition": "épices",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "jahe",
+      "definition": "gingembre",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "kunyit",
+      "definition": "curcuma",
+      "tags": [
+        "cuisine",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "serai",
+      "definition": "citronnelle",
+      "tags": [
+        "cuisine",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "santan",
+      "definition": "lait de coco",
+      "tags": [
+        "cuisine",
+        "nom",
+        "a2"
+      ]
+    }
+  ]
+}

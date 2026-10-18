@@ -1,0 +1,539 @@
+{
+  "type": "vocab_deck",
+  "id": "en-home-objects",
+  "title": "Home and household objects",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "rumah",
+      "definition": "house / home",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "kamar",
+      "definition": "room / bedroom",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "kamar tidur",
+      "definition": "bedroom",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "kamar mandi",
+      "definition": "bathroom",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "ruang tamu",
+      "definition": "living room",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "ruang makan",
+      "definition": "dining room",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "dapur",
+      "definition": "kitchen",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "toilet",
+      "definition": "toilet",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kamar kecil",
+      "definition": "restroom / toilet (euphemism)",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "pintu",
+      "definition": "door",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "jendela",
+      "definition": "window",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "dinding",
+      "definition": "wall",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "lantai",
+      "definition": "floor",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "atap",
+      "definition": "roof",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "tangga",
+      "definition": "stairs / ladder",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "halaman",
+      "definition": "yard / courtyard",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "kebun",
+      "definition": "garden",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "garasi",
+      "definition": "garage",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "pagar",
+      "definition": "fence / gate",
+      "tags": [
+        "home",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "tempat tidur",
+      "definition": "bed",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "kasur",
+      "definition": "mattress",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "bantal",
+      "definition": "pillow",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "selimut",
+      "definition": "blanket",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "lemari",
+      "definition": "wardrobe / cupboard / cabinet",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "meja",
+      "definition": "table",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "kursi",
+      "definition": "chair",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "sofa",
+      "definition": "sofa / couch",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "lampu",
+      "definition": "lamp / light",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "kipas angin",
+      "definition": "electric fan / fan",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "AC",
+      "definition": "air conditioning / AC",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "televisi",
+      "definition": "television / TV",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "kulkas",
+      "definition": "refrigerator / fridge",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "mesin cuci",
+      "definition": "washing machine",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "cermin",
+      "definition": "mirror",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "sabun",
+      "definition": "soap",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "handuk",
+      "definition": "towel",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "sikat gigi",
+      "definition": "toothbrush",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "pasta gigi",
+      "definition": "toothpaste",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "sampo",
+      "definition": "shampoo",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "ember",
+      "definition": "bucket",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "gayung",
+      "definition": "water dipper (for bathing)",
+      "tags": [
+        "home",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "sapu",
+      "definition": "broom",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "sampah",
+      "definition": "trash / garbage / rubbish",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "tempat sampah",
+      "definition": "trash can / garbage bin",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "kunci",
+      "definition": "key / lock",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "jam dinding",
+      "definition": "wall clock / clock",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "gorden",
+      "definition": "curtain",
+      "tags": [
+        "home",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "karpet",
+      "definition": "carpet / rug",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "listrik",
+      "definition": "electricity",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "kotak",
+      "definition": "box",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "tas",
+      "definition": "bag",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "payung",
+      "definition": "umbrella",
+      "tags": [
+        "home",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "gunting",
+      "definition": "scissors",
+      "tags": [
+        "home",
+        "noun",
+        "a2"
+      ]
+    }
+  ]
+}

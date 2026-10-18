@@ -1,0 +1,489 @@
+{
+  "type": "vocab_deck",
+  "id": "id-emotions-caractere",
+  "title": "Émotions et caractère",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "senang",
+      "definition": "content / heureux",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "bahagia",
+      "definition": "heureux",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "gembira",
+      "definition": "joyeux",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "sedih",
+      "definition": "triste",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "marah",
+      "definition": "en colère",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "takut",
+      "definition": "avoir peur",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "kaget",
+      "definition": "surpris / choqué",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "terkejut",
+      "definition": "surpris",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "bosan",
+      "definition": "s'ennuyer / lassé",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "capek",
+      "definition": "fatigué (familier)",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "lelah",
+      "definition": "fatigué",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "khawatir",
+      "definition": "inquiet",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "cemas",
+      "definition": "anxieux",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "malu",
+      "definition": "honteux / gêné",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "bangga",
+      "definition": "fier",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "kecewa",
+      "definition": "déçu",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "kesal",
+      "definition": "agacé",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "bingung",
+      "definition": "perdu / confus",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "rindu",
+      "definition": "regretter l'absence de / manquer",
+      "tags": [
+        "emotions",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "kangen",
+      "definition": "manquer (qqn) (familier)",
+      "tags": [
+        "emotions",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "cinta",
+      "definition": "amour",
+      "tags": [
+        "emotions",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "benci",
+      "definition": "détester / haine",
+      "tags": [
+        "emotions",
+        "verbe",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "cemburu",
+      "definition": "jaloux",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "iri",
+      "definition": "envieux",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "puas",
+      "definition": "satisfait",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "lega",
+      "definition": "soulagé",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "tenang",
+      "definition": "calme",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "sabar",
+      "definition": "patient",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "ramah",
+      "definition": "aimable / sympathique",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "sombong",
+      "definition": "arrogant",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "rendah hati",
+      "definition": "humble",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "jujur",
+      "definition": "honnête",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "pemalu",
+      "definition": "timide",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "pemarah",
+      "definition": "colérique",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "lucu",
+      "definition": "drôle / mignon",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "serius",
+      "definition": "sérieux",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "baik hati",
+      "definition": "gentil",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "egois",
+      "definition": "égoïste",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "berani",
+      "definition": "courageux",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "pengecut",
+      "definition": "lâche",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "pelit",
+      "definition": "avare / radin",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "murah hati",
+      "definition": "généreux",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "sopan",
+      "definition": "poli",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "kasar",
+      "definition": "grossier / rude",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "santai",
+      "definition": "décontracté",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "gugup",
+      "definition": "nerveux",
+      "tags": [
+        "emotions",
+        "adjectif",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "perasaan",
+      "definition": "sentiment",
+      "tags": [
+        "emotions",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "suasana hati",
+      "definition": "humeur",
+      "tags": [
+        "emotions",
+        "nom",
+        "b1"
+      ]
+    }
+  ]
+}

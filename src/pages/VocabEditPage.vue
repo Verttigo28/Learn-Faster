@@ -1,16 +1,14 @@
 <script setup lang="ts">
+import { parseTags } from "../services/tags";
+import { confirmDialog } from "../services/dialog";
 import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { db, type VocabDeck, type VocabItem } from "../db";
 import { uid } from "../utils/id";
+import { t } from "../i18n";
 import EmptyState from "../components/EmptyState.vue";
 import ConfirmBar from "../components/ConfirmBar.vue";
 import BaseModal from "../components/BaseModal.vue";
-import ConfirmModal from "../components/ConfirmModal.vue";
-import { useToast } from "../composables/useToast";
-
-const toast = useToast();
-const pendingDeleteId = ref<string | null>(null);
 
 const props = defineProps<{ deckId?: string }>();
 const route = useRoute();
@@ -39,12 +37,6 @@ function set(kind: "info" | "ok" | "danger", text: string) {
   msg.value = { kind, text };
 }
 
-function parseTags(input: string): string[] {
-  return input
-    .split(",")
-    .map((t) => t.trim())
-    .filter(Boolean);
-}
 
 async function load() {
   deck.value = (await db.vocabDecks.get(deckId.value)) ?? null;
@@ -58,28 +50,28 @@ async function load() {
 
 async function saveDeck() {
   if (!deck.value) return;
-  const t = deckTitle.value.trim();
-  if (!t) return set("danger", "Titre requis.");
+  const name = deckTitle.value.trim();
+  if (!name) return set("danger", t("vocab.titleRequired"));
   await db.vocabDecks.put({
     ...deck.value,
-    title: t,
+    title: name,
     from: (deckFrom.value || "id").trim(),
     to: (deckTo.value || "fr").trim()
   });
-  set("ok", "Deck mis à jour ✅");
+  set("ok", t("vocab.edit.updated"));
   await load();
 }
 
 async function addItem() {
   if (!deck.value) return;
-  const t = term.value.trim();
+  const tm = term.value.trim();
   const d = definition.value.trim();
-  if (!t || !d) return set("danger", "Term et définition requis.");
+  if (!tm || !d) return set("danger", t("vocab.edit.termDefinitionRequired"));
 
   const it: VocabItem = {
     id: `${deckId.value}:${uid("it")}`,
     deckId: deckId.value,
-    term: t,
+    term: tm,
     definition: d,
     tags: parseTags(tagsText.value)
   };
@@ -87,7 +79,7 @@ async function addItem() {
   term.value = "";
   definition.value = "";
   tagsText.value = "";
-  set("ok", "Item ajouté ✅");
+  set("ok", t("vocab.edit.itemAdded"));
   await load();
 }
 
@@ -101,27 +93,28 @@ function openEdit(it: VocabItem) {
 
 async function saveEdit() {
   if (!editItemId.value) return;
-  const t = editTerm.value.trim();
+  const tm = editTerm.value.trim();
   const d = editDefinition.value.trim();
-  if (!t || !d) return set("danger", "Term et définition requis.");
+  if (!tm || !d) return set("danger", t("vocab.edit.termDefinitionRequired"));
   await db.vocabItems.put({
     id: editItemId.value,
     deckId: deckId.value,
-    term: t,
+    term: tm,
     definition: d,
     tags: parseTags(editTagsText.value)
   });
   editOpen.value = false;
-  set("ok", "Item mis à jour ✅");
+  set("ok", t("vocab.edit.itemUpdated"));
   await load();
 }
 
-async function removeItem() {
-  const id = pendingDeleteId.value;
-  pendingDeleteId.value = null;
-  if (!id) return;
-  await db.vocabItems.delete(id);
-  toast.success("Item supprimé !");
+async function removeItem(id: string) {
+  if (!(await confirmDialog(t("vocab.edit.itemDeleteConfirm")))) return;
+  await db.transaction("rw", [db.vocabItems, db.reviews], async () => {
+    await db.vocabItems.delete(id);
+    await db.reviews.where("itemId").equals(id).delete();
+  });
+  set("ok", t("vocab.edit.itemDeleted"));
   await load();
 }
 
@@ -135,47 +128,47 @@ onMounted(load);
 <template>
   <div class="page">
     <div v-if="!deck">
-      <EmptyState title="Deck introuvable" hint="Retourne à la liste des decks." />
+      <EmptyState :title="$t('vocab.notFound')" :hint="$t('vocab.edit.notFoundHint')" />
       <div class="row mt-3">
-        <button class="btn" @click="goBack">Retour</button>
+        <button class="btn" @click="goBack">{{ $t("common.back") }}</button>
       </div>
     </div>
 
     <div v-else class="editGrid">
       <div class="card">
-        <h2>Éditer deck</h2>
+        <h2>{{ $t("vocab.edit.heading") }}</h2>
 
-        <label class="small">Titre</label>
+        <label class="small">{{ $t("common.title") }}</label>
         <input class="input" v-model="deckTitle" />
 
         <div class="row mt-2 gap-2.5">
           <div class="flex-1">
-            <label class="small">De</label>
+            <label class="small">{{ $t("common.from") }}</label>
             <input class="input" v-model="deckFrom" />
           </div>
           <div class="flex-1">
-            <label class="small">Vers</label>
+            <label class="small">{{ $t("common.to") }}</label>
             <input class="input" v-model="deckTo" />
           </div>
         </div>
 
         <div class="row mt-3">
-          <button class="btn" @click="saveDeck">Enregistrer</button>
-          <button class="btn" @click="goBack">Retour</button>
+          <button class="btn" @click="saveDeck">{{ $t("common.save") }}</button>
+          <button class="btn" @click="goBack">{{ $t("common.back") }}</button>
         </div>
 
         <div class="hr"></div>
 
-        <h3>Ajouter un item</h3>
-        <label class="small">Terme</label>
-        <input class="input" v-model="term" placeholder="ex: makan" />
-        <label class="small mt-2 block">Définition</label>
-        <input class="input" v-model="definition" placeholder="ex: manger" />
-        <label class="small mt-2 block">Tags (virgules)</label>
-        <input class="input" v-model="tagsText" placeholder="vacances, verbe" />
+        <h3>{{ $t("vocab.edit.addItem") }}</h3>
+        <label class="small">{{ $t("vocab.edit.term") }}</label>
+        <input class="input" v-model="term" :placeholder="$t('vocab.edit.termPlaceholder')" />
+        <label class="small mt-2 block">{{ $t("vocab.edit.definition") }}</label>
+        <input class="input" v-model="definition" :placeholder="$t('vocab.edit.definitionPlaceholder')" />
+        <label class="small mt-2 block">{{ $t("vocab.edit.tags") }}</label>
+        <input class="input" v-model="tagsText" :placeholder="$t('vocab.edit.tagsPlaceholder')" />
 
         <div class="row mt-3">
-          <button class="btn ok" @click="addItem">Ajouter</button>
+          <button class="btn ok" @click="addItem">{{ $t("common.add") }}</button>
         </div>
 
         <div v-if="msg" class="mt-3">
@@ -184,11 +177,11 @@ onMounted(load);
       </div>
 
       <div class="card cardFill">
-        <h2 class="m-0">Items ({{ items.length }})</h2>
+        <h2 class="m-0">{{ $t("vocab.edit.itemsCount", { count: items.length }) }}</h2>
         <div class="hr"></div>
 
         <div v-if="items.length === 0">
-          <EmptyState title="Aucun item" hint="Ajoute ton premier item à gauche." icon="✏️" />
+          <EmptyState :title="$t('vocab.edit.emptyTitle')" :hint="$t('vocab.edit.emptyHint')" />
         </div>
 
         <div v-else class="scrollY">
@@ -200,8 +193,8 @@ onMounted(load);
                 <p class="small mt-1 mb-0">{{ (it.tags ?? []).join(", ") }}</p>
               </div>
               <div class="row gap-2">
-                <button class="btn" @click="openEdit(it)">Éditer</button>
-                <button class="btn danger" @click="pendingDeleteId = it.id">Supprimer</button>
+                <button class="btn" @click="openEdit(it)">{{ $t("common.edit") }}</button>
+                <button class="btn danger" @click="removeItem(it.id)">{{ $t("common.delete") }}</button>
               </div>
             </div>
             </div>
@@ -210,30 +203,20 @@ onMounted(load);
       </div>
     </div>
 
-    <BaseModal :open="editOpen" title="Modifier un item" @close="editOpen = false">
+    <BaseModal :open="editOpen" :title="$t('vocab.edit.editModal')" @close="editOpen = false">
       <div class="card" style="margin:0">
-        <label class="small">Terme</label>
+        <label class="small">{{ $t("vocab.edit.term") }}</label>
         <input class="input" v-model="editTerm" />
-        <label class="small mt-2 block">Définition</label>
+        <label class="small mt-2 block">{{ $t("vocab.edit.definition") }}</label>
         <input class="input" v-model="editDefinition" />
-        <label class="small mt-2 block">Tags (virgules)</label>
+        <label class="small mt-2 block">{{ $t("vocab.edit.tags") }}</label>
         <input class="input" v-model="editTagsText" />
 
         <div class="row mt-3">
-          <button class="btn" @click="saveEdit">Enregistrer</button>
-          <button class="btn" @click="editOpen = false">Annuler</button>
+          <button class="btn" @click="saveEdit">{{ $t("common.save") }}</button>
+          <button class="btn" @click="editOpen = false">{{ $t("common.cancel") }}</button>
         </div>
       </div>
     </BaseModal>
-
-    <ConfirmModal
-      :open="!!pendingDeleteId"
-      title="Supprimer l'item"
-      message="Supprimer cet item de vocabulaire ?"
-      confirm-text="Supprimer"
-      :danger="true"
-      @confirm="removeItem"
-      @cancel="pendingDeleteId = null"
-    />
   </div>
 </template>

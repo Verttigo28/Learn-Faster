@@ -1,0 +1,294 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-market-shopping",
+  "title": "At the Market and Shopping",
+  "items": [
+    {
+      "id": "1",
+      "text": "Berapa harga mangga ini?",
+      "translation": "How much is this mango?",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Satu kilo berapa, Bu?",
+      "translation": "How much for a kilo, ma'am?",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Mahal sekali, bisa kurang?",
+      "translation": "That's very expensive, can you lower the price?",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Boleh saya tawar?",
+      "translation": "May I bargain?",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Kalau lima puluh ribu, boleh?",
+      "translation": "How about fifty thousand?",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Itu harga pas, Mas.",
+      "translation": "That's a fixed price, sir.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya beli dua kilo jeruk.",
+      "translation": "I'll buy two kilos of oranges.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Ada ukuran yang lebih besar?",
+      "translation": "Do you have a bigger size?",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Saya mau mencoba baju ini.",
+      "translation": "I'd like to try on this shirt.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Ada warna lain?",
+      "translation": "Do you have another colour?",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya hanya melihat-lihat.",
+      "translation": "I'm just looking around.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Ini terlalu mahal untuk saya.",
+      "translation": "This is too expensive for me.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Saya ambil yang merah.",
+      "translation": "I'll take the red one.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Ada kembalian untuk seratus ribu?",
+      "translation": "Do you have change for a hundred thousand?",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Tolong dibungkus, ya.",
+      "translation": "Please wrap it up.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1",
+        "passive"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Pasar ini buka setiap pagi.",
+      "translation": "This market opens every morning.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Sayurnya masih segar.",
+      "translation": "The vegetables are still fresh.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Saya mencari oleh-oleh untuk teman.",
+      "translation": "I'm looking for souvenirs for my friends.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Batik ini buatan tangan.",
+      "translation": "This batik is handmade.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Harganya sudah termasuk pajak.",
+      "translation": "The price already includes tax.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Bisa bayar dengan kartu kredit?",
+      "translation": "Can I pay by credit card?",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya tidak jadi membeli.",
+      "translation": "I've decided not to buy it after all.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "b1",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Setengah kilo bawang merah, Bu.",
+      "translation": "Half a kilo of shallots, ma'am.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Toko itu tutup hari Minggu.",
+      "translation": "That shop is closed on Sundays.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Diskonnya berapa persen?",
+      "translation": "What percentage is the discount?",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Kain ini dijual per meter.",
+      "translation": "This fabric is sold by the metre.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "b1",
+        "passive"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Saya mau beli pulsa.",
+      "translation": "I'd like to buy phone credit.",
+      "tags": [
+        "sentences",
+        "shopping",
+        "a1"
+      ]
+    }
+  ]
+}

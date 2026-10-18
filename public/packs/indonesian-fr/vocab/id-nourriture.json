@@ -1,0 +1,689 @@
+{
+  "type": "vocab_deck",
+  "id": "id-nourriture",
+  "title": "La nourriture",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "makanan",
+      "definition": "nourriture",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "nasi",
+      "definition": "riz (cuit)",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "beras",
+      "definition": "riz (cru)",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "padi",
+      "definition": "riz (plante)",
+      "tags": [
+        "nourriture",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "roti",
+      "definition": "pain",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "mi",
+      "definition": "nouilles",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "ayam",
+      "definition": "poulet",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "daging",
+      "definition": "viande",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "daging sapi",
+      "definition": "bœuf",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "daging babi",
+      "definition": "porc",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "daging kambing",
+      "definition": "viande de chèvre / mouton",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "ikan",
+      "definition": "poisson",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "udang",
+      "definition": "crevette",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "cumi-cumi",
+      "definition": "calmar",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "kepiting",
+      "definition": "crabe",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "telur",
+      "definition": "œuf",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "tahu",
+      "definition": "tofu",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "tempe",
+      "definition": "tempeh",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "sayur",
+      "definition": "légume",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "buah",
+      "definition": "fruit",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "kentang",
+      "definition": "pomme de terre",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "wortel",
+      "definition": "carotte",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "bawang merah",
+      "definition": "échalote",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "bawang putih",
+      "definition": "ail",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "bawang bombai",
+      "definition": "oignon",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "tomat",
+      "definition": "tomate",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "timun",
+      "definition": "concombre",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "kangkung",
+      "definition": "liseron d'eau",
+      "tags": [
+        "nourriture",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "bayam",
+      "definition": "épinard",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "jagung",
+      "definition": "maïs",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "kacang",
+      "definition": "cacahuète / haricot",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "cabai",
+      "definition": "piment",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "jamur",
+      "definition": "champignon",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "pisang",
+      "definition": "banane",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "mangga",
+      "definition": "mangue",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "nanas",
+      "definition": "ananas",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "pepaya",
+      "definition": "papaye",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "semangka",
+      "definition": "pastèque",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "jeruk",
+      "definition": "orange / agrume",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "jeruk nipis",
+      "definition": "citron vert",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "apel",
+      "definition": "pomme",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "kelapa",
+      "definition": "noix de coco",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "durian",
+      "definition": "durian",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "rambutan",
+      "definition": "ramboutan",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "salak",
+      "definition": "salak (fruit à peau de serpent)",
+      "tags": [
+        "nourriture",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "alpukat",
+      "definition": "avocat (fruit)",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "anggur",
+      "definition": "raisin",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "stroberi",
+      "definition": "fraise",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "keju",
+      "definition": "fromage",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "mentega",
+      "definition": "beurre",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "garam",
+      "definition": "sel",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "52",
+      "term": "gula",
+      "definition": "sucre",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "53",
+      "term": "merica",
+      "definition": "poivre",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "54",
+      "term": "kecap",
+      "definition": "sauce soja",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "55",
+      "term": "sambal",
+      "definition": "sauce pimentée",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "56",
+      "term": "minyak",
+      "definition": "huile",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "57",
+      "term": "tepung",
+      "definition": "farine",
+      "tags": [
+        "nourriture",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "58",
+      "term": "kue",
+      "definition": "gâteau",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "59",
+      "term": "nasi goreng",
+      "definition": "riz frit",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "60",
+      "term": "mi goreng",
+      "definition": "nouilles sautées",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "61",
+      "term": "sate",
+      "definition": "brochettes / satay",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "62",
+      "term": "soto",
+      "definition": "soupe indonésienne",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "63",
+      "term": "bakso",
+      "definition": "boulettes de viande en soupe",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "64",
+      "term": "gado-gado",
+      "definition": "salade de légumes sauce cacahuète",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "65",
+      "term": "rendang",
+      "definition": "bœuf mijoté au lait de coco",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "66",
+      "term": "kerupuk",
+      "definition": "chips de crevette / crackers",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "67",
+      "term": "sup",
+      "definition": "soupe",
+      "tags": [
+        "nourriture",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "68",
+      "term": "camilan",
+      "definition": "en-cas",
+      "tags": [
+        "nourriture",
+        "nom",
+        "b1"
+      ]
+    }
+  ]
+}

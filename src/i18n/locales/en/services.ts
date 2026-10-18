@@ -1,0 +1,31 @@
+export default {
+  confirmTitle: "Confirmation",
+  leaveSession: "Leave the session? Your progress in this session will be lost.",
+  myPhrases: "My sentences",
+  vocabPrompt: "Translation of: \"{term}\"",
+  typedPrompt: "Type the translation of: \"{term}\"",
+  dictationPrompt: "Listen and type the word",
+  dictationDetail: "Dictation ({hint})",
+  interval: { minutes: "{n} min", days: "{n} d", months: "{n} mo", years: "{n} y" },
+  validate: {
+    root: "root",
+    object: "object expected",
+    text: "text expected",
+    nonEmptyText: "non-empty text required",
+    list: "list expected",
+    textList: "list of texts expected",
+    duplicateId: "duplicate id \"{id}\"",
+    positiveNumber: "positive number expected",
+    atLeastTwoChoices: "at least 2 choices required",
+    trueFalse: "true/false expected",
+    noCorrectChoice: "no correct choice",
+    schemaV1: "version 1 expected",
+    number: "number expected",
+    difficulty: "1, 2 or 3 expected",
+    unknownType: "expected: vocab_deck / qcm_exam / sentence_deck / revisions_bundle"
+  },
+  pdfNoDetails: "This attempt has no details (old record). Take a new session to export a PDF.",
+  pdfError: "Could not export the PDF",
+  exportError: "Export failed: {error}",
+  speechUnavailable: "Dictation unavailable: speech synthesis is not supported."
+};

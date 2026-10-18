@@ -1,0 +1,712 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-ter-ke-an",
+  "title": "The Prefix ter- and the Circumfix ke-...-an",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "What does \"terbesar\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bigger",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "the biggest",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "too big",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "enlarged",
+          "correct": false
+        }
+      ],
+      "explanation": "Ter- + adjective = superlative (= paling besar).",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "What does \"Pintu itu terbuka\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The door is open.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "The door will open.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "He is opening the door.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Open the door!",
+          "correct": false
+        }
+      ],
+      "explanation": "Ter- expresses a resulting state.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "What does \"Dia tertidur di kelas\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "He sleeps well in class.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "He doesn't sleep in class.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "He puts the class to sleep.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "He fell asleep (unintentionally) in class.",
+          "correct": true
+        }
+      ],
+      "explanation": "Ter- marks an involuntary action.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "b1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "What does \"terjatuh\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to drop something on purpose",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to fall accidentally",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "to jump",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "waterfall",
+          "correct": false
+        }
+      ],
+      "explanation": "Ter-: an accidental, involuntary action.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "b1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Fill in the blank: \"Rumah ini ___ dari kayu.\" (is made of wood)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pembuat",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "buatan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "membuat",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "terbuat",
+          "correct": true
+        }
+      ],
+      "explanation": "Terbuat dari = to be made of.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "What does \"tertulis\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to write",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "writer",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "written (that is written)",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "handwriting",
+          "correct": false
+        }
+      ],
+      "explanation": "Ter- + verb = a state: what is written.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "What is the root of \"keadilan\" (justice)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "adil",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "adilan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "keadil",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dil",
+          "correct": false
+        }
+      ],
+      "explanation": "Ke-...-an + adjective forms an abstract noun: adil (just, fair) becomes keadilan.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "b1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "What does \"kebersihan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "clean",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to clean",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "too clean",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "cleanliness",
+          "correct": true
+        }
+      ],
+      "explanation": "Ke-...-an + adjective = abstract noun (like English \"-ness\").",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "What does \"kemerdekaan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "freedom of speech",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "war",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "the government",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "independence",
+          "correct": true
+        }
+      ],
+      "explanation": "Merdeka (independent) becomes kemerdekaan. August 17 is Independence Day.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "What does \"Kami kehujanan di jalan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "We avoided the rain.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "We got caught in the rain on the way.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "It is raining on the road.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "We like the rain.",
+          "correct": false
+        }
+      ],
+      "explanation": "Adversative ke-...-an: to be affected by something unpleasant.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "b1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "What does \"Saya kesiangan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm having lunch.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I overslept.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "I'm very hot.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Have a nice day.",
+          "correct": false
+        }
+      ],
+      "explanation": "Kesiangan = to be caught out by the late hour of the day: to get up too late.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "b1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "What does \"Kami kemalaman\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "We are having dinner.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "We were overtaken by nightfall (it got too late).",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "We go out in the evening.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Good night to us.",
+          "correct": false
+        }
+      ],
+      "explanation": "Adversative ke-...-an with \"malam\" (night).",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "What does \"Bajunya kebesaran\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "His shirt has been let out.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "His shirt is very nice.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "His shirt is too big.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "His shirt is the biggest.",
+          "correct": false
+        }
+      ],
+      "explanation": "Ke-...-an + adjective can mean \"too\".",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "What does \"Saya ketinggalan bus\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The bus is late.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I missed the bus.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "I'm waiting for the bus.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I took the bus.",
+          "correct": false
+        }
+      ],
+      "explanation": "Ketinggalan = to be left behind: to miss.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "What does \"kecantikan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to beautify",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "beauty",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "pretty",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "too pretty",
+          "correct": false
+        }
+      ],
+      "explanation": "Cantik (beautiful, pretty) becomes kecantikan (beauty).",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "What does \"kedatangan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "arrival",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "to come",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "departure",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "waiting",
+          "correct": false
+        }
+      ],
+      "explanation": "Datang (to come) becomes kedatangan (arrival).",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "What does \"kementerian\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "a president",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "a minister",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "a ministry",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "a parliament",
+          "correct": false
+        }
+      ],
+      "explanation": "Ke-...-an + noun can denote an institution: menteri becomes kementerian.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "What does \"Dompet saya ketinggalan di rumah\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "My wallet is new.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I found my wallet.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "My wallet was stolen.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I left my wallet at home.",
+          "correct": true
+        }
+      ],
+      "explanation": "Ketinggalan = to be forgotten, left behind.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Fill in the blank: \"Kopi ini ___ manis.\" (too sweet)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kemanisan sekali",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "paling",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "terlalu",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "termanis",
+          "correct": false
+        }
+      ],
+      "explanation": "Terlalu + adjective = too.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "What does \"termasuk\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "outside",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "including",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "entered",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to begin",
+          "correct": false
+        }
+      ],
+      "explanation": "Termasuk = including, to be part of.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "What does \"terkenal\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "acquaintance",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "famous",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "to know",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "unknown",
+          "correct": false
+        }
+      ],
+      "explanation": "Ter- + kenal (to know) = known, famous.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "Fill in the blank: \"Gunung ___ di Indonesia adalah Puncak Jaya.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tinggi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tertinggi",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "ketinggian",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "meninggi",
+          "correct": false
+        }
+      ],
+      "explanation": "Superlative ter-: the highest mountain.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    }
+  ]
+}

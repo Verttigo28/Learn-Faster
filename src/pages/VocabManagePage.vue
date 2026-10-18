@@ -1,27 +1,18 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import { confirmDialog } from "../services/dialog";
+import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { db, type VocabDeck } from "../db";
 import { uid } from "../utils/id";
+import { t } from "../i18n";
 import EmptyState from "../components/EmptyState.vue";
 import ConfirmBar from "../components/ConfirmBar.vue";
-import ConfirmModal from "../components/ConfirmModal.vue";
-import { useToast } from "../composables/useToast";
 
 const router = useRouter();
-const toast = useToast();
 
 const decks = ref<VocabDeck[]>([]);
 const counts = ref<Record<string, number>>({});
 const msg = ref<{ kind: "info" | "ok" | "danger"; text: string } | null>(null);
-const search = ref("");
-const pendingDeleteId = ref<string | null>(null);
-
-const filteredDecks = computed(() => {
-  const q = search.value.trim().toLowerCase();
-  if (!q) return decks.value;
-  return decks.value.filter(d => d.title.toLowerCase().includes(q));
-});
 
 const title = ref("");
 const from = ref("id");
@@ -40,31 +31,30 @@ async function load() {
 }
 
 async function createDeck() {
-  const t = title.value.trim();
-  if (!t) return set("danger", "Titre requis.");
+  const name = title.value.trim();
+  if (!name) return set("danger", t("vocab.titleRequired"));
 
   const deck: VocabDeck = {
     id: uid("deck"),
-    title: t,
+    title: name,
     from: (from.value || "id").trim(),
     to: (to.value || "fr").trim(),
     createdAt: Date.now()
   };
   await db.vocabDecks.add(deck);
   title.value = "";
-  set("ok", "Deck créé ✅");
+  set("ok", t("vocab.manage.created"));
   await load();
 }
 
-async function removeDeck() {
-  const id = pendingDeleteId.value;
-  pendingDeleteId.value = null;
-  if (!id) return;
-  await db.transaction("rw", [db.vocabDecks, db.vocabItems], async () => {
+async function removeDeck(id: string) {
+  if (!(await confirmDialog(t("vocab.manage.deleteConfirm")))) return;
+  await db.transaction("rw", [db.vocabDecks, db.vocabItems, db.reviews], async () => {
     await db.vocabDecks.delete(id);
     await db.vocabItems.where("deckId").equals(id).delete();
+    await db.reviews.where("deckId").equals(id).delete();
   });
-  toast.success("Deck supprimé !");
+  set("ok", t("vocab.manage.deleted"));
   await load();
 }
 
@@ -80,29 +70,29 @@ onMounted(load);
   <div class="manageGrid">
     <div class="card cardFill">
       <div class="scrollY">
-      <h2>Vocab — gérer les decks</h2>
-      <p class="small">Crée un deck, puis édite son contenu (termes, définitions, tags).</p>
+      <h2>{{ $t("vocab.manage.heading") }}</h2>
+      <p class="small">{{ $t("vocab.manage.intro") }}</p>
 
       <div class="hr"></div>
 
-      <h3>Nouveau deck</h3>
-      <label class="small">Titre</label>
-      <input class="input" v-model="title" placeholder="ex: Vacances" />
+      <h3>{{ $t("vocab.manage.newDeck") }}</h3>
+      <label class="small">{{ $t("common.title") }}</label>
+      <input class="input" v-model="title" :placeholder="$t('vocab.manage.titlePlaceholder')" />
 
       <div class="row" style="margin-top:8px; gap:10px">
         <div style="flex:1">
-          <label class="small">De</label>
+          <label class="small">{{ $t("common.from") }}</label>
           <input class="input" v-model="from" placeholder="id" />
         </div>
         <div style="flex:1">
-          <label class="small">Vers</label>
+          <label class="small">{{ $t("common.to") }}</label>
           <input class="input" v-model="to" placeholder="fr" />
         </div>
       </div>
 
       <div class="row" style="margin-top:12px">
-        <button class="btn" @click="createDeck">Créer</button>
-        <router-link class="btn" to="/exams">Se lancer dans un exam</router-link>
+        <button class="btn" @click="createDeck">{{ $t("common.create") }}</button>
+        <router-link class="btn" to="/exams">{{ $t("vocab.launchExam") }}</router-link>
       </div>
 
       <div v-if="msg" style="margin-top:12px">
@@ -113,47 +103,38 @@ onMounted(load);
 
     <div class="card cardFill">
       <div class="row flex-none mb-2.5">
-        <h2 class="m-0">Liste des decks</h2>
-        <span class="small">{{ filteredDecks.length }} / {{ decks.length }}</span>
+        <h2 class="m-0">{{ $t("vocab.manage.listTitle") }}</h2>
+        <span class="small">{{ decks.length }}</span>
       </div>
 
-      <input class="input mb-2.5" v-model="search" placeholder="🔍 Rechercher un deck…" />
-
-      <div v-if="filteredDecks.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
-        <EmptyState title="Aucun deck" hint="Crée ton premier deck à gauche, ou importe un JSON." />
+      <div v-if="decks.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
+        <EmptyState :title="$t('vocab.manage.emptyTitle')" :hint="$t('vocab.manage.emptyHint')" />
       </div>
 
       <div v-else class="scrollY">
         <div class="list">
-          <div v-for="d in filteredDecks" :key="d.id" class="card">
+          <div v-for="d in decks" :key="d.id" class="card">
             <div class="row">
               <div>
                 <h3 class="m-0">{{ d.title }}</h3>
                 <p class="small mt-1">
-                  {{ d.from }} → {{ d.to }} • {{ counts[d.id] ?? 0 }} items
+                  {{ d.from }} → {{ d.to }} • {{ $t("common.items", { count: counts[d.id] ?? 0 }) }}
                 </p>
               </div>
               <div class="row" style="gap:8px">
-                <router-link class="btn" :to="`/deck/${d.id}`">Ouvrir</router-link>
-                <router-link class="btn" :to="`/deck/${d.id}/flash`">Flashcards</router-link>
-                <button class="btn" @click="editDeck(d.id)">Éditer</button>
-                <button class="btn danger" @click="pendingDeleteId = d.id">Supprimer</button>
+                <!-- ✅ Apprendre -->
+                <router-link class="btn" :to="`/deck/${d.id}`">{{ $t("common.open") }}</router-link>
+                <router-link class="btn" :to="`/deck/${d.id}/flash`">{{ $t("vocab.flashcards") }}</router-link>
+
+                <!-- ✅ Gérer -->
+                <button class="btn" @click="editDeck(d.id)">{{ $t("common.edit") }}</button>
+                <button class="btn danger" @click="removeDeck(d.id)">{{ $t("common.delete") }}</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <ConfirmModal
-      :open="!!pendingDeleteId"
-      title="Supprimer le deck"
-      message="Supprimer ce deck et tous ses items ? Cette action est irréversible."
-      confirm-text="Supprimer"
-      :danger="true"
-      @confirm="removeDeck"
-      @cancel="pendingDeleteId = null"
-    />
   </div>
 </template>
 

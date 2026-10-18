@@ -1,0 +1,337 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-verbes-me-ber",
+  "title": "Verbes en me- et ber- en contexte",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya membeli sayur di pasar.",
+      "translation": "J'achète des légumes au marché.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Dia menulis surat untuk ibunya.",
+      "translation": "Il écrit une lettre à sa mère.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Kami berbicara bahasa Indonesia.",
+      "translation": "Nous parlons indonésien.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Anak-anak berlari di taman.",
+      "translation": "Les enfants courent dans le parc.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Ibu menjahit baju baru.",
+      "translation": "Maman coud un nouveau vêtement.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Saya mengajar bahasa Prancis.",
+      "translation": "J'enseigne le français.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Kami berangkat pukul delapan.",
+      "translation": "Nous partons à huit heures.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Dia membaca buku di perpustakaan.",
+      "translation": "Il lit un livre à la bibliothèque.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Burung itu bernyanyi dengan merdu.",
+      "translation": "Cet oiseau chante mélodieusement.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Saya menunggu teman di kafe.",
+      "translation": "J'attends un ami au café.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Mereka bermain kartu.",
+      "translation": "Ils jouent aux cartes.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Petani menanam padi di sawah.",
+      "translation": "Le paysan plante du riz dans la rizière.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Kami berdiskusi tentang rencana liburan.",
+      "translation": "Nous discutons des projets de vacances.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Saya mencari kunci saya.",
+      "translation": "Je cherche mes clés.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Kucing itu bersembunyi di bawah meja.",
+      "translation": "Le chat se cache sous la table.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Ayah memperbaiki sepeda saya.",
+      "translation": "Papa répare mon vélo.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Kami bertemu di depan stasiun.",
+      "translation": "Nous nous retrouvons devant la gare.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Saya meminjam buku dari teman.",
+      "translation": "J'emprunte un livre à un ami.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Dia bekerja keras untuk keluarganya.",
+      "translation": "Il travaille dur pour sa famille.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya mengirim pesan kepada ibu.",
+      "translation": "J'envoie un message à maman.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Toko itu menjual pakaian bekas.",
+      "translation": "Ce magasin vend des vêtements d'occasion.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Kami bersepeda ke sekolah.",
+      "translation": "Nous allons à l'école à vélo.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Polisi menangkap pencuri itu.",
+      "translation": "La police a arrêté ce voleur.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Saya berjanji akan datang.",
+      "translation": "Je promets de venir.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Dia meminta maaf kepada gurunya.",
+      "translation": "Il s'excuse auprès de son professeur.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Air mendidih pada suhu seratus derajat.",
+      "translation": "L'eau bout à cent degrés.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Mereka berlibur ke Lombok.",
+      "translation": "Ils partent en vacances à Lombok.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Pelayan itu membawa minuman.",
+      "translation": "Le serveur apporte les boissons.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "29",
+      "text": "Saya bertanya kepada polisi.",
+      "translation": "Je pose la question au policier.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "30",
+      "text": "Dia menjawab pertanyaan saya.",
+      "translation": "Il répond à ma question.",
+      "tags": [
+        "phrases",
+        "verbes",
+        "a1",
+        "me"
+      ]
+    }
+  ]
+}

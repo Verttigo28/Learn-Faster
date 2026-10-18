@@ -1,0 +1,300 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-emergencies",
+  "title": "Emergencies",
+  "items": [
+    {
+      "id": "1",
+      "text": "Tolong, ada kecelakaan di sini.",
+      "translation": "Help, there's been an accident here.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Tolong panggil ambulans.",
+      "translation": "Please call an ambulance.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Tolong panggil polisi.",
+      "translation": "Please call the police.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Di mana kantor polisi terdekat?",
+      "translation": "Where is the nearest police station?",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Paspor saya hilang.",
+      "translation": "I've lost my passport.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Dompet saya dicuri.",
+      "translation": "My wallet was stolen.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2",
+        "passive"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya perlu bantuan.",
+      "translation": "I need help.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Ada kebakaran di gedung itu.",
+      "translation": "There's a fire in that building.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Teman saya pingsan.",
+      "translation": "My friend has fainted.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Dia tidak bisa bernapas.",
+      "translation": "He can't breathe.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2",
+        "negation",
+        "ber"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya kehilangan tas saya di bus.",
+      "translation": "I lost my bag on the bus.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Tolong hubungi Kedutaan Besar Prancis.",
+      "translation": "Please contact the French Embassy.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Nomor darurat di Indonesia adalah 112.",
+      "translation": "The emergency number in Indonesia is 112.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Kaki saya berdarah.",
+      "translation": "My leg is bleeding.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Jangan bergerak, tunggu ambulans.",
+      "translation": "Don't move, wait for the ambulance.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2",
+        "negation",
+        "ber"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Saya ditabrak motor.",
+      "translation": "I was hit by a motorbike.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2",
+        "passive"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Ada gempa bumi.",
+      "translation": "There's an earthquake.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Cepat keluar dari gedung.",
+      "translation": "Get out of the building quickly.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Anak saya hilang di pasar.",
+      "translation": "My child is lost at the market.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya ingin melaporkan pencurian.",
+      "translation": "I want to report a theft.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Tolong antar saya ke rumah sakit.",
+      "translation": "Please take me to the hospital.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Apakah ada yang bisa berbahasa Inggris?",
+      "translation": "Is there anyone who can speak English?",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2",
+        "question",
+        "ber"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Mobil kami mogok di jalan tol.",
+      "translation": "Our car broke down on the toll road.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Tetap tenang dan ikuti petunjuk petugas.",
+      "translation": "Stay calm and follow the staff's instructions.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Hati-hati, lantainya licin.",
+      "translation": "Be careful, the floor is slippery.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Saya digigit anjing liar.",
+      "translation": "I was bitten by a stray dog.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2",
+        "passive"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Golongan darah saya O.",
+      "translation": "My blood type is O.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Kartu kredit saya harus diblokir.",
+      "translation": "My credit card must be blocked.",
+      "tags": [
+        "sentences",
+        "emergencies",
+        "b1",
+        "passive"
+      ]
+    }
+  ]
+}

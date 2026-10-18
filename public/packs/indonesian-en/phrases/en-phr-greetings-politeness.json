@@ -1,0 +1,296 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-greetings-politeness",
+  "title": "Greetings and Politeness",
+  "items": [
+    {
+      "id": "1",
+      "text": "Selamat pagi, Bu.",
+      "translation": "Good morning, ma'am. (in the morning)",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Selamat siang, Pak.",
+      "translation": "Good afternoon, sir. (around midday)",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Selamat sore, semuanya.",
+      "translation": "Good afternoon, everyone. (late afternoon)",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Selamat malam, sampai besok.",
+      "translation": "Good night, see you tomorrow.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Apa kabar, Pak?",
+      "translation": "How are you, sir?",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Kabar baik, terima kasih.",
+      "translation": "I'm fine, thank you.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Terima kasih banyak, Bu.",
+      "translation": "Thank you very much, ma'am.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Terima kasih kembali, Pak.",
+      "translation": "You're welcome, sir.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Maaf, saya terlambat.",
+      "translation": "Sorry, I'm late.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Permisi, boleh saya lewat?",
+      "translation": "Excuse me, may I get past?",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Sampai jumpa lagi.",
+      "translation": "See you again.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Selamat jalan, hati-hati di jalan.",
+      "translation": "Have a safe trip, take care on the road.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Selamat tinggal, sampai bertemu lagi.",
+      "translation": "Goodbye, until we meet again.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Silakan masuk, Pak.",
+      "translation": "Please come in, sir.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Silakan duduk di sini.",
+      "translation": "Please sit here.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Tolong bicara lebih pelan.",
+      "translation": "Please speak more slowly.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Bisa diulang sekali lagi?",
+      "translation": "Could you repeat that once more?",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a2",
+        "question",
+        "passive"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Maaf, saya tidak mengerti.",
+      "translation": "Sorry, I don't understand.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Tidak apa-apa, jangan khawatir.",
+      "translation": "It's okay, don't worry.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Senang bertemu dengan Anda.",
+      "translation": "Nice to meet you.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Selamat makan, semuanya.",
+      "translation": "Enjoy your meal, everyone.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Selamat atas pernikahan kalian.",
+      "translation": "Congratulations on your wedding.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Mohon maaf lahir dan batin.",
+      "translation": "Forgive me for all my wrongdoings. (Eid greeting)",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Salam untuk keluarga Anda.",
+      "translation": "Say hello to your family for me.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Permisi, saya pamit dulu.",
+      "translation": "Excuse me, I must take my leave now.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Terima kasih atas bantuan Anda.",
+      "translation": "Thank you for your help.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Maaf mengganggu, Pak.",
+      "translation": "Sorry to bother you, sir.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Dengan senang hati.",
+      "translation": "With pleasure.",
+      "tags": [
+        "sentences",
+        "greetings",
+        "a1"
+      ]
+    }
+  ]
+}

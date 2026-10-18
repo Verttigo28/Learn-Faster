@@ -1,0 +1,648 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-imperatif-politesse",
+  "title": "Impératif et politesse",
+  "durationSeconds": 600,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Que signifie « Silakan duduk » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Aidez-moi à m'asseoir.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Asseyez-vous, je vous en prie.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Ne vous asseyez pas.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Je vais m'asseoir.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Silakan » invite l'interlocuteur à faire quelque chose (pour lui-même).",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Que signifie « Tolong bantu saya » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Je t'aide.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Merci de ton aide.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Aide-moi, s'il te plaît.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Ne m'aide pas.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Tolong » sert à demander un service.",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Vous demandez à quelqu'un de fermer la porte :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Jangan tutup pintunya.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Tolong tutup pintunya.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Silakan tutup pintunya.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mari tutup pintunya.",
+          "correct": false
+        }
+      ],
+      "explanation": "On demande un service → « tolong ».",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Vous invitez un invité à entrer :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Jangan masuk.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Tolong masuk.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Silakan masuk.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Coba masuk.",
+          "correct": false
+        }
+      ],
+      "explanation": "Inviter quelqu'un à agir dans son intérêt → « silakan ».",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Que signifie « Mari kita makan » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mangeons !",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Ne mangeons pas.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Nous avons mangé.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Qui mange ?",
+          "correct": false
+        }
+      ],
+      "explanation": "« Mari (kita) » = exhortation incluant le locuteur : allons-y, faisons…",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "« Ayo » est…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "une salutation du matin",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "une formule de refus",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "un mot de politesse formel",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "l'équivalent familier de « mari » (allez !, on y va !)",
+          "correct": true
+        }
+      ],
+      "explanation": "« Ayo, berangkat! » = Allez, on part !",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Que signifie « Coba lihat ini » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Montre-moi ceci.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Regarde un peu ceci / essaie de voir.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "J'ai vu ceci.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ne regarde pas ceci.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Coba » (essayer) adoucit un ordre : « fais donc… ».",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Panneau : « ___ masuk! » (N'entrez pas !)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Jangan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Tidak",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bukan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Belum",
+          "correct": false
+        }
+      ],
+      "explanation": "Défense → « jangan ».",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Que fait le suffixe -lah dans « Duduklah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il adoucit ou renforce l'impératif.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Il transforme en question.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Il exprime la négation.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Il marque le passé.",
+          "correct": false
+        }
+      ],
+      "explanation": "-lah s'ajoute à l'impératif : duduklah = assieds-toi donc.",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Que signifie « Mohon tunggu sebentar » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "N'attendez pas.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "J'attends longtemps.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Je suis en retard.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Attendez un instant, s'il vous plaît (formel).",
+          "correct": true
+        }
+      ],
+      "explanation": "« Mohon » = prière de… (registre formel).",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Que signifie le panneau « Dilarang masuk » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Entrée libre",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Sortie",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Poussez",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Entrée interdite",
+          "correct": true
+        }
+      ],
+      "explanation": "Dilarang = il est interdit de.",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Pour passer devant quelqu'un ou attirer son attention, on dit…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Permisi.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Sama-sama.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ayo.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Silakan.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Permisi » = excusez-moi (pour passer, pour demander la permission).",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Que signifie « Maaf » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pardon / désolé",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Bonjour",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "S'il vous plaît",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Merci",
+          "correct": false
+        }
+      ],
+      "explanation": "« Maaf » sert à s'excuser.",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Impératif de « membaca » (lire) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bacalah-kan!",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Baca!",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Membaca!",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Dibaca!",
+          "correct": false
+        }
+      ],
+      "explanation": "À l'impératif, les verbes transitifs perdent généralement me- : Baca!",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Que signifie « Tolong ambilkan garam » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Passe-moi le sel, s'il te plaît.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Le sel est pris.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ne prends pas de sel.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Prends ton sel.",
+          "correct": false
+        }
+      ],
+      "explanation": "Tolong + verbe en -kan (bénéfactif) : prendre pour moi.",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Panneau : « Harap tenang » signifie…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ouvert",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Espace détente",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ne paniquez pas, c'est gratuit",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Prière de garder le silence / de rester calme",
+          "correct": true
+        }
+      ],
+      "explanation": "« Harap » = prière de… (formel, sur les panneaux).",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "« Boleh saya duduk di sini? » — Réponse aimable :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Jangan.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Mari kita.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Silakan.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Tolong.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Silakan » = je vous en prie, allez-y.",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Que signifie « Jangan-jangan dia sakit » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il ne doit pas être malade.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Pourvu qu'il ne soit pas malade… / Peut-être bien qu'il est malade (crainte).",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Il n'est jamais malade.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ne sois pas malade !",
+          "correct": false
+        }
+      ],
+      "explanation": "« Jangan-jangan » exprime une supposition inquiète.",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "En quittant quelqu'un, « Mari, Pak! » signifie…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Allons-y ensemble, monsieur !",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Je prends congé, monsieur / au revoir.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Venez, monsieur !",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mariez-vous, monsieur !",
+          "correct": false
+        }
+      ],
+      "explanation": "« Mari » s'emploie aussi pour prendre congé poliment.",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "b1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "« Terima kasih! » — Réponse polie possible :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Maaf.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Kembali.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Permisi.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Silakan duduk.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Kembali » (ou « sama-sama ») = de rien.",
+      "tags": [
+        "grammaire",
+        "imperatif",
+        "a1"
+      ]
+    }
+  ]
+}

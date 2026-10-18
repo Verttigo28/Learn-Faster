@@ -1,0 +1,509 @@
+{
+  "type": "vocab_deck",
+  "id": "en-cooking-tastes",
+  "title": "Cooking and tastes",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "masak",
+      "definition": "cook (base form)",
+      "tags": [
+        "cooking",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "memasak",
+      "definition": "to cook",
+      "tags": [
+        "cooking",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "goreng",
+      "definition": "fried / fry",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "menggoreng",
+      "definition": "to fry",
+      "tags": [
+        "cooking",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "rebus",
+      "definition": "boiled / boil",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "merebus",
+      "definition": "to boil",
+      "tags": [
+        "cooking",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "bakar",
+      "definition": "grilled / roasted / burnt",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "membakar",
+      "definition": "to grill / to burn",
+      "tags": [
+        "cooking",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kukus",
+      "definition": "steamed / steam",
+      "tags": [
+        "cooking",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "mengukus",
+      "definition": "to steam",
+      "tags": [
+        "cooking",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "tumis",
+      "definition": "stir-fried / stir-fry",
+      "tags": [
+        "cooking",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "panggang",
+      "definition": "roasted / baked / grilled",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "memotong",
+      "definition": "to cut",
+      "tags": [
+        "cooking",
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "mengupas",
+      "definition": "to peel",
+      "tags": [
+        "cooking",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "mencampur",
+      "definition": "to mix",
+      "tags": [
+        "cooking",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "mengaduk",
+      "definition": "to stir",
+      "tags": [
+        "cooking",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "menuangkan",
+      "definition": "to pour",
+      "tags": [
+        "cooking",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "mencicipi",
+      "definition": "to taste / to sample",
+      "tags": [
+        "cooking",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "manis",
+      "definition": "sweet",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "asin",
+      "definition": "salty",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "asam",
+      "definition": "sour",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "pahit",
+      "definition": "bitter",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "pedas",
+      "definition": "spicy / hot (spicy)",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "gurih",
+      "definition": "savory / tasty (umami)",
+      "tags": [
+        "cooking",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "enak",
+      "definition": "delicious / tasty / good",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "lezat",
+      "definition": "delicious",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "hambar",
+      "definition": "bland / tasteless",
+      "tags": [
+        "cooking",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "tawar",
+      "definition": "plain / unsweetened / tasteless",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "segar",
+      "definition": "fresh",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "matang",
+      "definition": "cooked / ripe",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "mentah",
+      "definition": "raw / unripe",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "busuk",
+      "definition": "rotten",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "basi",
+      "definition": "stale / spoiled",
+      "tags": [
+        "cooking",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "keras",
+      "definition": "hard",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "lembut",
+      "definition": "soft / tender",
+      "tags": [
+        "cooking",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "renyah",
+      "definition": "crispy / crunchy",
+      "tags": [
+        "cooking",
+        "adjective",
+        "b1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "dapur",
+      "definition": "kitchen",
+      "tags": [
+        "cooking",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "kompor",
+      "definition": "stove",
+      "tags": [
+        "cooking",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "wajan",
+      "definition": "wok / frying pan",
+      "tags": [
+        "cooking",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "panci",
+      "definition": "pot / saucepan",
+      "tags": [
+        "cooking",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "pisau",
+      "definition": "knife",
+      "tags": [
+        "cooking",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "talenan",
+      "definition": "cutting board",
+      "tags": [
+        "cooking",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "oven",
+      "definition": "oven",
+      "tags": [
+        "cooking",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "resep",
+      "definition": "recipe",
+      "tags": [
+        "cooking",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "bumbu",
+      "definition": "seasoning / spice paste",
+      "tags": [
+        "cooking",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "rempah-rempah",
+      "definition": "spices",
+      "tags": [
+        "cooking",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "jahe",
+      "definition": "ginger",
+      "tags": [
+        "cooking",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "kunyit",
+      "definition": "turmeric",
+      "tags": [
+        "cooking",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "serai",
+      "definition": "lemongrass",
+      "tags": [
+        "cooking",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "santan",
+      "definition": "coconut milk",
+      "tags": [
+        "cooking",
+        "noun",
+        "a2"
+      ]
+    }
+  ]
+}

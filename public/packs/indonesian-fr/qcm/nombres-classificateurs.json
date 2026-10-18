@@ -1,0 +1,776 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-nombres-classificateurs",
+  "title": "Nombres, classificateurs et se-",
+  "durationSeconds": 720,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Comment dit-on 11 ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sepuluh satu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "satu belas",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "satu puluh",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sebelas",
+          "correct": true
+        }
+      ],
+      "explanation": "11 = sebelas (se- = un).",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Comment dit-on 12 ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dua belas",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "sebelas dua",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "duabelas puluh",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dua puluh",
+          "correct": false
+        }
+      ],
+      "explanation": "12 = dua belas.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Comment dit-on 20 ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dua puluh",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "dua ratus",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "puluh dua",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dua belas",
+          "correct": false
+        }
+      ],
+      "explanation": "-puluh = dizaines : dua puluh.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Comment dit-on 100 ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "satu ratus",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "seratus",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "sepuluh",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "seribu",
+          "correct": false
+        }
+      ],
+      "explanation": "100 = seratus (on n'utilise pas « satu ratus »).",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Comment dit-on 1 000 ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "seribu",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "seratus",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "sejuta",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "satu ribuan",
+          "correct": false
+        }
+      ],
+      "explanation": "1 000 = seribu.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Comment dit-on 250 ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dua ratus lima belas",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "dua ratus lima puluh",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "dua puluh lima",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "lima puluh dua ratus",
+          "correct": false
+        }
+      ],
+      "explanation": "200 = dua ratus, 50 = lima puluh.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Comment dit-on 1 500 000 ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "satu juta lima puluh ribu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sebelas juta lima ratus ribu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "lima ratus juta satu ribu",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "satu juta lima ratus ribu",
+          "correct": true
+        }
+      ],
+      "explanation": "1 000 000 = satu juta (sejuta) ; 500 000 = lima ratus ribu.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Complétez : « tiga ___ mahasiswa » (trois étudiants)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "orang",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "buah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ekor",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "lembar",
+          "correct": false
+        }
+      ],
+      "explanation": "« Orang » est le classificateur des personnes.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Complétez : « dua ___ kucing » (deux chats)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "buah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "orang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "batang",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ekor",
+          "correct": true
+        }
+      ],
+      "explanation": "« Ekor » (queue) est le classificateur des animaux.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Complétez : « tiga ___ mobil » (trois voitures)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "buah",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "helai",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ekor",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "orang",
+          "correct": false
+        }
+      ],
+      "explanation": "« Buah » est le classificateur général des objets.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Complétez : « dua ___ kertas » (deux feuilles de papier)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "orang",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "buah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ekor",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "lembar",
+          "correct": true
+        }
+      ],
+      "explanation": "« Lembar » s'emploie pour les objets plats et fins (papier, billets).",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Que signifie « seorang guru » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "des professeurs",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "un professeur",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "le seul professeur",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "le professeur",
+          "correct": false
+        }
+      ],
+      "explanation": "se- (= un) + classificateur orang.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Que signifie « sebuah rumah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "toutes les maisons",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "une maison",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "une maison seule",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "la même maison",
+          "correct": false
+        }
+      ],
+      "explanation": "se- + buah = une (chose).",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Que signifie « ketiga » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "trois",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "troisième",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "les trois",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "trois fois",
+          "correct": false
+        }
+      ],
+      "explanation": "Ke- + nombre = ordinal (ketiga = troisième).",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Comment dit-on « premier » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kesatu / pertama",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "persatu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "satuan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sesatu",
+          "correct": false
+        }
+      ],
+      "explanation": "« Pertama » (ou kesatu) = premier.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Différence entre « anak kedua » et « kedua anak » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Aucune.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "« anak kedua » = le deuxième enfant ; « kedua anak » = les deux enfants",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Les deux sont incorrects.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "« anak kedua » = les deux enfants ; « kedua anak » = le deuxième enfant",
+          "correct": false
+        }
+      ],
+      "explanation": "Ordinal après le nom ; « kedua » avant le nom = les deux.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Que signifie « setengah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "un quart",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "demi / moitié",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "double",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "un tiers",
+          "correct": false
+        }
+      ],
+      "explanation": "Setengah = un demi.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "« Jam setengah tujuh » correspond à…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "7 h 00",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "6 h 00",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "7 h 30",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "6 h 30",
+          "correct": true
+        }
+      ],
+      "explanation": "« Setengah tujuh » = la moitié vers sept : 6 h 30.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Que signifie « seperempat » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "un tiers",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "quatre",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "quarante",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "un quart",
+          "correct": true
+        }
+      ],
+      "explanation": "Per- + empat : fraction, seperempat = un quart.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "« Jam tujuh kurang seperempat » correspond à…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "6 h 15",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "7 h 15",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "7 h 45",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "6 h 45",
+          "correct": true
+        }
+      ],
+      "explanation": "Kurang = moins : 7 h moins le quart = 6 h 45.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Que signifie « sepuluh ribu rupiah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "110 rupiah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "1 000 rupiah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "10 000 rupiah",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "100 000 rupiah",
+          "correct": false
+        }
+      ],
+      "explanation": "Sepuluh (10) × ribu (1 000).",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "Complétez : « se___ rokok » (une cigarette)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "lembar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "batang",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "orang",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ekor",
+          "correct": false
+        }
+      ],
+      "explanation": "« Batang » s'emploie pour les objets longs (cigarettes, arbres).",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "prompt": "Que signifie « beberapa » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "beaucoup",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "aucun",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "quelques",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "combien",
+          "correct": false
+        }
+      ],
+      "explanation": "Beberapa = quelques, plusieurs.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "prompt": "« Ada berapa orang? » — « Ada lima ___. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "orang",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "ekor",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kali",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "buah",
+          "correct": false
+        }
+      ],
+      "explanation": "On reprend le classificateur des personnes : lima orang.",
+      "tags": [
+        "grammaire",
+        "nombres",
+        "a1"
+      ]
+    }
+  ]
+}

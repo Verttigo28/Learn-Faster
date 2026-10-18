@@ -1,0 +1,680 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-prefix-ber",
+  "title": "The Prefix ber-",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "What is the root of \"bekerja\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kerja",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "erja",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "berja",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ker",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber- becomes be- before a root whose first syllable contains -er: be + kerja.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "ber- + main gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bermain",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "bemain",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "memain",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "permain",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber- is added directly: bermain = to play.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "ber- + ajar gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "belajar",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "bajar",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengajar",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berajar",
+          "correct": false
+        }
+      ],
+      "explanation": "Irregular form: belajar (to learn, to study).",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "ber- + renang gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "berrenang",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "renangan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "berenang",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "merenang",
+          "correct": false
+        }
+      ],
+      "explanation": "Before a root starting with r-, the r of ber- drops: berenang (to swim).",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "ber- + kerja gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mekerja",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kerjaan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "berkerja",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bekerja",
+          "correct": true
+        }
+      ],
+      "explanation": "A root with -er- in the first syllable takes be-: bekerja.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "ber- + ternak (livestock) gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "meternak",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "beternak",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "bertenak",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berternak",
+          "correct": false
+        }
+      ],
+      "explanation": "Same rule as bekerja: beternak (to raise livestock).",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "b1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "What does \"bersepeda\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "a new bicycle",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to sell a bicycle",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to repair a bicycle",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to ride a bicycle, to cycle",
+          "correct": true
+        }
+      ],
+      "explanation": "Ber- + noun: to use / do something with it: bersepeda = to go by bicycle.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "What does \"berbahasa Indonesia\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to speak Indonesian",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "to translate into Indonesian",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to teach Indonesian",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to love Indonesia",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber- + bahasa = to speak a language.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "What does \"Dia sudah beristri\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "He is looking for a wife.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "He is married (he has a wife).",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "He is divorced.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "He has lost his wife.",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber- + noun = to have: beristri = to have a wife.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "What does \"Anak itu berumur tujuh tahun\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The child has been there for seven years.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "The child can count to seven.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "The child is seven years old.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "The child will be seven.",
+          "correct": false
+        }
+      ],
+      "explanation": "Berumur = to be ... years old.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Fill in the blank: \"Dia ___ di depan rumah.\" (He is standing in front of the house.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "diri",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mendiri",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "terdirikan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berdiri",
+          "correct": true
+        }
+      ],
+      "explanation": "Berdiri = to stand.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Fill in the blank: \"Saya ___ dengan teman saya di kafe.\" (to meet)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "temuan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ditemu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "penemu",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bertemu",
+          "correct": true
+        }
+      ],
+      "explanation": "Bertemu (dengan) = to meet (with).",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "What does \"berjalan-jalan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to drive",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to walk fast",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to run",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to go for a walk, to stroll",
+          "correct": true
+        }
+      ],
+      "explanation": "Ber- + reduplicated root: an activity with no particular purpose, to stroll around.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "What does \"bersalaman\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to argue",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "to say goodbye to each other",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to shake hands",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "to wave to each other from afar",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber-...-an expresses reciprocity: bersalaman = to shake hands (with each other).",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Which sentence is correct?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Saya berbicara dengan dia.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Saya berbicarakan dia.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Saya dibicara dia.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Saya berbicara dia.",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber- verbs are intransitive: no direct object, so a preposition is used (dengan).",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "What does \"berangkat\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to leave, to depart",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "to wait",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to go home",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to arrive",
+          "correct": false
+        }
+      ],
+      "explanation": "Berangkat = to leave, to set off.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "What does \"bersama\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "same",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "alone",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "similar",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "together",
+          "correct": true
+        }
+      ],
+      "explanation": "Bersama = together (with).",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "What does \"bermacam-macam\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "identical",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "various, all kinds of",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "often",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "very expensive",
+          "correct": false
+        }
+      ],
+      "explanation": "Macam = kind; bermacam-macam = of all kinds.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "What does \"berbelanja\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "to go shopping",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "to sell",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "to work",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "to pay",
+          "correct": false
+        }
+      ],
+      "explanation": "Berbelanja = to shop, to do the shopping.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "What does \"bajunya berwarna merah\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "his shirt is stained",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "he is painting his shirt red",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "he is wearing a new red shirt",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "his shirt is red (in color)",
+          "correct": true
+        }
+      ],
+      "explanation": "Ber- + warna = to have a color, to be ... in color.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "What does \"Adik saya masih bersekolah\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "My younger brother is building a school.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "My younger brother still goes to school.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "My younger brother has left school.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "My younger brother teaches.",
+          "correct": false
+        }
+      ],
+      "explanation": "Bersekolah = to go to school, to be in school.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a2"
+      ]
+    }
+  ]
+}

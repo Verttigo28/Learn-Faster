@@ -1,0 +1,519 @@
+{
+  "type": "vocab_deck",
+  "id": "en-human-body",
+  "title": "The human body",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "badan",
+      "definition": "body",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "tubuh",
+      "definition": "body",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "kepala",
+      "definition": "head",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "rambut",
+      "definition": "hair (on head)",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "wajah",
+      "definition": "face",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "muka",
+      "definition": "face",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "dahi",
+      "definition": "forehead",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "alis",
+      "definition": "eyebrow",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "mata",
+      "definition": "eye / eyes",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "telinga",
+      "definition": "ear",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "hidung",
+      "definition": "nose",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "pipi",
+      "definition": "cheek",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "mulut",
+      "definition": "mouth",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "bibir",
+      "definition": "lip",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "gigi",
+      "definition": "tooth / teeth",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "lidah",
+      "definition": "tongue",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "dagu",
+      "definition": "chin",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "leher",
+      "definition": "neck",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "tenggorokan",
+      "definition": "throat",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "bahu",
+      "definition": "shoulder",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "lengan",
+      "definition": "arm",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "siku",
+      "definition": "elbow",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "tangan",
+      "definition": "hand",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "pergelangan tangan",
+      "definition": "wrist",
+      "tags": [
+        "body",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "jari",
+      "definition": "finger",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "ibu jari",
+      "definition": "thumb",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "kuku",
+      "definition": "nail / fingernail",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "dada",
+      "definition": "chest",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "perut",
+      "definition": "stomach / belly",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "punggung",
+      "definition": "back",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "pinggang",
+      "definition": "waist",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "pinggul",
+      "definition": "hip",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "pantat",
+      "definition": "buttocks / bottom",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "kaki",
+      "definition": "foot / leg",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "paha",
+      "definition": "thigh",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "lutut",
+      "definition": "knee",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "pergelangan kaki",
+      "definition": "ankle",
+      "tags": [
+        "body",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "tumit",
+      "definition": "heel",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "jari kaki",
+      "definition": "toe",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "kulit",
+      "definition": "skin",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "tulang",
+      "definition": "bone",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "otot",
+      "definition": "muscle",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "darah",
+      "definition": "blood",
+      "tags": [
+        "body",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "jantung",
+      "definition": "heart (organ)",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "hati",
+      "definition": "liver / heart (feelings)",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "paru-paru",
+      "definition": "lungs",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "otak",
+      "definition": "brain",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "lambung",
+      "definition": "stomach (organ)",
+      "tags": [
+        "body",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "ginjal",
+      "definition": "kidney",
+      "tags": [
+        "body",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "keringat",
+      "definition": "sweat",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "napas",
+      "definition": "breath / breathing",
+      "tags": [
+        "body",
+        "noun",
+        "a2"
+      ]
+    }
+  ]
+}

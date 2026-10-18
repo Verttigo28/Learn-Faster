@@ -1,0 +1,680 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-negation",
+  "title": "Négation : tidak, bukan, belum, jangan",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Complétez : « Saya ___ suka kopi. » (Je n'aime pas le café.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "bukan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "tidak",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "belum",
+          "correct": false
+        }
+      ],
+      "explanation": "« Tidak » nie les verbes et les adjectifs.",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Complétez : « Dia ___ guru, dia dokter. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "bukan",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "jangan",
+          "correct": false
+        }
+      ],
+      "explanation": "« Bukan » nie un nom ou un groupe nominal (guru).",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Complétez : « ___ merokok di sini! » (Ne fumez pas ici !)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Belum",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Bukan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Jangan",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Tidak",
+          "correct": false
+        }
+      ],
+      "explanation": "« Jangan » exprime l'interdiction ou l'ordre négatif.",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "« Kamu sudah makan? » — Réponse négative naturelle : « ___, saya belum makan. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tidak",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Bukan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Jangan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Belum",
+          "correct": true
+        }
+      ],
+      "explanation": "À une question avec « sudah » (déjà), on répond « belum » (pas encore).",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Complétez : « Rumah itu ___ besar. » (Cette maison n'est pas grande.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tidak",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "bukan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "belum",
+          "correct": false
+        }
+      ],
+      "explanation": "« Besar » est un adjectif : on le nie avec « tidak ».",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Complétez : « Ini ___ buku saya. » (Ce n'est pas mon livre.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bukan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "tidak",
+          "correct": false
+        }
+      ],
+      "explanation": "« Buku saya » est un groupe nominal : négation avec « bukan ».",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Comment dire « Je ne suis pas encore marié » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Saya belum menikah.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Saya tidak menikah.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Saya bukan menikah.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Saya jangan menikah.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Belum » = pas encore ; il suggère que l'action peut encore arriver.",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Complétez la question-tag : « Kamu orang Prancis, ___? » (… n'est-ce pas ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bukan",
+          "correct": true
+        }
+      ],
+      "explanation": "« …, bukan? » (souvent « kan? » à l'oral) sert de « n'est-ce pas ? ».",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Que signifie « Saya tidak punya uang » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Je n'ai pas d'argent.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Je n'ai pas encore d'argent.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ne prends pas l'argent.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ce n'est pas mon argent.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Tidak punya » = ne pas avoir.",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Que signifie « Bukan saya yang mengambil uang itu » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ne prends pas cet argent.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Je n'ai pas encore pris cet argent.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ce n'est pas moi qui ai pris cet argent.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Je ne prends jamais d'argent.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Bukan » peut nier un pronom mis en relief : « bukan saya yang… » = ce n'est pas moi qui…",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Que signifie « Jangan lupa! » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pas encore oublié !",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "N'oublie pas !",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Je n'oublie pas !",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ce n'est pas oublié !",
+          "correct": false
+        }
+      ],
+      "explanation": "« Jangan » + verbe = impératif négatif.",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Complétez : « Harganya ___ seratus ribu, tetapi dua ratus ribu. »",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "bukan",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "belum",
+          "correct": false
+        }
+      ],
+      "explanation": "Dans la structure contrastive « bukan X, tetapi Y », on nie une quantité nominale avec « bukan ».",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Quelle est la forme orale familière de « tidak » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "enggak",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "mana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "jangan",
+          "correct": false
+        }
+      ],
+      "explanation": "« Enggak » / « nggak » est l'équivalent familier de « tidak » à l'oral.",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Quelle phrase signifie « Je ne suis encore jamais allé à Bali » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Saya pernah belum ke Bali.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Saya belum pernah ke Bali.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Saya jangan pernah ke Bali.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Saya bukan pernah ke Bali.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Belum pernah » = ne… encore jamais ; la négation se place avant « pernah ».",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Quel mot sert à nier un nom ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "bukan",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "jangan",
+          "correct": false
+        }
+      ],
+      "explanation": "« Bukan » nie les noms ; « tidak » nie verbes et adjectifs.",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "« Jangan » s'emploie principalement pour…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dire « pas encore »",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "nier un nom",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "exprimer une interdiction",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "poser une question",
+          "correct": false
+        }
+      ],
+      "explanation": "« Jangan » = ne… pas (à l'impératif) : défense ou conseil négatif.",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "On vous propose « Mau kopi? ». Refus poli :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Belum, terima kasih.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Tidak, terima kasih.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Bukan, terima kasih.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Jangan, terima kasih.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Mau » est un verbe (vouloir) : on refuse avec « tidak ».",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Complétez : « Saya ___ mahasiswa lagi. » (Je ne suis plus étudiant.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bukan",
+          "correct": true
+        }
+      ],
+      "explanation": "« Mahasiswa » est un nom : « bukan … lagi » = ne… plus.",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Que signifie « Saya tidak makan daging lagi » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Je ne mange plus de viande.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Je ne mange pas encore de viande.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Je n'ai jamais mangé de viande.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Je mange encore de la viande.",
+          "correct": false
+        }
+      ],
+      "explanation": "« Tidak … lagi » = ne… plus.",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Complétez : « ___ dia sudah pulang? » (N'est-il pas déjà rentré ?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bukanlah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Janganlah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bukankah",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Belumlah",
+          "correct": false
+        }
+      ],
+      "explanation": "« Bukankah » introduit une question rhétorique négative (n'est-ce pas que… ?).",
+      "tags": [
+        "grammaire",
+        "negation",
+        "b1"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "« Belum » est une réponse possible seule à quelle question ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ini bukumu?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Kamu dari mana?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sudah makan?",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Siapa namamu?",
+          "correct": false
+        }
+      ],
+      "explanation": "« Belum » répond aux questions avec « sudah » (déjà).",
+      "tags": [
+        "grammaire",
+        "negation",
+        "a1"
+      ]
+    }
+  ]
+}

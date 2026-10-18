@@ -1,0 +1,296 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-passive-di",
+  "title": "The di- Passive",
+  "items": [
+    {
+      "id": "1",
+      "text": "Pintu itu dibuka oleh Budi.",
+      "translation": "That door was opened by Budi.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Rumah ini dibangun pada tahun 1990.",
+      "translation": "This house was built in 1990.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Surat itu sudah dikirim.",
+      "translation": "That letter has already been sent.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Makanan ini dimasak oleh ibu saya.",
+      "translation": "This food was cooked by my mother.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Mobil saya dicuri di depan hotel.",
+      "translation": "My car was stolen in front of the hotel.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Buku ini ditulis oleh Pramoedya Ananta Toer.",
+      "translation": "This book was written by Pramoedya Ananta Toer.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Kamar sudah dibersihkan.",
+      "translation": "The room has already been cleaned.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Tiketnya bisa dibeli di stasiun.",
+      "translation": "The tickets can be bought at the station.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Bahasa Indonesia digunakan di seluruh negeri.",
+      "translation": "Indonesian is used throughout the country.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Jalan itu sedang diperbaiki.",
+      "translation": "That road is being repaired.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Paket Anda akan segera dikirim.",
+      "translation": "Your package will be sent soon.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Kopi ini diminum tanpa gula.",
+      "translation": "This coffee is drunk without sugar.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Candi Borobudur dibangun pada abad kesembilan.",
+      "translation": "Borobudur Temple was built in the ninth century.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Lagu itu dinyanyikan oleh anak-anak.",
+      "translation": "That song is sung by the children.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Rapatnya dibatalkan karena hujan.",
+      "translation": "The meeting was cancelled because of the rain.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Dompet saya ditemukan oleh sopir taksi.",
+      "translation": "My wallet was found by the taxi driver.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Kue ini dibuat dari tepung beras.",
+      "translation": "This cake is made from rice flour.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Pasien itu sedang diperiksa dokter.",
+      "translation": "That patient is being examined by the doctor.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Tagihannya sudah dibayar.",
+      "translation": "The bill has already been paid.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2",
+        "aspect"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Barang ini tidak dijual.",
+      "translation": "This item is not for sale.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Jendela itu dipecahkan oleh anak nakal.",
+      "translation": "That window was broken by a naughty child.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Pesanan Anda sedang disiapkan.",
+      "translation": "Your order is being prepared.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Acara itu disiarkan di televisi.",
+      "translation": "That show is broadcast on television.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Nasi goreng dimakan dengan kerupuk.",
+      "translation": "Nasi goreng is eaten with krupuk.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Buku itu sudah saya baca.",
+      "translation": "I have already read that book.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Surat ini harus ditandatangani.",
+      "translation": "This letter must be signed.",
+      "tags": [
+        "sentences",
+        "passive",
+        "b1"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Anak itu digigit anjing.",
+      "translation": "That child was bitten by a dog.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Foto ini diambil di Danau Toba.",
+      "translation": "This photo was taken at Lake Toba.",
+      "tags": [
+        "sentences",
+        "passive",
+        "a2"
+      ]
+    }
+  ]
+}

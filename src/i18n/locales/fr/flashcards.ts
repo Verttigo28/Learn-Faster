@@ -1,0 +1,28 @@
+import type en from "../en/flashcards";
+
+export default {
+  reviewTitle: "Révision du jour",
+  grades: { again: "À revoir", hard: "Difficile", good: "Bien", easy: "Facile" },
+  saveReviewError: "Erreur lors de l'enregistrement de la révision.",
+  deckNotFound: "Deck introuvable",
+  nothingDue: "Rien à réviser 🎉",
+  emptyDeck: "Deck vide",
+  allUpToDate: "Toutes les cartes sont à jour. Reviens demain !",
+  importHint: "Importe des items dans ce deck.",
+  reviewWholeDeck: "Réviser tout le deck",
+  review: "Révision",
+  flashcards: "Flashcards",
+  remaining: "{count} restante(s)",
+  reversed: "sens inverse",
+  autoOn: "🔊 Auto on",
+  autoOff: "🔊 Auto off",
+  isNew: "Nouvelle",
+  answerSide: "Réponse (clique ou Espace pour retourner)",
+  questionSide: "Question (clique ou Espace pour retourner)",
+  listen: "Écouter",
+  showAnswer: "Afficher la réponse",
+  sessionScore: "Score session: {percent} ({correct}/{total})",
+  resultTitle: "Résultat flashcards",
+  cardsReviewed: "Cartes revues",
+  backToDeck: "Retour deck"
+} satisfies typeof en;

@@ -1,0 +1,285 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-hotel",
+  "title": "At the Hotel",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya sudah memesan kamar.",
+      "translation": "I've already booked a room.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1",
+        "aspect",
+        "me"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Atas nama siapa, Pak?",
+      "translation": "Under what name, sir?",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Atas nama Dupont.",
+      "translation": "Under the name Dupont.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Ada kamar kosong untuk malam ini?",
+      "translation": "Is there a room available for tonight?",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya mau kamar untuk dua orang.",
+      "translation": "I'd like a room for two people.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Berapa harga per malam?",
+      "translation": "How much is it per night?",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Apakah sarapan sudah termasuk?",
+      "translation": "Is breakfast included?",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Jam berapa sarapan dimulai?",
+      "translation": "What time does breakfast start?",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a2",
+        "question",
+        "passive"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "AC di kamar saya rusak.",
+      "translation": "The air conditioning in my room is broken.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Air panasnya tidak keluar.",
+      "translation": "There's no hot water coming out.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Boleh minta handuk tambahan?",
+      "translation": "Could I have an extra towel?",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Apa kata sandi Wi-Fi di sini?",
+      "translation": "What's the Wi-Fi password here?",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Saya mau check-out jam sebelas.",
+      "translation": "I'd like to check out at eleven.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Bisa titip koper di sini?",
+      "translation": "Can I leave my suitcase here?",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Kamar ini menghadap ke laut.",
+      "translation": "This room faces the sea.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Kunci kamar saya hilang.",
+      "translation": "I've lost my room key.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Tolong bersihkan kamar saya.",
+      "translation": "Please clean my room.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Kolam renangnya buka sampai jam berapa?",
+      "translation": "Until what time is the swimming pool open?",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya akan menginap tiga malam.",
+      "translation": "I will stay three nights.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a2",
+        "aspect",
+        "me"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Kamarnya bersih dan nyaman.",
+      "translation": "The room is clean and comfortable.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Kamar mandinya di luar kamar.",
+      "translation": "The bathroom is outside the room.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Apakah ada layanan antar-jemput bandara?",
+      "translation": "Is there an airport shuttle service?",
+      "tags": [
+        "sentences",
+        "hotel",
+        "b1",
+        "question"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Lift ada di sebelah kiri.",
+      "translation": "The elevator is on the left.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Kamar saya terlalu bising.",
+      "translation": "My room is too noisy.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Tolong bangunkan saya jam enam.",
+      "translation": "Please wake me up at six.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Saya mau membayar sekarang.",
+      "translation": "I'd like to pay now.",
+      "tags": [
+        "sentences",
+        "hotel",
+        "a1",
+        "me"
+      ]
+    }
+  ]
+}

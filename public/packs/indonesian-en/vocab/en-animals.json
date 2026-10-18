@@ -1,0 +1,489 @@
+{
+  "type": "vocab_deck",
+  "id": "en-animals",
+  "title": "Animals",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "binatang",
+      "definition": "animal",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "hewan",
+      "definition": "animal",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "hewan peliharaan",
+      "definition": "pet",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "anjing",
+      "definition": "dog",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "kucing",
+      "definition": "cat",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "ayam",
+      "definition": "chicken / hen",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "ayam jago",
+      "definition": "rooster",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "bebek",
+      "definition": "duck",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "burung",
+      "definition": "bird",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "ikan",
+      "definition": "fish",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "sapi",
+      "definition": "cow / beef",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "kerbau",
+      "definition": "water buffalo",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "kambing",
+      "definition": "goat",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "domba",
+      "definition": "sheep",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "babi",
+      "definition": "pig",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "kuda",
+      "definition": "horse",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "tikus",
+      "definition": "rat / mouse",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "kelinci",
+      "definition": "rabbit",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "monyet",
+      "definition": "monkey",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "gajah",
+      "definition": "elephant",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "harimau",
+      "definition": "tiger",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "singa",
+      "definition": "lion",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "beruang",
+      "definition": "bear",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "ular",
+      "definition": "snake",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "buaya",
+      "definition": "crocodile",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "kura-kura",
+      "definition": "turtle / tortoise",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "penyu",
+      "definition": "sea turtle",
+      "tags": [
+        "animals",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "katak",
+      "definition": "frog",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "cicak",
+      "definition": "house lizard / gecko",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "tokek",
+      "definition": "tokay gecko",
+      "tags": [
+        "animals",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "komodo",
+      "definition": "Komodo dragon",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "orang utan",
+      "definition": "orangutan",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "nyamuk",
+      "definition": "mosquito",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "lalat",
+      "definition": "fly",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "semut",
+      "definition": "ant",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "kecoak",
+      "definition": "cockroach",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "lebah",
+      "definition": "bee",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "kupu-kupu",
+      "definition": "butterfly",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "laba-laba",
+      "definition": "spider",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "kelelawar",
+      "definition": "bat",
+      "tags": [
+        "animals",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "burung hantu",
+      "definition": "owl",
+      "tags": [
+        "animals",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "hiu",
+      "definition": "shark",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "lumba-lumba",
+      "definition": "dolphin",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "paus",
+      "definition": "whale",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "ekor",
+      "definition": "tail",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "sayap",
+      "definition": "wing",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "bulu",
+      "definition": "feather / fur / body hair",
+      "tags": [
+        "animals",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "kebun binatang",
+      "definition": "zoo",
+      "tags": [
+        "animals",
+        "noun",
+        "a1"
+      ]
+    }
+  ]
+}

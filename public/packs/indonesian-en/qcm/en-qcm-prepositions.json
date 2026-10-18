@@ -1,0 +1,707 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-prepositions",
+  "title": "Prepositions: di, ke, dari, pada, untuk...",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Fill in the blank: \"Saya tinggal ___ Bandung.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dari",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "di",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "untuk",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ke",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Di\" = in, at (location, no movement).",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Fill in the blank: \"Kami pergi ___ pasar.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pada",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "di",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "dari",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ke",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Ke\" = to, toward (movement to a place).",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Fill in the blank: \"Dia datang ___ Prancis.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "di",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "untuk",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "dari",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "ke",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Dari\" = from (origin).",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "Fill in the blank: \"Hadiah ini ___ kamu.\" (This present is for you.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ke",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "untuk",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "dari",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "di",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Untuk\" = for.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Fill in the blank: \"___ hari Senin saya bekerja.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pada",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Dari",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ke",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Untuk",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Pada\" is used before time expressions (formal), like English \"on Monday\".",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Fill in the blank: \"Saya memberikan buku itu ___ Ali.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dari",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "di",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "kepada",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "ke dalam",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Kepada\" = to (a person, a recipient).",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Fill in the blank: \"Saya menerima surat ___ ibu.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pada",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "dari",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "kepada",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "untuk",
+          "correct": false
+        }
+      ],
+      "explanation": "Origin: dari (from).",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Fill in the blank: \"Buku itu ada ___ meja.\" (on the table)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "di bawah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "dari bawah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ke atas",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "di atas",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Di atas\" = on, above.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Fill in the blank: \"Kucing tidur ___ meja.\" (under the table)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "di luar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "di atas",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "di depan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "di bawah",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Di bawah\" = under, below.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Fill in the blank: \"Dia berdiri ___ rumah.\" (in front of the house)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "di depan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "di belakang",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "di samping",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "di dalam",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Di depan\" = in front of.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "What does \"di belakang\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "behind",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "in front of",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "on top",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "next to",
+          "correct": false
+        }
+      ],
+      "explanation": "Belakang = the back, the rear.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "What does \"di antara\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "opposite",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "between / among",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "far from",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "around",
+          "correct": false
+        }
+      ],
+      "explanation": "Antara = between.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Fill in the blank: \"Saya belajar ___ jam delapan ___ jam sepuluh.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dari … sampai",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "pada … untuk",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ke … dari",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "di … ke",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Dari ... sampai\" = from ... until.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Fill in the blank: \"Saya pergi ___ teman saya.\" (with my friend)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "untuk",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "pada",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "dengan",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "dari",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Dengan\" = with.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Fill in the blank: \"Dia marah ___ saya.\" (He is angry with me.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dari",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kepada",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "di",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ke",
+          "correct": false
+        }
+      ],
+      "explanation": "With a person, use \"kepada\" (or \"pada\"), not \"ke\".",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "What does \"di dalam\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "outside",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "inside",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "next to",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "underneath",
+          "correct": false
+        }
+      ],
+      "explanation": "Dalam = inside, interior.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Which spelling is correct according to EYD rules?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kemana",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ke-mana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "ke mana",
+          "correct": true
+        }
+      ],
+      "explanation": "The preposition \"ke\" is written separately: ke mana, di mana, dari mana.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Fill in the blank: \"Setiap hari saya naik bus ___ kantor.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "dari",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ke",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "di",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "pada",
+          "correct": false
+        }
+      ],
+      "explanation": "Direction: ke kantor (to the office).",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Fill in the blank: \"___ siapa kamu berbicara?\" (Who are you talking to?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Untuk",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Di",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Dengan",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Dari",
+          "correct": false
+        }
+      ],
+      "explanation": "Berbicara dengan = to talk with/to someone.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "What does \"tentang\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "since",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "against",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "during",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "about / concerning",
+          "correct": true
+        }
+      ],
+      "explanation": "Buku tentang Indonesia = a book about Indonesia.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "What does \"sejak\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "since",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "during",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "until",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "before",
+          "correct": false
+        }
+      ],
+      "explanation": "Sejak tahun 2020 = since 2020.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "Fill in the blank: \"Kapal itu terbuat ___ besi.\" (made of iron)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pada",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ke",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "untuk",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dari",
+          "correct": true
+        }
+      ],
+      "explanation": "Terbuat dari = made of / from.",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a2"
+      ]
+    }
+  ]
+}

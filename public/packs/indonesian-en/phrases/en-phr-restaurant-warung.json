@@ -1,0 +1,293 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-restaurant-warung",
+  "title": "At the Restaurant and Warung",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya mau pesan nasi goreng.",
+      "translation": "I'd like to order nasi goreng.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Minta menunya, Mas.",
+      "translation": "The menu, please.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Saya mau es teh manis.",
+      "translation": "I'd like a sweet iced tea.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Jangan terlalu pedas, ya.",
+      "translation": "Not too spicy, okay?",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya tidak makan daging babi.",
+      "translation": "I don't eat pork.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "negation"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Apakah ada makanan vegetarian?",
+      "translation": "Is there any vegetarian food?",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Berapa harganya semua?",
+      "translation": "How much is it altogether?",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Minta bonnya, Bu.",
+      "translation": "The bill, please, ma'am.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Makanannya enak sekali.",
+      "translation": "The food is really delicious.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Saya alergi kacang.",
+      "translation": "I'm allergic to peanuts.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Meja untuk dua orang, ya.",
+      "translation": "A table for two, please.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Boleh saya lihat menunya?",
+      "translation": "May I see the menu?",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Makan di sini atau dibungkus?",
+      "translation": "Eat in or take away?",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "question",
+        "passive"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Dibungkus saja, Mbak.",
+      "translation": "Take away, please.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "passive"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya mau sate ayam sepuluh tusuk.",
+      "translation": "I'd like ten skewers of chicken satay.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Tolong tambah nasi satu porsi lagi.",
+      "translation": "Please add one more portion of rice.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Airnya pakai es atau tidak?",
+      "translation": "Would you like ice in your water or not?",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Tanpa gula, ya.",
+      "translation": "No sugar, please.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Apa makanan khas di sini?",
+      "translation": "What's the local specialty here?",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Saya sudah kenyang.",
+      "translation": "I'm already full.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Kami belum memesan.",
+      "translation": "We haven't ordered yet.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Pesanan saya belum datang.",
+      "translation": "My order hasn't arrived yet.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Bisa bayar pakai kartu?",
+      "translation": "Can I pay by card?",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Sambalnya terlalu pedas untuk saya.",
+      "translation": "The sambal is too spicy for me.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Rendang ini dimasak dengan santan.",
+      "translation": "This rendang is cooked with coconut milk.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "b1",
+        "passive"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Gado-gado di warung ini terkenal.",
+      "translation": "The gado-gado at this warung is famous.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Saya mau kopi tanpa susu.",
+      "translation": "I'd like a coffee without milk.",
+      "tags": [
+        "sentences",
+        "restaurant",
+        "a1"
+      ]
+    }
+  ]
+}

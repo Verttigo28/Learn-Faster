@@ -1,0 +1,680 @@
+{
+  "type": "qcm_exam",
+  "id": "qcm-prefixe-ber",
+  "title": "Le préfixe ber-",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Quelle est la racine de « bekerja » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kerja",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "erja",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "berja",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ker",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber- devient be- devant une racine dont la 1re syllabe contient -er : be + kerja.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "ber- + main donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bermain",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "bemain",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "memain",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "permain",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber- s'ajoute directement : bermain = jouer.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "ber- + ajar donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "belajar",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "bajar",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mengajar",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berajar",
+          "correct": false
+        }
+      ],
+      "explanation": "Forme irrégulière : belajar (apprendre, étudier).",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "ber- + renang donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "berrenang",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "renangan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "berenang",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "merenang",
+          "correct": false
+        }
+      ],
+      "explanation": "Devant une racine en r-, le r de ber- tombe : berenang (nager).",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "ber- + kerja donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mekerja",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "kerjaan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "berkerja",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bekerja",
+          "correct": true
+        }
+      ],
+      "explanation": "Racine avec -er- dans la 1re syllabe → be- : bekerja.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "ber- + ternak (bétail) donne…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "meternak",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "beternak",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "bertenak",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berternak",
+          "correct": false
+        }
+      ],
+      "explanation": "Même règle que bekerja : beternak (élever du bétail).",
+      "tags": [
+        "grammaire",
+        "ber",
+        "b1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "Que signifie « bersepeda » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "un vélo neuf",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "vendre un vélo",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "réparer un vélo",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "faire du vélo",
+          "correct": true
+        }
+      ],
+      "explanation": "Ber- + nom : utiliser/faire avec : bersepeda = aller à vélo.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Que signifie « berbahasa Indonesia » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "parler indonésien",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "traduire en indonésien",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "enseigner l'indonésien",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "aimer l'Indonésie",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber- + bahasa = parler une langue.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "Que signifie « Dia sudah beristri » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il cherche une épouse.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Il est marié (il a une épouse).",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Il est divorcé.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Il a perdu sa femme.",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber- + nom = posséder : beristri = avoir une épouse.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "Que signifie « Anak itu berumur tujuh tahun » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "L'enfant est là depuis sept ans.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "L'enfant compte jusqu'à sept.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "L'enfant a sept ans.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "L'enfant aura sept ans.",
+          "correct": false
+        }
+      ],
+      "explanation": "Berumur = être âgé de.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "Complétez : « Dia ___ di depan rumah. » (Il est debout devant la maison.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "diri",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mendiri",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "terdirikan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "berdiri",
+          "correct": true
+        }
+      ],
+      "explanation": "Berdiri = être debout.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Complétez : « Saya ___ dengan teman saya di kafe. » (rencontrer)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "temuan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ditemu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "penemu",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bertemu",
+          "correct": true
+        }
+      ],
+      "explanation": "Bertemu (dengan) = rencontrer.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "Que signifie « berjalan-jalan » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "conduire",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "marcher vite",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "courir",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "se promener",
+          "correct": true
+        }
+      ],
+      "explanation": "Ber- + racine redoublée : activité sans but précis, se promener.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Que signifie « bersalaman » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "se disputer",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "se dire au revoir",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "se serrer la main",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "se saluer de loin",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber-…-an exprime la réciprocité : bersalaman = se serrer la main.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "b1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Quelle phrase est correcte ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Saya berbicara dengan dia.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Saya berbicarakan dia.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Saya dibicara dia.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Saya berbicara dia.",
+          "correct": false
+        }
+      ],
+      "explanation": "Les verbes en ber- sont intransitifs : pas d'objet direct, on utilise une préposition (dengan).",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Que signifie « berangkat » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "partir",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "attendre",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "rentrer",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "arriver",
+          "correct": false
+        }
+      ],
+      "explanation": "Berangkat = partir, se mettre en route.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Que signifie « bersama » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "même",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "seul",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "pareil",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ensemble",
+          "correct": true
+        }
+      ],
+      "explanation": "Bersama = ensemble (avec).",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Que signifie « bermacam-macam » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "identique",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "divers, de toutes sortes",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "souvent",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "très cher",
+          "correct": false
+        }
+      ],
+      "explanation": "Macam = sorte ; bermacam-macam = de toutes sortes.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "b1"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "Que signifie « berbelanja » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "faire des courses",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "vendre",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "travailler",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "payer",
+          "correct": false
+        }
+      ],
+      "explanation": "Berbelanja = faire des achats.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Que signifie « bajunya berwarna merah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sa chemise est tachée",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "il peint sa chemise en rouge",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "il porte une chemise rouge neuve",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sa chemise est de couleur rouge",
+          "correct": true
+        }
+      ],
+      "explanation": "Ber- + warna = avoir pour couleur.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "Que signifie « Adik saya masih bersekolah » ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mon petit frère construit une école.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Mon petit frère va encore à l'école.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Mon petit frère a quitté l'école.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mon petit frère enseigne.",
+          "correct": false
+        }
+      ],
+      "explanation": "Bersekolah = aller à l'école, être scolarisé.",
+      "tags": [
+        "grammaire",
+        "ber",
+        "a2"
+      ]
+    }
+  ]
+}

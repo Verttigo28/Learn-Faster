@@ -1,0 +1,808 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-general-review-a1-a2",
+  "title": "General Review A1-A2",
+  "durationSeconds": 780,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Fill in the blank: \"Saya ___ orang Jepang, saya orang Prancis.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "bukan",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "jangan",
+          "correct": false
+        }
+      ],
+      "explanation": "Negating a noun: bukan.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Fill in the blank: \"Di ___ Anda bekerja?\" (Where do you work?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "siapa",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "mana",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "kapan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "apa",
+          "correct": false
+        }
+      ],
+      "explanation": "Di mana = where.",
+      "tags": [
+        "grammar",
+        "question-words",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "How do you say \"your older sister\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "kakakmu",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "kakakku",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "adikmu",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "kakaknya",
+          "correct": false
+        }
+      ],
+      "explanation": "Kakak (older sibling) + -mu (your).",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "How do you say \"that red car\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "merah mobil itu",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "itu mobil merah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "mobil itu merah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mobil merah itu",
+          "correct": true
+        }
+      ],
+      "explanation": "Noun + adjective + demonstrative. \"Mobil itu merah\" = that car is red.",
+      "tags": [
+        "grammar",
+        "word-order",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Fill in the blank: \"Dia ___ menonton film.\" (in the middle of / -ing)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "akan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "sudah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "pernah",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "sedang",
+          "correct": true
+        }
+      ],
+      "explanation": "Sedang = in the process of (like the English progressive \"is ...-ing\").",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "me- + potong gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mepotong",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menpotong",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "memotong",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "mempotong",
+          "correct": false
+        }
+      ],
+      "explanation": "The p drops after mem-, giving memotong (to cut).",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "me- + sikat gives...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "mesikat",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "menyikat",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "mensikat",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "mengsikat",
+          "correct": false
+        }
+      ],
+      "explanation": "The s drops, with meny-, giving menyikat (to brush).",
+      "tags": [
+        "grammar",
+        "prefix-me",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "What does \"Kue itu dimakan oleh adik\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The cake was eaten by my younger brother/sister.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "My younger brother/sister is eating the cake they were given.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "My younger brother made the cake.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Don't eat my younger brother's cake.",
+          "correct": false
+        }
+      ],
+      "explanation": "A di- passive with the agent introduced by oleh.",
+      "tags": [
+        "grammar",
+        "passive",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "What does \"Tolong bukakan pintu\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Don't close the door.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "The door is open.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "He is opening the door.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Please open the door for me.",
+          "correct": true
+        }
+      ],
+      "explanation": "Benefactive -kan: to open for someone.",
+      "tags": [
+        "grammar",
+        "suffixes",
+        "b1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "What does \"Dia terlambat\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "He is slow.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "He is late.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "He has left.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "He is early.",
+          "correct": false
+        }
+      ],
+      "explanation": "Terlambat = late.",
+      "tags": [
+        "vocabulary",
+        "ter-ke-an",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "What does \"lima ekor kucing\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "the fifth cat",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "five cats",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "a five-year-old cat",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "five cat tails",
+          "correct": false
+        }
+      ],
+      "explanation": "Ekor = the classifier for animals.",
+      "tags": [
+        "grammar",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Fill in the blank: \"Saya pergi ___ kantor ___ mobil.\" (to the office by car)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "di … dari",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ke … dengan",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "ke … di",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "dari … ke",
+          "correct": false
+        }
+      ],
+      "explanation": "Ke = to; dengan = with, by means of (you can also say \"naik mobil\").",
+      "tags": [
+        "grammar",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "What does \"orang-orang\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "an important person",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "a single human",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "people",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "a person",
+          "correct": false
+        }
+      ],
+      "explanation": "Reduplication = plural.",
+      "tags": [
+        "grammar",
+        "reduplication",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "What does \"Silakan minum\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Please, have a drink.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Give me something to drink.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Don't drink.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I'm thirsty.",
+          "correct": false
+        }
+      ],
+      "explanation": "Silakan = please (go ahead) (an invitation).",
+      "tags": [
+        "grammar",
+        "imperative",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Fill in the blank: \"Bandung lebih dingin ___ Jakarta.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "untuk",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "ke",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "daripada",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "dengan",
+          "correct": false
+        }
+      ],
+      "explanation": "Lebih ... daripada = more ... than / -er than.",
+      "tags": [
+        "grammar",
+        "comparison",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "Fill in the blank: \"Saya lapar, ___ saya makan.\" (so)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tetapi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "walaupun",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "supaya",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "jadi",
+          "correct": true
+        }
+      ],
+      "explanation": "Jadi = so.",
+      "tags": [
+        "grammar",
+        "conjunctions",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "\"Selamat sore\" is used...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "only to say goodbye",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "in the morning",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "at midnight",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "in the late afternoon",
+          "correct": true
+        }
+      ],
+      "explanation": "Sore is roughly 3 pm to 6 pm.",
+      "tags": [
+        "culture",
+        "daily-life",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "What is the root of \"berbicara\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bicar",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "icara",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "bicara",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "erbicara",
+          "correct": false
+        }
+      ],
+      "explanation": "Ber- + bicara = to speak.",
+      "tags": [
+        "grammar",
+        "prefix-ber",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "What does \"Saya kedinginan\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I'm cold (I'm suffering from the cold).",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "I like the cold.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "It will be cold tomorrow.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I drink cold drinks.",
+          "correct": false
+        }
+      ],
+      "explanation": "Adversative ke-...-an: to suffer from the cold.",
+      "tags": [
+        "grammar",
+        "ter-ke-an",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "\"Jam berapa?\" - \"Jam sembilan ___.\" (9 in the morning)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "pagi",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "sore",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "siang",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "malam",
+          "correct": false
+        }
+      ],
+      "explanation": "Pagi = morning.",
+      "tags": [
+        "vocabulary",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "What does \"Saya belum pernah makan durian\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I have never eaten durian (yet).",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "I don't eat durian anymore.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "I'm eating durian right now.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I will eat durian.",
+          "correct": false
+        }
+      ],
+      "explanation": "Belum pernah = never (yet), not so far.",
+      "tags": [
+        "grammar",
+        "aspect",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "prompt": "Fill in the blank: \"Rumah saya ___ dari sini.\" (far from here)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tinggi",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "lama",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "jauh",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "dekat",
+          "correct": false
+        }
+      ],
+      "explanation": "Jauh = far; dekat = near.",
+      "tags": [
+        "vocabulary",
+        "prepositions",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "prompt": "Fill in the blank: \"Mereka ___ di Surabaya.\" (They live in Surabaya.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "meninggal",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tinggal",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "tinggi",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "ketinggalan",
+          "correct": false
+        }
+      ],
+      "explanation": "Tinggal = to live (reside); meninggal = to pass away.",
+      "tags": [
+        "vocabulary",
+        "verbs",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "prompt": "What does \"tujuh belas\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "17",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "70",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "107",
+          "correct": false
+        }
+      ],
+      "explanation": "Belas = the teens, 11 to 19: tujuh belas = 17.",
+      "tags": [
+        "vocabulary",
+        "numbers-classifiers",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "prompt": "What does \"Kita mau ke mana?\" mean (said to a friend)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Where are we (you and I) going?",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Where did you go (without me)?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Where do we come from?",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Where are they going?",
+          "correct": false
+        }
+      ],
+      "explanation": "Kita (inclusive \"we\") + ke mana (where to).",
+      "tags": [
+        "grammar",
+        "pronouns",
+        "a1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+{
+  "type": "vocab_deck",
+  "id": "id-pronoms-personnes",
+  "title": "Pronoms et personnes",
+  "from": "id",
+  "to": "fr",
+  "items": [
+    {
+      "id": "1",
+      "term": "saya",
+      "definition": "je / moi",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "aku",
+      "definition": "je / moi (familier)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "Anda",
+      "definition": "vous (poli)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "kamu",
+      "definition": "tu / toi",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "engkau",
+      "definition": "tu / toi (littéraire)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "b1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "dia",
+      "definition": "il / elle",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "ia",
+      "definition": "il / elle (écrit)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "beliau",
+      "definition": "il / elle (respectueux)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "b1"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kami",
+      "definition": "nous (sans l'interlocuteur)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "kita",
+      "definition": "nous (avec l'interlocuteur)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "kalian",
+      "definition": "vous (pluriel)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "mereka",
+      "definition": "ils / elles",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "-ku",
+      "definition": "mon / ma (suffixe familier)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "-mu",
+      "definition": "ton / ta (suffixe)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "-nya",
+      "definition": "son / sa (suffixe)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "gue",
+      "definition": "je / moi (argot de Jakarta)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "b1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "lu",
+      "definition": "tu / toi (argot de Jakarta)",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "b1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "orang",
+      "definition": "personne / gens",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "Bapak",
+      "definition": "monsieur / père (respectueux)",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "Pak",
+      "definition": "monsieur (forme courte)",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "Ibu",
+      "definition": "madame / mère",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "Bu",
+      "definition": "madame (forme courte)",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "Mas",
+      "definition": "grand frère / jeune homme (javanais)",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "Mbak",
+      "definition": "grande sœur / jeune femme (javanais)",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "Kak",
+      "definition": "grand frère / grande sœur (forme courte)",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "Dik",
+      "definition": "petit frère / petite sœur (forme courte)",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "Saudara",
+      "definition": "vous (formel) / frère ou sœur",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "b1"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "Tuan",
+      "definition": "monsieur (formel)",
+      "tags": [
+        "pronoms",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "Nyonya",
+      "definition": "madame (formel)",
+      "tags": [
+        "pronoms",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "Nona",
+      "definition": "mademoiselle",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "laki-laki",
+      "definition": "homme / masculin",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "perempuan",
+      "definition": "femme / féminin",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "pria",
+      "definition": "homme",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "wanita",
+      "definition": "femme",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "anak",
+      "definition": "enfant",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "anak-anak",
+      "definition": "enfants",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "bayi",
+      "definition": "bébé",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "remaja",
+      "definition": "adolescent",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "orang dewasa",
+      "definition": "adulte",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "teman",
+      "definition": "ami / camarade",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "sahabat",
+      "definition": "ami proche / meilleur ami",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "42",
+      "term": "pacar",
+      "definition": "petit ami / petite amie",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "43",
+      "term": "tetangga",
+      "definition": "voisin",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "44",
+      "term": "tamu",
+      "definition": "invité",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "45",
+      "term": "orang asing",
+      "definition": "étranger",
+      "tags": [
+        "pronoms",
+        "nom",
+        "a2"
+      ]
+    },
+    {
+      "id": "46",
+      "term": "bule",
+      "definition": "étranger occidental (familier)",
+      "tags": [
+        "pronoms",
+        "nom",
+        "b1"
+      ]
+    },
+    {
+      "id": "47",
+      "term": "semua orang",
+      "definition": "tout le monde",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a2"
+      ]
+    },
+    {
+      "id": "48",
+      "term": "seseorang",
+      "definition": "quelqu'un",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "a2"
+      ]
+    },
+    {
+      "id": "49",
+      "term": "siapa saja",
+      "definition": "n'importe qui",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "b1"
+      ]
+    },
+    {
+      "id": "50",
+      "term": "masing-masing",
+      "definition": "chacun",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "b1"
+      ]
+    },
+    {
+      "id": "51",
+      "term": "diri sendiri",
+      "definition": "soi-même",
+      "tags": [
+        "pronoms",
+        "pronom",
+        "b1"
+      ]
+    }
+  ]
+}

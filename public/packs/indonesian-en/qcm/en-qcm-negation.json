@@ -1,0 +1,680 @@
+{
+  "type": "qcm_exam",
+  "id": "en-qcm-negation",
+  "title": "Negation: tidak, bukan, belum, jangan",
+  "durationSeconds": 660,
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "Fill in the blank: \"Saya ___ suka kopi.\" (I don't like coffee.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "bukan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "tidak",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "belum",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Tidak\" negates verbs and adjectives.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "prompt": "Fill in the blank: \"Dia ___ guru, dia dokter.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "bukan",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "jangan",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Bukan\" negates a noun or noun phrase (guru).",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "prompt": "Fill in the blank: \"___ merokok di sini!\" (Don't smoke here!)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Belum",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Bukan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Jangan",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Tidak",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Jangan\" expresses a prohibition or negative command.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "prompt": "\"Kamu sudah makan?\" - A natural negative answer: \"___, saya belum makan.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tidak",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Bukan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Jangan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Belum",
+          "correct": true
+        }
+      ],
+      "explanation": "To a question with \"sudah\" (already), you answer \"belum\" (not yet).",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "prompt": "Fill in the blank: \"Rumah itu ___ besar.\" (That house is not big.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tidak",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "bukan",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "belum",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Besar\" is an adjective, so it is negated with \"tidak\".",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "prompt": "Fill in the blank: \"Ini ___ buku saya.\" (This is not my book.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bukan",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "tidak",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Buku saya\" is a noun phrase, so it is negated with \"bukan\".",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "prompt": "How do you say \"I am not married yet\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Saya belum menikah.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Saya tidak menikah.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Saya bukan menikah.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Saya jangan menikah.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Belum\" = not yet; it suggests the action may still happen.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "prompt": "Complete the question tag: \"Kamu orang Prancis, ___?\" (... aren't you?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bukan",
+          "correct": true
+        }
+      ],
+      "explanation": "\"..., bukan?\" (often \"kan?\" in speech) works like an English tag question: \"aren't you? / isn't it? / right?\".",
+      "tags": [
+        "grammar",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "prompt": "What does \"Saya tidak punya uang\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I don't have any money.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "I don't have any money yet.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Don't take the money.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "It's not my money.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Tidak punya\" = not to have.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "prompt": "What does \"Bukan saya yang mengambil uang itu\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Don't take that money.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "I haven't taken that money yet.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "It wasn't me who took that money.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "I never take money.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Bukan\" can negate an emphasized pronoun: \"bukan saya yang...\" = it wasn't me who...",
+      "tags": [
+        "grammar",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "prompt": "What does \"Jangan lupa!\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Not forgotten yet!",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Don't forget!",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "I don't forget!",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "It isn't forgotten!",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Jangan\" + verb = negative imperative.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "prompt": "Fill in the blank: \"Harganya ___ seratus ribu, tetapi dua ratus ribu.\"",
+      "choices": [
+        {
+          "id": "a",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "bukan",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "belum",
+          "correct": false
+        }
+      ],
+      "explanation": "In the contrastive structure \"bukan X, tetapi Y\" (not X but Y), a quantity used as a noun phrase is negated with \"bukan\".",
+      "tags": [
+        "grammar",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "prompt": "What is the informal spoken form of \"tidak\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "enggak",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "mana",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "jangan",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Enggak\" / \"nggak\" is the colloquial equivalent of \"tidak\" in speech.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "prompt": "Which sentence means \"I have never been to Bali (yet)\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Saya pernah belum ke Bali.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Saya belum pernah ke Bali.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Saya jangan pernah ke Bali.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Saya bukan pernah ke Bali.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Belum pernah\" = never (yet), not ever so far; the negation goes before \"pernah\".",
+      "tags": [
+        "grammar",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "prompt": "Which word is used to negate a noun?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "bukan",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "jangan",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Bukan\" negates nouns; \"tidak\" negates verbs and adjectives.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "prompt": "\"Jangan\" is mainly used to...",
+      "choices": [
+        {
+          "id": "a",
+          "text": "say \"not yet\"",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "negate a noun",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "express a prohibition",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "ask a question",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Jangan\" = don't (in the imperative): a prohibition or negative advice.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "prompt": "Someone offers you \"Mau kopi?\". A polite refusal:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Belum, terima kasih.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Tidak, terima kasih.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Bukan, terima kasih.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Jangan, terima kasih.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Mau\" is a verb (to want), so you refuse with \"tidak\".",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "prompt": "Fill in the blank: \"Saya ___ mahasiswa lagi.\" (I am no longer a student.)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "jangan",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "tidak",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "belum",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "bukan",
+          "correct": true
+        }
+      ],
+      "explanation": "\"Mahasiswa\" is a noun: \"bukan ... lagi\" = no longer / not ... anymore.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "prompt": "What does \"Saya tidak makan daging lagi\" mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I don't eat meat anymore.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "I don't eat meat yet.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "I have never eaten meat.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "I still eat meat.",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Tidak ... lagi\" = not ... anymore / no longer.",
+      "tags": [
+        "grammar",
+        "negation",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "prompt": "Fill in the blank: \"___ dia sudah pulang?\" (Hasn't he already gone home?)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bukanlah",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Janganlah",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bukankah",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Belumlah",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Bukankah\" introduces a negative rhetorical question (isn't it true that...?).",
+      "tags": [
+        "grammar",
+        "negation",
+        "b1"
+      ]
+    },
+    {
+      "id": "21",
+      "prompt": "\"Belum\" on its own is a possible answer to which question?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ini bukumu?",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Kamu dari mana?",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sudah makan?",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Siapa namamu?",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Belum\" answers questions with \"sudah\" (already).",
+      "tags": [
+        "grammar",
+        "negation",
+        "a1"
+      ]
+    }
+  ]
+}

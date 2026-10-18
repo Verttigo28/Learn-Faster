@@ -1,0 +1,419 @@
+{
+  "type": "vocab_deck",
+  "id": "en-emergencies",
+  "title": "Emergencies",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "Tolong!",
+      "definition": "help!",
+      "tags": [
+        "emergency",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "Bantu saya!",
+      "definition": "help me!",
+      "tags": [
+        "emergency",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "darurat",
+      "definition": "emergency",
+      "tags": [
+        "emergency",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "keadaan darurat",
+      "definition": "emergency situation / state of emergency",
+      "tags": [
+        "emergency",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "nomor darurat",
+      "definition": "emergency number",
+      "tags": [
+        "emergency",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "polisi",
+      "definition": "police",
+      "tags": [
+        "emergency",
+        "noun",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "ambulans",
+      "definition": "ambulance",
+      "tags": [
+        "emergency",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "pemadam kebakaran",
+      "definition": "firefighters / fire brigade",
+      "tags": [
+        "emergency",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "kebakaran",
+      "definition": "fire",
+      "tags": [
+        "emergency",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "kecelakaan",
+      "definition": "accident",
+      "tags": [
+        "emergency",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "pencuri",
+      "definition": "thief",
+      "tags": [
+        "emergency",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "Maling!",
+      "definition": "thief! / stop thief!",
+      "tags": [
+        "emergency",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "copet",
+      "definition": "pickpocket",
+      "tags": [
+        "emergency",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "dicuri",
+      "definition": "stolen",
+      "tags": [
+        "emergency",
+        "verb",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "dirampok",
+      "definition": "robbed",
+      "tags": [
+        "emergency",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "hilang",
+      "definition": "lost / missing",
+      "tags": [
+        "emergency",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "tersesat",
+      "definition": "lost (one's way)",
+      "tags": [
+        "emergency",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "Saya tersesat",
+      "definition": "I'm lost",
+      "tags": [
+        "emergency",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "Panggil dokter!",
+      "definition": "call a doctor!",
+      "tags": [
+        "emergency",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "Panggil polisi!",
+      "definition": "call the police!",
+      "tags": [
+        "emergency",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "bahaya",
+      "definition": "danger",
+      "tags": [
+        "emergency",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "berbahaya",
+      "definition": "dangerous",
+      "tags": [
+        "emergency",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "Awas!",
+      "definition": "watch out! / look out! / careful!",
+      "tags": [
+        "emergency",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "terluka",
+      "definition": "injured / hurt / wounded",
+      "tags": [
+        "emergency",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "luka parah",
+      "definition": "serious injury / severe wound",
+      "tags": [
+        "emergency",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "terdekat",
+      "definition": "nearest / closest",
+      "tags": [
+        "emergency",
+        "adjective",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "Di mana rumah sakit terdekat?",
+      "definition": "where is the nearest hospital?",
+      "tags": [
+        "emergency",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "Paspor saya hilang",
+      "definition": "I've lost my passport / my passport is lost",
+      "tags": [
+        "emergency",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "pertolongan pertama",
+      "definition": "first aid",
+      "tags": [
+        "emergency",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "Saya sakit",
+      "definition": "I'm sick / I'm ill",
+      "tags": [
+        "emergency",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "Saya alergi ...",
+      "definition": "I'm allergic to ...",
+      "tags": [
+        "emergency",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "golongan darah",
+      "definition": "blood type / blood group",
+      "tags": [
+        "emergency",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "33",
+      "term": "Berhenti!",
+      "definition": "stop!",
+      "tags": [
+        "emergency",
+        "expression",
+        "a1"
+      ]
+    },
+    {
+      "id": "34",
+      "term": "Pergi!",
+      "definition": "go away!",
+      "tags": [
+        "emergency",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "35",
+      "term": "Jangan sentuh saya!",
+      "definition": "don't touch me!",
+      "tags": [
+        "emergency",
+        "expression",
+        "a2"
+      ]
+    },
+    {
+      "id": "36",
+      "term": "gempa",
+      "definition": "earthquake",
+      "tags": [
+        "emergency",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "37",
+      "term": "evakuasi",
+      "definition": "evacuation",
+      "tags": [
+        "emergency",
+        "noun",
+        "b1"
+      ]
+    },
+    {
+      "id": "38",
+      "term": "pintu darurat",
+      "definition": "emergency exit",
+      "tags": [
+        "emergency",
+        "noun",
+        "a2"
+      ]
+    },
+    {
+      "id": "39",
+      "term": "tenggelam",
+      "definition": "to drown / to sink",
+      "tags": [
+        "emergency",
+        "verb",
+        "b1"
+      ]
+    },
+    {
+      "id": "40",
+      "term": "Dia tidak bernapas",
+      "definition": "he is not breathing / she is not breathing",
+      "tags": [
+        "emergency",
+        "expression",
+        "b1"
+      ]
+    },
+    {
+      "id": "41",
+      "term": "melapor",
+      "definition": "to report / to file a report",
+      "tags": [
+        "emergency",
+        "verb",
+        "b1"
+      ]
+    }
+  ]
+}

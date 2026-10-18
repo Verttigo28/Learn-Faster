@@ -1,0 +1,304 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-questions-courantes",
+  "title": "Questions courantes",
+  "items": [
+    {
+      "id": "1",
+      "text": "Apa nama makanan ini?",
+      "translation": "Comment s'appelle ce plat ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Apa yang kamu lakukan?",
+      "translation": "Qu'est-ce que tu fais ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Apa arti kata ini?",
+      "translation": "Que signifie ce mot ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Siapa nama teman Anda?",
+      "translation": "Comment s'appelle votre ami ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Siapa yang memasak rendang ini?",
+      "translation": "Qui a cuisiné ce rendang ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Dengan siapa Anda datang?",
+      "translation": "Avec qui êtes-vous venu ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a2"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Siapa guru bahasa Indonesia Anda?",
+      "translation": "Qui est votre professeur d'indonésien ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Di mana kamar mandi?",
+      "translation": "Où sont les toilettes ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Di mana Anda tinggal?",
+      "translation": "Où habitez-vous ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Ke mana kamu pergi?",
+      "translation": "Où vas-tu ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Kapan Anda tiba di Jakarta?",
+      "translation": "Quand êtes-vous arrivé à Jakarta ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Kapan tokonya buka?",
+      "translation": "Quand le magasin ouvre-t-il ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Sejak kapan Anda belajar bahasa Indonesia?",
+      "translation": "Depuis quand apprenez-vous l'indonésien ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a2",
+        "ber"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Kenapa kamu terlambat?",
+      "translation": "Pourquoi es-tu en retard ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Mengapa harganya mahal sekali?",
+      "translation": "Pourquoi est-ce si cher ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Kenapa toko itu tutup?",
+      "translation": "Pourquoi ce magasin est-il fermé ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Kenapa kamu belajar bahasa Indonesia?",
+      "translation": "Pourquoi apprends-tu l'indonésien ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Bagaimana kabar keluarga Anda?",
+      "translation": "Comment va votre famille ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Bagaimana cara ke stasiun?",
+      "translation": "Comment va-t-on à la gare ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a2"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Bagaimana cara membuat sambal?",
+      "translation": "Comment prépare-t-on le sambal ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Bagaimana rasa makanannya?",
+      "translation": "Quel goût a ce plat ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Berapa harga tiket ini?",
+      "translation": "Combien coûte ce billet ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Berapa umur Anda?",
+      "translation": "Quel âge avez-vous ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Jam berapa sekarang?",
+      "translation": "Quelle heure est-il ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Berapa lama perjalanan ke Bali?",
+      "translation": "Combien de temps dure le trajet jusqu'à Bali ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Yang mana yang lebih murah?",
+      "translation": "Lequel est le moins cher ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "text": "Apakah Anda bisa berbahasa Inggris?",
+      "translation": "Parlez-vous anglais ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "28",
+      "text": "Apakah kamu sudah makan?",
+      "translation": "As-tu déjà mangé ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1",
+        "aspect"
+      ]
+    },
+    {
+      "id": "29",
+      "text": "Hari ini hari apa?",
+      "translation": "Quel jour sommes-nous aujourd'hui ?",
+      "tags": [
+        "phrases",
+        "questions",
+        "a1"
+      ]
+    }
+  ]
+}

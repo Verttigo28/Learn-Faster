@@ -1,0 +1,329 @@
+{
+  "type": "vocab_deck",
+  "id": "en-time-aspect-markers",
+  "title": "Time and aspect markers",
+  "from": "id",
+  "to": "en",
+  "items": [
+    {
+      "id": "1",
+      "term": "sudah",
+      "definition": "already (completed action)",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "term": "belum",
+      "definition": "not yet",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "term": "sedang",
+      "definition": "in the middle of (doing) / currently / -ing",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "term": "lagi",
+      "definition": "currently (informal) / again / more",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "5",
+      "term": "akan",
+      "definition": "will (future)",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "term": "masih",
+      "definition": "still",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "term": "pernah",
+      "definition": "ever / have ever (done once)",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "term": "tidak pernah",
+      "definition": "never",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "term": "belum pernah",
+      "definition": "never yet / have never",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "10",
+      "term": "baru",
+      "definition": "just (recently) / have just",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "11",
+      "term": "baru saja",
+      "definition": "just now / have just",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "12",
+      "term": "telah",
+      "definition": "already (formal)",
+      "tags": [
+        "aspect",
+        "adverb",
+        "b1"
+      ]
+    },
+    {
+      "id": "13",
+      "term": "segera",
+      "definition": "soon / immediately",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "14",
+      "term": "sebentar lagi",
+      "definition": "soon / in a moment",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "15",
+      "term": "langsung",
+      "definition": "directly / straight away / right away",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "16",
+      "term": "selalu",
+      "definition": "always",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "term": "sering",
+      "definition": "often",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "term": "jarang",
+      "definition": "rarely / seldom",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "term": "kadang-kadang",
+      "definition": "sometimes",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "term": "biasanya",
+      "definition": "usually",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "term": "tidak lagi",
+      "definition": "no longer / not anymore",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "term": "masih belum",
+      "definition": "still not",
+      "tags": [
+        "aspect",
+        "adverb",
+        "b1"
+      ]
+    },
+    {
+      "id": "23",
+      "term": "sudah lama",
+      "definition": "for a long time / a long time ago",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "term": "hampir",
+      "definition": "almost / nearly",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "term": "sama sekali",
+      "definition": "at all (with negation)",
+      "tags": [
+        "aspect",
+        "adverb",
+        "b1"
+      ]
+    },
+    {
+      "id": "26",
+      "term": "tiba-tiba",
+      "definition": "suddenly",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "27",
+      "term": "akhirnya",
+      "definition": "finally / in the end",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "28",
+      "term": "mula-mula",
+      "definition": "at first / in the beginning",
+      "tags": [
+        "aspect",
+        "adverb",
+        "b1"
+      ]
+    },
+    {
+      "id": "29",
+      "term": "terus",
+      "definition": "continuously / keep on / then",
+      "tags": [
+        "aspect",
+        "adverb",
+        "a2"
+      ]
+    },
+    {
+      "id": "30",
+      "term": "sekali-sekali",
+      "definition": "once in a while / from time to time",
+      "tags": [
+        "aspect",
+        "adverb",
+        "b1"
+      ]
+    },
+    {
+      "id": "31",
+      "term": "sempat",
+      "definition": "to have had the time to / to get the chance to",
+      "tags": [
+        "aspect",
+        "adverb",
+        "b1"
+      ]
+    },
+    {
+      "id": "32",
+      "term": "Sudah atau belum?",
+      "definition": "done or not yet? / already or not yet?",
+      "tags": [
+        "aspect",
+        "expression",
+        "a2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "type": "sentence_deck",
+  "id": "en-phr-work-school",
+  "title": "Work and School",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya bekerja di kantor.",
+      "translation": "I work in an office.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Kantor saya di pusat kota.",
+      "translation": "My office is in the city centre.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Saya guru bahasa Inggris.",
+      "translation": "I'm an English teacher.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Rapatnya mulai jam sembilan.",
+      "translation": "The meeting starts at nine.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya sedang mencari pekerjaan.",
+      "translation": "I'm looking for a job.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2",
+        "aspect",
+        "me"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Bos saya sangat baik.",
+      "translation": "My boss is very nice.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya sering lembur.",
+      "translation": "I often work overtime.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Anak saya kelas tiga SD.",
+      "translation": "My child is in the third grade of primary school.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Sekolah mulai jam tujuh pagi.",
+      "translation": "School starts at seven in the morning.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Murid-murid sedang belajar matematika.",
+      "translation": "The pupils are studying maths.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1",
+        "aspect",
+        "ber"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya lupa mengerjakan PR.",
+      "translation": "I forgot to do my homework.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Ujiannya sulit sekali.",
+      "translation": "The exam was really difficult.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Saya lulus ujian.",
+      "translation": "I passed the exam.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Guru itu menjelaskan pelajaran dengan jelas.",
+      "translation": "That teacher explains the lesson clearly.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya kuliah di Universitas Indonesia.",
+      "translation": "I study at the University of Indonesia.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Gajinya cukup besar.",
+      "translation": "The salary is quite high.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya mengirim email ke klien.",
+      "translation": "I send an email to the client.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Laporan ini harus selesai hari ini.",
+      "translation": "This report must be finished today.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya libur hari Jumat.",
+      "translation": "I'm off on Friday.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Dia bekerja sebagai perawat di rumah sakit.",
+      "translation": "She works as a nurse at the hospital.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Perusahaan itu membuka lowongan baru.",
+      "translation": "That company is opening new vacancies.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "b1",
+        "me"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Rapat ditunda sampai minggu depan.",
+      "translation": "The meeting has been postponed until next week.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "b1",
+        "passive"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Saya belum menyelesaikan tugas saya.",
+      "translation": "I haven't finished my task yet.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2",
+        "negation",
+        "me"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Perpustakaan kampus buka sampai malam.",
+      "translation": "The campus library is open until the evening.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Kami istirahat makan siang jam dua belas.",
+      "translation": "We take a lunch break at twelve.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Siswa wajib memakai seragam.",
+      "translation": "Students are required to wear a uniform.",
+      "tags": [
+        "sentences",
+        "work-school",
+        "a2",
+        "me"
+      ]
+    }
+  ]
+}

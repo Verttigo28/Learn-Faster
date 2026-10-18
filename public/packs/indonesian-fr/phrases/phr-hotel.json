@@ -1,0 +1,285 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-hotel",
+  "title": "À l'hôtel",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya sudah memesan kamar.",
+      "translation": "J'ai déjà réservé une chambre.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1",
+        "aspect",
+        "me"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Atas nama siapa, Pak?",
+      "translation": "À quel nom, monsieur ?",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Atas nama Dupont.",
+      "translation": "Au nom de Dupont.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Ada kamar kosong untuk malam ini?",
+      "translation": "Avez-vous une chambre libre pour ce soir ?",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Saya mau kamar untuk dua orang.",
+      "translation": "Je voudrais une chambre pour deux personnes.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Berapa harga per malam?",
+      "translation": "Quel est le prix par nuit ?",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Apakah sarapan sudah termasuk?",
+      "translation": "Le petit-déjeuner est-il compris ?",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Jam berapa sarapan dimulai?",
+      "translation": "À quelle heure commence le petit-déjeuner ?",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a2",
+        "question",
+        "passif"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "AC di kamar saya rusak.",
+      "translation": "La climatisation de ma chambre est en panne.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Air panasnya tidak keluar.",
+      "translation": "Il n'y a pas d'eau chaude.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a2",
+        "negation"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Boleh minta handuk tambahan?",
+      "translation": "Puis-je avoir une serviette supplémentaire ?",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Apa kata sandi Wi-Fi di sini?",
+      "translation": "Quel est le mot de passe du Wi-Fi ici ?",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1",
+        "question"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Saya mau check-out jam sebelas.",
+      "translation": "Je voudrais libérer la chambre à onze heures.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Bisa titip koper di sini?",
+      "translation": "Puis-je laisser ma valise ici ?",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Kamar ini menghadap ke laut.",
+      "translation": "Cette chambre donne sur la mer.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Kunci kamar saya hilang.",
+      "translation": "J'ai perdu la clé de ma chambre.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Tolong bersihkan kamar saya.",
+      "translation": "Nettoyez ma chambre, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Kolam renangnya buka sampai jam berapa?",
+      "translation": "Jusqu'à quelle heure la piscine est-elle ouverte ?",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a2",
+        "question"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya akan menginap tiga malam.",
+      "translation": "Je vais rester trois nuits.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a2",
+        "aspect",
+        "me"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Kamarnya bersih dan nyaman.",
+      "translation": "La chambre est propre et confortable.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Kamar mandinya di luar kamar.",
+      "translation": "La salle de bains est à l'extérieur de la chambre.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a2"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Apakah ada layanan antar-jemput bandara?",
+      "translation": "Y a-t-il une navette pour l'aéroport ?",
+      "tags": [
+        "phrases",
+        "hotel",
+        "b1",
+        "question"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Lift ada di sebelah kiri.",
+      "translation": "L'ascenseur est sur la gauche.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Kamar saya terlalu bising.",
+      "translation": "Ma chambre est trop bruyante.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a2"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Tolong bangunkan saya jam enam.",
+      "translation": "Réveillez-moi à six heures, s'il vous plaît.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a2"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Saya mau membayar sekarang.",
+      "translation": "Je voudrais payer maintenant.",
+      "tags": [
+        "phrases",
+        "hotel",
+        "a1",
+        "me"
+      ]
+    }
+  ]
+}

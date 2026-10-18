@@ -1,0 +1,280 @@
+{
+  "type": "sentence_deck",
+  "id": "phr-maison-routine",
+  "title": "La maison et la routine quotidienne",
+  "items": [
+    {
+      "id": "1",
+      "text": "Saya bangun jam lima pagi.",
+      "translation": "Je me lève à cinq heures du matin.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Saya mandi dua kali sehari.",
+      "translation": "Je me douche deux fois par jour.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Setelah mandi, saya sarapan.",
+      "translation": "Après la douche, je prends le petit-déjeuner.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Saya menyikat gigi setiap pagi.",
+      "translation": "Je me brosse les dents tous les matins.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "5",
+      "text": "Ibu sedang memasak di dapur.",
+      "translation": "Maman est en train de cuisiner dans la cuisine.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1",
+        "aspect",
+        "me"
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Rumah kami punya tiga kamar tidur.",
+      "translation": "Notre maison a trois chambres.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Saya mencuci piring setelah makan.",
+      "translation": "Je fais la vaisselle après le repas.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Adik saya menyapu lantai.",
+      "translation": "Mon petit frère balaie le sol.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Kami tinggal di rumah kecil.",
+      "translation": "Nous habitons dans une petite maison.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Saya berangkat kerja jam tujuh.",
+      "translation": "Je pars au travail à sept heures.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1",
+        "ber"
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Saya tidur jam sepuluh malam.",
+      "translation": "Je me couche à dix heures du soir.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "12",
+      "text": "Kamar mandi ada di belakang.",
+      "translation": "La salle de bains est derrière.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Tolong matikan lampunya.",
+      "translation": "Éteins la lumière, s'il te plaît.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Ayah membaca koran di ruang tamu.",
+      "translation": "Papa lit le journal dans le salon.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Saya menyiram tanaman di kebun.",
+      "translation": "J'arrose les plantes dans le jardin.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Kucing kami tidur di sofa.",
+      "translation": "Notre chat dort sur le canapé.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Saya mencuci baju pada hari Sabtu.",
+      "translation": "Je lave le linge le samedi.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Dapurnya kecil tetapi bersih.",
+      "translation": "La cuisine est petite mais propre.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Saya pulang ke rumah jam lima sore.",
+      "translation": "Je rentre à la maison à cinq heures de l'après-midi.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Jendelanya belum ditutup.",
+      "translation": "La fenêtre n'a pas encore été fermée.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a2",
+        "passif",
+        "negation"
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Kami makan siang di rumah.",
+      "translation": "Nous déjeunons à la maison.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Saya menonton televisi sebelum tidur.",
+      "translation": "Je regarde la télévision avant de dormir.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1",
+        "me"
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Kulkasnya penuh dengan buah.",
+      "translation": "Le frigo est plein de fruits.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a2"
+      ]
+    },
+    {
+      "id": "24",
+      "text": "Rumah saya dekat dengan pasar.",
+      "translation": "Ma maison est près du marché.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a1"
+      ]
+    },
+    {
+      "id": "25",
+      "text": "Saya merapikan tempat tidur setiap pagi.",
+      "translation": "Je fais mon lit tous les matins.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a2",
+        "me"
+      ]
+    },
+    {
+      "id": "26",
+      "text": "Pembantu kami datang tiga kali seminggu.",
+      "translation": "Notre aide ménagère vient trois fois par semaine.",
+      "tags": [
+        "phrases",
+        "routine",
+        "a2"
+      ]
+    }
+  ]
+}
