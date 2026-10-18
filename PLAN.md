@@ -9,12 +9,12 @@ Chaque phase = un commit sur la branche `improvements`, build + tests verts.
 - [x] Hygiène repo : `tsconfig.tsbuildinfo` hors git, scripts npm `test` / `lint`
 
 ## Phase 1 — Bugs
-- [ ] Ordre des mots : le mélange ne doit pas changer à chaque clic
-- [ ] Un seul `shuffle` Fisher–Yates partout (flashcards, phrases)
-- [ ] QCM vocab : pas de distracteur identique à la bonne réponse ; distracteurs du même deck en mode practice
-- [ ] Import/suppression par index (`deckId` / `examId`) au lieu du préfixe d'id
-- [ ] Vraie table `sentenceDecks` (migration Dexie v4) — le titre survit à l'export/import
-- [ ] Index multi-entrées `*tags`
+- [x] Ordre des mots : le mélange ne doit pas changer à chaque clic
+- [x] Un seul `shuffle` Fisher–Yates partout (flashcards, phrases)
+- [x] QCM vocab : pas de distracteur identique à la bonne réponse ; distracteurs du même deck en mode practice
+- [x] Import/suppression par index (`deckId` / `examId`) au lieu du préfixe d'id
+- [x] Vraie table `sentenceDecks` (migration Dexie v4) — le titre survit à l'export/import
+- [x] Index multi-entrées `*tags`
 
 ## Phase 2 — Nettoyage
 - [ ] Supprimer `JsonBuilderPage.vue` (non routée) et Pinia (inutilisé)

@@ -52,14 +52,9 @@ async function clearAll() {
 
   await db.transaction(
       "rw",
-      [db.vocabDecks, db.vocabItems, db.exams, db.examQuestions, db.sentenceExercises, db.attempts],
+      db.tables,
       async () => {
-        await db.vocabDecks.clear();
-        await db.vocabItems.clear();
-        await db.exams.clear();
-        await db.examQuestions.clear();
-        await db.sentenceExercises.clear();
-        await db.attempts.clear();
+        await Promise.all(db.tables.map((t) => t.clear()));
       }
   );
 

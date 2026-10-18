@@ -5,8 +5,9 @@
  * - Clique un mot dans "Ta réponse" => l'enlève
  *
  * IMPORTANT: modelValue peut être undefined au premier render => fallback [].
+ * Le mélange est fait une seule fois par phrase (sinon les mots bougent à chaque clic).
  */
-import { computed } from "vue";
+import { computed, ref, watch } from "vue";
 import { shuffleTokens } from "../utils/sentence";
 
 const props = defineProps<{
@@ -20,20 +21,23 @@ const emit = defineEmits<{
 
 const answer = computed(() => props.modelValue ?? []);
 
+const shuffled = ref<string[]>([]);
+watch(
+  () => props.tokens,
+  (tokens) => { shuffled.value = shuffleTokens(tokens); },
+  { immediate: true }
+);
+
+/** Mots restants, dans l'ordre mélangé figé (chaque occurrence n'est retirée qu'une fois). */
 const remaining = computed(() => {
-  const used = answer.value.slice();
   const usedCount = new Map<string, number>();
-  for (const u of used) usedCount.set(u, (usedCount.get(u) ?? 0) + 1);
+  for (const u of answer.value) usedCount.set(u, (usedCount.get(u) ?? 0) + 1);
 
-  const all = shuffleTokens(props.tokens);
-  const seenCount = new Map<string, number>();
   const rem: string[] = [];
-
-  for (const t of all) {
-    seenCount.set(t, (seenCount.get(t) ?? 0) + 1);
-    const haveUsed = usedCount.get(t) ?? 0;
-    const seen = seenCount.get(t) ?? 0;
-    if (seen > haveUsed) rem.push(t);
+  for (const t of shuffled.value) {
+    const left = usedCount.get(t) ?? 0;
+    if (left > 0) usedCount.set(t, left - 1);
+    else rem.push(t);
   }
   return rem;
 });
@@ -50,7 +54,6 @@ function unpick(index: number) {
 
 <template>
   <div class="card">
-    <!-- ⚠️ Vue n'accepte pas deux attributs `class` : on fusionne. -->
     <div class="small mb-2">Mets les mots dans le bon ordre (S-P-O-K).</div>
 
     <div class="small">Ta réponse</div>

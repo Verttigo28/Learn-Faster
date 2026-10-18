@@ -12,17 +12,6 @@ import { tokenizeSentence } from "../utils/sentence";
  * Idempotent: same deck id overwrites its items.
  */
 export async function importVocabDeck(data: VocabDeckJson): Promise<{ title: string; count: number }> {
-  await db.vocabDecks.put({
-    id: data.id,
-    title: data.title,
-    from: data.from,
-    to: data.to,
-    createdAt: Date.now()
-  });
-
-  const prefix = `${data.id}:`;
-  await db.vocabItems.where("id").startsWith(prefix).delete();
-
   const items = data.items.map((it) => ({
     id: `${data.id}:${it.id}`,
     deckId: data.id,
@@ -31,7 +20,19 @@ export async function importVocabDeck(data: VocabDeckJson): Promise<{ title: str
     tags: it.tags ?? []
   }));
 
-  await db.vocabItems.bulkPut(items);
+  await db.transaction("rw", [db.vocabDecks, db.vocabItems], async () => {
+    const existing = await db.vocabDecks.get(data.id);
+    await db.vocabDecks.put({
+      id: data.id,
+      title: data.title,
+      from: data.from,
+      to: data.to,
+      createdAt: existing?.createdAt ?? Date.now()
+    });
+    await db.vocabItems.where("deckId").equals(data.id).delete();
+    await db.vocabItems.bulkPut(items);
+  });
+
   return { title: data.title, count: items.length };
 }
 
@@ -40,16 +41,6 @@ export async function importVocabDeck(data: VocabDeckJson): Promise<{ title: str
  * Idempotent: same exam id overwrites its questions.
  */
 export async function importQcmExam(data: QcmExamJson): Promise<{ title: string; count: number }> {
-  await db.exams.put({
-    id: data.id,
-    title: data.title,
-    durationSeconds: data.durationSeconds,
-    createdAt: Date.now()
-  });
-
-  const prefix = `${data.id}:`;
-  await db.examQuestions.where("id").startsWith(prefix).delete();
-
   const questions = data.questions.map((q) => ({
     id: `${data.id}:${q.id}`,
     examId: data.id,
@@ -59,7 +50,18 @@ export async function importQcmExam(data: QcmExamJson): Promise<{ title: string;
     tags: q.tags ?? []
   }));
 
-  await db.examQuestions.bulkPut(questions);
+  await db.transaction("rw", [db.exams, db.examQuestions], async () => {
+    const existing = await db.exams.get(data.id);
+    await db.exams.put({
+      id: data.id,
+      title: data.title,
+      durationSeconds: data.durationSeconds,
+      createdAt: existing?.createdAt ?? Date.now()
+    });
+    await db.examQuestions.where("examId").equals(data.id).delete();
+    await db.examQuestions.bulkPut(questions);
+  });
+
   return { title: data.title, count: questions.length };
 }
 
@@ -68,26 +70,30 @@ export async function importQcmExam(data: QcmExamJson): Promise<{ title: string;
  * Idempotent: same deck id overwrites its sentences.
  */
 export async function importSentenceDeck(data: SentenceDeckJson): Promise<{ title: string; count: number }> {
-  const prefix = `${data.id}:`;
-  await db.sentenceExercises.where("id").startsWith(prefix).delete();
-
+  const now = Date.now();
   const sentences = data.items
     .map((s) => {
       const text = s.text.trim();
-      const tokens = tokenizeSentence(text);
       const translation = (s.translation ?? "").trim();
       return {
         id: `${data.id}:${s.id}`,
+        deckId: data.id,
         text,
         translation: translation || undefined,
-        tokens,
+        tokens: tokenizeSentence(text),
         tags: s.tags ?? [],
-        createdAt: Date.now()
+        createdAt: now
       };
     })
     .filter((s) => s.text.length > 0 && s.tokens.length >= 2);
 
-  await db.sentenceExercises.bulkPut(sentences);
+  await db.transaction("rw", [db.sentenceDecks, db.sentenceExercises], async () => {
+    const existing = await db.sentenceDecks.get(data.id);
+    await db.sentenceDecks.put({ id: data.id, title: data.title, createdAt: existing?.createdAt ?? now });
+    await db.sentenceExercises.where("deckId").equals(data.id).delete();
+    await db.sentenceExercises.bulkPut(sentences);
+  });
+
   return { title: data.title, count: sentences.length };
 }
 
@@ -112,7 +118,7 @@ export async function importBundle(
   // ✅ IMPORTANT: pass tables as an ARRAY to satisfy Dexie typings (avoid TS2554)
   await db.transaction(
       "rw",
-      [db.vocabDecks, db.vocabItems, db.exams, db.examQuestions, db.sentenceExercises],
+      [db.vocabDecks, db.vocabItems, db.exams, db.examQuestions, db.sentenceDecks, db.sentenceExercises],
       async () => {
         for (const d of bundle.vocabDecks) {
           const r = await importVocabDeck(d);

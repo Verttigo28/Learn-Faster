@@ -32,8 +32,18 @@ export type ExamQuestion = {
   tags?: string[];
 };
 
-export type SentenceExercise = {
+export type SentenceDeck = {
   id: string;
+  title: string;
+  createdAt: number;
+};
+
+/** Deck par défaut des phrases créées à la main (et des anciennes phrases sans deck). */
+export const MANUAL_SENTENCE_DECK_ID = "manual";
+
+export type SentenceExercise = {
+  id: string; // unique key, e.g. "deckId:sentenceId"
+  deckId: string;
   text: string;
   /** Traduction FR (optionnelle) affichée en correction / aide */
   translation?: string;
@@ -94,11 +104,12 @@ export class AppDB extends Dexie {
   vocabItems!: Table<VocabItem, string>;
   exams!: Table<Exam, string>;
   examQuestions!: Table<ExamQuestion, string>;
+  sentenceDecks!: Table<SentenceDeck, string>;
   sentenceExercises!: Table<SentenceExercise, string>;
   attempts!: Table<Attempt, string>;
 
-  constructor() {
-    super("revisions_db");
+  constructor(name = "revisions_db") {
+    super(name);
 
     // v1 (original schema)
     this.version(1).stores({
@@ -128,6 +139,38 @@ export class AppDB extends Dexie {
       sentenceExercises: "id, createdAt",
       attempts: "id, type, refId, startedAt, finishedAt"
     });
+
+    // v4: sentence decks + deckId on sentences, multi-entry tag indexes
+    this.version(4)
+      .stores({
+        vocabDecks: "id, title, createdAt",
+        vocabItems: "id, deckId, *tags",
+        exams: "id, title, createdAt",
+        examQuestions: "id, examId, *tags",
+        sentenceDecks: "id, title, createdAt",
+        sentenceExercises: "id, deckId, createdAt, *tags",
+        attempts: "id, type, refId, startedAt, finishedAt"
+      })
+      .upgrade(async (tx) => {
+        // Old sentences had no deck: derive it from the "deckId:" id prefix, else the manual deck.
+        const decks = new Map<string, SentenceDeck>();
+        await tx
+          .table("sentenceExercises")
+          .toCollection()
+          .modify((s: SentenceExercise) => {
+            const i = s.id.indexOf(":");
+            const deckId = i >= 0 ? s.id.slice(0, i) : MANUAL_SENTENCE_DECK_ID;
+            s.deckId = deckId;
+            if (!decks.has(deckId)) {
+              decks.set(deckId, {
+                id: deckId,
+                title: deckId === MANUAL_SENTENCE_DECK_ID ? "Mes phrases" : `Phrases (${deckId})`,
+                createdAt: s.createdAt ?? Date.now()
+              });
+            }
+          });
+        await tx.table("sentenceDecks").bulkPut([...decks.values()]);
+      });
   }
 }
 

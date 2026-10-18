@@ -6,6 +6,7 @@ import EmptyState from "../components/EmptyState.vue";
 import BaseModal from "../components/BaseModal.vue";
 import { uid } from "../utils/id";
 import { clamp01 } from "../utils/time";
+import { shuffle } from "../utils/shuffle";
 
 const props = defineProps<{ deckId?: string }>();
 
@@ -39,7 +40,7 @@ async function load() {
   items.value = await db.vocabItems.where("deckId").equals(deckId.value).toArray();
 
   // mélange simple
-  items.value = items.value.sort(() => Math.random() - 0.5);
+  items.value = shuffle(items.value);
 
   idx.value = 0;
   flipped.value = false;

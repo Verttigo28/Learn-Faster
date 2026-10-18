@@ -7,6 +7,7 @@ import BaseModal from "../components/BaseModal.vue";
 import { buildVocabQuestion } from "../services/vocabQuiz";
 import { uid } from "../utils/id";
 import { clamp01 } from "../utils/time";
+import { shuffle } from "../utils/shuffle";
 
 const props = defineProps<{ deckId?: string }>();
 
@@ -42,7 +43,7 @@ async function load() {
   deck.value = (await db.vocabDecks.get(deckId.value)) ?? null;
   items.value = await db.vocabItems.where("deckId").equals(deckId.value).toArray();
 
-  order.value = items.value.slice().sort(() => Math.random() - 0.5);
+  order.value = shuffle(items.value);
 
   idx.value = 0;
   selected.value = null;

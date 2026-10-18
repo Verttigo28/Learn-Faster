@@ -1,8 +1,7 @@
-import { db } from "../db";
-import { hasAnyTag } from "./tags";
+import { db, type ExamQuestion, type SentenceExercise, type VocabItem } from "../db";
+import type { Table } from "dexie";
 import { buildVocabQuestion } from "./vocabQuiz";
 import { shuffle } from "../utils/shuffle";
-
 export type PracticeSource = "vocab" | "exam" | "order";
 
 export type PracticeConfig = {
@@ -36,6 +35,12 @@ export type PracticeQuestion =
       answer?: string[];
     };
 
+/** All rows when no tag is selected, else rows having at least one of the tags (via the *tags index). */
+async function byTags<T>(table: Table<T, string>, tags: string[]): Promise<T[]> {
+  if (!tags.length) return table.toArray();
+  return table.where("tags").anyOf(tags).distinct().toArray();
+}
+
 export async function buildPractice(config: PracticeConfig): Promise<PracticeQuestion[]> {
   const count = Math.max(1, Math.min(200, config.count || 20));
   const tags = config.tags ?? [];
@@ -44,15 +49,27 @@ export async function buildPractice(config: PracticeConfig): Promise<PracticeQue
   const pool: PracticeQuestion[] = [];
 
   if (sources.includes("vocab")) {
-    const vocabItems = (await db.vocabItems.toArray()).filter(it => hasAnyTag(it.tags, tags));
+    const vocabItems = await byTags<VocabItem>(db.vocabItems, tags);
+    // Distractors come from the same deck (same language pair) when it has enough items.
+    const allItems = await db.vocabItems.toArray();
+    const byDeck = new Map<string, VocabItem[]>();
+    for (const it of allItems) {
+      const list = byDeck.get(it.deckId);
+      if (list) list.push(it);
+      else byDeck.set(it.deckId, [it]);
+    }
+
     for (const it of shuffle(vocabItems)) {
-      const q = buildVocabQuestion(vocabItems, it, Math.min(4, Math.max(2, vocabItems.length)));
+      const sameDeck = byDeck.get(it.deckId) ?? [];
+      const candidates = sameDeck.length >= 4 ? sameDeck : allItems;
+      const q = buildVocabQuestion(candidates, it, 4);
+      if (q.options.length < 2) continue;
       pool.push({ kind: "vocab_mcq", id: it.id, prompt: q.prompt, options: q.options });
     }
   }
 
   if (sources.includes("exam")) {
-    const qs = (await db.examQuestions.toArray()).filter(q => hasAnyTag(q.tags, tags));
+    const qs = await byTags<ExamQuestion>(db.examQuestions, tags);
     for (const q of shuffle(qs)) {
       pool.push({
         kind: "exam_mcq",
@@ -66,7 +83,7 @@ export async function buildPractice(config: PracticeConfig): Promise<PracticeQue
   }
 
   if (sources.includes("order")) {
-    const ss = (await db.sentenceExercises.toArray()).filter(s => hasAnyTag(s.tags, tags));
+    const ss = await byTags<SentenceExercise>(db.sentenceExercises, tags);
     for (const s of shuffle(ss)) {
       pool.push({ kind: "sentence_order", id: s.id, text: s.text, translation: s.translation, tokens: s.tokens, answer: [] });
     }
@@ -74,7 +91,6 @@ export async function buildPractice(config: PracticeConfig): Promise<PracticeQue
 
   return shuffle(pool).slice(0, Math.min(count, pool.length));
 }
-
 export function gradePractice(questions: PracticeQuestion[]): { correct: number; total: number; score: number; breakdown: Record<string, number> } {
   let correct = 0;
   let total = 0;
