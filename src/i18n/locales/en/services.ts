@@ -27,5 +27,6 @@ export default {
   pdfNoDetails: "This attempt has no details (old record). Take a new session to export a PDF.",
   pdfError: "Could not export the PDF",
   exportError: "Export failed: {error}",
-  speechUnavailable: "Dictation unavailable: speech synthesis is not supported."
+  speechUnavailable: "Dictation unavailable: speech synthesis is not supported.",
+  noVoice: "No {language} voice on this device, so it can't be read aloud correctly. Install one in your system text-to-speech settings (Android: Settings > Accessibility > Text-to-speech; Windows: Settings > Time & language > Speech)."
 };

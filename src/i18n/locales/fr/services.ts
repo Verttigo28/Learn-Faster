@@ -29,5 +29,6 @@ export default {
   pdfNoDetails: "Cette tentative ne contient pas de détails (ancienne stat). Relance une session pour générer un export PDF.",
   pdfError: "Impossible d'exporter le PDF",
   exportError: "Export impossible : {error}",
-  speechUnavailable: "Dictée indisponible : synthèse vocale non supportée."
+  speechUnavailable: "Dictée indisponible : synthèse vocale non supportée.",
+  noVoice: "Aucune voix {language} sur cet appareil : la lecture serait incorrecte. Installe-la dans les réglages de synthèse vocale du système (Android : Paramètres > Accessibilité > Synthèse vocale ; Windows : Paramètres > Heure et langue > Voix)."
 } satisfies typeof en;
