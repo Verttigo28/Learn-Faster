@@ -40,11 +40,11 @@ Chaque phase = un commit sur la branche `improvements`, build + tests verts.
 - [x] PWA : service worker pour fonctionner hors-ligne sur le web
 
 ## Phase 6 — Nouvelles fonctionnalités
-- [ ] Exercice « texte à trous » (cloze) généré depuis les phrases
-- [ ] Dictée : l'appli prononce le mot, on l'écrit
-- [ ] Import CSV / TSV (export Anki / Quizlet, copier-coller tableur)
-- [ ] Recherche globale (vocab, QCM, phrases)
-- [ ] Objectif quotidien réglable + progression sur l'accueil
-- [ ] Thème clair / sombre
-- [ ] Raccourcis clavier dans les sessions (espace = retourner, 1–4 = réponse, ←/→)
-- [ ] Rappel de sauvegarde (date du dernier export)
+- [x] Exercice « texte à trous » (cloze) généré depuis les phrases
+- [x] Dictée : l'appli prononce le mot, on l'écrit
+- [x] Import CSV / TSV (export Anki / Quizlet, copier-coller tableur)
+- [x] Recherche globale (vocab, QCM, phrases)
+- [x] Objectif quotidien réglable + progression sur l'accueil
+- [x] Thème clair / sombre
+- [x] Raccourcis clavier dans les sessions (espace = retourner, 1–4 = réponse, ←/→)
+- [x] Rappel de sauvegarde (date du dernier export)

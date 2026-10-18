@@ -16,6 +16,36 @@
         --danger: 255 107 107;
         --ok: 61 220 151;
         --border: 255 255 255;
+        --sunken: 0 0 0;
+        color-scheme: dark;
+    }
+
+    /* Thème clair : data-theme="light", ou "system" quand l'OS est en clair */
+    :root[data-theme="light"]{
+        --bg: 241 244 251;
+        --card: 255 255 255;
+        --text: 17 24 39;
+        --muted: 75 85 120;
+        --accent: 59 102 222;
+        --danger: 214 48 49;
+        --ok: 16 150 96;
+        --border: 15 23 42;
+        --sunken: 255 255 255;
+        color-scheme: light;
+    }
+    @media (prefers-color-scheme: light){
+        :root[data-theme="system"]{
+            --bg: 241 244 251;
+            --card: 255 255 255;
+            --text: 17 24 39;
+            --muted: 75 85 120;
+            --accent: 59 102 222;
+            --danger: 214 48 49;
+            --ok: 16 150 96;
+            --border: 15 23 42;
+            --sunken: 255 255 255;
+            color-scheme: light;
+        }
     }
 
     *{ box-sizing: border-box; }
@@ -100,7 +130,7 @@
         user-select: none;
         -webkit-tap-highlight-color: transparent;
 
-        @apply inline-flex items-center justify-center gap-2 rounded-xl border border-border/10 bg-white/5
+        @apply inline-flex items-center justify-center gap-2 rounded-xl border border-border/10 bg-border/5
         px-3 py-2 text-sm font-medium text-text whitespace-nowrap;
     }
     .btn:hover{ @apply border-accent/60; }
@@ -111,7 +141,7 @@
     a.btn:hover{ @apply no-underline; }
     .btn:disabled, .btn[aria-disabled="true"]{ @apply opacity-55 cursor-not-allowed pointer-events-none; }
 
-    .input{ @apply w-full rounded-xl border border-border/10 bg-black/20 px-3 py-2 text-text; }
+    .input{ @apply w-full rounded-xl border border-border/10 bg-sunken/20 px-3 py-2 text-text; }
 
     .small{ @apply text-[13px] text-muted; }
     .kpi{ @apply text-[26px] font-extrabold; }
@@ -169,13 +199,13 @@
     /* KPIs : marge bottom + center */
     .home .kpis{ @apply grid grid-cols-2 tablet:grid-cols-4 gap-2.5 mb-3 mt-1; }
     .home .kpiBox{
-        @apply rounded-2xl border border-border/10 bg-black/10 p-1
+        @apply rounded-2xl border border-border/10 bg-sunken/10 p-1
         flex flex-col items-center justify-center text-center;
     }
     .home .kpiBox .small{ @apply text-muted; }
 
     .home .actionsGrid{ @apply grid grid-cols-2 gap-2.5; }
-    .home .startGrid{ @apply grid grid-cols-1 gap-2.5 tablet:grid-cols-2 mt-1; }
+    .home .startGrid{ @apply grid grid-cols-2 gap-2.5 mt-1; }
     .home .actionBtn, .home .startBtn{ @apply w-full justify-center text-center py-2 rounded-2xl; }
     .home .reset{ @apply col-span-full; }
     .home .exportHint{ @apply col-span-full; }
@@ -233,7 +263,7 @@
     .modalCard, .modalCardRight{ @apply card cardFill; }
 
     .tagBox{
-        @apply mt-2 rounded-2xl border border-border/10 bg-black/10 p-3 overflow-auto;
+        @apply mt-2 rounded-2xl border border-border/10 bg-sunken/10 p-3 overflow-auto;
         max-height: clamp(160px, 31.5vh, 324px);
         -webkit-overflow-scrolling: touch;
     }
@@ -249,7 +279,7 @@
     .fileInput{ @apply hidden; }
     .fileName{ @apply opacity-90; }
     .code{
-        @apply flex-1 min-h-0 overflow-auto whitespace-pre-wrap rounded-2xl border border-border/10 bg-black/25 p-3 text-xs;
+        @apply flex-1 min-h-0 overflow-auto whitespace-pre-wrap rounded-2xl border border-border/10 bg-sunken/25 p-3 text-xs;
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
 
@@ -312,4 +342,22 @@
     .stage-learning{ background: rgb(var(--accent) / 0.55); }
     .stage-mastered{ background: rgb(var(--accent)); }
     .legendSwatch{ @apply inline-block h-2.5 w-2.5 rounded-sm align-middle mr-1; }
+}
+
+@layer components{
+    :root[data-theme="light"] .input{ background-color: rgb(255 255 255 / .9); }
+    @media (prefers-color-scheme: light){
+        :root[data-theme="system"] .input{ background-color: rgb(255 255 255 / .9); }
+    }
+}
+
+@layer components{
+    .home .goal{ @apply mb-3; }
+    .home .backupHint{ @apply mb-3 rounded-xl border border-accent/40 bg-accent/10 px-3 py-2; }
+    /* Petits écrans : la home défile en entier plutôt que d'écraser les listes */
+    @media (max-width: 767px){
+        .home{ overflow-y: auto; }
+        .home .bottom{ flex: none; overflow: visible; }
+        .home .bottom > section, .home .listGrid{ overflow: visible; }
+    }
 }

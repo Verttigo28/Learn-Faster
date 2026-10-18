@@ -3,6 +3,8 @@ import { useRoute } from "vue-router";
 import { Capacitor } from "@capacitor/core";
 import { StatusBar, Style } from "@capacitor/status-bar";
 import AppDialogs from "./components/AppDialogs.vue";
+import { getSetting } from "./services/settings";
+import { applyTheme } from "./services/theme";
 
 const route = useRoute();
 function isActive(path: string) {
@@ -20,6 +22,7 @@ async function enableFullscreen() {
 }
 
 enableFullscreen().catch(console.error);
+getSetting("theme").then(applyTheme).catch(console.error);
 </script>
 
 <template>
@@ -35,6 +38,8 @@ enableFullscreen().catch(console.error);
           <router-link to="/sentences" class="pill" :class="{ active: isActive('/sentences') }">Phrases</router-link>
           <router-link to="/exams" class="pill" :class="{ active: isActive('/exams') }">Exams</router-link>
           <router-link to="/stats" class="pill" :class="{ active: isActive('/stats') }">Stats</router-link>
+          <router-link to="/search" class="pill" :class="{ active: isActive('/search') }" title="Recherche">🔍</router-link>
+          <router-link to="/settings" class="pill" :class="{ active: isActive('/settings') }" title="Réglages">⚙️</router-link>
         </div>
       </div>
       <span class="small">Powered by Altera</span>

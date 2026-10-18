@@ -15,6 +15,7 @@ module.exports = {
         danger: "rgb(var(--danger) / <alpha-value>)",
         ok: "rgb(var(--ok) / <alpha-value>)",
         border: "rgb(var(--border) / <alpha-value>)",
+        sunken: "rgb(var(--sunken) / <alpha-value>)",
       },
       screens: {
         tablet: "768px",

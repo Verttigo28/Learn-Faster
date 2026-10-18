@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { confirmDialog, toast } from "../services/dialog";
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { db, type VocabDeck, type Exam } from "../db";
 import EmptyState from "../components/EmptyState.vue";
 import { exportAllData } from "../services/exporter";
 import { saveJson } from "../services/fileSave";
-import { countDueToday } from "../services/srs";
+import { countDueToday, DAY } from "../services/srs";
+import { getSetting, setSetting } from "../services/settings";
+import { answersToday, streak } from "../services/stats";
 import { useRouter } from "vue-router";
 const router = useRouter();
 
@@ -38,6 +40,17 @@ async function startRandomFlashcards() {
 
 const exportInfo = ref<string>("");
 const dueInfo = ref({ due: 0, fresh: 0 });
+const goal = ref({ done: 0, target: 30, streak: 0 });
+const lastExportAt = ref(0);
+const goalPct = computed(() => Math.min(100, Math.round((goal.value.done / Math.max(1, goal.value.target)) * 100)));
+/** Rappel si du contenu existe et aucun export depuis 7 jours. */
+const backupDue = computed(() => {
+  const hasContent = counts.value.deckCount + counts.value.examCount + counts.value.sentenceCount > 0;
+  return hasContent && Date.now() - lastExportAt.value > 7 * DAY;
+});
+const backupLabel = computed(() =>
+  lastExportAt.value ? `Dernier export il y a ${Math.floor((Date.now() - lastExportAt.value) / DAY)} jour(s).` : "Aucun export pour l'instant."
+);
 
 async function load() {
   decks.value = await db.vocabDecks.orderBy("createdAt").reverse().toArray();
@@ -50,6 +63,9 @@ async function load() {
     attemptCount: await db.attempts.count()
   };
   dueInfo.value = await countDueToday();
+  const attempts = await db.attempts.toArray();
+  goal.value = { done: answersToday(attempts), target: await getSetting("dailyGoal"), streak: streak(attempts) };
+  lastExportAt.value = await getSetting("lastExportAt");
 }
 
 async function clearAll() {
@@ -71,6 +87,8 @@ async function exportAll() {
   const date = new Date().toISOString().slice(0, 10);
   try {
     await saveJson(`revisions_export_${date}.json`, data);
+    lastExportAt.value = Date.now();
+    await setSetting("lastExportAt", lastExportAt.value);
   } catch (e) {
     toast(`Export impossible : ${e instanceof Error ? e.message : "erreur inconnue"}`, "danger");
   }
@@ -93,7 +111,22 @@ onMounted(load);
       <section class="card dashboard">
         <div class="head">
           <h2 class="title">Tableau de bord</h2>
-          <div class="sub small">Stocké en mémoire</div>
+          <div class="sub small">🔥 {{ goal.streak }} jour(s) de suite</div>
+        </div>
+
+        <div class="goal">
+          <div class="row small">
+            <span>Objectif du jour</span>
+            <span><b class="text-text">{{ goal.done }}</b> / {{ goal.target }} réponses {{ goalPct >= 100 ? "✅" : "" }}</span>
+          </div>
+          <div class="progressBar mt-1" role="progressbar" :aria-valuenow="goalPct" aria-valuemin="0" aria-valuemax="100">
+            <span class="stage-mastered" :style="{ width: `${goalPct}%` }"></span>
+            <span class="stage-fresh flex-1"></span>
+          </div>
+        </div>
+
+        <div v-if="backupDue" class="backupHint small">
+          💾 {{ backupLabel }} Pense à <button class="underline" type="button" @click="exportAll">exporter tes données</button>.
         </div>
 
         <div class="kpis">
@@ -150,6 +183,9 @@ onMounted(load);
           <router-link class="btn startBtn" to="/practice?count=15&sources=vocab">🗂️ Sprint 15 vocab</router-link>
 
           <router-link class="btn startBtn" to="/practice?count=15&sources=exam">📝 Sprint 15 QCM</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=typed&dir=both">✍️ Sprint 15 vocab écrit</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=cloze">🕳️ Sprint 15 textes à trous</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=dictation">🎧 Sprint 15 dictées</router-link>
           <router-link class="btn startBtn" to="/practice?count=30&sources=vocab,exam,order">🔥 Exam 30 questions VQP</router-link>
 
           <button class="btn startBtn" @click="startRandomFlashcards">🃏 Flashcards (aléatoire)</button>

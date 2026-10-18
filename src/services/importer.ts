@@ -6,6 +6,7 @@ import type {
   RevisionsBundleJson
 } from "../types/json";
 import { tokenizeSentence } from "../utils/sentence";
+import { uid } from "../utils/id";
 
 /**
  * Import vocab deck JSON into IndexedDB.
@@ -150,4 +151,48 @@ export async function importBundle(
     qcmQuestions,
     sentences
   };
+}
+
+/**
+ * Adds CSV/TSV rows to a vocab deck. Creates the deck when `deckId` is not given.
+ * Unlike JSON import, existing items are kept (rows are appended, exact duplicates skipped).
+ */
+export async function importVocabRows(input: {
+  deckId?: string;
+  title: string;
+  from: string;
+  to: string;
+  rows: { term: string; definition: string; tags: string[] }[];
+}): Promise<{ deckId: string; added: number; duplicates: number }> {
+  const deckId = input.deckId ?? uid("deck");
+  let added = 0;
+  let duplicates = 0;
+
+  await db.transaction("rw", [db.vocabDecks, db.vocabItems], async () => {
+    if (!(await db.vocabDecks.get(deckId))) {
+      await db.vocabDecks.put({ id: deckId, title: input.title, from: input.from, to: input.to, createdAt: Date.now() });
+    }
+    const existing = await db.vocabItems.where("deckId").equals(deckId).toArray();
+    const seen = new Set(existing.map((it) => `${it.term}\u0000${it.definition}`));
+    const items = [];
+    for (const r of input.rows) {
+      const key = `${r.term}\u0000${r.definition}`;
+      if (seen.has(key)) {
+        duplicates++;
+        continue;
+      }
+      seen.add(key);
+      items.push({
+        id: `${deckId}:${uid("csv")}`,
+        deckId,
+        term: r.term,
+        definition: r.definition,
+        tags: r.tags
+      });
+    }
+    await db.vocabItems.bulkAdd(items);
+    added = items.length;
+  });
+
+  return { deckId, added, duplicates };
 }

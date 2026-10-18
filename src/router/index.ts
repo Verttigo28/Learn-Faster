@@ -15,6 +15,8 @@ export const router = createRouter({
     { path: "/practice", component: () => import("../pages/PracticePage.vue") },
     { path: "/stats", component: () => import("../pages/StatsPage.vue") },
     { path: "/review", component: () => import("../pages/FlashcardsPage.vue") },
+    { path: "/settings", component: () => import("../pages/SettingsPage.vue") },
+    { path: "/search", component: () => import("../pages/SearchPage.vue") },
 
     { path: "/attempt/:attemptId", component: () => import("../pages/AttemptResultPage.vue"), props: true },
 

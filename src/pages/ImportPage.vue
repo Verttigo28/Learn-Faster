@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import ConfirmBar from "../components/ConfirmBar.vue";
 import { validateImport } from "../services/validate";
-import { importQcmExam, importVocabDeck, importSentenceDeck, importBundle } from "../services/importer";
+import { importQcmExam, importVocabDeck, importSentenceDeck, importBundle, importVocabRows } from "../services/importer";
+import { rowsToVocab } from "../utils/csv";
+import { toast } from "../services/dialog";
+import { db, type VocabDeck } from "../db";
 import { Capacitor, CapacitorHttp } from "@capacitor/core";
 
 const message = ref<{ text: string; kind: "info" | "ok" | "danger" } | null>(null);
@@ -115,6 +118,55 @@ async function onImportUrl() {
 }
 
 
+// --- CSV / TSV vocab import ---
+const vocabDecks = ref<VocabDeck[]>([]);
+const csvDeckId = ref("");
+const csvTitle = ref("");
+const csvFrom = ref("id");
+const csvTo = ref("fr");
+const csvText = ref("");
+const csvFileName = ref("");
+const csvFileInput = ref<HTMLInputElement | null>(null);
+const csvPreview = computed(() => rowsToVocab(csvText.value));
+
+async function loadDecks() {
+  vocabDecks.value = await db.vocabDecks.orderBy("title").toArray();
+}
+
+async function onCsvFile(e: Event) {
+  const file = (e.target as HTMLInputElement).files?.[0];
+  csvFileName.value = file?.name ?? "";
+  if (!file) return;
+  csvText.value = await file.text();
+  if (!csvDeckId.value && !csvTitle.value) csvTitle.value = file.name.replace(/\.[^.]+$/, "");
+}
+
+async function onImportCsv() {
+  const rows = csvPreview.value.rows;
+  if (!rows.length) return;
+  const existing = vocabDecks.value.find((d) => d.id === csvDeckId.value);
+  const title = existing?.title ?? csvTitle.value.trim();
+  if (!title) return toast("Donne un titre au nouveau deck.", "danger");
+  try {
+    const r = await importVocabRows({
+      deckId: existing?.id,
+      title,
+      from: existing?.from ?? (csvFrom.value.trim() || "id"),
+      to: existing?.to ?? (csvTo.value.trim() || "fr"),
+      rows
+    });
+    toast(`${r.added} item(s) ajouté(s) à « ${title} »${r.duplicates ? ` • ${r.duplicates} doublon(s) ignoré(s)` : ""}`, "ok", 5000);
+    csvText.value = "";
+    csvFileName.value = "";
+    await loadDecks();
+    csvDeckId.value = r.deckId;
+  } catch (e) {
+    toast(`Erreur import CSV: ${e instanceof Error ? e.message : "inconnue"}`, "danger");
+  }
+}
+
+onMounted(loadDecks);
+
 const exampleBundle = `{
   "type": "revisions_bundle",
   "schema": 1,
@@ -182,9 +234,48 @@ const exampleBundle = `{
     </div>
 
     <div class="card cardFill">
-      <h2>Exemple export global (bundle)</h2>
-      <p class="small">C’est exactement ce que produit le bouton “Exporter mes données (JSON)” sur la Home.</p>
-      <pre class="code">{{ exampleBundle }}</pre>
+      <div class="scrollY">
+        <h2>Importer du vocab en CSV / TSV</h2>
+        <p class="small">
+          Export Anki (« Notes en texte brut »), Quizlet, ou copier-coller depuis un tableur.
+          Colonnes : <b>terme</b>, <b>définition</b>, tags (optionnel). Séparateur détecté automatiquement.
+        </p>
+
+        <label class="small">Deck</label>
+        <select class="input" v-model="csvDeckId">
+          <option value="">➕ Nouveau deck</option>
+          <option v-for="d in vocabDecks" :key="d.id" :value="d.id">{{ d.title }} ({{ d.from }} → {{ d.to }})</option>
+        </select>
+
+        <template v-if="!csvDeckId">
+          <input class="input mt-2" v-model="csvTitle" placeholder="Titre du nouveau deck" />
+          <div class="row mt-2 gap-2.5 flex-nowrap">
+            <input class="input" v-model="csvFrom" placeholder="De (ex: id)" />
+            <input class="input" v-model="csvTo" placeholder="Vers (ex: fr)" />
+          </div>
+        </template>
+
+        <div class="fileRow">
+          <input ref="csvFileInput" class="fileInput" type="file" accept=".csv,.tsv,.txt,text/csv,text/tab-separated-values,text/plain" @change="onCsvFile" />
+          <button class="btn" type="button" @click="csvFileInput?.click()">📄 Fichier CSV / TSV</button>
+          <span class="small">{{ csvFileName || "ou colle le contenu ci-dessous" }}</span>
+        </div>
+
+        <textarea class="input mt-2 min-h-[120px] resize-y" v-model="csvText" placeholder="makan	manger	verbe&#10;minum	boire"></textarea>
+        <p class="small">{{ csvPreview.rows.length }} ligne(s) valides<span v-if="csvPreview.skipped"> • {{ csvPreview.skipped }} ignorée(s)</span></p>
+        <ul v-if="csvPreview.rows.length" class="small pl-5 list-disc">
+          <li v-for="(r, i) in csvPreview.rows.slice(0, 3)" :key="i">{{ r.term }} → {{ r.definition }}<span v-if="r.tags.length"> ({{ r.tags.join(", ") }})</span></li>
+        </ul>
+
+        <button class="btn primary mt-2" :disabled="!csvPreview.rows.length" @click="onImportCsv">Importer dans le deck</button>
+
+        <div class="hr"></div>
+        <details>
+          <summary class="small cursor-pointer">Exemple export global (bundle JSON)</summary>
+          <p class="small">C’est exactement ce que produit le bouton “Exporter” sur l’accueil.</p>
+          <pre class="code">{{ exampleBundle }}</pre>
+        </details>
+      </div>
     </div>
   </div>
 </template>

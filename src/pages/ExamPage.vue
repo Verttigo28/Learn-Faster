@@ -165,7 +165,22 @@ async function goStats() {
   await router.push("/stats");
 }
 
-onUnmounted(() => stopTimer());
+function onKeydown(e: KeyboardEvent) {
+  if (showResultModal.value || !current.value) return;
+  if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+  if (e.key === "ArrowRight") next();
+  else if (e.key === "ArrowLeft") prev();
+  else if (/^[1-9]$/.test(e.key)) {
+    const c = current.value.choices[Number(e.key) - 1];
+    if (c) choose(c.id);
+  }
+}
+
+onMounted(() => window.addEventListener("keydown", onKeydown));
+onUnmounted(() => {
+  stopTimer();
+  window.removeEventListener("keydown", onKeydown);
+});
 useSessionGuard(() => !finished.value && Object.keys(selected.value).length > 0);
 
 onMounted(load);
@@ -203,7 +218,7 @@ onMounted(load);
 
           <div class="list">
             <button
-              v-for="c in current.choices"
+              v-for="(c, i) in current.choices"
               :key="c.id"
               class="btn justify-start text-left"
               :class="{
@@ -213,7 +228,7 @@ onMounted(load);
               }"
               @click="choose(c.id)"
             >
-              {{ c.text }}
+              <span class="small">{{ i + 1 }}</span> {{ c.text }}
             </button>
           </div>
 
@@ -231,7 +246,7 @@ onMounted(load);
         </div>
 
         <p class="small mt-2.5">
-          Réponses: {{ Object.keys(selected).length }} / {{ questions.length }}
+          Réponses: {{ Object.keys(selected).length }} / {{ questions.length }} • 1–9 = répondre, ←/→ = naviguer
         </p>
       </div>
     </div>
