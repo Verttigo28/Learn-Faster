@@ -1,3 +1,4 @@
+import { t } from "../i18n";
 import type { VocabItem } from "../db";
 import { shuffle } from "../utils/shuffle";
 
@@ -31,7 +32,7 @@ export function buildVocabQuestion(
   ];
 
   return {
-    prompt: `Traduction de: "${item.term}"`,
+    prompt: t("services.vocabPrompt", { term: item.term }),
     options: shuffle(options)
   };
 }

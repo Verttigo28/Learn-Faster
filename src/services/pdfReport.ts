@@ -1,3 +1,4 @@
+import { intlLocale, t } from "../i18n";
 import { isTypedDetail, type Attempt, type AttemptDetail } from "../db";
 import { saveFile } from "./fileSave";
 
@@ -38,14 +39,14 @@ function detailBlock(d: AttemptDetail, index: number): ReportBlock {
   if (d.kind === "sentence_order") {
     return {
       index,
-      label: "Phrase",
+      label: t("report.kinds.sentence"),
       correct: d.correct,
-      status: d.correct ? "OK" : "Faux",
+      status: d.correct ? t("report.ok") : t("report.wrong"),
       lines: [
-        { label: "Phrase", text: d.text },
-        ...(d.translation ? [{ label: "FR", text: d.translation }] : []),
-        { label: "Ta réponse", text: (d.answer ?? []).join(" ") || "(vide)" },
-        { label: "Correction", text: (d.tokens ?? []).join(" ") }
+        { label: t("report.labels.sentence"), text: d.text },
+        ...(d.translation ? [{ label: t("report.labels.translation"), text: d.translation }] : []),
+        { label: t("report.labels.yourAnswer"), text: (d.answer ?? []).join(" ") || t("common.empty") },
+        { label: t("report.labels.correction"), text: (d.tokens ?? []).join(" ") }
       ]
     };
   }
@@ -53,12 +54,12 @@ function detailBlock(d: AttemptDetail, index: number): ReportBlock {
   if (d.kind === "flashcard") {
     return {
       index,
-      label: "Flashcard",
+      label: t("report.kinds.flashcard"),
       correct: d.correct,
-      status: d.known ? "Je sais" : "Je ne sais pas",
+      status: d.known ? t("report.known") : t("report.unknown"),
       lines: [
-        { label: "Terme", text: d.term },
-        { label: "Réponse", text: d.definition }
+        { label: t("report.labels.term"), text: d.term },
+        { label: t("report.labels.answer"), text: d.definition }
       ]
     };
   }
@@ -66,29 +67,29 @@ function detailBlock(d: AttemptDetail, index: number): ReportBlock {
   if (isTypedDetail(d)) {
     return {
       index,
-      label: d.kind === "cloze" ? "Trous" : d.kind === "dictation" ? "Dictée" : "Écrit",
+      label: t(`report.kinds.${d.kind === "cloze" ? "cloze" : d.kind === "dictation" ? "dictation" : "typed"}`),
       correct: d.correct,
-      status: d.correct ? "OK" : "Faux",
+      status: d.correct ? t("report.ok") : t("report.wrong"),
       lines: [
-        { label: "Question", text: d.prompt },
-        { label: "Ta réponse", text: d.answer || "(vide)" },
-        { label: "Attendu", text: d.expected }
+        { label: t("report.labels.question"), text: d.prompt },
+        { label: t("report.labels.yourAnswer"), text: d.answer || t("common.empty") },
+        { label: t("report.labels.expected"), text: d.expected }
       ]
     };
   }
 
-  const picked = d.options.find((o) => o.id === d.pickedId)?.text ?? "aucune";
-  const right = d.options.find((o) => o.correct)?.text ?? "(inconnue)";
+  const picked = d.options.find((o) => o.id === d.pickedId)?.text ?? t("common.none");
+  const right = d.options.find((o) => o.correct)?.text ?? `(${t("common.unknown")})`;
   return {
     index,
-    label: d.kind === "exam_mcq" ? "QCM" : "Vocab",
+    label: d.kind === "exam_mcq" ? t("report.kinds.qcm") : t("report.kinds.vocab"),
     correct: d.correct,
-    status: d.correct ? "OK" : "Faux",
+    status: d.correct ? t("report.ok") : t("report.wrong"),
     lines: [
-      { label: "Question", text: d.prompt },
-      { label: "Ta réponse", text: picked },
-      { label: "Bonne réponse", text: right },
-      ...(d.kind === "exam_mcq" && d.explanation ? [{ label: "Explication", text: d.explanation }] : [])
+      { label: t("report.labels.question"), text: d.prompt },
+      { label: t("report.labels.yourAnswer"), text: picked },
+      { label: t("report.labels.rightAnswer"), text: right },
+      ...(d.kind === "exam_mcq" && d.explanation ? [{ label: t("report.labels.explanation"), text: d.explanation }] : [])
     ]
   };
 }
@@ -96,17 +97,17 @@ function detailBlock(d: AttemptDetail, index: number): ReportBlock {
 /** Pure (testable) description of the report content. */
 export function buildReport(attempt: Attempt, title: string): Report {
   const meta = [
-    `Date : ${new Date(attempt.finishedAt).toLocaleString()}`,
-    `Type : ${attempt.type}   •   Score : ${Math.round(attempt.score * 100)}%`
+    t("report.date", { date: new Date(attempt.finishedAt).toLocaleString(intlLocale()) }),
+    t("report.typeScore", { type: attempt.type, score: Math.round(attempt.score * 100) })
   ];
   if (attempt.meta?.correct !== undefined && attempt.meta?.total !== undefined) {
-    meta.push(`Bonnes réponses : ${attempt.meta.correct}/${attempt.meta.total}`);
+    meta.push(t("report.correct", { correct: attempt.meta.correct, total: attempt.meta.total }));
   }
   if (attempt.meta?.durationSeconds !== undefined) {
-    meta.push(`Durée : ${Math.max(1, Math.round(attempt.meta.durationSeconds / 60))} min`);
+    meta.push(t("report.duration", { n: Math.max(1, Math.round(attempt.meta.durationSeconds / 60)) }));
   }
   return {
-    title: `Résultats — ${title}`,
+    title: t("report.title", { title }),
     meta,
     blocks: (attempt.meta?.details ?? []).map((d, i) => detailBlock(d, i + 1))
   };
@@ -164,9 +165,7 @@ export async function renderPdf(report: Report): Promise<Blob> {
 
 export async function exportAttemptPdf(attempt: Attempt, title: string): Promise<void> {
   if (!attempt.meta?.details?.length) {
-    throw new Error(
-        "Cette tentative ne contient pas de détails (ancienne stat). Relance un exam pour générer un export PDF."
-    );
+    throw new Error(t("services.pdfNoDetails"));
   }
 
   const blob = await renderPdf(buildReport(attempt, title));

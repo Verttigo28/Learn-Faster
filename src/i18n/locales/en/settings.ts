@@ -1,0 +1,20 @@
+export default {
+  title: "Settings",
+  language: "Language",
+  srs: "Spaced repetition",
+  newPerDay: "New cards per day",
+  newPerDayHint: "Cards due for review are always shown; this only limits new cards.",
+  goal: "Daily goal",
+  goalLabel: "Answers per day",
+  appearance: "Appearance",
+  dark: "🌙 Dark",
+  light: "☀️ Light",
+  system: "🖥️ System",
+  audio: "Audio",
+  autoSpeak: "Read flashcards aloud automatically",
+  backup: "Backup",
+  lastExport: "Last export:",
+  never: "never",
+  backupHint: "Your data stays in this browser / device: export it regularly from the home page.",
+  saved: "Settings saved ✅"
+};

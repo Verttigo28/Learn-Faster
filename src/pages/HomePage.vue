@@ -3,12 +3,14 @@ import { confirmDialog, toast } from "../services/dialog";
 import { computed, onMounted, ref } from "vue";
 import { db, type VocabDeck, type Exam } from "../db";
 import EmptyState from "../components/EmptyState.vue";
+import StarterPacks from "../components/StarterPacks.vue";
 import { exportAllData } from "../services/exporter";
 import { saveJson } from "../services/fileSave";
 import { countDueToday, DAY } from "../services/srs";
 import { getSetting, setSetting } from "../services/settings";
 import { answersToday, streak } from "../services/stats";
 import { useRouter } from "vue-router";
+import { t } from "../i18n";
 const router = useRouter();
 
 const decks = ref<VocabDeck[]>([]);
@@ -23,7 +25,7 @@ const counts = ref({
 async function startRandomFlashcards() {
   const count = await db.vocabDecks.count();
   if (!count) {
-    toast("Aucun deck vocab. Crée ou importe un deck d'abord.", "danger");
+    toast(t("home.noDeck"), "danger");
     return;
   }
 
@@ -31,7 +33,7 @@ async function startRandomFlashcards() {
   const deck = await db.vocabDecks.orderBy("createdAt").reverse().offset(offset).limit(1).first();
 
   if (!deck) {
-    toast("Impossible de sélectionner un deck.", "danger");
+    toast(t("home.deckPickError"), "danger");
     return;
   }
 
@@ -48,8 +50,11 @@ const backupDue = computed(() => {
   const hasContent = counts.value.deckCount + counts.value.examCount + counts.value.sentenceCount > 0;
   return hasContent && Date.now() - lastExportAt.value > 7 * DAY;
 });
+function lastExportLabel(days: number) {
+  return t("home.lastExport", { days, count: days });
+}
 const backupLabel = computed(() =>
-  lastExportAt.value ? `Dernier export il y a ${Math.floor((Date.now() - lastExportAt.value) / DAY)} jour(s).` : "Aucun export pour l'instant."
+  lastExportAt.value ? lastExportLabel(Math.floor((Date.now() - lastExportAt.value) / DAY)) : t("home.noExportYet")
 );
 
 async function load() {
@@ -69,7 +74,7 @@ async function load() {
 }
 
 async function clearAll() {
-  if (!(await confirmDialog("Tout supprimer (decks/exams/phrases/stats) ?"))) return;
+  if (!(await confirmDialog(t("home.clearAllConfirm")))) return;
 
   await db.transaction(
       "rw",
@@ -90,14 +95,14 @@ async function exportAll() {
     lastExportAt.value = Date.now();
     await setSetting("lastExportAt", lastExportAt.value);
   } catch (e) {
-    toast(`Export impossible : ${e instanceof Error ? e.message : "erreur inconnue"}`, "danger");
+    toast(t("services.exportError", { error: e instanceof Error ? e.message : t("home.unknownError") }), "danger");
   }
 }
 
 function examDurationLabel(seconds?: number) {
-  if (!seconds) return "Sans timer";
+  if (!seconds) return t("home.noTimer");
   const minutes = Math.round(seconds / 60);
-  return `${minutes} min`;
+  return t("home.minutes", { n: minutes });
 }
 
 onMounted(load);
@@ -110,14 +115,14 @@ onMounted(load);
       <!-- Dashboard -->
       <section class="card dashboard">
         <div class="head">
-          <h2 class="title">Tableau de bord</h2>
-          <div class="sub small">🔥 {{ goal.streak }} jour(s) de suite</div>
+          <h2 class="title">{{ $t("home.dashboard") }}</h2>
+          <div class="sub small">{{ $t("home.streak", { count: goal.streak }) }}</div>
         </div>
 
         <div class="goal">
           <div class="row small">
-            <span>Objectif du jour</span>
-            <span><b class="text-text">{{ goal.done }}</b> / {{ goal.target }} réponses {{ goalPct >= 100 ? "✅" : "" }}</span>
+            <span>{{ $t("home.dailyGoal") }}</span>
+            <span><b class="text-text">{{ goal.done }}</b> / {{ goal.target }} {{ $t("home.answers") }} {{ goalPct >= 100 ? "✅" : "" }}</span>
           </div>
           <div class="progressBar mt-1" role="progressbar" :aria-valuenow="goalPct" aria-valuemin="0" aria-valuemax="100">
             <span class="stage-mastered" :style="{ width: `${goalPct}%` }"></span>
@@ -126,39 +131,39 @@ onMounted(load);
         </div>
 
         <div v-if="backupDue" class="backupHint small">
-          💾 {{ backupLabel }} Pense à <button class="underline" type="button" @click="exportAll">exporter tes données</button>.
+          💾 {{ backupLabel }} {{ $t("home.backupRemind") }} <button class="underline" type="button" @click="exportAll">{{ $t("home.backupLink") }}</button>{{ $t("home.backupEnd") }}
         </div>
 
         <div class="kpis">
           <div class="kpiBox">
-            <div class="small">Decks vocab</div>
+            <div class="small">{{ $t("home.kpi.decks") }}</div>
             <div class="kpi">{{ counts.deckCount }}</div>
           </div>
           <div class="kpiBox">
-            <div class="small">Exams</div>
+            <div class="small">{{ $t("home.kpi.exams") }}</div>
             <div class="kpi">{{ counts.examCount }}</div>
           </div>
           <div class="kpiBox">
-            <div class="small">Phrases</div>
+            <div class="small">{{ $t("home.kpi.sentences") }}</div>
             <div class="kpi">{{ counts.sentenceCount }}</div>
           </div>
           <div class="kpiBox">
-            <div class="small">Tentatives</div>
+            <div class="small">{{ $t("home.kpi.attempts") }}</div>
             <div class="kpi">{{ counts.attemptCount }}</div>
           </div>
         </div>
 
         <div class="actionsGrid">
-          <router-link class="btn actionBtn" to="/import">📥 Importer</router-link>
-          <button class="btn actionBtn" @click="exportAll">⬇️ Exporter</button>
+          <router-link class="btn actionBtn" to="/import">{{ $t("home.actions.import") }}</router-link>
+          <button class="btn actionBtn" @click="exportAll">{{ $t("home.actions.export") }}</button>
 
-          <router-link class="btn actionBtn" to="/stats">📈 Stats</router-link>
-          <router-link class="btn actionBtn" to="/sentences">🧩 Éditer phrases</router-link>
+          <router-link class="btn actionBtn" to="/stats">{{ $t("home.actions.stats") }}</router-link>
+          <router-link class="btn actionBtn" to="/sentences">{{ $t("home.actions.editSentences") }}</router-link>
 
-          <router-link class="btn actionBtn" to="/vocab">🗂️ Éditer vocab</router-link>
-          <router-link class="btn actionBtn" to="/qcm">📝 Éditer QCM</router-link>
+          <router-link class="btn actionBtn" to="/vocab">{{ $t("home.actions.editVocab") }}</router-link>
+          <router-link class="btn actionBtn" to="/qcm">{{ $t("home.actions.editQcm") }}</router-link>
 
-          <button class="btn danger actionBtn reset" @click="clearAll">🧹 Reset DB</button>
+          <button class="btn danger actionBtn reset" @click="clearAll">{{ $t("home.actions.reset") }}</button>
 
           <div class="exportHint small" v-if="exportInfo">{{ exportInfo }}</div>
         </div>
@@ -167,41 +172,46 @@ onMounted(load);
       <!-- Start -->
       <section class="card start">
         <div class="head">
-          <h2 class="title">Démarrer</h2>
-          <div class="sub small">Sessions rapides</div>
+          <h2 class="title">{{ $t("common.start") }}</h2>
+          <div class="sub small">{{ $t("home.quickSessions") }}</div>
         </div>
 
         <div class="startGrid">
           <router-link class="btn startBtn primary reviewBtn" to="/review">
-            🧠 Révision du jour
-            <span class="small">{{ dueInfo.due }} à revoir • {{ dueInfo.fresh }} nouvelles</span>
+            {{ $t("home.sessions.review") }}
+            <span class="small">{{ $t("home.sessions.reviewInfo", { due: dueInfo.due, fresh: dueInfo.fresh }) }}</span>
           </router-link>
-          <router-link class="btn startBtn" to="/exams">🎯 Générer un examen</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=vocab,exam,order">⚡ Exam 15 questions VQP</router-link>
+          <router-link class="btn startBtn" to="/exams">{{ $t("home.sessions.generateExam") }}</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=vocab,exam,order">{{ $t("home.sessions.exam15") }}</router-link>
 
-          <router-link class="btn startBtn" to="/practice?count=15&sources=order">🧩 Sprint 15 phrases</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=vocab">🗂️ Sprint 15 vocab</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=order">{{ $t("home.sessions.sprintSentences") }}</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=vocab">{{ $t("home.sessions.sprintVocab") }}</router-link>
 
-          <router-link class="btn startBtn" to="/practice?count=15&sources=exam">📝 Sprint 15 QCM</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=typed&dir=both">✍️ Sprint 15 vocab écrit</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=cloze">🕳️ Sprint 15 textes à trous</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=dictation">🎧 Sprint 15 dictées</router-link>
-          <router-link class="btn startBtn" to="/practice?count=30&sources=vocab,exam,order">🔥 Exam 30 questions VQP</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=exam">{{ $t("home.sessions.sprintQcm") }}</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=typed&dir=both">{{ $t("home.sessions.sprintTyped") }}</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=cloze">{{ $t("home.sessions.sprintCloze") }}</router-link>
+          <router-link class="btn startBtn" to="/practice?count=15&sources=dictation">{{ $t("home.sessions.sprintDictation") }}</router-link>
+          <router-link class="btn startBtn" to="/practice?count=30&sources=vocab,exam,order">{{ $t("home.sessions.exam30") }}</router-link>
 
-          <button class="btn startBtn" @click="startRandomFlashcards">🃏 Flashcards (aléatoire)</button>
+          <button class="btn startBtn" @click="startRandomFlashcards">{{ $t("home.sessions.randomFlashcards") }}</button>
         </div>
       </section>
     </div>
 
+    <!-- No content yet: offer the starter packs -->
+    <div v-if="counts.deckCount + counts.examCount + counts.sentenceCount === 0" class="emptyStart">
+      <StarterPacks @installed="load" />
+    </div>
+
     <!-- CONTENT LISTS -->
-    <div class="bottom">
+    <div v-else class="bottom">
       <section>
         <div class="sectionTitle">
-          <h2>Decks vocab</h2>
+          <h2>{{ $t("home.vocabDecks") }}</h2>
         </div>
 
         <div v-if="decks.length === 0">
-          <EmptyState title="Aucun deck vocab" hint="Importe un deck en JSON." />
+          <EmptyState :title="$t('home.noDeckTitle')" :hint="$t('home.noDeckHint')" />
         </div>
 
         <div v-else class="listGrid">
@@ -214,8 +224,8 @@ onMounted(load);
             <h3 class="itemTitle">{{ d.title }}</h3>
 
             <div class="itemFooter">
-              <router-link class="badge" :to="`/deck/${d.id}/flash`">Flashcards</router-link>
-              <span class="badge">Ouvrir</span>
+              <router-link class="badge" :to="`/deck/${d.id}/flash`">{{ $t("home.flashcards") }}</router-link>
+              <span class="badge">{{ $t("common.open") }}</span>
             </div>
           </router-link>
         </div>
@@ -223,11 +233,11 @@ onMounted(load);
 
       <section>
         <div class="sectionTitle">
-          <h2>Exams QCM</h2>
+          <h2>{{ $t("home.qcmExams") }}</h2>
         </div>
 
         <div v-if="exams.length === 0">
-          <EmptyState title="Aucun exam" hint="Importe un QCM en JSON." />
+          <EmptyState :title="$t('home.noExamTitle')" :hint="$t('home.noExamHint')" />
         </div>
 
         <div v-else class="listGrid">
@@ -243,7 +253,7 @@ onMounted(load);
             </h3>
 
             <div class="itemFooter">
-              <span class="badge">Démarrer</span>
+              <span class="badge">{{ $t("common.start") }}</span>
             </div>
           </router-link>
         </div>

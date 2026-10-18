@@ -1,3 +1,4 @@
+import { t } from "../i18n";
 import { onMounted, onUnmounted } from "vue";
 import { onBeforeRouteLeave } from "vue-router";
 import { confirmDialog } from "../services/dialog";
@@ -9,7 +10,7 @@ import { confirmDialog } from "../services/dialog";
 export function useSessionGuard(inProgress: () => boolean) {
   onBeforeRouteLeave(async () => {
     if (!inProgress()) return true;
-    return confirmDialog("Quitter la session ? Ta progression en cours sera perdue.", { confirmLabel: "Quitter" });
+    return confirmDialog(t("services.leaveSession"), { confirmLabel: t("common.quit") });
   });
 
   const onBeforeUnload = (e: BeforeUnloadEvent) => {

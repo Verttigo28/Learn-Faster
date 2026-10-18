@@ -361,3 +361,29 @@
         .home .bottom > section, .home .listGrid{ overflow: visible; }
     }
 }
+
+@layer components{
+    /* Petits écrans : une seule ligne de navigation qui défile horizontalement */
+    @media (max-width: 767px){
+        .nav{ @apply px-3 py-2; }
+        .nav .left{ @apply min-w-0 flex-1 gap-2; }
+        .brand{ @apply text-sm whitespace-nowrap; }
+        .navPills{ @apply flex-nowrap overflow-x-auto; scrollbar-width: none; }
+        .navPills::-webkit-scrollbar{ display: none; }
+        .navPills .pill{ @apply whitespace-nowrap py-1.5; }
+        .poweredBy{ display: none; }
+    }
+}
+
+@layer components{
+    .home .emptyStart{ @apply flex-1 min-h-0 overflow-auto; }
+}
+
+@layer components{
+    /* Long labels (English) wrap instead of overflowing */
+    .home .actionBtn, .home .startBtn{ @apply whitespace-normal leading-tight; }
+    @media (max-width: 767px){
+        .home .emptyStart{ flex: none; overflow: visible; }
+        .home .startBtn, .home .actionBtn{ @apply text-[13px] px-2; }
+    }
+}

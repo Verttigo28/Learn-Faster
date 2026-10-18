@@ -32,8 +32,8 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
     <div v-if="open" class="modal-backdrop" @click="onBackdropClick">
       <div class="modal-card" role="dialog" aria-modal="true">
         <div class="modal-header">
-          <h3 class="modal-title">{{ title || "Résultat" }}</h3>
-          <button class="btn" @click="$emit('close')">Fermer</button>
+          <h3 class="modal-title">{{ title }}</h3>
+          <button class="btn" @click="$emit('close')">{{ $t("common.close") }}</button>
         </div>
         <div class="modal-body">
           <slot />

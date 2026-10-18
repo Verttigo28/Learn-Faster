@@ -1,3 +1,4 @@
+import { t } from "../i18n";
 import { db, type ReviewState, type VocabItem } from "../db";
 import { shuffle } from "../utils/shuffle";
 import { getSetting } from "./settings";
@@ -87,11 +88,11 @@ export function schedule(state: ReviewState, grade: Grade, now = Date.now()): Re
 /** Human readable next interval for a button label ("10 min", "3 j", "2 mois"). */
 export function formatInterval(state: ReviewState, now: number): string {
   const ms = state.due - now;
-  if (ms < 3600 * 1000) return `${Math.max(1, Math.round(ms / 60000))} min`;
+  if (ms < 3600 * 1000) return t("services.interval.minutes", { n: Math.max(1, Math.round(ms / 60000)) });
   const days = Math.round(ms / DAY);
-  if (days < 31) return `${days} j`;
-  if (days < 365) return `${Math.round(days / 30)} mois`;
-  return `${(days / 365).toFixed(1)} an`;
+  if (days < 31) return t("services.interval.days", { n: days });
+  if (days < 365) return t("services.interval.months", { n: Math.round(days / 30) });
+  return t("services.interval.years", { n: (days / 365).toFixed(1) });
 }
 
 export type QueueCard = { item: VocabItem; review: ReviewState; isNew: boolean };

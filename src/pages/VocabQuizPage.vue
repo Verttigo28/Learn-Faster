@@ -111,11 +111,11 @@ onMounted(load);
 
 <template>
   <div v-if="!deck" class="page flex items-center justify-center">
-    <EmptyState title="Deck introuvable" />
+    <EmptyState :title="$t('quiz.notFound')" />
   </div>
 
   <div v-else-if="items.length < 2" class="page flex items-center justify-center">
-    <EmptyState title="Pas assez d'items" hint="Ajoute au moins 2 items pour faire un quiz." />
+    <EmptyState :title="$t('quiz.notEnough')" :hint="$t('quiz.notEnoughHint')" />
   </div>
 
   <!-- ✅ Page plein écran sans scroll global, contenu scrollable dans le body -->
@@ -123,10 +123,10 @@ onMounted(load);
     <div class="sessionCard">
       <div class="row">
         <div>
-          <h2 style="margin:0">Quiz (QCM)</h2>
+          <h2 style="margin:0">{{ $t("quiz.title") }}</h2>
           <p class="small" style="margin:4px 0 0 0">{{ deck.title }} • {{ idx + 1 }} / {{ order.length }}</p>
         </div>
-        <router-link class="btn" :to="`/deck/${deckId}`">Retour</router-link>
+        <router-link class="btn" :to="`/deck/${deckId}`">{{ $t("common.back") }}</router-link>
       </div>
 
       <div class="hr"></div>
@@ -151,27 +151,27 @@ onMounted(load);
         </div>
 
         <p class="small" style="margin-top:10px">
-          Score: {{ percent() }} ({{ correct }}/{{ answered }})
+          {{ $t("quiz.liveScore", { score: percent(), correct, answered }) }}
         </p>
       </div>
 
       <div class="sessionFooter row">
-        <button class="btn" @click="submit" :disabled="!selected || locked">Valider</button>
-        <button class="btn" @click="next" :disabled="!locked">Suivant</button>
-        <button class="btn ok" @click="finish">Terminer</button>
+        <button class="btn" @click="submit" :disabled="!selected || locked">{{ $t("common.submit") }}</button>
+        <button class="btn" @click="next" :disabled="!locked">{{ $t("common.next") }}</button>
+        <button class="btn ok" @click="finish">{{ $t("common.finish") }}</button>
       </div>
     </div>
   </div>
 
-  <BaseModal :open="showResultModal" title="Résultat du quiz" @close="backToDeck">
+  <BaseModal :open="showResultModal" :title="$t('quiz.resultTitle')" @close="backToDeck">
     <div class="card" style="margin:0">
       <div class="row">
         <div>
-          <div class="small">Score</div>
+          <div class="small">{{ $t("common.score") }}</div>
           <div class="kpi">{{ percent() }}</div>
         </div>
         <div>
-          <div class="small">Bonnes réponses</div>
+          <div class="small">{{ $t("common.correctAnswers") }}</div>
           <div class="kpi">{{ correct }}/{{ answered }}</div>
         </div>
       </div>
@@ -179,8 +179,8 @@ onMounted(load);
       <div class="hr"></div>
 
       <div class="row">
-        <router-link class="btn" to="/stats">Voir les stats</router-link>
-        <button class="btn" @click="backToDeck">Retour deck</button>
+        <router-link class="btn" to="/stats">{{ $t("common.viewStats") }}</router-link>
+        <button class="btn" @click="backToDeck">{{ $t("quiz.backDeck") }}</button>
       </div>
     </div>
   </BaseModal>

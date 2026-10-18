@@ -1,7 +1,8 @@
+import { intlLocale } from "../i18n";
 export function formatDate(ts: number): string {
   const d = new Date(ts);
   // month option was invalid before; must be "2-digit"
-  return d.toLocaleString(undefined, {
+  return d.toLocaleString(intlLocale(), {
     year: "numeric",
     month: "2-digit",
     day: "2-digit",

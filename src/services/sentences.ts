@@ -1,24 +1,25 @@
+import { t } from "../i18n";
 import { db, MANUAL_SENTENCE_DECK_ID, type SentenceDeck } from "../db";
 import { uid } from "../utils/id";
 import { tokenizeSentence } from "../utils/sentence";
 
 /** Returns the deck with this title (case-insensitive), creating it if needed. Empty title => manual deck. */
 export async function ensureSentenceDeck(title: string): Promise<SentenceDeck> {
-  const t = title.trim();
+  const name = title.trim();
   const decks = await db.sentenceDecks.toArray();
 
-  if (!t) {
+  if (!name) {
     const manual = decks.find((d) => d.id === MANUAL_SENTENCE_DECK_ID);
     if (manual) return manual;
-    const created = { id: MANUAL_SENTENCE_DECK_ID, title: "Mes phrases", createdAt: Date.now() };
+    const created = { id: MANUAL_SENTENCE_DECK_ID, title: t("services.myPhrases"), createdAt: Date.now() };
     await db.sentenceDecks.put(created);
     return created;
   }
 
-  const found = decks.find((d) => d.title.toLocaleLowerCase() === t.toLocaleLowerCase());
+  const found = decks.find((d) => d.title.toLocaleLowerCase() === name.toLocaleLowerCase());
   if (found) return found;
 
-  const created = { id: uid("sdeck"), title: t, createdAt: Date.now() };
+  const created = { id: uid("sdeck"), title: name, createdAt: Date.now() };
   await db.sentenceDecks.add(created);
   return created;
 }

@@ -1,3 +1,4 @@
+import { t } from "../i18n";
 import { reactive } from "vue";
 
 export type ToastKind = "info" | "ok" | "danger";
@@ -36,7 +37,7 @@ export function confirmDialog(
   return new Promise((resolve) => {
     dialogState.confirm = {
       message,
-      confirmLabel: opts.confirmLabel ?? "Confirmer",
+      confirmLabel: opts.confirmLabel ?? t("common.confirm"),
       danger: opts.danger ?? true,
       resolve
     };

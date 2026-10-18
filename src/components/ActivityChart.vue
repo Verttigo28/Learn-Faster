@@ -5,6 +5,7 @@
  */
 import { computed, ref } from "vue";
 import type { DayActivity } from "../services/stats";
+import { intlLocale } from "../i18n";
 
 const props = defineProps<{ days: DayActivity[] }>();
 
@@ -38,7 +39,7 @@ const hover = ref<number | null>(null);
 const hovered = computed(() => (hover.value === null ? null : props.days[hover.value]));
 
 function label(d: DayActivity) {
-  return new Date(d.date).toLocaleDateString(undefined, { day: "numeric", month: "short" });
+  return new Date(d.date).toLocaleDateString(intlLocale(),{ day: "numeric", month: "short" });
 }
 
 const ticks = computed(() => [0, niceMax.value / 2, niceMax.value]);
@@ -49,11 +50,11 @@ const activeDays = computed(() => props.days.filter((d) => d.answers > 0).length
 <template>
   <figure class="m-0">
     <figcaption class="small mb-2">
-      Réponses par jour — {{ days.length }} derniers jours • {{ total }} réponses • {{ activeDays }} jour(s) actif(s)
+      {{ $t("stats.chart.caption", { days: days.length }) }} • {{ $t("stats.chart.total", { count: total }) }} • {{ $t("stats.chart.activeDays", { count: activeDays }) }}
     </figcaption>
 
     <div class="relative">
-      <svg :viewBox="`0 0 ${W} ${H}`" class="w-full h-auto block" role="img" :aria-label="`Réponses par jour, total ${total}`">
+      <svg :viewBox="`0 0 ${W} ${H}`" class="w-full h-auto block" role="img" :aria-label="$t('stats.chart.aria', { total })">
         <g class="chartGrid">
           <template v-for="t in ticks" :key="t">
             <line :x1="PAD.left" :x2="W - PAD.right" :y1="y(t)" :y2="y(t)" />
@@ -86,7 +87,7 @@ const activeDays = computed(() => props.days.filter((d) => d.answers > 0).length
         />
 
         <text :x="PAD.left" :y="H - 6" class="chartAxisText">{{ days.length ? label(days[0]) : "" }}</text>
-        <text :x="W - PAD.right" :y="H - 6" text-anchor="end" class="chartAxisText">Aujourd'hui</text>
+        <text :x="W - PAD.right" :y="H - 6" text-anchor="end" class="chartAxisText">{{ $t("stats.chart.today") }}</text>
       </svg>
 
       <div
@@ -95,7 +96,7 @@ const activeDays = computed(() => props.days.filter((d) => d.answers > 0).length
         :style="{ left: `${((PAD.left + (hover + 0.5) * slot) / W) * 100}%` }"
       >
         <b>{{ label(hovered) }}</b><br />
-        {{ hovered.answers }} réponse(s)<span v-if="hovered.answers"> • {{ Math.round((hovered.correct / hovered.answers) * 100) }}% justes</span>
+        {{ $t("stats.chart.answers", { count: hovered.answers }) }}<span v-if="hovered.answers"> • {{ $t("stats.chart.correctPct", { pct: Math.round((hovered.correct / hovered.answers) * 100) }) }}</span>
       </div>
     </div>
   </figure>

@@ -4,6 +4,7 @@ import { getAllTags } from "../services/tags";
 import { speechSupported } from "../services/speech";
 import ConfirmBar from "../components/ConfirmBar.vue";
 import { useRouter } from "vue-router";
+import { t } from "../i18n";
 
 const router = useRouter();
 
@@ -36,10 +37,10 @@ const sources = computed(() => {
   return s;
 });
 
-function toggleTag(t: string) {
-  const i = selected.value.indexOf(t);
+function toggleTag(tag: string) {
+  const i = selected.value.indexOf(tag);
   if (i >= 0) selected.value.splice(i, 1);
-  else selected.value.push(t);
+  else selected.value.push(tag);
 }
 
 async function load() {
@@ -47,7 +48,7 @@ async function load() {
 }
 
 async function start() {
-  if (sources.value.length === 0) return set("danger", "Choisis au moins une source.");
+  if (sources.value.length === 0) return set("danger", t("generator.noSource"));
   const q = new URLSearchParams();
   q.set("count", String(Math.max(1, Math.min(200, count.value || 20))));
   q.set("sources", sources.value.join(","));
@@ -62,52 +63,52 @@ onMounted(load);
 <template>
   <div class="examsOne">
     <div class="card modalWide">
-      <h2>Générateur d'exam</h2>
-      <p>Une base commune : vocab + QCM + phrases (ordre des mots). Tu filtres par tags, et l'app construit l'exam.</p>
+      <h2>{{ $t("generator.title") }}</h2>
+      <p>{{ $t("generator.intro") }}</p>
 
       <div class="hr"></div>
 
-      <h3>Sources</h3>
+      <h3>{{ $t("generator.sources") }}</h3>
       <div class="row" style="flex-wrap:wrap">
-        <label class="badge"><input type="checkbox" v-model="includeVocab" /> Vocab (QCM généré)</label>
-        <label class="badge"><input type="checkbox" v-model="includeExam" /> QCM (importés)</label>
-        <label class="badge"><input type="checkbox" v-model="includeOrder" /> Ordre des mots (SPOK)</label>
-        <label class="badge"><input type="checkbox" v-model="includeTyped" /> Vocab (réponse écrite)</label>
-        <label class="badge"><input type="checkbox" v-model="includeCloze" /> Texte à trous</label>
-        <label v-if="canSpeak" class="badge"><input type="checkbox" v-model="includeDictation" /> Dictée 🔊</label>
+        <label class="badge"><input type="checkbox" v-model="includeVocab" /> {{ $t("generator.source.vocab") }}</label>
+        <label class="badge"><input type="checkbox" v-model="includeExam" /> {{ $t("generator.source.exam") }}</label>
+        <label class="badge"><input type="checkbox" v-model="includeOrder" /> {{ $t("generator.source.order") }}</label>
+        <label class="badge"><input type="checkbox" v-model="includeTyped" /> {{ $t("generator.source.typed") }}</label>
+        <label class="badge"><input type="checkbox" v-model="includeCloze" /> {{ $t("generator.source.cloze") }}</label>
+        <label v-if="canSpeak" class="badge"><input type="checkbox" v-model="includeDictation" /> {{ $t("generator.source.dictation") }}</label>
       </div>
 
       <div class="row justify-start mt-2.5">
-        <span class="small">Sens du vocab :</span>
+        <span class="small">{{ $t("generator.vocabDirection") }}</span>
         <select class="input w-auto" v-model="vocabDir">
-          <option value="forward">Terme → traduction</option>
-          <option value="reverse">Traduction → terme</option>
-          <option value="both">Les deux (aléatoire)</option>
+          <option value="forward">{{ $t("generator.direction.forward") }}</option>
+          <option value="reverse">{{ $t("generator.direction.reverse") }}</option>
+          <option value="both">{{ $t("generator.direction.both") }}</option>
         </select>
       </div>
 
       <div class="hr"></div>
 
-      <h3>Nombre de questions</h3>
+      <h3>{{ $t("generator.count") }}</h3>
       <input class="input" type="number" min="1" max="200" v-model.number="count" />
 
       <div class="hr"></div>
 
-      <h3>Tags</h3>
-      <p class="small">Si tu ne sélectionnes aucun tag, l’exam utilisera tout le contenu disponible.</p>
+      <h3>{{ $t("generator.tags") }}</h3>
+      <p class="small">{{ $t("generator.tagsHint") }}</p>
 
       <!-- ✅ Zone tags scrollable -->
       <div class="tagBox">
         <div class="pills" style="flex-wrap:wrap">
           <button
-              v-for="t in tags"
-              :key="t"
+              v-for="tag in tags"
+              :key="tag"
               class="pill"
-              :class="{ active: selected.includes(t) }"
-              @click="toggleTag(t)"
+              :class="{ active: selected.includes(tag) }"
+              @click="toggleTag(tag)"
               type="button"
           >
-            {{ t }}
+            {{ tag }}
           </button>
         </div>
       </div>
@@ -119,9 +120,9 @@ onMounted(load);
       <div class="hr"></div>
 
       <div class="row">
-        <button class="btn" @click="start">Démarrer l’exam</button>
-        <router-link class="btn" to="/vocab">Éditer vocab</router-link>
-        <router-link class="btn" to="/qcm">Éditer QCM</router-link>
+        <button class="btn" @click="start">{{ $t("generator.start") }}</button>
+        <router-link class="btn" to="/vocab">{{ $t("generator.editVocab") }}</router-link>
+        <router-link class="btn" to="/qcm">{{ $t("generator.editQcm") }}</router-link>
       </div>
     </div>
   </div>

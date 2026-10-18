@@ -22,6 +22,7 @@ import {
 } from "../services/srs";
 import { speak, speechSupported } from "../services/speech";
 import { getSetting, setSetting } from "../services/settings";
+import { t } from "../i18n";
 
 /**
  * Flashcards avec répétition espacée (SM-2).
@@ -93,14 +94,14 @@ watch(
 
 const title = computed(() => {
   if (deck.value) return deck.value.title;
-  return "Révision du jour";
+  return t("flashcards.reviewTitle");
 });
 
-const grades: { grade: Grade; label: string; cls: string; key: string }[] = [
-  { grade: 0, label: "À revoir", cls: "danger", key: "1" },
-  { grade: 1, label: "Difficile", cls: "", key: "2" },
-  { grade: 2, label: "Bien", cls: "ok", key: "3" },
-  { grade: 3, label: "Facile", cls: "primary", key: "4" }
+const grades: { grade: Grade; labelKey: string; cls: string; key: string }[] = [
+  { grade: 0, labelKey: "flashcards.grades.again", cls: "danger", key: "1" },
+  { grade: 1, labelKey: "flashcards.grades.hard", cls: "", key: "2" },
+  { grade: 2, labelKey: "flashcards.grades.good", cls: "ok", key: "3" },
+  { grade: 3, labelKey: "flashcards.grades.easy", cls: "primary", key: "4" }
 ];
 
 const previews = computed(() => {
@@ -179,7 +180,7 @@ async function grade(g: Grade) {
     await saveReview(toRaw(next));
   } catch (e) {
     console.error("SRS save failed:", e);
-    toast("Erreur lors de l'enregistrement de la révision.", "danger");
+    toast(t("flashcards.saveReviewError"), "danger");
   }
 
   if (queue.value.length === 0) await finish();
@@ -217,7 +218,7 @@ async function finish() {
   } catch (e) {
     console.error("Flashcards save failed:", e);
     savedAttempt.value = false;
-    toast("Erreur lors de l'enregistrement des résultats (IndexedDB).", "danger");
+    toast(t("common.saveError"), "danger");
   }
 }
 
@@ -259,32 +260,32 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
     <div v-if="!loaded" class="card sessionCard"></div>
 
     <div v-else-if="deckId && !deck" class="card sessionCard">
-      <EmptyState title="Deck introuvable" />
+      <EmptyState :title="$t('flashcards.deckNotFound')" />
     </div>
 
     <div v-else-if="sessionSize === 0" class="card sessionCard">
       <EmptyState
-        :title="reviewMode ? 'Rien à réviser 🎉' : 'Deck vide'"
-        :hint="reviewMode ? 'Toutes les cartes sont à jour. Reviens demain !' : 'Importe des items dans ce deck.'"
+        :title="reviewMode ? $t('flashcards.nothingDue') : $t('flashcards.emptyDeck')"
+        :hint="reviewMode ? $t('flashcards.allUpToDate') : $t('flashcards.importHint')"
       />
       <div class="row mt-3">
-        <router-link v-if="deckId" class="btn" :to="`/deck/${deckId}/flash`">Réviser tout le deck</router-link>
-        <router-link class="btn" to="/">Accueil</router-link>
+        <router-link v-if="deckId" class="btn" :to="`/deck/${deckId}/flash`">{{ $t("flashcards.reviewWholeDeck") }}</router-link>
+        <router-link class="btn" to="/">{{ $t("common.home") }}</router-link>
       </div>
     </div>
 
     <div v-else class="sessionCard">
       <div class="row">
         <div>
-          <h2 class="m-0">{{ reviewMode ? "Révision" : "Flashcards" }}</h2>
+          <h2 class="m-0">{{ reviewMode ? $t("flashcards.review") : $t("flashcards.flashcards") }}</h2>
           <p class="small mt-1">
-            {{ title }} • {{ queue.length }} restante(s)
-            <span v-if="direction === 'reverse'"> • sens inverse</span>
+            {{ title }} • {{ $t("flashcards.remaining", { count: queue.length }) }}
+            <span v-if="direction === 'reverse'"> • {{ $t("flashcards.reversed") }}</span>
           </p>
         </div>
         <div class="row">
-          <button v-if="canSpeak" class="btn" :class="{ primary: autoSpeak }" @click="toggleAutoSpeak">🔊 Auto {{ autoSpeak ? "on" : "off" }}</button>
-          <router-link class="btn" :to="deckId ? `/deck/${deckId}` : '/'">Retour</router-link>
+          <button v-if="canSpeak" class="btn" :class="{ primary: autoSpeak }" @click="toggleAutoSpeak">{{ autoSpeak ? $t("flashcards.autoOn") : $t("flashcards.autoOff") }}</button>
+          <router-link class="btn" :to="deckId ? `/deck/${deckId}` : '/'">{{ $t("common.back") }}</router-link>
         </div>
       </div>
 
@@ -296,20 +297,20 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
             @click="flipped = !flipped"
         >
           <div class="small mb-2.5">
-            <span v-if="current?.isNew" class="badge mr-2">Nouvelle</span>
+            <span v-if="current?.isNew" class="badge mr-2">{{ $t("flashcards.isNew") }}</span>
             <span v-if="!deck && current" class="badge mr-2">{{ decks[current.item.deckId]?.title }}</span>
-            {{ flipped ? "Réponse" : "Question" }} (clique ou Espace pour retourner)
+            {{ flipped ? $t("flashcards.answerSide") : $t("flashcards.questionSide") }}
           </div>
 
           <div class="text-2xl font-extrabold">
             {{ front }}
-            <button v-if="canSpeak" class="btn ml-2" type="button" title="Écouter" @click.stop="say('front')">🔊</button>
+            <button v-if="canSpeak" class="btn ml-2" type="button" :title="$t('flashcards.listen')" @click.stop="say('front')">🔊</button>
           </div>
           <template v-if="flipped">
             <div class="hr"></div>
             <div class="text-2xl font-extrabold text-accent">
               {{ back }}
-              <button v-if="canSpeak" class="btn ml-2" type="button" title="Écouter" @click.stop="say('back')">🔊</button>
+              <button v-if="canSpeak" class="btn ml-2" type="button" :title="$t('flashcards.listen')" @click.stop="say('back')">🔊</button>
             </div>
           </template>
         </div>
@@ -317,8 +318,8 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
 
       <div class="sessionFooter">
         <div v-if="!flipped" class="row mt-3">
-          <button class="btn primary flex-1" @click="flipped = true">Afficher la réponse</button>
-          <button class="btn" @click="finish">Terminer</button>
+          <button class="btn primary flex-1" @click="flipped = true">{{ $t("flashcards.showAnswer") }}</button>
+          <button class="btn" @click="finish">{{ $t("common.finish") }}</button>
         </div>
         <div v-else class="grid grid-cols-2 tablet:grid-cols-4 gap-2 mt-3">
           <button
@@ -328,26 +329,26 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
             :class="g.cls"
             @click="grade(g.grade)"
           >
-            <span>{{ g.label }}</span>
+            <span>{{ $t(g.labelKey) }}</span>
             <span class="small">{{ previews[g.grade] }} · {{ g.key }}</span>
           </button>
         </div>
 
         <p class="small mt-2.5">
-          Score session: {{ percent() }} ({{ correct }}/{{ total }})
+          {{ $t("flashcards.sessionScore", { percent: percent(), correct, total }) }}
         </p>
       </div>
     </div>
 
-    <BaseModal :open="showResultModal" title="Résultat flashcards" @close="backToDeck">
+    <BaseModal :open="showResultModal" :title="$t('flashcards.resultTitle')" @close="backToDeck">
       <div class="card" style="margin:0">
         <div class="row">
           <div>
-            <div class="small">Score</div>
+            <div class="small">{{ $t("common.score") }}</div>
             <div class="kpi">{{ percent() }}</div>
           </div>
           <div>
-            <div class="small">Cartes revues</div>
+            <div class="small">{{ $t("flashcards.cardsReviewed") }}</div>
             <div class="kpi">{{ correct }}/{{ total }}</div>
           </div>
         </div>
@@ -355,8 +356,8 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
         <div class="hr"></div>
 
         <div class="row">
-          <router-link class="btn" to="/stats">Voir les stats</router-link>
-          <button class="btn" @click="backToDeck">{{ deckId ? "Retour deck" : "Accueil" }}</button>
+          <router-link class="btn" to="/stats">{{ $t("common.viewStats") }}</router-link>
+          <button class="btn" @click="backToDeck">{{ deckId ? $t("flashcards.backToDeck") : $t("common.home") }}</button>
         </div>
       </div>
     </BaseModal>

@@ -5,6 +5,7 @@ import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { db, type Exam, type ExamQuestion } from "../db";
 import { uid } from "../utils/id";
+import { t } from "../i18n";
 import ConfirmBar from "../components/ConfirmBar.vue";
 import EmptyState from "../components/EmptyState.vue";
 import BaseModal from "../components/BaseModal.vue";
@@ -64,15 +65,15 @@ async function load() {
 
 async function saveExam() {
   if (!exam.value) return;
-  const t = examTitle.value.trim();
-  if (!t) return set("danger", "Titre requis.");
+  const name = examTitle.value.trim();
+  if (!name) return set("danger", t("qcm.titleRequired"));
   const minutes = Math.max(0, Math.floor(durationMinutes.value || 0));
   await db.exams.put({
     ...exam.value,
-    title: t,
+    title: name,
     durationSeconds: minutes ? minutes * 60 : undefined
   });
-  set("ok", "Exam mis à jour ✅");
+  set("ok", t("qcm.edit.updated"));
   await load();
 }
 
@@ -90,9 +91,9 @@ function setCorrect(idx: number) {
 async function addQuestion() {
   if (!exam.value) return;
   const p = prompt.value.trim();
-  if (!p) return set("danger", "Prompt requis.");
+  if (!p) return set("danger", t("qcm.edit.promptRequired"));
   const list = normalizeChoices(choices.value);
-  if (list.length < 2) return set("danger", "Au moins 2 choix requis.");
+  if (list.length < 2) return set("danger", t("qcm.edit.twoChoicesRequired"));
 
   const q: ExamQuestion = {
     id: `${examId.value}:${uid("q")}`,
@@ -111,7 +112,7 @@ async function addQuestion() {
     { id: uid("c"), text: "", correct: true },
     { id: uid("c"), text: "", correct: false }
   ];
-  set("ok", "Question ajoutée ✅");
+  set("ok", t("qcm.edit.questionAdded"));
   await load();
 }
 
@@ -138,9 +139,9 @@ function setEditCorrect(idx: number) {
 async function saveEdit() {
   if (!editQId.value) return;
   const p = editPrompt.value.trim();
-  if (!p) return set("danger", "Prompt requis.");
+  if (!p) return set("danger", t("qcm.edit.promptRequired"));
   const list = normalizeChoices(editChoices.value);
-  if (list.length < 2) return set("danger", "Au moins 2 choix requis.");
+  if (list.length < 2) return set("danger", t("qcm.edit.twoChoicesRequired"));
 
   await db.examQuestions.put({
     id: editQId.value,
@@ -151,14 +152,14 @@ async function saveEdit() {
     tags: parseTags(editTagsText.value)
   });
   editOpen.value = false;
-  set("ok", "Question mise à jour ✅");
+  set("ok", t("qcm.edit.questionUpdated"));
   await load();
 }
 
 async function removeQuestion(id: string) {
-  if (!(await confirmDialog("Supprimer cette question ?"))) return;
+  if (!(await confirmDialog(t("qcm.edit.questionDeleteConfirm")))) return;
   await db.examQuestions.delete(id);
-  set("ok", "Question supprimée ✅");
+  set("ok", t("qcm.edit.questionDeleted"));
   await load();
 }
 
@@ -171,9 +172,9 @@ onMounted(load);
 
 <template>
   <div v-if="!exam">
-    <EmptyState title="Exam introuvable" hint="Retourne à la liste des exams." />
+    <EmptyState :title="$t('qcm.edit.notFound')" :hint="$t('qcm.edit.notFoundHint')" />
     <div class="row" style="margin-top:12px">
-      <button class="btn" @click="goBack">Retour</button>
+      <button class="btn" @click="goBack">{{ $t("common.back") }}</button>
     </div>
   </div>
 
@@ -181,46 +182,46 @@ onMounted(load);
   <div v-else class="editGrid">
     <div class="card cardFill">
       <div class="scrollY">
-      <h2>Éditer exam</h2>
+      <h2>{{ $t("qcm.edit.heading") }}</h2>
 
-      <label class="small">Titre</label>
+      <label class="small">{{ $t("common.title") }}</label>
       <input class="input" v-model="examTitle" />
 
-      <label class="small" style="margin-top:8px; display:block">Durée (minutes, optionnel)</label>
+      <label class="small" style="margin-top:8px; display:block">{{ $t("qcm.durationLabel") }}</label>
       <input class="input" type="number" min="0" v-model.number="durationMinutes" />
 
       <div class="row" style="margin-top:12px">
-        <button class="btn" @click="saveExam">Enregistrer</button>
-        <button class="btn" @click="goBack">Retour</button>
+        <button class="btn" @click="saveExam">{{ $t("common.save") }}</button>
+        <button class="btn" @click="goBack">{{ $t("common.back") }}</button>
       </div>
 
       <div class="hr"></div>
 
-      <h3>Ajouter une question</h3>
-      <label class="small">Question</label>
-      <textarea class="input" style="min-height:90px; resize:vertical" v-model="prompt" placeholder="Prompt…"></textarea>
+      <h3>{{ $t("qcm.edit.addQuestion") }}</h3>
+      <label class="small">{{ $t("qcm.edit.question") }}</label>
+      <textarea class="input" style="min-height:90px; resize:vertical" v-model="prompt" :placeholder="$t('qcm.edit.promptPlaceholder')"></textarea>
 
-      <label class="small" style="margin-top:8px; display:block">Explication (optionnel)</label>
-      <textarea class="input" style="min-height:60px; resize:vertical" v-model="explanation" placeholder="Pourquoi…"></textarea>
+      <label class="small" style="margin-top:8px; display:block">{{ $t("qcm.edit.explanation") }}</label>
+      <textarea class="input" style="min-height:60px; resize:vertical" v-model="explanation" :placeholder="$t('qcm.edit.explanationPlaceholder')"></textarea>
 
-      <label class="small" style="margin-top:8px; display:block">Tags (virgules)</label>
-      <input class="input" v-model="tagsText" placeholder="negation, grammaire" />
+      <label class="small" style="margin-top:8px; display:block">{{ $t("qcm.edit.tags") }}</label>
+      <input class="input" v-model="tagsText" :placeholder="$t('qcm.edit.tagsPlaceholder')" />
 
       <div class="hr"></div>
 
-      <h3>Choix</h3>
+      <h3>{{ $t("qcm.edit.choices") }}</h3>
       <div class="list">
         <div v-for="(c, i) in choices" :key="c.id" class="card" style="margin:0">
           <div class="row" style="align-items:flex-start">
             <input type="radio" :checked="c.correct" @change="setCorrect(i)" />
-            <input class="input" v-model="c.text" placeholder="Texte du choix" />
+            <input class="input" v-model="c.text" :placeholder="$t('qcm.edit.choicePlaceholder')" />
             <button class="btn" @click="removeChoice(i)" :disabled="choices.length <= 2">-</button>
           </div>
         </div>
       </div>
       <div class="row" style="margin-top:10px">
-        <button class="btn" @click="addChoice">Ajouter un choix</button>
-        <button class="btn ok" @click="addQuestion">Ajouter la question</button>
+        <button class="btn" @click="addChoice">{{ $t("qcm.edit.addChoice") }}</button>
+        <button class="btn ok" @click="addQuestion">{{ $t("qcm.edit.addQuestionButton") }}</button>
       </div>
 
       <div v-if="msg" style="margin-top:12px">
@@ -231,12 +232,12 @@ onMounted(load);
 
     <div class="card cardFill">
       <div class="row flex-none mb-2.5">
-        <h2 class="m-0">Questions</h2>
+        <h2 class="m-0">{{ $t("qcm.edit.questions") }}</h2>
         <span class="small">{{ questions.length }}</span>
       </div>
 
       <div v-if="questions.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
-        <EmptyState title="Aucune question" hint="Ajoute ta première question à gauche." />
+        <EmptyState :title="$t('qcm.edit.emptyTitle')" :hint="$t('qcm.edit.emptyHint')" />
       </div>
 
       <div v-else class="scrollY">
@@ -248,12 +249,12 @@ onMounted(load);
                 <p class="small mt-1">{{ (q.tags ?? []).join(", ") }}</p>
               </div>
               <div class="row" style="gap:8px">
-                <button class="btn" @click="openEdit(q)">Éditer</button>
-                <button class="btn danger" @click="removeQuestion(q.id)">Supprimer</button>
+                <button class="btn" @click="openEdit(q)">{{ $t("common.edit") }}</button>
+                <button class="btn danger" @click="removeQuestion(q.id)">{{ $t("common.delete") }}</button>
               </div>
             </div>
             <p class="small mt-2">
-              Réponse: {{ q.choices.find(c => c.correct)?.text ?? "?" }}
+              {{ $t("qcm.edit.answer", { answer: q.choices.find(c => c.correct)?.text ?? "?" }) }}
             </p>
           </div>
         </div>
@@ -261,20 +262,20 @@ onMounted(load);
     </div>
   </div>
 
-  <BaseModal :open="editOpen" title="Modifier une question" @close="editOpen = false">
+  <BaseModal :open="editOpen" :title="$t('qcm.edit.editModal')" @close="editOpen = false">
     <div class="card" style="margin:0">
-      <label class="small">Question</label>
+      <label class="small">{{ $t("qcm.edit.question") }}</label>
       <textarea class="input" style="min-height:90px; resize:vertical" v-model="editPrompt"></textarea>
 
-      <label class="small" style="margin-top:8px; display:block">Explication (optionnel)</label>
+      <label class="small" style="margin-top:8px; display:block">{{ $t("qcm.edit.explanation") }}</label>
       <textarea class="input" style="min-height:60px; resize:vertical" v-model="editExplanation"></textarea>
 
-      <label class="small" style="margin-top:8px; display:block">Tags (virgules)</label>
+      <label class="small" style="margin-top:8px; display:block">{{ $t("qcm.edit.tags") }}</label>
       <input class="input" v-model="editTagsText" />
 
       <div class="hr"></div>
 
-      <h3>Choix</h3>
+      <h3>{{ $t("qcm.edit.choices") }}</h3>
       <div class="list">
         <div v-for="(c, i) in editChoices" :key="c.id" class="card" style="margin:0">
           <div class="row" style="align-items:flex-start">
@@ -285,9 +286,9 @@ onMounted(load);
         </div>
       </div>
       <div class="row" style="margin-top:10px">
-        <button class="btn" @click="addEditChoice">Ajouter un choix</button>
-        <button class="btn" @click="saveEdit">Enregistrer</button>
-        <button class="btn" @click="editOpen = false">Annuler</button>
+        <button class="btn" @click="addEditChoice">{{ $t("qcm.edit.addChoice") }}</button>
+        <button class="btn" @click="saveEdit">{{ $t("common.save") }}</button>
+        <button class="btn" @click="editOpen = false">{{ $t("common.cancel") }}</button>
       </div>
     </div>
   </BaseModal>

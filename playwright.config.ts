@@ -7,7 +7,9 @@ export default defineConfig({
   reporter: [["list"]],
   use: {
     baseURL: "http://localhost:5180",
-    trace: "retain-on-failure"
+    trace: "retain-on-failure",
+    // Assertions are written against the French UI.
+    locale: "fr-FR"
   },
   projects: [
     { name: "desktop", use: { ...devices["Desktop Chrome"] } },

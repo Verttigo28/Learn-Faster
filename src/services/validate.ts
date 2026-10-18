@@ -1,3 +1,4 @@
+import { t } from "../i18n";
 import type { QcmExamJson, RevisionsBundleJson, SentenceDeckJson, VocabDeckJson } from "../types/json";
 
 export type ImportPayload =
@@ -15,34 +16,34 @@ class Checker {
 
   fail(path: string, msg: string) {
     const clean = path.replace(/^\./, "");
-    if (this.errors.length < MAX_ERRORS) this.errors.push(`${clean || "racine"} : ${msg}`);
+    if (this.errors.length < MAX_ERRORS) this.errors.push(`${clean || t("services.validate.root")} : ${msg}`);
   }
   obj(x: unknown, path: string): x is Record<string, unknown> {
     if (x && typeof x === "object" && !Array.isArray(x)) return true;
-    this.fail(path, "objet attendu");
+    this.fail(path, t("services.validate.object"));
     return false;
   }
   str(x: unknown, path: string, required = true): boolean {
     if (x === undefined && !required) return true;
     if (typeof x === "string" && (!required || x.trim().length > 0)) return true;
-    this.fail(path, required ? "texte non vide requis" : "texte attendu");
+    this.fail(path, required ? t("services.validate.nonEmptyText") : t("services.validate.text"));
     return false;
   }
   arr(x: unknown, path: string): x is unknown[] {
     if (Array.isArray(x)) return true;
-    this.fail(path, "liste attendue");
+    this.fail(path, t("services.validate.list"));
     return false;
   }
   tags(x: unknown, path: string) {
     if (x === undefined) return;
-    if (!Array.isArray(x) || x.some((t) => typeof t !== "string")) this.fail(path, "liste de textes attendue");
+    if (!Array.isArray(x) || x.some((t) => typeof t !== "string")) this.fail(path, t("services.validate.textList"));
   }
   uniqueIds(list: unknown[], path: string) {
     const seen = new Set<string>();
     list.forEach((it, i) => {
       const id = (it as { id?: unknown })?.id;
       if (typeof id !== "string") return;
-      if (seen.has(id)) this.fail(`${path}[${i}].id`, `id "${id}" en double`);
+      if (seen.has(id)) this.fail(`${path}[${i}].id`, t("services.validate.duplicateId", { id }));
       seen.add(id);
     });
   }
@@ -71,7 +72,7 @@ function checkQcm(c: Checker, x: unknown, p: string) {
   c.str(x.id, `${p}.id`);
   c.str(x.title, `${p}.title`);
   if (x.durationSeconds !== undefined && (typeof x.durationSeconds !== "number" || x.durationSeconds < 0)) {
-    c.fail(`${p}.durationSeconds`, "nombre positif attendu");
+    c.fail(`${p}.durationSeconds`, t("services.validate.positiveNumber"));
   }
   if (!c.arr(x.questions, `${p}.questions`)) return;
   x.questions.forEach((qq, i) => {
@@ -82,17 +83,17 @@ function checkQcm(c: Checker, x: unknown, p: string) {
     c.str(qq.explanation, `${q}.explanation`, false);
     c.tags(qq.tags, `${q}.tags`);
     if (!c.arr(qq.choices, `${q}.choices`)) return;
-    if (qq.choices.length < 2) c.fail(`${q}.choices`, "au moins 2 choix requis");
+    if (qq.choices.length < 2) c.fail(`${q}.choices`, t("services.validate.atLeastTwoChoices"));
     let correct = 0;
     qq.choices.forEach((ch, j) => {
       const r = `${q}.choices[${j}]`;
       if (!c.obj(ch, r)) return;
       c.str(ch.id, `${r}.id`);
       c.str(ch.text, `${r}.text`);
-      if (typeof ch.correct !== "boolean") c.fail(`${r}.correct`, "true/false attendu");
+      if (typeof ch.correct !== "boolean") c.fail(`${r}.correct`, t("services.validate.trueFalse"));
       if (ch.correct === true) correct++;
     });
-    if (correct === 0) c.fail(`${q}.choices`, "aucun choix correct");
+    if (correct === 0) c.fail(`${q}.choices`, t("services.validate.noCorrectChoice"));
     c.uniqueIds(qq.choices, `${q}.choices`);
   });
   c.uniqueIds(x.questions, `${p}.questions`);
@@ -130,7 +131,7 @@ export function validateImport(x: unknown): ValidationResult {
       checkSentences(c, x, "");
       break;
     case "revisions_bundle":
-      if (x.schema !== 1) c.fail("schema", "version 1 attendue");
+      if (x.schema !== 1) c.fail("schema", t("services.validate.schemaV1"));
       if (x.progress !== undefined) {
         const reviews = c.obj(x.progress, "progress") ? x.progress.reviews : undefined;
         if (c.arr(reviews ?? [], "progress.reviews")) {
@@ -140,7 +141,7 @@ export function validateImport(x: unknown): ValidationResult {
             c.str(r.cardId, `${p}.cardId`);
             c.str(r.itemId, `${p}.itemId`);
             for (const k of ["ease", "interval", "reps", "lapses", "due"]) {
-              if (typeof r[k] !== "number") c.fail(`${p}.${k}`, "nombre attendu");
+              if (typeof r[k] !== "number") c.fail(`${p}.${k}`, t("services.validate.number"));
             }
           });
         }
@@ -155,7 +156,7 @@ export function validateImport(x: unknown): ValidationResult {
       }
       break;
     default:
-      c.fail("type", "attendu : vocab_deck / qcm_exam / sentence_deck / revisions_bundle");
+      c.fail("type", t("services.validate.unknownType"));
   }
 
   if (c.errors.length) return { ok: false, errors: c.errors };

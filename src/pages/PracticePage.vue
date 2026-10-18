@@ -20,6 +20,7 @@ import { db, type AttemptDetail } from "../db";
 import { uid } from "../utils/id";
 import { clamp01, formatDuration } from "../utils/time";
 import { checkAnswer } from "../utils/answer";
+import { t } from "../i18n";
 
 const route = useRoute();
 const router = useRouter();
@@ -52,8 +53,8 @@ function persistHelp() {
 }
 
 const tags = computed(() => {
-  const t = String(route.query.tags ?? "").trim();
-  return t ? t.split(",").map(x => x.trim()).filter(Boolean) : [];
+  const raw = String(route.query.tags ?? "").trim();
+  return raw ? raw.split(",").map(x => x.trim()).filter(Boolean) : [];
 });
 const sources = computed<PracticeSource[]>(() => {
   const s = String(route.query.sources ?? "").trim();
@@ -107,7 +108,7 @@ async function load() {
   stopTimer();
 
   const wanted = sources.value.filter((s) => s !== "dictation" || speechSupported());
-  if (wanted.length < sources.value.length) toast("Dictée indisponible : synthèse vocale non supportée.", "danger");
+  if (wanted.length < sources.value.length) toast(t("services.speechUnavailable"), "danger");
 
   questions.value = await buildPractice({
     tags: tags.value,
@@ -197,7 +198,7 @@ function toDetail(q: PracticeQuestion): AttemptDetail {
   return {
     kind: q.kind,
     id: q.id,
-    prompt: q.kind === "dictation" ? `Dictée (${q.hint ?? ""})` : q.prompt,
+    prompt: q.kind === "dictation" ? t("services.dictationDetail", { hint: q.hint ?? "" }) : q.prompt,
     expected: q.expected,
     answer: q.answer,
     correct: ok
@@ -236,7 +237,7 @@ async function finish() {
     } catch (e) {
       console.error(e);
       savedAttempt.value = false;
-      toast("Erreur lors de l'enregistrement des résultats (IndexedDB).", "danger");
+      toast(t("common.saveError"), "danger");
     }
   }
 }
@@ -245,9 +246,10 @@ function percent(x: number) {
   return `${Math.round(x * 100)}%`;
 }
 
-const BREAKDOWN_LABELS: Record<string, string> = {
-  vocab: "Vocab", exam: "QCM", order: "SPOK", typed: "Écrit", cloze: "Trous", dictation: "Dictée"
-};
+const BREAKDOWN_KEYS = ["vocab", "exam", "order", "typed", "cloze", "dictation"];
+function breakdownLabel(k: string): string {
+  return BREAKDOWN_KEYS.includes(k) ? t(`practice.breakdown.${k}`) : k;
+}
 
 function onKeydown(e: KeyboardEvent) {
   if (showModal.value || !current.value) return;
@@ -287,29 +289,29 @@ onUnmounted(() => {
 
     <div v-else-if="questions.length === 0" class="card sessionCard">
       <EmptyState
-        title="Rien à réviser"
-        hint="Aucune question ne correspond aux filtres. Ajoute du contenu ou change les tags."
+        :title="$t('practice.emptyTitle')"
+        :hint="$t('practice.emptyHint')"
       />
       <div class="row mt-3">
-        <router-link class="btn" to="/exams">Retour générateur</router-link>
-        <router-link class="btn" to="/import">Importer</router-link>
-        <router-link class="btn" to="/sentences">Ajouter des phrases</router-link>
+        <router-link class="btn" to="/exams">{{ $t("practice.backGenerator") }}</router-link>
+        <router-link class="btn" to="/import">{{ $t("practice.import") }}</router-link>
+        <router-link class="btn" to="/sentences">{{ $t("practice.addSentences") }}</router-link>
       </div>
     </div>
 
     <div v-else-if="current" class="sessionCard">
       <div class="row">
         <div>
-          <h2 class="m-0">Exam (tags)</h2>
+          <h2 class="m-0">{{ $t("practice.title") }}</h2>
           <p class="small mt-1">
-            Question {{ idx + 1 }} / {{ questions.length }}
-            <span v-if="tags.length"> • Tags: {{ tags.join(", ") }}</span>
+            {{ $t("practice.progress", { n: idx + 1, total: questions.length }) }}
+            <span v-if="tags.length"> • {{ $t("practice.tags", { tags: tags.join(", ") }) }}</span>
           </p>
         </div>
 
         <div class="row">
           <span v-if="remainingSeconds !== null" class="badge">⏱ {{ formatDuration(remainingSeconds) }}</span>
-          <button class="btn" @click="goGenerator">Quitter</button>
+          <button class="btn" @click="goGenerator">{{ $t("common.quit") }}</button>
         </div>
       </div>
 
@@ -342,12 +344,12 @@ onUnmounted(() => {
         </div>
 
         <div v-else-if="current.kind === 'sentence_order'">
-          <h3 class="mt-0">Remets la phrase dans le bon ordre</h3>
+          <h3 class="mt-0">{{ $t("practice.orderTitle") }}</h3>
 
           <div class="row justify-start gap-2.5 mb-2.5">
             <label class="badge cursor-pointer">
               <input type="checkbox" v-model="sentenceHelp" @change="persistHelp" />
-              Aide : afficher la traduction
+              {{ $t("common.translationHelp") }}
             </label>
             <span v-if="sentenceHelp && current.translation" class="small">🇫🇷 {{ current.translation }}</span>
           </div>
@@ -357,9 +359,9 @@ onUnmounted(() => {
           <div v-if="locked" class="card mt-3 rounded-[18px]">
             <div class="row">
               <span class="badge" :class="isPracticeCorrect(current) ? 'border-ok/60' : 'border-danger/60'">
-                {{ isPracticeCorrect(current) ? '✅ Correct' : '❌ Incorrect' }}
+                {{ isPracticeCorrect(current) ? $t("practice.correct") : $t("practice.incorrect") }}
               </span>
-              <span class="small">Phrase correcte :</span>
+              <span class="small">{{ $t("practice.correctSentence") }}</span>
             </div>
             <h3 class="mt-2.5 mb-0">{{ current.text }}</h3>
             <p v-if="current.translation" class="small mt-1.5 mb-0">🇫🇷 {{ current.translation }}</p>
@@ -369,15 +371,15 @@ onUnmounted(() => {
         <div v-else>
           <template v-if="current.kind === 'dictation'">
             <h3 class="mt-0">{{ current.prompt }}</h3>
-            <button class="btn primary" type="button" @click="speak(current.speak ?? '', current.lang)">🔊 Réécouter</button>
+            <button class="btn primary" type="button" @click="speak(current.speak ?? '', current.lang)">{{ $t("practice.replay") }}</button>
           </template>
           <template v-else-if="current.kind === 'cloze'">
-            <h3 class="mt-0">Complète la phrase</h3>
+            <h3 class="mt-0">{{ $t("practice.clozeTitle") }}</h3>
             <p class="text-xl font-bold text-text">{{ current.prompt }}</p>
             <p v-if="sentenceHelp && current.hint" class="small">🇫🇷 {{ current.hint }}</p>
             <label class="badge cursor-pointer">
               <input type="checkbox" v-model="sentenceHelp" @change="persistHelp" />
-              Aide : afficher la traduction
+              {{ $t("common.translationHelp") }}
             </label>
           </template>
           <h3 v-else class="mt-0">{{ current.prompt }}</h3>
@@ -390,45 +392,45 @@ onUnmounted(() => {
             autocomplete="off"
             autocapitalize="off"
             spellcheck="false"
-            placeholder="Ta réponse… (Entrée pour valider)"
+            :placeholder="$t('practice.placeholder')"
           />
 
           <div v-if="locked && typedCheck" class="card mt-3 rounded-[18px]">
             <span class="badge" :class="typedCheck.correct ? 'border-ok/60' : 'border-danger/60'">
-              {{ typedCheck.correct ? (typedCheck.typo ? "✅ Presque (petite faute)" : "✅ Correct") : "❌ Incorrect" }}
+              {{ typedCheck.correct ? (typedCheck.typo ? $t("practice.almost") : $t("practice.correct")) : $t("practice.incorrect") }}
             </span>
-            <p class="mt-2.5 mb-0">Réponse attendue : <b class="text-text">{{ current.expected }}</b></p>
-            <p v-if="current.kind === 'dictation' && current.hint" class="small">Sens : {{ current.hint }}</p>
+            <p class="mt-2.5 mb-0">{{ $t("practice.expected") }} <b class="text-text">{{ current.expected }}</b></p>
+            <p v-if="current.kind === 'dictation' && current.hint" class="small">{{ $t("practice.meaning", { hint: current.hint }) }}</p>
           </div>
         </div>
       </div>
 
       <div class="sessionFooter">
         <div class="row mt-3">
-          <button class="btn" @click="submit" :disabled="!canSubmit">Valider</button>
-          <button class="btn" @click="next" :disabled="!canProceed">Suivant</button>
-          <button class="btn ok" @click="finish">Terminer</button>
+          <button class="btn" @click="submit" :disabled="!canSubmit">{{ $t("common.submit") }}</button>
+          <button class="btn" @click="next" :disabled="!canProceed">{{ $t("common.next") }}</button>
+          <button class="btn ok" @click="finish">{{ $t("common.finish") }}</button>
         </div>
 
         <p class="small mt-2.5">
-          Entrée = valider / suivant • 1–9 = choisir une réponse • ordre des mots : clique un mot pour l’ajouter, puis dans “Ta réponse” pour l’enlever.
+          {{ $t("practice.shortcuts") }}
         </p>
       </div>
     </div>
 
-    <BaseModal :open="showModal" title="Résultat (exam tags)" @close="goHome">
+    <BaseModal :open="showModal" :title="$t('practice.resultTitle')" @close="goHome">
       <div v-if="result" class="card" style="margin:0">
         <div class="row">
           <div>
-            <div class="small">Score</div>
+            <div class="small">{{ $t("common.score") }}</div>
             <div class="kpi">{{ percent(result.score) }}</div>
           </div>
           <div>
-            <div class="small">Bonnes réponses</div>
+            <div class="small">{{ $t("common.correctAnswers") }}</div>
             <div class="kpi">{{ result.correct }}/{{ result.total }}</div>
           </div>
           <div>
-            <div class="small">Durée</div>
+            <div class="small">{{ $t("common.duration") }}</div>
             <div class="kpi">{{ formatDuration(result.durationSeconds) }}</div>
           </div>
         </div>
@@ -437,20 +439,20 @@ onUnmounted(() => {
 
         <div class="row justify-start">
           <template v-for="(n, k) in result.breakdown" :key="k">
-            <span v-if="n" class="badge">{{ BREAKDOWN_LABELS[k] ?? k }}: {{ n }}</span>
+            <span v-if="n" class="badge">{{ breakdownLabel(k) }}: {{ n }}</span>
           </template>
         </div>
 
         <div class="hr"></div>
 
         <div class="row">
-          <button class="btn" @click="goStats">Voir les stats</button>
-          <button class="btn" @click="goGenerator">Nouveau filtre</button>
-          <button class="btn ok" @click="goHome">Retour accueil</button>
+          <button class="btn" @click="goStats">{{ $t("common.viewStats") }}</button>
+          <button class="btn" @click="goGenerator">{{ $t("practice.newFilter") }}</button>
+          <button class="btn ok" @click="goHome">{{ $t("practice.backHome") }}</button>
         </div>
 
         <p class="small mt-2.5">
-          Cette session est sauvegardée dans Stats (type: practice).
+          {{ $t("practice.savedNote") }}
         </p>
       </div>
     </BaseModal>

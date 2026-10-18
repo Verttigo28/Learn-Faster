@@ -5,16 +5,28 @@ import { applyTheme } from "../services/theme";
 import { speechSupported } from "../services/speech";
 import { toast } from "../services/dialog";
 import { formatDate } from "../utils/time";
+import { detectLocale, isLocale, locale, setLocale, t } from "../i18n";
+import { LOCALES } from "../i18n/locales";
 
 const s = ref<Settings>({ ...DEFAULT_SETTINGS });
 const loaded = ref(false);
 const canSpeak = speechSupported();
 let savedTheme = (document.documentElement.dataset.theme as Settings["theme"] | undefined) ?? DEFAULT_SETTINGS.theme;
 
+const languages = Object.entries(LOCALES).map(([code, l]) => ({ code, name: l.name }));
+
 async function load() {
   s.value = await getAllSettings();
   savedTheme = s.value.theme;
   loaded.value = true;
+}
+
+/** The language applies and is stored immediately ("" = follow the device). */
+async function changeLanguage(code: string) {
+  const value = isLocale(code) ? code : "";
+  s.value.locale = value;
+  setLocale(value || detectLocale());
+  await setSetting("locale", value);
 }
 
 function clampInt(v: number, min: number, max: number, fallback: number) {
@@ -32,11 +44,11 @@ async function save() {
     setSetting("autoSpeak", s.value.autoSpeak)
   ]);
   savedTheme = s.value.theme;
-  toast("Réglages enregistrés ✅", "ok");
+  toast(t("settings.saved"), "ok");
 }
 
 // Preview the theme immediately.
-watch(() => s.value.theme, (t) => { if (loaded.value) applyTheme(t); });
+watch(() => s.value.theme, (th) => { if (loaded.value) applyTheme(th); });
 
 onMounted(load);
 // Leaving without saving: drop the theme preview.
@@ -47,43 +59,50 @@ onUnmounted(() => applyTheme(savedTheme));
   <div class="page flex justify-center">
     <div class="card cardFill w-full max-w-[640px]">
       <div class="scrollY">
-        <h2>Réglages</h2>
+        <h2>{{ $t("settings.title") }}</h2>
 
-        <h3 class="mt-3">Répétition espacée</h3>
-        <label class="small">Nouvelles cartes par jour</label>
+        <h3 class="mt-3">{{ $t("settings.language") }}</h3>
+        <select class="input" :value="s.locale" aria-label="Language" @change="changeLanguage(($event.target as HTMLSelectElement).value)">
+          <option value="">🌐 Auto ({{ LOCALES[detectLocale()].name }})</option>
+          <option v-for="l in languages" :key="l.code" :value="l.code">{{ l.name }}</option>
+        </select>
+        <p class="small">{{ LOCALES[locale].name }}</p>
+
+        <h3 class="mt-3">{{ $t("settings.srs") }}</h3>
+        <label class="small">{{ $t("settings.newPerDay") }}</label>
         <input class="input" type="number" min="0" max="500" v-model.number="s.newPerDay" />
-        <p class="small">Les cartes à revoir sont toujours proposées ; ce réglage limite seulement les nouvelles.</p>
+        <p class="small">{{ $t("settings.newPerDayHint") }}</p>
 
-        <h3 class="mt-3">Objectif quotidien</h3>
-        <label class="small">Nombre de réponses par jour</label>
+        <h3 class="mt-3">{{ $t("settings.goal") }}</h3>
+        <label class="small">{{ $t("settings.goalLabel") }}</label>
         <input class="input" type="number" min="1" max="2000" v-model.number="s.dailyGoal" />
 
-        <h3 class="mt-3">Apparence</h3>
+        <h3 class="mt-3">{{ $t("settings.appearance") }}</h3>
         <div class="pills">
-          <button type="button" class="pill" :class="{ active: s.theme === 'dark' }" @click="s.theme = 'dark'">🌙 Sombre</button>
-          <button type="button" class="pill" :class="{ active: s.theme === 'light' }" @click="s.theme = 'light'">☀️ Clair</button>
-          <button type="button" class="pill" :class="{ active: s.theme === 'system' }" @click="s.theme = 'system'">🖥️ Système</button>
+          <button type="button" class="pill" :class="{ active: s.theme === 'dark' }" @click="s.theme = 'dark'">{{ $t("settings.dark") }}</button>
+          <button type="button" class="pill" :class="{ active: s.theme === 'light' }" @click="s.theme = 'light'">{{ $t("settings.light") }}</button>
+          <button type="button" class="pill" :class="{ active: s.theme === 'system' }" @click="s.theme = 'system'">{{ $t("settings.system") }}</button>
         </div>
 
         <template v-if="canSpeak">
-          <h3 class="mt-3">Audio</h3>
+          <h3 class="mt-3">{{ $t("settings.audio") }}</h3>
           <label class="badge cursor-pointer">
             <input type="checkbox" v-model="s.autoSpeak" />
-            Lire automatiquement les flashcards à voix haute
+            {{ $t("settings.autoSpeak") }}
           </label>
         </template>
 
-        <h3 class="mt-3">Sauvegarde</h3>
+        <h3 class="mt-3">{{ $t("settings.backup") }}</h3>
         <p class="small">
-          Dernier export :
-          <b class="text-text">{{ s.lastExportAt ? formatDate(s.lastExportAt) : "jamais" }}</b>.
-          Les données restent dans ce navigateur / cet appareil : exporte-les régulièrement depuis l’accueil.
+          {{ $t("settings.lastExport") }}
+          <b class="text-text">{{ s.lastExportAt ? formatDate(s.lastExportAt) : $t("settings.never") }}</b>.
+          {{ $t("settings.backupHint") }}
         </p>
 
         <div class="hr"></div>
         <div class="row">
-          <button class="btn ok" @click="save">Enregistrer</button>
-          <router-link class="btn" to="/">Retour</router-link>
+          <button class="btn ok" @click="save">{{ $t("common.save") }}</button>
+          <router-link class="btn" to="/">{{ $t("common.back") }}</router-link>
         </div>
       </div>
     </div>

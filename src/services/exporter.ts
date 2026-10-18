@@ -1,3 +1,4 @@
+import { t } from "../i18n";
 import { db, MANUAL_SENTENCE_DECK_ID } from "../db";
 import type { VocabDeckJson, QcmExamJson, SentenceDeckJson, RevisionsBundleJson } from "../types/json";
 
@@ -75,7 +76,7 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
     const sentenceDeckJson: SentenceDeckJson[] = deckIds.map((id) => ({
         type: "sentence_deck",
         id,
-        title: titles.get(id) ?? (id === MANUAL_SENTENCE_DECK_ID ? "Mes phrases" : id),
+        title: titles.get(id) ?? (id === MANUAL_SENTENCE_DECK_ID ? t("services.myPhrases") : id),
         items: byDeck.get(id) ?? []
     }));
 

@@ -1,3 +1,4 @@
+import type { LocaleCode } from "../i18n/locales";
 import { db } from "../db";
 
 export const DEFAULT_SETTINGS = {
@@ -9,6 +10,8 @@ export const DEFAULT_SETTINGS = {
   lastExportAt: 0,
   /** Thème: "dark" | "light" | "system" */
   theme: "dark" as "dark" | "light" | "system",
+  /** Langue de l'interface ("" = détection automatique) */
+  locale: "" as "" | LocaleCode,
   /** Synthèse vocale automatique en flashcards */
   autoSpeak: false
 };

@@ -5,6 +5,7 @@ import { db, type SentenceDeck, type SentenceExercise } from "../db";
 import { tokenizeSentence } from "../utils/sentence";
 import { parseTags } from "../services/tags";
 import { addSentence, removeSentenceDeck } from "../services/sentences";
+import { t } from "../i18n";
 import EmptyState from "../components/EmptyState.vue";
 import ConfirmBar from "../components/ConfirmBar.vue";
 import BaseModal from "../components/BaseModal.vue";
@@ -39,25 +40,25 @@ async function load() {
 }
 
 async function add() {
-  const t = text.value.trim();
-  if (!t) return set("danger", "Écris une phrase.");
-  if (tokenizeSentence(t).length < 2) return set("danger", "Phrase trop courte (au moins 2 mots).");
+  const sentence = text.value.trim();
+  if (!sentence) return set("danger", t("sentences.manage.writeSentence"));
+  if (tokenizeSentence(sentence).length < 2) return set("danger", t("sentences.manage.tooShort"));
 
   await addSentence({
     deckTitle: deckTitle.value,
-    text: t,
+    text: sentence,
     translation: translation.value,
     tags: parseTags(tagsText.value)
   });
 
   text.value = "";
   translation.value = "";
-  set("ok", "Phrase ajoutée ✅");
+  set("ok", t("sentences.manage.added"));
   await load();
 }
 
 async function remove(id: string) {
-  if (!(await confirmDialog("Supprimer cette phrase ?"))) return;
+  if (!(await confirmDialog(t("sentences.manage.deleteConfirm")))) return;
   await db.sentenceExercises.delete(id);
   await load();
 }
@@ -65,10 +66,10 @@ async function remove(id: string) {
 async function removeDeck() {
   const id = deckFilter.value;
   if (!id) return;
-  if (!(await confirmDialog(`Supprimer le deck « ${deckTitles.value[id]} » et toutes ses phrases ?`))) return;
+  if (!(await confirmDialog(t("sentences.manage.deleteDeckConfirm", { title: deckTitles.value[id] })))) return;
   await removeSentenceDeck(id);
   deckFilter.value = "";
-  set("ok", "Deck supprimé ✅");
+  set("ok", t("sentences.manage.deckDeleted"));
   await load();
 }
 
@@ -82,14 +83,14 @@ function openEdit(s: SentenceExercise) {
 
 async function saveEdit() {
   if (!editId.value) return;
-  const t = editText.value.trim();
-  if (!t) return set("danger", "Écris une phrase.");
-  const tokens = tokenizeSentence(t);
-  if (tokens.length < 2) return set("danger", "Phrase trop courte (au moins 2 mots).");
+  const sentence = editText.value.trim();
+  if (!sentence) return set("danger", t("sentences.manage.writeSentence"));
+  const tokens = tokenizeSentence(sentence);
+  if (tokens.length < 2) return set("danger", t("sentences.manage.tooShort"));
 
   const tr = editTranslation.value.trim();
   await db.sentenceExercises.update(editId.value, {
-    text: t,
+    text: sentence,
     translation: tr || undefined,
     tags: parseTags(editTagsText.value),
     tokens
@@ -97,7 +98,7 @@ async function saveEdit() {
 
   editOpen.value = false;
   editId.value = null;
-  set("ok", "Phrase modifiée ✅");
+  set("ok", t("sentences.manage.updated"));
   await load();
 }
 
@@ -109,27 +110,27 @@ onMounted(load);
   <div class="manageGrid">
     <div class="card cardFill">
       <div class="scrollY">
-      <h2>Phrases — ordre des mots (SPOK)</h2>
-      <p>Crée des phrases en indonésien. L’exercice les mélange et tu dois les remettre dans le bon ordre.</p>
+      <h2>{{ $t("sentences.manage.heading") }}</h2>
+      <p>{{ $t("sentences.manage.intro") }}</p>
 
-      <label class="small">Deck (choisis ou tape un nouveau nom)</label>
-      <input class="input" v-model="deckTitle" list="sentenceDeckTitles" placeholder="Mes phrases" />
+      <label class="small">{{ $t("sentences.manage.deckLabel") }}</label>
+      <input class="input" v-model="deckTitle" list="sentenceDeckTitles" :placeholder="$t('services.myPhrases')" />
       <datalist id="sentenceDeckTitles">
         <option v-for="d in decks" :key="d.id" :value="d.title" />
       </datalist>
 
-      <label class="small" style="margin-top:8px; display:block">Phrase (indonésien)</label>
-      <input class="input" v-model="text" placeholder="ex: Aku liburan ke Indonesia" />
+      <label class="small" style="margin-top:8px; display:block">{{ $t("sentences.manage.sentenceLabel") }}</label>
+      <input class="input" v-model="text" :placeholder="$t('sentences.manage.sentencePlaceholder')" />
 
-      <label class="small" style="margin-top:8px; display:block">Traduction (français)</label>
-      <input class="input" v-model="translation" placeholder="ex: Je pars en vacances en Indonésie" />
+      <label class="small" style="margin-top:8px; display:block">{{ $t("sentences.manage.translationLabel") }}</label>
+      <input class="input" v-model="translation" :placeholder="$t('sentences.manage.translationPlaceholder')" />
 
-      <label class="small" style="margin-top:8px; display:block">Tags (séparés par des virgules)</label>
-      <input class="input" v-model="tagsText" placeholder="spok, vacances, grammaire" />
+      <label class="small" style="margin-top:8px; display:block">{{ $t("common.tags") }}</label>
+      <input class="input" v-model="tagsText" :placeholder="$t('sentences.manage.tagsPlaceholder')" />
 
       <div class="row" style="margin-top:12px">
-        <button class="btn" @click="add">Ajouter</button>
-        <router-link class="btn" to="/exams">Se lancer dans un exam</router-link>
+        <button class="btn" @click="add">{{ $t("common.add") }}</button>
+        <router-link class="btn" to="/exams">{{ $t("sentences.manage.launchExam") }}</router-link>
       </div>
 
       <div style="margin-top:12px" v-if="message">
@@ -141,20 +142,20 @@ onMounted(load);
 
     <div class="card cardFill">
       <div class="row flex-none mb-2.5">
-        <h2 class="m-0">Liste des phrases</h2>
+        <h2 class="m-0">{{ $t("sentences.manage.listTitle") }}</h2>
         <span class="small">{{ shown.length }}</span>
       </div>
 
       <div v-if="decks.length" class="row flex-none mb-2.5 flex-nowrap">
         <select class="input" v-model="deckFilter">
-          <option value="">Tous les decks</option>
+          <option value="">{{ $t("sentences.manage.allDecks") }}</option>
           <option v-for="d in decks" :key="d.id" :value="d.id">{{ d.title }}</option>
         </select>
-        <button v-if="deckFilter" class="btn danger" @click="removeDeck">Supprimer le deck</button>
+        <button v-if="deckFilter" class="btn danger" @click="removeDeck">{{ $t("sentences.manage.deleteDeck") }}</button>
       </div>
 
       <div v-if="shown.length === 0" class="flex-1 min-h-0 flex items-center justify-center">
-        <EmptyState title="Aucune phrase" hint="Ajoute ta première phrase à gauche." />
+        <EmptyState :title="$t('sentences.manage.emptyTitle')" :hint="$t('sentences.manage.emptyHint')" />
       </div>
 
       <div v-else class="scrollY">
@@ -163,15 +164,15 @@ onMounted(load);
             <div class="row">
               <div>
                 <h3 class="m-0">{{ s.text }}</h3>
-                <p v-if="s.translation" class="small mt-1">🇫🇷 Traduction : {{ s.translation }}</p>
+                <p v-if="s.translation" class="small mt-1">{{ $t("sentences.manage.translation", { text: s.translation }) }}</p>
                 <p class="small mt-1">
                   <span class="badge">{{ deckTitles[s.deckId] ?? s.deckId }}</span>
                   {{ (s.tags ?? []).join(", ") }}
                 </p>
               </div>
               <div class="row" style="gap:8px">
-                <button class="btn" @click="openEdit(s)">Modifier</button>
-                <button class="btn danger" @click="remove(s.id)">Supprimer</button>
+                <button class="btn" @click="openEdit(s)">{{ $t("sentences.manage.editButton") }}</button>
+                <button class="btn danger" @click="remove(s.id)">{{ $t("common.delete") }}</button>
               </div>
             </div>
           </div>
@@ -180,20 +181,20 @@ onMounted(load);
     </div>
   </div>
 
-  <BaseModal :open="editOpen" title="Modifier la phrase" @close="editOpen = false">
+  <BaseModal :open="editOpen" :title="$t('sentences.manage.editModal')" @close="editOpen = false">
     <div class="card" style="margin:0">
-      <label class="small">Phrase (indonésien)</label>
+      <label class="small">{{ $t("sentences.manage.sentenceLabel") }}</label>
       <input class="input" v-model="editText" />
 
-      <label class="small" style="margin-top:8px; display:block">Traduction (français)</label>
+      <label class="small" style="margin-top:8px; display:block">{{ $t("sentences.manage.translationLabel") }}</label>
       <input class="input" v-model="editTranslation" />
 
-      <label class="small" style="margin-top:8px; display:block">Tags (séparés par des virgules)</label>
+      <label class="small" style="margin-top:8px; display:block">{{ $t("common.tags") }}</label>
       <input class="input" v-model="editTagsText" />
 
       <div class="row" style="margin-top:12px">
-        <button class="btn" @click="saveEdit">Enregistrer</button>
-        <button class="btn" @click="editOpen = false">Annuler</button>
+        <button class="btn" @click="saveEdit">{{ $t("common.save") }}</button>
+        <button class="btn" @click="editOpen = false">{{ $t("common.cancel") }}</button>
       </div>
     </div>
   </BaseModal>

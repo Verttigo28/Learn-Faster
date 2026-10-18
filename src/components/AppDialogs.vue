@@ -4,10 +4,10 @@ import BaseModal from "./BaseModal.vue";
 </script>
 
 <template>
-  <BaseModal :open="!!dialogState.confirm" title="Confirmation" @close="answerConfirm(false)">
+  <BaseModal :open="!!dialogState.confirm" :title="$t('services.confirmTitle')" @close="answerConfirm(false)">
     <p class="m-0">{{ dialogState.confirm?.message }}</p>
     <div class="row mt-3 justify-end">
-      <button class="btn" @click="answerConfirm(false)">Annuler</button>
+      <button class="btn" @click="answerConfirm(false)">{{ $t("common.cancel") }}</button>
       <button class="btn" :class="dialogState.confirm?.danger ? 'danger' : 'ok'" @click="answerConfirm(true)">
         {{ dialogState.confirm?.confirmLabel }}
       </button>

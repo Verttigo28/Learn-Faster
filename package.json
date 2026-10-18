@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "lint": "eslint .",
     "typecheck": "vue-tsc -b",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "packs": "node scripts/build-packs.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.0.0",

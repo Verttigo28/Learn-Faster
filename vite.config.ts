@@ -23,7 +23,15 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,svg,ico,png,woff2}"],
-        navigateFallback: "/index.html"
+        navigateFallback: "/index.html",
+        // Starter packs (~1.6 MB) are not precached: cached the first time they are downloaded.
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.startsWith("/packs/"),
+            handler: "StaleWhileRevalidate",
+            options: { cacheName: "starter-packs" }
+          }
+        ]
       }
     })
   ]

@@ -1,3 +1,4 @@
+import { t } from "../i18n";
 import { db, type ExamQuestion, type SentenceExercise, type VocabDeck, type VocabItem } from "../db";
 import type { Table } from "dexie";
 import { buildVocabQuestion } from "./vocabQuiz";
@@ -118,7 +119,7 @@ export async function buildPractice(config: PracticeConfig): Promise<PracticeQue
       pool.push({
         kind: "vocab_typed",
         id: it.id,
-        prompt: `Écris la traduction de : "${reverse ? it.definition : it.term}"`,
+        prompt: t("services.typedPrompt", { term: reverse ? it.definition : it.term }),
         expected: reverse ? it.term : it.definition,
         lang: reverse ? deck?.from : deck?.to
       });
@@ -130,7 +131,7 @@ export async function buildPractice(config: PracticeConfig): Promise<PracticeQue
       pool.push({
         kind: "dictation",
         id: it.id,
-        prompt: "Écoute et écris le mot",
+        prompt: t("services.dictationPrompt"),
         expected: it.term,
         speak: it.term,
         lang: decks.get(it.deckId)?.from,

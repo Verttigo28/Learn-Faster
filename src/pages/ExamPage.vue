@@ -9,6 +9,7 @@ import BaseModal from "../components/BaseModal.vue";
 import { uid } from "../utils/id";
 import { clamp01, formatDuration } from "../utils/time";
 import { shuffle } from "../utils/shuffle";
+import { t } from "../i18n";
 
 const props = defineProps<{ examId?: string }>();
 
@@ -151,7 +152,7 @@ async function finish() {
   } catch (e) {
     console.error(e);
     savedAttempt.value = false; // permet de retenter si besoin
-    toast("Erreur lors de l'enregistrement des résultats (IndexedDB).", "danger");
+    toast(t("common.saveError"), "danger");
   }
 }
 
@@ -189,23 +190,23 @@ onMounted(load);
 <template>
   <div class="sessionPage">
     <div v-if="!exam" class="card sessionCard">
-      <EmptyState title="Exam introuvable" />
+      <EmptyState :title="$t('examRun.notFound')" />
     </div>
 
     <div v-else-if="questions.length === 0" class="card sessionCard">
-      <EmptyState title="Exam vide" hint="Importe des questions dans cet exam." />
+      <EmptyState :title="$t('examRun.emptyTitle')" :hint="$t('examRun.emptyHint')" />
     </div>
 
     <div v-else class="sessionCard">
       <div class="row">
         <div>
           <h2 class="m-0">{{ exam.title }}</h2>
-          <p class="small mt-1">Question {{ idx + 1 }} / {{ questions.length }}</p>
+          <p class="small mt-1">{{ $t("examRun.progress", { n: idx + 1, total: questions.length }) }}</p>
         </div>
 
         <div class="row">
           <span v-if="remainingSeconds !== null" class="badge">⏱ {{ formatDuration(remainingSeconds) }}</span>
-          <router-link class="btn" to="/">Quitter</router-link>
+          <router-link class="btn" to="/">{{ $t("common.quit") }}</router-link>
         </div>
       </div>
 
@@ -240,30 +241,30 @@ onMounted(load);
 
       <div class="sessionFooter">
         <div class="row mt-3">
-          <button class="btn" @click="prev" :disabled="idx === 0">← Précédent</button>
-          <button class="btn" @click="next" :disabled="idx === questions.length - 1">Suivant →</button>
-          <button class="btn ok" @click="finish" :disabled="finished">Terminer</button>
+          <button class="btn" @click="prev" :disabled="idx === 0">← {{ $t("common.previous") }}</button>
+          <button class="btn" @click="next" :disabled="idx === questions.length - 1">{{ $t("common.next") }} →</button>
+          <button class="btn ok" @click="finish" :disabled="finished">{{ $t("common.finish") }}</button>
         </div>
 
         <p class="small mt-2.5">
-          Réponses: {{ Object.keys(selected).length }} / {{ questions.length }} • 1–9 = répondre, ←/→ = naviguer
+          {{ $t("examRun.answered", { answered: Object.keys(selected).length, total: questions.length }) }}
         </p>
       </div>
     </div>
 
-    <BaseModal :open="showResultModal" title="Résultat de l'exam" @close="closeModal">
+    <BaseModal :open="showResultModal" :title="$t('examRun.resultTitle')" @close="closeModal">
       <div v-if="lastResult" class="card" style="margin:0">
         <div class="row">
           <div>
-            <div class="small">Score</div>
+            <div class="small">{{ $t("common.score") }}</div>
             <div class="kpi">{{ percent(lastResult.score) }}</div>
           </div>
           <div>
-            <div class="small">Bonnes réponses</div>
+            <div class="small">{{ $t("common.correctAnswers") }}</div>
             <div class="kpi">{{ lastResult.correct }}/{{ lastResult.total }}</div>
           </div>
           <div>
-            <div class="small">Durée</div>
+            <div class="small">{{ $t("common.duration") }}</div>
             <div class="kpi">{{ formatDuration(lastResult.durationSeconds) }}</div>
           </div>
         </div>
@@ -271,13 +272,13 @@ onMounted(load);
         <div class="hr"></div>
 
         <div class="row">
-          <button class="btn" @click="goStats">Voir les stats</button>
-          <button class="btn" @click="goBack">Retour accueil</button>
-          <button class="btn ok" @click="closeModal">Revoir les corrections</button>
+          <button class="btn" @click="goStats">{{ $t("common.viewStats") }}</button>
+          <button class="btn" @click="goBack">{{ $t("examRun.backHome") }}</button>
+          <button class="btn ok" @click="closeModal">{{ $t("examRun.review") }}</button>
         </div>
 
         <p class="small mt-2.5">
-          Les corrections restent affichées dans l’exam (bonnes réponses en vert).
+          {{ $t("examRun.reviewNote") }}
         </p>
       </div>
     </BaseModal>
