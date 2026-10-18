@@ -1,4 +1,4 @@
-import type { Attempt, AttemptDetail } from "../db";
+import { isTypedDetail, type Attempt, type AttemptDetail } from "../db";
 import { saveFile } from "./fileSave";
 
 export type ReportBlock = {
@@ -59,6 +59,20 @@ function detailBlock(d: AttemptDetail, index: number): ReportBlock {
       lines: [
         { label: "Terme", text: d.term },
         { label: "Réponse", text: d.definition }
+      ]
+    };
+  }
+
+  if (isTypedDetail(d)) {
+    return {
+      index,
+      label: d.kind === "cloze" ? "Trous" : d.kind === "dictation" ? "Dictée" : "Écrit",
+      correct: d.correct,
+      status: d.correct ? "OK" : "Faux",
+      lines: [
+        { label: "Question", text: d.prompt },
+        { label: "Ta réponse", text: d.answer || "(vide)" },
+        { label: "Attendu", text: d.expected }
       ]
     };
   }

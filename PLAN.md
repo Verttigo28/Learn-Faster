@@ -33,11 +33,11 @@ Chaque phase = un commit sur la branche `improvements`, build + tests verts.
 - [x] Accueil : « X cartes à réviser aujourd'hui » + session de révision globale
 
 ## Phase 5 — Apprentissage
-- [ ] Sens inverse (définition → terme) pour flashcards et quiz
-- [ ] Mode réponse tapée (tolérance casse / accents / espaces)
-- [ ] Synthèse vocale (Web Speech API) selon la langue du deck
-- [ ] Stats : série de jours (streak), progression par deck, mots les plus ratés, graphique 30 jours
-- [ ] PWA : service worker pour fonctionner hors-ligne sur le web
+- [x] Sens inverse (définition → terme) pour flashcards et quiz
+- [x] Mode réponse tapée (tolérance casse / accents / espaces)
+- [x] Synthèse vocale (Web Speech API) selon la langue du deck
+- [x] Stats : série de jours (streak), progression par deck, mots les plus ratés, graphique 30 jours
+- [x] PWA : service worker pour fonctionner hors-ligne sur le web
 
 ## Phase 6 — Nouvelles fonctionnalités
 - [ ] Exercice « texte à trous » (cloze) généré depuis les phrases

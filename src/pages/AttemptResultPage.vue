@@ -3,7 +3,7 @@ import { toast } from "../services/dialog";
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import EmptyState from "../components/EmptyState.vue";
-import { db, type Attempt, type AttemptDetail, type Exam, type VocabDeck } from "../db";
+import { db, isTypedDetail, type Attempt, type AttemptDetail, type Exam, type VocabDeck } from "../db";
 import { exportAttemptPdf } from "../services/pdfReport";
 import { formatDate, formatDuration } from "../utils/time";
 
@@ -166,6 +166,13 @@ onUnmounted(() => {
             <p class="small" style="margin:0">
               <b>Statut:</b> {{ d.known ? "Je sais" : "Je ne sais pas" }}
             </p>
+          </template>
+
+          <template v-else-if="isTypedDetail(d)">
+            <h3 style="margin:10px 0 0 0">{{ d.prompt }}</h3>
+            <div class="hr"></div>
+            <p class="small" style="margin:0"><b>Ta réponse:</b> {{ d.answer || "(vide)" }}</p>
+            <p class="small" style="margin:6px 0 0 0"><b>Attendu:</b> {{ d.expected }}</p>
           </template>
 
           <template v-else>

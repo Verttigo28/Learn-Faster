@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { toast } from "../services/dialog";
 import { useSessionGuard } from "../composables/useSessionGuard";
-import { computed, onMounted, onUnmounted, ref, toRaw } from "vue";
+import { computed, onMounted, onUnmounted, ref, toRaw, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { db, type VocabDeck, type AttemptDetail } from "../db";
 import EmptyState from "../components/EmptyState.vue";
@@ -20,6 +20,8 @@ import {
   type Grade,
   type QueueCard
 } from "../services/srs";
+import { speak, speechSupported } from "../services/speech";
+import { getSetting, setSetting } from "../services/settings";
 
 /**
  * Flashcards avec répétition espacée (SM-2).
@@ -66,6 +68,29 @@ const back = computed(() => {
   return direction.value === "forward" ? it.definition : it.term;
 });
 
+const canSpeak = speechSupported();
+const autoSpeak = ref(false);
+
+const currentDeck = computed(() => (current.value ? decks.value[current.value.item.deckId] : undefined));
+const frontLang = computed(() => (direction.value === "forward" ? currentDeck.value?.from : currentDeck.value?.to));
+const backLang = computed(() => (direction.value === "forward" ? currentDeck.value?.to : currentDeck.value?.from));
+
+function say(side: "front" | "back") {
+  if (side === "front") speak(front.value, frontLang.value);
+  else speak(back.value, backLang.value);
+}
+
+async function toggleAutoSpeak() {
+  autoSpeak.value = !autoSpeak.value;
+  await setSetting("autoSpeak", autoSpeak.value);
+  if (autoSpeak.value) say("front");
+}
+
+watch(
+  () => current.value?.review.cardId,
+  (id) => { if (id && autoSpeak.value && canSpeak) say("front"); }
+);
+
 const title = computed(() => {
   if (deck.value) return deck.value.title;
   return "Révision du jour";
@@ -110,6 +135,7 @@ async function load() {
     );
   }
 
+  autoSpeak.value = await getSetting("autoSpeak");
   sessionSize.value = queue.value.length;
   flipped.value = false;
   correct.value = 0;
@@ -246,7 +272,10 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
             <span v-if="direction === 'reverse'"> • sens inverse</span>
           </p>
         </div>
-        <router-link class="btn" :to="deckId ? `/deck/${deckId}` : '/'">Retour</router-link>
+        <div class="row">
+          <button v-if="canSpeak" class="btn" :class="{ primary: autoSpeak }" @click="toggleAutoSpeak">🔊 Auto {{ autoSpeak ? "on" : "off" }}</button>
+          <router-link class="btn" :to="deckId ? `/deck/${deckId}` : '/'">Retour</router-link>
+        </div>
       </div>
 
       <div class="hr"></div>
@@ -262,10 +291,16 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
             {{ flipped ? "Réponse" : "Question" }} (clique ou Espace pour retourner)
           </div>
 
-          <div class="text-2xl font-extrabold">{{ front }}</div>
+          <div class="text-2xl font-extrabold">
+            {{ front }}
+            <button v-if="canSpeak" class="btn ml-2" type="button" title="Écouter" @click.stop="say('front')">🔊</button>
+          </div>
           <template v-if="flipped">
             <div class="hr"></div>
-            <div class="text-2xl font-extrabold text-accent">{{ back }}</div>
+            <div class="text-2xl font-extrabold text-accent">
+              {{ back }}
+              <button v-if="canSpeak" class="btn ml-2" type="button" title="Écouter" @click.stop="say('back')">🔊</button>
+            </div>
           </template>
         </div>
       </div>

@@ -292,3 +292,24 @@
 @layer components{
     .home .reviewBtn{ @apply col-span-full flex-col gap-1; }
 }
+
+@layer components{
+    /* --------------------------------------------------------
+       Charts (ActivityChart, deck progress)
+    -------------------------------------------------------- */
+    .chartGrid line{ stroke: rgb(var(--border) / 0.08); stroke-width: 1; }
+    .chartAxisText{ fill: rgb(var(--muted)); font-size: 11px; }
+    .chartBar{ fill: rgb(var(--accent)); transition: opacity .15s; }
+    .chartBar.dim{ opacity: .45; }
+    .chartTooltip{
+        @apply absolute top-0 -translate-x-1/2 pointer-events-none rounded-lg border border-border/10 bg-card px-2 py-1 text-xs text-text whitespace-nowrap shadow-lg;
+    }
+
+    /* Ordinal stages of one hue: new (light) -> learning -> mastered (full) */
+    .progressBar{ @apply flex h-2.5 w-full gap-[2px] overflow-hidden rounded-full; }
+    .progressBar > span{ @apply h-full; }
+    .stage-fresh{ background: rgb(var(--accent) / 0.22); }
+    .stage-learning{ background: rgb(var(--accent) / 0.55); }
+    .stage-mastered{ background: rgb(var(--accent)); }
+    .legendSwatch{ @apply inline-block h-2.5 w-2.5 rounded-sm align-middle mr-1; }
+}

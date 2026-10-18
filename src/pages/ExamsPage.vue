@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref, computed } from "vue";
 import { getAllTags } from "../services/tags";
+import { speechSupported } from "../services/speech";
 import ConfirmBar from "../components/ConfirmBar.vue";
 import { useRouter } from "vue-router";
 
@@ -13,6 +14,11 @@ const count = ref<number>(20);
 const includeVocab = ref(true);
 const includeExam = ref(true);
 const includeOrder = ref(true);
+const includeTyped = ref(false);
+const includeCloze = ref(false);
+const includeDictation = ref(false);
+const vocabDir = ref<"forward" | "reverse" | "both">("forward");
+const canSpeak = speechSupported();
 
 const msg = ref<{ kind: "info" | "ok" | "danger"; text: string } | null>(null);
 function set(kind: "info" | "ok" | "danger", text: string) {
@@ -24,6 +30,9 @@ const sources = computed(() => {
   if (includeVocab.value) s.push("vocab");
   if (includeExam.value) s.push("exam");
   if (includeOrder.value) s.push("order");
+  if (includeTyped.value) s.push("typed");
+  if (includeCloze.value) s.push("cloze");
+  if (includeDictation.value) s.push("dictation");
   return s;
 });
 
@@ -38,10 +47,11 @@ async function load() {
 }
 
 async function start() {
-  if (sources.value.length === 0) return set("danger", "Choisis au moins une source (Vocab / QCM / Ordre des mots).");
+  if (sources.value.length === 0) return set("danger", "Choisis au moins une source.");
   const q = new URLSearchParams();
   q.set("count", String(Math.max(1, Math.min(200, count.value || 20))));
   q.set("sources", sources.value.join(","));
+  if (vocabDir.value !== "forward") q.set("dir", vocabDir.value);
   if (selected.value.length) q.set("tags", selected.value.join(","));
   await router.push(`/practice?${q.toString()}`);
 }
@@ -62,6 +72,18 @@ onMounted(load);
         <label class="badge"><input type="checkbox" v-model="includeVocab" /> Vocab (QCM généré)</label>
         <label class="badge"><input type="checkbox" v-model="includeExam" /> QCM (importés)</label>
         <label class="badge"><input type="checkbox" v-model="includeOrder" /> Ordre des mots (SPOK)</label>
+        <label class="badge"><input type="checkbox" v-model="includeTyped" /> Vocab (réponse écrite)</label>
+        <label class="badge"><input type="checkbox" v-model="includeCloze" /> Texte à trous</label>
+        <label v-if="canSpeak" class="badge"><input type="checkbox" v-model="includeDictation" /> Dictée 🔊</label>
+      </div>
+
+      <div class="row justify-start mt-2.5">
+        <span class="small">Sens du vocab :</span>
+        <select class="input w-auto" v-model="vocabDir">
+          <option value="forward">Terme → traduction</option>
+          <option value="reverse">Traduction → terme</option>
+          <option value="both">Les deux (aléatoire)</option>
+        </select>
       </div>
 
       <div class="hr"></div>

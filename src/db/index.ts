@@ -79,6 +79,15 @@ export type AttemptDetail =
   definition: string;
   known: boolean;   // true = "Je sais"
   correct: boolean; // pour le filtre "erreurs" (same as known)
+}
+    | {
+  /** Réponse tapée : traduction, texte à trous ou dictée */
+  kind: "vocab_typed" | "cloze" | "dictation";
+  id: string;
+  prompt: string;
+  expected: string;
+  answer?: string;
+  correct: boolean;
 };
 
 export type Attempt = {
@@ -200,3 +209,9 @@ export class AppDB extends Dexie {
 }
 
 export const db = new AppDB();
+
+export type TypedDetail = Extract<AttemptDetail, { kind: "vocab_typed" | "cloze" | "dictation" }>;
+
+export function isTypedDetail(d: AttemptDetail): d is TypedDetail {
+  return d.kind === "vocab_typed" || d.kind === "cloze" || d.kind === "dictation";
+}

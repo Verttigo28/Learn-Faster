@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { confirmDialog, toast } from "../services/dialog";
 import { computed, onMounted, onUnmounted, ref } from "vue";
-import { db, type Attempt, type VocabDeck, type Exam } from "../db";
+import { db, type Attempt, type VocabDeck, type Exam, type ReviewState, type VocabItem } from "../db";
+import ActivityChart from "../components/ActivityChart.vue";
+import { activityByDay, deckProgress, hardestWords, streak } from "../services/stats";
 import EmptyState from "../components/EmptyState.vue";
 import { formatDate, formatDuration } from "../utils/time";
 import { exportAttemptPdf } from "../services/pdfReport";
@@ -9,6 +11,18 @@ import { exportAttemptPdf } from "../services/pdfReport";
 const attempts = ref<Attempt[]>([]);
 const decks = ref<Record<string, VocabDeck>>({});
 const exams = ref<Record<string, Exam>>({});
+const items = ref<VocabItem[]>([]);
+const reviews = ref<ReviewState[]>([]);
+const tab = ref<"history" | "decks" | "hard">("history");
+
+const streakDays = computed(() => streak(attempts.value));
+const activity = computed(() => activityByDay(attempts.value, 30));
+const progress = computed(() => deckProgress(items.value, reviews.value));
+const hard = computed(() => hardestWords(items.value, reviews.value, 15));
+
+function pct(n: number, total: number) {
+  return total ? `${(n / total) * 100}%` : "0%";
+}
 
 function percent01(x: number) {
   return `${Math.round(x * 100)}%`;
@@ -41,7 +55,8 @@ function metaLine(a: Attempt): string {
   if (a.meta?.correct !== undefined && a.meta?.total !== undefined) parts.push(`✅ ${a.meta.correct}/${a.meta.total}`);
   if (a.type === "practice" && a.meta?.breakdown) {
     const b = a.meta.breakdown;
-    parts.push(`Vocab:${b.vocab ?? 0} QCM:${b.exam ?? 0} SPOK:${b.order ?? 0}`);
+    const labels: Record<string, string> = { vocab: "Vocab", exam: "QCM", order: "SPOK", typed: "Écrit", cloze: "Trous", dictation: "Dictée" };
+    parts.push(Object.entries(b).filter(([, n]) => n).map(([k, n]) => `${labels[k] ?? k}:${n}`).join(" "));
   }
   if (a.type === "practice" && a.meta?.tags?.length) {
     parts.push(`Tags: ${a.meta.tags.join(", ")}`);
@@ -57,6 +72,8 @@ async function load() {
 
   const e = await db.exams.toArray();
   exams.value = Object.fromEntries(e.map((x) => [x.id, x]));
+  items.value = await db.vocabItems.toArray();
+  reviews.value = await db.reviews.toArray();
 }
 
 async function clearStats() {
@@ -115,37 +132,74 @@ onUnmounted(unlockScroll);
               <div class="small">7 derniers jours</div>
               <div class="kpi">{{ percent01(last7Score01) }}</div>
             </div>
+            <div>
+              <div class="small">Série</div>
+              <div class="kpi">🔥 {{ streakDays }} j</div>
+            </div>
           </div>
           <div class="hr"></div>
           <button class="btn danger" @click="clearStats">Reset stats</button>
         </div>
 
         <div class="card topCard">
-          <h2>Types</h2>
-          <p>• <b>flashcards</b> : “Je sais” / répondus</p>
-          <p>• <b>vocab_quiz</b> : QCM généré depuis vocab</p>
-          <p>• <b>exam</b> : QCM importé</p>
-          <p>• <b>practice</b> : exam généré par tags (vocab + QCM + SPOK)</p>
+          <h2>Activité</h2>
+          <ActivityChart :days="activity" />
         </div>
       </div>
     </div>
 
     <div class="card historyCard">
       <div class="row" style="align-items:flex-end">
-        <div>
-          <h2 style="margin:0">Historique</h2>
-          <p class="small" style="margin:6px 0 0 0">
-            Clique sur “Résultat” pour revoir les corrections (si disponibles).
-          </p>
+        <div class="pills">
+          <button class="pill" :class="{ active: tab === 'history' }" @click="tab = 'history'">Historique</button>
+          <button class="pill" :class="{ active: tab === 'decks' }" @click="tab = 'decks'">Progression decks</button>
+          <button class="pill" :class="{ active: tab === 'hard' }" @click="tab = 'hard'">Mots difficiles</button>
         </div>
-        <div class="small" style="opacity:.85">
+        <div v-if="tab === 'history'" class="small" style="opacity:.85">
           {{ attempts.length }} entrées
+        </div>
+        <div v-else-if="tab === 'decks'" class="small">
+          <span class="legendSwatch stage-fresh"></span>Nouvelles
+          <span class="legendSwatch stage-learning ml-2"></span>En cours
+          <span class="legendSwatch stage-mastered ml-2"></span>Maîtrisées (≥ 21 j)
         </div>
       </div>
 
       <div class="hr"></div>
 
-      <div v-if="attempts.length === 0">
+      <template v-if="tab === 'decks'">
+        <EmptyState v-if="progress.length === 0" title="Aucun deck" hint="Importe un deck vocab puis révise-le." />
+        <div v-else class="list historyList">
+          <div v-for="p in progress" :key="p.deckId" class="card" style="border-radius:18px">
+            <div class="row mb-2">
+              <h3 class="m-0">{{ decks[p.deckId]?.title ?? p.deckId }}</h3>
+              <span class="small">
+                {{ p.fresh }} nouvelles • {{ p.learning }} en cours • <b class="text-text">{{ p.mastered }}</b> maîtrisées / {{ p.total }}
+              </span>
+            </div>
+            <div class="progressBar" role="img" :aria-label="`${p.mastered} maîtrisées sur ${p.total}`">
+              <span v-if="p.mastered" class="stage-mastered" :style="{ width: pct(p.mastered, p.total) }" :title="`${p.mastered} maîtrisées`"></span>
+              <span v-if="p.learning" class="stage-learning" :style="{ width: pct(p.learning, p.total) }" :title="`${p.learning} en cours`"></span>
+              <span v-if="p.fresh" class="stage-fresh" :style="{ width: pct(p.fresh, p.total) }" :title="`${p.fresh} nouvelles`"></span>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <template v-else-if="tab === 'hard'">
+        <EmptyState v-if="hard.length === 0" title="Aucun mot difficile" hint="Les cartes souvent oubliées en révision apparaîtront ici." />
+        <div v-else class="list historyList">
+          <div v-for="h in hard" :key="h.item.id" class="row card" style="border-radius:18px">
+            <div>
+              <h3 class="m-0">{{ h.item.term }}</h3>
+              <p class="small m-0">{{ h.item.definition }} • {{ decks[h.item.deckId]?.title }}</p>
+            </div>
+            <span class="badge">oubliée {{ h.lapses }}×</span>
+          </div>
+        </div>
+      </template>
+
+      <div v-else-if="attempts.length === 0">
         <EmptyState title="Aucune tentative" hint="Fais un quiz vocab, un exam, ou un exam par tags pour voir l'historique." />
       </div>
 

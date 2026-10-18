@@ -16,7 +16,8 @@
     "jsx": "preserve",
     "strict": true,
     "types": [
-      "vite/client"
+      "vite/client",
+      "vite-plugin-pwa/client"
     ]
   },
   "include": [
