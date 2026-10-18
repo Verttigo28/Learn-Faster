@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../pages/HomePage.vue";
 
 export const router = createRouter({
-  history: createWebHistory(),
+  // BASE_URL = "/" by default, "/Learn-Faster/" on GitHub Pages (see .github/workflows/pages.yml)
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: "/", component: HomePage },
     { path: "/import", component: () => import("../pages/ImportPage.vue") },

@@ -18,7 +18,8 @@ export default defineConfig({
         theme_color: "#0b1020",
         background_color: "#0b1020",
         display: "standalone",
-        start_url: "/",
+        start_url: ".",
+        scope: ".",
         icons: [
           { src: "icons/icon-192.png", sizes: "192x192", type: "image/png" },
           { src: "icons/icon-512.png", sizes: "512x512", type: "image/png" },
@@ -28,11 +29,11 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,svg,ico,png,woff2}"],
-        navigateFallback: "/index.html",
+        navigateFallback: "index.html",
         // Starter packs (~1.6 MB) are not precached: cached the first time they are downloaded.
         runtimeCaching: [
           {
-            urlPattern: ({ url }) => url.pathname.startsWith("/packs/"),
+            urlPattern: ({ url }) => url.pathname.includes("/packs/"),
             handler: "StaleWhileRevalidate",
             options: { cacheName: "starter-packs" }
           }

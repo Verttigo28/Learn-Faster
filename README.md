@@ -1,5 +1,7 @@
 # Learn faster!
 
+**▶ Try it: https://verttigo28.github.io/Learn-Faster/** — click "Install" on a starter pack and start reviewing.
+
 An **offline-first** app to learn a language (built for Indonesian, works for any language) with flashcards, spaced repetition, quizzes and sentence exercises. Everything is stored locally in the browser / on the device (IndexedDB) — no account, no server.
 
 Available as a **web app (PWA, works offline)** and an **Android app** (Capacitor). The interface is in **English and French**, and new languages are easy to add (see [Translating the app](#translating-the-app)).
