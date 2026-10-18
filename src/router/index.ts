@@ -14,6 +14,7 @@ export const router = createRouter({
     { path: "/exams", component: () => import("../pages/ExamsPage.vue") },
     { path: "/practice", component: () => import("../pages/PracticePage.vue") },
     { path: "/stats", component: () => import("../pages/StatsPage.vue") },
+    { path: "/review", component: () => import("../pages/FlashcardsPage.vue") },
 
     { path: "/attempt/:attemptId", component: () => import("../pages/AttemptResultPage.vue"), props: true },
 

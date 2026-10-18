@@ -28,9 +28,9 @@ Chaque phase = un commit sur la branche `improvements`, build + tests verts.
 - [x] Avertir avant de quitter une session en cours
 
 ## Phase 4 — Répétition espacée (SRS)
-- [ ] Table `reviews` : état par carte (algorithme SM-2)
-- [ ] Les flashcards notent « À revoir / Difficile / Bien / Facile »
-- [ ] Accueil : « X cartes à réviser aujourd'hui » + session de révision globale
+- [x] Table `reviews` : état par carte (algorithme SM-2)
+- [x] Les flashcards notent « À revoir / Difficile / Bien / Facile »
+- [x] Accueil : « X cartes à réviser aujourd'hui » + session de révision globale
 
 ## Phase 5 — Apprentissage
 - [ ] Sens inverse (définition → terme) pour flashcards et quiz

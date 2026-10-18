@@ -131,6 +131,20 @@ export function validateImport(x: unknown): ValidationResult {
       break;
     case "revisions_bundle":
       if (x.schema !== 1) c.fail("schema", "version 1 attendue");
+      if (x.progress !== undefined) {
+        const reviews = c.obj(x.progress, "progress") ? x.progress.reviews : undefined;
+        if (c.arr(reviews ?? [], "progress.reviews")) {
+          (reviews as unknown[] | undefined)?.forEach((r, i) => {
+            const p = `progress.reviews[${i}]`;
+            if (!c.obj(r, p)) return;
+            c.str(r.cardId, `${p}.cardId`);
+            c.str(r.itemId, `${p}.itemId`);
+            for (const k of ["ease", "interval", "reps", "lapses", "due"]) {
+              if (typeof r[k] !== "number") c.fail(`${p}.${k}`, "nombre attendu");
+            }
+          });
+        }
+      }
       for (const [key, check] of [
         ["vocabDecks", checkVocab],
         ["qcmExams", checkQcm],

@@ -288,3 +288,7 @@
     .toast.ok{ @apply border-ok/60; }
     .toast.danger{ @apply border-danger/60; }
 }
+
+@layer components{
+    .home .reviewBtn{ @apply col-span-full flex-col gap-1; }
+}

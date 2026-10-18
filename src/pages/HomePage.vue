@@ -5,6 +5,7 @@ import { db, type VocabDeck, type Exam } from "../db";
 import EmptyState from "../components/EmptyState.vue";
 import { exportAllData } from "../services/exporter";
 import { saveJson } from "../services/fileSave";
+import { countDueToday } from "../services/srs";
 import { useRouter } from "vue-router";
 const router = useRouter();
 
@@ -36,6 +37,7 @@ async function startRandomFlashcards() {
 }
 
 const exportInfo = ref<string>("");
+const dueInfo = ref({ due: 0, fresh: 0 });
 
 async function load() {
   decks.value = await db.vocabDecks.orderBy("createdAt").reverse().toArray();
@@ -47,6 +49,7 @@ async function load() {
     sentenceCount: await db.sentenceExercises.count(),
     attemptCount: await db.attempts.count()
   };
+  dueInfo.value = await countDueToday();
 }
 
 async function clearAll() {
@@ -136,6 +139,10 @@ onMounted(load);
         </div>
 
         <div class="startGrid">
+          <router-link class="btn startBtn primary reviewBtn" to="/review">
+            🧠 Révision du jour
+            <span class="small">{{ dueInfo.due }} à revoir • {{ dueInfo.fresh }} nouvelles</span>
+          </router-link>
           <router-link class="btn startBtn" to="/exams">🎯 Générer un examen</router-link>
           <router-link class="btn startBtn" to="/practice?count=15&sources=vocab,exam,order">⚡ Exam 15 questions VQP</router-link>
 

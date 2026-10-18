@@ -20,7 +20,7 @@ export async function importVocabDeck(data: VocabDeckJson): Promise<{ title: str
     tags: it.tags ?? []
   }));
 
-  await db.transaction("rw", [db.vocabDecks, db.vocabItems], async () => {
+  await db.transaction("rw", [db.vocabDecks, db.vocabItems, db.reviews], async () => {
     const existing = await db.vocabDecks.get(data.id);
     await db.vocabDecks.put({
       id: data.id,
@@ -31,6 +31,9 @@ export async function importVocabDeck(data: VocabDeckJson): Promise<{ title: str
     });
     await db.vocabItems.where("deckId").equals(data.id).delete();
     await db.vocabItems.bulkPut(items);
+    // Keep SRS progress for items that still exist, drop it for removed ones.
+    const kept = new Set(items.map((it) => it.id));
+    await db.reviews.where("deckId").equals(data.id).filter((r) => !kept.has(r.itemId)).delete();
   });
 
   return { title: data.title, count: items.length };
@@ -118,7 +121,7 @@ export async function importBundle(
   // ✅ IMPORTANT: pass tables as an ARRAY to satisfy Dexie typings (avoid TS2554)
   await db.transaction(
       "rw",
-      [db.vocabDecks, db.vocabItems, db.exams, db.examQuestions, db.sentenceDecks, db.sentenceExercises],
+      [db.vocabDecks, db.vocabItems, db.reviews, db.exams, db.examQuestions, db.sentenceDecks, db.sentenceExercises],
       async () => {
         for (const d of bundle.vocabDecks) {
           const r = await importVocabDeck(d);
@@ -131,6 +134,10 @@ export async function importBundle(
         for (const s of bundle.sentenceDecks) {
           const r = await importSentenceDeck(s);
           sentences += r.count;
+        }
+        if (bundle.progress?.reviews?.length) {
+          const ids = new Set(await db.vocabItems.toCollection().primaryKeys());
+          await db.reviews.bulkPut(bundle.progress.reviews.filter((r) => ids.has(r.itemId)));
         }
       }
   );

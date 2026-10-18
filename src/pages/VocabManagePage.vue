@@ -48,9 +48,10 @@ async function createDeck() {
 
 async function removeDeck(id: string) {
   if (!(await confirmDialog("Supprimer ce deck + tous ses items ?"))) return;
-  await db.transaction("rw", [db.vocabDecks, db.vocabItems], async () => {
+  await db.transaction("rw", [db.vocabDecks, db.vocabItems, db.reviews], async () => {
     await db.vocabDecks.delete(id);
     await db.vocabItems.where("deckId").equals(id).delete();
+    await db.reviews.where("deckId").equals(id).delete();
   });
   set("ok", "Deck supprimé ✅");
   await load();

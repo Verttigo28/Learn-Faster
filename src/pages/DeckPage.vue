@@ -3,6 +3,7 @@ import { computed, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import { db, type VocabDeck, type VocabItem } from "../db";
 import EmptyState from "../components/EmptyState.vue";
+import { buildReviewQueue } from "../services/srs";
 
 /**
  * NOTE: le router passe deckId en prop (props:true).
@@ -15,10 +16,12 @@ const deckId = computed(() => props.deckId ?? String(route.params.deckId));
 
 const deck = ref<VocabDeck | null>(null);
 const items = ref<VocabItem[]>([]);
+const dueCount = ref(0);
 
 async function load() {
   deck.value = (await db.vocabDecks.get(deckId.value)) ?? null;
   items.value = await db.vocabItems.where("deckId").equals(deckId.value).toArray();
+  dueCount.value = (await buildReviewQueue({ deckId: deckId.value })).length;
 }
 
 onMounted(load);
@@ -44,7 +47,9 @@ onMounted(load);
       <div class="hr"></div>
 
       <div class="row" style="flex-wrap:wrap">
+        <router-link class="btn primary" :to="`/deck/${deckId}/flash?mode=due`">🧠 Réviser ({{ dueCount }})</router-link>
         <router-link class="btn" :to="`/deck/${deckId}/flash`">Flashcards</router-link>
+        <router-link class="btn" :to="`/deck/${deckId}/flash?dir=reverse`">Sens inverse</router-link>
 
         <!-- Bouton "Quiz (QCM)" supprimé comme demandé -->
         <!-- <router-link class="btn" :to="`/deck/${deckId}/quiz`">Quiz (QCM)</router-link> -->

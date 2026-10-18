@@ -99,6 +99,23 @@ export type Attempt = {
   };
 };
 
+/** État de répétition espacée (SM-2) d'une carte = un item vocab dans un sens donné. */
+export type ReviewState = {
+  cardId: string; // itemId, or "itemId#rev" for definition -> term
+  itemId: string;
+  deckId: string;
+  direction: "forward" | "reverse";
+  ease: number;
+  interval: number; // days
+  reps: number;
+  lapses: number;
+  due: number; // ms
+  introducedAt: number; // ms, first time the card was studied
+  lastReviewed: number; // ms
+};
+
+export type SettingRow = { key: string; value: unknown };
+
 export class AppDB extends Dexie {
   vocabDecks!: Table<VocabDeck, string>;
   vocabItems!: Table<VocabItem, string>;
@@ -107,6 +124,8 @@ export class AppDB extends Dexie {
   sentenceDecks!: Table<SentenceDeck, string>;
   sentenceExercises!: Table<SentenceExercise, string>;
   attempts!: Table<Attempt, string>;
+  reviews!: Table<ReviewState, string>;
+  settings!: Table<SettingRow, string>;
 
   constructor(name = "revisions_db") {
     super(name);
@@ -171,6 +190,12 @@ export class AppDB extends Dexie {
           });
         await tx.table("sentenceDecks").bulkPut([...decks.values()]);
       });
+
+    // v5: spaced repetition state + key/value settings
+    this.version(5).stores({
+      reviews: "cardId, itemId, deckId, due, introducedAt, lastReviewed",
+      settings: "key"
+    });
   }
 }
 

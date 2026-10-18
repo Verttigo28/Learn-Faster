@@ -1,3 +1,5 @@
+import type { ReviewState } from "../db";
+
 export type VocabDeckJson = {
   type: "vocab_deck";
   id: string;
@@ -35,4 +37,6 @@ export type RevisionsBundleJson = {
   vocabDecks: VocabDeckJson[];
   qcmExams: QcmExamJson[];
   sentenceDecks: SentenceDeckJson[];
+  /** Progression SRS (optionnelle) : permet de migrer l'appli sans perdre les révisions. */
+  progress?: { reviews: ReviewState[] };
 };

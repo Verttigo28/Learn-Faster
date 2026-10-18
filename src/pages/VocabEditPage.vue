@@ -109,7 +109,10 @@ async function saveEdit() {
 
 async function removeItem(id: string) {
   if (!(await confirmDialog("Supprimer cet item ?"))) return;
-  await db.vocabItems.delete(id);
+  await db.transaction("rw", [db.vocabItems, db.reviews], async () => {
+    await db.vocabItems.delete(id);
+    await db.reviews.where("itemId").equals(id).delete();
+  });
   set("ok", "Item supprimé ✅");
   await load();
 }

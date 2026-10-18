@@ -31,6 +31,7 @@ const last7Score01 = computed(() => {
 function titleFor(a: Attempt): string {
   if (a.type === "exam") return exams.value[a.refId]?.title ?? `Exam ${a.refId}`;
   if (a.type === "practice") return "Exam (tags)";
+  if (a.type === "flashcards" && a.refId === "review") return "Révision du jour";
   return decks.value[a.refId]?.title ?? `Deck ${a.refId}`;
 }
 

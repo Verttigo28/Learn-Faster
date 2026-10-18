@@ -24,6 +24,7 @@ const title = computed(() => {
   if (attempt.value.type === "exam") return exam.value?.title ?? `Exam ${attempt.value.refId}`;
   if (attempt.value.type === "vocab_quiz") return deck.value?.title ?? `Deck ${attempt.value.refId}`;
   if (attempt.value.type === "practice") return "Exam (tags)";
+  if (attempt.value.type === "flashcards" && attempt.value.refId === "review") return "Révision du jour";
   if (attempt.value.type === "flashcards") return deck.value?.title ?? `Flashcards ${attempt.value.refId}`;
   return "Résultat";
 });

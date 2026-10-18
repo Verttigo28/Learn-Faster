@@ -22,6 +22,7 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
 
     const sentenceDecks = await db.sentenceDecks.toArray();
     const sentences = await db.sentenceExercises.toArray();
+    const reviews = await db.reviews.toArray();
 
     const vocabDeckJson: VocabDeckJson[] = vocabDecks.map((d) => ({
         type: "vocab_deck",
@@ -82,6 +83,7 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
         exportedAt: Date.now(),
         vocabDecks: vocabDeckJson,
         qcmExams: qcmJson,
-        sentenceDecks: sentenceDeckJson
+        sentenceDecks: sentenceDeckJson,
+        progress: { reviews }
     };
 }
