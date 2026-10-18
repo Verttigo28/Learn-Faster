@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { toast } from "../services/dialog";
-import { useSessionGuard } from "../composables/useSessionGuard";
 import { computed, onMounted, onUnmounted, ref, toRaw, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { db, type VocabDeck, type AttemptDetail } from "../db";
@@ -51,7 +50,8 @@ const total = ref(0);
 const startedAt = ref(Date.now());
 
 const showResultModal = ref(false);
-const savedAttempt = ref(false);
+/** One history record per session, updated after each graded card. */
+let attemptId = uid("att");
 
 /** ✅ Détails question par question (pour page résultat + PDF) — première réponse par carte */
 const details = ref<AttemptDetail[]>([]);
@@ -98,10 +98,10 @@ const title = computed(() => {
 });
 
 const grades: { grade: Grade; labelKey: string; cls: string; key: string }[] = [
-  { grade: 0, labelKey: "flashcards.grades.again", cls: "danger", key: "1" },
-  { grade: 1, labelKey: "flashcards.grades.hard", cls: "", key: "2" },
-  { grade: 2, labelKey: "flashcards.grades.good", cls: "ok", key: "3" },
-  { grade: 3, labelKey: "flashcards.grades.easy", cls: "primary", key: "4" }
+  { grade: 0, labelKey: "flashcards.grades.again", cls: "again", key: "1" },
+  { grade: 1, labelKey: "flashcards.grades.hard", cls: "hard", key: "2" },
+  { grade: 2, labelKey: "flashcards.grades.good", cls: "good", key: "3" },
+  { grade: 3, labelKey: "flashcards.grades.easy", cls: "easy", key: "4" }
 ];
 
 const previews = computed(() => {
@@ -145,7 +145,7 @@ async function load() {
   details.value = [];
   seen.clear();
   showResultModal.value = false;
-  savedAttempt.value = false;
+  attemptId = uid("att");
   loaded.value = true;
 }
 
@@ -178,6 +178,7 @@ async function grade(g: Grade) {
 
   try {
     await saveReview(toRaw(next));
+    await saveAttempt();
   } catch (e) {
     console.error("SRS save failed:", e);
     toast(t("flashcards.saveReviewError"), "danger");
@@ -188,36 +189,34 @@ async function grade(g: Grade) {
 
 async function finish() {
   if (showResultModal.value) return;
-
   showResultModal.value = true;
+  await saveAttempt();
+}
 
-  const score = total.value === 0 ? 0 : correct.value / total.value;
-  const durationSeconds = Math.floor((Date.now() - startedAt.value) / 1000);
-
-  // déjà sauvegardé, ou rien révisé
-  if (savedAttempt.value || total.value === 0) return;
-
+/**
+ * Writes the session to the history. Called after every graded card (same id, put = upsert), so a
+ * session left halfway — back button, closed tab, reload — still counts for stats, streak and goal.
+ */
+async function saveAttempt() {
+  if (total.value === 0) return;
+  const attempt = {
+    id: attemptId,
+    type: "flashcards" as const,
+    refId: deckId.value ?? "review",
+    startedAt: startedAt.value,
+    finishedAt: Date.now(),
+    score: clamp01(correct.value / total.value),
+    meta: {
+      total: total.value,
+      correct: correct.value,
+      durationSeconds: Math.floor((Date.now() - startedAt.value) / 1000),
+      details: toRaw(details.value).map((d) => ({ ...d }))
+    }
+  };
   try {
-    const plainDetails = toRaw(details.value).map(d => ({ ...d }));
-    await db.attempts.add({
-      id: uid("att"),
-      type: "flashcards",
-      refId: deckId.value ?? "review",
-      startedAt: startedAt.value,
-      finishedAt: Date.now(),
-      score: clamp01(score),
-      meta: {
-        total: total.value,
-        correct: correct.value,
-        durationSeconds,
-        details: plainDetails
-      }
-    });
-
-    savedAttempt.value = true;
+    await db.attempts.put(attempt);
   } catch (e) {
     console.error("Flashcards save failed:", e);
-    savedAttempt.value = false;
     toast(t("common.saveError"), "danger");
   }
 }
@@ -246,7 +245,7 @@ watch(
   }
 );
 
-useSessionGuard(() => !showResultModal.value && total.value > 0);
+// No leave confirmation here: SRS progress and the history record are saved after every card.
 
 onMounted(() => {
   window.addEventListener("keydown", onKeydown);
@@ -275,66 +274,75 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
     </div>
 
     <div v-else class="sessionCard">
-      <div class="row">
-        <div>
-          <h2 class="m-0">{{ reviewMode ? $t("flashcards.review") : $t("flashcards.flashcards") }}</h2>
-          <p class="small mt-1">
+      <div class="row items-start">
+        <div class="min-w-0">
+          <h1 class="m-0 text-[1.4rem]">{{ reviewMode ? $t("flashcards.review") : $t("flashcards.flashcards") }}</h1>
+          <p class="small m-0 mt-0.5">
             {{ title }} • {{ $t("flashcards.remaining", { count: queue.length }) }}
             <span v-if="direction === 'reverse'"> • {{ $t("flashcards.reversed") }}</span>
           </p>
         </div>
-        <div class="row">
-          <button v-if="canSpeak" class="btn" :class="{ primary: autoSpeak }" @click="toggleAutoSpeak">{{ autoSpeak ? $t("flashcards.autoOn") : $t("flashcards.autoOff") }}</button>
+        <div class="flex gap-2">
+          <button v-if="canSpeak" class="btn ghost" :class="{ 'text-accentText': autoSpeak }" :aria-pressed="autoSpeak" @click="toggleAutoSpeak">
+            {{ autoSpeak ? $t("flashcards.autoOn") : $t("flashcards.autoOff") }}
+          </button>
           <router-link class="btn" :to="deckId ? `/deck/${deckId}` : '/'">{{ $t("common.back") }}</router-link>
         </div>
       </div>
 
-      <div class="hr"></div>
+      <div class="meter mt-3" role="progressbar" :aria-valuenow="total" aria-valuemin="0" :aria-valuemax="sessionSize">
+        <span :style="{ width: `${sessionSize ? (total / sessionSize) * 100 : 0}%` }"></span>
+      </div>
 
-      <div class="sessionBody flex flex-col justify-center">
-        <div
-            class="card cursor-pointer select-none text-center p-6 rounded-[20px] overflow-auto"
+      <div class="sessionBody flex flex-col justify-center py-4">
+        <div class="indexStage">
+          <div
+            class="indexCard"
+            :class="{ flipped }"
+            role="button"
+            tabindex="0"
+            :aria-label="flipped ? $t('flashcards.answerSide') : $t('flashcards.questionSide')"
             @click="flipped = !flipped"
-        >
-          <div class="small mb-2.5">
-            <span v-if="current?.isNew" class="badge mr-2">{{ $t("flashcards.isNew") }}</span>
-            <span v-if="!deck && current" class="badge mr-2">{{ decks[current.item.deckId]?.title }}</span>
-            {{ flipped ? $t("flashcards.answerSide") : $t("flashcards.questionSide") }}
-          </div>
-
-          <div class="text-2xl font-extrabold">
-            {{ front }}
-            <button v-if="canSpeak" class="btn ml-2" type="button" :title="$t('flashcards.listen')" @click.stop="say('front')">🔊</button>
-          </div>
-          <template v-if="flipped">
-            <div class="hr"></div>
-            <div class="text-2xl font-extrabold text-accent">
-              {{ back }}
-              <button v-if="canSpeak" class="btn ml-2" type="button" :title="$t('flashcards.listen')" @click.stop="say('back')">🔊</button>
+          >
+            <div class="indexFace">
+              <div class="indexMeta">
+                <span class="truncate">{{ !deck && current ? decks[current.item.deckId]?.title : "" }}</span>
+                <span v-if="current?.isNew" class="font-bold">{{ $t("flashcards.isNew") }}</span>
+              </div>
+              <div class="indexWord">{{ front }}</div>
+              <button v-if="canSpeak" class="indexSpeak" type="button" :title="$t('flashcards.listen')" @click.stop="say('front')">🔊 {{ $t("flashcards.listen") }}</button>
             </div>
-          </template>
+            <div class="indexFace back">
+              <template v-if="flipped">
+                <div class="indexMeta"><span class="truncate">{{ front }}</span></div>
+                <div class="indexWord">{{ back }}</div>
+                <button v-if="canSpeak" class="indexSpeak" type="button" :title="$t('flashcards.listen')" @click.stop="say('back')">🔊 {{ $t("flashcards.listen") }}</button>
+              </template>
+            </div>
+          </div>
         </div>
+        <p class="small text-center mt-3 mb-0">{{ $t("flashcards.flipHint") }}</p>
       </div>
 
       <div class="sessionFooter">
-        <div v-if="!flipped" class="row mt-3">
-          <button class="btn primary flex-1" @click="flipped = true">{{ $t("flashcards.showAnswer") }}</button>
-          <button class="btn" @click="finish">{{ $t("common.finish") }}</button>
+        <div v-if="!flipped" class="flex gap-2">
+          <button class="btn primary lg flex-1" @click="flipped = true">{{ $t("flashcards.showAnswer") }} <kbd class="kbd opacity-70">Space</kbd></button>
+          <button class="btn lg" @click="finish">{{ $t("common.finish") }}</button>
         </div>
-        <div v-else class="grid grid-cols-2 tablet:grid-cols-4 gap-2 mt-3">
+        <div v-else class="gradeGrid">
           <button
             v-for="g in grades"
             :key="g.grade"
-            class="btn flex-col gap-1 py-3"
+            class="btn gradeBtn"
             :class="g.cls"
             @click="grade(g.grade)"
           >
             <span>{{ $t(g.labelKey) }}</span>
-            <span class="small">{{ previews[g.grade] }} · {{ g.key }}</span>
+            <span class="gradeHint">{{ previews[g.grade] }} · <kbd class="kbd">{{ g.key }}</kbd></span>
           </button>
         </div>
 
-        <p class="small mt-2.5">
+        <p class="small mt-2.5 mb-0">
           {{ $t("flashcards.sessionScore", { percent: percent(), correct, total }) }}
         </p>
       </div>

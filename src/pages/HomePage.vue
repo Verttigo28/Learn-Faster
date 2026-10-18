@@ -1,90 +1,100 @@
 <script setup lang="ts">
-import { confirmDialog, toast } from "../services/dialog";
+import { toast } from "../services/dialog";
 import { computed, onMounted, ref } from "vue";
 import { db, type VocabDeck, type Exam } from "../db";
-import EmptyState from "../components/EmptyState.vue";
 import StarterPacks from "../components/StarterPacks.vue";
 import { exportAllData } from "../services/exporter";
 import { saveJson } from "../services/fileSave";
-import { countDueToday, DAY } from "../services/srs";
+import { countDueToday, DAY, endOfDay } from "../services/srs";
 import { getSetting, setSetting } from "../services/settings";
-import { answersToday, streak } from "../services/stats";
-import { useRouter } from "vue-router";
-import { t } from "../i18n";
-const router = useRouter();
+import { answersToday, deckProgress, streak, type DeckProgress } from "../services/stats";
+import { speechSupported } from "../services/speech";
+import { intlLocale, t } from "../i18n";
 
-const decks = ref<VocabDeck[]>([]);
-const exams = ref<Exam[]>([]);
-const counts = ref({
-  deckCount: 0,
-  examCount: 0,
-  sentenceCount: 0,
-  attemptCount: 0
-});
+type DeckRow = { deck: VocabDeck; progress: DeckProgress; due: number };
+type ExamRow = { exam: Exam; questions: number };
 
-async function startRandomFlashcards() {
-  const count = await db.vocabDecks.count();
-  if (!count) {
-    toast(t("home.noDeck"), "danger");
-    return;
-  }
-
-  const offset = Math.floor(Math.random() * count);
-  const deck = await db.vocabDecks.orderBy("createdAt").reverse().offset(offset).limit(1).first();
-
-  if (!deck) {
-    toast(t("home.deckPickError"), "danger");
-    return;
-  }
-
-  await router.push(`/deck/${deck.id}/flash`);
-}
-
-const exportInfo = ref<string>("");
+const loaded = ref(false);
+const hasContent = ref(false);
+const deckRows = ref<DeckRow[]>([]);
+const examRows = ref<ExamRow[]>([]);
+const deckCount = ref(0);
+const examCount = ref(0);
 const dueInfo = ref({ due: 0, fresh: 0 });
 const goal = ref({ done: 0, target: 30, streak: 0 });
+const masteredTotal = ref(0);
 const lastExportAt = ref(0);
+
+const toReview = computed(() => dueInfo.value.due + dueInfo.value.fresh);
 const goalPct = computed(() => Math.min(100, Math.round((goal.value.done / Math.max(1, goal.value.target)) * 100)));
-/** Rappel si du contenu existe et aucun export depuis 7 jours. */
-const backupDue = computed(() => {
-  const hasContent = counts.value.deckCount + counts.value.examCount + counts.value.sentenceCount > 0;
-  return hasContent && Date.now() - lastExportAt.value > 7 * DAY;
-});
-function lastExportLabel(days: number) {
-  return t("home.lastExport", { days, count: days });
-}
-const backupLabel = computed(() =>
-  lastExportAt.value ? lastExportLabel(Math.floor((Date.now() - lastExportAt.value) / DAY)) : t("home.noExportYet")
+const todayLabel = computed(() =>
+  new Date().toLocaleDateString(intlLocale(), { weekday: "long", day: "numeric", month: "long" })
 );
 
-async function load() {
-  decks.value = await db.vocabDecks.orderBy("createdAt").reverse().toArray();
-  exams.value = await db.exams.orderBy("createdAt").reverse().toArray();
+/** Reminder when there is content and no export for 7 days. */
+const backupDue = computed(() => hasContent.value && Date.now() - lastExportAt.value > 7 * DAY);
+const backupLabel = computed(() => {
+  if (!lastExportAt.value) return t("home.noExportYet");
+  const days = Math.floor((Date.now() - lastExportAt.value) / DAY);
+  return t("home.lastExport", { days, count: days });
+});
 
-  counts.value = {
-    deckCount: await db.vocabDecks.count(),
-    examCount: await db.exams.count(),
-    sentenceCount: await db.sentenceExercises.count(),
-    attemptCount: await db.attempts.count()
-  };
+const canSpeak = speechSupported();
+const modes = computed(() => [
+  { key: "mixed", to: "/practice?count=15&sources=vocab,exam,order" },
+  { key: "typed", to: "/practice?count=15&sources=typed&dir=both" },
+  { key: "match", to: "/match" },
+  { key: "order", to: "/practice?count=15&sources=order" },
+  { key: "cloze", to: "/practice?count=15&sources=cloze" },
+  ...(canSpeak ? [{ key: "dictation", to: "/practice?count=15&sources=dictation" }] : [])
+]);
+
+// Goal ring geometry
+const R = 26;
+const CIRC = 2 * Math.PI * R;
+
+async function load() {
+  const [decks, exams, items, questions, reviews, sentenceCount, attempts] = await Promise.all([
+    db.vocabDecks.toArray(),
+    db.exams.toArray(),
+    db.vocabItems.toArray(),
+    db.examQuestions.toArray(),
+    db.reviews.toArray(),
+    db.sentenceExercises.count(),
+    db.attempts.toArray()
+  ]);
+
+  hasContent.value = decks.length + exams.length + sentenceCount > 0;
+  deckCount.value = decks.length;
+  examCount.value = exams.length;
+
+  const progress = new Map(deckProgress(items, reviews).map((p) => [p.deckId, p]));
+  const limit = endOfDay(Date.now());
+  const due = new Map<string, number>();
+  for (const r of reviews) {
+    if (r.direction === "forward" && r.due <= limit) due.set(r.deckId, (due.get(r.deckId) ?? 0) + 1);
+  }
+  masteredTotal.value = [...progress.values()].reduce((n, p) => n + p.mastered, 0);
+  deckRows.value = decks
+    .map((deck) => ({
+      deck,
+      progress: progress.get(deck.id) ?? { deckId: deck.id, total: 0, fresh: 0, learning: 0, mastered: 0 },
+      due: due.get(deck.id) ?? 0
+    }))
+    .sort((a, b) => b.due - a.due || b.progress.learning - a.progress.learning || a.deck.title.localeCompare(b.deck.title))
+    .slice(0, 5);
+
+  const qCount = new Map<string, number>();
+  for (const q of questions) qCount.set(q.examId, (qCount.get(q.examId) ?? 0) + 1);
+  examRows.value = exams
+    .sort((a, b) => b.createdAt - a.createdAt || a.title.localeCompare(b.title))
+    .slice(0, 5)
+    .map((exam) => ({ exam, questions: qCount.get(exam.id) ?? 0 }));
+
   dueInfo.value = await countDueToday();
-  const attempts = await db.attempts.toArray();
   goal.value = { done: answersToday(attempts), target: await getSetting("dailyGoal"), streak: streak(attempts) };
   lastExportAt.value = await getSetting("lastExportAt");
-}
-
-async function clearAll() {
-  if (!(await confirmDialog(t("home.clearAllConfirm")))) return;
-
-  await db.transaction(
-      "rw",
-      db.tables,
-      async () => {
-        await Promise.all(db.tables.map((t) => t.clear()));
-      }
-  );
-
-  await load();
+  loaded.value = true;
 }
 
 async function exportAll() {
@@ -99,10 +109,12 @@ async function exportAll() {
   }
 }
 
-function examDurationLabel(seconds?: number) {
-  if (!seconds) return t("home.noTimer");
-  const minutes = Math.round(seconds / 60);
-  return t("home.minutes", { n: minutes });
+function pct(n: number, total: number) {
+  return total ? `${(n / total) * 100}%` : "0%";
+}
+
+function examTime(seconds?: number) {
+  return seconds ? t("home.minutes", { n: Math.round(seconds / 60) }) : t("home.noTimer");
 }
 
 onMounted(load);
@@ -110,154 +122,136 @@ onMounted(load);
 
 <template>
   <div class="home">
-    <!-- TOP ROW -->
-    <div class="top">
-      <!-- Dashboard -->
-      <section class="card dashboard">
-        <div class="head">
-          <h2 class="title">{{ $t("home.dashboard") }}</h2>
-          <div class="sub small">{{ $t("home.streak", { count: goal.streak }) }}</div>
-        </div>
+    <template v-if="!loaded"></template>
 
-        <div class="goal">
-          <div class="row small">
-            <span>{{ $t("home.dailyGoal") }}</span>
-            <span><b class="text-text">{{ goal.done }}</b> / {{ goal.target }} {{ $t("home.answers") }} {{ goalPct >= 100 ? "✅" : "" }}</span>
-          </div>
-          <div class="progressBar mt-1" role="progressbar" :aria-valuenow="goalPct" aria-valuemin="0" aria-valuemax="100">
-            <span class="stage-mastered" :style="{ width: `${goalPct}%` }"></span>
-            <span class="stage-fresh flex-1"></span>
-          </div>
-        </div>
-
-        <div v-if="backupDue" class="backupHint small">
-          💾 {{ backupLabel }} {{ $t("home.backupRemind") }} <button class="underline" type="button" @click="exportAll">{{ $t("home.backupLink") }}</button>{{ $t("home.backupEnd") }}
-        </div>
-
-        <div class="kpis">
-          <div class="kpiBox">
-            <div class="small">{{ $t("home.kpi.decks") }}</div>
-            <div class="kpi">{{ counts.deckCount }}</div>
-          </div>
-          <div class="kpiBox">
-            <div class="small">{{ $t("home.kpi.exams") }}</div>
-            <div class="kpi">{{ counts.examCount }}</div>
-          </div>
-          <div class="kpiBox">
-            <div class="small">{{ $t("home.kpi.sentences") }}</div>
-            <div class="kpi">{{ counts.sentenceCount }}</div>
-          </div>
-          <div class="kpiBox">
-            <div class="small">{{ $t("home.kpi.attempts") }}</div>
-            <div class="kpi">{{ counts.attemptCount }}</div>
-          </div>
-        </div>
-
-        <div class="actionsGrid">
-          <router-link class="btn actionBtn" to="/import">{{ $t("home.actions.import") }}</router-link>
-          <button class="btn actionBtn" @click="exportAll">{{ $t("home.actions.export") }}</button>
-
-          <router-link class="btn actionBtn" to="/stats">{{ $t("home.actions.stats") }}</router-link>
-          <router-link class="btn actionBtn" to="/sentences">{{ $t("home.actions.editSentences") }}</router-link>
-
-          <router-link class="btn actionBtn" to="/vocab">{{ $t("home.actions.editVocab") }}</router-link>
-          <router-link class="btn actionBtn" to="/qcm">{{ $t("home.actions.editQcm") }}</router-link>
-
-          <button class="btn danger actionBtn reset" @click="clearAll">{{ $t("home.actions.reset") }}</button>
-
-          <div class="exportHint small" v-if="exportInfo">{{ exportInfo }}</div>
-        </div>
+    <!-- First visit: no content yet -->
+    <template v-else-if="!hasContent">
+      <section class="card">
+        <h1>{{ $t("home.welcome") }}</h1>
+        <p class="small">{{ $t("home.welcomeHint") }}</p>
       </section>
+      <div class="emptyStart">
+        <StarterPacks @installed="load" />
+      </div>
+    </template>
 
-      <!-- Start -->
-      <section class="card start">
-        <div class="head">
-          <h2 class="title">{{ $t("common.start") }}</h2>
-          <div class="sub small">{{ $t("home.quickSessions") }}</div>
-        </div>
-
-        <div class="startGrid">
-          <router-link class="btn startBtn primary reviewBtn" to="/review">
-            {{ $t("home.sessions.review") }}
-            <span class="small">{{ $t("home.sessions.reviewInfo", { due: dueInfo.due, fresh: dueInfo.fresh }) }}</span>
-          </router-link>
-          <router-link class="btn startBtn" to="/exams">{{ $t("home.sessions.generateExam") }}</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=vocab,exam,order">{{ $t("home.sessions.exam15") }}</router-link>
-
-          <router-link class="btn startBtn" to="/practice?count=15&sources=order">{{ $t("home.sessions.sprintSentences") }}</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=vocab">{{ $t("home.sessions.sprintVocab") }}</router-link>
-
-          <router-link class="btn startBtn" to="/practice?count=15&sources=exam">{{ $t("home.sessions.sprintQcm") }}</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=typed&dir=both">{{ $t("home.sessions.sprintTyped") }}</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=cloze">{{ $t("home.sessions.sprintCloze") }}</router-link>
-          <router-link class="btn startBtn" to="/practice?count=15&sources=dictation">{{ $t("home.sessions.sprintDictation") }}</router-link>
-          <router-link class="btn startBtn" to="/practice?count=30&sources=vocab,exam,order">{{ $t("home.sessions.exam30") }}</router-link>
-
-          <button class="btn startBtn" @click="startRandomFlashcards">{{ $t("home.sessions.randomFlashcards") }}</button>
-        </div>
-      </section>
-    </div>
-
-    <!-- No content yet: offer the starter packs -->
-    <div v-if="counts.deckCount + counts.examCount + counts.sentenceCount === 0" class="emptyStart">
-      <StarterPacks @installed="load" />
-    </div>
-
-    <!-- CONTENT LISTS -->
-    <div v-else class="bottom">
-      <section>
-        <div class="sectionTitle">
-          <h2>{{ $t("home.vocabDecks") }}</h2>
-        </div>
-
-        <div v-if="decks.length === 0">
-          <EmptyState :title="$t('home.noDeckTitle')" :hint="$t('home.noDeckHint')" />
-        </div>
-
-        <div v-else class="listGrid">
-          <router-link
-              v-for="d in decks.slice(0, 3)"
-              :key="d.id"
-              class="card itemCard"
-              :to="`/deck/${d.id}`"
-          >
-            <h3 class="itemTitle">{{ d.title }}</h3>
-
-            <div class="itemFooter">
-              <router-link class="badge" :to="`/deck/${d.id}/flash`">{{ $t("home.flashcards") }}</router-link>
-              <span class="badge">{{ $t("common.open") }}</span>
+    <template v-else>
+      <div class="homeTop">
+        <!-- Today -->
+        <section class="card todayCard" aria-labelledby="today-title">
+          <div class="todayHead">
+            <div>
+              <h1 id="today-title" class="m-0">{{ $t("home.today") }}</h1>
+              <div class="todayDate">{{ todayLabel }}</div>
             </div>
-          </router-link>
-        </div>
-      </section>
+          </div>
 
-      <section>
-        <div class="sectionTitle">
-          <h2>{{ $t("home.qcmExams") }}</h2>
-        </div>
-
-        <div v-if="exams.length === 0">
-          <EmptyState :title="$t('home.noExamTitle')" :hint="$t('home.noExamHint')" />
-        </div>
-
-        <div v-else class="listGrid">
           <router-link
-              v-for="e in exams.slice(0, 3)"
-              :key="e.id"
-              class="card itemCard"
-              :to="`/exam/${e.id}`"
+            v-if="toReview > 0"
+            class="reviewCta"
+            to="/review"
+            :aria-label="`${$t('home.reviewLabel')} — ${$t('home.reviewInfo', { due: dueInfo.due, fresh: dueInfo.fresh })}`"
           >
-            <h3 class="itemTitle">
-              {{ e.title }}
-              <span class="itemMeta">— {{ examDurationLabel(e.durationSeconds) }}</span>
-            </h3>
-
-            <div class="itemFooter">
-              <span class="badge">{{ $t("common.start") }}</span>
+            <div>
+              <div class="big">{{ toReview }}</div>
+              <div class="label">{{ $t("home.toReview", { count: toReview }) }}</div>
+              <div class="text-sm opacity-80">{{ $t("home.reviewLabel") }} · {{ $t("home.reviewInfo", { due: dueInfo.due, fresh: dueInfo.fresh }) }}</div>
             </div>
+            <span class="go">{{ $t("home.startReview") }}</span>
           </router-link>
-        </div>
-      </section>
-    </div>
+          <div v-else class="reviewCta done">
+            <div>
+              <div class="label text-lg">✓ {{ $t("home.allDone") }}</div>
+              <div class="text-sm text-muted">{{ $t("home.allDoneHint") }}</div>
+            </div>
+          </div>
+
+          <div class="todayStats">
+            <div class="todayStat goalTile flex items-center gap-3">
+              <div class="goalRing" role="progressbar" :aria-valuenow="goalPct" aria-valuemin="0" aria-valuemax="100" :aria-label="$t('home.goal')">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                  <circle cx="32" cy="32" :r="R" fill="none" stroke="rgb(var(--border) / .12)" stroke-width="7" />
+                  <circle
+                    cx="32" cy="32" :r="R" fill="none" stroke="rgb(var(--accent))" stroke-width="7" stroke-linecap="round"
+                    :stroke-dasharray="CIRC" :stroke-dashoffset="CIRC * (1 - goalPct / 100)"
+                  />
+                </svg>
+                <span class="val">{{ goalPct }}%</span>
+              </div>
+              <div class="min-w-0">
+                <div class="small">{{ $t("home.goal") }}</div>
+                <div class="font-bold">{{ $t("home.goalValue", { done: goal.done, target: goal.target }) }}</div>
+              </div>
+            </div>
+            <div class="todayStat">
+              <div class="small">{{ $t("home.streak") }}</div>
+              <div class="kpi mt-1">{{ goal.streak }}</div>
+              <div class="small">{{ $t("home.streakUnit", { count: goal.streak }) }}</div>
+            </div>
+            <div class="todayStat">
+              <div class="small">{{ $t("home.mastered") }}</div>
+              <div class="kpi mt-1">{{ masteredTotal }}</div>
+              <div class="small">{{ $t("home.masteredUnit", { count: masteredTotal }) }}</div>
+            </div>
+          </div>
+
+          <div v-if="backupDue" class="backupHint">
+            💾 {{ backupLabel }} {{ $t("home.backupRemind") }}
+            <button class="underline font-bold" type="button" @click="exportAll">{{ $t("home.backupLink") }}</button>{{ $t("home.backupEnd") }}
+          </div>
+        </section>
+
+        <!-- Practice -->
+        <section class="card flex flex-col gap-3" aria-labelledby="practice-title">
+          <h2 id="practice-title" class="m-0">{{ $t("home.practice") }}</h2>
+          <div class="modeGrid">
+            <router-link v-for="m in modes" :key="m.key" class="modeTile" :to="m.to">
+              <span class="t">{{ $t(`home.modes.${m.key}.t`) }}</span>
+              <span class="d">{{ $t(`home.modes.${m.key}.d`) }}</span>
+            </router-link>
+          </div>
+          <router-link class="btn ghost self-start" to="/exams">{{ $t("home.customSession") }}</router-link>
+        </section>
+      </div>
+
+      <div class="homeLists">
+        <section class="card" aria-labelledby="decks-title">
+          <div class="sectionHead">
+            <h2 id="decks-title">{{ $t("home.yourDecks") }}</h2>
+            <router-link class="small underline" to="/vocab">{{ $t("home.allDecks") }} ({{ deckCount }})</router-link>
+          </div>
+          <div class="list gap-0.5">
+            <router-link v-for="r in deckRows" :key="r.deck.id" class="deckRow" :to="`/deck/${encodeURIComponent(r.deck.id)}`">
+              <div class="main">
+                <div class="name">{{ r.deck.title }}</div>
+                <div class="progressBar mt-1.5 h-1.5" role="img" :aria-label="`${r.progress.mastered} / ${r.progress.total}`">
+                  <span v-if="r.progress.mastered" class="stage-mastered" :style="{ width: pct(r.progress.mastered, r.progress.total) }"></span>
+                  <span v-if="r.progress.learning" class="stage-learning" :style="{ width: pct(r.progress.learning, r.progress.total) }"></span>
+                  <span v-if="r.progress.fresh" class="stage-fresh" :style="{ width: pct(r.progress.fresh, r.progress.total) }"></span>
+                </div>
+              </div>
+              <span v-if="r.due" class="dueDot">{{ r.due }}</span>
+              <span v-else class="small whitespace-nowrap">{{ $t("home.deckWords", { count: r.progress.total }) }}</span>
+            </router-link>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="quizzes-title">
+          <div class="sectionHead">
+            <h2 id="quizzes-title">{{ $t("home.quizzes") }}</h2>
+            <router-link class="small underline" to="/qcm">{{ $t("home.allQuizzes") }} ({{ examCount }})</router-link>
+          </div>
+          <div class="list gap-0.5">
+            <router-link v-for="e in examRows" :key="e.exam.id" class="deckRow" :to="`/exam/${encodeURIComponent(e.exam.id)}`">
+              <div class="main">
+                <div class="name">{{ e.exam.title }}</div>
+                <div class="small">{{ $t("home.quizMeta", { count: e.questions, time: examTime(e.exam.durationSeconds) }) }}</div>
+              </div>
+              <span class="small whitespace-nowrap">{{ $t("common.start") }}</span>
+            </router-link>
+          </div>
+        </section>
+      </div>
+    </template>
   </div>
 </template>

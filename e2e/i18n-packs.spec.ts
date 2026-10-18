@@ -5,7 +5,7 @@ test.describe("English UI", () => {
 
   test("detects the browser language and can switch to French", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByRole("heading", { name: "Dashboard" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Start learning" })).toBeVisible();
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
 
     await page.goto("/settings");

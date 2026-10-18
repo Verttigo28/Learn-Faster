@@ -16,5 +16,12 @@ export default {
   lastExport: "Last export:",
   never: "never",
   backupHint: "Your data stays in this browser / device: export it regularly from the home page.",
-  saved: "Settings saved ✅"
+  saved: "Settings saved ✅",
+  exportNow: "Export my data (JSON)",
+  exported: "Data exported ✅",
+  danger: "Danger zone",
+  resetAll: "Delete all data",
+  resetHint: "Removes every deck, quiz, sentence, review and statistic from this device. Export first if you want to keep them.",
+  resetConfirm: "Delete all decks, quizzes, sentences, reviews and stats from this device? This cannot be undone.",
+  resetDone: "All data deleted"
 };

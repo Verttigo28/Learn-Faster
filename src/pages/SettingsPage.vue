@@ -3,7 +3,10 @@ import { onMounted, onUnmounted, ref, watch } from "vue";
 import { DEFAULT_SETTINGS, getAllSettings, setSetting, type Settings } from "../services/settings";
 import { applyTheme } from "../services/theme";
 import { speechSupported } from "../services/speech";
-import { toast } from "../services/dialog";
+import { confirmDialog, toast } from "../services/dialog";
+import { exportAllData } from "../services/exporter";
+import { saveJson } from "../services/fileSave";
+import { db } from "../db";
 import { formatDate } from "../utils/time";
 import { detectLocale, isLocale, locale, setLocale, t } from "../i18n";
 import { LOCALES } from "../i18n/locales";
@@ -45,6 +48,27 @@ async function save() {
   ]);
   savedTheme = s.value.theme;
   toast(t("settings.saved"), "ok");
+}
+
+async function exportNow() {
+  try {
+    await saveJson(`revisions_export_${new Date().toISOString().slice(0, 10)}.json`, await exportAllData());
+    s.value.lastExportAt = Date.now();
+    await setSetting("lastExportAt", s.value.lastExportAt);
+    toast(t("settings.exported"), "ok");
+  } catch (e) {
+    toast(t("services.exportError", { error: e instanceof Error ? e.message : String(e) }), "danger");
+  }
+}
+
+/** Clears content and progress but keeps the settings (language, theme…). */
+async function resetAll() {
+  if (!(await confirmDialog(t("settings.resetConfirm"), { confirmLabel: t("settings.resetAll") }))) return;
+  const tables = db.tables.filter((tb) => tb.name !== "settings");
+  await db.transaction("rw", tables, async () => {
+    await Promise.all(tables.map((tb) => tb.clear()));
+  });
+  toast(t("settings.resetDone"), "ok");
 }
 
 // Preview the theme immediately.
@@ -98,12 +122,19 @@ onUnmounted(() => applyTheme(savedTheme));
           <b class="text-text">{{ s.lastExportAt ? formatDate(s.lastExportAt) : $t("settings.never") }}</b>.
           {{ $t("settings.backupHint") }}
         </p>
+        <button class="btn" type="button" @click="exportNow">⬇️ {{ $t("settings.exportNow") }}</button>
 
         <div class="hr"></div>
         <div class="row">
           <button class="btn ok" @click="save">{{ $t("common.save") }}</button>
           <router-link class="btn" to="/">{{ $t("common.back") }}</router-link>
         </div>
+
+        <section class="mt-6 rounded-xl border border-danger/40 p-4" aria-labelledby="danger-title">
+          <h3 id="danger-title" class="text-danger">{{ $t("settings.danger") }}</h3>
+          <p class="small">{{ $t("settings.resetHint") }}</p>
+          <button class="btn danger" type="button" @click="resetAll">{{ $t("settings.resetAll") }}</button>
+        </section>
       </div>
     </div>
   </div>

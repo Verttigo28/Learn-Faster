@@ -145,16 +145,29 @@ test("csv import, search, settings and light theme", async ({ page }) => {
   await shot(page, "13-stats-light");
 });
 
-test("leaving a session asks for confirmation", async ({ page }) => {
+test("leaving a practice session asks for confirmation", async ({ page }) => {
   await importBundle(page);
-  await page.goto("/deck/id-basics/flash");
-  await page.getByRole("button", { name: "Afficher la réponse" }).click();
-  await page.getByRole("button", { name: /^Bien/ }).click();
-  await page.locator(".sessionCard").getByRole("link", { name: "Retour" }).click();
+  await page.goto("/practice?count=5&sources=exam,vocab");
+  await expect(page.getByText("Question 1 / 5")).toBeVisible();
+  await page.keyboard.press("1");
+  await page.getByRole("button", { name: "Suivant" }).click();
+  await page.getByRole("button", { name: "Quitter" }).click();
   await expect(page.getByRole("dialog")).toContainText("Quitter la session");
   await shot(page, "14-leave-guard");
   await page.getByRole("dialog").getByRole("button", { name: "Annuler" }).click();
-  await expect(page).toHaveURL(/\/flash$/);
+  await expect(page).toHaveURL(/\/practice/);
+});
+
+test("leaving flashcards mid-session keeps the cards studied", async ({ page }) => {
+  await importBundle(page);
+  await page.goto("/deck/id-basics/flash");
+  await page.getByRole("button", { name: /^Afficher la réponse/ }).click();
+  await page.getByRole("button", { name: /^Bien/ }).click();
+  // no confirmation: the graded card is already saved
+  await page.locator(".sessionCard").getByRole("link", { name: "Retour" }).click();
+  await expect(page).toHaveURL(/\/deck\/id-basics$/);
+  await page.goto("/stats");
+  await expect(page.getByText("1 entrées")).toBeVisible();
 });
 
 test("switching from due-only to the full deck reloads the cards", async ({ page }) => {
