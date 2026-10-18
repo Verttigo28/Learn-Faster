@@ -12,7 +12,7 @@ type ConfirmRequest = {
 
 /** État global des dialogues, rendu par <AppDialogs /> (remplace alert() / confirm()). */
 export const dialogState = reactive({
-  toasts: [] as { id: number; kind: ToastKind; text: string }[],
+  toasts: [] as { id: number; kind: ToastKind; text: string; ms: number }[],
   confirm: null as ConfirmRequest | null
 });
 
@@ -20,7 +20,7 @@ let nextToastId = 1;
 
 export function toast(text: string, kind: ToastKind = "info", ms = 3500): void {
   const id = nextToastId++;
-  dialogState.toasts.push({ id, kind, text });
+  dialogState.toasts.push({ id, kind, text, ms });
   setTimeout(() => dismissToast(id), ms);
 }
 

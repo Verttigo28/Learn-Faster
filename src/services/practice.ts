@@ -45,6 +45,8 @@ export type PracticeQuestion =
       id: string;
       text: string;
       translation?: string;
+      /** Traduction mot-à-mot (ordre SPOK) */
+      literal?: string;
       tokens: string[];
       answer?: string[];
     }
@@ -159,7 +161,7 @@ export async function buildPractice(config: PracticeConfig): Promise<PracticeQue
 
   if (sources.includes("order")) {
     for (const s of shuffle(sentences)) {
-      pool.push({ kind: "sentence_order", id: s.id, text: s.text, translation: s.translation, tokens: s.tokens, answer: [] });
+      pool.push({ kind: "sentence_order", id: s.id, text: s.text, translation: s.translation, literal: s.literal, tokens: s.tokens, answer: [] });
     }
   }
 

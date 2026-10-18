@@ -21,6 +21,7 @@ export default {
     noCorrectChoice: "no correct choice",
     schemaV1: "version 1 expected",
     number: "number expected",
+    difficulty: "1, 2 or 3 expected",
     unknownType: "expected: vocab_deck / qcm_exam / sentence_deck / revisions_bundle"
   },
   pdfNoDetails: "This attempt has no details (old record). Take a new session to export a PDF.",

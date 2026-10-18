@@ -37,7 +37,8 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
                 id: stripPrefix(it.id, d.id),
                 term: it.term,
                 definition: it.definition,
-                tags: it.tags ?? []
+                tags: it.tags ?? [],
+                difficulty: it.difficulty
             }))
     }));
 
@@ -53,7 +54,8 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
                 prompt: q.prompt,
                 choices: q.choices,
                 explanation: q.explanation,
-                tags: q.tags ?? []
+                tags: q.tags ?? [],
+                difficulty: q.difficulty
             }))
     }));
 
@@ -66,7 +68,9 @@ export async function exportAllData(): Promise<RevisionsBundleJson> {
             id: stripPrefix(s.id, deckId),
             text: s.text,
             translation: s.translation,
-            tags: s.tags ?? []
+            literal: s.literal,
+            tags: s.tags ?? [],
+            difficulty: s.difficulty
         });
         byDeck.set(deckId, items);
     }

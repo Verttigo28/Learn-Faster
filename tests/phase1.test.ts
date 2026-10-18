@@ -125,3 +125,38 @@ describe("empty sentence decks", () => {
     expect(exported.sentenceDecks).toEqual([{ type: "sentence_deck", id: "empty", title: "Vide", items: [] }]);
   });
 });
+
+describe("migration from the master build (v4 srsCards)", () => {
+  it("keeps sentences and converts vocab SRS cards into reviews", async () => {
+    const name = "migration_master_v4";
+    const old = new Dexie(name);
+    old.version(4).stores({
+      vocabDecks: "id, title, createdAt",
+      vocabItems: "id, deckId",
+      exams: "id, title, createdAt",
+      examQuestions: "id, examId",
+      sentenceExercises: "id, createdAt",
+      srsCards: "id, itemId, itemType, nextReview",
+      attempts: "id, type, refId, startedAt, finishedAt"
+    });
+    await old.table("vocabItems").add({ id: "d:1", deckId: "d", term: "makan", definition: "manger" });
+    await old.table("sentenceExercises").add({ id: "trip:1", text: "a b", tokens: ["a", "b"], createdAt: 1 });
+    await old.table("srsCards").bulkAdd([
+      { id: "srs:d:1", itemId: "d:1", itemType: "vocab", easeFactor: 2.36, interval: 6, repetitions: 2, nextReview: 123, lastReview: 100 },
+      { id: "srs:gone", itemId: "gone", itemType: "vocab", easeFactor: 2.5, interval: 1, repetitions: 1, nextReview: 1, lastReview: 1 },
+      { id: "srs:q", itemId: "e:1", itemType: "exam", easeFactor: 2.5, interval: 1, repetitions: 1, nextReview: 1, lastReview: 1 }
+    ]);
+    old.close();
+
+    const next = new AppDB(name);
+    expect(await next.reviews.toArray()).toEqual([
+      {
+        cardId: "d:1", itemId: "d:1", deckId: "d", direction: "forward",
+        ease: 2.36, interval: 6, reps: 2, lapses: 0, due: 123, introducedAt: 100, lastReviewed: 100
+      }
+    ]);
+    expect((await next.sentenceExercises.get("trip:1"))?.deckId).toBe("trip");
+    next.close();
+    await Dexie.delete(name);
+  });
+});

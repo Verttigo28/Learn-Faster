@@ -6,7 +6,7 @@ export type VocabDeckJson = {
   title: string;
   from: string;
   to: string;
-  items: { id: string; term: string; definition: string; tags?: string[] }[];
+  items: { id: string; term: string; definition: string; tags?: string[]; difficulty?: 1 | 2 | 3 }[];
 };
 
 export type QcmExamJson = {
@@ -20,6 +20,7 @@ export type QcmExamJson = {
     choices: { id: string; text: string; correct: boolean }[];
     explanation?: string;
     tags?: string[];
+    difficulty?: 1 | 2 | 3;
   }[];
 };
 
@@ -27,7 +28,7 @@ export type SentenceDeckJson = {
   type: "sentence_deck";
   id: string;
   title: string;
-  items: { id: string; text: string; translation?: string; tags?: string[] }[];
+  items: { id: string; text: string; translation?: string; literal?: string; tags?: string[]; difficulty?: 1 | 2 | 3 }[];
 };
 
 export type RevisionsBundleJson = {

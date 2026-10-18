@@ -58,7 +58,7 @@ function unpick(index: number) {
 
     <div class="small">{{ $t("practice.order.yourAnswer") }}</div>
     <div class="flex flex-wrap gap-2 mt-2">
-      <button v-for="(t, i) in answer" :key="i" class="btn" @click="unpick(i)" >
+      <button v-for="(t, i) in answer" :key="i" class="btn token-btn" @click="unpick(i)" >
         {{ t }}
       </button>
       <span v-if="answer.length === 0" class="small">{{ $t("practice.order.clickWords") }}</span>
@@ -68,9 +68,18 @@ function unpick(index: number) {
 
     <div class="small">{{ $t("practice.order.shuffled") }}</div>
     <div class="flex flex-wrap gap-2 mt-2">
-      <button v-for="(t, i) in remaining" :key="i" class="btn" @click="pick(t)" >
+      <button v-for="(t, i) in remaining" :key="i" class="btn token-btn" @click="pick(t)" >
         {{ t }}
       </button>
     </div>
   </div>
 </template>
+
+<style scoped>
+.token-btn {
+  min-height: 48px;
+  min-width: 48px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+</style>

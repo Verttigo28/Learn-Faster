@@ -18,7 +18,8 @@ export async function importVocabDeck(data: VocabDeckJson): Promise<{ title: str
     deckId: data.id,
     term: it.term,
     definition: it.definition,
-    tags: it.tags ?? []
+    tags: it.tags ?? [],
+    difficulty: it.difficulty
   }));
 
   await db.transaction("rw", [db.vocabDecks, db.vocabItems, db.reviews], async () => {
@@ -51,7 +52,8 @@ export async function importQcmExam(data: QcmExamJson): Promise<{ title: string;
     prompt: q.prompt,
     choices: q.choices,
     explanation: q.explanation,
-    tags: q.tags ?? []
+    tags: q.tags ?? [],
+    difficulty: q.difficulty
   }));
 
   await db.transaction("rw", [db.exams, db.examQuestions], async () => {
@@ -79,13 +81,16 @@ export async function importSentenceDeck(data: SentenceDeckJson): Promise<{ titl
     .map((s) => {
       const text = s.text.trim();
       const translation = (s.translation ?? "").trim();
+      const literal = (s.literal ?? "").trim();
       return {
         id: `${data.id}:${s.id}`,
         deckId: data.id,
         text,
         translation: translation || undefined,
+        literal: literal || undefined,
         tokens: tokenizeSentence(text),
         tags: s.tags ?? [],
+        difficulty: s.difficulty,
         createdAt: now
       };
     })

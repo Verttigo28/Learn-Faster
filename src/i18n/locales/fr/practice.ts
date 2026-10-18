@@ -2,6 +2,7 @@ import type en from "../en/practice";
 
 export default {
   emptyTitle: "Rien à réviser",
+  literal: "Mot à mot : {text}",
   emptyHint: "Aucune question ne correspond aux filtres. Ajoute du contenu ou change les tags.",
   backGenerator: "Retour générateur",
   import: "Importer",

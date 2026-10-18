@@ -351,7 +351,7 @@ onUnmounted(() => {
               <input type="checkbox" v-model="sentenceHelp" @change="persistHelp" />
               {{ $t("common.translationHelp") }}
             </label>
-            <span v-if="sentenceHelp && current.translation" class="small">🇫🇷 {{ current.translation }}</span>
+            <span v-if="sentenceHelp && current.translation" class="small">💬 {{ current.translation }}</span>
           </div>
 
           <SentenceOrder :tokens="current.tokens" v-model="current.answer" />
@@ -364,7 +364,8 @@ onUnmounted(() => {
               <span class="small">{{ $t("practice.correctSentence") }}</span>
             </div>
             <h3 class="mt-2.5 mb-0">{{ current.text }}</h3>
-            <p v-if="current.translation" class="small mt-1.5 mb-0">🇫🇷 {{ current.translation }}</p>
+            <p v-if="current.translation" class="small mt-1.5 mb-0">💬 {{ current.translation }}</p>
+            <p v-if="current.literal" class="small mt-1 mb-0">🔤 {{ $t("practice.literal", { text: current.literal }) }}</p>
           </div>
         </div>
 
@@ -376,7 +377,7 @@ onUnmounted(() => {
           <template v-else-if="current.kind === 'cloze'">
             <h3 class="mt-0">{{ $t("practice.clozeTitle") }}</h3>
             <p class="text-xl font-bold text-text">{{ current.prompt }}</p>
-            <p v-if="sentenceHelp && current.hint" class="small">🇫🇷 {{ current.hint }}</p>
+            <p v-if="sentenceHelp && current.hint" class="small">💬 {{ current.hint }}</p>
             <label class="badge cursor-pointer">
               <input type="checkbox" v-model="sentenceHelp" @change="persistHelp" />
               {{ $t("common.translationHelp") }}

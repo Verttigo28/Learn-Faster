@@ -1,5 +1,6 @@
 export default {
   emptyTitle: "Nothing to review",
+  literal: "Word for word: {text}",
   emptyHint: "No question matches the filters. Add content or change the tags.",
   backGenerator: "Back to generator",
   import: "Import",

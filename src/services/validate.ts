@@ -38,6 +38,9 @@ class Checker {
     if (x === undefined) return;
     if (!Array.isArray(x) || x.some((t) => typeof t !== "string")) this.fail(path, t("services.validate.textList"));
   }
+  difficulty(x: unknown, path: string) {
+    if (x !== undefined && x !== 1 && x !== 2 && x !== 3) this.fail(path, t("services.validate.difficulty"));
+  }
   uniqueIds(list: unknown[], path: string) {
     const seen = new Set<string>();
     list.forEach((it, i) => {
@@ -62,6 +65,7 @@ function checkVocab(c: Checker, x: unknown, p: string) {
     c.str(it.id, `${q}.id`);
     c.str(it.term, `${q}.term`);
     c.str(it.definition, `${q}.definition`);
+    c.difficulty(it.difficulty, `${q}.difficulty`);
     c.tags(it.tags, `${q}.tags`);
   });
   c.uniqueIds(x.items, `${p}.items`);
@@ -82,6 +86,7 @@ function checkQcm(c: Checker, x: unknown, p: string) {
     c.str(qq.prompt, `${q}.prompt`);
     c.str(qq.explanation, `${q}.explanation`, false);
     c.tags(qq.tags, `${q}.tags`);
+    c.difficulty(qq.difficulty, `${q}.difficulty`);
     if (!c.arr(qq.choices, `${q}.choices`)) return;
     if (qq.choices.length < 2) c.fail(`${q}.choices`, t("services.validate.atLeastTwoChoices"));
     let correct = 0;
@@ -111,6 +116,8 @@ function checkSentences(c: Checker, x: unknown, p: string) {
     c.str(it.text, `${q}.text`);
     c.str(it.translation, `${q}.translation`, false);
     c.tags(it.tags, `${q}.tags`);
+    c.str(it.literal, `${q}.literal`, false);
+    c.difficulty(it.difficulty, `${q}.difficulty`);
   });
   c.uniqueIds(x.items, `${p}.items`);
 }

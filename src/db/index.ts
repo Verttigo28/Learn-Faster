@@ -14,6 +14,7 @@ export type VocabItem = {
   term: string;
   definition: string;
   tags?: string[];
+  difficulty?: 1 | 2 | 3;
 };
 
 export type Exam = {
@@ -30,6 +31,7 @@ export type ExamQuestion = {
   choices: { id: string; text: string; correct: boolean }[];
   explanation?: string;
   tags?: string[];
+  difficulty?: 1 | 2 | 3;
 };
 
 export type SentenceDeck = {
@@ -47,8 +49,11 @@ export type SentenceExercise = {
   text: string;
   /** Traduction FR (optionnelle) affichée en correction / aide */
   translation?: string;
+  /** Traduction mot-à-mot / structurelle (ordre SPOK) */
+  literal?: string;
   tokens: string[];
   tags?: string[];
+  difficulty?: 1 | 2 | 3;
   createdAt: number;
 };
 
@@ -125,6 +130,18 @@ export type ReviewState = {
 
 export type SettingRow = { key: string; value: unknown };
 
+/** Card format of the v4 `srsCards` table (first SRS implementation). */
+type LegacySrsCard = {
+  id: string;
+  itemId: string;
+  itemType: "vocab" | "exam" | "sentence";
+  easeFactor: number;
+  interval: number;
+  repetitions: number;
+  nextReview: number;
+  lastReview: number;
+};
+
 export class AppDB extends Dexie {
   vocabDecks!: Table<VocabDeck, string>;
   vocabItems!: Table<VocabItem, string>;
@@ -168,8 +185,20 @@ export class AppDB extends Dexie {
       attempts: "id, type, refId, startedAt, finishedAt"
     });
 
-    // v4: sentence decks + deckId on sentences, multi-entry tag indexes
-    this.version(4)
+    // v4 (from master): SRS cards of the first SRS implementation. Kept so databases already
+    // upgraded by that build stay compatible; v6 converts its vocab cards into `reviews`.
+    this.version(4).stores({
+      vocabDecks: "id, title, createdAt",
+      vocabItems: "id, deckId",
+      exams: "id, title, createdAt",
+      examQuestions: "id, examId",
+      sentenceExercises: "id, createdAt",
+      srsCards: "id, itemId, itemType, nextReview",
+      attempts: "id, type, refId, startedAt, finishedAt"
+    });
+
+    // v5: sentence decks + deckId on sentences, multi-entry tag indexes
+    this.version(5)
       .stores({
         vocabDecks: "id, title, createdAt",
         vocabItems: "id, deckId, *tags",
@@ -200,11 +229,37 @@ export class AppDB extends Dexie {
         await tx.table("sentenceDecks").bulkPut([...decks.values()]);
       });
 
-    // v5: spaced repetition state + key/value settings
-    this.version(5).stores({
-      reviews: "cardId, itemId, deckId, due, introducedAt, lastReviewed",
-      settings: "key"
-    });
+    // v6: spaced repetition state + key/value settings
+    this.version(6)
+      .stores({
+        reviews: "cardId, itemId, deckId, due, introducedAt, lastReviewed",
+        settings: "key"
+      })
+      .upgrade(async (tx) => {
+        // Carry over vocab progress from the v4 srsCards table (exam / sentence cards are left as is).
+        const cards = (await tx.table("srsCards").where("itemType").equals("vocab").toArray()) as LegacySrsCard[];
+        if (!cards.length) return;
+        const items = await tx.table("vocabItems").bulkGet(cards.map((c) => c.itemId));
+        const reviews: ReviewState[] = [];
+        cards.forEach((c, i) => {
+          const item = items[i] as VocabItem | undefined;
+          if (!item) return;
+          reviews.push({
+            cardId: item.id,
+            itemId: item.id,
+            deckId: item.deckId,
+            direction: "forward",
+            ease: Math.max(1.3, c.easeFactor ?? 2.5),
+            interval: c.interval ?? 0,
+            reps: c.repetitions ?? 0,
+            lapses: 0,
+            due: c.nextReview ?? 0,
+            introducedAt: c.lastReview || Date.now(),
+            lastReviewed: c.lastReview ?? 0
+          });
+        });
+        await tx.table("reviews").bulkPut(reviews);
+      });
   }
 }
 

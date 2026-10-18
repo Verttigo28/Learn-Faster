@@ -9,17 +9,22 @@ export default defineConfig({
       // Registered manually in main.ts (web only: the Android app already ships its files).
       injectRegister: false,
       registerType: "autoUpdate",
-      includeAssets: ["knowledge.ico", "icon.svg"],
+      includeAssets: ["knowledge.ico", "icons/icon.svg"],
       manifest: {
-        name: "Learn faster !",
+        name: "Learn faster!",
         short_name: "Learn faster",
-        description: "Révisions hors-ligne : vocabulaire, QCM, phrases, répétition espacée.",
-        lang: "fr",
+        description: "Offline language learning: flashcards, spaced repetition, quizzes and sentences.",
+        lang: "en",
         theme_color: "#0b1020",
         background_color: "#0b1020",
         display: "standalone",
         start_url: "/",
-        icons: [{ src: "icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any maskable" }]
+        icons: [
+          { src: "icons/icon-192.png", sizes: "192x192", type: "image/png" },
+          { src: "icons/icon-512.png", sizes: "512x512", type: "image/png" },
+          { src: "icons/icon-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
+          { src: "icons/icon.svg", sizes: "any", type: "image/svg+xml" }
+        ]
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,svg,ico,png,woff2}"],

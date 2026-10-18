@@ -16,16 +16,19 @@ import BaseModal from "./BaseModal.vue";
 
   <teleport to="body">
     <div class="toastStack" aria-live="polite">
-      <div
-        v-for="t in dialogState.toasts"
-        :key="t.id"
-        class="toast"
-        :class="t.kind"
-        role="status"
-        @click="dismissToast(t.id)"
-      >
-        {{ t.text }}
-      </div>
+      <TransitionGroup name="toast">
+        <div
+          v-for="t in dialogState.toasts"
+          :key="t.id"
+          class="toast"
+          :class="t.kind"
+          role="status"
+          @click="dismissToast(t.id)"
+        >
+          <span class="relative z-[1]">{{ t.text }}</span>
+          <span class="toastProgress" :style="{ animationDuration: `${t.ms}ms` }"></span>
+        </div>
+      </TransitionGroup>
     </div>
   </teleport>
 </template>

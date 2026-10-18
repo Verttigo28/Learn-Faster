@@ -16,7 +16,7 @@ export default {
     deleteDeck: "Supprimer le deck",
     emptyTitle: "Aucune phrase",
     emptyHint: "Ajoute ta première phrase à gauche.",
-    translation: "🇫🇷 Traduction : {text}",
+    translation: "💬 Traduction : {text}",
     editButton: "Modifier",
     editModal: "Modifier la phrase",
     writeSentence: "Écris une phrase.",

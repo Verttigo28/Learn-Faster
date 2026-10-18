@@ -43,6 +43,12 @@ npm run packs        # rebuild the starter packs manifest
 
 GitHub Actions runs lint, tests and the build on every push / pull request.
 
+### Docker
+
+```bash
+docker compose up -d --build   # builds the app and serves it with nginx on http://localhost:3000
+```
+
 ### Android (Capacitor)
 
 ```bash

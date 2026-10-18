@@ -14,7 +14,7 @@ export default {
     deleteDeck: "Delete the deck",
     emptyTitle: "No sentences",
     emptyHint: "Add your first sentence on the left.",
-    translation: "🇫🇷 Translation: {text}",
+    translation: "💬 Translation: {text}",
     editButton: "Edit",
     editModal: "Edit sentence",
     writeSentence: "Write a sentence.",

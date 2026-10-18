@@ -387,3 +387,19 @@
         .home .startBtn, .home .actionBtn{ @apply text-[13px] px-2; }
     }
 }
+
+@layer components{
+    /* Toasts: filled colors, countdown bar, slide in/out */
+    .toast{ @apply relative overflow-hidden text-center font-medium; }
+    .toast.ok{ @apply bg-ok border-ok text-white; }
+    .toast.danger{ @apply bg-danger border-danger text-white; }
+    .toast.info{ @apply bg-accent border-accent text-white; }
+    .toastProgress{
+        @apply absolute bottom-0 left-0 h-[3px] w-full bg-white/50;
+        animation: toast-shrink linear forwards;
+    }
+    @keyframes toast-shrink{ from{ width: 100%; } to{ width: 0%; } }
+    .toast-enter-active, .toast-leave-active{ transition: all .3s cubic-bezier(.22, 1, .36, 1); }
+    .toast-enter-from{ opacity: 0; transform: translateY(1rem) scale(.95); }
+    .toast-leave-to{ opacity: 0; transform: translateY(-.5rem) scale(.95); }
+}
