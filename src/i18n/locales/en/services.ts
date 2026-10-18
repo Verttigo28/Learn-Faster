@@ -28,5 +28,7 @@ export default {
   pdfError: "Could not export the PDF",
   exportError: "Export failed: {error}",
   speechUnavailable: "Dictation unavailable: speech synthesis is not supported.",
+  voiceDownloading: "Downloading the {language} voice (about 80 MB, only once). It will then also work offline.",
+  voiceError: "The {language} voice could not be loaded. Check your connection and try again.",
   noVoice: "No {language} voice on this device, so it can't be read aloud correctly. Install one in your system text-to-speech settings (Android: Settings > Accessibility > Text-to-speech; Windows: Settings > Time & language > Speech)."
 };

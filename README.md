@@ -61,6 +61,18 @@ npx cap open android
 
 On Android, exports (JSON / PDF) open the system share sheet (save to Files, Drive, e-mail…).
 
+## Pronunciation (offline, no voice to install)
+
+Words are spoken from the best available source:
+
+1. **Recorded audio** for every Indonesian word and sentence of the starter packs (`public/audio/id/`, ~2,200 small MP3s). Instant and offline, same voice on every device.
+2. A **device voice** for the language, when one is installed.
+3. An **in-browser neural voice** ([Piper](https://github.com/rhasspy/piper), via onnxruntime-web) for your own words: downloaded automatically once (~80 MB) and cached for offline use. Nothing for the learner to install.
+
+Regenerate the recordings after editing the packs with `npm run audio` (only missing files; `-- --force` for all). It runs Piper in headless Chromium (Playwright) and encodes 32 kbps MP3.
+
+**License:** the Indonesian voice is trained on data licensed CC BY-NC-SA 4.0, so the recordings are **non-commercial only** — see [`public/audio/id/LICENSE.md`](public/audio/id/LICENSE.md).
+
 ## Import formats
 
 Supported JSON `type`s: `vocab_deck`, `qcm_exam`, `sentence_deck`, `revisions_bundle` (full backup). Invalid files are rejected with precise error paths (e.g. `items[3].term`) and nothing is imported.

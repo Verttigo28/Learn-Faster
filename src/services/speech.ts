@@ -1,8 +1,16 @@
 import { intlLocale, t } from "../i18n";
 import { toast } from "./dialog";
+import { recordedUrl } from "./recordedAudio";
+import { hasNeuralVoice, isVoiceCached, synthesizeWav } from "./piper";
 
 /**
- * Text-to-speech via the Web Speech API (browsers + recent Android WebViews).
+ * Pronunciation, best source first:
+ * 1. Pre-recorded audio shipped with the starter packs (instant, offline, same voice everywhere).
+ * 2. A device voice for the language (Web Speech API).
+ * 3. The in-browser neural voice (Piper), downloaded automatically once.
+ * 4. Otherwise: tell the user which voice to install (never read with a wrong-language voice).
+ *
+ * Web Speech API notes:
  *
  * Pitfalls handled here:
  * - Voices load asynchronously: getVoices() is often empty on the first call.
@@ -45,15 +53,20 @@ export function baseLang(tag: string): string {
   return ALIASES[base] ?? base;
 }
 
-export function speechSupported(): boolean {
+function webSpeechAvailable(): boolean {
   return typeof window !== "undefined" && "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+}
+
+/** Whether the app can pronounce anything at all (audio playback or a speech engine). */
+export function speechSupported(): boolean {
+  return typeof window !== "undefined" && (typeof Audio !== "undefined" || webSpeechAvailable());
 }
 
 let voicesPromise: Promise<SpeechSynthesisVoice[]> | null = null;
 
 /** Resolves once the platform has published its voices (or after a short timeout). */
 export function loadVoices(): Promise<SpeechSynthesisVoice[]> {
-  if (!speechSupported()) return Promise.resolve([]);
+  if (!webSpeechAvailable()) return Promise.resolve([]);
   const now = window.speechSynthesis.getVoices();
   if (now.length) return Promise.resolve(now);
   voicesPromise ??= new Promise((resolve) => {
@@ -87,38 +100,148 @@ function languageName(lang: string): string {
 }
 
 const warned = new Set<string>();
+function warnOnce(base: string, key: string, lang: string) {
+  if (warned.has(`${key}:${base}`)) return;
+  warned.add(`${key}:${base}`);
+  toast(t(key, { language: languageName(lang) }), "danger", 7000);
+}
+
+let player: HTMLAudioElement | null = null;
+let playerUrl: string | null = null;
+let ctx: AudioContext | null = null;
+let source: AudioBufferSourceNode | null = null;
 
 /**
- * Speaks `text` in `lang`. Returns false (and warns once per language) when the device
- * has no voice for that language, instead of reading it with a wrong-language voice.
+ * Web Audio context, created / resumed synchronously inside the click that triggered speak(): the
+ * browser then allows playback later on, even after a long download (an <audio> element started
+ * seconds after the click would be blocked by autoplay rules).
+ */
+function unlockAudio(): void {
+  if (typeof window === "undefined") return;
+  const Ctor = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+  if (!Ctor) return;
+  ctx ??= new Ctor();
+  if (ctx.state === "suspended") void ctx.resume();
+}
+
+/** Lets the UI (and tests) know which source pronounced the text. */
+function announce(kind: "recorded" | "device" | "neural", text: string) {
+  window.dispatchEvent(new CustomEvent("lf-speak", { detail: { kind, text } }));
+}
+
+function stopAll() {
+  if (source) {
+    try {
+      source.stop();
+    } catch {
+      // already stopped
+    }
+    source = null;
+  }
+  if (player) {
+    player.pause();
+    player = null;
+  }
+  if (playerUrl) {
+    URL.revokeObjectURL(playerUrl);
+    playerUrl = null;
+  }
+  if (webSpeechAvailable()) window.speechSynthesis.cancel();
+}
+
+async function playUrl(url: string, ownsUrl = false): Promise<boolean> {
+  if (ctx) {
+    try {
+      const data = await (await fetch(url)).arrayBuffer();
+      if (ownsUrl) URL.revokeObjectURL(url);
+      const buffer = await ctx.decodeAudioData(data);
+      stopAll();
+      source = ctx.createBufferSource();
+      source.buffer = buffer;
+      source.connect(ctx.destination);
+      source.start();
+      return true;
+    } catch (e) {
+      console.error("Web Audio playback failed, using <audio>:", e);
+      if (ownsUrl) return false; // object URL already revoked
+    }
+  }
+  stopAll();
+  const audio = new Audio(url);
+  player = audio;
+  if (ownsUrl) playerUrl = url;
+  try {
+    await audio.play();
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Speaks `text` in `lang` using the best available source (see top of file).
+ * Returns false when nothing could pronounce it (the user is told why, once per language).
  */
 export async function speak(text: string, lang?: string, rate = 0.9): Promise<boolean> {
   if (!speechSupported() || !text.trim()) return false;
-  const synth = window.speechSynthesis;
-  const voices = await loadVoices();
-  const u = new SpeechSynthesisUtterance(text);
-  u.rate = rate;
+  unlockAudio(); // must run before the first await, while still inside the user's click
+  const base = lang ? baseLang(lang) : "";
 
-  if (lang) {
-    const voice = findVoice(voices, lang);
-    if (voice) {
-      u.voice = voice;
-      u.lang = voice.lang;
-    } else if (voices.length) {
-      // Voices are known but none speaks this language: don't fall back to English.
-      const base = baseLang(lang);
-      if (!warned.has(base)) {
-        warned.add(base);
-        toast(t("services.noVoice", { language: languageName(lang) }), "danger", 7000);
-      }
-      return false;
-    } else {
-      // Platform exposes no voice list: let it pick from the language tag.
-      u.lang = toLocale(lang) ?? lang;
+  // 1. Recorded audio
+  if (base) {
+    const url = await recordedUrl(text, base);
+    if (url && (await playUrl(url))) {
+      announce("recorded", text);
+      return true;
     }
   }
 
-  synth.cancel();
-  synth.speak(u);
-  return true;
+  // 2. Device voice
+  const voices = await loadVoices();
+  const voice = lang ? findVoice(voices, lang) : undefined;
+  if (webSpeechAvailable() && (voice || !lang)) {
+    stopAll();
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = rate;
+    if (voice) {
+      u.voice = voice;
+      u.lang = voice.lang;
+    }
+    window.speechSynthesis.speak(u);
+    announce("device", text);
+    return true;
+  }
+
+  // 3. Neural voice in the browser
+  if (base && hasNeuralVoice(base)) {
+    try {
+      if (!(await isVoiceCached(base))) {
+        if (!warned.has(`dl:${base}`)) {
+          warned.add(`dl:${base}`);
+          toast(t("services.voiceDownloading", { language: languageName(lang!) }), "info", 6000);
+        }
+      }
+      const wav = await synthesizeWav(text, base);
+      const ok = await playUrl(URL.createObjectURL(wav), true);
+      if (ok) announce("neural", text);
+      return ok;
+    } catch (e) {
+      console.error("Neural voice failed:", e);
+      warnOnce(base, "services.voiceError", lang!);
+      return false;
+    }
+  }
+
+  // 4. Platform exposes no voice list at all: let it pick from the language tag
+  if (webSpeechAvailable() && !voices.length && lang) {
+    stopAll();
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = rate;
+    u.lang = toLocale(lang) ?? lang;
+    window.speechSynthesis.speak(u);
+    return true;
+  }
+
+  if (base) warnOnce(base, "services.noVoice", lang!);
+  return false;
 }

@@ -30,5 +30,7 @@ export default {
   pdfError: "Impossible d'exporter le PDF",
   exportError: "Export impossible : {error}",
   speechUnavailable: "Dictée indisponible : synthèse vocale non supportée.",
+  voiceDownloading: "Téléchargement de la voix {language} (environ 80 Mo, une seule fois). Elle fonctionnera ensuite aussi hors ligne.",
+  voiceError: "Impossible de charger la voix {language}. Vérifie ta connexion et réessaie.",
   noVoice: "Aucune voix {language} sur cet appareil : la lecture serait incorrecte. Installe-la dans les réglages de synthèse vocale du système (Android : Paramètres > Accessibilité > Synthèse vocale ; Windows : Paramètres > Heure et langue > Voix)."
 } satisfies typeof en;
