@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import ConfirmBar from "../components/ConfirmBar.vue";
-import { isQcmExamJson, isVocabDeckJson, isSentenceDeckJson, isRevisionsBundleJson } from "../types/json";
+import { validateImport } from "../services/validate";
 import { importQcmExam, importVocabDeck, importSentenceDeck, importBundle } from "../services/importer";
 import { Capacitor, CapacitorHttp } from "@capacitor/core";
 
 const message = ref<{ text: string; kind: "info" | "ok" | "danger" } | null>(null);
 const raw = ref<string>("");
 const url = ref<string>("");
+const errors = ref<string[]>([]);
 
 /** ✅ File input custom */
 const fileInput = ref<HTMLInputElement | null>(null);
@@ -31,46 +32,42 @@ async function onFile(e: Event) {
 }
 
 async function importFromText(text: string) {
-  let data: any;
+  errors.value = [];
+  let data: unknown;
   try {
     data = JSON.parse(text);
-  } catch {
-    set("danger", "JSON invalide (erreur de parsing).");
+  } catch (e) {
+    set("danger", `JSON invalide : ${e instanceof Error ? e.message : "erreur de parsing"}`);
+    return;
+  }
+
+  const v = validateImport(data);
+  if (!v.ok) {
+    errors.value = v.errors;
+    set("danger", `JSON refusé (${v.errors.length}${v.errors.length >= 20 ? "+" : ""} erreur(s)). Rien n'a été importé.`);
     return;
   }
 
   try {
-    // ✅ bundle global
-    if (isRevisionsBundleJson(data)) {
-      const r = await importBundle(data);
+    const p = v.payload;
+    if (p.type === "revisions_bundle") {
+      const r = await importBundle(p.data);
       set(
           "ok",
           `Bundle importé ✅ Decks:${r.decks} (items:${r.vocabItems}) • Exams:${r.exams} (questions:${r.qcmQuestions}) • Phrases:${r.sentences}`
       );
-      return;
-    }
-
-    if (isVocabDeckJson(data)) {
-      const res = await importVocabDeck(data);
+    } else if (p.type === "vocab_deck") {
+      const res = await importVocabDeck(p.data);
       set("ok", `Deck vocab importé: ${res.title} (${res.count} items)`);
-      return;
-    }
-
-    if (isQcmExamJson(data)) {
-      const res = await importQcmExam(data);
+    } else if (p.type === "qcm_exam") {
+      const res = await importQcmExam(p.data);
       set("ok", `Exam QCM importé: ${res.title} (${res.count} questions)`);
-      return;
-    }
-
-    if (isSentenceDeckJson(data)) {
-      const res = await importSentenceDeck(data);
+    } else {
+      const res = await importSentenceDeck(p.data);
       set("ok", `Phrases importées: ${res.title} (${res.count} phrases)`);
-      return;
     }
-
-    set("danger", "JSON non reconnu. Types: vocab_deck / qcm_exam / sentence_deck / revisions_bundle.");
-  } catch (e: any) {
-    set("danger", `Erreur import: ${e?.message ?? "inconnue"}`);
+  } catch (e) {
+    set("danger", `Erreur import: ${e instanceof Error ? e.message : "inconnue"}`);
   }
 }
 
@@ -112,8 +109,8 @@ async function onImportUrl() {
 
     raw.value = text;
     await importFromText(text);
-  } catch (e: any) {
-    set("danger", `Impossible de récupérer l'URL. ${e?.message ?? ""}`.trim());
+  } catch (e) {
+    set("danger", `Impossible de récupérer l'URL. ${e instanceof Error ? e.message : ""}`.trim());
   }
 }
 
@@ -178,6 +175,9 @@ const exampleBundle = `{
 
       <div class="mt-3" v-if="message">
         <ConfirmBar :message="message.text" :kind="message.kind" />
+        <ul v-if="errors.length" class="small mt-2 max-h-40 overflow-auto pl-5 list-disc">
+          <li v-for="(e, i) in errors" :key="i"><code>{{ e }}</code></li>
+        </ul>
       </div>
     </div>
 

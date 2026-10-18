@@ -36,26 +36,3 @@ export type RevisionsBundleJson = {
   qcmExams: QcmExamJson[];
   sentenceDecks: SentenceDeckJson[];
 };
-
-export function isVocabDeckJson(x: any): x is VocabDeckJson {
-  return x?.type === "vocab_deck" && typeof x?.id === "string" && Array.isArray(x?.items);
-}
-
-export function isQcmExamJson(x: any): x is QcmExamJson {
-  return x?.type === "qcm_exam" && typeof x?.id === "string" && Array.isArray(x?.questions);
-}
-
-export function isSentenceDeckJson(x: any): x is SentenceDeckJson {
-  return x?.type === "sentence_deck" && typeof x?.id === "string" && Array.isArray(x?.items);
-}
-
-export function isRevisionsBundleJson(x: any): x is RevisionsBundleJson {
-  return (
-      x?.type === "revisions_bundle" &&
-      x?.schema === 1 &&
-      typeof x?.exportedAt === "number" &&
-      Array.isArray(x?.vocabDecks) &&
-      Array.isArray(x?.qcmExams) &&
-      Array.isArray(x?.sentenceDecks)
-  );
-}

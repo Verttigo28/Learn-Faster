@@ -1,43 +1,29 @@
 import { createRouter, createWebHistory } from "vue-router";
-
 import HomePage from "../pages/HomePage.vue";
-import ImportPage from "../pages/ImportPage.vue";
-import StatsPage from "../pages/StatsPage.vue";
-import DeckPage from "../pages/DeckPage.vue";
-import FlashcardsPage from "../pages/FlashcardsPage.vue";
-import VocabQuizPage from "../pages/VocabQuizPage.vue";
-import ExamPage from "../pages/ExamPage.vue";
-
-import ExamsPage from "../pages/ExamsPage.vue";
-import PracticePage from "../pages/PracticePage.vue";
-import SentencesManagePage from "../pages/SentencesManagePage.vue";
-import VocabManagePage from "../pages/VocabManagePage.vue";
-import VocabEditPage from "../pages/VocabEditPage.vue";
-import QcmManagePage from "../pages/QcmManagePage.vue";
-import QcmEditPage from "../pages/QcmEditPage.vue";
-import AttemptResultPage from "../pages/AttemptResultPage.vue";
 
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: "/", component: HomePage },
-    { path: "/import", component: ImportPage },
-    { path: "/sentences", component: SentencesManagePage },
-    { path: "/vocab", component: VocabManagePage },
-    { path: "/vocab/:deckId/edit", component: VocabEditPage, props: true },
-    { path: "/qcm", component: QcmManagePage },
-    { path: "/qcm/:examId/edit", component: QcmEditPage, props: true },
-    { path: "/exams", component: ExamsPage },
-    { path: "/practice", component: PracticePage },
-    { path: "/stats", component: StatsPage },
+    { path: "/import", component: () => import("../pages/ImportPage.vue") },
+    { path: "/sentences", component: () => import("../pages/SentencesManagePage.vue") },
+    { path: "/vocab", component: () => import("../pages/VocabManagePage.vue") },
+    { path: "/vocab/:deckId/edit", component: () => import("../pages/VocabEditPage.vue"), props: true },
+    { path: "/qcm", component: () => import("../pages/QcmManagePage.vue") },
+    { path: "/qcm/:examId/edit", component: () => import("../pages/QcmEditPage.vue"), props: true },
+    { path: "/exams", component: () => import("../pages/ExamsPage.vue") },
+    { path: "/practice", component: () => import("../pages/PracticePage.vue") },
+    { path: "/stats", component: () => import("../pages/StatsPage.vue") },
 
-    { path: "/attempt/:attemptId", component: AttemptResultPage, props: true },
+    { path: "/attempt/:attemptId", component: () => import("../pages/AttemptResultPage.vue"), props: true },
 
     // deckId is passed as prop to avoid param parsing inside pages
-    { path: "/deck/:deckId", component: DeckPage, props: true },
-    { path: "/deck/:deckId/flash", component: FlashcardsPage, props: true },
-    { path: "/deck/:deckId/quiz", component: VocabQuizPage, props: true },
+    { path: "/deck/:deckId", component: () => import("../pages/DeckPage.vue"), props: true },
+    { path: "/deck/:deckId/flash", component: () => import("../pages/FlashcardsPage.vue"), props: true },
+    { path: "/deck/:deckId/quiz", component: () => import("../pages/VocabQuizPage.vue"), props: true },
 
-    { path: "/exam/:examId", component: ExamPage, props: true }
+    { path: "/exam/:examId", component: () => import("../pages/ExamPage.vue"), props: true },
+
+    { path: "/:pathMatch(.*)*", redirect: "/" }
   ]
 });

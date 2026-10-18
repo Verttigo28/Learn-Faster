@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { confirmDialog } from "../services/dialog";
 import { computed, onMounted, ref } from "vue";
 import { db, type SentenceDeck, type SentenceExercise } from "../db";
 import { tokenizeSentence } from "../utils/sentence";
@@ -56,7 +57,7 @@ async function add() {
 }
 
 async function remove(id: string) {
-  if (!confirm("Supprimer cette phrase ?")) return;
+  if (!(await confirmDialog("Supprimer cette phrase ?"))) return;
   await db.sentenceExercises.delete(id);
   await load();
 }
@@ -64,7 +65,7 @@ async function remove(id: string) {
 async function removeDeck() {
   const id = deckFilter.value;
   if (!id) return;
-  if (!confirm(`Supprimer le deck « ${deckTitles.value[id]} » et toutes ses phrases ?`)) return;
+  if (!(await confirmDialog(`Supprimer le deck « ${deckTitles.value[id]} » et toutes ses phrases ?`))) return;
   await removeSentenceDeck(id);
   deckFilter.value = "";
   set("ok", "Deck supprimé ✅");

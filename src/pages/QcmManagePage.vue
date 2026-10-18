@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { confirmDialog } from "../services/dialog";
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { db, type Exam } from "../db";
@@ -46,7 +47,7 @@ async function createExam() {
 }
 
 async function removeExam(id: string) {
-  if (!confirm("Supprimer cet exam + toutes ses questions ?")) return;
+  if (!(await confirmDialog("Supprimer cet exam + toutes ses questions ?"))) return;
   await db.transaction("rw", [db.exams, db.examQuestions], async () => {
     await db.exams.delete(id);
     await db.examQuestions.where("examId").equals(id).delete();

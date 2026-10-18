@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { confirmDialog, toast } from "../services/dialog";
 import { onMounted, ref } from "vue";
 import { db, type VocabDeck, type Exam } from "../db";
 import EmptyState from "../components/EmptyState.vue";
@@ -18,7 +19,7 @@ const counts = ref({
 async function startRandomFlashcards() {
   const count = await db.vocabDecks.count();
   if (!count) {
-    alert("Aucun deck vocab. Crée ou importe un deck d'abord.");
+    toast("Aucun deck vocab. Crée ou importe un deck d'abord.", "danger");
     return;
   }
 
@@ -26,7 +27,7 @@ async function startRandomFlashcards() {
   const deck = await db.vocabDecks.orderBy("createdAt").reverse().offset(offset).limit(1).first();
 
   if (!deck) {
-    alert("Impossible de sélectionner un deck.");
+    toast("Impossible de sélectionner un deck.", "danger");
     return;
   }
 
@@ -48,7 +49,7 @@ async function load() {
 }
 
 async function clearAll() {
-  if (!confirm("Tout supprimer (decks/exams/phrases/stats) ?")) return;
+  if (!(await confirmDialog("Tout supprimer (decks/exams/phrases/stats) ?"))) return;
 
   await db.transaction(
       "rw",

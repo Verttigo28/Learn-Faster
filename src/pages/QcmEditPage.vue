@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { parseTags } from "../services/tags";
+import { confirmDialog } from "../services/dialog";
 import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { db, type Exam, type ExamQuestion } from "../db";
@@ -40,12 +42,6 @@ function set(kind: "info" | "ok" | "danger", text: string) {
   msg.value = { kind, text };
 }
 
-function parseTags(input: string): string[] {
-  return input
-    .split(",")
-    .map((t) => t.trim())
-    .filter(Boolean);
-}
 
 function normalizeChoices(list: ChoiceDraft[]): ChoiceDraft[] {
   // supprime les choix vides
@@ -160,7 +156,7 @@ async function saveEdit() {
 }
 
 async function removeQuestion(id: string) {
-  if (!confirm("Supprimer cette question ?")) return;
+  if (!(await confirmDialog("Supprimer cette question ?"))) return;
   await db.examQuestions.delete(id);
   set("ok", "Question supprimée ✅");
   await load();

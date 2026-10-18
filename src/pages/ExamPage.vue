@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { toast } from "../services/dialog";
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { db, type Exam, type ExamQuestion, type AttemptDetail } from "../db";
@@ -149,7 +150,7 @@ async function finish() {
   } catch (e) {
     console.error(e);
     savedAttempt.value = false; // permet de retenter si besoin
-    alert("Erreur lors de l'enregistrement des résultats (IndexedDB).");
+    toast("Erreur lors de l'enregistrement des résultats (IndexedDB).", "danger");
   }
 }
 

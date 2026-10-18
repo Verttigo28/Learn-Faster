@@ -17,10 +17,10 @@ Chaque phase = un commit sur la branche `improvements`, build + tests verts.
 - [x] Index multi-entrées `*tags`
 
 ## Phase 2 — Nettoyage
-- [ ] Supprimer `JsonBuilderPage.vue` (non routée) et Pinia (inutilisé)
-- [ ] Remplacer `alert()` / `confirm()` par un service de dialogue (toast + confirm modal)
-- [ ] Routes en lazy-loading
-- [ ] Validation stricte des JSON importés (messages d'erreur précis)
+- [x] Supprimer `JsonBuilderPage.vue` (non routée) et Pinia (inutilisé)
+- [x] Remplacer `alert()` / `confirm()` par un service de dialogue (toast + confirm modal)
+- [x] Routes en lazy-loading
+- [x] Validation stricte des JSON importés (messages d'erreur précis)
 
 ## Phase 3 — Android / natif
 - [ ] Export JSON + PDF via `@capacitor/filesystem` + `@capacitor/share` sur natif

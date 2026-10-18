@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import { toast } from "../services/dialog";
 import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import BaseModal from "../components/BaseModal.vue";
 import EmptyState from "../components/EmptyState.vue";
 import SentenceOrder from "../components/SentenceOrder.vue";
-import { buildPractice, gradePractice, type PracticeQuestion } from "../services/practice";
+import { buildPractice, gradePractice, type PracticeQuestion, type PracticeSource } from "../services/practice";
 import { db, type AttemptDetail } from "../db";
 import { uid } from "../utils/id";
 import { clamp01, formatDuration } from "../utils/time";
@@ -88,7 +89,7 @@ async function load() {
   questions.value = await buildPractice({
     tags: tags.value,
     count: count.value,
-    sources: sources.value as any
+    sources: sources.value as PracticeSource[]
   });
 
   idx.value = 0;
@@ -209,7 +210,7 @@ async function finish() {
     } catch (e) {
       console.error(e);
       savedAttempt.value = false;
-      alert("Erreur lors de l'enregistrement des résultats (IndexedDB).");
+      toast("Erreur lors de l'enregistrement des résultats (IndexedDB).", "danger");
     }
   }
 }

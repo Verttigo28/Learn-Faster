@@ -1,7 +1,7 @@
 <script setup lang="ts">
 /**
  * Modal simple et réutilisable.
- * - remplace alert()
+ * - utilisée par AppDialogs (confirmations)
  * - ferme via bouton, clic backdrop, ou touche Escape
  */
 import { onMounted, onUnmounted } from "vue";

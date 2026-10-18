@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { confirmDialog } from "../services/dialog";
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { db, type VocabDeck } from "../db";
@@ -46,7 +47,7 @@ async function createDeck() {
 }
 
 async function removeDeck(id: string) {
-  if (!confirm("Supprimer ce deck + tous ses items ?")) return;
+  if (!(await confirmDialog("Supprimer ce deck + tous ses items ?"))) return;
   await db.transaction("rw", [db.vocabDecks, db.vocabItems], async () => {
     await db.vocabDecks.delete(id);
     await db.vocabItems.where("deckId").equals(id).delete();

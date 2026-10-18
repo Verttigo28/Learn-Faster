@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { confirmDialog, toast } from "../services/dialog";
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { db, type Attempt, type VocabDeck, type Exam } from "../db";
 import EmptyState from "../components/EmptyState.vue";
@@ -58,7 +59,7 @@ async function load() {
 }
 
 async function clearStats() {
-  if (!confirm("Supprimer uniquement les stats (tentatives) ?")) return;
+  if (!(await confirmDialog("Supprimer uniquement les stats (tentatives) ?"))) return;
   await db.attempts.clear();
   await load();
 }
@@ -72,8 +73,8 @@ function canOpenResult(a: Attempt): boolean {
 function exportPdf(a: Attempt) {
   try {
     exportAttemptPdf(a, titleFor(a));
-  } catch (e: any) {
-    alert(e?.message ?? "Impossible d'exporter le PDF");
+  } catch (e) {
+    toast(e instanceof Error ? e.message : "Impossible d'exporter le PDF", "danger");
   }
 }
 

@@ -278,3 +278,13 @@
     .historyCard{ @apply card cardFill flex-1 min-h-0; }
     .historyList{ @apply flex-1 min-h-0 overflow-auto pr-1.5 pb-5; }
 }
+
+@layer components{
+    /* --------------------------------------------------------
+       Toasts (services/dialog.ts)
+    -------------------------------------------------------- */
+    .toastStack{ @apply fixed z-[60] bottom-4 left-1/2 -translate-x-1/2 flex flex-col gap-2 w-[min(92vw,420px)] pointer-events-none; }
+    .toast{ @apply pointer-events-auto cursor-pointer rounded-xl border border-border/10 bg-card/95 backdrop-blur px-3 py-2 text-sm text-text shadow-lg; }
+    .toast.ok{ @apply border-ok/60; }
+    .toast.danger{ @apply border-danger/60; }
+}

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { toast } from "../services/dialog";
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import EmptyState from "../components/EmptyState.vue";
@@ -60,8 +61,8 @@ function exportPdf() {
   if (!attempt.value) return;
   try {
     exportAttemptPdf(attempt.value, title.value);
-  } catch (e: any) {
-    alert(e?.message ?? "Impossible d'exporter le PDF");
+  } catch (e) {
+    toast(e instanceof Error ? e.message : "Impossible d'exporter le PDF", "danger");
   }
 }
 

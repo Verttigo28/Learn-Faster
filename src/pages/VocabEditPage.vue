@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { parseTags } from "../services/tags";
+import { confirmDialog } from "../services/dialog";
 import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { db, type VocabDeck, type VocabItem } from "../db";
@@ -34,12 +36,6 @@ function set(kind: "info" | "ok" | "danger", text: string) {
   msg.value = { kind, text };
 }
 
-function parseTags(input: string): string[] {
-  return input
-    .split(",")
-    .map((t) => t.trim())
-    .filter(Boolean);
-}
 
 async function load() {
   deck.value = (await db.vocabDecks.get(deckId.value)) ?? null;
@@ -112,7 +108,7 @@ async function saveEdit() {
 }
 
 async function removeItem(id: string) {
-  if (!confirm("Supprimer cet item ?")) return;
+  if (!(await confirmDialog("Supprimer cet item ?"))) return;
   await db.vocabItems.delete(id);
   set("ok", "Item supprimé ✅");
   await load();
