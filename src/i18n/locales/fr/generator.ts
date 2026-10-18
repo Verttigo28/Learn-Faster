@@ -24,5 +24,12 @@ export default {
   start: "Démarrer l’exam",
   editVocab: "Éditer vocab",
   editQcm: "Éditer QCM",
-  noSource: "Choisis au moins une source."
+  noSource: "Choisis au moins une source.",
+  tagSearch: "Chercher un tag…",
+  levels: "Niveau",
+  selected: "{count} sélectionné | {count} sélectionnés",
+  clear: "Effacer",
+  noTagMatch: "Aucun tag ne correspond à la recherche.",
+  noTags: "Pas encore de tags : importe du contenu avec des tags.",
+  matching: "{count} élément correspondant | {count} éléments correspondants"
 } satisfies typeof en;

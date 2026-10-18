@@ -3,7 +3,8 @@ import { confirmDialog, toast } from "../services/dialog";
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { db, type Attempt, type VocabDeck, type Exam, type ReviewState, type VocabItem } from "../db";
 import ActivityChart from "../components/ActivityChart.vue";
-import { activityByDay, deckProgress, hardestWords, streak } from "../services/stats";
+import ActivityHeatmap from "../components/ActivityHeatmap.vue";
+import { activityByDay, bestStreak, deckProgress, hardestWords, streak } from "../services/stats";
 import EmptyState from "../components/EmptyState.vue";
 import { formatDate, formatDuration } from "../utils/time";
 import { exportAttemptPdf } from "../services/pdfReport";
@@ -14,9 +15,10 @@ const decks = ref<Record<string, VocabDeck>>({});
 const exams = ref<Record<string, Exam>>({});
 const items = ref<VocabItem[]>([]);
 const reviews = ref<ReviewState[]>([]);
-const tab = ref<"history" | "decks" | "hard">("history");
+const tab = ref<"history" | "decks" | "hard" | "chart">("history");
 
 const streakDays = computed(() => streak(attempts.value));
+const bestStreakDays = computed(() => bestStreak(attempts.value));
 const activity = computed(() => activityByDay(attempts.value, 30));
 const progress = computed(() => deckProgress(items.value, reviews.value));
 const hard = computed(() => hardestWords(items.value, reviews.value, 15));
@@ -47,6 +49,7 @@ function titleFor(a: Attempt): string {
   if (a.type === "exam") return exams.value[a.refId]?.title ?? t("stats.examFallback", { id: a.refId });
   if (a.type === "practice") return t("stats.practiceTitle");
   if (a.type === "flashcards" && a.refId === "review") return t("stats.reviewTitle");
+  if (a.type === "match" && a.refId === "all") return t("stats.matchTitle");
   return decks.value[a.refId]?.title ?? t("stats.deckFallback", { id: a.refId });
 }
 
@@ -123,36 +126,38 @@ onUnmounted(unlockScroll);
 
 <template>
   <div class="statsPage">
-    <div class="top">
-      <div class="grid cols-2">
-        <div class="card topCard">
-          <h2>{{ $t("stats.title") }}</h2>
-          <div class="row">
-            <div>
-              <div class="small">{{ $t("stats.attempts") }}</div>
-              <div class="kpi">{{ totalAttempts }}</div>
-            </div>
-            <div>
-              <div class="small">{{ $t("stats.avgScore") }}</div>
-              <div class="kpi">{{ percent01(avgScore01) }}</div>
-            </div>
-            <div>
-              <div class="small">{{ $t("stats.last7Days") }}</div>
-              <div class="kpi">{{ percent01(last7Score01) }}</div>
-            </div>
-            <div>
-              <div class="small">{{ $t("stats.streak") }}</div>
-              <div class="kpi">{{ $t("stats.streakValue", { count: streakDays }) }}</div>
-            </div>
-          </div>
-          <div class="hr"></div>
-          <button class="btn danger" @click="clearStats">{{ $t("stats.reset") }}</button>
-        </div>
+    <div class="statsTop">
+      <div class="card">
+        <h2>{{ $t("stats.activity") }}</h2>
+        <ActivityHeatmap :attempts="attempts" :weeks="20" />
+      </div>
 
-        <div class="card topCard">
-          <h2>{{ $t("stats.activity") }}</h2>
-          <ActivityChart :days="activity" />
+      <div class="card kpiCard">
+        <h2>{{ $t("stats.title") }}</h2>
+        <div class="kpiGrid">
+          <div>
+            <div class="small">{{ $t("stats.attempts") }}</div>
+            <div class="kpi">{{ totalAttempts }}</div>
+          </div>
+          <div>
+            <div class="small">{{ $t("stats.avgScore") }}</div>
+            <div class="kpi">{{ percent01(avgScore01) }}</div>
+          </div>
+          <div>
+            <div class="small">{{ $t("stats.last7Days") }}</div>
+            <div class="kpi">{{ percent01(last7Score01) }}</div>
+          </div>
+          <div>
+            <div class="small">{{ $t("stats.streak") }}</div>
+            <div class="kpi">{{ $t("stats.streakValue", { count: streakDays }) }}</div>
+          </div>
+          <div>
+            <div class="small">{{ $t("stats.bestStreak") }}</div>
+            <div class="kpi">{{ $t("stats.bestStreakValue", { count: bestStreakDays }) }}</div>
+          </div>
         </div>
+        <div class="hr"></div>
+        <button class="btn danger" @click="clearStats">{{ $t("stats.reset") }}</button>
       </div>
     </div>
 
@@ -162,6 +167,7 @@ onUnmounted(unlockScroll);
           <button class="pill" :class="{ active: tab === 'history' }" @click="tab = 'history'">{{ $t("stats.tabs.history") }}</button>
           <button class="pill" :class="{ active: tab === 'decks' }" @click="tab = 'decks'">{{ $t("stats.tabs.decks") }}</button>
           <button class="pill" :class="{ active: tab === 'hard' }" @click="tab = 'hard'">{{ $t("stats.tabs.hard") }}</button>
+          <button class="pill" :class="{ active: tab === 'chart' }" @click="tab = 'chart'">{{ $t("stats.tabs.chart") }}</button>
         </div>
         <div v-if="tab === 'history'" class="small" style="opacity:.85">
           {{ $t("stats.entries", { count: attempts.length }) }}
@@ -193,6 +199,10 @@ onUnmounted(unlockScroll);
           </div>
         </div>
       </template>
+
+      <div v-else-if="tab === 'chart'" class="historyList">
+        <ActivityChart :days="activity" />
+      </div>
 
       <template v-else-if="tab === 'hard'">
         <EmptyState v-if="hard.length === 0" :title="$t('stats.noHard')" :hint="$t('stats.noHardHint')" />
@@ -249,3 +259,25 @@ onUnmounted(unlockScroll);
   </div>
 </template>
 
+<style scoped>
+.statsTop {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr);
+  flex: none;
+}
+@media (min-width: 768px) {
+  .statsTop { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); }
+}
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px 16px;
+}
+.kpiCard .kpi { font-size: 1.5rem; }
+/* Small screens: the whole page scrolls, the history keeps a usable height. */
+@media (max-width: 767px) {
+  .statsPage { overflow-y: auto; }
+  .historyCard { flex: none; height: 75dvh; }
+}
+</style>

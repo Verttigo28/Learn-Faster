@@ -23,6 +23,8 @@ export default {
   shortcuts: "Entrée = valider / suivant • 1–9 = choisir une réponse • ordre des mots : clique un mot pour l’ajouter, puis dans “Ta réponse” pour l’enlever.",
   resultTitle: "Résultat (exam tags)",
   newFilter: "Nouveau filtre",
+  retryMistakes: "Refaire l'erreur ({count}) | Refaire les erreurs ({count})",
+  progressAria: "Progression de la session",
   backHome: "Retour accueil",
   savedNote: "Cette session est sauvegardée dans Stats (type: practice).",
   breakdown: {

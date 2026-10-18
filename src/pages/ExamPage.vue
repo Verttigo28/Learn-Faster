@@ -64,6 +64,10 @@ async function load() {
   showResultModal.value = false;
   lastResult.value = null;
 
+  startTimer();
+}
+
+function startTimer() {
   startedAt.value = Date.now();
   now.value = Date.now();
 
@@ -72,6 +76,31 @@ async function load() {
     now.value = Date.now();
     if (remainingSeconds.value === 0 && !finished.value) finish();
   }, 250);
+}
+
+function isWrong(q: ExamQuestion): boolean {
+  const picked = selected.value[q.id];
+  return q.choices.find((c) => c.id === picked)?.correct !== true;
+}
+
+/** Wrong (or unanswered) questions, once the exam is finished. */
+const mistakeCount = computed(() => (finished.value ? questions.value.filter(isWrong).length : 0));
+const answeredCount = computed(() => Object.keys(selected.value).length);
+const progressPct = computed(() => (questions.value.length ? (answeredCount.value / questions.value.length) * 100 : 0));
+
+/** Restart with only the questions answered wrong (choices reshuffled, timer restarted). */
+function retryMistakes() {
+  const wrong = questions.value.filter(isWrong);
+  if (!wrong.length) return;
+  for (const q of wrong) q.choices = shuffle(q.choices);
+  questions.value = wrong;
+  idx.value = 0;
+  selected.value = {};
+  finished.value = false;
+  savedAttempt.value = false;
+  showResultModal.value = false;
+  lastResult.value = null;
+  startTimer();
 }
 
 function choose(choiceId: string) {
@@ -210,12 +239,21 @@ onMounted(load);
         </div>
       </div>
 
+      <div
+        class="meter mt-2"
+        role="progressbar"
+        :aria-label="$t('examRun.progressAria')"
+        :aria-valuenow="Math.round(progressPct)"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ><span :style="{ width: `${progressPct}%` }"></span></div>
+
       <div class="hr"></div>
 
       <!-- ✅ Scroll uniquement dans cette zone -->
       <div class="sessionBody">
         <div class="card rounded-[18px]">
-          <h3 class="mt-0">{{ current.prompt }}</h3>
+          <h3 class="sessionPrompt">{{ current.prompt }}</h3>
 
           <div class="list">
             <button
@@ -244,10 +282,11 @@ onMounted(load);
           <button class="btn" @click="prev" :disabled="idx === 0">← {{ $t("common.previous") }}</button>
           <button class="btn" @click="next" :disabled="idx === questions.length - 1">{{ $t("common.next") }} →</button>
           <button class="btn ok" @click="finish" :disabled="finished">{{ $t("common.finish") }}</button>
+          <button v-if="mistakeCount" class="btn primary" @click="retryMistakes">{{ $t("examRun.retryMistakes", { count: mistakeCount }) }}</button>
         </div>
 
         <p class="small mt-2.5">
-          {{ $t("examRun.answered", { answered: Object.keys(selected).length, total: questions.length }) }}
+          {{ $t("examRun.answered", { answered: answeredCount, total: questions.length }) }}
         </p>
       </div>
     </div>
@@ -272,6 +311,7 @@ onMounted(load);
         <div class="hr"></div>
 
         <div class="row">
+          <button v-if="mistakeCount" class="btn primary" @click="retryMistakes">{{ $t("examRun.retryMistakes", { count: mistakeCount }) }}</button>
           <button class="btn" @click="goStats">{{ $t("common.viewStats") }}</button>
           <button class="btn" @click="goBack">{{ $t("examRun.backHome") }}</button>
           <button class="btn ok" @click="closeModal">{{ $t("examRun.review") }}</button>

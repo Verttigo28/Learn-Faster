@@ -7,5 +7,7 @@ export default {
   resultTitle: "Exam result",
   backHome: "Back to home",
   review: "Review corrections",
+  retryMistakes: "Retry the mistake ({count}) | Retry mistakes ({count})",
+  progressAria: "Answered questions",
   reviewNote: "Corrections stay visible in the exam (correct answers in green)."
 };

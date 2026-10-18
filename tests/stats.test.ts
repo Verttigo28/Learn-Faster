@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { activityByDay, answersToday, deckProgress, hardestWords, streak } from "../src/services/stats";
+import { activityByDay, answersToday, bestStreak, deckProgress, hardestWords, heatLevel, heatmapWeeks, streak } from "../src/services/stats";
 import { DAY } from "../src/services/srs";
 import type { Attempt, ReviewState, VocabItem } from "../src/db";
 
@@ -27,6 +27,34 @@ describe("activity", () => {
     expect(a.map((d) => d.answers)).toEqual([10, 0, 10]);
     expect(a[2].correct).toBe(4);
     expect(answersToday([att(0, 4), att(1, 9)], NOW)).toBe(4);
+  });
+});
+
+describe("best streak and heatmap", () => {
+  it("finds the longest run of consecutive days", () => {
+    expect(bestStreak([])).toBe(0);
+    expect(bestStreak([att(0), att(1), att(5), att(6), att(7), att(8), att(8), att(20)])).toBe(4);
+  });
+  it("builds Monday-first weeks ending with the current week", () => {
+    // NOW = Sunday 18 Oct 2026
+    const weeks = heatmapWeeks([att(0, 3), att(6, 2), att(13, 7)], 3, NOW);
+    expect(weeks).toHaveLength(3);
+    expect(weeks.every((w) => w.length === 7)).toBe(true);
+    expect(new Date(weeks[0][0].date).getDay()).toBe(1);
+    expect(weeks[0][0].key).toBe("2026-09-28");
+    expect(weeks[2][6].key).toBe("2026-10-18");
+    expect(weeks[2][6].answers).toBe(3);
+    expect(weeks[2][0].answers).toBe(2);
+    expect(weeks[1][0].answers).toBe(7);
+    expect(weeks.flat().some((c) => c.future)).toBe(false);
+  });
+  it("flags days after today in the current week", () => {
+    const wed = new Date(2026, 9, 14, 12).getTime();
+    const weeks = heatmapWeeks([], 1, wed);
+    expect(weeks[0].map((c) => c.future)).toEqual([false, false, false, true, true, true, true]);
+  });
+  it("maps answers to 5 intensity steps", () => {
+    expect([0, 1, 5, 10, 20].map((n) => heatLevel(n, 20))).toEqual([0, 1, 1, 2, 4]);
   });
 });
 

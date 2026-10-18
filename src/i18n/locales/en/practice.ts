@@ -21,6 +21,8 @@ export default {
   shortcuts: "Enter = check / next • 1–9 = pick an answer • word order: click a word to add it, then in “Your answer” to remove it.",
   resultTitle: "Result (exam tags)",
   newFilter: "New filter",
+  retryMistakes: "Retry the mistake ({count}) | Retry mistakes ({count})",
+  progressAria: "Session progress",
   backHome: "Back to home",
   savedNote: "This session is saved in Stats (type: practice).",
   breakdown: {

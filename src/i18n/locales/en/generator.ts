@@ -22,5 +22,12 @@ export default {
   start: "Start the exam",
   editVocab: "Edit vocab",
   editQcm: "Edit quizzes",
-  noSource: "Pick at least one source."
+  noSource: "Pick at least one source.",
+  tagSearch: "Search a tag…",
+  levels: "Level",
+  selected: "{count} selected",
+  clear: "Clear",
+  noTagMatch: "No tag matches this search.",
+  noTags: "No tags yet: import content with tags.",
+  matching: "{count} matching item | {count} matching items"
 };

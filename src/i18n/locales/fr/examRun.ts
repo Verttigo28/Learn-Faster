@@ -9,5 +9,7 @@ export default {
   resultTitle: "Résultat de l'exam",
   backHome: "Retour accueil",
   review: "Revoir les corrections",
+  retryMistakes: "Refaire l'erreur ({count}) | Refaire les erreurs ({count})",
+  progressAria: "Questions répondues",
   reviewNote: "Les corrections restent affichées dans l’exam (bonnes réponses en vert)."
 } satisfies typeof en;

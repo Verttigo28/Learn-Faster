@@ -20,6 +20,7 @@ import { db, type AttemptDetail } from "../db";
 import { uid } from "../utils/id";
 import { clamp01, formatDuration } from "../utils/time";
 import { checkAnswer } from "../utils/answer";
+import { shuffle } from "../utils/shuffle";
 import { t } from "../i18n";
 
 const route = useRoute();
@@ -85,6 +86,13 @@ const canSubmit = computed(() => {
 });
 const canProceed = computed(() => locked.value || canSubmit.value);
 
+/** Answered / total, for the progress meter. */
+const progressPct = computed(() => {
+  const total = questions.value.length;
+  if (!total) return 0;
+  return (Math.min(total, idx.value + (locked.value ? 1 : 0)) / total) * 100;
+});
+
 // simple timer: 45 sec/question
 const remainingSeconds = computed(() => {
   const total = questions.value.length;
@@ -121,12 +129,46 @@ async function load() {
   locked.value = false;
   loaded.value = true;
 
+  startTimer();
+}
+
+function startTimer() {
+  stopTimer();
   if (questions.value.length > 0) {
     timer = window.setInterval(() => {
       now.value = Date.now();
       if (remainingSeconds.value === 0 && !showModal.value) finish();
     }, 250);
   }
+}
+
+/** Questions answered wrong in the session that just ended. */
+const mistakes = ref<PracticeQuestion[]>([]);
+
+/** Restart with only the wrong questions (same objects, answers cleared, options reshuffled). */
+function retryMistakes() {
+  if (!mistakes.value.length) return;
+  for (const q of mistakes.value) {
+    if (q.kind === "vocab_mcq" || q.kind === "exam_mcq") {
+      q.answer = undefined;
+      q.options = shuffle(q.options);
+    } else if (q.kind === "sentence_order") {
+      q.answer = [];
+      q.tokens = [...q.tokens]; // new array => SentenceOrder reshuffles the words
+    } else {
+      q.answer = undefined;
+    }
+  }
+  questions.value = mistakes.value;
+  mistakes.value = [];
+  idx.value = 0;
+  locked.value = false;
+  result.value = null;
+  savedAttempt.value = false;
+  showModal.value = false;
+  startedAt.value = Date.now();
+  now.value = Date.now();
+  startTimer();
 }
 
 // Focus the text field and play the dictation when a question appears.
@@ -213,6 +255,7 @@ async function finish() {
   const g = gradePractice(questions.value);
   const durationSeconds = Math.floor((Date.now() - startedAt.value) / 1000);
   result.value = { ...g, durationSeconds };
+  mistakes.value = questions.value.filter((q) => !isPracticeCorrect(q));
   showModal.value = true;
 
   if (!savedAttempt.value) {
@@ -315,12 +358,21 @@ onUnmounted(() => {
         </div>
       </div>
 
+      <div
+        class="meter mt-2"
+        role="progressbar"
+        :aria-label="$t('practice.progressAria')"
+        :aria-valuenow="Math.round(progressPct)"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ><span :style="{ width: `${progressPct}%` }"></span></div>
+
       <div class="hr"></div>
 
       <!-- ✅ Scroll uniquement dans cette zone -->
       <div class="sessionBody">
         <div v-if="current.kind === 'vocab_mcq' || current.kind === 'exam_mcq'">
-          <h3 class="mt-0">{{ current.prompt }}</h3>
+          <h3 class="sessionPrompt">{{ current.prompt }}</h3>
 
           <div class="list">
             <button
@@ -371,19 +423,19 @@ onUnmounted(() => {
 
         <div v-else>
           <template v-if="current.kind === 'dictation'">
-            <h3 class="mt-0">{{ current.prompt }}</h3>
+            <h3 class="sessionPrompt">{{ current.prompt }}</h3>
             <button class="btn primary" type="button" @click="speak(current.speak ?? '', current.lang)">{{ $t("practice.replay") }}</button>
           </template>
           <template v-else-if="current.kind === 'cloze'">
             <h3 class="mt-0">{{ $t("practice.clozeTitle") }}</h3>
-            <p class="text-xl font-bold text-text">{{ current.prompt }}</p>
+            <p class="sessionPrompt text-text">{{ current.prompt }}</p>
             <p v-if="sentenceHelp && current.hint" class="small">💬 {{ current.hint }}</p>
             <label class="badge cursor-pointer">
               <input type="checkbox" v-model="sentenceHelp" @change="persistHelp" />
               {{ $t("common.translationHelp") }}
             </label>
           </template>
-          <h3 v-else class="mt-0">{{ current.prompt }}</h3>
+          <h3 v-else class="sessionPrompt">{{ current.prompt }}</h3>
 
           <input
             ref="typedInput"
@@ -447,6 +499,9 @@ onUnmounted(() => {
         <div class="hr"></div>
 
         <div class="row">
+          <button v-if="mistakes.length" class="btn primary" @click="retryMistakes">
+            {{ $t("practice.retryMistakes", { count: mistakes.length }) }}
+          </button>
           <button class="btn" @click="goStats">{{ $t("common.viewStats") }}</button>
           <button class="btn" @click="goGenerator">{{ $t("practice.newFilter") }}</button>
           <button class="btn ok" @click="goHome">{{ $t("practice.backHome") }}</button>

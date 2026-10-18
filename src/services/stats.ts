@@ -49,6 +49,63 @@ export function streak(attempts: Attempt[], now = Date.now()): number {
   return n;
 }
 
+/** Longest run of consecutive active days ever. */
+export function bestStreak(attempts: Attempt[]): number {
+  const days = [...new Set(attempts.map((a) => dayKey(a.finishedAt)))].sort();
+  let best = 0;
+  let run = 0;
+  let prev: Date | null = null;
+  for (const k of days) {
+    const [y, m, d] = k.split("-").map(Number);
+    const date = new Date(y, m - 1, d);
+    const expected = prev ? new Date(prev.getFullYear(), prev.getMonth(), prev.getDate() + 1) : null;
+    run = expected && dayKey(expected.getTime()) === k ? run + 1 : 1;
+    best = Math.max(best, run);
+    prev = date;
+  }
+  return best;
+}
+
+export type HeatCell = { key: string; date: number; answers: number; correct: number; future: boolean };
+
+/**
+ * Calendar grid of the last `weeks` weeks: columns = weeks (oldest first), rows = Monday..Sunday.
+ * Days after `now` are flagged `future` (the current week is partially filled).
+ */
+export function heatmapWeeks(attempts: Attempt[], weeks: number, now = Date.now()): HeatCell[][] {
+  const map = new Map<string, { answers: number; correct: number }>();
+  for (const a of attempts) {
+    const k = dayKey(a.finishedAt);
+    const cur = map.get(k) ?? { answers: 0, correct: 0 };
+    cur.answers += answersOf(a);
+    cur.correct += a.meta?.correct ?? Math.round(a.score * answersOf(a));
+    map.set(k, cur);
+  }
+  const today = new Date(now);
+  const todayKey = dayKey(now);
+  const mondayOffset = (today.getDay() + 6) % 7; // 0 = Monday
+  const start = new Date(today.getFullYear(), today.getMonth(), today.getDate() - mondayOffset - (weeks - 1) * 7);
+  const out: HeatCell[][] = [];
+  let future = false;
+  for (let w = 0; w < weeks; w++) {
+    const col: HeatCell[] = [];
+    for (let d = 0; d < 7; d++) {
+      const date = new Date(start.getFullYear(), start.getMonth(), start.getDate() + w * 7 + d, 12);
+      const key = dayKey(date.getTime());
+      col.push({ key, date: date.getTime(), future, ...(map.get(key) ?? { answers: 0, correct: 0 }) });
+      if (key === todayKey) future = true;
+    }
+    out.push(col);
+  }
+  return out;
+}
+
+/** Intensity step 0..4 (0 = no activity), linear in `answers / max`. */
+export function heatLevel(answers: number, max: number): number {
+  if (answers <= 0 || max <= 0) return 0;
+  return Math.min(4, Math.max(1, Math.ceil((answers / max) * 4)));
+}
+
 export function answersToday(attempts: Attempt[], now = Date.now()): number {
   const today = dayKey(now);
   return attempts.filter((a) => dayKey(a.finishedAt) === today).reduce((acc, a) => acc + answersOf(a), 0);
