@@ -4,18 +4,25 @@ export default {
   titleRequired: "Titre requis.",
   notFound: "Deck introuvable",
   flashcards: "Flashcards",
-  launchExam: "Se lancer dans un exam",
+  words: "{count} mot | {count} mots",
+  review: "Réviser ({count})",
+  study: "Étudier",
+  dueToday: "{count} à revoir aujourd’hui",
+  nothingDue: "Rien à revoir aujourd’hui",
   manage: {
-    heading: "Vocab — gérer les decks",
-    intro: "Crée un deck, puis édite son contenu (termes, définitions, tags).",
+    heading: "Vocabulaire",
+    deckCount: "{count} deck | {count} decks",
+    search: "Rechercher un deck",
     newDeck: "Nouveau deck",
-    titlePlaceholder: "ex: Vacances",
-    created: "Deck créé ✅",
-    deleteConfirm: "Supprimer ce deck + tous ses items ?",
-    deleted: "Deck supprimé ✅",
-    listTitle: "Liste des decks",
-    emptyTitle: "Aucun deck",
-    emptyHint: "Crée ton premier deck à gauche, ou importe un JSON."
+    titlePlaceholder: "ex : Vacances",
+    created: "Deck créé",
+    deleteConfirm: "Supprimer ce deck et tous ses items ?",
+    deleted: "Deck supprimé",
+    more: "Plus d’actions pour {title}",
+    emptyTitle: "Aucun deck pour l’instant",
+    emptyHint: "Importe une liste de mots, ou crée un deck et ajoute tes mots.",
+    importWords: "Importer des mots",
+    noMatch: "Aucun deck ne correspond à « {query} »."
   },
   edit: {
     notFoundHint: "Retourne à la liste des decks.",
@@ -39,12 +46,17 @@ export default {
     editModal: "Modifier un item"
   },
   deck: {
-    review: "🧠 Réviser ({count})",
     reverse: "Sens inverse",
-    examByTags: "Exam par tags",
-    preview: "Contenu (aperçu)",
+    match: "Jeu d’association",
+    wordsHeading: "Mots",
+    searchWords: "Rechercher un mot",
+    noMatch: "Aucun mot ne correspond à « {query} ».",
+    listen: "Écouter {term}",
+    status: { new: "Nouveau", learning: "En cours", mastered: "Maîtrisé", due: "À revoir" },
+    count: { new: "{count} nouveau | {count} nouveaux", learning: "{count} en cours", mastered: "{count} maîtrisé | {count} maîtrisés" },
+    progressAria: "{mastered} mots maîtrisés sur {total}",
     emptyTitle: "Deck vide",
-    emptyHint: "Importe des items depuis la page Import.",
+    emptyHint: "Importe des mots depuis la page Import, ou ajoute-les en éditant le deck.",
     import: "Importer"
   }
 } satisfies typeof en;

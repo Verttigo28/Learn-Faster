@@ -2,18 +2,25 @@ export default {
   titleRequired: "Title required.",
   notFound: "Deck not found",
   flashcards: "Flashcards",
-  launchExam: "Take an exam",
+  words: "{count} word | {count} words",
+  review: "Review ({count})",
+  study: "Study",
+  dueToday: "{count} due today",
+  nothingDue: "Nothing due today",
   manage: {
-    heading: "Vocab — manage decks",
-    intro: "Create a deck, then edit its content (terms, definitions, tags).",
+    heading: "Vocabulary",
+    deckCount: "{count} deck | {count} decks",
+    search: "Search decks",
     newDeck: "New deck",
     titlePlaceholder: "e.g. Holidays",
-    created: "Deck created ✅",
+    created: "Deck created",
     deleteConfirm: "Delete this deck and all its items?",
-    deleted: "Deck deleted ✅",
-    listTitle: "Deck list",
-    emptyTitle: "No decks",
-    emptyHint: "Create your first deck on the left, or import a JSON file."
+    deleted: "Deck deleted",
+    more: "More actions for {title}",
+    emptyTitle: "No decks yet",
+    emptyHint: "Import a word list, or create a deck and add words yourself.",
+    importWords: "Import words",
+    noMatch: "No deck matches “{query}”."
   },
   edit: {
     notFoundHint: "Go back to the deck list.",
@@ -37,12 +44,17 @@ export default {
     editModal: "Edit item"
   },
   deck: {
-    review: "🧠 Review ({count})",
     reverse: "Reverse direction",
-    examByTags: "Exam by tags",
-    preview: "Content (preview)",
+    match: "Match game",
+    wordsHeading: "Words",
+    searchWords: "Search words",
+    noMatch: "No word matches “{query}”.",
+    listen: "Listen to {term}",
+    status: { new: "New", learning: "Learning", mastered: "Mastered", due: "Due" },
+    count: { new: "{count} new", learning: "{count} learning", mastered: "{count} mastered" },
+    progressAria: "{mastered} of {total} words mastered",
     emptyTitle: "Empty deck",
-    emptyHint: "Import items from the Import page.",
+    emptyHint: "Import words from the Import page, or add them by editing the deck.",
     import: "Import"
   }
 };
