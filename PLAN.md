@@ -1,0 +1,50 @@
+# Plan d'amélioration
+
+Chaque phase = un commit sur la branche `improvements`, build + tests verts.
+
+## Phase 0 — Filet de sécurité
+- [x] Vitest + tests unitaires (`services/`, `utils/`) avec `fake-indexeddb`
+- [x] ESLint (flat config, Vue + TS)
+- [x] CI GitHub Actions : lint, type-check, test, build
+- [x] Hygiène repo : `tsconfig.tsbuildinfo` hors git, scripts npm `test` / `lint`
+
+## Phase 1 — Bugs
+- [ ] Ordre des mots : le mélange ne doit pas changer à chaque clic
+- [ ] Un seul `shuffle` Fisher–Yates partout (flashcards, phrases)
+- [ ] QCM vocab : pas de distracteur identique à la bonne réponse ; distracteurs du même deck en mode practice
+- [ ] Import/suppression par index (`deckId` / `examId`) au lieu du préfixe d'id
+- [ ] Vraie table `sentenceDecks` (migration Dexie v4) — le titre survit à l'export/import
+- [ ] Index multi-entrées `*tags`
+
+## Phase 2 — Nettoyage
+- [ ] Supprimer `JsonBuilderPage.vue` (non routée) et Pinia (inutilisé)
+- [ ] Remplacer `alert()` / `confirm()` par un service de dialogue (toast + confirm modal)
+- [ ] Routes en lazy-loading
+- [ ] Validation stricte des JSON importés (messages d'erreur précis)
+
+## Phase 3 — Android / natif
+- [ ] Export JSON + PDF via `@capacitor/filesystem` + `@capacitor/share` sur natif
+- [ ] PDF via `jsPDF` (Unicode, mise en page fiable) à la place du générateur maison
+- [ ] Avertir avant de quitter une session en cours
+
+## Phase 4 — Répétition espacée (SRS)
+- [ ] Table `reviews` : état par carte (algorithme SM-2)
+- [ ] Les flashcards notent « À revoir / Difficile / Bien / Facile »
+- [ ] Accueil : « X cartes à réviser aujourd'hui » + session de révision globale
+
+## Phase 5 — Apprentissage
+- [ ] Sens inverse (définition → terme) pour flashcards et quiz
+- [ ] Mode réponse tapée (tolérance casse / accents / espaces)
+- [ ] Synthèse vocale (Web Speech API) selon la langue du deck
+- [ ] Stats : série de jours (streak), progression par deck, mots les plus ratés, graphique 30 jours
+- [ ] PWA : service worker pour fonctionner hors-ligne sur le web
+
+## Phase 6 — Nouvelles fonctionnalités
+- [ ] Exercice « texte à trous » (cloze) généré depuis les phrases
+- [ ] Dictée : l'appli prononce le mot, on l'écrit
+- [ ] Import CSV / TSV (export Anki / Quizlet, copier-coller tableur)
+- [ ] Recherche globale (vocab, QCM, phrases)
+- [ ] Objectif quotidien réglable + progression sur l'accueil
+- [ ] Thème clair / sombre
+- [ ] Raccourcis clavier dans les sessions (espace = retourner, 1–4 = réponse, ←/→)
+- [ ] Rappel de sauvegarde (date du dernier export)
