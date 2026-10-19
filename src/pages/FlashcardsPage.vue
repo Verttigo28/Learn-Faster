@@ -19,7 +19,7 @@ import {
   type Grade,
   type QueueCard
 } from "../services/srs";
-import { speak, speechSupported } from "../services/speech";
+import { languageName, speak, speechSupported } from "../services/speech";
 import { getSetting, setSetting } from "../services/settings";
 import { t } from "../i18n";
 
@@ -75,6 +75,11 @@ const autoSpeak = ref(false);
 const currentDeck = computed(() => (current.value ? decks.value[current.value.item.deckId] : undefined));
 const frontLang = computed(() => (direction.value === "forward" ? currentDeck.value?.from : currentDeck.value?.to));
 const backLang = computed(() => (direction.value === "forward" ? currentDeck.value?.to : currentDeck.value?.from));
+
+/** "Listen · Indonesian": the button names the language it will speak (that of the text shown). */
+function listenLabel(lang?: string) {
+  return lang ? t("flashcards.listenIn", { language: languageName(lang) }) : t("flashcards.listen");
+}
 
 function say(side: "front" | "back") {
   if (side === "front") speak(front.value, frontLang.value);
@@ -310,13 +315,13 @@ onUnmounted(() => window.removeEventListener("keydown", onKeydown));
                 <span v-if="current?.isNew" class="font-bold">{{ $t("flashcards.isNew") }}</span>
               </div>
               <div class="indexWord">{{ front }}</div>
-              <button v-if="canSpeak" class="indexSpeak" type="button" :title="$t('flashcards.listen')" @click.stop="say('front')">🔊 {{ $t("flashcards.listen") }}</button>
+              <button v-if="canSpeak" class="indexSpeak" type="button" :title="$t('flashcards.listen')" @click.stop="say('front')">🔊 {{ listenLabel(frontLang) }}</button>
             </div>
             <div class="indexFace back">
               <template v-if="flipped">
                 <div class="indexMeta"><span class="truncate">{{ front }}</span></div>
                 <div class="indexWord">{{ back }}</div>
-                <button v-if="canSpeak" class="indexSpeak" type="button" :title="$t('flashcards.listen')" @click.stop="say('back')">🔊 {{ $t("flashcards.listen") }}</button>
+                <button v-if="canSpeak" class="indexSpeak" type="button" :title="$t('flashcards.listen')" @click.stop="say('back')">🔊 {{ listenLabel(backLang) }}</button>
               </template>
             </div>
           </div>

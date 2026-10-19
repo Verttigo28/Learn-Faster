@@ -21,6 +21,7 @@ export default {
   flipHint: "Clique sur la carte ou appuie sur Espace pour la retourner",
   questionSide: "Côté question",
   listen: "Écouter",
+  listenIn: "Écouter · {language}",
   showAnswer: "Afficher la réponse",
   sessionScore: "Score session: {percent} ({correct}/{total})",
   resultTitle: "Résultat flashcards",

@@ -19,6 +19,7 @@ export default {
   flipHint: "Click the card or press Space to flip it",
   questionSide: "Question side",
   listen: "Listen",
+  listenIn: "Listen · {language}",
   showAnswer: "Show answer",
   sessionScore: "Session score: {percent} ({correct}/{total})",
   resultTitle: "Flashcards result",

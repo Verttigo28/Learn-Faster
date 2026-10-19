@@ -91,7 +91,7 @@ export function findVoice(voices: SpeechSynthesisVoice[], lang: string): SpeechS
   );
 }
 
-function languageName(lang: string): string {
+export function languageName(lang: string): string {
   try {
     return new Intl.DisplayNames([intlLocale()], { type: "language" }).of(baseLang(lang)) ?? lang;
   } catch {
